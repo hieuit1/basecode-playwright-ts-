@@ -12,7 +12,7 @@ on:
       environment:
         description: "Chọn môi trường kiểm thử"
         required: true
-        default: "qa"
+        default: "staging"
         type: choice
         options: [dev, qa, staging]
       test_type:
@@ -106,6 +106,16 @@ jobs:
           ref: gh-pages
           path: gh-pages-dir
           fetch-depth: 0
+      
+      - name: Create environment.properties
+        run: |
+          mkdir -p target/allure-results
+          cat <<EOF > target/allure-results/environment.properties
+          BaseURL=${{ vars.BASE_URL }}
+          Environment=${{ github.event.client_payload.environment || github.event.inputs.environment || 'qa' }}
+          Browser=Chromium
+          Project=Base-Playwright-TS
+          EOF
 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
@@ -131,3 +141,33 @@ jobs:
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           echo "| **Môi trường** | \`${{ github.event.client_payload.environment || github.event.inputs.environment || 'qa' }}\` |" >> $GITHUB_STEP_SUMMARY
           echo "| **Báo cáo Allure** | 👉 **[XEM BÁO CÁO TẠI ĐÂY](https://hieuit1.github.io/basecode-playwright-ts/)** |" >> $GITHUB_STEP_SUMMARY
+          echo "> Lưu ý: Nếu báo cáo chưa hiện ra ngay, hãy đợi 1-2 phút để GitHub Pages cập nhật." >> $GITHUB_STEP_SUMMARY
+
+      - name: Send Email with Allure Link
+        if: always() 
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "🚀 Kết quả Test Tự động - Môi trường ${{ github.event.client_payload.environment || github.event.inputs.environment || 'qa' }}"
+          body: |
+            Xin chào team,
+            
+            Hệ thống kiểm thử tự động Playwright vừa chạy xong.
+            
+            📌 THÔNG TIN CHI TIẾT:
+            - Môi trường test: ${{ github.event.client_payload.environment || github.event.inputs.environment || 'qa' }}
+            - Trạng thái: Hoàn tất
+            
+            📊 XEM BÁO CÁO TẠI ĐÂY (Allure Dashboard):
+            https://hieuit1.github.io/basecode-playwright-ts/
+            
+            ⚙️ Chi tiết tiến trình trên GitHub Actions:
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            
+            Trân trọng,
+            Hệ thống CI/CD Automation Bot
+          to: email-cua-ban@gmail.com, email-cua-sep@gmail.com
+          from: CI/CD Bot
