@@ -96,4 +96,4 @@ jobs:
           echo "| Hạng mục | Thông tin chi tiết |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           echo "| **Môi trường** | \`${{ github.event.inputs.environment || 'qa' }}\` |" >> $GITHUB_STEP_SUMMARY
-          echo "| **Báo cáo Allure** | 👉 **[XEM BÁO CÁO TẠI ĐÂY](https://<TEN_GITHUB_CUA_BAN>.github.io/<TEN_REPO>/)** |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Báo cáo Allure** | 👉 **[XEM BÁO CÁO TẠI ĐÂY](https://hieuit1.github.io/basecode-playwright-ts/)** |" >> $GITHUB_STEP_SUMMARY
