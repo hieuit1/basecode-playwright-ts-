@@ -1,0 +1,78 @@
+name: Core Automation CI Pipeline
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Chọn môi trường kiểm thử"
+        required: true
+        default: "qa"
+        type: choice
+        options: [dev, qa, staging]
+
+jobs:
+  execute-tests:
+    timeout-minutes: 45
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shardIndex: [1, 2, 3]
+        shardTotal: [3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          
+      - name: Install System Dependencies
+        run: npm ci
+        
+      - name: Deploy Managed Custom Browsers
+        run: npx playwright install --with-deps
+
+      - name: Execute Parallel Shard Testing
+        env:
+          ENV: ${{ github.event.inputs.environment || 'qa' }}
+        run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
+
+      - name: Preserve Allure Context Results
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-chunk-${{ matrix.shardIndex }}
+          path: allure-results
+          retention-days: 1
+
+  compile-and-publish-report:
+    if: ${{ !cancelled() }}
+    needs: [execute-tests]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          
+      - name: Merge Distributed Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: allure-results
+          pattern: allure-results-chunk-*
+          merge-multiple: true
+
+      - name: Generate Unified HTML Document
+        run: npx -y allure-commandline generate allure-results -o allure-report --clean
+
+      - name: Host Dashboard on GitHub Pages
+        if: github.event_name != 'pull_request'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./allure-report
