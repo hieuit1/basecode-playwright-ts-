@@ -137,12 +137,12 @@ jobs:
       - name: Publish Test Report Link
         if: github.event_name != 'pull_request'
         run: |
-          echo "## 📊 KẾT QUẢ KIỂM THỬ" >> $GITHUB_STEP_SUMMARY
+          echo "## 📊 KẾT QUẢ KIỂM THỬ TỰ ĐỘNG" >> $GITHUB_STEP_SUMMARY
           echo "| Hạng mục | Thông tin chi tiết |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           echo "| **Môi trường** | \`${{ github.event.client_payload.environment || github.event.inputs.environment || 'staging' }}\` |" >> $GITHUB_STEP_SUMMARY
           echo "| **Báo cáo Allure** | 👉 **[XEM BÁO CÁO TẠI ĐÂY](https://hieuit1.github.io/basecode-playwright-ts/)** |" >> $GITHUB_STEP_SUMMARY
-          echo "> Lưu ý: Nếu báo cáo chưa hiện ra ngay, hãy đợi 1-2 phút để GitHub Pages cập nhật." >> $GITHUB_STEP_SUMMARY
+          echo "> Lưu ý: Nếu click vào link mà vẫn hiện ra báo cáo cũ hoặc chưa hiện ra ngay, hãy đợi 1-2 phút để GitHub Pages cập nhật." >> $GITHUB_STEP_SUMMARY
 
       - name: Send Email with Allure Link
         if: always() 
@@ -152,23 +152,23 @@ jobs:
           server_port: 587
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: "🚀 Kết quả Test Tự động - Môi trường ${{ github.event.client_payload.environment || github.event.inputs.environment || 'staging' }}"
+          subject: "Kết quả Test Tự động - Môi trường ${{ github.event.client_payload.environment || github.event.inputs.environment || 'staging' }}"
           body: |
             Xin chào team,
             
             Hệ thống kiểm thử tự động Playwright vừa chạy xong.
             
-            📌 THÔNG TIN CHI TIẾT:
+            THÔNG TIN CHI TIẾT:
             - Môi trường test: ${{ github.event.client_payload.environment || github.event.inputs.environment || 'staging' }}
             - Trạng thái: Hoàn tất
             
-            📊 XEM BÁO CÁO TẠI ĐÂY (Allure Dashboard):
+            XEM BÁO CÁO TẠI ĐÂY (Allure Dashboard):
             https://hieuit1.github.io/basecode-playwright-ts/
             
-            ⚙️ Chi tiết tiến trình trên GitHub Actions:
+            Chi tiết tiến trình trên GitHub Actions:
             ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
             
             Trân trọng,
             Hệ thống CI/CD Automation Bot
-          to: bentakeu@gmail.com
+          to: bentakeu@gmail.com, [EMAIL_ADDRESS]
           from: CI/CD Bot
