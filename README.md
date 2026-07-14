@@ -10,7 +10,7 @@
 *   **Hỗ trợ Đa Môi Trường (Multi-environment configuration):** Tự động tải và áp dụng các cấu hình biến môi trường khác nhau (`dev`, `qa`, `staging`) thông qua các tệp cấu hình `.env.[môi_trường]`.
 *   **Lá chắn Chống Flaky nâng cao (Anti-Flaky Shield):** Chặn quảng cáo, mã theo dõi bên thứ ba tự động ở cấp độ mạng (Network level) và DOM.
 *   **Báo cáo Allure chuyên nghiệp (Allure Reports):** Tích hợp sẵn Allure report, hỗ trợ ghi nhận từng bước chạy chi tiết (`customStep`) và tự động chụp hình/quay phim khi lỗi xảy ra.
-*   **Sẵn sàng cho CI/CD (CI/CD Ready):** Tích hợp GitHub Actions mạnh mẽ, hỗ trợ chạy song song phân mảnh (Sharding), gửi email báo cáo kết quả và tự động tải báo cáo lên GitHub Pages.
+*   **Sẵn sàng cho CI/CD (CI/CD Ready):** Tích hợp GitHub Actions mạnh mẽ, hỗ trợ chạy song song phân mảnh (Sharding), gửi email báo cáo kết quả và tự động tải báo cáo lên GitHub Pages với các biến động động (Dynamic Variables).
 
 ---
 
@@ -19,27 +19,27 @@
 Cây thư mục của dự án được tổ chức khoa học để dễ dàng mở rộng và bảo trì:
 
 ```text
-playwright-boilerplate/
+basecode-playwright-ts/
 ├── .github/
 │   └── workflows/
-│       └── playwright-ci.yml   # Workflow GitHub Actions mẫu cho CI/CD (Dev, QA, Staging)
+│       └── playwright-ci.yml   # Workflow GitHub Actions chạy CI/CD (Dev, QA, Staging)
 ├── src/
 │   ├── config/
-│   │   ├── environment.ts      # Trình quản lý & cấu hình môi trường
+│   │   ├── environment.ts      # Trình quản lý & cấu hình môi trường (Placeholder)
 │   │   ├── .env-example.dev    # Cấu hình mẫu môi trường Development
 │   │   ├── .env-example.qa     # Cấu hình mẫu môi trường QA
 │   │   └── .env-example.staging# Cấu hình mẫu môi trường Staging
 │   ├── fixtures/
 │   │   └── baseTest.ts         # Khởi tạo Fixtures cốt lõi & cơ chế AdBlocker chặn quảng cáo
 │   ├── pages/
-│   │   └── BasePage.ts         # Lớp cơ sở (Abstract Class) chứa các tương tác UI dùng chung
+│   │   └── BasePage.ts         # Lớp cơ sở chứa các tương tác UI dùng chung
 │   ├── test-data/
-│   │   └── globalData.ts       # Nơi lưu trữ dữ liệu tĩnh toàn dự án
+│   │   └── globalData.ts       # Nơi lưu trữ dữ liệu tĩnh toàn dự án (Placeholder)
 │   └── utils/
 │       └── reportHelper.ts     # Trình trợ giúp tạo báo cáo Allure & tự động hóa screenshots
 ├── tests/
-│   └── smoke/
-│       └── healthCheck.spec.ts # Bộ kiểm thử kiểm tra độ ổn định của môi trường (Smoke Test)
+│   ├── BaseTest.ts             # Khởi tạo Test Suite dùng chung (Placeholder)
+│   └── example.spec.ts         # Kịch bản kiểm thử mẫu (Example Spec)
 ├── .env                        # Tệp môi trường chung ở thư mục gốc (nếu có)
 ├── .gitignore                  # Bỏ qua tệp tin không cần thiết và thông tin nhạy cảm
 ├── package.json                # Quản lý thư viện phụ thuộc và định nghĩa Scripts chạy test
@@ -52,13 +52,13 @@ playwright-boilerplate/
 
 Trước khi bắt đầu, hãy đảm bảo hệ thống của bạn đã cài đặt:
 
-*   **Node.js**: Phiên bản LTS khuyến nghị (từ `18.x.x` trở lên).
+*   **Node.js**: Phiên bản LTS khuyến nghị (từ `18.x.x` hoặc mới hơn).
 *   **NPM**: Trình quản lý gói đi kèm Node.js.
-*   **Java Development Kit (JDK)**: Phiên bản `8` trở lên (bắt buộc để chạy cục bộ báo cáo **Allure Report**).
+*   **Java Development Kit (JDK)**: Phiên bản `8` trở lên (bắt buộc để tạo và chạy cục bộ báo cáo **Allure Report**).
 
 ---
 
-## 🚀 Hướng Dẫn Cài Đặt & Cấu Hình (Local Setup)
+## 🚀 Hướng Dẫn Cài Đặt & Cấu Hợp (Local Setup)
 
 Hãy clone dự án về máy và thực thi các câu lệnh sau từ thư mục gốc của dự án:
 
@@ -174,38 +174,19 @@ Framework tích hợp sẵn trình báo cáo Allure Report với khả năng tù
 
 ---
 
-## Hướng Dẫn Tùy Chỉnh & Cấu Hình CI/CD (`playwright-ci.yml`)
+## Hướng Dẫn Cấu Hình CI/CD (`playwright-ci.yml`)
 
-Để tích hợp chính xác hệ thống CI/CD từ file [.github/workflows/playwright-ci.yml](./.github/workflows/playwright-ci.yml) vào kho mã nguồn (Repository) của bạn, bạn cần thay đổi một số thông tin cấu hình dưới đây:
+File cấu hình CI/CD [.github/workflows/playwright-ci.yml](./.github/workflows/playwright-ci.yml) được tối ưu hóa bằng cách sử dụng các biến động của GitHub để tự động phát hiện tên Repository và Chủ sở hữu (Owner). Điều này giúp bạn không cần phải sửa thủ công các link báo cáo Allure nữa!
 
-### 1. Cập nhật đường link báo cáo Allure (GitHub Pages)
-Mặc định, link báo cáo được cấu hình cứng với tài khoản cũ. Hãy thay thế link GitHub Pages của bạn tại các dòng sau trong file `playwright-ci.yml`:
-*   **Dòng 159 (Thông báo tóm tắt trên GitHub):**
-    ```yaml
-    # Thay đổi 'hieuit1/basecode-playwright-ts' thành '<username_cua_ban>/<ten_repo_cua_ban>'
-    echo "| **Báo cáo Allure** | 👉 **[XEM BÁO CÁO TẠI ĐÂY](https://<username_cua_ban>.github.io/<ten_repo_cua_ban>/)** |" >> $GITHUB_STEP_SUMMARY
-    ```
-*   **Dòng 181 (Nội dung Email báo cáo):**
-    ```yaml
-    # Thay đổi link xem báo cáo Allure trong nội dung email
-    https://<username_cua_ban>.github.io/<ten_repo_cua_ban>/
-    ```
+Để hoàn tất thiết lập CI/CD, bạn chỉ cần thực hiện các bước sau:
 
-### 2. Thay đổi Email nhận báo cáo
-*   **Dòng 188 (Địa chỉ email nhận kết quả):**
+### 1. Thay đổi Email nhận báo cáo (SMTP)
+*   **Dòng 188:** Thay đổi địa chỉ email nhận kết quả kiểm thử.
     ```yaml
-    # Đổi 'bentakeu@gmail.com' thành địa chỉ email của bạn hoặc của dự án
     to: email_cua_ban@gmail.com
     ```
 
-### 3. Cập nhật Tên dự án trong thông tin môi trường Allure
-*   **Dòng 133 (Tên hiển thị dự án trong Allure):**
-    ```yaml
-    # Đổi 'basecode-playwright-ts' thành tên dự án thực tế của bạn
-    Project: <ten_du_an_cua_ban>
-    ```
-
-### 4. Thiết lập GitHub Secrets & Variables (Quan trọng)
+### 2. Thiết lập GitHub Secrets & Variables (Quan trọng)
 Để gửi email và quản lý biến môi trường thành công, bạn cần cài đặt các thông số sau trên GitHub Repository:
 *   Vào **Settings** -> **Secrets and variables** -> **Actions** -> **Repository secrets** và thêm 2 Secrets:
     *   `EMAIL_USERNAME`: Địa chỉ Gmail dùng để gửi (ví dụ: `your-bot-mail@gmail.com`).
@@ -272,7 +253,7 @@ import { test, expect } from "../../fixtures/baseTest";
 // import { test, expect } from "@playwright/test";
 ```
 > [!IMPORTANT]
-> Lớp `baseTest.ts` chứa cơ chế ngăn chặn Flaky Test 2 lớp (cấp độ mạng và DOM), tự động chặn hoàn toàn các quảng cáo, iframe rác, và các đoạn mã theo dõi của bên thứ ba, từ đó giảm đáng kể thời gian chờ đợi vô ích và tăng tính ổn định của kịch bản kiểm thử lên mức tối đa.
+> Lớp [baseTest.ts](./src/fixtures/baseTest.ts) chứa cơ chế ngăn chặn Flaky Test 2 lớp (cấp độ mạng và DOM), tự động chặn hoàn toàn các quảng cáo, iframe rác, và các đoạn mã theo dõi của bên thứ ba, từ đó giảm đáng kể thời gian chờ đợi vô ích và tăng tính ổn định của kịch bản kiểm thử lên mức tối đa.
 
 ---
 *Chúc các bạn xây dựng những bộ kiểm thử tự động tin cậy và mượt mà!* 🚀
