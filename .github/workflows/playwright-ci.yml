@@ -20,7 +20,12 @@ on:
         required: true
         default: "@smoke"
         type: choice
-        options: ["@smoke", "@regression", "@e2e"]
+        options:
+          - "@smoke"
+          - "@regression"
+          - "@e2e"
+          - "@seo"
+          - "@performance"
 
   # Mở cổng nhận tín hiệu từ các Repository khác
   repository_dispatch:
@@ -164,7 +169,7 @@ jobs:
           echo "> * Link dự phòng sẽ hiển thị báo cáo của build trước đó và sẽ tự động cập nhật lên báo cáo mới nhất sau khoảng 5-10 phút khi quá trình update hoàn tất." >> $GITHUB_STEP_SUMMARY
 
       - name: Send Email with Allure Link
-        if: always() 
+        if: always() && github.event_name == 'schedule'
         uses: dawidd6/action-send-mail@v4
         with:
           server_address: smtp.gmail.com
@@ -182,7 +187,7 @@ jobs:
             - Trạng thái: Hoàn tất
             
             XEM BÁO CÁO TẠI ĐÂY (Allure Dashboard):
-            https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_number }}/index.html
+            https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
             
             Chi tiết tiến trình trên GitHub Actions:
             ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
