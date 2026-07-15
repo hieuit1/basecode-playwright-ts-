@@ -156,8 +156,12 @@ jobs:
           echo "| Hạng mục | Thông tin chi tiết |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           echo "| **Môi trường** | \`${{ github.event.client_payload.environment || github.event.inputs.environment || 'staging' }}\` |" >> $GITHUB_STEP_SUMMARY
-          echo "| **Báo cáo Allure** | 👉 **[XEM BÁO CÁO TẠI ĐÂY](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_number }}/index.html)** |" >> $GITHUB_STEP_SUMMARY
-          echo "> Lưu ý: Nếu click vào link mà vẫn chưa hiện ra hãy đợi 1-2 phút để GitHub Pages cập nhật." >> $GITHUB_STEP_SUMMARY
+          echo "| **Báo cáo Allure** | 👉 **[XEM BÁO CÁO MỚI NHẤT TẠI ĐÂY](<https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_number }}/index.html>)** |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Báo cáo Dự phòng** | 👉 **[XEM BÁO CÁO BUILD TRƯỚC ĐÓ (Link dự phòng)](<https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/>)** |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "> 💡 **Lưu ý:**" >> $GITHUB_STEP_SUMMARY
+          echo "> * Nếu click vào link báo cáo mới nhất mà chưa hiện ra (lỗi 404), hãy đợi 1-2 phút để GitHub Pages cập nhật." >> $GITHUB_STEP_SUMMARY
+          echo "> * Link dự phòng sẽ hiển thị báo cáo của build trước đó và sẽ tự động cập nhật lên báo cáo mới nhất sau khoảng 5-10 phút khi quá trình update hoàn tất." >> $GITHUB_STEP_SUMMARY
 
       - name: Send Email with Allure Link
         if: always() 
