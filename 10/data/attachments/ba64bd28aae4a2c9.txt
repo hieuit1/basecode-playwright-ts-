@@ -1,0 +1,96 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     77/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  90%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  22
+   ✅ Đạt:          17
+   ❌ Không đạt:    5
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (5/22):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 1/37)]
+      → Broken links: https://inuvgiare24h.vn/tin-tuc (status: 404)
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 6306ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 6306ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p style="font-size: 16px; line-height: 1.6; font-style: italic;">Trong xu hướng kiến trúc hiện đại, sự kết hợp giữa kỹ thuật in ấn đỉnh cao và nghệ thuật bài trí không gian đã mở ra những giải pháp đ...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p style="font-size: 16px; line-height: 1.6; font-style: italic;">Trong xu hướng kiến trúc hiện đại, sự kết hợp giữa kỹ thuật in ấn đỉnh cao và nghệ thuật bài trí không gian đã mở ra những giải pháp đ...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://inuvgiare24h.vn/gioi-thieu
+   3. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.143 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.143 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <section class="wrap-videogt py-2 py-lg-4">
+          - <p style="font-size: 16px; line-height: 1.6; font-style: italic;">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <section class="wrap-videogt py-2 py-lg-4"> | <p style="font-size: 16px; line-height: 1.6; font-style: italic;">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
+   4. [[💻 Desktop] LCP (Largest Contentful Paint): 3364ms (< 2500ms)]
+      → [💻 Desktop] LCP quá cao: 3364ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p style="font-size: 16px; line-height: 1.6; font-style: italic;">Trong xu hướng kiến trúc hiện đại, sự kết hợp giữa kỹ thuật in ấn đỉnh cao và nghệ thuật bài trí không gian đã mở ra những giải pháp đ...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p style="font-size: 16px; line-height: 1.6; font-style: italic;">Trong xu hướng kiến trúc hiện đại, sự kết hợp giữa kỹ thuật in ấn đỉnh cao và nghệ thuật bài trí không gian đã mở ra những giải pháp đ...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://inuvgiare24h.vn/gioi-thieu
+   5. [[💻 Desktop] CLS (Cumulative Layout Shift): 0.223 (< 0.1)]
+      → [💻 Desktop] CLS quá cao: 0.223 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <p style="font-size: 16px; line-height: 1.6;">Để hiểu rõ giá trị mà Phúc Sơn mang lại, trước hết cần nắm vững nguyên lý của công nghệ in UV. Khác với ...
+          - <h2 style="font-size: 20px; font-weight: bold; color: #b77345;">Khái niệm công nghệ in UV và In UV Phúc Sơn là gì?</h2>
+          - <p style="font-size: 16px; line-height: 1.6;">Quá trình hóa hóa học (trùng hợp quang học) này giúp mực bám chặt vào bề mặt, không bị nhòe, không loang...
+          - <section class="wrap-videogt py-2 py-lg-4">
+        <div class="container">
+            <a class="videogt-item scale-img aos-init aos-animate" href="h...
+          - <a class="videogt-item scale-img aos-init aos-animate" href="https://youtu.be/e72V3ZkApDw?si=SUTLx62B8-770sNa" target="_blank" rel="nofollow noopener"...
+          - <h3 class="name mb-0">Xưởng In UV giá rẻ 24h Quận 12</h3>
+          - <h3 class="name mb-0">Xưởng in UV giá rẻ 24h Quận Thủ Đức</h3>
+          - <h3 class="name mb-0">Xưởng In UV giá rẻ 24h Quận 9</h3>
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <p style="font-size: 16px; line-height: 1.6;">Để hiểu rõ giá trị mà Phúc Sơn mang lại, trước hết cần nắm vững nguyên lý của công nghệ in UV. Khác với ... | <h2 style="font-size: 20px; font-weight: bold; color: #b77345;">Khái niệm công nghệ in UV và In UV Phúc Sơn là gì?</h2> | <p style="font-size: 16px; line-height: 1.6;">Quá trình hóa hóa học (trùng hợp quang học) này giúp mực bám chặt vào bề mặt, không bị nhòe, không loang....
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

@@ -1,0 +1,1 @@
+Giao diện hiển thị bình thường, bố cục cân đối, các thành phần văn bản và hình ảnh không bị vỡ layout, tràn viền hay đè lên nhau một cách lỗi lõm. Các khoảng cách và căn chỉnh đều hợp lý.
