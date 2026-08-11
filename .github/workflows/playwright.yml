@@ -55,8 +55,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shardIndex: [1,2,3]
-        shardTotal: [3]
+        shardIndex: [1,2,3,4,5,6,7,8]
+        shardTotal: [8]
     
     steps:
       - name: Checkout Code
@@ -172,7 +172,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
       - name: Ensure gh-pages branch exists
         run: |
@@ -202,7 +202,7 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages-dir
-          fetch-depth: 1
+          fetch-depth: 0
 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
