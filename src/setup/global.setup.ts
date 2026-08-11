@@ -76,8 +76,6 @@ async function globalSetup(config: FullConfig) {
 
         if (parentName === '') continue;
 
-        // Lấy TẤT CẢ các thẻ <a> nằm bên trong BẤT KỲ thẻ <ul> nào thuộc về Group này
-        // Sử dụng :scope để đảm bảo chỉ tìm ul nằm BÊN TRONG thẻ li hiện tại (tránh bắt nhầm chính thẻ a của menu cha)
         const subItems = Array.from(li.querySelectorAll(':scope ul a'));
 
         if (subItems.length > 0) {
@@ -125,24 +123,24 @@ async function scanFrontendFeatures(baseUrl: string, browser: any) {
   try {
     const context = await browser.newContext();
     page = await context.newPage();
-    
+
     let scanUrl = baseUrl;
     if (scanUrl.endsWith('/')) {
-        scanUrl = scanUrl.slice(0, -1);
+      scanUrl = scanUrl.slice(0, -1);
     }
     const indexUrl = scanUrl.endsWith('.php') ? scanUrl : `${scanUrl}/index.php`;
 
     console.log(`Đang truy cập trang chủ: ${indexUrl}...`);
 
     try {
-        const response = await page.goto(indexUrl, { waitUntil: 'domcontentloaded' });
-        if (response && response.status() === 404) {
-            console.log(`[THÔNG BÁO] Không tìm thấy /index.php, chuyển hướng về link gốc...`);
-            await page.goto(`${scanUrl}/`, { waitUntil: 'domcontentloaded' });
-        }
-    } catch (error) {
-        console.log(`[THÔNG BÁO] Lỗi khi truy cập /index.php, thử lại link gốc...`);
+      const response = await page.goto(indexUrl, { waitUntil: 'domcontentloaded' });
+      if (response && response.status() === 404) {
+        console.log(`[THÔNG BÁO] Không tìm thấy /index.php, chuyển hướng về link gốc...`);
         await page.goto(`${scanUrl}/`, { waitUntil: 'domcontentloaded' });
+      }
+    } catch (error) {
+      console.log(`[THÔNG BÁO] Lỗi khi truy cập /index.php, thử lại link gốc...`);
+      await page.goto(`${scanUrl}/`, { waitUntil: 'domcontentloaded' });
     }
 
 

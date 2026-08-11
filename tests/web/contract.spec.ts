@@ -7,7 +7,7 @@ import { validAdminLoginData } from "../../data/admin/adminLoginData";
 import { TestHelper } from "../../src/utils/TestHelper";
 import { MenuHelper } from "../../src/utils/MenuHelper";
 
-test.use({ video: 'on' });
+// test.use({ video: 'on' });
 test.describe("Contract Feature Tests", () => {
     let contractPage: ContractPage;
 
@@ -105,10 +105,10 @@ test.describe("Contract Feature Tests", () => {
                 // Do Google reCAPTCHA v3 chặn các thao tác từ tool automation (Playwright) vì đánh giá điểm tin cậy thấp (< 0.5)
                 // Nên thay vì bắt buộc phải có thông báo thành công (div#alert), ta cho phép test pass 
                 // nếu server trả về thông báo lỗi "Gửi liên hệ không thành công" (chứng tỏ đã qua được frontend).
-                
+
                 const successLocator = contractPage.successMessage;
                 const recaptchaErrorLocator = page.locator("text=không thành công");
-                
+
                 try {
                     await expect(successLocator.or(recaptchaErrorLocator).first()).toBeVisible({ timeout: 10000 });
                 } catch (error) {
