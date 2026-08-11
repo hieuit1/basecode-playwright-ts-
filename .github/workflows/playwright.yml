@@ -212,6 +212,11 @@ jobs:
           gh_pages: gh-pages-dir
           keep_reports: 5
 
+      - name: Remove large files to bypass GitHub limit
+        run: |
+          echo "Dọn dẹp các file > 40MB để tránh bị GitHub block push..."
+          find allure-history -type f -size +40M -exec rm -f {} \;
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

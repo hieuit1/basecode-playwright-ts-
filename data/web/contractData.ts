@@ -1,10 +1,10 @@
 const timestamp = Date.now().toString();
 
 export const validContractData = {
-    fullname: `auto test `,
+    fullname: `auto test ${timestamp}`,
     phone: "0796625425",
     address: "123 Street, City",
-    email: `nguyenvan@gmail.com`,
+    email: `nguyenvan${timestamp}@gmail.com`,
     subject: "Test Subject",
     content: "This is a test content for the contract form."
 };
