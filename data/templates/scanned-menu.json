@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-08-11T07:56:37.944Z",
+  "baseUrl": "https://inuvgiare24h.vn/",
+  "menus": {
+    "Bảng điều khiển": [],
+    "Group Giới Thiệu": [
+      "Về chúng tôi",
+      "Đội ngũ của chúng tôi",
+      "Đối tác"
+    ],
+    "Quản lý Sản phẩm": [
+      "Danh mục cấp 1",
+      "Sản phẩm"
+    ],
+    "Quản lý Thư viện ảnh": [
+      "Thư viện ảnh"
+    ],
+    "Quản lý Dịch vụ": [
+      "Danh mục cấp 1",
+      "Danh mục cấp 2",
+      "Dịch vụ"
+    ],
+    "Quản lý bài viết": [
+      "BLOG",
+      "Dự án",
+      "Câu hỏi thường gặp",
+      "Tiêu chí",
+      "Văn hoá doanh nghiệp",
+      "Chính sách",
+      "Hệ thống xưởng in"
+    ],
+    "Quản lý tags": [
+      "Tags dịch vụ"
+    ],
+    "Quản lý nhận tin": [
+      "Đăng ký nhận tin",
+      "Đăng ký tư vấn"
+    ],
+    "Quản lý trang tĩnh": [
+      "Slogan",
+      "Liên hệ",
+      "Footer",
+      "Copyright"
+    ],
+    "Quản lý hình ảnh - video": [
+      "Favicon (.ico GG rất thích)",
+      "Logo",
+      "Logo footer",
+      "Banner faq",
+      "Video Giới thiệu",
+      "Slideshow"
+    ]
+  }
+}

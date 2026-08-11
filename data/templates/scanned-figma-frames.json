@@ -1,0 +1,204 @@
+{
+  "timestamp": "2026-08-11T03:30:34.334Z",
+  "fileKey": "e8wx7q7vdDT39GVsLCmRmi",
+  "frames": [
+    {
+      "id": "2:141",
+      "name": "trangchu",
+      "page": "Page 1",
+      "y": 939,
+      "height": 5888,
+      "topLevelFrame": "trangchu",
+      "type": "FRAME"
+    },
+    {
+      "id": "62:1056",
+      "name": "Group 1000005939",
+      "page": "Page 1",
+      "y": 3867,
+      "height": 530,
+      "topLevelFrame": "Group 1000005939",
+      "type": "GROUP"
+    },
+    {
+      "id": "62:1066",
+      "name": "Group 1000005940",
+      "page": "Page 1",
+      "y": 3867,
+      "height": 530,
+      "topLevelFrame": "Group 1000005940",
+      "type": "GROUP"
+    },
+    {
+      "id": "62:1016",
+      "name": "Frame 1000006005",
+      "page": "Page 1",
+      "y": 3508,
+      "height": 98,
+      "topLevelFrame": "Frame 1000006005",
+      "type": "FRAME"
+    },
+    {
+      "id": "62:1017",
+      "name": "Frame 1000006004",
+      "page": "Page 1",
+      "y": 3508,
+      "height": 98,
+      "topLevelFrame": "Frame 1000006004",
+      "type": "FRAME"
+    },
+    {
+      "id": "62:1018",
+      "name": "Group 1000005938",
+      "page": "Page 1",
+      "y": 3282,
+      "height": 400,
+      "topLevelFrame": "Group 1000005938",
+      "type": "GROUP"
+    },
+    {
+      "id": "62:1028",
+      "name": "Group 1000005940",
+      "page": "Page 1",
+      "y": 3282,
+      "height": 400,
+      "topLevelFrame": "Group 1000005940",
+      "type": "GROUP"
+    },
+    {
+      "id": "62:1037",
+      "name": "Group 1000005939",
+      "page": "Page 1",
+      "y": 3282,
+      "height": 400,
+      "topLevelFrame": "Group 1000005939",
+      "type": "GROUP"
+    },
+    {
+      "id": "47:1143",
+      "name": "Rectangle 1055",
+      "page": "Page 1",
+      "y": 1507,
+      "height": 179,
+      "topLevelFrame": "Rectangle 1055",
+      "type": "COMPONENT"
+    },
+    {
+      "id": "26:1632",
+      "name": "gioithieu",
+      "page": "Page 1",
+      "y": 939,
+      "height": 3882,
+      "topLevelFrame": "gioithieu",
+      "type": "FRAME"
+    },
+    {
+      "id": "38:1032",
+      "name": "dichvu",
+      "page": "Page 1",
+      "y": 939,
+      "height": 2273,
+      "topLevelFrame": "dichvu",
+      "type": "FRAME"
+    },
+    {
+      "id": "44:756",
+      "name": "Frame 1000006003",
+      "page": "Page 1",
+      "y": -810,
+      "height": 1215,
+      "topLevelFrame": "Frame 1000006003",
+      "type": "FRAME"
+    },
+    {
+      "id": "44:827",
+      "name": "chitiet",
+      "page": "Page 1",
+      "y": 939,
+      "height": 1967,
+      "topLevelFrame": "chitiet",
+      "type": "FRAME"
+    },
+    {
+      "id": "26:1407",
+      "name": "footer",
+      "page": "Page 1",
+      "y": 10192,
+      "height": 378,
+      "topLevelFrame": "footer",
+      "type": "COMPONENT"
+    },
+    {
+      "id": "26:703",
+      "name": "Rectangle 1048",
+      "page": "Page 1",
+      "y": 5292,
+      "height": 112,
+      "topLevelFrame": "Rectangle 1048",
+      "type": "COMPONENT"
+    },
+    {
+      "id": "26:675",
+      "name": "Component 23",
+      "page": "Page 1",
+      "y": 4772,
+      "height": 360,
+      "topLevelFrame": "Component 23",
+      "type": "COMPONENT"
+    },
+    {
+      "id": "21:530",
+      "name": "Component 16",
+      "page": "Page 1",
+      "y": 3771,
+      "height": 331,
+      "topLevelFrame": "Component 16",
+      "type": "COMPONENT"
+    },
+    {
+      "id": "21:470",
+      "name": "Rectangle 1037",
+      "page": "Page 1",
+      "y": 4197,
+      "height": 400,
+      "topLevelFrame": "Rectangle 1037",
+      "type": "COMPONENT"
+    },
+    {
+      "id": "19:209",
+      "name": "Component 6",
+      "page": "Page 1",
+      "y": 2700,
+      "height": 395,
+      "topLevelFrame": "Component 6",
+      "type": "COMPONENT"
+    },
+    {
+      "id": "19:176",
+      "name": "Component 1",
+      "page": "Page 1",
+      "y": 2063,
+      "height": 450,
+      "topLevelFrame": "Component 1",
+      "type": "COMPONENT"
+    },
+    {
+      "id": "2:927",
+      "name": "menu",
+      "page": "Page 1",
+      "y": 639,
+      "height": 179,
+      "topLevelFrame": "menu",
+      "type": "COMPONENT"
+    },
+    {
+      "id": "3:121",
+      "name": "Frame 39",
+      "page": "Page 1",
+      "y": 192,
+      "height": 217,
+      "topLevelFrame": "Frame 39",
+      "type": "FRAME"
+    }
+  ]
+}
