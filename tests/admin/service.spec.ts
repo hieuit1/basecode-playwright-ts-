@@ -5,7 +5,7 @@ import { validServiceData, invalidServiceCases } from "../../data/admin/serviceD
 import { TestHelper } from "../../src/utils/TestHelper";
 import { MenuHelper } from "../../src/utils/MenuHelper";
 
-test.use({ video: 'on' });
+test.use({ video: 'retain-on-failure' });
 
 if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Dịch vụ00', 'Service00'])) {
     test.describe("Service Management Tests", () => {

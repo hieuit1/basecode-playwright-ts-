@@ -5,7 +5,7 @@ import { invalidSearchCases } from "../../data/web/searchData";
 import { TestHelper } from "../../src/utils/TestHelper";
 import { FeatureHelper } from "../../src/utils/FeatureHelper";
 
-test.use({ video: 'on' });
+test.use({ video: 'retain-on-failure' });
 if (FeatureHelper.hasSearchFeature()) {
     test.describe("Search Feature Tests", () => {
         let homePage: HomePage;

@@ -4,8 +4,7 @@ import { ServiceCategory1Page } from "../../src/pages/admin/ServiceCategory1Page
 import { validServiceCategory1Data, invalidServiceCategory1Cases } from "../../data/admin/serviceCategory1Data";
 import { TestHelper } from "../../src/utils/TestHelper";
 import { MenuHelper } from "../../src/utils/MenuHelper";
-
-test.use({ video: 'on' });
+test.use({ video: 'retain-on-failure' });
 
 if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Danh mục cấp 1'])) {
     test.describe("Service Category 1 Management Tests", () => {

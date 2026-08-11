@@ -4,8 +4,7 @@ import { TechDocPage } from "../../src/pages/admin/TechDocPage";
 import { validTechDocData, invalidTechDocCases } from "../../data/admin/techDocData";
 import { TestHelper } from "../../src/utils/TestHelper";
 import { MenuHelper } from "../../src/utils/MenuHelper";
-
-test.use({ video: 'on' });
+test.use({ video: 'retain-on-failure' });
 
 if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['Tài liệu kỹ thuật', 'Tech Doc', 'Tài liệu', 'Hồ sơ năng lực'])) {
     test.describe("Technical Document Management Tests", () => {

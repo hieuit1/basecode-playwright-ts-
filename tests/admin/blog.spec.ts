@@ -5,7 +5,7 @@ import { validBlogData, invalidBlogCases } from "../../data/admin/blogData";
 import { TestHelper } from "../../src/utils/TestHelper";
 import { MenuHelper } from "../../src/utils/MenuHelper";
 
-test.use({ video: 'on' });
+test.use({ video: 'retain-on-failure' });
 
 if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['BLOG', 'Blog'])) {
     test.describe("Blog Management Tests", () => {

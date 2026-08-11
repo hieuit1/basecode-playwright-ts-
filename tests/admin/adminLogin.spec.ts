@@ -3,7 +3,7 @@ import { allure } from "allure-playwright";
 import { AdminLoginPage } from "../../src/pages/admin/AdminLoginPage";
 import { invalidAdminLoginCases, validAdminLoginData } from "../../data/admin/adminLoginData";
 
-test.use({ video: 'on' });
+test.use({ video: 'retain-on-failure' });
 test.describe("Admin Login Feature Tests", () => {
     let adminLoginPage: AdminLoginPage;
 

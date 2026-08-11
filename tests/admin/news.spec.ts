@@ -5,7 +5,7 @@ import { validNewsData, invalidNewsCases } from "../../data/admin/newsData";
 import { TestHelper } from "../../src/utils/TestHelper";
 import { MenuHelper } from "../../src/utils/MenuHelper";
 
-test.use({ video: 'on' });
+test.use({ video: 'retain-on-failure' });
 
 // Chỉ định nghĩa và chạy Test nếu có ít nhất 1 menu khớp với các Alias sau
 if (MenuHelper.hasSubMenu(['Quản lý bài viết'], ['Tin tức', 'Bài viết'])) {

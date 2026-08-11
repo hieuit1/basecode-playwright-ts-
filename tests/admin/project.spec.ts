@@ -5,7 +5,7 @@ import { validProjectData, invalidProjectCases } from "../../data/admin/projectD
 import { TestHelper } from "../../src/utils/TestHelper";
 import { MenuHelper } from "../../src/utils/MenuHelper";
 
-test.use({ video: 'on' });
+test.use({ video: 'retain-on-failure' });
 
 if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['Dự án', 'Project', 'Công trình'])) {
     test.describe("Project Management Tests", () => {
