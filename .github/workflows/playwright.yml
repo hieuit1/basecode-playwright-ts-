@@ -55,8 +55,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shardIndex: [1,2,3,4,5,6,7,8]
-        shardTotal: [8]
+        shardIndex: [1,2,3,4,5]
+        shardTotal: [5]
     
     steps:
       - name: Checkout Code
@@ -212,10 +212,12 @@ jobs:
           gh_pages: gh-pages-dir
           keep_reports: 5
 
-      - name: Remove large files to bypass GitHub limit
+      - name: Clean up large files before deploy
         run: |
-          echo "Dọn dẹp các file > 40MB để tránh bị GitHub block push..."
-          find allure-history -type f -size +40M -exec rm -f {} \;
+          echo "🧹 Removing trace files, videos, and large attachments..."
+          find allure-history -type f \( -name "*.zip" -o -name "*.webm" -o -name "*.trace" \) -delete 2>/dev/null || true
+          find allure-history -type f -size +10M -delete 2>/dev/null || true
+          echo "📦 Total report size: $(du -sh allure-history | cut -f1)"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
