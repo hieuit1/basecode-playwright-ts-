@@ -214,12 +214,24 @@ jobs:
 
       - name: Clean up large files before deploy
         run: |
-          echo "🧹 Removing trace files, videos, and large attachments..."
-          find allure-history -type f \( -name "*.zip" -o -name "*.webm" -o -name "*.trace" \) -delete 2>/dev/null || true
-          find allure-history -type f -size +50M -delete 2>/dev/null || true
+          echo "🧹 Removing all attachment files from Allure report..."
+          
+          # Xoá toàn bộ thư mục attachments (chứa trace, video, screenshot lớn)
+          find allure-history -type d -name "attachments" -exec rm -rf {} + 2>/dev/null
+          
+          # Xoá thêm bất kỳ file nào > 50MB còn sót
+          find allure-history -type f -size +50M -exec rm -vf {} \;
+          
+          # Kiểm tra - FAIL nếu vẫn còn file > 90MB
+          LARGE=$(find allure-history -type f -size +90M 2>/dev/null)
+          if [ -n "$LARGE" ]; then
+            echo "❌ ERROR: Files > 90MB still exist:"
+            echo "$LARGE" | head -20
+            exit 1
+          fi
+          
+          echo "✅ Cleanup done"
           echo "📦 Total report size: $(du -sh allure-history | cut -f1)"
-          echo "📋 Largest files remaining:"
-          find allure-history -type f -size +5M -exec ls -lh {} \; 2>/dev/null | sort -k5 -h | tail -10
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

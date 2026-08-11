@@ -23,7 +23,7 @@ export default defineConfig({
         headless: process.env.CI ? true : false,
         screenshot: "only-on-failure",
         // video: "on",
-        trace: "retain-on-failure",
+        trace: process.env.CI ? "off" : "retain-on-failure",
     },
     reporter: [
         ["html"],
