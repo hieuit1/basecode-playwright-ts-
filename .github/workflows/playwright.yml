@@ -217,10 +217,10 @@ jobs:
           echo "🧹 Removing all attachment files from Allure report..."
           
           # Xoá toàn bộ thư mục attachments (chứa trace, video, screenshot lớn)
-          find allure-history -type d -name "attachments" -exec rm -rf {} + 2>/dev/null
+          find allure-history -type d -name "attachments" -exec rm -rf {} + 2>/dev/null || true
           
           # Xoá thêm bất kỳ file nào > 50MB còn sót
-          find allure-history -type f -size +50M -exec rm -vf {} \;
+          find allure-history -type f -size +50M -exec rm -vf {} \; || true
           
           # Kiểm tra - FAIL nếu vẫn còn file > 90MB
           LARGE=$(find allure-history -type f -size +90M 2>/dev/null)
