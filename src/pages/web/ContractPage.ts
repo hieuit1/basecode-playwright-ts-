@@ -41,14 +41,12 @@ export class ContractPage extends BasePage {
     // Điền dữ liệu vào form liên hệ
     async fillContactForm(fullname: string, phone: string, address: string, email: string, subject: string, content: string) {
         await test.step(`Điền thông tin liên hệ: ${fullname}`, async () => {
-            // Sử dụng pressSequentially thay vì fill() để mô phỏng người thật gõ phím
-            // Google reCAPTCHA v3 chấm điểm hành vi, nếu điền bằng fill() quá nhanh (vài ms) nó sẽ phát hiện là Bot và đánh điểm cực thấp
-            if (fullname) { await this.fullnameInput.clear(); await this.fullnameInput.pressSequentially(fullname, { delay: 50 }); }
-            if (phone) { await this.phoneInput.clear(); await this.phoneInput.pressSequentially(phone, { delay: 50 }); }
-            if (address) { await this.addressInput.clear(); await this.addressInput.pressSequentially(address, { delay: 50 }); }
-            if (email) { await this.emailInput.clear(); await this.emailInput.pressSequentially(email, { delay: 50 }); }
-            if (subject) { await this.subjectInput.clear(); await this.subjectInput.pressSequentially(subject, { delay: 50 }); }
-            if (content) { await this.contentTextarea.clear(); await this.contentTextarea.pressSequentially(content, { delay: 50 }); }
+            if (fullname) { await this.fullnameInput.fill(fullname); }
+            if (phone) { await this.phoneInput.fill(phone); }
+            if (address) { await this.addressInput.fill(address); }
+            if (email) { await this.emailInput.fill(email); }
+            if (subject) { await this.subjectInput.fill(subject); }
+            if (content) { await this.contentTextarea.fill(content); }
         });
     }
 

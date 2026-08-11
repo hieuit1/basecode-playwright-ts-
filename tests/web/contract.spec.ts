@@ -7,7 +7,7 @@ import { validAdminLoginData } from "../../data/admin/adminLoginData";
 import { TestHelper } from "../../src/utils/TestHelper";
 import { MenuHelper } from "../../src/utils/MenuHelper";
 
-// test.use({ video: 'on' });
+test.use({ video: 'on' });
 test.describe("Contract Feature Tests", () => {
     let contractPage: ContractPage;
 
