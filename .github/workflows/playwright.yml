@@ -76,13 +76,13 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chrome webkit
 
-      - name: Generate UI test data from Figma
-        env:
-          UI_TEST_FIGMA_TOKEN: ${{ secrets.UI_TEST_FIGMA_TOKEN }}
-          UI_TEST_FIGMA_FILE_KEY: ${{ vars.UI_TEST_FIGMA_FILE_KEY }}
-        run: |
-          echo -e "\e[36m[INFO] Generating UI test data from Figma...\e[0m"
-          npm run generate-ui
+      # - name: Generate UI test data from Figma
+      #   env:
+      #     UI_TEST_FIGMA_TOKEN: ${{ secrets.UI_TEST_FIGMA_TOKEN }}
+      #     UI_TEST_FIGMA_FILE_KEY: ${{ vars.UI_TEST_FIGMA_FILE_KEY }}
+      #   run: |
+      #     echo -e "\e[36m[INFO] Generating UI test data from Figma...\e[0m"
+      #     npm run generate-ui
           
       - name: Generate SEO test data
         run: |
