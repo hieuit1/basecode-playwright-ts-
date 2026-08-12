@@ -92,11 +92,11 @@ export class ContractPage extends BasePage {
     async clickSend() {
         await test.step("Bấm nút Gửi", async () => {
             // Đợi 2.5 giây để mô phỏng người dùng đọc lại form và chờ reCAPTCHA load token ngầm xong
-            await this.page.waitForTimeout(2500);
+            await this.page.waitForTimeout(3000);
 
             // Từ từ rê chuột vào nút Gửi giống người thật
             await this.sendButton.hover({ force: true });
-            await this.page.waitForTimeout(500); // Khựng lại nửa giây trước khi bấm
+            await this.page.waitForTimeout(1000); // Khựng lại nửa giây trước khi bấm
 
             // Bỏ disabled (nếu web set cứng) và click
             await this.sendButton.evaluate((node) => node.removeAttribute('disabled')).catch(() => { });
