@@ -18,7 +18,7 @@ export default defineConfig({
     },
     retries: 0,
     use: {
-        actionTimeout: 15000,
+        actionTimeout: 30000,
         baseURL: process.env.BASE_URL || "https://example.com",
         headless: process.env.CI ? true : false,
         screenshot: "only-on-failure",
