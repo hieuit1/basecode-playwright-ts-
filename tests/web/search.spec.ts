@@ -134,7 +134,7 @@ if (FeatureHelper.hasSearchFeature()) {
 
                             if (shouldCheckZeroProducts) {
                                 await page.waitForLoadState('domcontentloaded').catch(() => { });
-                                await TestHelper.delay(page, 1000);
+                                await TestHelper.delay(page, 2000);
 
                                 const products = homePage.getProductElementsOnPage();
                                 const productCount = await products.count();
