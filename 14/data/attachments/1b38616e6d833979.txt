@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  95%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 1/32)]
+      → Broken links: https://inuvgiare24h.vn/xuong-in (status: 0)

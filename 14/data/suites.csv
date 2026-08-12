@@ -1,0 +1,282 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","15979","Kiểm tra SEO Onpage: Báo Giá In UV 3M Khổ Lớn Mới Nhất 2026 – Các Yếu Tố Cấu Thành Giá (/bao-gia-in-uv-3m-kho-lon-moi-nhat-2026-cac-yeu-to-cau-thanh-gia)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","8574","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-12","passed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"","193300","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-08-12","failed","2026-08-12","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","46280","Kiểm tra SEO Onpage: In UV Khổ Lớn Không Ghép (/in-uv-kho-lon-khong-ghep)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","9495","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-12","passed","2026-08-12","Search Feature Tests","web/search.spec.ts","",""
+"","4280","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-12","passed","2026-08-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","18869","Add blog should fail with không nhập tiêu đề","Desktop Chrome","2026-08-12","passed","2026-08-12","Blog Management Tests","admin/blog.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","13213","Kiểm tra SEO Onpage: Phản quang (/phan-quang-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","4519","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-12","passed","2026-08-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","14615","Kiểm tra SEO Onpage: Standee (/standee)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","13333","Kiểm tra SEO Onpage: Decal Blacklit film (/decal-blacklit-film)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","15544","Kiểm tra SEO Onpage: Phân Tích Vật Liệu 3M Và Vật Liệu Thường (/phan-tich-vat-lieu-3m-va-vat-lieu-thuong-9405)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","8614","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-12","passed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"","5878","Add Service Category 1 successfully and verify on website","Desktop Chrome","2026-08-12","failed","2026-08-12","Service Category 1 Management Tests","admin/serviceCategory1.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10419","Kiểm tra SEO Onpage: Ngoài trời (/ngoai-troi-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","15748","Kiểm tra SEO Onpage: Bản in sắc nét 1440dpi (/ban-in-sac-net-1440dpi)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","10495","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-12","failed","2026-08-12","Search Feature Tests","web/search.spec.ts","",""
+"","440","[trangchu] [Toàn bộ trang] So sánh Figma ↔ Web","Desktop Chrome","2026-08-12","skipped","2026-08-12","Desktop UI Visual Tests","ui/uiDesktopVisual.spec.ts","",""
+"","16911","Add project should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-12","passed","2026-08-12","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","13601","Kiểm tra SEO Onpage: Có sẵn kho (/co-san-kho-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","4142","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-12","passed","2026-08-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11898","Kiểm tra SEO Onpage: Điều khoản sử dụng (/dieu-khoan-su-dung)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 19/22 tiêu chí | Ngưỡng: 95%
+
+TỐT","48511","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","12032","Kiểm tra SEO Onpage: In Trần Xuyên Sáng (/in-tran-xuyen-sang)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","15993","Kiểm tra SEO Onpage: Điểm Danh Vật Liệu 3M Và Vật Liệu Thường (/diem-danh-vat-lieu-3m-va-vat-lieu-thuong-9408)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 95%
+
+TỐT","12051","Kiểm tra SEO Onpage: Vải Simili (/vai-simili)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 73/100 | Đạt: 16/22 tiêu chí | Ngưỡng: 95%
+
+KHÁ","48001","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","19021","Kiểm tra SEO Onpage: Kỹ thuật viên 10 năm KN (/ky-thuat-vien-10-nam-kn)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11231","Kiểm tra SEO Onpage: https://inuvgiare24h.vn/tags (/tags-dich-vu)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","16958","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-08-12","passed","2026-08-12","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10442","Kiểm tra SEO Onpage: Xuyên sáng (/xuyen-sang-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11943","Kiểm tra SEO Onpage: Giá sỉ theo cuộn (/gia-si-theo-cuon-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","28774","Submit form successfully with valid data","Desktop Chrome","2026-08-12","failed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11546","Kiểm tra SEO Onpage: Cán mờ (/can-mo-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","10504","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-12","passed","2026-08-12","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10374","Kiểm tra SEO Onpage: Thi công tận nơi (/thi-cong-tan-noi)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10984","Kiểm tra SEO Onpage: Chống UV (/chong-uv-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","17122","Add Service Category 1 should fail with không nhập tiêu đề","Desktop Chrome","2026-08-12","passed","2026-08-12","Service Category 1 Management Tests","admin/serviceCategory1.spec.ts","",""
+"","33272","[gioithieu] [Toàn bộ trang] Đánh giá trên Mobile","Mobile","2026-08-12","failed","2026-08-12","Mobile UI Tests","ui/uiMobile.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","19243","Kiểm tra SEO Onpage: Bạt 3M (/bat-3m)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","7642","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-12","passed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","13296","Kiểm tra SEO Onpage: Vải Canvas (/vai-canvas)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","13422","Kiểm tra SEO Onpage: Bạt Không Gân (/bat-khong-gan)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","8873","Submit form should fail with bỏ trống họ tên","Desktop Chrome","2026-08-12","passed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10647","Kiểm tra SEO Onpage: Khổ lớn (/kho-lon-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","54445","Kiểm tra SEO Onpage: Xưởng In UV giá rẻ 24h Quận 9 (/he-thong-xuong-in-2)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11256","Kiểm tra SEO Onpage: Vật liệu 3M chính hãng (/vat-lieu-3m-chinh-hang)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","10230","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-12","failed","2026-08-12","Search Feature Tests","web/search.spec.ts","",""
+"","4178","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-12","passed","2026-08-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10178","Kiểm tra SEO Onpage: Banner (/banner-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","17396","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-12","passed","2026-08-12","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11351","Kiểm tra SEO Onpage: Bảo hành dài hạn (/bao-hanh-dai-han-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","18494","Kiểm tra SEO Onpage: In Công Nghệ Epson Nhật Mực Nước Giấy Ảnh (/in-cong-nghe-epson-nhat-muc-nuoc-giay-anh)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","8650","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-12","passed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"","8893","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-12","passed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 82/100 | Đạt: 18/22 tiêu chí | Ngưỡng: 95%
+
+TỐT","132275","Kiểm tra SEO Onpage: Backdrop (/backdrop)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","14185","Kiểm tra SEO Onpage: Bàn giao trong 24h (/ban-giao-trong-24h)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11600","Kiểm tra SEO Onpage: Đục lỗ khoen (/duc-lo-khoen-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10500","Kiểm tra SEO Onpage: Giao nhanh (/giao-nhanh-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","140139","Bulk insert 35 blogs via Copy and verify Load More on website","Desktop Chrome","2026-08-12","passed","2026-08-12","Blog Management Tests","admin/blog.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","14123","Kiểm tra SEO Onpage: So Sánh Vật Liệu 3M Và Vật Liệu Thường (/so-sanh-vat-lieu-3m-va-vat-lieu-thuong-9401)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10548","Kiểm tra SEO Onpage: Đặt theo yêu cầu (/dat-theo-yeu-cau-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","13070","Kiểm tra SEO Onpage: Bạt Hiflex Mặt Trắng (/bat-hiflex-mat-trang)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10260","Kiểm tra SEO Onpage: Miễn phí ship (/mien-phi-ship-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11002","Kiểm tra SEO Onpage: Mực UV (/muc-uv-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11266","Kiểm tra SEO Onpage: Dán kính (/dan-kinh-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 91/100 | Đạt: 20/22 tiêu chí | Ngưỡng: 95%
+
+TỐT","151935","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10705","Kiểm tra SEO Onpage: Biển hiệu (/bien-hieu-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11011","Kiểm tra SEO Onpage: Bạt (/bat)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","70697","Add project successfully and verify on website","Desktop Chrome","2026-08-12","passed","2026-08-12","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","13166","Kiểm tra SEO Onpage: Giải Đáp Vật Liệu 3M Và Vật Liệu Thường (/giai-dap-vat-lieu-3m-va-vat-lieu-thuong-9404)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","15532","Kiểm tra SEO Onpage: Tổng Hợp Vật Liệu 3M Và Vật Liệu Thường (/tong-hop-vat-lieu-3m-va-vat-lieu-thuong-9402)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","304669","Bulk insert 35 projects via Copy and verify Load More on website","Desktop Chrome","2026-08-12","failed","2026-08-12","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","12773","Kiểm tra SEO Onpage: In 2 mặt (/in-2-mat-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11418","Kiểm tra SEO Onpage: Đạt chuẩn 3M (/dat-chuan-3m-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","26093","[trangchu] [Toàn bộ trang] Đánh giá trên Mobile","Mobile","2026-08-12","passed","2026-08-12","Mobile UI Tests","ui/uiMobile.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11417","Kiểm tra SEO Onpage: Cán bóng (/can-bong-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11836","Kiểm tra SEO Onpage: https://inuvgiare24h.vn/tags (/tags-san-pham)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11608","Kiểm tra SEO Onpage: Bế nổi (/be-noi-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","8779","Submit form should fail with tấn công XSS","Desktop Chrome","2026-08-12","passed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"","23367","[dichvu] [Toàn bộ trang] Đánh giá trên Mobile","Mobile","2026-08-12","failed","2026-08-12","Mobile UI Tests","ui/uiMobile.spec.ts","",""
+"","285","[dichvu] [Toàn bộ trang] So sánh Figma ↔ Web","Desktop Chrome","2026-08-12","skipped","2026-08-12","Desktop UI Visual Tests","ui/uiDesktopVisual.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","57636","Kiểm tra SEO Onpage: Hỗ trợ 24/7 (/ho-tro-24-7)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","8793","Submit form should fail with nhập toàn khoảng trắng","Desktop Chrome","2026-08-12","passed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"","284","[gioithieu] [Toàn bộ trang] So sánh Figma ↔ Web","Desktop Chrome","2026-08-12","skipped","2026-08-12","Desktop UI Visual Tests","ui/uiDesktopVisual.spec.ts","",""
+"","6835","Login successfully with valid credentials","Desktop Chrome","2026-08-12","passed","2026-08-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","19419","Kiểm tra SEO Onpage: Bạt 2 Da (/bat-2-da)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 82/100 | Đạt: 18/22 tiêu chí | Ngưỡng: 95%
+
+TỐT","67682","Kiểm tra SEO Onpage: Bảng Led (/bang-led)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","12747","Kiểm tra SEO Onpage: Decal Trắng Sữa (/decal-trang-sua)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","41936","Add product successfully and verify on website","Desktop Chrome","2026-08-12","failed","2026-08-12","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","44727","Kiểm tra SEO Onpage: Xưởng In UV giá rẻ 24h Quận 7 (/xuong-in-uv-gia-re-24h-quan-7)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","19255","Kiểm tra SEO Onpage: Đánh Giá Vật Liệu 3M Và Vật Liệu Thường (/danh-gia-vat-lieu-3m-va-vat-lieu-thuong-9406)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","4485","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-12","passed","2026-08-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","14613","Kiểm tra SEO Onpage: Cập Nhật Vật Liệu 3M Và Vật Liệu Thường (/cap-nhat-vat-lieu-3m-va-vat-lieu-thuong-9403)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11345","Kiểm tra SEO Onpage: Chính sách bảo hành (/chinh-sach-bao-hanh)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","40353","Kiểm tra SEO Onpage: Test Dịch vụ cấp 1 1786501395741 (/test-dich-vu-cap-1-1786501395741)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10281","Kiểm tra SEO Onpage: Trong nhà (/trong-nha-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","12650","Kiểm tra SEO Onpage: Standee (/standee-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 19/22 tiêu chí | Ngưỡng: 95%
+
+TỐT","148362","Kiểm tra SEO Onpage: Notification (/index.php)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","14967","Kiểm tra SEO Onpage: Decal Phản Quang, Dạ Quang (/decal-phan-quang-da-quang)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","14433","Kiểm tra SEO Onpage: Decal Trong (/decal-trong)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","16072","Kiểm tra SEO Onpage: Giao hàng toàn quốc (/giao-hang-toan-quoc)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","61532","Add blog successfully and verify on website","Desktop Chrome","2026-08-12","passed","2026-08-12","Blog Management Tests","admin/blog.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","14217","Kiểm tra SEO Onpage: Bền màu 5 năm (/ben-mau-5-nam-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11077","Kiểm tra SEO Onpage: Decal (/decal-3m-cao-cap)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","17421","Kiểm tra SEO Onpage: Chia Sẻ Vật Liệu 3M Và Vật Liệu Thường (/chia-se-vat-lieu-3m-va-vat-lieu-thuong-9407)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","17667","Kiểm tra SEO Onpage: Quy Trình Gia Công In UV Trên Mica Đạt Chuẩn Sắc Nét Tại Xưởng (/quy-trinh-gia-cong-in-uv-tren-mica-dat-chuan-sac-net-tai-xuong)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11110","Kiểm tra SEO Onpage: Khổ 1.52m (/kho-1-52m-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11089","Kiểm tra SEO Onpage: Poster (/poster-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","15572","Kiểm tra SEO Onpage: Cắt bế Logo Tem Nhãn (/cat-be-logo-tem-nhan)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 82/100 | Đạt: 18/22 tiêu chí | Ngưỡng: 95%
+
+TỐT","49399","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","16730","Add Service Category 1 should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-12","passed","2026-08-12","Service Category 1 Management Tests","admin/serviceCategory1.spec.ts","",""
+"","19637","Add blog should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-12","passed","2026-08-12","Blog Management Tests","admin/blog.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","21909","Kiểm tra SEO Onpage: Blog (/blog)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","13256","Kiểm tra SEO Onpage: Hàng chính hãng (/hang-chinh-hang-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11801","Kiểm tra SEO Onpage: Chống trầy (/chong-tray-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","10509","Kiểm tra SEO Onpage: Vải (/backlit-film-xuyen-sang)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","7353","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-12","passed","2026-08-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","12762","Kiểm tra SEO Onpage: Giá xưởng tận gốc (/gia-xuong-tan-goc)","Desktop Chrome","2026-08-12","failed","2026-08-12","SEO Page","seo/seo.spec.ts","",""
+"","21474","Add project should fail with không nhập tiêu đề","Desktop Chrome","2026-08-12","passed","2026-08-12","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 95%
+
+XUẤT SẮC","11185","Kiểm tra SEO Onpage: Hộp đèn (/hop-den-uv)","Desktop Chrome","2026-08-12","passed","2026-08-12","SEO Page","seo/seo.spec.ts","",""

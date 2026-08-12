@@ -1,0 +1,490 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Giao hàng toàn quốc (/giao-hang-toan-quoc)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 93/100 dưới ngưỡng 95%. Có 1/15 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý & Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn
+      - generic [ref=e7]: Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý & Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn
+      - generic [ref=e8]: Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý & Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn
+      - generic [ref=e9]: Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý & Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn
+    - generic [ref=e11]:
+      - generic [ref=e13]:
+        - link "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ VÀ QUẢNG CÁO PHÚC SƠN" [ref=e15] [cursor=pointer]:
+          - /url: https://inuvgiare24h.vn/
+          - img "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ VÀ QUẢNG CÁO PHÚC SƠN" [ref=e16]
+        - generic [ref=e17]:
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Trang chủ" [ref=e20] [cursor=pointer]:
+                - /url: https://inuvgiare24h.vn/
+            - listitem [ref=e21]
+            - listitem [ref=e22]:
+              - link "Giới thiệu" [ref=e23] [cursor=pointer]:
+                - /url: gioi-thieu
+            - listitem [ref=e24]
+            - listitem [ref=e25]:
+              - link "Dịch vụ" [ref=e26] [cursor=pointer]:
+                - /url: dich-vu
+            - listitem [ref=e27]
+            - listitem [ref=e28]:
+              - link "Sản phẩm" [ref=e29] [cursor=pointer]:
+                - /url: san-pham
+                - text: Sản phẩm
+                - img [ref=e30]
+            - listitem [ref=e32]
+            - listitem [ref=e33]:
+              - link "Dự án" [ref=e34] [cursor=pointer]:
+                - /url: du-an
+            - listitem [ref=e35]
+            - listitem [ref=e36]:
+              - link "Blog" [ref=e37] [cursor=pointer]:
+                - /url: blog
+            - listitem [ref=e38]
+            - listitem [ref=e39]:
+              - link "Liên hệ" [ref=e40] [cursor=pointer]:
+                - /url: lien-he
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - img [ref=e43]
+              - link "0935 663 007" [ref=e46] [cursor=pointer]:
+                - /url: tel:0935663007
+            - generic [ref=e47]:
+              - link "Tiếng Việt VN" [ref=e48] [cursor=pointer]:
+                - /url: https://inuvgiare24h.vn/ngon-ngu/vi/
+                - img "Tiếng Việt" [ref=e49]
+                - generic [ref=e50]: VN
+              - link "Tiếng Anh EN" [ref=e52] [cursor=pointer]:
+                - /url: https://inuvgiare24h.vn/ngon-ngu/en/
+                - img "Tiếng Anh" [ref=e53]
+                - generic [ref=e54]: EN
+            - generic [ref=e56]:
+              - button "×" [ref=e57] [cursor=pointer]
+              - button "Tìm kiếm" [ref=e58] [cursor=pointer]:
+                - img [ref=e59]
+      - list [ref=e62]:
+        - listitem [ref=e63]:
+          - link "In UV Khổ Lớn Không Ghép" [ref=e64] [cursor=pointer]:
+            - /url: in-uv-kho-lon-khong-ghep
+        - listitem [ref=e65]:
+          - link "In UV 2 mặt" [ref=e66] [cursor=pointer]:
+            - /url: in-uv-2-mat
+        - listitem [ref=e67]:
+          - link "In UV Mặt Phẳng" [ref=e68] [cursor=pointer]:
+            - /url: in-uv-mat-phang
+        - listitem [ref=e69]:
+          - link "In UV Bạt Hiflex" [ref=e70] [cursor=pointer]:
+            - /url: in-uv-bat-hiflex
+        - listitem [ref=e71]:
+          - link "In Trần Xuyên Sáng" [ref=e72] [cursor=pointer]:
+            - /url: in-tran-xuyen-sang
+        - listitem [ref=e73]:
+          - link "Tất cả sản phẩm" [ref=e74] [cursor=pointer]:
+            - /url: san-pham
+    - list [ref=e77]:
+      - listitem [ref=e78]:
+        - link "Trang chủ" [ref=e79] [cursor=pointer]:
+          - /url: https://inuvgiare24h.vn/
+          - img [ref=e80]
+          - generic [ref=e82]: Trang chủ
+      - listitem [ref=e83]:
+        - text: /
+        - link "Giao hàng toàn quốc" [ref=e84] [cursor=pointer]:
+          - /url: https://inuvgiare24h.vn/giao-hang-toan-quoc
+    - generic [ref=e86]:
+      - generic [ref=e88]: Giao hàng toàn quốc
+      - generic [ref=e89]:
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - link "In Trần Xuyên Sáng PVC Dẻo" [ref=e93] [cursor=pointer]:
+              - /url: in-tran-xuyen-sang-pvc-deo
+              - img "In Trần Xuyên Sáng PVC Dẻo" [ref=e94]
+            - generic [ref=e95]:
+              - heading "In Trần Xuyên Sáng PVC Dẻo" [level=3] [ref=e96]:
+                - link "In Trần Xuyên Sáng PVC Dẻo" [ref=e97] [cursor=pointer]:
+                  - /url: in-tran-xuyen-sang-pvc-deo
+              - generic [ref=e98]: In Trần Xuyên Sáng
+          - generic [ref=e99]: Một trong những xu hướng nổi bật nhất hiện nay là giải pháp in trần xuyên sáng PVC dẻo – công nghệ đột phá mang lại vẻ đẹp lung linh, sang trọng cho mọi công trình. Không chỉ đơn thuần là trần nhà, đây còn là một tác phẩm nghệ thuật ánh sáng độc đáo, giúp thay đổi hoàn toàn diện mạo căn phòng nhờ khả năng tán sáng đều màu, hình ảnh sắc nét và độ bền vượt trội theo thời gian.
+          - generic [ref=e100]:
+            - link "Bảo hành 5-10 năm" [ref=e101] [cursor=pointer]:
+              - /url: bao-hanh-5-10-nam
+              - img [ref=e102]
+              - generic [ref=e106]: Bảo hành 5-10 năm
+            - link "Giao hàng toàn quốc" [ref=e107] [cursor=pointer]:
+              - /url: giao-hang-toan-quoc
+              - img [ref=e108]
+              - generic [ref=e112]: Giao hàng toàn quốc
+            - link "Bàn giao trong 24h" [ref=e113] [cursor=pointer]:
+              - /url: ban-giao-trong-24h
+              - img [ref=e114]
+              - generic [ref=e118]: Bàn giao trong 24h
+            - link "Hỗ trợ 24/7" [ref=e119] [cursor=pointer]:
+              - /url: ho-tro-24-7
+              - img [ref=e120]
+              - generic [ref=e124]: Hỗ trợ 24/7
+          - generic [ref=e125]:
+            - link "Liên hệ" [ref=e126] [cursor=pointer]:
+              - /url: lien-he
+              - generic [ref=e127]: Liên hệ
+            - link "Chi tiết" [ref=e128] [cursor=pointer]:
+              - /url: in-tran-xuyen-sang-pvc-deo
+              - generic [ref=e129]: Chi tiết
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - link "In UV Mặt Phẳng Alu" [ref=e133] [cursor=pointer]:
+              - /url: in-uv-mat-phang-alu
+              - img "In UV Mặt Phẳng Alu" [ref=e134]
+            - generic [ref=e135]:
+              - heading "In UV Mặt Phẳng Alu" [level=3] [ref=e136]:
+                - link "In UV Mặt Phẳng Alu" [ref=e137] [cursor=pointer]:
+                  - /url: in-uv-mat-phang-alu
+              - generic [ref=e138]: In UV Mặt Phẳng
+          - generic [ref=e139]: Phương pháp in UV mặt phẳng Alu xuất hiện như một bước tiến công nghệ đột phá, giải quyết triệt để những hạn chế của kỹ thuật dán decal truyền thống. Bằng việc phun mực trực tiếp lên bề mặt tấm nhôm nhựa Aluminium và sấy khô tức thì bằng tia cực tím, giải pháp này mang lại những thành phẩm sắc nét, bền màu vượt trội cùng khả năng ứng dụng vô cùng linh hoạt.
+          - generic [ref=e140]:
+            - link "Giao hàng toàn quốc" [ref=e141] [cursor=pointer]:
+              - /url: giao-hang-toan-quoc
+              - img [ref=e142]
+              - generic [ref=e146]: Giao hàng toàn quốc
+            - link "Bàn giao trong 24h" [ref=e147] [cursor=pointer]:
+              - /url: ban-giao-trong-24h
+              - img [ref=e148]
+              - generic [ref=e152]: Bàn giao trong 24h
+            - link "Kỹ thuật viên 10 năm KN" [ref=e153] [cursor=pointer]:
+              - /url: ky-thuat-vien-10-nam-kn
+              - img [ref=e154]
+              - generic [ref=e158]: Kỹ thuật viên 10 năm KN
+            - link "Bản in sắc nét 1440dpi" [ref=e159] [cursor=pointer]:
+              - /url: ban-in-sac-net-1440dpi
+              - img [ref=e160]
+              - generic [ref=e164]: Bản in sắc nét 1440dpi
+          - generic [ref=e165]:
+            - link "Liên hệ" [ref=e166] [cursor=pointer]:
+              - /url: lien-he
+              - generic [ref=e167]: Liên hệ
+            - link "Chi tiết" [ref=e168] [cursor=pointer]:
+              - /url: in-uv-mat-phang-alu
+              - generic [ref=e169]: Chi tiết
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - link "In Uv Mặt Phẳng Nhôm" [ref=e173] [cursor=pointer]:
+              - /url: in-uv-mat-phang-nhom
+              - img "In Uv Mặt Phẳng Nhôm" [ref=e174]
+            - generic [ref=e175]:
+              - heading "In Uv Mặt Phẳng Nhôm" [level=3] [ref=e176]:
+                - link "In Uv Mặt Phẳng Nhôm" [ref=e177] [cursor=pointer]:
+                  - /url: in-uv-mat-phang-nhom
+              - generic [ref=e178]: In UV Mặt Phẳng
+          - generic [ref=e179]: Dịch vụ in UV mặt phẳng nhôm đang trở thành giải pháp hàng đầu trong ngành thiết kế nội thất và thi công xây dựng hiện đại. Với khả năng tạo ra những sản phẩm có độ bền vật lý vượt trội cùng tính thẩm mỹ tinh tế, công nghệ này đáp ứng trọn vẹn những đòi hỏi khắt khe của các kiến trúc sư lẫn chủ đầu tư.
+          - generic [ref=e180]:
+            - link "Giao hàng toàn quốc" [ref=e181] [cursor=pointer]:
+              - /url: giao-hang-toan-quoc
+              - img [ref=e182]
+              - generic [ref=e186]: Giao hàng toàn quốc
+            - link "Bàn giao trong 24h" [ref=e187] [cursor=pointer]:
+              - /url: ban-giao-trong-24h
+              - img [ref=e188]
+              - generic [ref=e192]: Bàn giao trong 24h
+            - link "Giá xưởng tận gốc" [ref=e193] [cursor=pointer]:
+              - /url: gia-xuong-tan-goc
+              - img [ref=e194]
+              - generic [ref=e198]: Giá xưởng tận gốc
+            - link "Kỹ thuật viên 10 năm KN" [ref=e199] [cursor=pointer]:
+              - /url: ky-thuat-vien-10-nam-kn
+              - img [ref=e200]
+              - generic [ref=e204]: Kỹ thuật viên 10 năm KN
+          - generic [ref=e205]:
+            - link "Liên hệ" [ref=e206] [cursor=pointer]:
+              - /url: lien-he
+              - generic [ref=e207]: Liên hệ
+            - link "Chi tiết" [ref=e208] [cursor=pointer]:
+              - /url: in-uv-mat-phang-nhom
+              - generic [ref=e209]: Chi tiết
+    - generic [ref=e210]:
+      - generic [ref=e213]:
+        - generic [ref=e214]:
+          - link "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ VÀ QUẢNG CÁO PHÚC SƠN" [ref=e215] [cursor=pointer]:
+            - /url: https://inuvgiare24h.vn/
+            - img "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ VÀ QUẢNG CÁO PHÚC SƠN" [ref=e216]
+          - paragraph [ref=e217]: CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ VÀ QUẢNG CÁO PHÚC SƠN
+          - list [ref=e218]:
+            - listitem [ref=e219]: "Địa chỉ: 160A Tam Bình, Khu phố 2, Phường Tam Phú, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam"
+            - listitem [ref=e220]:
+              - text: "Hotline:"
+              - link "0935 663 007" [ref=e221] [cursor=pointer]:
+                - /url: tel:0935663007
+            - listitem [ref=e222]:
+              - text: "Email:"
+              - link "phucsonadv@gmail.com" [ref=e223] [cursor=pointer]:
+                - /url: mailto:phucsonadv@gmail.com
+        - generic [ref=e224]:
+          - paragraph [ref=e225]: Về chúng tôi
+          - list [ref=e226]:
+            - listitem [ref=e227]:
+              - link "Giới thiệu" [ref=e228] [cursor=pointer]:
+                - /url: gioi-thieu
+            - listitem [ref=e229]:
+              - link "Sản phẩm" [ref=e230] [cursor=pointer]:
+                - /url: san-pham
+            - listitem [ref=e231]:
+              - link "Dự án" [ref=e232] [cursor=pointer]:
+                - /url: du-an
+            - listitem [ref=e233]:
+              - link "Blog" [ref=e234] [cursor=pointer]:
+                - /url: blog
+            - listitem [ref=e235]:
+              - link "Liên hệ" [ref=e236] [cursor=pointer]:
+                - /url: lien-he
+        - generic [ref=e237]:
+          - paragraph [ref=e238]: Dịch vụ nổi bật
+          - list [ref=e239]:
+            - listitem [ref=e240]:
+              - link "Test Dịch vụ cấp 1 1786501395741" [ref=e241] [cursor=pointer]:
+                - /url: test-dich-vu-cap-1-1786501395741
+            - listitem [ref=e242]:
+              - link "In UV Khổ Lớn Không Ghép" [ref=e243] [cursor=pointer]:
+                - /url: in-uv-kho-lon-khong-ghep
+            - listitem [ref=e244]:
+              - link "In UV 2 mặt" [ref=e245] [cursor=pointer]:
+                - /url: in-uv-2-mat
+            - listitem [ref=e246]:
+              - link "In UV Mặt Phẳng" [ref=e247] [cursor=pointer]:
+                - /url: in-uv-mat-phang
+            - listitem [ref=e248]:
+              - link "In UV Bạt Hiflex" [ref=e249] [cursor=pointer]:
+                - /url: in-uv-bat-hiflex
+        - generic [ref=e250]:
+          - paragraph [ref=e251]: Chính sách của chúng tôi
+          - list [ref=e252]:
+            - listitem [ref=e253]:
+              - link "Chính sách bảo hành" [ref=e254] [cursor=pointer]:
+                - /url: chinh-sach-bao-hanh
+            - listitem [ref=e255]:
+              - link "Chính sách đổi trả" [ref=e256] [cursor=pointer]:
+                - /url: chinh-sach-doi-tra
+            - listitem [ref=e257]:
+              - link "Chính sách giao hàng" [ref=e258] [cursor=pointer]:
+                - /url: chinh-sach-giao-hang
+            - listitem [ref=e259]:
+              - link "Chính sách bảo mật" [ref=e260] [cursor=pointer]:
+                - /url: chinh-sach-bao-mat
+            - listitem [ref=e261]:
+              - link "Điều khoản sử dụng" [ref=e262] [cursor=pointer]:
+                - /url: dieu-khoan-su-dung
+      - generic [ref=e265]:
+        - generic [ref=e266]:
+          - text: Copyright ©2026 Web Mima. All Rights Reserved Thiết kế web
+          - link "MIMA" [ref=e267] [cursor=pointer]:
+            - /url: https://mimatech.vn
+        - generic [ref=e269]:
+          - link "Facebook" [ref=e270] [cursor=pointer]:
+            - /url: ""
+            - img "Facebook" [ref=e271]
+          - link "Message" [ref=e272] [cursor=pointer]:
+            - /url: ""
+            - img "Message" [ref=e273]
+          - link "Instargam" [ref=e274] [cursor=pointer]:
+            - /url: ""
+            - img "Instargam" [ref=e275]
+          - link "Tiktok" [ref=e276] [cursor=pointer]:
+            - /url: https://vt.tiktok.com/ZS9nuW1De/
+            - img "Tiktok" [ref=e277]
+          - link "Youtobe" [ref=e278] [cursor=pointer]:
+            - /url: ""
+            - img "Youtobe" [ref=e279]
+          - link "Shoppee" [ref=e280] [cursor=pointer]:
+            - /url: https://s.shopee.vn/2LO7k4zLQF
+            - img "Shoppee" [ref=e281]
+    - generic [ref=e282]:
+      - 'link "Call me: 0935 663 007" [ref=e283] [cursor=pointer]':
+        - /url: tel:0935663007
+        - img [ref=e287]
+        - generic [ref=e290]: "Call me: 0935 663 007"
+      - 'link "Zalo: 0935 663 007" [ref=e291] [cursor=pointer]':
+        - /url: https://zalo.me/0935663007
+        - img [ref=e295]
+        - generic [ref=e296]: "Zalo: 0935 663 007"
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "93"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 93/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 💎 XUẤT SẮC
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "15"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 14
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 1
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: Giao hàng toàn quốc
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e297]:
+      - generic [ref=e298]: "❌ Chi tiết lỗi cần khắc phục (1/15):"
+      - generic [ref=e299]:
+        - generic [ref=e300]:
+          - generic [ref=e301]: 3. Heading (H1-H6)
+          - generic [ref=e302]: 1 lỗi
+        - generic [ref=e303]:
+          - strong [ref=e305]: Heading phân cấp hợp lệ (1 lỗi)
+          - generic [ref=e306]: "⚠️ Heading phân cấp sai: Nhảy cấp từ H1 → H3 (\"In Trần Xuyên Sáng PVC Dẻo\")"
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 93/100 dưới ngưỡng 95%. Có 1/15 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```
