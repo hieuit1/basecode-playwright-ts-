@@ -1,0 +1,116 @@
+══════════════════════════════════════
+   🟡 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     73/100
+   Đánh giá:    KHÁ
+   Ngưỡng đạt:  95%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  22
+   ✅ Đạt:          16
+   ❌ Không đạt:    6
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (6/22):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H3 ("Test Dịch vụ cấp 1 1786501395741")
+--- PERFORMANCE ---
+   2. [Google PageSpeed API]
+      → ❌ CẢNH BÁO: Không lấy được dữ liệu PageSpeed API (null cho cả mobile lẫn desktop).
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 3308ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 3308ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <span>Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý &amp; Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn</span>
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <span>Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý &amp; Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn</span>
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://inuvgiare24h.vn/dich-vu
+   4. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.116 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.116 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <span>Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý &amp; Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn</span>
+          - <div class="d-flex align-items-center">
+                                                    <div class="hotline d-none d-lg-flex align-items-center">
+...
+          - <li onclick="countClick('contact')"><a href="lien-he" class="" title="Liên hệ">Liên hệ</a></li>
+          - <li><a href="du-an" class="" title="Dự án">Dự án</a></li>
+          - <div class="footer">
+    <div class="footer-article py-3 py-lg-4">
+        <div class="container">
+            <div class="row justify-content-between...
+          - <div class="col-6 col-lg-3 mb-3">
+                        <div class="danhmuc-item h-100 aos-init aos-animate" data-aos="fade-up">
+    <a class="image...
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <span>Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý &amp; Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn</span> | <div class="d-flex align-items-center">
+                                                    <div class="hotline d-none d-lg-flex align-items-center">
+... | <li onclick="countClick('contact')"><a href="lien-he" class="" title="Liên hệ">Liên hệ</a></li>.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
+   5. [[💻 Desktop] LCP (Largest Contentful Paint): 3308ms (< 2500ms)]
+      → [💻 Desktop] LCP quá cao: 3308ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <span>Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý &amp; Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn</span>
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <span>Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý &amp; Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn</span>
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://inuvgiare24h.vn/dich-vu
+   6. [[💻 Desktop] CLS (Cumulative Layout Shift): 0.116 (< 0.1)]
+      → [💻 Desktop] CLS quá cao: 0.116 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <span>Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý &amp; Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn</span>
+          - <div class="d-flex align-items-center">
+                                                    <div class="hotline d-none d-lg-flex align-items-center">
+...
+          - <li onclick="countClick('contact')"><a href="lien-he" class="" title="Liên hệ">Liên hệ</a></li>
+          - <li><a href="du-an" class="" title="Dự án">Dự án</a></li>
+          - <div class="footer">
+    <div class="footer-article py-3 py-lg-4">
+        <div class="container">
+            <div class="row justify-content-between...
+          - <div class="col-6 col-lg-3 mb-3">
+                        <div class="danhmuc-item h-100 aos-init aos-animate" data-aos="fade-up">
+    <a class="image...
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <span>Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý &amp; Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn</span> | <div class="d-flex align-items-center">
+                                                    <div class="hotline d-none d-lg-flex align-items-center">
+... | <li onclick="countClick('contact')"><a href="lien-he" class="" title="Liên hệ">Liên hệ</a></li>.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
