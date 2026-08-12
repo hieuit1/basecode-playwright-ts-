@@ -1,0 +1,1 @@
+Giao diện được thiết kế sạch sẽ, bố cục dạng lưới (grid) hiển thị các thẻ dịch vụ rõ ràng, cân đối. Các nút bấm và văn bản không bị chồng chéo hay tràn viền, khoảng cách lề hai bên và giữa các phần tử đều hợp lý.

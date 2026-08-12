@@ -1,1 +1,0 @@
-Phát hiện lỗi chồng chéo chữ (text overlap) nghiêm trọng ở phần 'Dịch Vụ Nổi Bật' trong chân trang (footer), nơi hai cột nội dung hiển thị đè lên nhau khiến thông tin bị lỗi và không thể đọc được.

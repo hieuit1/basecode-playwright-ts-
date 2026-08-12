@@ -1,0 +1,1 @@
+Giao diện được thiết kế hoàn thiện, các phần tử (hình ảnh, văn bản, nút bấm) được sắp xếp ngay ngắn, khoảng cách hợp lý và không có lỗi chồng chéo hay tràn viền.

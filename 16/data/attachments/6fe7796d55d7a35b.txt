@@ -1,0 +1,12 @@
+[💻 Desktop] LCP quá cao: 2668ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p style="font-size: 16px; line-height: 1.6; font-style: italic;">Một mẫu <strong>backdrop</strong> ấn tượng không chỉ đơn thuần là phông nền che chắn không gian mà còn là bộ mặt đại diện, thể hiện cá...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p style="font-size: 16px; line-height: 1.6; font-style: italic;">Một mẫu <strong>backdrop</strong> ấn tượng không chỉ đơn thuần là phông nền che chắn không gian mà còn là bộ mặt đại diện, thể hiện cá...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://inuvgiare24h.vn/backdrop

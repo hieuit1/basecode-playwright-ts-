@@ -1,1 +1,0 @@
-Giao diện xuất hiện lỗi đè chữ ở phần chân trang (footer) trong mục 'Dịch Vụ Nổi Bật', làm văn bản các cột dính liền và chồng lấp lên nhau.

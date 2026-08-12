@@ -1,0 +1,1 @@
+Giao diện hiển thị cân đối, các đoạn văn bản và thành phần hình ảnh được căn giữa rõ ràng, không bị chồng chéo hay tràn viền.
