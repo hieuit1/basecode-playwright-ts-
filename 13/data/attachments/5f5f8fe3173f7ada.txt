@@ -1,1 +1,0 @@
-Phát hiện lỗi vỡ layout đè nội dung ở khu vực Footer.

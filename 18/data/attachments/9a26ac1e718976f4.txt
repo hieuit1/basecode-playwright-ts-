@@ -1,0 +1,1 @@
+Tại mục 'Dịch Vụ Nổi Bật' trong footer, nội dung văn bản và chuỗi ký tự số bị vỡ khung và đè chồng trực tiếp lên nhau, gây rối mắt và mất thẩm mỹ.

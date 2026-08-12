@@ -1,1 +1,0 @@
-Phát hiện lỗi chồng chéo chữ ở phần chân trang (footer) thuộc mục 'Dịch Vụ Nổi Bật', nơi dãy số hiển thị đè sát lên nội dung cột bên cạnh.
