@@ -514,74 +514,131 @@ export class ArticleBasePage extends BasePage {
         });
     }
 
-    async copyFirstItemAndShow() {
-        const dialogHandler = async (dialog: any) => {
-            await dialog.accept();
-        };
-        this.page.on('dialog', dialogHandler);
+    async copyFirstItemAndShow(): Promise<boolean> {
+        const MAX_COPY_RETRIES = 3;
 
-        const copyBtn = this.page.locator("a.copy-now").first();
+        for (let attempt = 1; attempt <= MAX_COPY_RETRIES; attempt++) {
+            const dialogHandler = async (dialog: any) => {
+                await dialog.accept();
+            };
+            this.page.on('dialog', dialogHandler);
 
-        // Mở dropdown bằng vòng lặp thử lại (tránh trường hợp JS chưa nhận click)
-        let copyVisible = false;
-        for (let i = 0; i < 3; i++) {
-            await this.firstCopyDropdownBtn.click({ force: true }).catch(() => { });
-            await copyBtn.waitFor({ state: 'visible', timeout: 500 }).catch(() => { });
-            if (await copyBtn.isVisible().catch(() => false)) {
-                copyVisible = true;
-                break;
+            try {
+                // Đảm bảo đang ở trang danh sách trước khi thao tác copy
+                const isAtListBeforeCopy = await this.addNewButton.waitFor({ state: 'visible', timeout: 3000 }).then(() => true).catch(() => false);
+                if (!isAtListBeforeCopy) {
+                    console.log(`⚠ Lần thử ${attempt}: Không ở trang danh sách trước khi copy, đang vào lại qua menu...`);
+                    if (typeof (this as any).gotoAdminMenu === 'function') {
+                        await (this as any).gotoAdminMenu();
+                    }
+                    await this.addNewButton.waitFor({ state: 'visible', timeout: 5000 }).catch(() => { });
+                }
+
+                const copyBtn = this.page.locator("a.copy-now").first();
+
+                // Mở dropdown bằng vòng lặp thử lại (tránh trường hợp JS chưa nhận click)
+                let copyVisible = false;
+                for (let i = 0; i < 3; i++) {
+                    await this.firstCopyDropdownBtn.click({ force: true }).catch(() => { });
+                    await copyBtn.waitFor({ state: 'visible', timeout: 500 }).catch(() => { });
+                    if (await copyBtn.isVisible().catch(() => false)) {
+                        copyVisible = true;
+                        break;
+                    }
+                }
+
+                if (!copyVisible) {
+                    console.log(`⚠ Lần thử ${attempt}/${MAX_COPY_RETRIES}: Không tìm thấy nút Copy (Dropdown không hiển thị).`);
+                    this.page.off('dialog', dialogHandler);
+
+                    if (attempt < MAX_COPY_RETRIES) {
+                        // Quay lại trang danh sách qua menu và thử lại
+                        console.log(`   → Đang tự động quay lại trang danh sách để thử lại...`);
+                        if (typeof (this as any).gotoAdminMenu === 'function') {
+                            await (this as any).gotoAdminMenu();
+                        }
+                        await TestHelper.delay(this.page, 1000);
+                        continue; // Thử lại từ đầu
+                    }
+                    // Hết số lần thử, ném lỗi
+                    throw new Error("Lỗi: Không tìm thấy nút Copy (Dropdown không hiển thị) sau 3 lần thử! Kịch bản nhân bản thất bại.");
+                }
+
+                // Xóa href để tránh navigate sai
+                await copyBtn.evaluate((el: HTMLAnchorElement) => {
+                    el.removeAttribute('href');
+                });
+
+                // Xử lý Click và đợi Navigation đồng thời (Tốc độ tối đa, không cần delay)
+                await Promise.all([
+                    this.page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 5000 }).catch(() => { }),
+                    copyBtn.evaluate((el: HTMLElement) => el.click()) // Dùng evaluate click để bỏ qua lỗi ẩn hiện của dropdown
+                ]);
+
+                // Xử lý confirm dialog nếu có (kiểm tra tức thời, không timeout)
+                if (await this.confirmDeleteButton.isVisible().catch(() => false)) {
+                    await this.confirmDeleteButton.click({ force: true }).catch(() => { });
+                }
+
+                // Chờ trang load xong sau khi copy
+                await this.page.waitForLoadState('domcontentloaded', { timeout: 5000 }).catch(() => { });
+
+                // Kiểm tra xem có bị văng ra dashboard/trang chủ hay không
+                const afterCopyUrl = this.page.url();
+                const isWrongPage = !afterCopyUrl.includes('act=man') || afterCopyUrl.endsWith('#');
+                const isAtList = await this.addNewButton.waitFor({ state: 'visible', timeout: 3000 }).then(() => true).catch(() => false);
+
+                if (isWrongPage || !isAtList) {
+                    console.log(`⚠ Lần thử ${attempt}/${MAX_COPY_RETRIES}: Bị văng ra trang chủ sau khi Copy (URL: ${afterCopyUrl}).`);
+                    this.page.off('dialog', dialogHandler);
+
+                    if (attempt < MAX_COPY_RETRIES) {
+                        console.log(`   → Đang tự động quay lại trang danh sách qua menu để thử copy lại...`);
+                        if (typeof (this as any).gotoAdminMenu === 'function') {
+                            await (this as any).gotoAdminMenu();
+                        }
+                        await this.addNewButton.waitFor({ state: 'visible', timeout: 5000 }).catch(() => { });
+                        await TestHelper.delay(this.page, 1000);
+                        continue; // Thử lại toàn bộ quá trình copy
+                    }
+                    // Hết số lần thử, vẫn vào lại trang danh sách nhưng báo lỗi copy thất bại
+                    console.log(`❌ Đã thử ${MAX_COPY_RETRIES} lần nhưng vẫn bị văng ra trang chủ. Đang vào lại trang danh sách...`);
+                    if (typeof (this as any).gotoAdminMenu === 'function') {
+                        await (this as any).gotoAdminMenu();
+                    }
+                    await this.addNewButton.waitFor({ state: 'visible', timeout: 5000 }).catch(() => { });
+                    return false; // Báo cho caller biết copy thất bại
+                }
+
+                // Copy thành công! Bật checkbox hiển thị
+                await this.firstShowCheckbox.waitFor({ state: 'attached', timeout: 2000 }).catch(() => { });
+                if (await this.firstShowCheckbox.count() > 0) {
+                    const isChecked = await this.firstShowCheckbox.evaluate((node: HTMLInputElement) => node.checked).catch(() => true);
+                    if (!isChecked) {
+                        await this.firstShowCheckbox.evaluate((node: HTMLInputElement) => node.click()).catch(() => { });
+                    }
+                }
+
+                this.page.off('dialog', dialogHandler);
+                return true; // Copy thành công
+
+            } catch (error) {
+                this.page.off('dialog', dialogHandler);
+
+                if (attempt < MAX_COPY_RETRIES) {
+                    console.log(`⚠ Lần thử ${attempt}/${MAX_COPY_RETRIES}: Lỗi không mong muốn khi copy: ${(error as Error).message}`);
+                    console.log(`   → Đang tự động quay lại trang danh sách để thử lại...`);
+                    if (typeof (this as any).gotoAdminMenu === 'function') {
+                        await (this as any).gotoAdminMenu();
+                    }
+                    await this.addNewButton.waitFor({ state: 'visible', timeout: 5000 }).catch(() => { });
+                    await TestHelper.delay(this.page, 1000);
+                    continue; // Thử lại
+                }
+                throw error; // Hết lần thử, ném lỗi gốc
             }
         }
-
-        if (copyVisible) {
-            // Xóa href để tránh navigate sai
-            await copyBtn.evaluate((el: HTMLAnchorElement) => {
-                el.removeAttribute('href');
-            });
-
-            // Xử lý Click và đợi Navigation đồng thời (Tốc độ tối đa, không cần delay)
-            await Promise.all([
-                this.page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 5000 }).catch(() => { }),
-                copyBtn.evaluate((el: HTMLElement) => el.click()) // Dùng evaluate click để bỏ qua lỗi ẩn hiện của dropdown
-            ]);
-        } else {
-            // Ném lỗi ngay lập tức để kịch bản dừng lại và báo Fail, tránh hiện tượng Pass ảo
-            throw new Error("Lỗi: Không tìm thấy nút Copy (Dropdown không hiển thị) sau 3 lần thử! Kịch bản nhân bản thất bại.");
-        }
-
-        // Xử lý confirm dialog nếu có (kiểm tra tức thời, không timeout)
-        if (await this.confirmDeleteButton.isVisible().catch(() => false)) {
-            await this.confirmDeleteButton.click({ force: true }).catch(() => { });
-        }
-
-        // Chờ trang load xong sau khi copy
-        await this.page.waitForLoadState('domcontentloaded', { timeout: 5000 }).catch(() => { });
-
-        // Xử lý lỗi văng ra dashboard/trang chủ: kiểm tra URL và kiểm tra nút "Thêm mới"
-        // Nếu bị văng ra, tự động gọi lại gotoAdminMenu() để vào lại trang danh sách qua thanh menu
-        const afterCopyUrl = this.page.url();
-        const isWrongPage = !afterCopyUrl.includes('act=man') || afterCopyUrl.endsWith('#');
-        const isAtList = await this.addNewButton.waitFor({ state: 'visible', timeout: 3000 }).then(() => true).catch(() => false);
-
-        if (isWrongPage || !isAtList) {
-            console.log(`⚠ Phát hiện bị văng ra trang chủ sau khi Copy (URL: ${afterCopyUrl}). Đang tự động vào lại qua menu...`);
-            if (typeof (this as any).gotoAdminMenu === 'function') {
-                await (this as any).gotoAdminMenu();
-            }
-            // Chờ trang danh sách load xong sau khi navigate lại
-            await this.addNewButton.waitFor({ state: 'visible', timeout: 5000 }).catch(() => { });
-        }
-
-        // Bật checkbox hiển thị (chờ xuất hiện rồi check tức thời)
-        await this.firstShowCheckbox.waitFor({ state: 'attached', timeout: 2000 }).catch(() => { });
-        if (await this.firstShowCheckbox.count() > 0) {
-            const isChecked = await this.firstShowCheckbox.evaluate((node: HTMLInputElement) => node.checked).catch(() => true);
-            if (!isChecked) {
-                await this.firstShowCheckbox.evaluate((node: HTMLInputElement) => node.click()).catch(() => { });
-            }
-        }
-
-        this.page.off('dialog', dialogHandler);
+        return false; // Fallback (không bao giờ chạy tới đây)
     }
 
     async addBulkArticlesManually(count: number, baseTitle: string, baseSlug: string, desc: string, content: string, imagePath: string) {
@@ -637,18 +694,28 @@ export class ArticleBasePage extends BasePage {
     }
 
     async copyBulkArticles(count: number) {
-        for (let i = 0; i < count; i++) {
-            await test.step(`Nhân bản lần thứ ${i + 1}`, async () => {
-                // Đảm bảo trước khi copy luôn phải ở trang danh sách
-                // Dùng waitFor thay vì isHidden để tránh lỗi kiểm tra quá nhanh khi trang đang load
-                const isAtList = await this.addNewButton.waitFor({ state: 'visible', timeout: 3000 }).then(() => true).catch(() => false);
-                if (!isAtList) {
-                    if (typeof (this as any).gotoAdminMenu === 'function') {
-                        await (this as any).gotoAdminMenu();
-                    }
+        let successCount = 0;
+        let attempt = 0;
+        const maxAttempts = count * 2; // Giới hạn số lần thử để tránh lặp vô hạn
+
+        while (successCount < count && attempt < maxAttempts) {
+            attempt++;
+            await test.step(`Nhân bản lần thứ ${successCount + 1} (Lần thử ${attempt})`, async () => {
+                // copyFirstItemAndShow đã tự xử lý retry và navigate lại nếu bị văng ra trang chủ
+                const copySuccess = await this.copyFirstItemAndShow();
+
+                if (copySuccess) {
+                    successCount++;
+                } else {
+                    console.log(`⚠ Nhân bản lần ${successCount + 1} thất bại sau nhiều lần thử. Đang thử lại... (Đã thành công: ${successCount}/${count})`);
                 }
-                await this.copyFirstItemAndShow();
             });
+        }
+
+        if (successCount < count) {
+            throw new Error(`❌ Kết quả nhân bản thất bại: Chỉ đạt ${successCount}/${count} sau ${attempt} lần thử.`);
+        } else {
+            console.log(`✅ Kết quả nhân bản: Hoàn thành ${successCount}/${count} sau ${attempt} lần thử.`);
         }
     }
 
