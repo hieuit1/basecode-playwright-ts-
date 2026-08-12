@@ -1,1 +1,0 @@
-Phần văn bản danh sách liên kết dưới mục 'Dịch Vụ Nổi Bật' ở chân trang (footer) bị chia cột lỗi, dẫn đến nội dung giữa hai cột bị chồng chéo lên nhau (cụ thể là chuỗi số '1786497641090' bị đè sát và đè lên chữ 'Ghép').

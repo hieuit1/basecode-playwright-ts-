@@ -1,0 +1,12 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 4881ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="lazy loaded" onerror="this.src='thumbs/310x450x1/assets/images/noimage.png';" data-src="thumbs/310x450x1/upload/news/xuong-in-uv-gia-re-24h-quan-7-2738.jpg.webp" alt="Xưởng In UV giá rẻ 24...
+
+[Vấn đề]: Phần tử LCP là ảnh nhưng không có thuộc tính width/height trong HTML.
+[Thông số hiện tại]: Kích thước không xác định từ HTML thô.
+[Chỉ thị hành động]: Dùng DevTools (Computed tab) đo kích thước hiển thị thực tế. Resize ảnh gốc bằng 2x kích thước hiển thị (định dạng .webp, quality 75-80), khai báo kích thước cứng vào HTML và thêm thẻ preload.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="[URL_ẢNH]" fetchpriority="high">
+
+<!-- Sửa thẻ <img> (thay X, Y bằng số đo thực tế): -->
+<img src="[URL_ẢNH]" width="X" height="Y" style="aspect-ratio: X / Y; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">

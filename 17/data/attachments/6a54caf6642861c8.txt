@@ -1,0 +1,1 @@
+Giao diện hiển thị chuẩn responsive trên mobile, bố cục cân đối, chữ và hình ảnh sắp xếp rõ ràng, không phát hiện lỗi vỡ layout hay tràn viền.

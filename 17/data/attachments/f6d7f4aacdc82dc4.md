@@ -1,0 +1,586 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Decal Phản Quang, Dạ Quang (/decal-phan-quang-da-quang)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 93/100 dưới ngưỡng 95%. Có 1/15 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý & Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn
+      - generic [ref=e7]: Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý & Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn
+      - generic [ref=e8]: Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý & Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn
+      - generic [ref=e9]: Ưu Đãi Chiết Khấu Lên Đến 20% Cho Đại Lý & Đơn Vị Thi Công Quảng Cáo Đặt In UV Khổ Lớn
+    - generic [ref=e11]:
+      - generic [ref=e13]:
+        - link "In UV Phúc Sơn" [ref=e15] [cursor=pointer]:
+          - /url: https://inuvgiare24h.vn/
+          - img "In UV Phúc Sơn" [ref=e16]
+        - generic [ref=e17]:
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Trang chủ" [ref=e20] [cursor=pointer]:
+                - /url: https://inuvgiare24h.vn/
+            - listitem [ref=e21]
+            - listitem [ref=e22]:
+              - link "Giới thiệu" [ref=e23] [cursor=pointer]:
+                - /url: gioi-thieu
+            - listitem [ref=e24]
+            - listitem [ref=e25]:
+              - link "Dịch vụ" [ref=e26] [cursor=pointer]:
+                - /url: dich-vu
+            - listitem [ref=e27]
+            - listitem [ref=e28]:
+              - link "Sản phẩm" [ref=e29] [cursor=pointer]:
+                - /url: san-pham
+                - text: Sản phẩm
+                - img [ref=e30]
+            - listitem [ref=e32]
+            - listitem [ref=e33]:
+              - link "Dự án" [ref=e34] [cursor=pointer]:
+                - /url: du-an
+            - listitem [ref=e35]
+            - listitem [ref=e36]:
+              - link "Blog" [ref=e37] [cursor=pointer]:
+                - /url: blog
+            - listitem [ref=e38]
+            - listitem [ref=e39]:
+              - link "Liên hệ" [ref=e40] [cursor=pointer]:
+                - /url: lien-he
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - img [ref=e43]
+              - link "0935 663 007" [ref=e46] [cursor=pointer]:
+                - /url: tel:0935663007
+            - generic [ref=e47]:
+              - link "Tiếng Việt VN" [ref=e48] [cursor=pointer]:
+                - /url: https://inuvgiare24h.vn/ngon-ngu/vi/
+                - img "Tiếng Việt" [ref=e49]
+                - generic [ref=e50]: VN
+              - link "Tiếng Anh EN" [ref=e52] [cursor=pointer]:
+                - /url: https://inuvgiare24h.vn/ngon-ngu/en/
+                - img "Tiếng Anh" [ref=e53]
+                - generic [ref=e54]: EN
+            - generic [ref=e56]:
+              - button "×" [ref=e57] [cursor=pointer]
+              - button "Tìm kiếm" [ref=e58] [cursor=pointer]:
+                - img [ref=e59]
+      - list [ref=e62]:
+        - listitem [ref=e63]:
+          - link "In UV Khổ Lớn Không Ghép" [ref=e64] [cursor=pointer]:
+            - /url: in-uv-kho-lon-khong-ghep
+        - listitem [ref=e65]:
+          - link "In UV 2 mặt" [ref=e66] [cursor=pointer]:
+            - /url: in-uv-2-mat
+        - listitem [ref=e67]:
+          - link "In UV Mặt Phẳng" [ref=e68] [cursor=pointer]:
+            - /url: in-uv-mat-phang
+        - listitem [ref=e69]:
+          - link "In UV Bạt Hiflex" [ref=e70] [cursor=pointer]:
+            - /url: in-uv-bat-hiflex
+        - listitem [ref=e71]:
+          - link "In Trần Xuyên Sáng" [ref=e72] [cursor=pointer]:
+            - /url: in-tran-xuyen-sang
+        - listitem [ref=e73]:
+          - link "Tất cả sản phẩm" [ref=e74] [cursor=pointer]:
+            - /url: san-pham
+    - list [ref=e77]:
+      - listitem [ref=e78]:
+        - link "Trang chủ" [ref=e79] [cursor=pointer]:
+          - /url: https://inuvgiare24h.vn/
+          - img [ref=e80]
+          - generic [ref=e82]: Trang chủ
+      - listitem [ref=e83]:
+        - text: /
+        - link "Sản phẩm" [ref=e84] [cursor=pointer]:
+          - /url: https://inuvgiare24h.vn/san-pham
+      - listitem [ref=e85]:
+        - text: /
+        - link "Decal Phản Quang, Dạ Quang" [ref=e86] [cursor=pointer]:
+          - /url: https://inuvgiare24h.vn/decal-phan-quang-da-quang
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - generic [ref=e92]:
+            - generic [ref=e94]:
+              - listbox [ref=e97]:
+                - option "Decal Phản Quang, Dạ Quang" [ref=e98]:
+                  - link "Decal Phản Quang, Dạ Quang" [ref=e99] [cursor=pointer]:
+                    - /url: thumbs/491x309x1/upload/product/decal-phan-quang-da-quang-7527.jpg
+                    - img "Decal Phản Quang, Dạ Quang" [ref=e100]
+              - listbox [ref=e104]:
+                - option "Decal Phản Quang, Dạ Quang" [ref=e105]:
+                  - link "Decal Phản Quang, Dạ Quang" [ref=e106] [cursor=pointer]:
+                    - /url: javascript:;
+                    - img "Decal Phản Quang, Dạ Quang" [ref=e107]
+            - generic [ref=e108]:
+              - list [ref=e109]:
+                - generic [ref=e110]: Decal Phản Quang, Dạ Quang
+                - listitem [ref=e111]:
+                  - generic [ref=e112]: "Liên hệ: 0935 663 007"
+                - listitem [ref=e114]:
+                  - paragraph [ref=e116]:
+                    - text: Trong số đó,
+                    - strong [ref=e117]: decal phản quang, dạ quang
+                    - text: nổi lên như một giải pháp đột phá, vừa đáp ứng yêu cầu thẩm mỹ độc đáo cho không gian nội thất, vừa đảm bảo tính an toàn tối ưu cho các công trình xây dựng.
+              - 'link "Liên hệ: 0935 663 007" [ref=e118] [cursor=pointer]':
+                - /url: tel:0935663007
+                - generic [ref=e119]: "Liên hệ: 0935 663 007"
+          - generic [ref=e121]:
+            - heading "Thông tin chi tiết" [level=3] [ref=e124]
+            - generic [ref=e126]:
+              - generic [ref=e127] [cursor=pointer]:
+                - img [ref=e128]
+                - text: Mục lục
+                - img [ref=e131]
+              - text: ▾ ▾
+            - text: ▾ ▾
+            - generic [ref=e134]:
+              - paragraph [ref=e135]:
+                - text: Xu hướng ứng dụng các loại vật liệu thông minh, tích hợp đa công năng đang được nhiều kiến trúc sư và nhà thầu ưu tiên lựa chọn. Trong số đó,
+                - strong [ref=e136]: decal phản quang, dạ quang
+                - text: nổi lên như một giải pháp đột phá, vừa đáp ứng yêu cầu thẩm mỹ độc đáo cho không gian nội thất, vừa đảm bảo tính an toàn tối ưu cho các công trình xây dựng. Bài viết này sẽ phân tích chi tiết đặc điểm, cơ chế hoạt động cũng như các ứng dụng thực tế đầy sáng tạo của hai loại vật liệu phát sáng đặc biệt này.
+              - heading "Khái Niệm Và Nguyên Lý Hoạt Động Của Decal Phản Quang, Dạ Quang" [level=2] [ref=e137]
+              - paragraph [ref=e138]: Dù đều sở hữu khả năng phát sáng trong điều kiện thiếu sáng, decal phản quang và dạ quang lại mang những đặc tính vật lý và cơ chế hoạt động hoàn toàn khác biệt. Hiểu rõ bản chất của từng loại giúp việc ứng dụng vào thi công xây dựng và thiết kế nội thất đạt hiệu quả tối đa.
+              - heading "Decal Phản Quang Và Cơ Chế Phản Xạ Ngược" [level=3] [ref=e139]
+              - paragraph [ref=e140]: Decal phản quang là loại nhãn dán được phủ một lớp kim loại đặc biệt hoặc hàng triệu hạt thủy tinh siêu mịn có chiết suất cao trên bề mặt. Bản thân loại decal này không thể tự phát ra ánh sáng trong bóng tối nếu không có nguồn sáng kích thích.
+              - paragraph [ref=e141]: Nguyên lý hoạt động của vật liệu dựa trên hiện tượng phản xạ ngược. Khi có một nguồn sáng nhân tạo (như đèn pha ô tô, xe máy, đèn pin hoặc ánh sáng mặt trời) chiếu trực tiếp vào bề mặt, các hạt thủy tinh sẽ gom sáng và hắt ngược lại theo hướng của nguồn phát ban đầu. Điều này giúp vật thể được dán decal trở nên cực kỳ rực rỡ và dễ nhận biết từ khoảng cách xa, ngay cả trong điều kiện đêm tối hay thời tiết xấu.
+              - heading "Decal Dạ Quang - Khả Năng Tự Phát Sáng Trong Đêm" [level=3] [ref=e142]
+              - paragraph [ref=e143]: Trái ngược với phản quang, decal dạ quang (hay còn gọi là decal tự phát quang) có khả năng tự tỏa sáng trong bóng tối hoàn toàn mà không cần bất kỳ nguồn sáng nào chiếu vào trực tiếp tại thời điểm đó.
+              - paragraph [ref=e144]: Cơ chế hoạt động của dạ quang phụ thuộc vào các hợp chất phốt pho hoặc tinh thể hoạt hóa năng lượng có trong lớp bề mặt. Vào ban ngày hoặc khi có ánh sáng đèn điện, decal sẽ hấp thụ năng lượng ánh sáng này và tích trữ lại. Khi không gian xung quanh chuyển sang tối, năng lượng tích trữ được giải phóng dần dưới dạng ánh sáng dịu nhẹ, thường có màu xanh lá cây hoặc xanh dương. Thời gian tự phát sáng của decal dạ quang chất lượng cao có thể kéo dài từ 2 đến hơn 10 tiếng đồng hồ sau khi đã hấp thụ đủ ánh sáng.
+              - heading "Ứng Dụng Thực Tế Trong Thi Công Xây Dựng" [level=2] [ref=e145]
+              - paragraph [ref=e146]: Trong lĩnh vực thi công xây dựng, an toàn lao động và hệ thống chỉ dẫn khẩn cấp là những tiêu chí bắt buộc phải tuân thủ nghiêm ngặt. Việc đưa decal phát sáng vào các hạng mục công trình mang lại những giá trị thực tiễn rất cao.
+              - list [ref=e147]:
+                - listitem [ref=e148]:
+                  - strong [ref=e149]: "Hệ thống chỉ dẫn thoát hiểm và cứu nạn:"
+                  - text: Tại các tòa nhà cao tầng, chung cư hay trung tâm thương mại, decal dạ quang được dán dọc lối đi, bậc cầu thang bộ, tay vịn hành lang và các biển báo thoát hiểm. Khi xảy ra sự cố hỏa hoạn gây mất điện đột ngột, dải dạ quang sẽ lập tức phát sáng, định hình đường chạy thoát hiểm rõ ràng, giúp cư dân di chuyển nhanh chóng, tránh tình trạng hoảng loạn. Hệ thống này thường được bồi thêm lớp mica hoặc tôn mỏng để tăng độ bền cơ học trước khi cố định lên tường.
+                - listitem [ref=e150]:
+                  - strong [ref=e151]: "Cảnh báo an toàn tại công trường:"
+                  - text: Decal phản quang được ứng dụng rộng rãi trên các biển báo công trường, rào chắn thi công dọc các tuyến đường giao thông hoặc dán trực tiếp lên xe cẩu, máy xúc. Sự hiện diện của các vệt phản quang rực rỡ giúp tài xế tham gia giao thông từ xa dễ dàng nhận biết khu vực đang thi công để giảm tốc độ, hạn chế tối đa va chạm đáng tiếc.
+                - listitem [ref=e152]:
+                  - strong [ref=e153]: "Bảo hộ lao động cho kỹ sư và công nhân:"
+                  - text: Các dải phản quang được may trực tiếp lên áo bảo hộ, mũ bảo hiểm của đội ngũ nhân sự làm việc ca đêm trên công trường. Điều này giúp các phương tiện cơ giới di chuyển trong khu vực thi công dễ dàng định vị được vị trí của con người, đảm bảo an toàn lao động tuyệt đối.
+              - heading "Ứng Dụng Đột Phá Trong Thiết Kế Nội Thất" [level=2] [ref=e154]
+              - paragraph [ref=e155]: Không chỉ giới hạn ở các yếu tố kỹ thuật và an toàn công trình, decal phản quang và dạ quang còn là nguồn cảm hứng bất tận cho các kiến trúc sư trong việc tạo nên những không gian nội thất độc đáo, mang đậm dấu ấn cá nhân và đầy tính tiện ích.
+              - heading "Tạo Điểm Nhấn Nghệ Thuật Cho Trần Và Tường Nhà" [level=3] [ref=e156]
+              - paragraph [ref=e157]: Một trong những ứng dụng phổ biến nhất của decal dạ quang là trang trí phòng ngủ cho trẻ em hoặc những gia chủ yêu thích thiên văn. Những ngôi sao, mặt trăng hay các dải ngân hà được cắt tỉ mỉ bằng decal dạ quang và dán lên trần nhà. Khi ánh đèn vụt tắt, một bầu trời đêm huyền ảo hiện ra ngay trước mắt, mang lại cảm giác thư thái, dễ chịu và kích thích trí tưởng tượng phong phú.
+              - heading "Hệ Thống Định Vị Ban Đêm Tinh Tế Cho Căn Hộ" [level=3] [ref=e158]
+              - paragraph [ref=e159]: Thay vì lắp đặt hệ thống đèn âm đất tiêu tốn điện năng dọc hành lang hay bậc cầu thang, nhiều nhà thiết kế đã sử dụng các dải decal dạ quang siêu mỏng, bo viền tinh tế xung quanh các bậc thang gỗ hoặc đá tự nhiên. Ban đêm, chúng tỏa ra ánh sáng xanh dịu nhẹ, vừa đủ để định vị lối đi cho người già và trẻ nhỏ mà không gây chói mắt hay làm ảnh hưởng đến giấc ngủ sâu của các thành viên trong gia đình. Bên cạnh đó, việc dán các mảng decal nhỏ quanh ổ cắm điện hoặc tay nắm cửa cũng giúp việc sinh hoạt ban đêm trở nên thuận tiện hơn rất nhiều.
+              - heading "Tăng Hiệu Ứng Cho Nội Thất Và Không Gian Giải Trí" [level=3] [ref=e160]
+              - paragraph [ref=e161]: Trong thiết kế nội thất hiện đại, việc tích hợp decal phản quang vào các chi tiết nội thất như cạnh bàn, tay nắm tủ quần áo, viền tivi giúp tạo nên những đường cắt ánh sáng sắc nét khi màn đêm buông xuống. Đối với các công trình thương mại như quán bar, phòng karaoke, rạp chiếu phim hay phòng chơi game (gaming room), sự kết hợp giữa decal dạ quang, decal phản quang cùng ánh sáng đèn UV tạo nên những hiệu ứng thị giác cực kỳ kích thích, biến không gian trở nên vô cùng hiện đại và mang hơi hướng tương lai.
+              - heading "Những Lưu Ý Quan Trọng Khi Lựa Chọn Và Thi Công" [level=2] [ref=e162]
+              - paragraph [ref=e163]: Để tối ưu hóa hiệu quả sử dụng và đảm bảo độ bền bỉ cho công trình, quá trình lựa chọn và thi công đòi hỏi sự tỉ mỉ cùng kinh nghiệm thực tế từ các đơn vị chuyên môn.
+              - list [ref=e164]:
+                - listitem [ref=e165]:
+                  - strong [ref=e166]: "Xác định đúng mục đích sử dụng:"
+                  - text: Cần làm rõ khu vực thi công có nguồn sáng chiếu vào trực tiếp hay không để chọn loại decal phù hợp. Những vị trí tối hoàn toàn, không có đèn rọi cần ưu tiên dùng decal dạ quang. Ngược lại, những vị trí ngoài trời, có luồng sáng từ xe cộ hoặc đèn đường thì decal phản quang là lựa chọn tối ưu.
+                - listitem [ref=e167]:
+                  - strong [ref=e168]: "Xử lý bề mặt thi công đạt chuẩn:"
+                  - text: Bề mặt dán decal phải được vệ sinh sạch sẽ, khô ráo hoàn toàn, không bám bụi bẩn, dầu mỡ hay bong tróc sơn. Đối với các bề mặt nhám như tường bê tông chưa sơn, gỗ thô, cần được xử lý làm mịn hoặc phủ một lớp sơn lót để tăng độ bám dính cho lớp keo của decal.
+                - listitem [ref=e169]:
+                  - strong [ref=e170]: "Kiểm tra chất lượng phôi decal:"
+                  - text: Thị trường hiện có nhiều loại decal trôi nổi với độ sáng yếu và tuổi thọ ngắn. Nên lựa chọn các dòng decal cao cấp, có khả năng kháng nước, chống tia UV tốt để không bị bong tróc, bạc màu hay giảm độ sáng sau một thời gian ngắn sử dụng dưới tác động của thời tiết.
+              - paragraph [ref=e171]: Việc kết hợp hài hòa giữa decal phản quang, dạ quang vào các giải pháp thiết kế nội thất và thi công xây dựng không chỉ mang lại tính thẩm mỹ cao mà còn là cam kết về sự an toàn, tiện nghi lâu dài cho người sử dụng.
+              - heading "Phúc Sơn - Đơn Vị Cung Cấp Và Thi Công Decal Chuyên Nghiệp" [level=2] [ref=e172]
+              - paragraph [ref=e173]: Nếu bạn đang tìm kiếm một giải pháp thiết kế, thi công decal phản quang, dạ quang chất lượng cao cho công trình của mình, hãy liên hệ ngay với Công ty TNHH Sản xuất Thương mại Dịch vụ và Quảng cáo Phúc Sơn. Với kinh nghiệm dày dặn trong lĩnh vực thi công, thiết kế nội thất và quảng cáo, chúng tôi cam kết mang đến những sản phẩm đạt tiêu chuẩn kỹ thuật cao nhất, cùng giải pháp thi công chuyên nghiệp, nhanh chóng và tối ưu chi phí.
+              - paragraph [ref=e174]:
+                - strong [ref=e175]: "Thông tin liên hệ:"
+              - paragraph [ref=e176]:
+                - strong [ref=e177]: CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ VÀ QUẢNG CÁO PHÚC SƠN
+                - text: "Địa chỉ: 160A Tam Bình, Khu phố 2, Phường Tam Phú, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam"
+                - text: "Hotline: 0935 663 007"
+                - text: "Điện thoại: 0935 663 007"
+                - text: "Email: phucsonadv@gmail.com"
+              - link "Xem thêm bài viết" [ref=e180] [cursor=pointer]:
+                - /url: javascript:;
+                - generic [ref=e181]:
+                  - text: Xem thêm bài viết
+                  - img [ref=e182]
+        - generic [ref=e191]:
+          - heading "Blog In UV" [level=2] [ref=e193]
+          - generic [ref=e194]:
+            - generic [ref=e196]:
+              - paragraph [ref=e197]:
+                - link "[AUTO-TEST] Blog LoadTest 1786526855800 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e198] [cursor=pointer]:
+                  - /url: auto-test-blog-loadtest-1786526855800-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+                  - img "[AUTO-TEST] Blog LoadTest 1786526855800 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e199]
+              - generic [ref=e200]:
+                - heading "[AUTO-TEST] Blog LoadTest 1786526855800 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e201]:
+                  - link "[AUTO-TEST] Blog LoadTest 1786526855800 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e202] [cursor=pointer]:
+                    - /url: auto-test-blog-loadtest-1786526855800-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+                - paragraph [ref=e203]: Mô tả cho Blog bulk test
+            - generic [ref=e205]:
+              - paragraph [ref=e206]:
+                - link "[AUTO-TEST] Blog LoadTest 1786526855800 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e207] [cursor=pointer]:
+                  - /url: auto-test-blog-loadtest-1786526855800-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+                  - img "[AUTO-TEST] Blog LoadTest 1786526855800 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e208]
+              - generic [ref=e209]:
+                - heading "[AUTO-TEST] Blog LoadTest 1786526855800 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e210]:
+                  - link "[AUTO-TEST] Blog LoadTest 1786526855800 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e211] [cursor=pointer]:
+                    - /url: auto-test-blog-loadtest-1786526855800-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+                - paragraph [ref=e212]: Mô tả cho Blog bulk test
+      - generic [ref=e214]:
+        - heading "Sản phẩm cùng loại" [level=5] [ref=e216]
+        - generic [ref=e219]:
+          - generic [ref=e221]:
+            - link "Vải Canvas" [ref=e223] [cursor=pointer]:
+              - /url: vai-canvas
+            - generic [ref=e224]:
+              - heading "Vải Canvas" [level=3] [ref=e225]:
+                - link "Vải Canvas" [ref=e226] [cursor=pointer]:
+                  - /url: vai-canvas
+              - paragraph [ref=e227]:
+                - generic [ref=e228]: 150.000đ
+                - generic [ref=e229]: "-25%"
+                - generic [ref=e230]: 200.000đ
+          - generic [ref=e232]:
+            - link "Vải Simili" [ref=e234] [cursor=pointer]:
+              - /url: vai-simili
+            - generic [ref=e235]:
+              - heading "Vải Simili" [level=3] [ref=e236]:
+                - link "Vải Simili" [ref=e237] [cursor=pointer]:
+                  - /url: vai-simili
+              - paragraph [ref=e238]:
+                - generic [ref=e239]: Liên hệ
+          - generic [ref=e241]:
+            - link "Decal 3M" [ref=e243] [cursor=pointer]:
+              - /url: decal-3m
+            - generic [ref=e244]:
+              - heading "Decal 3M" [level=3] [ref=e245]:
+                - link "Decal 3M" [ref=e246] [cursor=pointer]:
+                  - /url: decal-3m
+              - paragraph [ref=e247]:
+                - generic [ref=e248]: Liên hệ
+          - generic [ref=e250]:
+            - link "Decal Blacklit film" [ref=e252] [cursor=pointer]:
+              - /url: decal-blacklit-film
+            - generic [ref=e253]:
+              - heading "Decal Blacklit film" [level=3] [ref=e254]:
+                - link "Decal Blacklit film" [ref=e255] [cursor=pointer]:
+                  - /url: decal-blacklit-film
+              - paragraph [ref=e256]:
+                - generic [ref=e257]: Liên hệ
+          - generic [ref=e259]:
+            - link "Decal Trắng Sữa" [ref=e261] [cursor=pointer]:
+              - /url: decal-trang-sua
+            - generic [ref=e262]:
+              - heading "Decal Trắng Sữa" [level=3] [ref=e263]:
+                - link "Decal Trắng Sữa" [ref=e264] [cursor=pointer]:
+                  - /url: decal-trang-sua
+              - paragraph [ref=e265]:
+                - generic [ref=e266]: Liên hệ
+          - generic [ref=e268]:
+            - link "Decal Trong" [ref=e270] [cursor=pointer]:
+              - /url: decal-trong
+            - generic [ref=e271]:
+              - heading "Decal Trong" [level=3] [ref=e272]:
+                - link "Decal Trong" [ref=e273] [cursor=pointer]:
+                  - /url: decal-trong
+              - paragraph [ref=e274]:
+                - generic [ref=e275]: Liên hệ
+          - generic [ref=e277]:
+            - link "Bạt Không Gân" [ref=e279] [cursor=pointer]:
+              - /url: bat-khong-gan
+            - generic [ref=e280]:
+              - heading "Bạt Không Gân" [level=3] [ref=e281]:
+                - link "Bạt Không Gân" [ref=e282] [cursor=pointer]:
+                  - /url: bat-khong-gan
+              - paragraph [ref=e283]:
+                - generic [ref=e284]: Liên hệ
+          - generic [ref=e286]:
+            - link "Bạt Hiflex Mặt Trắng" [ref=e288] [cursor=pointer]:
+              - /url: bat-hiflex-mat-trang
+            - generic [ref=e289]:
+              - heading "Bạt Hiflex Mặt Trắng" [level=3] [ref=e290]:
+                - link "Bạt Hiflex Mặt Trắng" [ref=e291] [cursor=pointer]:
+                  - /url: bat-hiflex-mat-trang
+              - paragraph [ref=e292]:
+                - generic [ref=e293]: Liên hệ
+        - generic:
+          - button [ref=e294] [cursor=pointer]:
+            - img [ref=e295]
+          - button [ref=e298] [cursor=pointer]:
+            - img [ref=e299]
+    - generic [ref=e302]:
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - link "In UV Phúc Sơn" [ref=e307] [cursor=pointer]:
+            - /url: https://inuvgiare24h.vn/
+            - img "In UV Phúc Sơn" [ref=e308]
+          - paragraph [ref=e309]: In UV Phúc Sơn
+          - list [ref=e310]:
+            - listitem [ref=e311]: "Địa chỉ: 160A Tam Bình, Khu phố 2, Phường Tam Phú, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam"
+            - listitem [ref=e312]:
+              - text: "Hotline:"
+              - link "0935 663 007" [ref=e313] [cursor=pointer]:
+                - /url: tel:0935663007
+            - listitem [ref=e314]:
+              - text: "Email:"
+              - link "phucsonadv@gmail.com" [ref=e315] [cursor=pointer]:
+                - /url: mailto:phucsonadv@gmail.com
+        - generic [ref=e316]:
+          - paragraph [ref=e317]: Về chúng tôi
+          - list [ref=e318]:
+            - listitem [ref=e319]:
+              - link "Giới thiệu" [ref=e320] [cursor=pointer]:
+                - /url: gioi-thieu
+            - listitem [ref=e321]:
+              - link "Sản phẩm" [ref=e322] [cursor=pointer]:
+                - /url: san-pham
+            - listitem [ref=e323]:
+              - link "Dự án" [ref=e324] [cursor=pointer]:
+                - /url: du-an
+            - listitem [ref=e325]:
+              - link "Blog" [ref=e326] [cursor=pointer]:
+                - /url: blog
+            - listitem [ref=e327]:
+              - link "Liên hệ" [ref=e328] [cursor=pointer]:
+                - /url: lien-he
+        - generic [ref=e329]:
+          - paragraph [ref=e330]: Dịch vụ nổi bật
+          - list [ref=e331]:
+            - listitem [ref=e332]:
+              - link "In UV Khổ Lớn Không Ghép" [ref=e333] [cursor=pointer]:
+                - /url: in-uv-kho-lon-khong-ghep
+            - listitem [ref=e334]:
+              - link "In UV 2 mặt" [ref=e335] [cursor=pointer]:
+                - /url: in-uv-2-mat
+            - listitem [ref=e336]:
+              - link "In UV Mặt Phẳng" [ref=e337] [cursor=pointer]:
+                - /url: in-uv-mat-phang
+            - listitem [ref=e338]:
+              - link "In UV Bạt Hiflex" [ref=e339] [cursor=pointer]:
+                - /url: in-uv-bat-hiflex
+            - listitem [ref=e340]:
+              - link "In Trần Xuyên Sáng" [ref=e341] [cursor=pointer]:
+                - /url: in-tran-xuyen-sang
+        - generic [ref=e342]:
+          - paragraph [ref=e343]: Chính sách của chúng tôi
+          - list [ref=e344]:
+            - listitem [ref=e345]:
+              - link "Chính sách bảo hành" [ref=e346] [cursor=pointer]:
+                - /url: chinh-sach-bao-hanh
+            - listitem [ref=e347]:
+              - link "Chính sách đổi trả" [ref=e348] [cursor=pointer]:
+                - /url: chinh-sach-doi-tra
+            - listitem [ref=e349]:
+              - link "Chính sách giao hàng" [ref=e350] [cursor=pointer]:
+                - /url: chinh-sach-giao-hang
+            - listitem [ref=e351]:
+              - link "Chính sách bảo mật" [ref=e352] [cursor=pointer]:
+                - /url: chinh-sach-bao-mat
+            - listitem [ref=e353]:
+              - link "Điều khoản sử dụng" [ref=e354] [cursor=pointer]:
+                - /url: dieu-khoan-su-dung
+      - generic [ref=e357]:
+        - generic [ref=e358]:
+          - text: Copyright ©2026 In UV Phúc Sơn Thiết kế web
+          - link "MIMA" [ref=e359] [cursor=pointer]:
+            - /url: https://mimatech.vn
+        - generic [ref=e361]:
+          - link "face" [ref=e362] [cursor=pointer]:
+            - /url: ""
+            - img "face" [ref=e363]
+          - link "mess" [ref=e364] [cursor=pointer]:
+            - /url: ""
+            - img "mess" [ref=e365]
+          - link "tiktok" [ref=e366] [cursor=pointer]:
+            - /url: ""
+            - img "tiktok" [ref=e367]
+          - link "youtube" [ref=e368] [cursor=pointer]:
+            - /url: ""
+            - img "youtube" [ref=e369]
+          - link "zalo" [ref=e370] [cursor=pointer]:
+            - /url: ""
+            - img "zalo" [ref=e371]
+    - generic [ref=e372]:
+      - 'link "Call me: 0935 663 007" [ref=e373] [cursor=pointer]':
+        - /url: tel:0935663007
+        - img [ref=e377]
+        - generic [ref=e380]: "Call me: 0935 663 007"
+      - 'link "Zalo: 0935 663 007" [ref=e381] [cursor=pointer]':
+        - /url: https://zalo.me/0935663007
+        - img [ref=e385]
+        - generic [ref=e386]: "Zalo: 0935 663 007"
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "93"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 93/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 💎 XUẤT SẮC
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "15"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 14
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 1
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: Decal Phản Quang, Dạ Quang
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e387]:
+      - generic [ref=e388]: "❌ Chi tiết lỗi cần khắc phục (1/15):"
+      - generic [ref=e389]:
+        - generic [ref=e390]:
+          - generic [ref=e391]: 3. Heading (H1-H6)
+          - generic [ref=e392]: 1 lỗi
+        - generic [ref=e393]:
+          - strong [ref=e395]: Heading phân cấp hợp lệ (2 lỗi)
+          - generic [ref=e396]: "⚠️ Heading phân cấp sai: Nhảy cấp từ H1 → H3 (\"Thông tin chi tiết\"); Nhảy cấp từ H3 → H5 (\"Sản phẩm cùng loại\")"
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 93/100 dưới ngưỡng 95%. Có 1/15 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```
