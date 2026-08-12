@@ -355,17 +355,46 @@ export class ArticleBasePage extends BasePage {
             for (const url of urlsToTry) {
                 try {
                     await this.page.goto(baseUrl + url);
-                    const articleItem = this.page.getByText(title, { exact: false }).first();
-                    await articleItem.waitFor({ state: 'visible', timeout: 5000 });
-                    found = true;
-                    break; // Ngừng vòng lặp nếu tìm thấy
+
+                    // Thử tìm trong tối đa 1 trang (bấm Xem thêm 1 lần)
+                    let maxPagesToSearch = 1;
+                    for (let i = 0; i < maxPagesToSearch; i++) {
+                        const articleItem = this.page.getByText(title, { exact: false }).first();
+
+                        // Chờ 2 giây xem có xuất hiện không
+                        if (await articleItem.isVisible({ timeout: 2000 }).catch(() => false)) {
+                            found = true;
+                            break;
+                        }
+
+                        // Nếu không thấy, cuộn xuống cuối và tìm nút "Xem thêm"
+                        await this.scrollToBottom();
+
+                        // Kiểm tra xem nút Xem thêm có hiển thị không
+                        if (await this.loadMoreBtn.isVisible({ timeout: 1500 }).catch(() => false)) {
+                            console.log(`🔎 Chưa thấy '${title}', đang bấm 'Xem thêm' (Lần ${i + 1})...`);
+                            await Promise.all([
+                                // Đợi request mạng tải xong dữ liệu mới
+                                this.page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => { }),
+                                this.loadMoreBtn.click({ force: true })
+                            ]);
+                            await TestHelper.delay(this.page, 1500); // Chờ thêm một chút cho DOM render
+                        } else {
+                            // Không còn nút Xem thêm nữa, thoát vòng lặp để thử URL khác
+                            break;
+                        }
+                    }
+
+                    if (found) {
+                        break; // Ngừng vòng lặp URL nếu đã tìm thấy
+                    }
                 } catch (error) {
                     // Tiếp tục vòng lặp thử URL tiếp theo
                 }
             }
 
             if (!found) {
-                throw new Error(`Không tìm thấy bài viết '${title}' trên các trang: ${urlsToTry.join(', ')}`);
+                throw new Error(`Không tìm thấy bài viết '${title}' trên các trang: ${urlsToTry.join(', ')} dù đã bấm Xem thêm.`);
             }
         });
     }
@@ -666,7 +695,7 @@ export class ArticleBasePage extends BasePage {
                 // Cơ chế chống văng ra Dashboard với retry: nếu bị văng thì tự vào lại qua menu
                 for (let retryCount = 0; retryCount < 3; retryCount++) {
                     const isAtList = await this.addNewButton.waitFor({ state: 'visible', timeout: 5000 }).then(() => true).catch(() => false);
-                    
+
                     if (isAtList) {
                         break; // Đã ở đúng trang danh sách, thoát vòng lặp
                     }
@@ -677,7 +706,7 @@ export class ArticleBasePage extends BasePage {
                     const exitBtn = this.page.locator("a.btn-danger").filter({ hasText: /Thoát/i }).first();
                     if (await exitBtn.isVisible().catch(() => false)) {
                         await Promise.all([
-                            this.page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 5000 }).catch(() => {}),
+                            this.page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 5000 }).catch(() => { }),
                             exitBtn.click({ force: true })
                         ]);
                     } else {

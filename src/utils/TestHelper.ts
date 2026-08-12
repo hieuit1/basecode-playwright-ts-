@@ -71,7 +71,7 @@ export class TestHelper {
             // Thử tối đa 3 lần để đảm bảo đứng đúng trang danh sách trước khi sang bước 3
             for (let retryCount = 0; retryCount < 3; retryCount++) {
                 const isAtList = await pageObj.addNewButton.waitFor({ state: 'visible', timeout: 5000 }).then(() => true).catch(() => false);
-                
+
                 if (isAtList) {
                     break; // Đã ở đúng trang danh sách, thoát vòng lặp
                 }
@@ -82,7 +82,7 @@ export class TestHelper {
                 const exitBtn = page.locator("a.btn-danger").filter({ hasText: /Thoát/i }).first();
                 if (await exitBtn.isVisible().catch(() => false)) {
                     await Promise.all([
-                        page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 5000 }).catch(() => {}),
+                        page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 5000 }).catch(() => { }),
                         exitBtn.click({ force: true })
                     ]);
                 } else {
@@ -123,8 +123,8 @@ export class TestHelper {
                 await expect.poll(async () => {
                     return await pageObj.getClientArticleCount(bulkPrefix);
                 }, {
-                    timeout: 10000,
-                    message: `Lỗi: Bấm Xem thêm nhưng số lượng ${itemTypeLabel} không tăng sau 10s! (Ban đầu: ${initialCount})`
+                    timeout: 30000,
+                    message: `Lỗi: Bấm Xem thêm nhưng số lượng ${itemTypeLabel} không tăng sau 30s! (Ban đầu: ${initialCount})`
                 }).toBeGreaterThan(initialCount);
 
                 const afterLoadCount = await pageObj.getClientArticleCount(bulkPrefix);

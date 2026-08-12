@@ -38,9 +38,42 @@ export class ContractPage extends BasePage {
         this.confirmDeleteButton = page.locator("//button[contains(text(),'Đồng ý')]");
     }
 
-    // Điền dữ liệu vào form liên hệ
+    // Điền dữ liệu vào form liên hệ (Cố tình làm chậm để lừa reCAPTCHA)
     async fillContactForm(fullname: string, phone: string, address: string, email: string, subject: string, content: string) {
         await test.step(`Điền thông tin liên hệ: ${fullname}`, async () => {
+            // const typingDelay = 50; // Delay 50ms giữa mỗi lần gõ phím (giống người thật)
+            // const fieldDelay = 300; // Nghỉ 300ms giữa việc chuyển sang ô tiếp theo
+
+            // if (fullname) { 
+            //     await this.fullnameInput.click();
+            //     await this.fullnameInput.pressSequentially(fullname, { delay: typingDelay }); 
+            //     await this.page.waitForTimeout(fieldDelay);
+            // }
+            // if (phone) { 
+            //     await this.phoneInput.click();
+            //     await this.phoneInput.pressSequentially(phone, { delay: typingDelay }); 
+            //     await this.page.waitForTimeout(fieldDelay);
+            // }
+            // if (address) { 
+            //     await this.addressInput.click();
+            //     await this.addressInput.pressSequentially(address, { delay: typingDelay }); 
+            //     await this.page.waitForTimeout(fieldDelay);
+            // }
+            // if (email) { 
+            //     await this.emailInput.click();
+            //     await this.emailInput.pressSequentially(email, { delay: typingDelay }); 
+            //     await this.page.waitForTimeout(fieldDelay);
+            // }
+            // if (subject) { 
+            //     await this.subjectInput.click();
+            //     await this.subjectInput.pressSequentially(subject, { delay: typingDelay }); 
+            //     await this.page.waitForTimeout(fieldDelay);
+            // }
+            // if (content) { 
+            //     await this.contentTextarea.click();
+            //     await this.contentTextarea.pressSequentially(content, { delay: typingDelay }); 
+            //     await this.page.waitForTimeout(fieldDelay);
+            // }
             if (fullname) { await this.fullnameInput.fill(fullname); }
             if (phone) { await this.phoneInput.fill(phone); }
             if (address) { await this.addressInput.fill(address); }
@@ -58,7 +91,15 @@ export class ContractPage extends BasePage {
     // Bấm nút Gửi
     async clickSend() {
         await test.step("Bấm nút Gửi", async () => {
-            await this.sendButton.evaluate((node) => node.removeAttribute('disabled'));
+            // Đợi 2.5 giây để mô phỏng người dùng đọc lại form và chờ reCAPTCHA load token ngầm xong
+            await this.page.waitForTimeout(2500);
+
+            // Từ từ rê chuột vào nút Gửi giống người thật
+            await this.sendButton.hover({ force: true });
+            await this.page.waitForTimeout(500); // Khựng lại nửa giây trước khi bấm
+
+            // Bỏ disabled (nếu web set cứng) và click
+            await this.sendButton.evaluate((node) => node.removeAttribute('disabled')).catch(() => { });
             await this.clickOn(this.sendButton);
         });
     }

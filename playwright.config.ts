@@ -12,7 +12,7 @@ export default defineConfig({
     globalSetup: "./src/setup/global.setup.ts",
     testDir: "./tests",
     timeout: 180000,
-    workers: process.env.CI ? 2 : undefined,
+    workers: process.env.CI ? 2 : 1,
     expect: {
         timeout: 5000,
     },
