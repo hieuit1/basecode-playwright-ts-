@@ -118,83 +118,16 @@ async function globalSetup(config: FullConfig) {
 }
 
 async function scanFrontendFeatures(baseUrl: string, browser: any) {
-  console.log('--- STARTING FRONTEND FEATURE SCAN ---');
   let page;
   try {
     const context = await browser.newContext();
     page = await context.newPage();
 
-    let scanUrl = baseUrl;
-    if (scanUrl.endsWith('/')) {
-      scanUrl = scanUrl.slice(0, -1);
-    }
-    const indexUrl = scanUrl.endsWith('.php') ? scanUrl : `${scanUrl}/index.php`;
+    // Import ở đây để tránh lỗi circular dependency (nếu có)
+    const { HomePage } = require('../pages/web/HomePage');
+    const homePage = new HomePage(page);
 
-    console.log(`Đang truy cập trang chủ: ${indexUrl}...`);
-
-    try {
-      const response = await page.goto(indexUrl, { waitUntil: 'domcontentloaded' });
-      if (response && response.status() === 404) {
-        console.log(`[THÔNG BÁO] Không tìm thấy /index.php, chuyển hướng về link gốc...`);
-        await page.goto(`${scanUrl}/`, { waitUntil: 'domcontentloaded' });
-      }
-    } catch (error) {
-      console.log(`[THÔNG BÁO] Lỗi khi truy cập /index.php, thử lại link gốc...`);
-      await page.goto(`${scanUrl}/`, { waitUntil: 'domcontentloaded' });
-    }
-
-
-    // Dùng page.evaluate để chạy Heuristic Analysis (Tìm ô input search)
-    const hasSearch = await page.evaluate(() => {
-      // Tìm tất cả các thẻ input
-      const inputs = Array.from(document.querySelectorAll('input'));
-
-      for (const input of inputs) {
-        // Loại trừ các input ẩn
-        if (input.type === 'hidden' || input.style.display === 'none') continue;
-
-        const type = input.type.toLowerCase();
-        const name = (input.name || '').toLowerCase();
-        const placeholder = (input.placeholder || '').toLowerCase();
-        const id = (input.id || '').toLowerCase();
-        const className = (input.className || '').toLowerCase();
-
-        // Các đặc điểm nhận diện thanh tìm kiếm
-        if (type === 'search') return true;
-        if (name === 'q' || name === 'keyword' || name === 'search') return true;
-        if (placeholder.includes('tìm kiếm') || placeholder.includes('search')) return true;
-        if (id.includes('search') || id === 'keyword') return true;
-        if (className.includes('search')) return true;
-      }
-
-      // Nếu không có input rõ ràng, thử tìm form action chứa chữ search
-      const forms = Array.from(document.querySelectorAll('form'));
-      for (const form of forms) {
-        const action = (form.getAttribute('action') || '').toLowerCase();
-        if (action.includes('search') || action.includes('tim-kiem')) return true;
-      }
-
-      return false;
-    });
-
-    console.log(`✅ Kết quả phân tích Heuristic - Có thanh tìm kiếm: ${hasSearch ? 'CÓ' : 'KHÔNG'}`);
-
-    const featuresDir = path.resolve(__dirname, '../../data/templates');
-    if (!fs.existsSync(featuresDir)) {
-      fs.mkdirSync(featuresDir, { recursive: true });
-    }
-
-    const featurePath = path.join(featuresDir, 'scanned-frontend.json');
-    const featureData = {
-      timestamp: new Date().toISOString(),
-      baseUrl: baseUrl,
-      features: {
-        search: hasSearch
-      }
-    };
-
-    fs.writeFileSync(featurePath, JSON.stringify(featureData, null, 2), 'utf-8');
-    console.log(`✅ Đã lưu cấu hình Frontend tại: ${featurePath}`);
+    await homePage.scanFrontendFeatures(baseUrl);
 
   } catch (error) {
     console.error('❌ Lỗi quét Frontend:', error);

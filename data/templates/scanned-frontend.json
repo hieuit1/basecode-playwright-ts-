@@ -1,7 +1,8 @@
 {
-  "timestamp": "2026-08-13T07:10:39.311Z",
+  "timestamp": "2026-08-13T09:37:19.164Z",
   "baseUrl": "https://cuanhomtruotquay.vn/",
   "features": {
-    "search": false
+    "search": false,
+    "newsletter": true
   }
 }

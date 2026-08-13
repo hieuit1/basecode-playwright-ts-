@@ -134,10 +134,9 @@ test.describe("Contract Feature Tests", () => {
                 await contractPage.verifyContactExists(validContractData.fullname);
 
                 await TestHelper.takeScreenshot(page, 'Danh sách liên hệ trước khi xóa');
-                await TestHelper.delay(page, 2000);
 
                 // Xóa liên hệ vừa gửi để dọn dẹp
-                await contractPage.deleteContact();
+                // await contractPage.deleteContact();
             });
         }
     );

@@ -28,4 +28,12 @@ export class FeatureHelper {
         this.loadData();
         return this.featureData?.features?.search === true;
     }
+
+    /**
+     * Kiểm tra xem website có chức năng đăng ký nhận tin không
+     */
+    static hasNewsletterFeature(): boolean {
+        this.loadData();
+        return this.featureData?.features?.newsletter === true;
+    }
 }

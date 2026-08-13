@@ -15,9 +15,6 @@ export class ContractPage extends BasePage {
     readonly dashboardElement: Locator;
     readonly notificationDropdown: Locator;
     readonly contactLink: Locator;
-    readonly selectAllCheckbox: Locator;
-    readonly deleteAllButton: Locator;
-    readonly confirmDeleteButton: Locator;
 
     constructor(page: Page) {
         super(page);
@@ -33,9 +30,6 @@ export class ContractPage extends BasePage {
         this.dashboardElement = page.locator("//span[@class='text-split']");
         this.notificationDropdown = page.locator("//li[@class='nav-item dropdown']//a[@class='nav-link']");
         this.contactLink = page.locator("//a[contains(text(),'Liên hệ')]");
-        this.selectAllCheckbox = page.locator("//input[@id='selectall-checkbox']");
-        this.deleteAllButton = page.locator("//div[@class='card-footer text-sm']//a[@id='delete-all']");
-        this.confirmDeleteButton = page.locator("//button[contains(text(),'Đồng ý')]");
     }
 
     // Điền dữ liệu vào form liên hệ (Cố tình làm chậm để lừa reCAPTCHA)
@@ -128,11 +122,4 @@ export class ContractPage extends BasePage {
         });
     }
 
-    async deleteContact() {
-        await test.step(`Xóa liên hệ`, async () => {
-            await this.clickOn(this.selectAllCheckbox);
-            await this.clickOn(this.deleteAllButton);
-            await this.clickOn(this.confirmDeleteButton);
-        });
-    }
 }
