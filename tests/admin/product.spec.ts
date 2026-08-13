@@ -154,7 +154,7 @@ if (MenuHelper.hasSubMenu(['Quản lý sản phẩm', 'Sản phẩm'], ['Sản p
                 await allure.story("Bulk Insert and Pagination Verification");
 
                 const timestamp = Date.now().toString();
-                const bulkPrefix = `[AUTO-TEST] Sản phẩm LoadTest`;
+                const bulkPrefix = `[AUTO-TEST] Sản phẩm thực hiện quá trình LoadTest`;
                 const baseTitle = `${bulkPrefix} ${timestamp}`;
                 const baseSlug = `san-pham-loadtest-${timestamp}`;
 

@@ -139,7 +139,7 @@ if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Dịch vụ00', 'Service
                 await allure.story("Bulk Insert and Pagination Verification");
 
                 const timestamp = Date.now().toString();
-                const bulkPrefix = `[AUTO-TEST] Dịch vụ LoadTest`;
+                const bulkPrefix = `[AUTO-TEST] Dịch vụ thực hiện quá trình LoadTest`;
                 const baseTitle = `${bulkPrefix} ${timestamp}`;
                 const baseSlug = `dich-vu-loadtest-${timestamp}`;
 
