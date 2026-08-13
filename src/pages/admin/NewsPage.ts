@@ -11,7 +11,7 @@ export class NewsPage extends ArticleBasePage {
         // Cấu hình riêng cho mục Tin tức
         this.parentMenu = page.locator("//a[@title='Quản lý bài viết']");
         this.subMenu = page.locator("//a[@href='news?act=man&type=tin-tuc']");
-        this.clientUrl = ["tin-tuc", "tin-tuc-va-su-kien"];
+        this.clientUrl = "tin-tuc";
     }
 
     // method 
@@ -28,7 +28,7 @@ export class NewsPage extends ArticleBasePage {
 
             // Đợi submenu hiển thị rõ ràng và kết thúc animation
             await this.subMenu.waitFor({ state: 'visible' });
-            
+
             // Dùng click force: true trong trường hợp AdminLTE menu hay bị che lấp nhẹ
             await Promise.all([
                 this.page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 10000 }).catch(() => { }),
