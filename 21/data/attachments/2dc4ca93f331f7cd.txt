@@ -1,0 +1,1 @@
+Giao diện 'Coming Soon' hiển thị hoàn toàn bình thường, cân đối, các đoạn văn bản được căn giữa rõ ràng và không phát hiện bất kỳ lỗi dàn trang, vỡ layout hay tràn viền nào.

@@ -1,0 +1,1 @@
+Giao diện trang web hiển thị tốt trên thiết bị di động, bố cục sắp xếp khoa học, phông chữ và khoảng cách rõ ràng, không phát hiện lỗi vỡ layout hay tràn viền.

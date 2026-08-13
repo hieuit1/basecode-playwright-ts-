@@ -1,1 +1,0 @@
-Giao diện website bị co cụm về bên trái màn hình, tạo ra khoảng trống màu đen chiếm phần lớn diện tích phía bên phải.
