@@ -1,1 +1,0 @@
-Giao diện hiển thị bình thường, các thành phần chữ và biểu tượng được sắp xếp cân đối ở trung tâm, không có dấu hiệu vỡ layout, tràn viền hay đè chữ.

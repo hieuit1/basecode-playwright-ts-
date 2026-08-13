@@ -1,0 +1,12 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 5176ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p>Công ty XingFa Đăng Khoa là đơn vị chuyên gia công, sản xuất và thi công các hạng mục nhôm kính với nhiều năm kinh nghiệm trong ngành. Chúng tôi cung cấp giải pháp trọn gói từ tư vấn, thiết kế, gia...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p>Công ty XingFa Đăng Khoa là đơn vị chuyên gia công, sản xuất và thi công các hạng mục nhôm kính với nhiều năm kinh nghiệm trong ngành. Chúng tôi cung cấp giải pháp trọn gói từ tư vấn, thiết kế, gia...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://cuanhomtruotquay.vn/index.php

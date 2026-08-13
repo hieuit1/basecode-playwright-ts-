@@ -1,0 +1,4 @@
+[GeminiVision] Processing file with sharp: /home/runner/work/basecode-playwright-ts-/basecode-playwright-ts-/test-results/ui-uiMobile-Mobile-UI-Test-b27d7--trang-Đánh-giá-trên-Mobile-Mobile/mobile-issues/To_n_b__trang_mobile.png
+[GeminiVision] File size: 5873410 bytes
+[GeminiVision] Successfully compressed /home/runner/work/basecode-playwright-ts-/basecode-playwright-ts-/test-results/ui-uiMobile-Mobile-UI-Test-b27d7--trang-Đánh-giá-trên-Mobile-Mobile/mobile-issues/To_n_b__trang_mobile.png
+[GeminiVision] Đang thử gọi model (Mobile Heuristic): gemini-3.6-flash...
