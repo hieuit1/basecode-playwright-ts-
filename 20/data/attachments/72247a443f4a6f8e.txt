@@ -1,0 +1,1 @@
+Giao diện được dàn trang rõ ràng, các khối nội dung, hình ảnh và văn bản được sắp xếp hợp lý, không có lỗi vỡ layout, tràn viền hay đè chữ nghiêm trọng.
