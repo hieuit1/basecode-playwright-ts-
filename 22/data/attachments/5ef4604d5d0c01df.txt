@@ -1,0 +1,56 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     86/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  95%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  22
+   ✅ Đạt:          19
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/22):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 20/43)]
+      → Broken links: khoa-du-lich-1 (status: 404), khoa-phan-the-1 (status: 404), ban-le-bat (status: 404), khoa-dien-tu-1 (status: 404), khoa-tu (status: 404), ban-le-bi (status: 404), tay-nang (status: 404), ray-nhan-mo (status: 404), ban-le (status: 404), tay-nam-am (status: 404), bep-gas-am (status: 404), ban-le-blum-cua (status: 404), bep-tu-dien-don (status: 404), bep-tu-2-cho (status: 404), ray-truot (status: 404), ray-am (status: 404), bep-dien-tu-ket-hop (status: 404), ray-bi (status: 404), bep-gas-ket-hop-tu (status: 404), bep-gas-don (status: 404)
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 5045ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 5045ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img loading="lazy" onerror="this.src='thumbs/276x321x1/assets/images/noimage.png';" src="thumbs/276x321x1/upload/product/test-image-3621-7738-2149-6872-3822-6808-4…" alt="NHÔM KÍNH ĐĂNG KHOA">
+
+[Vấn đề]: Phần tử LCP là ảnh nhưng không có thuộc tính width/height trong HTML.
+[Thông số hiện tại]: Kích thước không xác định từ HTML thô.
+[Chỉ thị hành động]: Dùng DevTools (Computed tab) đo kích thước hiển thị thực tế. Resize ảnh gốc bằng 2x kích thước hiển thị (định dạng .webp, quality 75-80), khai báo kích thước cứng vào HTML và thêm thẻ preload.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="[URL_ẢNH]" fetchpriority="high">
+
+<!-- Sửa thẻ <img> (thay X, Y bằng số đo thực tế): -->
+<img src="[URL_ẢNH]" width="X" height="Y" style="aspect-ratio: X / Y; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+   3. [[💻 Desktop] CLS (Cumulative Layout Shift): 0.153 (< 0.1)]
+      → [💻 Desktop] CLS quá cao: 0.153 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="footer">
+          - <div class="footer">
+          - <div class="info">
+          - <div class="info">
+          - <div class="footer-content">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="footer"> | <div class="footer"> | <div class="info">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

@@ -1,0 +1,20 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     87/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  95%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          13
+   ❌ Không đạt:    2
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (2/15):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 20/40)]
+      → Broken links: ban-le-bi (status: 404), khoa-dien-tu-1 (status: 404), khoa-phan-the-1 (status: 404), khoa-du-lich-1 (status: 404), ban-le-bat (status: 404), khoa-tu (status: 404), bep-dien-tu-ket-hop (status: 404), ray-truot (status: 404), ray-bi (status: 404), bep-gas-ket-hop-tu (status: 404), ray-nhan-mo (status: 404), bep-tu-dien-don (status: 404), ban-le (status: 404), bep-gas-am (status: 404), ban-le-blum-cua (status: 404), bep-tu-2-cho (status: 404), tay-nang (status: 404), tay-nam-am (status: 404), ray-am (status: 404), bep-gas-don (status: 404)
+--- SECURITY ---
+   2. [Mixed Content: 5 tài nguyên HTTP]
+      → Phát hiện 5 tài nguyên HTTP trên HTTPS: http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/bep-dien-han-di-ket-hop-cong-nghe-va-thiet-ke-dot-pha-trong-khong-gian-bep-hien-dai.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/bep-dien-han-di-su-ket-hop-tuyet-voi-giua-cong-nghe-va-thiet-ke.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/tinh-nang-noi-bat-bep-dien-han-di.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/loi-ich-khi-su-dung-bep-dien-han-di.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/tao-nen-khong-gian-bep-hien-dai.png
