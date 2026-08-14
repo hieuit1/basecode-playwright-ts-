@@ -1,0 +1,1 @@
+Giao diện được thiết kế rõ ràng, cân đối. Cấu trúc danh mục, thông tin liên hệ và footer xếp hàng ngay ngắn, khoảng cách giữa các khối phù hợp và không xuất hiện lỗi vỡ layout hay tràn viền.
