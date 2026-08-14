@@ -139,13 +139,13 @@ export class TestHelper {
             });
         } finally {
             if (isCreated) {
-                // await test.step(`bước 6: Dọn rác (Cleanup An Toàn Tuyệt Đối)`, async () => {
-                //     const baseUrl = process.env.BASE_URL?.endsWith('/') ? process.env.BASE_URL : process.env.BASE_URL + '/';
-                //     await page.goto(baseUrl + 'madmin/index.php');
-                //     await pageObj.gotoAdminMenu();
+                await test.step(`bước 6: Dọn rác (Cleanup An Toàn Tuyệt Đối)`, async () => {
+                    const baseUrl = process.env.BASE_URL?.endsWith('/') ? process.env.BASE_URL : process.env.BASE_URL + '/';
+                    await page.goto(baseUrl + 'madmin/index.php');
+                    await pageObj.gotoAdminMenu();
 
-                //     await pageObj.deleteArticlesWithPrefix(bulkPrefix);
-                // });
+                    await pageObj.deleteArticlesWithPrefix(bulkPrefix);
+                });
             }
         }
     }
