@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-14T02:26:42.291Z",
-  "baseUrl": "https://cuanhomtruotquay.vn/",
-  "productUrlForConsultation": "https://cuanhomtruotquay.vn/nha-cao-cap",
+  "timestamp": "2026-08-14T06:55:45.992Z",
+  "baseUrl": "https://code4.mimadigi.vn/2026/august/buivanquy_111126W/",
+  "productUrlForConsultation": "",
   "features": {
-    "search": false,
+    "search": true,
     "newsletter": true,
-    "freeConsultation": true
+    "freeConsultation": false
   }
 }

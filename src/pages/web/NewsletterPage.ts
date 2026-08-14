@@ -16,13 +16,13 @@ export class NewsletterPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.formWrapper = page.locator("//p[@class='form-p']");
+        this.formWrapper = page.locator("//div[@class='col-12 col-lg-6']");
         this.nameInput = page.locator("//input[@id='name-newsletter']").or(page.locator("//input[contains(@id, 'name')]"));
         this.emailInput = page.locator("//input[@id='email-newsletter']");
         this.phoneInput = page.locator("//input[@id='phone-newsletter']");
         this.serviceSelect = page.locator("//select[@id='service-newsletter']");
         this.contentTextarea = page.locator("//textarea[@id='content-newsletter']");
-        this.submitButton = page.locator("//div[@class='newsletter-button']");
+        this.submitButton = page.locator("//button[@name='submit-newsletter']");
         this.successMessage = page.locator("//div[@id='alert']");
         this.dashboardElement = page.locator("//span[@class='text-split']");
         this.notificationDropdown = page.locator("//li[@class='nav-item dropdown']//a[@class='nav-link']");
@@ -47,7 +47,8 @@ export class NewsletterPage extends BasePage {
         }
 
         // Chọn dịch vụ (chọn cái đầu tiên - index 1 vì 0 thường là placeholder)
-        if (await this.serviceSelect.isVisible().catch(() => false)) {
+        const hasServiceSelect = await this.serviceSelect.count() > 0;
+        if (hasServiceSelect && await this.serviceSelect.isVisible().catch(() => false)) {
             // Lấy danh sách các option để đảm bảo có thể chọn
             const options = this.serviceSelect.locator("option");
             const count = await options.count();

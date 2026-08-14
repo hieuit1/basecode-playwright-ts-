@@ -1,22 +1,16 @@
 {
-  "timestamp": "2026-08-14T02:26:38.651Z",
-  "baseUrl": "https://cuanhomtruotquay.vn/",
+  "timestamp": "2026-08-14T06:55:40.718Z",
+  "baseUrl": "https://code4.mimadigi.vn/2026/august/buivanquy_111126W/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
       "Banner",
       "Về chúng tôi",
-      "Quy trình hình thành",
+      "Lịch sử hình thành",
       "Tầm nhìn",
       "Sứ mệnh",
       "Giá trị cốt lõi",
-      "Thông số",
       "Đối tác"
-    ],
-    "Group Sản Phẩm": [
-      "Sản phẩm",
-      "Danh mục cấp 1",
-      "Sản phẩm"
     ],
     "Quản lý Dịch vụ": [
       "Danh mục cấp 1",
@@ -25,34 +19,39 @@
     "Quản lý bài viết": [
       "Tin tức",
       "Dự án",
-      "Vì sao",
       "Khách hàng",
+      "Vì sao chọn chúng tôi",
+      "Tiêu chí",
       "Chính sách"
     ],
     "Quản lý nhận tin": [
-      "Đăng ký nhận tin"
+      "Đăng ký nhận tin",
+      "Đăng ký tư vấn"
     ],
     "Quản lý trang tĩnh": [
+      "Slogan",
       "Liên hệ",
       "Footer",
-      "Copyright",
-      "Slogan footer"
+      "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.Ico GG rất thích)",
+      "Favicon (.ico GG rất thích)",
       "Logo",
-      "Vì sao image",
-      "Đăng ký image",
-      "Câu hỏi image",
-      "Tầm nhìn image",
+      "Logo footer",
+      "Banner vì sao",
+      "Banner form",
+      "Banner giá trị cốt lõi",
       "Slideshow",
-      "Mạng xã hội",
-      "FAQ"
+      "Mạng xã hội"
     ],
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
-      "Sản phẩm"
-    ]
+      "Sản phẩm",
+      "Dịch vụ",
+      "Tin tức",
+      "Liên hệ"
+    ],
+    "Thiết lập thông tin": []
   }
 }
