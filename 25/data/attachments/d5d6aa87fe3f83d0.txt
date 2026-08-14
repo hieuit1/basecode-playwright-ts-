@@ -1,0 +1,44 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     91/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  22
+   ✅ Đạt:          20
+   ❌ Không đạt:    2
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (2/22):
+--- PERFORMANCE ---
+   1. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 7131ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 7131ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img onerror="this.src='assets/images/noimage.png';" src="upload/photo/image-131-1-4824.png" alt="Lorem Ipsum" width="59" height="70">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 59x70px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 118x140px (2x cho Retina), định dạng .webp, dung lượng dưới 1KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="assets/images/noimage.png" width="59" height="70" style="aspect-ratio: 59 / 70; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 118 140 input.png -o output.webp
+   2. [[💻 Desktop] LCP (Largest Contentful Paint): 4318ms (< 2500ms)]
+      → [💻 Desktop] LCP quá cao: 4318ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <div class="footer footer-gara">
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <div class="footer footer-gara">
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code4.mimadigi.vn/2026/august/buivanquy_111126W/lien-he

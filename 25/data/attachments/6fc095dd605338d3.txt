@@ -1,0 +1,1 @@
+Giao diện hiển thị hoàn chỉnh, các khối nội dung được sắp xếp rõ ràng, tỷ lệ khoảng cách đồng đều, chữ và hình ảnh không bị đè lên nhau hay tràn viền.
