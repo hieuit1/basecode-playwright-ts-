@@ -36,4 +36,20 @@ export class FeatureHelper {
         this.loadData();
         return this.featureData?.features?.newsletter === true;
     }
+
+    /**
+     * Kiểm tra xem website có chức năng form tư vấn miễn phí không
+     */
+    static hasFreeConsultationFeature(): boolean {
+        this.loadData();
+        return this.featureData?.features?.freeConsultation === true;
+    }
+
+    /**
+     * Lấy URL trang chi tiết sản phẩm đã quét được
+     */
+    static getProductUrlForConsultation(): string {
+        this.loadData();
+        return this.featureData?.productUrlForConsultation || '';
+    }
 }

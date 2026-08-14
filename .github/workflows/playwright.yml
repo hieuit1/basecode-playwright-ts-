@@ -210,7 +210,7 @@ jobs:
           allure_results: target/allure-results
           allure_history: allure-history
           gh_pages: gh-pages-dir
-          keep_reports: 2
+          keep_reports: 15
 
       - name: Clean up large files before deploy
         run: |
