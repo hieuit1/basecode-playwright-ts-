@@ -16,13 +16,13 @@ export class NewsletterPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.formWrapper = page.locator("//div[@class='col-12 col-lg-6']");
+        this.formWrapper = page.locator("//p[@class='form-p']");
         this.nameInput = page.locator("//input[@id='name-newsletter']").or(page.locator("//input[contains(@id, 'name')]"));
         this.emailInput = page.locator("//input[@id='email-newsletter']");
         this.phoneInput = page.locator("//input[@id='phone-newsletter']");
         this.serviceSelect = page.locator("//select[@id='service-newsletter']");
         this.contentTextarea = page.locator("//textarea[@id='content-newsletter']");
-        this.submitButton = page.locator("//button[@name='submit-newsletter']");
+        this.submitButton = page.locator("//div[@class='newsletter-button']");
         this.successMessage = page.locator("//div[@id='alert']");
         this.dashboardElement = page.locator("//span[@class='text-split']");
         this.notificationDropdown = page.locator("//li[@class='nav-item dropdown']//a[@class='nav-link']");

@@ -67,7 +67,7 @@ export class HomePage extends BasePage {
 
         // 2. Quét tính năng đăng ký nhận tin
         // Theo yêu cầu, locator: //p[@class='form-p']
-        const hasNewsletter = await this.page.locator("//div[@class='col-12 col-lg-6']").isVisible({ timeout: 5000 }).catch(() => false);
+        const hasNewsletter = await this.page.locator("//p[@class='form-p']").isVisible({ timeout: 5000 }).catch(() => false);
 
         // 3. Quét tính năng Form Tư Vấn (Free Consultation) trên trang sản phẩm
         let hasFreeConsultation = false;

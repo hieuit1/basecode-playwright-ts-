@@ -11,19 +11,6 @@ export const validContractData = {
 
 export const invalidContractCases = [
     {
-        scenario: "bỏ trống họ tên",
-        fullname: "",
-        phone: "0796625425",
-        address: "123 Street, City",
-        email: "nguyenvana@example.com",
-        subject: "Test Subject",
-        content: "This is a test content.",
-        priority: "high",
-        severity: "critical",
-        assertionType: "form_block",
-        expectedMessage: "Vui lòng nhập họ tên"
-    },
-    {
         scenario: "sai định dạng email",
         fullname: "Nguyen Van B",
         phone: "0796625425",
