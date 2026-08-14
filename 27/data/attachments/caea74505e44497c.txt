@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- SECURITY ---
+   1. [Mixed Content: 5 tài nguyên HTTP]
+      → Phát hiện 5 tài nguyên HTTP trên HTTPS: http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/dich-vu/chinh-sach-bao-hanh-tai-cong-ty-tnhh-cung-ung-noi-that-han-di.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/dich-vu/tai-sao-chinh-sach-bao-hanh-quan-trong.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/dich-vu/chinh-sach-bao-hanh-tai-han-di.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/dich-vu/quy-trinh-bao-hanh.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/dich-vu/quyen-loi-cua-khach-hang-khi-su-dung-chinh-sach-bao-hanh.png

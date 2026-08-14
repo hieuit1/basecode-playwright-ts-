@@ -1,0 +1,1 @@
+Giao diện hiển thị tốt, bố cục các thành phần chuẩn xác, khoảng cách hợp lý, văn bản dễ đọc và không phát hiện lỗi dàn trang hay vỡ layout.
