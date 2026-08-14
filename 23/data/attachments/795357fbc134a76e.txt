@@ -1,0 +1,1 @@
+Phát hiện lỗi dàn trang đè nội dung: Nút bấm 'Xem thêm' nằm đè trực tiếp lên đoạn văn bản trong phần 'Hành Trình Khởi Nghiệp', làm che mất chữ và khó đọc.
