@@ -1,0 +1,28 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     95/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  22
+   ✅ Đạt:          21
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/22):
+--- PERFORMANCE ---
+   1. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 6755ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 6755ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <a class="text-decoration-none text-split text-split-2" href="auto-test-du-an-thuc-hien-qua-trinh-loadtest-1786693722029-1-1-1-1-1-1-1-1-1" title="[AUTO-TEST] Dự án thực hiện quá trình LoadTest 178669...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <a class="text-decoration-none text-split text-split-2" href="auto-test-du-an-thuc-hien-qua-trinh-loadtest-1786693722029-1-1-1-1-1-1-1-1-1" title="[AUTO-TEST] Dự án thực hiện quá trình LoadTest 178669...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code4.mimadigi.vn/2026/august/buivanquy_111126W/du-an

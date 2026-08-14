@@ -1,0 +1,1 @@
+Giao diện di động hiển thị hoàn chỉnh, các khối nội dung và văn bản được sắp xếp căn chỉnh rõ ràng, không gặp lỗi vỡ layout, tràn viền hay chồng chéo nội dung.

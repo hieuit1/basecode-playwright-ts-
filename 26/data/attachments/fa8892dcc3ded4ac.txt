@@ -1,0 +1,15 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 7465ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img onerror="this.src='assets/images/noimage.png';" src="upload/photo/image-131-1-4824.png" alt="Lorem Ipsum" width="59" height="70">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 59x70px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 118x140px (2x cho Retina), định dạng .webp, dung lượng dưới 1KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="assets/images/noimage.png" width="59" height="70" style="aspect-ratio: 59 / 70; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 118 140 input.png -o output.webp
