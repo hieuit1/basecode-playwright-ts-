@@ -1,0 +1,1 @@
+Giao diện trang 'Coming Soon' hiển thị bình thường, các phần tử văn bản và bộ đếm thời gian được căn giữa cân đối, không phát hiện lỗi vỡ layout hay tràn viền.

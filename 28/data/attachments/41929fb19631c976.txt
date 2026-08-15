@@ -1,0 +1,1 @@
+Giao diện màn hình hiển thị tốt, các phần tử dàn trang cân đối, khoảng cách hợp lý, chữ và hình ảnh không bị đè đè dính hay vỡ layout bất thường.
