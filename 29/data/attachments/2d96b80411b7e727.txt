@@ -1,0 +1,20 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     87/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          13
+   ❌ Không đạt:    2
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (2/15):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 3/28)]
+      → Broken links: Bếp điện Hân Di kết hợp công nghệ và thiết kế (status: 404), Phụ kiện cửa an toàn và tiện nghi (status: 404), upload/product/ (status: 404)
+--- SECURITY ---
+   2. [Mixed Content: 3 tài nguyên HTTP]
+      → Phát hiện 3 tài nguyên HTTP trên HTTPS: http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/NOI-THAT-BEP-2.jpg, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/NOI-THAT-BEP-3.jpg, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/NOI-THAT-BEP.jpg

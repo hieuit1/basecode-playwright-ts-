@@ -1,0 +1,72 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     86/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  22
+   ✅ Đạt:          19
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/22):
+--- PERFORMANCE ---
+   1. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 3668ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 3668ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img loading="lazy" onerror="this.src='thumbs/276x321x1/assets/images/noimage.png';" src="thumbs/276x321x1/assets/images/noimage.png" alt="NHÔM KÍNH ĐĂNG KHOA">
+
+[Vấn đề]: Phần tử LCP là ảnh nhưng không có thuộc tính width/height trong HTML.
+[Thông số hiện tại]: Kích thước không xác định từ HTML thô.
+[Chỉ thị hành động]: Dùng DevTools (Computed tab) đo kích thước hiển thị thực tế. Resize ảnh gốc bằng 2x kích thước hiển thị (định dạng .webp, quality 75-80), khai báo kích thước cứng vào HTML và thêm thẻ preload.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="[URL_ẢNH]" fetchpriority="high">
+
+<!-- Sửa thẻ <img> (thay X, Y bằng số đo thực tế): -->
+<img src="[URL_ẢNH]" width="X" height="Y" style="aspect-ratio: X / Y; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+   2. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.113 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.113 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="col mb-3" data-aos="fade-up" data-aos-duration="1000">
+          - <div class="sanpham-title">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="col mb-3" data-aos="fade-up" data-aos-duration="1000"> | <div class="sanpham-title">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
+   3. [[💻 Desktop] CLS (Cumulative Layout Shift): 0.493 (< 0.1)]
+      → [💻 Desktop] CLS quá cao: 0.493 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="col mb-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+          - <div class="sanpham-title">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="col mb-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000"> | <div class="sanpham-title">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

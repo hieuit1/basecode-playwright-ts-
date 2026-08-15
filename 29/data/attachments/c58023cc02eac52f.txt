@@ -1,0 +1,1 @@
+Giao diện trang web được trình bày rõ ràng, cân đối, các khối nội dung và văn bản không bị đè lên nhau hay vỡ khung, khoảng cách và lề tuân thủ đúng chuẩn giao diện di động.
