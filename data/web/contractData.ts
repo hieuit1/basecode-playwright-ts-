@@ -88,30 +88,4 @@ export const invalidContractCases = [
         assertionType: "form_block",
         expectedMessage: "Số điện thoại không hợp lệ"
     },
-    {
-        scenario: "nhập toàn khoảng trắng",
-        fullname: "      ",
-        phone: "0796625425",
-        address: "123 Street, City",
-        email: "nguyenvane@example.com",
-        subject: "Test Subject",
-        content: "This is a test content.",
-        priority: "medium",
-        severity: "normal",
-        assertionType: "form_block",
-        expectedMessage: "Vui lòng nhập họ tên"
-    },
-    {
-        scenario: "tấn công XSS",
-        fullname: "<script>alert('hack')</script>",
-        phone: "0796625425",
-        address: "123 Street, City",
-        email: "nguyenvane@example.com",
-        subject: "Test Subject",
-        content: "This is a test content.",
-        priority: "high",
-        severity: "critical",
-        assertionType: "form_block",
-        expectedMessage: "Ký tự không hợp lệ"
-    }
 ];

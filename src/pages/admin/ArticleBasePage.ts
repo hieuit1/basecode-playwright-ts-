@@ -56,6 +56,11 @@ export class ArticleBasePage extends BasePage {
     readonly contentEnHtml: Locator;
     readonly thongsoEnHtml: Locator;
 
+    // ── Timeout cấu hình (tăng lên khi mạng chậm) ──
+    protected readonly ELEMENT_DETECT_TIMEOUT = 5000;
+    protected readonly UPLOAD_SETTLE_TIMEOUT = 10000;
+    protected readonly ADMIN_ACTION_TIMEOUT = 15000;
+
     // Properties to store child-specific data
     protected clientUrl!: string | string[];
 
@@ -140,12 +145,12 @@ export class ArticleBasePage extends BasePage {
 
             // ===== PHẦN ĐƯỜNG DẪN (SLUG) =====
             // Luôn click tab VI trước khi nhập slug (web có tab thì click vào, không có tab thì bỏ qua)
-            const slugTabViVisible = await this.slugTabVi.isVisible({ timeout: 2000 }).catch(() => false);
+            const slugTabViVisible = await this.slugTabVi.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false);
             if (slugTabViVisible) await this.clickOn(this.slugTabVi);
             if (slug) await this.typeInto(this.slugInput, slug);
 
             if (hasEnData && enData?.slugEn) {
-                const slugTabEnVisible = await this.slugTabEn.isVisible({ timeout: 2000 }).catch(() => false);
+                const slugTabEnVisible = await this.slugTabEn.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false);
                 if (slugTabEnVisible) {
                     await this.clickOn(this.slugTabEn);
                     await this.typeInto(this.slugEnInput, enData.slugEn);
@@ -155,7 +160,7 @@ export class ArticleBasePage extends BasePage {
 
             // ===== PHẦN NỘI DUNG (VI) =====
             // Luôn click tab VI trước khi nhập nội dung (web có tab thì click vào, không có tab thì bỏ qua)
-            const contentTabViVisible = await this.contentTabVi.isVisible({ timeout: 2000 }).catch(() => false);
+            const contentTabViVisible = await this.contentTabVi.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false);
             if (contentTabViVisible) await this.clickOn(this.contentTabVi);
 
             if (title) await this.typeInto(this.titleInput, title);
@@ -163,7 +168,7 @@ export class ArticleBasePage extends BasePage {
 
             if (content) {
                 try {
-                    await this.contentviHtml.fill(content, { timeout: 2000 });
+                    await this.contentviHtml.fill(content, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                 } catch (e) {
                     const frame = this.page.frameLocator("iframe.cke_wysiwyg_frame").first();
                     await frame.locator("body").fill(content);
@@ -172,7 +177,7 @@ export class ArticleBasePage extends BasePage {
 
             // ===== PHẦN NỘI DUNG (EN) — chỉ chạy nếu có enData =====
             if (hasEnData) {
-                const contentTabEnVisible = await this.contentTabEn.isVisible({ timeout: 2000 }).catch(() => false);
+                const contentTabEnVisible = await this.contentTabEn.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false);
                 if (contentTabEnVisible) {
                     await this.clickOn(this.contentTabEn);
 
@@ -183,7 +188,7 @@ export class ArticleBasePage extends BasePage {
 
                     if (enData?.contentEn) {
                         try {
-                            await this.contentEnHtml.fill(enData.contentEn, { timeout: 2000 });
+                            await this.contentEnHtml.fill(enData.contentEn, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                         } catch (e) {
                             console.log('CẢNH BÁO: Không thể fill content EN qua frameLocator, bỏ qua.');
                         }
@@ -197,7 +202,7 @@ export class ArticleBasePage extends BasePage {
                 await this.clickOn(this.imageUploadButton);
                 const fileChooser = await fileChooserPromise;
                 await fileChooser.setFiles(imagePath);
-                await TestHelper.delay(this.page, 3000);
+                await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => {});
             }
 
             await this.clickOn(this.saveButton);
@@ -235,13 +240,13 @@ export class ArticleBasePage extends BasePage {
 
             // ===== PHẦN ĐƯỜNG DẪN (SLUG) =====
             // Luôn click tab VI trước khi nhập slug (web có tab thì click vào, không có tab thì bỏ qua)
-            const slugTabViVisible = await this.slugTabVi.isVisible({ timeout: 2000 }).catch(() => false);
+            const slugTabViVisible = await this.slugTabVi.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false);
             if (slugTabViVisible) await this.clickOn(this.slugTabVi);
             if (slug) await this.typeInto(this.slugInput, slug);
 
             // Nhập slug tiếng Anh nếu có
             if (hasEnData && enData?.slugEn) {
-                const slugTabEnVisible = await this.slugTabEn.isVisible({ timeout: 2000 }).catch(() => false);
+                const slugTabEnVisible = await this.slugTabEn.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false);
                 if (slugTabEnVisible) {
                     await this.clickOn(this.slugTabEn);
                     await this.typeInto(this.slugEnInput, enData.slugEn);
@@ -255,29 +260,29 @@ export class ArticleBasePage extends BasePage {
             await this.saveButton.waitFor({ state: 'attached', timeout: 10000 }).catch(() => { });
 
             if (code) {
-                if (await this.codeInput.isVisible({ timeout: 2000 }).catch(() => false)) {
+                if (await this.codeInput.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
                     await this.typeInto(this.codeInput, code);
                 }
             }
             if (regularPrice) {
-                if (await this.regularPriceInput.isVisible({ timeout: 1000 }).catch(() => false)) {
+                if (await this.regularPriceInput.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
                     await this.typeInto(this.regularPriceInput, regularPrice);
                 }
             }
             if (salePrice) {
-                if (await this.salePriceInput.isVisible({ timeout: 1000 }).catch(() => false)) {
+                if (await this.salePriceInput.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
                     await this.typeInto(this.salePriceInput, salePrice);
                 }
             }
             if (discount) {
-                if (await this.discountInput.isVisible({ timeout: 1000 }).catch(() => false)) {
+                if (await this.discountInput.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
                     await this.typeInto(this.discountInput, discount);
                 }
             }
 
             // ===== PHẦN NỘI DUNG SẢN PHẨM (VI) =====
             // Luôn click tab VI trước khi nhập nội dung VI (web có tab thì click vào, không có tab thì bỏ qua)
-            const contentTabViVisible = await this.contentTabVi.isVisible({ timeout: 2000 }).catch(() => false);
+            const contentTabViVisible = await this.contentTabVi.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false);
             if (contentTabViVisible) await this.clickOn(this.contentTabVi);
 
             if (title) {
@@ -290,7 +295,7 @@ export class ArticleBasePage extends BasePage {
 
             if (descHtml) {
                 try {
-                    await this.descviHtml.fill(descHtml, { timeout: 2000 });
+                    await this.descviHtml.fill(descHtml, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                 } catch (e) {
                     console.log('CẢNH BÁO: Không thể fill desc VI qua frameLocator, bỏ qua.');
                 }
@@ -298,11 +303,11 @@ export class ArticleBasePage extends BasePage {
 
             if (contentHtml) {
                 try {
-                    await this.contentviHtml.fill(contentHtml, { timeout: 2000 });
+                    await this.contentviHtml.fill(contentHtml, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                 } catch (e) {
                     try {
                         const frame = this.page.frameLocator("iframe.cke_wysiwyg_frame").first();
-                        await frame.locator("body").fill(contentHtml, { timeout: 2000 });
+                        await frame.locator("body").fill(contentHtml, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                     } catch (err) {
                         console.log('CẢNH BÁO: Không thể fill content VI qua frameLocator, bỏ qua.');
                     }
@@ -311,7 +316,7 @@ export class ArticleBasePage extends BasePage {
 
             if (thongsoHtml) {
                 try {
-                    await this.thongsoviHtml.fill(thongsoHtml, { timeout: 2000 });
+                    await this.thongsoviHtml.fill(thongsoHtml, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                 } catch (e) {
                     console.log('CẢNH BÁO: Không thể fill thongso VI qua frameLocator, bỏ qua.');
                 }
@@ -319,7 +324,7 @@ export class ArticleBasePage extends BasePage {
 
             // ===== PHẦN NỘI DUNG SẢN PHẨM (EN) — chỉ chạy nếu có enData =====
             if (hasEnData) {
-                const contentTabEnVisible = await this.contentTabEn.isVisible({ timeout: 2000 }).catch(() => false);
+                const contentTabEnVisible = await this.contentTabEn.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false);
                 if (contentTabEnVisible) {
                     await this.clickOn(this.contentTabEn);
 
@@ -327,7 +332,7 @@ export class ArticleBasePage extends BasePage {
 
                     if (enData?.descEn) {
                         try {
-                            await this.descEnHtml.fill(enData.descEn, { timeout: 2000 });
+                            await this.descEnHtml.fill(enData.descEn, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                         } catch (e) {
                             console.log('CẢNH BÁO: Không thể fill desc EN qua frameLocator, bỏ qua.');
                         }
@@ -335,7 +340,7 @@ export class ArticleBasePage extends BasePage {
 
                     if (enData?.contentEn) {
                         try {
-                            await this.contentEnHtml.fill(enData.contentEn, { timeout: 2000 });
+                            await this.contentEnHtml.fill(enData.contentEn, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                         } catch (e) {
                             // Fallback nếu CKEditor EN chưa khởi tạo
                             console.log('CẢNH BÁO: Không thể fill content EN qua frameLocator, bỏ qua.');
@@ -344,7 +349,7 @@ export class ArticleBasePage extends BasePage {
 
                     if (enData?.thongsoEn) {
                         try {
-                            await this.thongsoEnHtml.fill(enData.thongsoEn, { timeout: 2000 });
+                            await this.thongsoEnHtml.fill(enData.thongsoEn, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                         } catch (e) {
                             console.log('CẢNH BÁO: Không thể fill thongso EN qua frameLocator, bỏ qua.');
                         }
@@ -354,13 +359,13 @@ export class ArticleBasePage extends BasePage {
 
             // ===== PHẦN HÌNH ẢNH (không có tab ngôn ngữ) =====
             if (imagePath) {
-                if (await this.imageUploadButton.isVisible({ timeout: 2000 }).catch(() => false)) {
+                if (await this.imageUploadButton.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
                     try {
                         const fileChooserPromise = this.page.waitForEvent('filechooser', { timeout: 5000 });
                         await this.clickOn(this.imageUploadButton);
                         const fileChooser = await fileChooserPromise;
                         await fileChooser.setFiles(imagePath);
-                        await TestHelper.delay(this.page, 3000);
+                        await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => {});
                     } catch (e) {
                         console.log('CẢNH BÁO: Không thể upload hình ảnh, bỏ qua.');
                     }
@@ -368,13 +373,13 @@ export class ArticleBasePage extends BasePage {
             }
 
             if (galleryPaths && galleryPaths.length > 0) {
-                if (await this.galleryUploadButton.first().isVisible({ timeout: 2000 }).catch(() => false)) {
+                if (await this.galleryUploadButton.first().isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
                     try {
                         const fileChooserPromise = this.page.waitForEvent('filechooser', { timeout: 5000 });
                         await this.clickOn(this.galleryUploadButton.first());
                         const fileChooser = await fileChooserPromise;
                         await fileChooser.setFiles(galleryPaths);
-                        await TestHelper.delay(this.page, 3000);
+                        await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => {});
                     } catch (e) {
                         console.log('CẢNH BÁO: Không thể upload thư viện ảnh, bỏ qua.');
                     }
@@ -387,7 +392,9 @@ export class ArticleBasePage extends BasePage {
 
     async verifyAdminSuccess() {
         await test.step("Xác nhận thông báo lưu thành công trong Admin", async () => {
-            await this.successAdminMessage.waitFor({ state: 'visible', timeout: 5000 });
+            // Đợi navigation hoàn tất trước (server xử lý save + redirect)
+            await this.page.waitForLoadState('domcontentloaded', { timeout: this.ADMIN_ACTION_TIMEOUT }).catch(() => {});
+            await this.successAdminMessage.waitFor({ state: 'visible', timeout: this.ADMIN_ACTION_TIMEOUT });
         });
     }
 
@@ -428,9 +435,9 @@ export class ArticleBasePage extends BasePage {
                 const searchInput = this.page.locator("input[placeholder*='Tìm kiếm' i], input#keyword, input[name='keyword']").first();
                 const searchBtn = this.page.locator("button, a").filter({ has: this.page.locator(".fa-search") }).first();
 
-                if (await searchInput.isVisible({ timeout: 2000 })) {
+                if (await searchInput.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT })) {
                     await searchInput.fill(title);
-                    if (await searchBtn.isVisible({ timeout: 1000 })) {
+                    if (await searchBtn.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT })) {
                         await Promise.all([
                             this.page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 5000 }).catch(() => { }),
                             searchBtn.click()
@@ -657,7 +664,7 @@ export class ArticleBasePage extends BasePage {
                 }
 
                 // Copy thành công! Bật checkbox hiển thị
-                await this.firstShowCheckbox.waitFor({ state: 'attached', timeout: 2000 }).catch(() => { });
+                await this.firstShowCheckbox.waitFor({ state: 'attached', timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => { });
                 if (await this.firstShowCheckbox.count() > 0) {
                     const isChecked = await this.firstShowCheckbox.evaluate((node: HTMLInputElement) => node.checked).catch(() => true);
                     if (!isChecked) {
