@@ -1,0 +1,1 @@
+Giao diện trang web được thiết kế cân đối, chuẩn mobile responsive. Các phần tử văn bản, hình ảnh, nút bấm và form đặt bàn đều hiển thị rõ ràng, khoảng cách hợp lý, không bị chồng chéo hay tràn viền.
