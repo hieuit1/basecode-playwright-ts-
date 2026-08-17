@@ -1,0 +1,172 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","29708","Kiểm tra SEO Onpage: Vịt Áp Chảo Sốt Bơ (/vit-ap-chao-sot-bo)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","5973","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-17","passed","2026-08-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18057","Kiểm tra SEO Onpage: Các Món Canh (/cac-mon-canh)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","52026","Kiểm tra SEO Onpage: Nạc Vai Heo Nướng Bơ (/nac-vai-heo-nuong-bo)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","47775","Add blog successfully and verify on website","Desktop Chrome","2026-08-17","failed","2026-08-17","Blog Management Tests","admin/blog.spec.ts","",""
+"","23424","Add blog should fail with không nhập tiêu đề","Desktop Chrome","2026-08-17","passed","2026-08-17","Blog Management Tests","admin/blog.spec.ts","",""
+"","21658","Add blog should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-17","passed","2026-08-17","Blog Management Tests","admin/blog.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","110550","Kiểm tra SEO Onpage: Blog (/blog)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","73228","Kiểm tra SEO Onpage: Đồ Sống Ngâm Tương (/do-song-ngam-tuong)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","59997","Kiểm tra SEO Onpage: Nạc Dăm Heo Tẩm Vừng (/nac-dam-heo-tam-vung)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","40889","Kiểm tra SEO Onpage: Bí Quyết Tạo Nên Hương Vị Sườn Galbi Chuẩn Hàn Quốc (/bi-quyet-tao-nen-huong-vi-suon-galbi-chuan-han-quoc)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","6063","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-17","passed","2026-08-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","16495","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-17","passed","2026-08-17","Contract Feature Tests","web/contract.spec.ts","",""
+"","11235","Đặt bàn thất bại khi bỏ trống tên","Desktop Chrome","2026-08-17","passed","2026-08-17","Table Booking Feature Tests","web/booking.spec.ts","",""
+"","8536","Đặt bàn thất bại khi bỏ trống số điện thoại","Desktop Chrome","2026-08-17","passed","2026-08-17","Table Booking Feature Tests","web/booking.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","46179","Kiểm tra SEO Onpage: Điều khoản & Điều kiện (/dieu-khoan-dieu-kien)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","16685","Submit form should fail with nhập toàn khoảng trắng","Desktop Chrome","2026-08-17","failed","2026-08-17","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","28866","Kiểm tra SEO Onpage: [AUTO (/blog-loadtest-1786940352327)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19350","Kiểm tra SEO Onpage: Không Gian Lý Tưởng Cho Mọi Buổi Gặp Gỡ (/khong-gian-ly-tuong-cho-moi-buoi-gap-go)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","33562","Kiểm tra SEO Onpage: Cánh Gà Nướng Sốt BBQ (/canh-ga-nuong-sot-bbq)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","30140","Kiểm tra SEO Onpage: Đùi Gà Rút Xương Sốt Cay (/dui-ga-rut-xuong-sot-cay)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","61802","Add recruitment successfully and verify on website","Desktop Chrome","2026-08-17","failed","2026-08-17","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15118","Kiểm tra SEO Onpage: Sườn Cánh Buồm Heo Nướng (/suon-canh-buom-heo-nuong)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","73215","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","6186","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-17","passed","2026-08-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","27095","Kiểm tra SEO Onpage: Blog Automation 1786940235425 (/blog-test-1786940235425)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 78/100 | Đạt: 18/23 tiêu chí | Ngưỡng: 96%
+
+TỐT","74924","Kiểm tra SEO Onpage: Ban Chang (/ban-chang)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","29937","Kiểm tra SEO Onpage: Vịt Rút Xương Ướp Sốt (/vit-rut-xuong-uop-sot)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 71/100 | Đạt: 15/21 tiêu chí | Ngưỡng: 96%
+
+KHÁ","150062","Kiểm tra SEO Onpage: https://code5.mimadigi.vn/2026/august/galbitime_110326W/ (/index.php)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","47015","Bulk insert 35 blogs via Copy and verify Load More on website","Desktop Chrome","2026-08-17","failed","2026-08-17","Blog Management Tests","admin/blog.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","51193","Kiểm tra SEO Onpage: Mề Gà Nướng Sốt Sa Tế (/me-ga-nuong-sot-sa-te)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","84656","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","51763","Kiểm tra SEO Onpage: Ức Gà Nướng Bơ Tỏi (/uc-ga-nuong-bo-toi)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","26318","Kiểm tra SEO Onpage: Ức Vịt Nướng Sốt Tiêu (/uc-vit-nuong-sot-tieu)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","17804","Đặt bàn thành công","Desktop Chrome","2026-08-17","failed","2026-08-17","Table Booking Feature Tests","web/booking.spec.ts","",""
+"","9767","Login successfully with valid credentials","Desktop Chrome","2026-08-17","passed","2026-08-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","59002","Kiểm tra SEO Onpage: Thắt Lưng Bò Sốt Mật Ong (/that-lung-bo-sot-mat-ong)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","27629","Kiểm tra SEO Onpage: Ba Chỉ Bò Mỹ Nướng (/ba-chi-bo-my-nuong)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","7567","Đặt bàn thất bại khi bỏ trống ngày đặt","Desktop Chrome","2026-08-17","passed","2026-08-17","Table Booking Feature Tests","web/booking.spec.ts","",""
+"","11169","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-17","passed","2026-08-17","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","53536","Kiểm tra SEO Onpage: Gà Nướng Phô Mai (/ga-nuong-pho-mai)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17247","Kiểm tra SEO Onpage: Đồ Chiên (/do-chien)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","41811","Kiểm tra SEO Onpage: Đặt bàn (/dat-ban)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","21360","Submit form successfully with valid data","Desktop Chrome","2026-08-17","passed","2026-08-17","Contract Feature Tests","web/contract.spec.ts","",""
+"","16378","Submit form should fail with tấn công XSS","Desktop Chrome","2026-08-17","failed","2026-08-17","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23495","Kiểm tra SEO Onpage: Vịt Nướng Bơ Tỏi (/vit-nuong-bo-toi)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","40646","Kiểm tra SEO Onpage: chính sách Ưu Đãi (/chinh-sach-uu-dai)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","33424","Kiểm tra SEO Onpage: Thịt Heo (/thit-heo)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","64918","Kiểm tra SEO Onpage: Trải Nghiệm BBQ Hàn Quốc Trọn Vẹn (/trai-nghiem-bbq-han-quoc-tron-ven)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","14566","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-17","passed","2026-08-17","Contract Feature Tests","web/contract.spec.ts","",""
+"","5837","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-17","passed","2026-08-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","11386","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-17","passed","2026-08-17","Contract Feature Tests","web/contract.spec.ts","",""
+"","540179","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-08-17","passed","2026-08-17","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18990","Kiểm tra SEO Onpage: Thịt Bò (/thit-bo)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","14302","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-17","passed","2026-08-17","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","50053","Kiểm tra SEO Onpage: Thịt Hoa Bò Mỹ Cao Cấp (/thit-hoa-bo-my-cao-cap)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","50916","Kiểm tra SEO Onpage: Gà Ướp Sốt Mật Ong (/ga-uop-sot-mat-ong)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","58690","Kiểm tra SEO Onpage: Lõi Vai Bò Mỹ Sốt Hàn (/loi-vai-bo-my-sot-han)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","11442","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-17","passed","2026-08-17","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","47713","Kiểm tra SEO Onpage: Sườn Heo Nướng Sốt BBQ (/suon-heo-nuong-sot-bbq)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","6340","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-17","passed","2026-08-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","34229","Kiểm tra SEO Onpage: sườn bò rút xương ướp gia vị 150g (/suon-bo-rut-xuong-uop-gia-vi-150g)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","27795","Kiểm tra SEO Onpage: Gà Xiên Nướng Sốt Hàn (/ga-xien-nuong-sot-han)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","34744","Kiểm tra SEO Onpage: Dẻ Sườn Bò Mỹ Tẩm Sốt (/de-suon-bo-my-tam-sot)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23184","Kiểm tra SEO Onpage: Hải Sản (/hai-san)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","49628","Kiểm tra SEO Onpage: Thực đơn (/thuc-don)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","32153","Kiểm tra SEO Onpage: Thăn Nội Bò Mỹ Thượng Hạng (/than-noi-bo-my-thuong-hang)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","48296","Kiểm tra SEO Onpage: Mì Lạnh (/mi-lanh)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","33742","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-17","passed","2026-08-17","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","25629","Kiểm tra SEO Onpage: Thịt Vịt (/thit-vit)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","61505","Kiểm tra SEO Onpage: Gầu Bò Mỹ Nướng (/gau-bo-my-nuong)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"","31325","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-08-17","passed","2026-08-17","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","35887","Kiểm tra SEO Onpage: Đùi Vịt Nướng Sốt Đặc Biệt (/dui-vit-nuong-sot-dac-biet)","Desktop Chrome","2026-08-17","failed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","33398","Kiểm tra SEO Onpage: Thịt Gà (/thit-ga)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","27864","Kiểm tra SEO Onpage: Cơm Trộn (/com-tron)","Desktop Chrome","2026-08-17","passed","2026-08-17","SEO Page","seo/seo.spec.ts","",""

@@ -1,0 +1,55 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     86/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          18
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/21):
+--- PERFORMANCE ---
+   1. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 50/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 50/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   2. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 10792ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 10792ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="lazy w-100 loaded" onerror="this.src='assets/images/noimage.png';" width="370" height="317" data-src="thumbs/371x317x1/upload/news/test-image-3019.jpg.webp" alt="[AUTO-TEST] Blog LoadTest 1786940352327" src="thumbs/371x317x1/upload/news/test-image-3019.jpg.webp" data-was-processed="true">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 370x317px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 740x634px (2x cho Retina), định dạng .webp, dung lượng dưới 21KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="assets/images/noimage.png" width="370" height="317" style="aspect-ratio: 370 / 317; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 740 634 input.png -o output.webp
+   3. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.153 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.153 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="col-6 col-md-4 p-3">
+          - <div class="hotline-number-box">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="col-6 col-md-4 p-3"> | <div class="hotline-number-box">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

@@ -1,0 +1,55 @@
+[📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.183 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="footer-powered py-1">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div cla...
+          - <div class="d-flex align-items-center gap-1">
+                        <!-- đặt bàn -->
+                        <div class="d-none d-sm-block">
+       ...
+          - <p style="padding:0px; text-align:start"><span style="font-size:small"><span style="font-family:Roboto, sans-serif"><span style="font-style:normal"><s...
+          - <p style="padding:0px; text-align:start"><span style="font-family: Roboto, sans-serif; font-size: small;"><span style="font-size:12pt; padding:0px"><s...
+          - <a href="dat-ban" class="btn-datban1">
+                                Đặt bàn
+                            </a>
+          - <div class="footer" data-up="fade-up" data-aos-duration="1000">
+    <div class="footer-article py-3 py-lg-4">
+        <div class="container">
+        ...
+          - <::after></::after>
+          - <div class="footer-banner my-2 my-lg-4 aos-init aos-animate" data-aos="fade-down" data-aos-duration="500">
+        <div class="container">
+           ...
+          - <div class="info-product pt-2 pt-lg-3 mb-2 mb-lg-3">
+        <div class="title-main mb-0">
+            <h3 class="mb-0">
+                <a class="tex...
+          - <div class="container">
+
+    <!-- bài viết seo cấp -->
+    <div class="row justify-content-center">
+        <div class="col-12 mt-3 mt-lg-4 aos-init a...
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="footer-powered py-1">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div cla... | <div class="d-flex align-items-center gap-1">
+                        <!-- đặt bàn -->
+                        <div class="d-none d-sm-block">
+       ... | <p style="padding:0px; text-align:start"><span style="font-size:small"><span style="font-family:Roboto, sans-serif"><span style="font-style:normal"><s....
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
