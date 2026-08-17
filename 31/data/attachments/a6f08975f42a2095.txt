@@ -1,0 +1,20 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 10453ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <div class="footer" data-up="fade-up" data-aos-duration="1000">
+    <div class="footer-article py-3 py-lg-4">
+        <div class="container">
+            <div class="row justify-content-between g-4">
+...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <div class="footer" data-up="fade-up" data-aos-duration="1000">
+    <div class="footer-article py-3 py-lg-4">
+        <div class="container">
+            <div class="row justify-content-between g-4">
+...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code5.mimadigi.vn/2026/august/galbitime_110326W/lien-he
