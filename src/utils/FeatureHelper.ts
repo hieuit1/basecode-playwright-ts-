@@ -46,6 +46,14 @@ export class FeatureHelper {
     }
 
     /**
+     * Kiểm tra xem website có chức năng đặt bàn không
+     */
+    static hasBookingFeature(): boolean {
+        this.loadData();
+        return this.featureData?.features?.booking === true;
+    }
+
+    /**
      * Lấy URL trang chi tiết sản phẩm đã quét được
      */
     static getProductUrlForConsultation(): string {

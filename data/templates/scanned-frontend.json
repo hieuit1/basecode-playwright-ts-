@@ -1,10 +1,11 @@
 {
-  "timestamp": "2026-08-17T04:01:53.907Z",
+  "timestamp": "2026-08-17T07:08:44.612Z",
   "baseUrl": "https://code5.mimadigi.vn/2026/august/galbitime_110326W/",
   "productUrlForConsultation": "",
   "features": {
     "search": false,
     "newsletter": false,
-    "freeConsultation": false
+    "freeConsultation": false,
+    "booking": true
   }
 }

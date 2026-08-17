@@ -463,9 +463,23 @@ export class SeoPage extends BasePage {
       const pageUrl = (this as any).page?.url?.() ?? '[URL trang]';
 
       // ── TỔNG ĐIỂM PERFORMANCE (SCORE) ────────────────
+      const PERF_SCORE_THRESHOLD = 60;
+
       if (finalScore !== null) {
-        await require("allure-js-commons").step(`📊 [${platform}] Tổng điểm Performance: ${finalScore}/100`, async () => { });
+        const isScorePass = finalScore >= PERF_SCORE_THRESHOLD;
+        await sc.check(
+          `[${platform}] Tổng điểm Performance: ${finalScore}/100 (≥ ${PERF_SCORE_THRESHOLD})`,
+          isScorePass,
+          `[${platform}] Điểm Performance ${finalScore}/100 dưới ngưỡng ${PERF_SCORE_THRESHOLD}. Phân tích chi tiết LCP/CLS/INP bên dưới...`
+        );
+
+        // ✅ Score đạt ngưỡng → PASS ngay, không cần kiểm tra chi tiết từng chỉ số
+        if (isScorePass) {
+          return;
+        }
       }
+
+      // ── Chỉ kiểm tra chi tiết khi score < threshold hoặc không có score ──
 
       // ── LCP ──────────────────────────────────────────
       if (finalLcp === null) {

@@ -7,7 +7,7 @@ import { MenuHelper } from "../../src/utils/MenuHelper";
 
 test.use({ video: 'retain-on-failure' });
 
-if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Tuyển dụng'], ['TUYEN DUNG', 'Tuyển dụng', 'TUYỂN DỤNG'])) {
+if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Tuyển dụng'], ['TUYEN DUNG', 'Tuyển Dụng', 'TUYỂN DỤNG'])) {
     test.describe("Recruitment Management Tests", () => {
         let recruitmentPage: RecruitmentPage;
 
