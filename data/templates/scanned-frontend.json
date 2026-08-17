@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-14T06:55:45.992Z",
-  "baseUrl": "https://code4.mimadigi.vn/2026/august/buivanquy_111126W/",
+  "timestamp": "2026-08-17T04:01:53.907Z",
+  "baseUrl": "https://code5.mimadigi.vn/2026/august/galbitime_110326W/",
   "productUrlForConsultation": "",
   "features": {
-    "search": true,
-    "newsletter": true,
+    "search": false,
+    "newsletter": false,
     "freeConsultation": false
   }
 }
