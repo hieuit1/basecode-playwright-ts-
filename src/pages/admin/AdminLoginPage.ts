@@ -36,7 +36,27 @@ export class AdminLoginPage extends BasePage {
 
     async gotoLoginPage() {
         const baseUrl = process.env.BASE_URL?.endsWith('/') ? process.env.BASE_URL : process.env.BASE_URL + '/';
-        await this.page.goto(baseUrl + 'madmin/login');
+        const loginUrl = baseUrl + 'madmin/login';
+        const MAX_RETRIES = 3;
+
+        for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+            try {
+                await this.page.goto(loginUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+                return; // Thành công → thoát
+            } catch (error) {
+                console.log(`⚠ Truy cập Admin lần ${attempt}/${MAX_RETRIES} thất bại: ${(error as Error).message.split('\n')[0]}`);
+                if (attempt === MAX_RETRIES) {
+                    throw new Error(
+                        `❌ Không thể truy cập trang Admin sau ${MAX_RETRIES} lần thử.\n` +
+                        `URL: ${loginUrl}\n` +
+                        `Nguyên nhân phổ biến: Server chặn IP nước ngoài (CI/CD), WAF/Firewall, hoặc mạng không ổn định.\n` +
+                        `Lỗi gốc: ${(error as Error).message}`
+                    );
+                }
+                // Đợi trước khi thử lại (3s, 6s, 9s...)
+                await this.page.waitForTimeout(attempt * 3000);
+            }
+        }
     }
 
     async clickLogin() {
