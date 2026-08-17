@@ -12,7 +12,7 @@ export class BlogPage extends ArticleBasePage {
 
         // Cấu hình riêng cho mục Blog
         this.parentMenu = page.locator("//a[@title='Quản lý bài viết']");
-        this.subMenu = page.locator("//a[@title='BLOG']");
+        this.subMenu = page.locator("//a[@href='news?act=man&type=blog']");
     }
 
     async gotoAdminMenu() {
