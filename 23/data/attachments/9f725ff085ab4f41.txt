@@ -1,1 +1,0 @@
-Giao diện hiển thị bình thường, không có lỗi vỡ layout, tràn viền hay đè chữ.
