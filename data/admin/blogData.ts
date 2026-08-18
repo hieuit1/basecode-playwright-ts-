@@ -3,6 +3,7 @@ import * as path from 'path';
 const timestamp = Date.now().toString();
 
 export const validBlogData = {
+  numb: "0",
   slug: `blog-test-${timestamp}`,
   title: `Blog Automation ${timestamp}`,
   desc: `Đây là đoạn mô tả ngắn về blog được tự động tạo lúc ${timestamp}.`,
@@ -22,6 +23,7 @@ export const invalidBlogCases = [
         scenario: "không nhập tiêu đề",
         title: "",
         slug: `blog-${timestamp}`,
+        numb: "0",
         desc: "Mô tả ngắn",
         content: "Nội dung",
         imagePath: path.resolve(process.cwd(), "data/images/test-image.jpg"),
@@ -33,6 +35,7 @@ export const invalidBlogCases = [
         scenario: "không nhập đường dẫn mẫu",
         title: `Blog ${timestamp}`,
         slug: "",
+        numb: "0",
         desc: "Mô tả ngắn",
         content: "Nội dung",
         imagePath: path.resolve(process.cwd(), "data/images/test-image.jpg"),

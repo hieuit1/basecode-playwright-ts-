@@ -42,6 +42,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['Dự án'
                         await projectPage.addProject(
                             data.title,
                             data.slug,
+                            data.numb,
                             data.desc,
                             data.content,
                             data.imagePath
@@ -88,6 +89,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['Dự án'
                     await projectPage.addProject(
                         validProjectData.title,
                         validProjectData.slug,
+                        validProjectData.numb,
                         validProjectData.desc,
                         validProjectData.content,
                         validProjectData.imagePath,

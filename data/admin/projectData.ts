@@ -3,6 +3,7 @@ import * as path from 'path';
 const timestamp = Date.now().toString();
 
 export const validProjectData = {
+  numb: "0",
   slug: `du-an-test-${timestamp}`,
   title: `Dự án Automation ${timestamp}`,
   desc: `Đây là đoạn mô tả ngắn về dự án được tự động tạo lúc ${timestamp}.`,
@@ -22,6 +23,7 @@ export const invalidProjectCases = [
         scenario: "không nhập tiêu đề",
         title: "",
         slug: `du-an-${timestamp}`,
+        numb: "0",
         desc: "Mô tả ngắn",
         content: "Nội dung",
         imagePath: path.resolve(process.cwd(), "data/images/test-image.jpg"),
@@ -33,6 +35,7 @@ export const invalidProjectCases = [
         scenario: "không nhập đường dẫn mẫu",
         title: `Dự án ${timestamp}`,
         slug: "",
+        numb: "0",
         desc: "Mô tả ngắn",
         content: "Nội dung",
         imagePath: path.resolve(process.cwd(), "data/images/test-image.jpg"),

@@ -45,6 +45,7 @@ export class NewsPage extends ArticleBasePage {
     async addNews(
         title: string,
         slug: string,
+        numb: string,
         desc: string,
         content: string,
         imagePath: string,
@@ -55,12 +56,12 @@ export class NewsPage extends ArticleBasePage {
             contentEn?: string;
         }
     ) {
-        await this.addArticle(title, slug, desc, content, imagePath, enData);
+        await this.addArticle(title, slug, desc, content, imagePath, enData, numb);
     }
 
     // Ghi đè addArticle để dùng cho bulk test (TestHelper gọi hàm này với 5 tham số)
     // Tự động thêm dữ liệu tiếng Anh vào để test bulk
-    async addArticle(title: string, slug: string, desc: string, content: string, imagePath: string, enData?: any) {
+    async addArticle(title: string, slug: string, desc: string, content: string, imagePath: string, enData?: any, numb?: string) {
         // Nếu không có enData (do TestHelper gọi), tự động sinh dữ liệu tiếng Anh
         if (!enData) {
             enData = {
@@ -70,7 +71,7 @@ export class NewsPage extends ArticleBasePage {
                 contentEn: `English content for bulk test news`,
             };
         }
-        await super.addArticle(title, slug, desc, content, imagePath, enData);
+        await super.addArticle(title, slug, desc, content, imagePath, enData, numb || "0");
     }
 
     async verifyNewsInAdminSuccess() {

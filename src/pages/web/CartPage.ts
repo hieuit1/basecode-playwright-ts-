@@ -98,6 +98,8 @@ export class CartPage extends BasePage {
                 // Nếu "Execution context was destroyed", tức là navigation trước đó đã thành công
             }
         }
+        // Thêm thời gian chờ vì trang giỏ hàng thỉnh thoảng load hơi chậm/lag
+        await this.page.waitForTimeout(2000);
     }
 
     // ===== PRODUCT ACTIONS =====

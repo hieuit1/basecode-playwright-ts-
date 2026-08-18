@@ -4,6 +4,7 @@ import * as path from 'path';
 export const validProductData = {
     slug: `test-product-title-${timestamp}`,
     title: `Test Product Title ${timestamp}`,
+    numb: "0",
     code: `SP-${timestamp}`,
     regularPrice: "1500000",
     salePrice: "1200000",
@@ -39,6 +40,7 @@ export const invalidProductCases = [
         scenario: "không nhập tiêu đề",
         title: "",
         slug: `test-product-${timestamp}`,
+        numb: "0",
         code: `SP-${timestamp}`,
         regularPrice: "1500000",
         salePrice: "1200000",
@@ -56,6 +58,7 @@ export const invalidProductCases = [
         scenario: "không nhập đường dẫn mẫu",
         title: `Test Product Title ${timestamp}`,
         slug: "",
+        numb: "0",
         code: `SP-${timestamp}`,
         regularPrice: "1500000",
         salePrice: "1200000",

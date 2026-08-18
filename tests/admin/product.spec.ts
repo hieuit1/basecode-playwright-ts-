@@ -42,6 +42,7 @@ if (MenuHelper.hasSubMenu(['Quản lý sản phẩm', 'Sản phẩm'], ['Sản p
                         await productPage.addNewProduct(
                             data.title,
                             data.slug,
+                            data.numb,
                             data.code,
                             data.regularPrice,
                             data.salePrice,
@@ -94,6 +95,7 @@ if (MenuHelper.hasSubMenu(['Quản lý sản phẩm', 'Sản phẩm'], ['Sản p
                     await productPage.addNewProduct(
                         validProductData.title,
                         validProductData.slug,
+                        validProductData.numb,
                         validProductData.code,
                         validProductData.regularPrice,
                         validProductData.salePrice,

@@ -40,7 +40,7 @@ export class ServiceCategory1Page extends ArticleBasePage {
         await this.gotoAdminMenu();
     }
 
-    async addArticle(title: string, slug: string, desc: string, content: string, imagePath: string, enData?: any) {
+    async addArticle(title: string, slug: string, desc: string, content: string, imagePath: string, enData?: any, numb?: string) {
         if (!enData) {
             enData = {
                 titleEn: `${title} EN`,
@@ -53,11 +53,11 @@ export class ServiceCategory1Page extends ArticleBasePage {
         const processedEnData = { ...enData };
         delete processedEnData.descEn;
 
-        await super.addArticle(title, slug, "", content, imagePath, processedEnData);
+        await super.addArticle(title, slug, "", content, imagePath, processedEnData, numb || "0");
     }
 
-    async addServiceCategory1(title: string, slug: string, desc: string, content: string, imagePath: string, enData?: any) {
-        await this.addArticle(title, slug, desc, content, imagePath, enData);
+    async addServiceCategory1(title: string, slug: string, numb: string, desc: string, content: string, imagePath: string, enData?: any) {
+        await this.addArticle(title, slug, desc, content, imagePath, enData, numb);
     }
 
     async verifyServiceCategory1InAdminSuccess() {

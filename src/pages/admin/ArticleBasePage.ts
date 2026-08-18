@@ -31,6 +31,7 @@ export class ArticleBasePage extends BasePage {
 
     // Product locators
     readonly codeInput: Locator;
+    readonly numbInput: Locator;
     readonly regularPriceInput: Locator;
     readonly salePriceInput: Locator;
     readonly discountInput: Locator;
@@ -93,6 +94,7 @@ export class ArticleBasePage extends BasePage {
 
         // Cấu hình locators cho sản phẩm
         this.codeInput = page.locator("//input[@id='code']");
+        this.numbInput = page.locator("//input[@id='numb']");
         this.regularPriceInput = page.locator("//input[@id='regular_price']");
         this.salePriceInput = page.locator("//input[@id='sale_price']");
         this.discountInput = page.locator("//input[@id='discount']");
@@ -132,7 +134,8 @@ export class ArticleBasePage extends BasePage {
             slugEn?: string;
             descEn?: string;
             contentEn?: string;
-        }
+        },
+        numb?: string
     ) {
         const hasEnData = !!enData && Object.values(enData).some(v => !!v);
 
@@ -155,6 +158,13 @@ export class ArticleBasePage extends BasePage {
                     await this.clickOn(this.slugTabEn);
                     await this.typeInto(this.slugEnInput, enData.slugEn);
                     await this.clickOn(this.slugTabVi);
+                }
+            }
+
+            // ===== PHẦN SỐ THỨ TỰ =====
+            if (numb) {
+                if (await this.numbInput.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
+                    await this.typeInto(this.numbInput, numb);
                 }
             }
 
@@ -202,7 +212,7 @@ export class ArticleBasePage extends BasePage {
                 await this.clickOn(this.imageUploadButton);
                 const fileChooser = await fileChooserPromise;
                 await fileChooser.setFiles(imagePath);
-                await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => {});
+                await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => { });
             }
 
             await this.clickOn(this.saveButton);
@@ -212,6 +222,7 @@ export class ArticleBasePage extends BasePage {
     async addProduct(
         title: string,
         slug: string,
+        numb: string,
         code: string,
         regularPrice: string,
         salePrice: string,
@@ -259,6 +270,11 @@ export class ArticleBasePage extends BasePage {
             // Đợi form load cơ bản trước khi check visibility
             await this.saveButton.waitFor({ state: 'attached', timeout: 10000 }).catch(() => { });
 
+            if (numb) {
+                if (await this.numbInput.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
+                    await this.typeInto(this.numbInput, numb);
+                }
+            }
             if (code) {
                 if (await this.codeInput.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
                     await this.typeInto(this.codeInput, code);
@@ -365,7 +381,7 @@ export class ArticleBasePage extends BasePage {
                         await this.clickOn(this.imageUploadButton);
                         const fileChooser = await fileChooserPromise;
                         await fileChooser.setFiles(imagePath);
-                        await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => {});
+                        await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => { });
                     } catch (e) {
                         console.log('CẢNH BÁO: Không thể upload hình ảnh, bỏ qua.');
                     }
@@ -379,7 +395,7 @@ export class ArticleBasePage extends BasePage {
                         await this.clickOn(this.galleryUploadButton.first());
                         const fileChooser = await fileChooserPromise;
                         await fileChooser.setFiles(galleryPaths);
-                        await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => {});
+                        await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => { });
                     } catch (e) {
                         console.log('CẢNH BÁO: Không thể upload thư viện ảnh, bỏ qua.');
                     }
@@ -393,7 +409,7 @@ export class ArticleBasePage extends BasePage {
     async verifyAdminSuccess() {
         await test.step("Xác nhận thông báo lưu thành công trong Admin", async () => {
             // Đợi navigation hoàn tất trước (server xử lý save + redirect)
-            await this.page.waitForLoadState('domcontentloaded', { timeout: this.ADMIN_ACTION_TIMEOUT }).catch(() => {});
+            await this.page.waitForLoadState('domcontentloaded', { timeout: this.ADMIN_ACTION_TIMEOUT }).catch(() => { });
             await this.successAdminMessage.waitFor({ state: 'visible', timeout: this.ADMIN_ACTION_TIMEOUT });
         });
     }

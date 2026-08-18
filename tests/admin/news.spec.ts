@@ -42,6 +42,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết'], ['Tin tức', 'Bài viết
                         await newsPage.addNews(
                             data.title,
                             data.slug,
+                            data.numb,
                             data.desc,
                             data.content,
                             data.imagePath
@@ -87,6 +88,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết'], ['Tin tức', 'Bài viết
                     await newsPage.addNews(
                         validNewsData.title,
                         validNewsData.slug,
+                        validNewsData.numb,
                         validNewsData.desc,
                         validNewsData.content,
                         validNewsData.imagePath,

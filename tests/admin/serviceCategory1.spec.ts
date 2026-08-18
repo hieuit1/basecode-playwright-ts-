@@ -40,6 +40,7 @@ if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Danh mục cấp 1'])) {
                         await servicePage.addServiceCategory1(
                             data.title,
                             data.slug,
+                            data.numb,
                             data.desc,
                             data.content,
                             data.imagePath
@@ -86,6 +87,7 @@ if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Danh mục cấp 1'])) {
                     await servicePage.addServiceCategory1(
                         validServiceCategory1Data.title,
                         validServiceCategory1Data.slug,
+                        validServiceCategory1Data.numb,
                         validServiceCategory1Data.desc,
                         validServiceCategory1Data.content,
                         validServiceCategory1Data.imagePath,

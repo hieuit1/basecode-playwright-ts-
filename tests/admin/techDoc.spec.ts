@@ -41,6 +41,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['Tài li�
                         await techDocPage.addTechDoc(
                             data.title,
                             data.slug,
+                            data.numb,
                             data.desc,
                             data.content,
                             data.imagePath
@@ -87,6 +88,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['Tài li�
                     await techDocPage.addTechDoc(
                         validTechDocData.title,
                         validTechDocData.slug,
+                        validTechDocData.numb,
                         validTechDocData.desc,
                         validTechDocData.content,
                         validTechDocData.imagePath,

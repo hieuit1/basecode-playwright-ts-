@@ -41,6 +41,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Tuyển dụng'], ['TUYEN 
                         await recruitmentPage.addRecruitment(
                             data.title,
                             data.slug,
+                            data.numb,
                             data.desc,
                             data.content,
                             data.imagePath
@@ -87,6 +88,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Tuyển dụng'], ['TUYEN 
                     await recruitmentPage.addRecruitment(
                         validRecruitmentData.title,
                         validRecruitmentData.slug,
+                        validRecruitmentData.numb,
                         validRecruitmentData.desc,
                         validRecruitmentData.content,
                         validRecruitmentData.imagePath,

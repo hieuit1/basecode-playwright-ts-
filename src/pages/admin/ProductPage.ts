@@ -20,32 +20,32 @@ export class ProductPage extends ArticleBasePage {
     await test.step("Mở menu", async () => {
       // 1. Kiểm tra xem submenu đã hiển thị chưa
       if (!(await this.subMenu.isVisible().catch(() => false))) {
-          // 2. Kiểm tra xem parent menu có đang bị ẩn không
-          if (!(await this.parentMenu.isVisible().catch(() => false))) {
-              const hasGroup = await this.groupproduct.isVisible({ timeout: 2000 }).catch(() => false);
-              if (hasGroup) {
-                  await this.groupproduct.click({ force: true }).catch(() => {});
-                  await this.parentMenu.waitFor({ state: 'visible', timeout: 3000 }).catch(() => {});
-              }
+        // 2. Kiểm tra xem parent menu có đang bị ẩn không
+        if (!(await this.parentMenu.isVisible().catch(() => false))) {
+          const hasGroup = await this.groupproduct.isVisible({ timeout: 2000 }).catch(() => false);
+          if (hasGroup) {
+            await this.groupproduct.click({ force: true }).catch(() => { });
+            await this.parentMenu.waitFor({ state: 'visible', timeout: 3000 }).catch(() => { });
           }
+        }
 
-          // 3. Click vào parentMenu
-          // Dùng force: true hoặc DOM click để tránh lỗi Playwright báo "element is not visible" trên CI
-          try {
-              await this.parentMenu.click({ force: true, timeout: 3000 });
-          } catch (e) {
-              await this.parentMenu.evaluate((el: HTMLElement) => el.click()).catch(() => {});
-          }
+        // 3. Click vào parentMenu
+        // Dùng force: true hoặc DOM click để tránh lỗi Playwright báo "element is not visible" trên CI
+        try {
+          await this.parentMenu.click({ force: true, timeout: 3000 });
+        } catch (e) {
+          await this.parentMenu.evaluate((el: HTMLElement) => el.click()).catch(() => { });
+        }
       }
 
       // Đợi submenu hiển thị
-      await this.subMenu.waitFor({ state: 'visible', timeout: 5000 }).catch(() => {});
+      await this.subMenu.waitFor({ state: 'visible', timeout: 5000 }).catch(() => { });
 
       // Click vào submenu
       await Promise.all([
         this.page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 10000 }).catch(() => { }),
         this.subMenu.evaluate((el: HTMLElement) => el.click()).catch(async () => {
-            await this.subMenu.click({ force: true });
+          await this.subMenu.click({ force: true });
         })
       ]);
     });
@@ -58,6 +58,7 @@ export class ProductPage extends ArticleBasePage {
   async addNewProduct(
     title: string,
     slug: string,
+    numb: string,
     code: string,
     regularPrice: string,
     salePrice: string,
@@ -75,7 +76,7 @@ export class ProductPage extends ArticleBasePage {
       thongsoEn?: string;
     }
   ) {
-    await this.addProduct(title, slug, code, regularPrice, salePrice, discount, descHtml, contentHtml, thongsoHtml, imagePath, galleryPaths, enData);
+    await this.addProduct(title, slug, numb, code, regularPrice, salePrice, discount, descHtml, contentHtml, thongsoHtml, imagePath, galleryPaths, enData);
   }
 
   // Ghi đè phương thức addArticle của ArticleBasePage để dùng cho bulk test (TestHelper gọi hàm này)
@@ -83,6 +84,7 @@ export class ProductPage extends ArticleBasePage {
     await this.addProduct(
       title,
       slug,
+      "0",
       `SP-AUTO-${Date.now()}`,
       "100000",
       "90000",

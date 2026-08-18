@@ -41,6 +41,7 @@ if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Dịch vụ00', 'Service
                         await servicePage.addService(
                             data.title,
                             data.slug,
+                            data.numb,
                             data.desc,
                             data.content,
                             data.imagePath
@@ -87,6 +88,7 @@ if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Dịch vụ00', 'Service
                     await servicePage.addService(
                         validServiceData.title,
                         validServiceData.slug,
+                        validServiceData.numb,
                         validServiceData.desc,
                         validServiceData.content,
                         validServiceData.imagePath,

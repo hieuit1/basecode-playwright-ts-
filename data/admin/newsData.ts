@@ -2,6 +2,7 @@ const timestamp = Date.now().toString();
 import * as path from 'path';
 
 export const validNewsData = {
+  numb: "0",
   slug: `test-news-title-${timestamp}`,
   title: `Test News Title ${timestamp}`,
   desc: `Đây là đoạn mô tả ngắn được tự động tạo lúc ${timestamp} nhằm kiểm thử độ hiển thị của giao diện thẻ bài viết trên hệ thống. Đoạn văn này đủ dài để kiểm tra xem layout card tin tức có bị lệch dòng hay cắt chữ (truncate) không đúng định dạng hay không.`,
@@ -29,6 +30,7 @@ export const invalidNewsCases = [
         scenario: "không nhập tiêu đề",
         title: "",
         slug: `test-news-${timestamp}`,
+        numb: "0",
         desc: "Mô tả ngắn",
         content: "Nội dung",
         imagePath: path.resolve(process.cwd(), "data/images/test-image.jpg"),
@@ -40,6 +42,7 @@ export const invalidNewsCases = [
         scenario: "không nhập đường dẫn mẫu",
         title: `Test News Title ${timestamp}`,
         slug: "",
+        numb: "0",
         desc: "Mô tả ngắn",
         content: "Nội dung",
         imagePath: path.resolve(process.cwd(), "data/images/test-image.jpg"),

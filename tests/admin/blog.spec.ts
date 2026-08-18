@@ -41,6 +41,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['BLOG', 'B
                         await blogPage.addBlog(
                             data.title,
                             data.slug,
+                            data.numb,
                             data.desc,
                             data.content,
                             data.imagePath
@@ -87,6 +88,7 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['BLOG', 'B
                     await blogPage.addBlog(
                         validBlogData.title,
                         validBlogData.slug,
+                        validBlogData.numb,
                         validBlogData.desc,
                         validBlogData.content,
                         validBlogData.imagePath,

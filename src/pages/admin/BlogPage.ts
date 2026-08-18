@@ -44,6 +44,7 @@ export class BlogPage extends ArticleBasePage {
     async addBlog(
         title: string,
         slug: string,
+        numb: string,
         desc: string,
         content: string,
         imagePath: string,
@@ -54,9 +55,9 @@ export class BlogPage extends ArticleBasePage {
             contentEn?: string;
         }
     ) {
-        await this.addArticle(title, slug, desc, content, imagePath, enData);
+        await this.addArticle(title, slug, desc, content, imagePath, enData, numb);
     }
-    async addArticle(title: string, slug: string, desc: string, content: string, imagePath: string, enData?: any) {
+    async addArticle(title: string, slug: string, desc: string, content: string, imagePath: string, enData?: any, numb?: string) {
         // Nếu không có enData (do TestHelper gọi), tự động sinh dữ liệu tiếng Anh
         if (!enData) {
             enData = {
@@ -66,7 +67,7 @@ export class BlogPage extends ArticleBasePage {
                 contentEn: `English content for bulk test blog`,
             };
         }
-        await super.addArticle(title, slug, desc, content, imagePath, enData);
+        await super.addArticle(title, slug, desc, content, imagePath, enData, numb || "0");
     }
 
     async verifyBlogInAdminSuccess() {

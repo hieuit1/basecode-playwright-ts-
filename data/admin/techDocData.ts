@@ -3,6 +3,7 @@ import * as path from 'path';
 const timestamp = Date.now().toString();
 
 export const validTechDocData = {
+  numb: "0",
   slug: `tai-lieu-ky-thuat-test-${timestamp}`,
   title: `Tài liệu kỹ thuật Automation ${timestamp}`,
   desc: `Đây là tài liệu kỹ thuật được tạo tự động lúc ${timestamp} nhằm mục đích kiểm thử phần mềm. Đoạn mô tả này tóm tắt ngắn gọn nội dung của tài liệu.`,
@@ -31,6 +32,7 @@ export const invalidTechDocCases = [
         scenario: "không nhập tiêu đề",
         title: "",
         slug: `tai-lieu-ky-thuat-${timestamp}`,
+        numb: "0",
         desc: "Mô tả ngắn",
         content: "Nội dung",
         imagePath: path.resolve(process.cwd(), "data/images/test-image.jpg"),
@@ -42,6 +44,7 @@ export const invalidTechDocCases = [
         scenario: "không nhập đường dẫn mẫu",
         title: `Tài liệu kỹ thuật ${timestamp}`,
         slug: "",
+        numb: "0",
         desc: "Mô tả ngắn",
         content: "Nội dung",
         imagePath: path.resolve(process.cwd(), "data/images/test-image.jpg"),
