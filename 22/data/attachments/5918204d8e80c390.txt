@@ -1,1 +1,0 @@
-Giao diện website gặp lỗi hiển thị nghiêm trọng khi bị co hẹp về phía bên trái, để lại khoảng trống màu đen lớn chiếm hơn 50% chiều rộng màn hình ở bên phải.
