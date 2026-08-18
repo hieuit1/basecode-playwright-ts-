@@ -1,0 +1,19 @@
+Đang truy cập http://vophucthieudan.com/san-pham...
+Sẽ thêm 3/30 sản phẩm vào giỏ hàng...
+--- Đang thêm sản phẩm 1/3 (index: 7) ---
+Đang click vào sản phẩm: "Thương Võ Thuật (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" (index: 7)
+Đã đóng modal thông báo thêm giỏ hàng.
+--- Đang thêm sản phẩm 2/3 (index: 20) ---
+Đang truy cập http://vophucthieudan.com/san-pham...
+Đang click vào sản phẩm: "Thương Võ Thuật (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" (index: 20)
+Đã đóng modal thông báo thêm giỏ hàng.
+--- Đang thêm sản phẩm 3/3 (index: 9) ---
+Đang truy cập http://vophucthieudan.com/san-pham...
+Đang click vào sản phẩm: "Thương Võ Thuật (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" (index: 9)
+Đã đóng modal thông báo thêm giỏ hàng.
+Số lượng dòng SP trong giỏ: 3 | Kỳ vọng: 3
+  SP #1: 232.500 đ
+  SP #2: 232.500 đ
+  SP #3: 232.500 đ
+  Tổng cộng từng dòng: 697.500 đ
+  Tổng tiền hiển thị: 697.500 đ

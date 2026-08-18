@@ -1,0 +1,58 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     81/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          17
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/21):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H3 ("Dụng cụ võ thuật")
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 42/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 42/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 5012ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 5012ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p>CÔNG TY TNHH THƯƠNG MẠI SẢN XUẤT DỊCH VỤ THIỀU DẦN - Mã số thuế/GPKD: 0318811183 - Ngày cấp: 16/01/2025 - Địa chỉ: 227 Hương Lộ 80B, Khu phố 70, Phường Tân Thới Hiệp, TP Hồ Chí Minh, Việt Nam - Ngư...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p>CÔNG TY TNHH THƯƠNG MẠI SẢN XUẤT DỊCH VỤ THIỀU DẦN - Mã số thuế/GPKD: 0318811183 - Ngày cấp: 16/01/2025 - Địa chỉ: 227 Hương Lộ 80B, Khu phố 70, Phường Tân Thới Hiệp, TP Hồ Chí Minh, Việt Nam - Ngư...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://vophucthieudan.com/san-pham
+   4. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.843 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.843 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="container">
+          - <div class="footer">
+          - <div class="footer">
+          - <div class="info-product mt-2">
+          - <div class="info-product mt-2">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="container"> | <div class="footer"> | <div class="footer">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
