@@ -1,0 +1,15 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 7042ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="w-100" src="upload/photo/banne-gioithieu-4491.png" alt="OK VET" width="1920" height="450">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 1920x450px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 3840x900px (2x cho Retina), định dạng .webp, dung lượng dưới 156KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="upload/photo/banne-gioithieu-4491.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="upload/photo/banne-gioithieu-4491.png" width="1920" height="450" style="aspect-ratio: 1920 / 450; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 3840 900 input.png -o output.webp
