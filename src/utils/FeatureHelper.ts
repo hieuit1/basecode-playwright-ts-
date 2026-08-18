@@ -54,6 +54,14 @@ export class FeatureHelper {
     }
 
     /**
+     * Kiểm tra xem website có chức năng giỏ hàng không
+     */
+    static hasCartFeature(): boolean {
+        this.loadData();
+        return this.featureData?.features?.cart === true;
+    }
+
+    /**
      * Lấy URL trang chi tiết sản phẩm đã quét được
      */
     static getProductUrlForConsultation(): string {

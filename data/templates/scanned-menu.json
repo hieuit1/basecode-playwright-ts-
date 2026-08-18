@@ -1,61 +1,65 @@
 {
-  "timestamp": "2026-08-17T07:39:00.106Z",
-  "baseUrl": "https://code5.mimadigi.vn/2026/august/galbitime_110326W/",
+  "timestamp": "2026-08-18T03:55:04.665Z",
+  "baseUrl": "http://vophucthieudan.com/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
       "Banner",
-      "Về chúng tôi",
-      "Ý nghĩa thương hiệu",
-      "Chi nhánh",
-      "Định nghĩa thương hiệu",
+      "Giới thiệu",
+      "Lịch sử hình thành",
+      "Tầm nhìn",
+      "Sứ mệnh",
       "Giá trị cốt lõi",
-      "Thông số",
-      "Tiêu chí"
+      "Thông số"
     ],
-    "Group Thực đơn": [
-      "Chi tiết thực đơn",
+    "Group Sản Phẩm": [
+      "Sản phẩm",
       "Danh mục cấp 1",
-      "Chi tiết thực đơn"
+      "Danh mục cấp 2",
+      "Sản phẩm"
+    ],
+    "Quản lý Thư viện ảnh": [
+      "Thư viện ảnh"
     ],
     "Quản lý bài viết": [
-      "Blog",
-      "Tuyển dụng",
-      "Câu hỏi thường gặp",
-      "Chính sách"
+      "Dịch vụ",
+      "Tin tức",
+      "Bảng giá sỉ",
+      "Khách hàng",
+      "Vì sao chọn chúng tôi",
+      "Tiêu chí",
+      "Đơn hàng ảo",
+      "Chính sách",
+      "Hình thức thanh toán"
     ],
+    "Quản lý đơn hàng": [],
     "Quản lý nhận tin": [
-      "Đặt bàn"
+      "Đăng ký nhận tin",
+      "Đăng ký tư vấn"
     ],
     "Quản lý trang tĩnh": [
-      "Không gian quán",
+      "Slogan",
       "Liên hệ",
       "Footer",
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.png)",
+      "Favicon (.ico GG rất thích)",
       "Logo",
       "Logo footer",
-      "Banner footer",
-      "Ý nghĩa thương hiệu 1",
-      "Ý nghĩa thương hiệu 2",
+      "Banner vì sao",
       "Banner form",
-      "Banner faq",
+      "Banner cốt lõi",
       "Slideshow",
-      "Hình ảnh không gian quán",
-      "Góc khách hàng",
+      "Video",
       "Mạng xã hội",
-      "Link Redirect"
+      "Đối tác"
     ],
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
-      "Thực đơn",
-      "Tuyển dụng",
-      "Liên hệ",
-      "Blog"
-    ],
-    "Thiết lập thông tin": []
+      "Sản phẩm",
+      "Dịch vụ"
+    ]
   }
 }

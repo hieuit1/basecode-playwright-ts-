@@ -72,7 +72,10 @@ export class HomePage extends BasePage {
         // 3. Quét tính năng Đặt Bàn (Booking)
         const hasBooking = await this.page.locator("//h2[contains(text(),'ĐẶT BÀN')]").isVisible({ timeout: 5000 }).catch(() => false);
 
-        // 4. Quét tính năng Form Tư Vấn (Free Consultation) trên trang sản phẩm
+        // 4. Quét tính năng Giỏ Hàng (Cart)
+        const hasCart = await this.page.locator("//a[@class='cart d-flex align-items-center']").isVisible({ timeout: 5000 }).catch(() => false);
+
+        // 5. Quét tính năng Form Tư Vấn (Free Consultation) trên trang sản phẩm
         let hasFreeConsultation = false;
         let productUrlForConsultation = '';
         try {
@@ -118,6 +121,7 @@ export class HomePage extends BasePage {
         console.log(` Kết quả phân tích Heuristic - Có đăng ký nhận tin: ${hasNewsletter ? 'CÓ' : 'KHÔNG'}`);
         console.log(` Kết quả phân tích Heuristic - Có form tư vấn miễn phí: ${hasFreeConsultation ? 'CÓ' : 'KHÔNG'}`);
         console.log(` Kết quả phân tích Heuristic - Có đặt bàn: ${hasBooking ? 'CÓ' : 'KHÔNG'}`);
+        console.log(` Kết quả phân tích Heuristic - Có giỏ hàng: ${hasCart ? 'CÓ' : 'KHÔNG'}`);
 
         const featuresDir = path.resolve(__dirname, '../../../data/templates');
         if (!fs.existsSync(featuresDir)) {
@@ -133,7 +137,8 @@ export class HomePage extends BasePage {
                 search: hasSearch,
                 newsletter: hasNewsletter,
                 freeConsultation: hasFreeConsultation,
-                booking: hasBooking
+                booking: hasBooking,
+                cart: hasCart
             }
         };
 

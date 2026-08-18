@@ -103,6 +103,7 @@ jobs:
           UI_TEST_FIGMA_FILE_KEY: ${{ secrets.UI_TEST_FIGMA_FILE_KEY }}
           PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
         run: |
           # Helper script for outputting styled console messages
           export COLOR_RESET="\e[0m"

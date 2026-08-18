@@ -1,11 +1,12 @@
 {
-  "timestamp": "2026-08-17T07:39:02.918Z",
-  "baseUrl": "https://code5.mimadigi.vn/2026/august/galbitime_110326W/",
+  "timestamp": "2026-08-18T03:55:11.429Z",
+  "baseUrl": "http://vophucthieudan.com/",
   "productUrlForConsultation": "",
   "features": {
-    "search": false,
+    "search": true,
     "newsletter": false,
     "freeConsultation": false,
-    "booking": true
+    "booking": false,
+    "cart": true
   }
 }
