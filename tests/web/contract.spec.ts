@@ -87,6 +87,7 @@ test.describe("Contract Feature Tests", () => {
             await allure.story("Valid Contract Submission");
 
             await test.step("1 Nhập thông tin liên hệ hợp lệ", async () => {
+                await TestHelper.delay(page, 2000);
                 await contractPage.fillContactForm(
                     validContractData.fullname,
                     validContractData.phone,
