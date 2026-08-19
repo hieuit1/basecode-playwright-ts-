@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-18T10:07:54.353Z",
-  "baseUrl": "http://vophucthieudan.com/",
+  "timestamp": "2026-08-19T01:40:42.120Z",
+  "baseUrl": "https://code4.mimadigi.vn/2026/august/buivanquy_111126W/",
   "productUrlForConsultation": "",
   "features": {
     "search": true,
     "newsletter": false,
     "freeConsultation": false,
     "booking": false,
-    "cart": true
+    "cart": false
   }
 }

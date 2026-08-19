@@ -1,38 +1,29 @@
 {
-  "timestamp": "2026-08-18T10:07:50.806Z",
-  "baseUrl": "http://vophucthieudan.com/",
+  "timestamp": "2026-08-19T01:40:39.757Z",
+  "baseUrl": "https://code4.mimadigi.vn/2026/august/buivanquy_111126W/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
       "Banner",
-      "Giới thiệu",
+      "Về chúng tôi",
       "Lịch sử hình thành",
       "Tầm nhìn",
       "Sứ mệnh",
       "Giá trị cốt lõi",
-      "Thông số"
+      "Đối tác"
     ],
-    "Group Sản Phẩm": [
-      "Sản phẩm",
+    "Quản lý Dịch vụ": [
       "Danh mục cấp 1",
-      "Danh mục cấp 2",
-      "Sản phẩm"
-    ],
-    "Quản lý Thư viện ảnh": [
-      "Thư viện ảnh"
+      "Dịch vụ"
     ],
     "Quản lý bài viết": [
-      "Dịch vụ",
       "Tin tức",
-      "Bảng giá sỉ",
+      "Dự án",
       "Khách hàng",
       "Vì sao chọn chúng tôi",
       "Tiêu chí",
-      "Đơn hàng ảo",
-      "Chính sách",
-      "Hình thức thanh toán"
+      "Chính sách"
     ],
-    "Quản lý đơn hàng": [],
     "Quản lý nhận tin": [
       "Đăng ký nhận tin",
       "Đăng ký tư vấn"
@@ -44,22 +35,23 @@
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.ico GG rất thích)",
+      "Favicon",
       "Logo",
       "Logo footer",
       "Banner vì sao",
       "Banner form",
-      "Banner cốt lõi",
+      "Banner giá trị cốt lõi",
       "Slideshow",
-      "Video",
-      "Mạng xã hội",
-      "Đối tác"
+      "Mạng xã hội"
     ],
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
       "Sản phẩm",
-      "Dịch vụ"
-    ]
+      "Dịch vụ",
+      "Tin tức",
+      "Liên hệ"
+    ],
+    "Thiết lập thông tin": []
   }
 }
