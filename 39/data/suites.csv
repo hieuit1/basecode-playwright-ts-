@@ -1,0 +1,122 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","27389","Kiểm tra SEO Onpage: Hướng Dẫn Bảo Quản & Chăm Sóc Bàn Trà Gỗ Tự Nhiên (/huong-dan-bao-quan-cham-soc-ban-tra-go-tu-nhien)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17677","Kiểm tra SEO Onpage: Phòng Trà Acoustic Mộc Chill (/phong-tra-acoustic-moc-chill)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","111334","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21860","Kiểm tra SEO Onpage: Bàn trà đạo (/ban-tra-dao)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16276","Kiểm tra SEO Onpage: Cải tạo Không Gian Phòng Trà Acoustic (/cai-tao-khong-gian-phong-tra-acoustic)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 75/100 | Đạt: 18/24 tiêu chí | Ngưỡng: 96%
+
+KHÁ","123978","Kiểm tra SEO Onpage: Dự án (/du-an)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","10274","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","180371","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-08-19","broken","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","8438","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","73293","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-19","failed","2026-08-19","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21505","Kiểm tra SEO Onpage: In UV Mặt Phẳng Kính (/du-an-phong-tra-10)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","180365","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-19","broken","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","22671","Submit form successfully with valid data","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18666","Kiểm tra SEO Onpage: Nâng cấp Âm Thanh Phòng Trà Acoustic VIP (/nang-cap-am-thanh-phong-tra-acoustic-vip)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","10161","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","12286","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-19","passed","2026-08-19","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24379","Kiểm tra SEO Onpage: Tin tức 6 (/tin-tuc-6)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22822","Kiểm tra SEO Onpage: Sân Khấu Màn Hình LED Phòng Trà (/san-khau-man-hinh-led-phong-tra)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","44521","Add Service Category 1 successfully and verify on website","Desktop Chrome","2026-08-19","passed","2026-08-19","Service Category 1 Management Tests","admin/serviceCategory1.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19872","Kiểm tra SEO Onpage: Vận chuyển (/van-chuyen)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","13070","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","47719","Kiểm tra SEO Onpage: Nghệ Thuật Chọn Ấm Chén & Phụ Kiện Hài Hòa Với Bàn (/nghe-thuat-chon-am-chen-phu-kien-hai-hoa-voi-ban)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21320","Kiểm tra SEO Onpage: Cung Cấp Bàn Ghế Phòng Trà Cần Thơ (/cung-cap-ban-ghe-phong-tra-can-tho)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","12030","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-19","passed","2026-08-19","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","79063","Kiểm tra SEO Onpage: cảnh quan sân vườn (/canh-quan-san-vuon)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21634","Kiểm tra SEO Onpage: Trang Âm Tiêu Âm Phòng Trà Miền Tây (/trang-am-tieu-am-phong-tra-mien-tay)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19974","Kiểm tra SEO Onpage: Đổi trả (/doi-tra)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","72474","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-08-19","failed","2026-08-19","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24910","Kiểm tra SEO Onpage: Thanh toán (/thanh-toan)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23712","Kiểm tra SEO Onpage: Bảo hành (/bao-hanh)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20674","Kiểm tra SEO Onpage: Cách Chọn Chất Liệu Gỗ Cho Bàn Trà Đạo Trường Tồn (/cach-chon-chat-lieu-go-cho-ban-tra-dao-truong-ton)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","61701","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-19","failed","2026-08-19","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","77905","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","5141","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-19","failed","2026-08-19","Search Feature Tests","web/search.spec.ts","",""
+"","73781","Add product successfully and verify on website","Desktop Chrome","2026-08-19","failed","2026-08-19","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","87609","Kiểm tra SEO Onpage: https://code5.mimadigi.vn/2026/august/trancongvinh_111726W/ (/index.php)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","13136","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22337","Kiểm tra SEO Onpage: Thi công & Chế tác mộc (/thi-cong-che-tac-moc)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","24651","Add Service Category 1 should fail with không nhập tiêu đề","Desktop Chrome","2026-08-19","passed","2026-08-19","Service Category 1 Management Tests","admin/serviceCategory1.spec.ts","",""
+"","12607","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-19","passed","2026-08-19","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24758","Kiểm tra SEO Onpage: Kiểm tra đơn hàng (/kiem-tra-don-hang)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","53991","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-19","failed","2026-08-19","News Management Tests","admin/news.spec.ts","",""
+"","56674","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-19","failed","2026-08-19","News Management Tests","admin/news.spec.ts","",""
+"","12259","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","20636","Add Service Category 1 should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-19","passed","2026-08-19","Service Category 1 Management Tests","admin/serviceCategory1.spec.ts","",""
+"","180404","Kiểm tra SEO Onpage: Thiết kế phòng trà đạo (/thiet-ke-phong-tra-dao)","Desktop Chrome","2026-08-19","broken","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22868","Kiểm tra SEO Onpage: Lắp Đặt Ánh Sáng Phòng Trà Hà Nội (/lap-dat-anh-sang-phong-tra-ha-noi)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","34700","Kiểm tra SEO Onpage: Dịch vụ thiết kế 1 (/dich-vu-thiet-ke-1)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","73994","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-08-19","failed","2026-08-19","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","37087","Kiểm tra SEO Onpage: Triết Lý Wabi (/triet-ly-wabi-sabi-trong-thiet-ke-noi-that-phong-tra-hien-dai)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","50887","Add news successfully and verify on website","Desktop Chrome","2026-08-19","failed","2026-08-19","News Management Tests","admin/news.spec.ts","",""
+"","9183","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20214","Kiểm tra SEO Onpage: Đặc Quyền Của Sự Bình Yên: Nghệ Thuật Bài Trí Phòng Trà Tại Gia (/dac-quyen-cua-su-binh-yen-nghe-thuat-bai-tri-phong-tra-tai-gia)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24169","Kiểm tra SEO Onpage: Về viên mộc (/ve-vien-moc)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","8728","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","6688","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22680","Kiểm tra SEO Onpage: Hệ Thống Điều Hòa Trung Tâm Phòng Trà (/he-thong-dieu-hoa-trung-tam-phong-tra)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24203","Kiểm tra SEO Onpage: Cách Âm Phòng Trà Hà Nội (/cach-am-phong-tra-ha-noi)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","9291","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","10292","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","22544","Login successfully with valid credentials","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""

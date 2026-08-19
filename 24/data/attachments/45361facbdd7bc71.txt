@@ -1,1 +1,0 @@
-Giao diện hiển thị hoàn chỉnh, bố cục phân bổ hợp lý, khoảng cách đệm hai bên lề đồng đều và không có lỗi tràn viền hay đè văn bản bất thường.

@@ -1,0 +1,33 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     86/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          18
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/21):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 2/26)]
+      → Broken links: http://vienmoc79@gmail.com (status: 0), http://www.xuonggonoithatsaigon.com (status: 0)
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 57/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 57/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 13598ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 13598ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img onerror="this.src='thumbs/177x133x1/assets/images/noimage.png';" src="upload/photo/frame-2-4935.png" alt="Viên Mộc Decor - Thiết Kế Bàn Trà Đạo" title="Viên Mộc Decor - Thiết Kế Bàn Trà Đạo" widt...
+
+[Vấn đề]: Phần tử LCP là ảnh nhưng không có thuộc tính width/height trong HTML.
+[Thông số hiện tại]: Kích thước không xác định từ HTML thô.
+[Chỉ thị hành động]: Dùng DevTools (Computed tab) đo kích thước hiển thị thực tế. Resize ảnh gốc bằng 2x kích thước hiển thị (định dạng .webp, quality 75-80), khai báo kích thước cứng vào HTML và thêm thẻ preload.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="[URL_ẢNH]" fetchpriority="high">
+
+<!-- Sửa thẻ <img> (thay X, Y bằng số đo thực tế): -->
+<img src="[URL_ẢNH]" width="X" height="Y" style="aspect-ratio: X / Y; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
