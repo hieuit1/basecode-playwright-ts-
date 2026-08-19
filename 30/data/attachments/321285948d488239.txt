@@ -1,1 +1,0 @@
-Giao diện hiển thị chuẩn, bố cục căn chỉnh cân đối, khoảng cách giữa các khối nội dung hợp lý, văn bản không bị vỡ hay chồng chéo bất thường.
