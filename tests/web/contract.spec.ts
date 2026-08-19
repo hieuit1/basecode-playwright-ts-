@@ -8,7 +8,7 @@ chromium.use(stealth);
 
 const test = baseTest.extend({
     page: async ({ }, use) => {
-        const browser = await chromium.launch({ headless: false, args: ['--start-maximized'] });
+        const browser = await chromium.launch({ headless: !!process.env.CI, args: ['--start-maximized'] });
         const context = await browser.newContext({
             viewport: null,
             recordVideo: { dir: 'test-results/videos/' }
