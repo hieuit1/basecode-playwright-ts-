@@ -1,0 +1,244 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Liên hệ (/lien-he)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Test timeout of 180000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - link "Viên Mộc Decor - Thiết Kế Bàn Trà Đạo" [ref=e8] [cursor=pointer]:
+      - /url: https://code5.mimadigi.vn/2026/august/trancongvinh_111726W/
+      - img "Viên Mộc Decor - Thiết Kế Bàn Trà Đạo" [ref=e9]
+    - list [ref=e10]:
+      - listitem [ref=e11]:
+        - link "Trang chủ" [ref=e12] [cursor=pointer]:
+          - /url: ""
+      - listitem [ref=e13]:
+        - link "Về viên mộc" [ref=e14] [cursor=pointer]:
+          - /url: ve-vien-moc
+      - listitem [ref=e15]:
+        - link "Dịch vụ" [ref=e16] [cursor=pointer]:
+          - /url: dich-vu
+          - text: Dịch vụ
+          - img [ref=e17]
+      - listitem [ref=e19]:
+        - link "Sản phẩm" [ref=e20] [cursor=pointer]:
+          - /url: san-pham
+          - text: Sản phẩm
+          - img [ref=e21]
+      - listitem [ref=e23]:
+        - link "Dự án" [ref=e24] [cursor=pointer]:
+          - /url: du-an
+          - text: Dự án
+          - img [ref=e25]
+      - listitem [ref=e27]:
+        - link "Tin tức" [ref=e28] [cursor=pointer]:
+          - /url: tin-tuc
+      - listitem [ref=e29]:
+        - link "Liên hệ" [ref=e30] [cursor=pointer]:
+          - /url: lien-he
+    - generic [ref=e32]:
+      - searchbox "Nhập từ khóa..."
+      - button "Search" [ref=e33] [cursor=pointer]:
+        - img [ref=e34]
+    - link "0938830339" [ref=e38] [cursor=pointer]:
+      - /url: tel:0938830339
+      - img [ref=e39]
+      - text: "0938830339"
+  - list [ref=e44]:
+    - listitem [ref=e45]:
+      - link "Trang chủ" [ref=e46] [cursor=pointer]:
+        - /url: https://code5.mimadigi.vn/2026/august/trancongvinh_111726W/
+        - generic [ref=e47]: Trang chủ
+    - listitem [ref=e48]:
+      - text: /
+      - link "Liên hệ" [ref=e49] [cursor=pointer]:
+        - /url: https://code5.mimadigi.vn/2026/august/trancongvinh_111726W/lien-he
+        - generic [ref=e50]: Liên hệ
+  - generic [ref=e55]:
+    - generic [ref=e57]: Liên hệ
+    - tablist [ref=e58]
+    - generic [ref=e59]:
+      - tabpanel [ref=e62]:
+        - generic [ref=e63]:
+          - paragraph [ref=e64]:
+            - strong [ref=e65]: VIÊN MỘC DECOR
+          - paragraph [ref=e66]: "Địa chỉ: 298 Bà Điểm 4, Ấp Tiền Lân, xã Bà Điểm, TPHCM"
+          - paragraph [ref=e67]: "Hotline: 0938 830 339"
+          - paragraph [ref=e68]:
+            - text: "Zalo:"
+            - link "0902 555 933" [ref=e69] [cursor=pointer]:
+              - /url: https://zalo.me/0902555933
+          - paragraph [ref=e70]:
+            - text: "Email:"
+            - link "vienmoc79@gmail.com" [ref=e71] [cursor=pointer]:
+              - /url: http://vienmoc79@gmail.com
+          - paragraph [ref=e72]:
+            - text: "Website:"
+            - link "www.xuonggonoithatsaigon.com" [ref=e73] [cursor=pointer]:
+              - /url: http://www.xuonggonoithatsaigon.com
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e77]:
+            - textbox "Họ và tên" [ref=e78]
+            - generic: Họ và tên
+          - generic [ref=e80]:
+            - textbox "Điện thoại" [ref=e81]
+            - generic: Điện thoại
+          - generic [ref=e83]:
+            - textbox "Địa chỉ" [ref=e84]
+            - generic: Địa chỉ
+          - generic [ref=e86]:
+            - textbox "Email" [ref=e87]
+            - generic: Email
+        - generic [ref=e89]:
+          - textbox "Chủ đề" [ref=e90]:
+            - /placeholder: Dịch vụ quan tâm
+          - generic: Chủ đề
+        - generic [ref=e92]:
+          - textbox "Nội dung" [ref=e93]
+          - generic: Nội dung
+        - button "Gửi" [ref=e94] [cursor=pointer]
+        - button "Nhập lại" [ref=e95] [cursor=pointer]
+    - iframe [ref=e97]:
+      - generic [active] [ref=f3e1]:
+        - link "Xem đường đi (mở trong thẻ mới)" [ref=f3e6] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x31752b00406c3177:0x3eca4c154f85095c!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF
+          - img [ref=f3e10]
+        - generic [ref=f3e13]:
+          - generic:
+            - button "Phím tắt"
+          - region "Bản đồ" [ref=f3e14]
+          - generic [ref=f3e15]:
+            - iframe [ref=f3e64]:
+              
+            - button "Các chế độ điều khiển camera trên bản đồ" [ref=f3e66] [cursor=pointer]
+            - button "Hiển thị hình ảnh qua vệ tinh" [ref=f3e69] [cursor=pointer]:
+              - generic [ref=f3e73]:
+                - region [ref=f3e74]
+                - iframe [ref=f3e83]:
+                  
+            - img "Google" [ref=f3e85]
+            - generic [ref=f3e86]:
+              - button "Phím tắt" [ref=f3e92] [cursor=pointer]
+              - generic [ref=f3e97]: Dữ liệu bản đồ ©2026
+              - link "Điều khoản (mở trong thẻ mới)" [ref=f3e102] [cursor=pointer]:
+                - /url: https://www.google.com/intl/vi_US/help/terms_maps.html
+                - text: Điều khoản
+              - link "Báo cáo một lỗi bản đồ (mở trong thẻ mới)" [ref=f3e107] [cursor=pointer]:
+                - /url: https://www.google.com/maps/@10.8391839,106.5900216,18z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3
+                - text: Báo cáo một lỗi bản đồ
+  - generic [ref=e98]:
+    - generic [ref=e100]:
+      - link "Viên Mộc Decor - Thiết Kế Bàn Trà Đạo" [ref=e102] [cursor=pointer]:
+        - /url: https://code5.mimadigi.vn/2026/august/trancongvinh_111726W/
+        - img "Viên Mộc Decor - Thiết Kế Bàn Trà Đạo" [ref=e103]
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e106]: Thông tin liên hệ
+          - generic [ref=e107]:
+            - paragraph [ref=e108]:
+              - strong [ref=e109]: VIÊN MỘC DECOR
+            - paragraph [ref=e110]:
+              - strong [ref=e111]: 298 Bà Điểm 4, Ấp Tiền Lân, xã Bà Điểm, TPHCM
+            - paragraph [ref=e112]:
+              - strong [ref=e113]: "Hotline: 0938 830 339"
+            - paragraph [ref=e114]:
+              - strong [ref=e115]: "Zalo:"
+              - link "0902 555 933" [ref=e116] [cursor=pointer]:
+                - /url: https://zalo.me/0902555933
+            - paragraph [ref=e117]:
+              - strong [ref=e118]: "Email:"
+              - link "vienmoc79@gmail.com" [ref=e119] [cursor=pointer]:
+                - /url: https://code5.mimadigi.vn/2026/august/trancongvinh_111726W/
+            - paragraph [ref=e120]:
+              - strong [ref=e121]: "Website:"
+              - link "www.xuonggonoithatsaigon.com" [ref=e122] [cursor=pointer]:
+                - /url: https://code5.mimadigi.vn/2026/august/trancongvinh_111726W/
+          - generic [ref=e123]: Mạng xã hội
+          - generic [ref=e124]:
+            - link "Facebook" [ref=e125] [cursor=pointer]:
+              - /url: https://www.facebook.com/xuonggoluasaigon?locale=vi_VN
+              - img "Facebook" [ref=e126]
+            - link "Message" [ref=e127] [cursor=pointer]:
+              - /url: https://www.facebook.com/xuonggoluasaigon?locale=vi_VN
+              - img "Message" [ref=e128]
+            - link "Instargam" [ref=e129] [cursor=pointer]:
+              - /url: ""
+              - img "Instargam" [ref=e130]
+            - link "Tiktok" [ref=e131] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@thietkedecorbantradao?lang=hu-HU
+              - img "Tiktok" [ref=e132]
+            - link "Youtobe" [ref=e133] [cursor=pointer]:
+              - /url: ""
+              - img "Youtobe" [ref=e134]
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - generic [ref=e138]: Truy cập nhanh
+            - list [ref=e139]:
+              - listitem [ref=e140]:
+                - link "Trang chủ" [ref=e141] [cursor=pointer]:
+                  - /url: ""
+              - listitem [ref=e142]:
+                - link "Về viên mộc" [ref=e143] [cursor=pointer]:
+                  - /url: ve-vien-moc
+              - listitem [ref=e144]:
+                - link "Dịch vụ" [ref=e145] [cursor=pointer]:
+                  - /url: dich-vu
+              - listitem [ref=e146]:
+                - link "Tin tức" [ref=e147] [cursor=pointer]:
+                  - /url: tin-tuc
+              - listitem [ref=e148]:
+                - link "Liên hệ" [ref=e149] [cursor=pointer]:
+                  - /url: lien-he
+          - generic [ref=e150]:
+            - generic [ref=e151]: Sản phẩm
+            - list [ref=e152]:
+              - listitem [ref=e153]:
+                - link "Bàn trà đạo" [ref=e154] [cursor=pointer]:
+                  - /url: ban-tra-dao
+              - listitem [ref=e155]:
+                - link "Bàn trà thủy sinh" [ref=e156] [cursor=pointer]:
+                  - /url: ban-tra-thuy-sinh
+              - listitem [ref=e157]:
+                - link "Bàn trà phong thủy" [ref=e158] [cursor=pointer]:
+                  - /url: ban-tra-phong-thuy
+          - generic [ref=e159]:
+            - generic [ref=e160]: Dịch vụ
+            - list [ref=e161]:
+              - listitem [ref=e162]:
+                - link "Thi công cảnh quan sân vườn" [ref=e163] [cursor=pointer]:
+                  - /url: canh-quan-san-vuon
+              - listitem [ref=e164]:
+                - link "Thiết kế phòng trà đạo" [ref=e165] [cursor=pointer]:
+                  - /url: thiet-ke-phong-tra-dao
+              - listitem [ref=e166]:
+                - link "Thi công & Chế tác mộc" [ref=e167] [cursor=pointer]:
+                  - /url: thi-cong-che-tac-moc
+    - generic [ref=e171]:
+      - text: Copyright ©2026 Viên Mộc. All Right Reserved.
+      - generic [ref=e172]: Thiết kế web MIMA
+  - generic [ref=e173]:
+    - 'link "Call me: 0938830339" [ref=e174] [cursor=pointer]':
+      - /url: tel:0938830339
+      - img [ref=e178]
+      - generic [ref=e181]: "Call me: 0938830339"
+    - 'link "Zalo: 0902555933" [ref=e182] [cursor=pointer]':
+      - /url: https://zalo.me/0902555933
+      - img [ref=e186]
+      - generic [ref=e187]: "Zalo: 0902555933"
+```

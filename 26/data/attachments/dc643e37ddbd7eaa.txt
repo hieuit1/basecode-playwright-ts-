@@ -1,1 +1,0 @@
-Giao diện web mobile có bố cục chuẩn mực, khoảng cách và căn chỉnh hợp lý, không phát hiện lỗi vỡ khung, tràn viền hay đè chữ.

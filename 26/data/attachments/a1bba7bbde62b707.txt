@@ -1,1 +1,0 @@
-Phát hiện lỗi cắt xén văn bản (text truncation) ở tiêu đề thanh thông báo đầu trang và tiêu đề mục chính sách ở chân trang.
