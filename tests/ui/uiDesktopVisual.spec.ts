@@ -28,7 +28,7 @@ if (uiTestData.length > 0) {
                 `[${section.page}] [${section.sectionName}] So sánh Figma ↔ Web`,
                 { tag: testTags },
                 async ({ page }, testInfo) => {
-                    test.setTimeout(600000); // Tăng timeout lên 10 phút vì Figma S3 tải ảnh rất chậm ở một số mạng
+                    test.setTimeout(600000);
                     await allure.feature(section.page);
                     await allure.story(section.sectionName);
 
