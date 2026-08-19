@@ -40,7 +40,7 @@ export default defineConfig({
             name: 'Desktop Chrome',
             use: {
                 channel: 'chrome',
-                // viewport: { width: 1920, height: 1080 },
+                viewport: { width: 1920, height: 1080 },
                 launchOptions: {
                     args: ["--disable-blink-features=AutomationControlled"],
                 },
