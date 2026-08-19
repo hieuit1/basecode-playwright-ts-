@@ -71,7 +71,7 @@ export class CartPage extends BasePage {
             if (origin.endsWith('/')) origin = origin.slice(0, -1);
         }
 
-        const productPageUrl = `${origin}/san-pham`;
+        const productPageUrl = `${origin}/dat-mon`;
         console.log(`Đang truy cập ${productPageUrl}...`);
         await this.page.goto(productPageUrl, { waitUntil: 'domcontentloaded' });
     }
