@@ -1,54 +1,55 @@
 {
-  "timestamp": "2026-08-19T01:40:39.757Z",
-  "baseUrl": "https://code4.mimadigi.vn/2026/august/buivanquy_111126W/",
+  "timestamp": "2026-08-19T02:13:02.094Z",
+  "baseUrl": "https://code5.mimadigi.vn/2026/august/trancongvinh_111726W/",
   "menus": {
     "Bảng điều khiển": [],
-    "Group Giới Thiệu": [
+    "Group Về viên mộc": [
       "Banner",
-      "Về chúng tôi",
-      "Lịch sử hình thành",
-      "Tầm nhìn",
-      "Sứ mệnh",
-      "Giá trị cốt lõi",
-      "Đối tác"
+      "Về viên mộc",
+      "Tiêu chí"
     ],
     "Quản lý Dịch vụ": [
       "Danh mục cấp 1",
+      "Danh mục cấp 2",
       "Dịch vụ"
+    ],
+    "Quản lý Sản phẩm": [
+      "Danh mục cấp 1",
+      "Danh mục cấp 2",
+      "Sản phẩm"
+    ],
+    "Quản lý Dự án": [
+      "Danh mục cấp 1",
+      "Dự án"
     ],
     "Quản lý bài viết": [
       "Tin tức",
-      "Dự án",
-      "Khách hàng",
-      "Vì sao chọn chúng tôi",
-      "Tiêu chí",
-      "Chính sách"
+      "Cảm nhận khách hàng"
     ],
     "Quản lý nhận tin": [
-      "Đăng ký nhận tin",
-      "Đăng ký tư vấn"
+      "Đăng ký nhận tin"
     ],
     "Quản lý trang tĩnh": [
-      "Slogan",
+      "Mô tả form đăng kí",
       "Liên hệ",
       "Footer",
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon",
+      "Favicon (.png)",
       "Logo",
       "Logo footer",
-      "Banner vì sao",
-      "Banner form",
-      "Banner giá trị cốt lõi",
       "Slideshow",
-      "Mạng xã hội"
+      "Mạng xã hội",
+      "Đối tác",
+      "Link Redirect"
     ],
     "Quản lý seo page": [
       "Trang chủ",
-      "Giới thiệu",
-      "Sản phẩm",
+      "Về viên mộc",
       "Dịch vụ",
+      "Sản phẩm",
+      "Dự án",
       "Tin tức",
       "Liên hệ"
     ],
