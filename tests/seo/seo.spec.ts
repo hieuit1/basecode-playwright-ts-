@@ -28,7 +28,7 @@ test.describe("SEO Page", () => {
         annotation: [{ type: "severity", description: data.severity }],
       },
       async ({ page, seoPage }) => {
-        test.setTimeout(100000); // Tăng timeout lên 10 phút để tránh lỗi timeout khi chờ PageSpeed API
+        // test.setTimeout(100000); // Tăng timeout lên 10 phút để tránh lỗi timeout khi chờ PageSpeed API
         await allure.story(`Phân tích SEO chuyên sâu: ${data.name}`);
 
         const config = { ...DEFAULT_SEO_CONFIG, ...data };

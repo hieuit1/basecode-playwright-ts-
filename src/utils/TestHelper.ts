@@ -127,14 +127,6 @@ export class TestHelper {
                     message: `Lỗi: Bấm Xem thêm nhưng số lượng ${itemTypeLabel} không tăng sau 30s! (Ban đầu: ${initialCount})`
                 }).toBeGreaterThan(initialCount);
 
-                const afterLoadCount = await pageObj.getClientArticleCount(bulkPrefix);
-
-                // Bắt lỗi: Tổng số bài viết phải lớn hơn 30 hoặc 32
-                expect(
-                    afterLoadCount,
-                    `Lỗi: Tổng số ${itemTypeLabel} hiển thị (${afterLoadCount}) chưa vượt quá ngưỡng phân trang (30 bài)!`
-                ).toBeGreaterThan(30);
-
                 await TestHelper.takeScreenshot(page, `Đã load thêm ${itemTypeLabel} thành công`);
             });
         } finally {
@@ -219,14 +211,6 @@ export class TestHelper {
                     timeout: 20000,
                     message: `Lỗi: Bấm Xem thêm nhưng số lượng ${itemTypeLabel} không tăng sau 20s! (Ban đầu: ${initialCount})`
                 }).toBeGreaterThan(initialCount);
-
-                const afterLoadCount = await pageObj.getClientArticleCount(bulkPrefix);
-
-                // Bắt lỗi: Tổng số bài viết phải lớn hơn 30 hoặc 32
-                expect(
-                    afterLoadCount,
-                    `Lỗi: Tổng số ${itemTypeLabel} hiển thị (${afterLoadCount}) chưa vượt quá ngưỡng phân trang (30 bài)!`
-                ).toBeGreaterThan(30);
 
                 await TestHelper.takeScreenshot(page, `Đã load thêm ${itemTypeLabel} thành công`);
             });

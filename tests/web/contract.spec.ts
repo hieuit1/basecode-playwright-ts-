@@ -1,4 +1,25 @@
-import { test, expect } from "@playwright/test";
+import { test as baseTest, expect } from "@playwright/test";
+import { chromium } from "playwright-extra";
+// @ts-ignore
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
+
+const stealth = StealthPlugin();
+chromium.use(stealth);
+
+const test = baseTest.extend({
+    page: async ({ }, use) => {
+        const browser = await chromium.launch({ headless: false, args: ['--start-maximized'] });
+        const context = await browser.newContext({
+            viewport: null,
+            recordVideo: { dir: 'test-results/videos/' }
+        });
+        const page = await context.newPage();
+        await use(page);
+        await context.close();
+        await browser.close();
+    }
+});
+
 import { allure } from "allure-playwright";
 import { ContractPage } from "../../src/pages/web/ContractPage";
 import { AdminLoginPage } from "../../src/pages/admin/AdminLoginPage";
@@ -38,7 +59,7 @@ test.describe("Contract Feature Tests", () => {
                 await allure.story(`Invalid Contract: ${data.scenario.toUpperCase()}`);
 
                 await test.step(`Nhập form với trường hợp: ${data.scenario}`, async () => {
-                    await contractPage.fillContactForm(
+                    await contractPage.fillContactFormNe(
                         data.fullname,
                         data.phone,
                         data.address,
@@ -104,20 +125,8 @@ test.describe("Contract Feature Tests", () => {
             });
 
             await test.step("3 Xác nhận gửi thành công", async () => {
-                // Do Google reCAPTCHA v3 chặn các thao tác từ tool automation (Playwright) vì đánh giá điểm tin cậy thấp (< 0.5)
-                // Nên thay vì bắt buộc phải có thông báo thành công (div#alert), ta cho phép test pass 
-                // nếu server trả về thông báo lỗi "Gửi liên hệ không thành công" (chứng tỏ đã qua được frontend).
-
                 const successLocator = contractPage.successMessage;
-                const recaptchaErrorLocator = page.locator("text=không thành công");
-
-                try {
-                    await expect(successLocator.or(recaptchaErrorLocator).first()).toBeVisible({ timeout: 10000 });
-                } catch (error) {
-                    console.log("Không tìm thấy thông báo thành công hoặc lỗi reCAPTCHA.");
-                    throw error;
-                }
-
+                await expect(successLocator).toBeVisible({ timeout: 10000 });
                 await TestHelper.takeScreenshot(page, 'Thông báo sau khi gửi liên hệ');
             });
             await TestHelper.delay(page, 1000);
