@@ -1,0 +1,30 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     90/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          19
+   ❌ Không đạt:    2
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (2/21):
+--- PERFORMANCE ---
+   1. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 57/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 57/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   2. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 10368ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 10368ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p class="service-card-desc text-split text-split-3 mb-0">Mô tả bài dịch vụ 1 được xây dựng nhằm mang đến cho khách hàng giải pháp chuyên nghiệp, đáp ứng đa dạng nhu cầu với quy trình làm việc rõ ràng...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p class="service-card-desc text-split text-split-3 mb-0">Mô tả bài dịch vụ 1 được xây dựng nhằm mang đến cho khách hàng giải pháp chuyên nghiệp, đáp ứng đa dạng nhu cầu với quy trình làm việc rõ ràng...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code4.mimadigi.vn/2026/august/buivanquy_111126W/danh-muc-dich-vu-1

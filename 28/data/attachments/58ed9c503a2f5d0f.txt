@@ -1,1 +1,0 @@
-Giao diện được dàn trang cân đối, rõ ràng, các thẻ dịch vụ và phần chân trang (footer) có khoảng cách hợp lý, không phát hiện lỗi vỡ layout hay đè chữ nghiêm trọng.
