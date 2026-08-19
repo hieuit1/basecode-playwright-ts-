@@ -1,0 +1,60 @@
+══════════════════════════════════════
+   🟡 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     76/100
+   Đánh giá:    KHÁ
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          16
+   ❌ Không đạt:    5
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (5/21):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (2 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H3 ("Tiệc Cưới Garden Không Gian Xanh Mát, Tinh Tế Và Ấn Tượng"); Nhảy cấp từ H3 → H5 ("Đặt lịch")
+--- LINKS ---
+   2. [Không có broken links (lỗi: 2/24)]
+      → Broken links: tin-tuc (status: 404), http://namboaucowedding@gmail.com (status: 0)
+--- PERFORMANCE ---
+   3. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 59/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 59/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   4. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 6238ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 6238ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p class="desc text-split">Tổ chức tiệc Garden ngoài trời đẳng cấp với concept sáng tạo, không gian mở ấn tượng, ẩm thực phong phú và dịch vụ chuyên nghiệp, giúp sự kiện của bạn trở nên nổi bật và trọ...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p class="desc text-split">Tổ chức tiệc Garden ngoài trời đẳng cấp với concept sáng tạo, không gian mở ấn tượng, ẩm thực phong phú và dịch vụ chuyên nghiệp, giúp sự kiện của bạn trở nên nổi bật và trọ...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://nhahangtieccuoinambo.vn/dich-vu
+   5. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.168 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.168 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+          - <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+          - <div class="info">
+          - <div class="info">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-3"> | <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-3"> | <div class="info">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

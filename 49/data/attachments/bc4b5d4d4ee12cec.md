@@ -1,0 +1,389 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Thông Tin Liên Hệ Nhà Hàng Tiệc Cưới Nam Bộ – Nhà Hàng Tiệc Cưới (/lien-he)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 89/100 dưới ngưỡng 96%. Có 2/18 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e7]:
+      - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e9] [cursor=pointer]:
+        - /url: https://nhahangtieccuoinambo.vn/
+        - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e10]
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link [ref=e13] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e15]:
+          - link "Giới thiệu" [ref=e16] [cursor=pointer]:
+            - /url: gioi-thieu
+        - listitem [ref=e17]:
+          - link "Dịch vụ" [ref=e18] [cursor=pointer]:
+            - /url: dich-vu
+        - listitem [ref=e19]:
+          - link "Menu" [ref=e20] [cursor=pointer]:
+            - /url: menu
+        - listitem [ref=e21]:
+          - link "Tiệc cưới - báo hỷ" [ref=e22] [cursor=pointer]:
+            - /url: tiec-cuoi-bao-hy
+        - listitem [ref=e23]:
+          - link "Liên hệ" [ref=e24] [cursor=pointer]:
+            - /url: lien-he
+        - listitem [ref=e25]:
+          - link "Blog" [ref=e26] [cursor=pointer]:
+            - /url: blog
+        - listitem [ref=e27]:
+          - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e28]
+          - combobox [ref=e29]:
+            - option "VN" [selected]
+            - option "EN"
+            - option "CN"
+            - option "JA"
+            - option "KO"
+            - option "FR"
+    - list [ref=e32]:
+      - listitem [ref=e33]:
+        - link "Trang chủ" [ref=e34] [cursor=pointer]:
+          - /url: https://nhahangtieccuoinambo.vn/
+          - img [ref=e35]
+          - generic [ref=e37]: Trang chủ
+      - listitem [ref=e38]:
+        - text: /
+        - link "Liên hệ" [ref=e39] [cursor=pointer]:
+          - /url: https://nhahangtieccuoinambo.vn/lien-he
+    - generic [ref=e44]:
+      - generic [ref=e46]: Liên hệ
+      - generic [ref=e47]:
+        - tabpanel [ref=e50]:
+          - generic [ref=e51]:
+            - paragraph [ref=e52]:
+              - strong [ref=e56]: Nhà Hàng Tiệc Cưới Nam Bộ
+            - paragraph [ref=e57]:
+              - generic [ref=e58]: 615A Âu Cơ, P. Hòa Thạnh, Quận Tân Phú, TP.HCM
+            - paragraph [ref=e59]:
+              - generic [ref=e60]: "Hotline tư vấn: 094 963 61 66"
+            - paragraph [ref=e61]:
+              - generic [ref=e62]: "Giờ mở cửa: 8h30 - 22h30 hằng ngày"
+            - paragraph [ref=e63]:
+              - generic [ref=e64]: "Email: phongtiec.nambo@gmail.com"
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e68]:
+              - textbox "Họ và tên" [ref=e69]
+              - generic: Họ và tên
+            - generic [ref=e71]:
+              - textbox "Điện thoại" [ref=e72]
+              - generic: Điện thoại
+            - generic [ref=e74]:
+              - textbox "Địa chỉ" [ref=e75]
+              - generic: Địa chỉ
+            - generic [ref=e77]:
+              - textbox "Email" [ref=e78]
+              - generic: Email
+          - generic [ref=e80]:
+            - textbox "Chủ đề" [ref=e81]:
+              - /placeholder: Dịch vụ quan tâm
+            - generic: Chủ đề
+          - generic [ref=e83]:
+            - textbox "Nội dung" [ref=e84]
+            - generic: Nội dung
+          - button "Gửi" [ref=e85] [cursor=pointer]
+          - button "Nhập lại" [ref=e86] [cursor=pointer]
+      - iframe [ref=e88]:
+        - generic [active] [ref=f3e1]:
+          - link "Xem đường đi (mở trong thẻ mới)" [ref=f3e6] [cursor=pointer]:
+            - /url: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x31752eb1ff47fbb3:0xee2fc764c10f81d7!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF
+            - img [ref=f3e10]
+          - generic [ref=f3e13]:
+            - generic:
+              - button "Phím tắt"
+            - region "Bản đồ" [ref=f3e14]
+            - generic [ref=f3e15]:
+              - iframe [ref=f3e49]:
+                
+              - button "Các chế độ điều khiển camera trên bản đồ" [ref=f3e51] [cursor=pointer]
+              - button "Hiển thị bản đồ phố" [ref=f3e54] [cursor=pointer]:
+                - generic [ref=f3e58]:
+                  - region [ref=f3e59]
+                  - iframe [ref=f3e65]:
+                    
+              - img "Google" [ref=f3e67]
+              - generic [ref=f3e68]:
+                - button "Phím tắt" [ref=f3e74] [cursor=pointer]
+                - generic [ref=f3e79]: Dữ liệu bản đồ ©2026 Hình ảnh ©2026 Airbus, CNES / Airbus, Maxar Technologies
+                - link "Điều khoản (mở trong thẻ mới)" [ref=f3e84] [cursor=pointer]:
+                  - /url: https://www.google.com/intl/vi_US/help/terms_maps.html
+                  - text: Điều khoản
+                - link "Báo cáo một lỗi bản đồ (mở trong thẻ mới)" [ref=f3e89] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/@10.785288,106.6414703,16z/data=!3m1!1e3!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3
+                  - text: Báo cáo một lỗi bản đồ
+    - generic [ref=e89]:
+      - list [ref=e91]:
+        - listitem [ref=e92]:
+          - link "Garden" [ref=e93] [cursor=pointer]:
+            - /url: garden
+        - listitem [ref=e94]:
+          - link "Wedding" [ref=e95] [cursor=pointer]:
+            - /url: wedding
+        - listitem [ref=e96]:
+          - link "Khuyến mãi" [ref=e97] [cursor=pointer]:
+            - /url: khuyen-mai
+        - listitem [ref=e98]:
+          - link "Sảnh tiệc" [ref=e99] [cursor=pointer]:
+            - /url: sanh-tiec
+        - listitem [ref=e100]:
+          - link "Blog" [ref=e101] [cursor=pointer]:
+            - /url: blog
+        - listitem [ref=e102]:
+          - link "Liên hệ" [ref=e103] [cursor=pointer]:
+            - /url: lien-he
+        - listitem [ref=e104]:
+          - link "Tuyển dụng" [ref=e105] [cursor=pointer]:
+            - /url: tuyen-dung
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - paragraph [ref=e110]: Nhà Hàng Tiệc Cưới Nam Bộ
+          - generic [ref=e111]:
+            - paragraph [ref=e112]: 615A Âu Cơ, P. Hòa Thạnh, Quận Tân Phú, TP.HCM
+            - paragraph [ref=e113]: "Hotline tư vấn: 094 963 61 66"
+            - paragraph [ref=e114]: "Giờ mở cửa: 8h30 - 22h30 hằng ngày"
+            - paragraph [ref=e115]:
+              - text: "Email:"
+              - link "namboaucowedding@gmail.com" [ref=e116] [cursor=pointer]:
+                - /url: http://namboaucowedding@gmail.com
+          - paragraph [ref=e117]: Mạng xã hội
+          - generic [ref=e118]:
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e119] [cursor=pointer]:
+              - /url: https://www.facebook.com/weddingnambo/?locale=vi_VN
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e120]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e121] [cursor=pointer]:
+              - /url: ""
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e122]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e123] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@nambo.wedding
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e124]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e125] [cursor=pointer]:
+              - /url: ""
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e126]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e127] [cursor=pointer]:
+              - /url: ""
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e128]
+        - paragraph [ref=e131]: Chứng chỉ
+        - generic [ref=e132]:
+          - paragraph [ref=e133]: Fanpage
+          - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e134] [cursor=pointer]:
+            - /url: ""
+            - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e135]
+      - generic [ref=e138]:
+        - generic [ref=e139]: ©2026. Nhà Hàng Tiệc Cưới Nam Bộ. Thiết kế Web MIMA
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - text: "Đang online:"
+            - generic [ref=e142]: "1109"
+          - generic [ref=e143]: "|"
+          - generic [ref=e144]:
+            - text: "Hôm nay:"
+            - generic [ref=e145]: "54"
+          - generic [ref=e146]: "|"
+          - generic [ref=e147]:
+            - text: "Tổng truy cập:"
+            - generic [ref=e148]: "29691"
+    - generic [ref=e152]:
+      - 'link "Call me: 094 963 61 66" [ref=e153] [cursor=pointer]':
+        - /url: tel:0949636166
+        - img [ref=e157]
+        - generic [ref=e160]: "Call me: 094 963 61 66"
+      - 'link "Zalo: 094 963 61 66" [ref=e161] [cursor=pointer]':
+        - /url: https://zalo.me/0949636166
+        - img [ref=e165]
+        - generic [ref=e166]: "Zalo: 094 963 61 66"
+  - img [ref=e169]
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "89"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 89/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 🟢 TỐT
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "18"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 16
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 2
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: Thông Tin Liên Hệ Nhà Hàng Tiệc Cưới Nam Bộ – Nhà Hàng Tiệc Cưới
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e171]:
+      - generic [ref=e172]: "❌ Chi tiết lỗi cần khắc phục (2/18):"
+      - generic [ref=e173]:
+        - generic [ref=e174]:
+          - generic [ref=e175]: 3. Heading (H1-H6)
+          - generic [ref=e176]: 1 lỗi
+        - generic [ref=e177]:
+          - strong [ref=e179]: Heading phân cấp hợp lệ (1 lỗi)
+          - generic [ref=e180]: "⚠️ Heading phân cấp sai: Nhảy cấp từ H1 → H5 (\"Đặt lịch\")"
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - generic [ref=e183]: 6. Liên kết (Links)
+          - generic [ref=e184]: 1 lỗi
+        - generic [ref=e185]:
+          - strong [ref=e187]: "Không có broken links (lỗi: 2/18)"
+          - generic [ref=e188]: "⚠️ Broken links: http://namboaucowedding@gmail.com (status: 0), tin-tuc (status: 404)"
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 89/100 dưới ngưỡng 96%. Có 2/18 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```
