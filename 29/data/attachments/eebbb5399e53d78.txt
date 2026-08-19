@@ -1,1 +1,0 @@
-Giao diện hiển thị rõ ràng, chuẩn dàn trang mobile, không có lỗi vỡ layout, tràn viền hay đè chữ.

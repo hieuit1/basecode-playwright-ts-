@@ -1,0 +1,539 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Bảng Giá Dịch Vụ Đi Kèm (/bang-gia-dich-vu-di-kem)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 80/100 dưới ngưỡng 96%. Có 3/15 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e7]:
+      - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e9] [cursor=pointer]:
+        - /url: https://nhahangtieccuoinambo.vn/
+        - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e10]
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link [ref=e13] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e15]:
+          - link "Giới thiệu" [ref=e16] [cursor=pointer]:
+            - /url: gioi-thieu
+        - listitem [ref=e17]:
+          - link "Dịch vụ" [ref=e18] [cursor=pointer]:
+            - /url: dich-vu
+        - listitem [ref=e19]:
+          - link "Menu" [ref=e20] [cursor=pointer]:
+            - /url: menu
+        - listitem [ref=e21]:
+          - link "Tiệc cưới - báo hỷ" [ref=e22] [cursor=pointer]:
+            - /url: tiec-cuoi-bao-hy
+        - listitem [ref=e23]:
+          - link "Liên hệ" [ref=e24] [cursor=pointer]:
+            - /url: lien-he
+        - listitem [ref=e25]:
+          - link "Blog" [ref=e26] [cursor=pointer]:
+            - /url: blog
+        - listitem [ref=e27]:
+          - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e28]
+          - combobox [ref=e29]:
+            - option "VN" [selected]
+            - option "EN"
+            - option "CN"
+            - option "JA"
+            - option "KO"
+            - option "FR"
+      - button [ref=e32] [cursor=pointer]:
+        - img [ref=e33]
+    - list [ref=e36]:
+      - listitem [ref=e37]:
+        - link "Trang chủ" [ref=e38] [cursor=pointer]:
+          - /url: https://nhahangtieccuoinambo.vn/
+          - img [ref=e39]
+          - generic [ref=e41]: Trang chủ
+      - listitem [ref=e42]:
+        - text: /
+        - link "Dịch vụ" [ref=e43] [cursor=pointer]:
+          - /url: https://nhahangtieccuoinambo.vn/dich-vu
+      - listitem [ref=e44]:
+        - text: /
+        - link "Wedding" [ref=e45] [cursor=pointer]:
+          - /url: https://nhahangtieccuoinambo.vn/wedding
+      - listitem [ref=e46]:
+        - text: /
+        - link "Bảng Giá Dịch Vụ Đi Kèm" [ref=e47] [cursor=pointer]:
+          - /url: https://nhahangtieccuoinambo.vn/bang-gia-dich-vu-di-kem
+    - generic [ref=e49]:
+      - generic [ref=e51]:
+        - generic [ref=e53]: Bảng Giá Dịch Vụ Đi Kèm
+        - generic [ref=e54]:
+          - img [ref=e55]
+          - generic [ref=e58]: 299 Lượt xem
+        - generic [ref=e60]:
+          - generic [ref=e61] [cursor=pointer]:
+            - img [ref=e62]
+            - text: Mục lục
+            - img [ref=e65]
+          - text: ▾
+        - text: ▾
+        - generic [ref=e67]:
+          - paragraph [ref=e68]
+          - blockquote [ref=e69]:
+            - paragraph [ref=e70]:
+              - generic [ref=e72]: Theo các khảo sát mới nhất hiện nay, có đến hơn 70% các bạn trẻ cảm thấy hoang mang, lúng túng khi được đặt các câu hỏi liên quan đến kế hoạch, kiểm soát chi phí đi kèm khi tổ chức tiệc cưới tại nhà hàng. Đây cũng được xem là một lẽ dĩ nhiên đối với các cặp đôi lần đầu đi đến hôn nhân.
+          - paragraph [ref=e73]:
+            - generic [ref=e75]: Vậy chi phí tổ chức đám cưới hoàn hảo từ A-Z bao gồm các khoản nào, làm sao để tiết kiệm mà vẫn có một lễ cưới chỉnh chu nhất? Hãy cùng Nhà Hàng Tiệc Cưới Nam Bộ đi tìm hiểu cho những câu hỏi ở trên nhé!
+          - heading "Những dịch vụ tiệc cưới đi kèm từ nhà hàng" [level=2] [ref=e76]:
+            - strong [ref=e77]:
+              - generic [ref=e79]: Những dịch vụ tiệc cưới đi kèm từ nhà hàng
+          - paragraph [ref=e80]:
+            - generic [ref=e82]: "Nhà hàng tiệc cưới Nam Bộ cung cấp nhiều dịch vụ đi kèm để đảm bảo sự tiện lợi và hài lòng cho khách hàng. Một số dịch vụ đi kèm thường có tại nhà hàng tiệc cưới gồm:"
+          - heading "Dịch vụ trang trí" [level=3] [ref=e83]:
+            - strong [ref=e84]:
+              - generic [ref=e86]: Dịch vụ trang trí
+          - paragraph [ref=e87]:
+            - generic [ref=e89]: Nhà hàng thường có sẵn các gói trang trí để khách hàng có thể lựa chọn. Tuy nhiên, nếu bạn muốn có một bộ trang trí độc đáo và riêng biệt, hãy tham khảo với nhà hàng về việc tự trang trí hoặc thuê dịch vụ trang trí bên ngoài.
+          - heading "Dịch vụ âm thanh và ánh sáng" [level=3] [ref=e90]:
+            - strong [ref=e91]:
+              - generic [ref=e93]: Dịch vụ âm thanh và ánh sáng
+          - paragraph [ref=e94]:
+            - generic [ref=e96]: Để tạo nên không gian lãng mạn và ấm cúng cho buổi tiệc cưới, dịch vụ âm thanh và ánh sáng là rất quan trọng. Hãy tham khảo với nhà hàng về các gói dịch vụ âm thanh và ánh sáng có sẵn hoặc tự thuê dịch vụ bên ngoài để đảm bảo buổi tiệc của bạn trở nên hoàn hảo.
+          - heading "Dịch vụ chụp ảnh – quay phim" [level=3] [ref=e97]:
+            - strong [ref=e98]:
+              - generic [ref=e100]: Dịch vụ chụp ảnh – quay phim
+          - paragraph [ref=e101]:
+            - generic [ref=e103]: Để lưu giữ những khoảnh khắc đáng nhớ trong ngày cưới, dịch vụ chụp ảnh và quay phim là điều cần thiết. Hãy tham khảo các nhà hàng có bao gồm gói dịch vụ tiệc cưới có sẵn để có những bức ảnh và video đẹp nhất cho ngày trọng đại của bạn.
+          - heading "Bảng Giá Dịch Vụ Đi Kèm Tại Nhà Hàng Tiệc Cưới Nam Bộ:" [level=2] [ref=e104]:
+            - strong [ref=e105]:
+              - generic [ref=e107]: "Bảng Giá Dịch Vụ Đi Kèm Tại Nhà Hàng Tiệc Cưới Nam Bộ:"
+          - paragraph [ref=e108]
+          - table [ref=e109]:
+            - rowgroup [ref=e110]:
+              - row "TÊN DỊCH VỤ BẢNG GIÁ" [ref=e111]:
+                - cell "TÊN DỊCH VỤ" [ref=e112]:
+                  - strong [ref=e116]: TÊN DỊCH VỤ
+                - cell "BẢNG GIÁ" [ref=e117]:
+                  - strong [ref=e121]: BẢNG GIÁ
+              - row "Sổ ký tên + bút uyên ương 200.000" [ref=e122]:
+                - cell "Sổ ký tên + bút uyên ương" [ref=e123]:
+                  - generic [ref=e125]: Sổ ký tên + bút uyên ương
+                - cell "200.000" [ref=e126]:
+                  - generic [ref=e128]: "200.000"
+              - row "Rượu champagne đỏ 200.000" [ref=e129]:
+                - cell "Rượu champagne đỏ" [ref=e130]:
+                  - generic [ref=e132]: Rượu champagne đỏ
+                - cell "200.000" [ref=e133]:
+                  - generic [ref=e135]: "200.000"
+              - row "Đá khói + tháp ly champagne 100.000" [ref=e136]:
+                - cell "Đá khói + tháp ly champagne" [ref=e137]:
+                  - generic [ref=e139]: Đá khói + tháp ly champagne
+                - cell "100.000" [ref=e140]:
+                  - generic [ref=e142]: "100.000"
+              - row "Pháo kim tuyến (2 viên) 200.000" [ref=e143]:
+                - cell "Pháo kim tuyến (2 viên)" [ref=e144]:
+                  - generic [ref=e146]: Pháo kim tuyến (2 viên)
+                - cell "200.000" [ref=e147]:
+                  - generic [ref=e149]: "200.000"
+              - row "Trang trí bàn cưới(bao ghế, nơ, hoa để bàn) 50.000/1bàn" [ref=e150]:
+                - cell "Trang trí bàn cưới(bao ghế, nơ, hoa để bàn)" [ref=e151]:
+                  - generic [ref=e153]: Trang trí bàn cưới(bao ghế, nơ, hoa để bàn)
+                - cell "50.000/1bàn" [ref=e154]:
+                  - generic [ref=e156]: 50.000/1bàn
+              - row "Nến thơm trên bàn 20.000/ 1 bàn" [ref=e157]:
+                - cell "Nến thơm trên bàn" [ref=e158]:
+                  - generic [ref=e160]: Nến thơm trên bàn
+                - cell "20.000/ 1 bàn" [ref=e161]:
+                  - generic [ref=e163]: 20.000/ 1 bàn
+              - row "Bánh cưới 5 tầng (1 thật 4 giả) 350.000" [ref=e164]:
+                - cell "Bánh cưới 5 tầng (1 thật 4 giả)" [ref=e165]:
+                  - generic [ref=e167]: Bánh cưới 5 tầng (1 thật 4 giả)
+                - cell "350.000" [ref=e168]:
+                  - generic [ref=e170]: "350.000"
+              - row "Dàn chào 10 người 1.300.000" [ref=e171]:
+                - cell "Dàn chào 10 người" [ref=e172]:
+                  - generic [ref=e174]: Dàn chào 10 người
+                - cell "1.300.000" [ref=e175]:
+                  - generic [ref=e177]: 1.300.000
+              - row "Vũ đoàn múa cổ truyền (6 vũ công) 1.500.000" [ref=e178]:
+                - cell "Vũ đoàn múa cổ truyền (6 vũ công)" [ref=e179]:
+                  - generic [ref=e181]: Vũ đoàn múa cổ truyền (6 vũ công)
+                - cell "1.500.000" [ref=e182]:
+                  - generic [ref=e184]: 1.500.000
+              - row "Vũ đoàn múa hiện đại (8 vũ công) 1.500.000" [ref=e185]:
+                - cell "Vũ đoàn múa hiện đại (8 vũ công)" [ref=e186]:
+                  - generic [ref=e188]: Vũ đoàn múa hiện đại (8 vũ công)
+                - cell "1.500.000" [ref=e189]:
+                  - generic [ref=e191]: 1.500.000
+              - row "Vũ đoàn múa thiếu nhi (6 vũ công) 1.100.000" [ref=e192]:
+                - cell "Vũ đoàn múa thiếu nhi (6 vũ công)" [ref=e193]:
+                  - generic [ref=e195]: Vũ đoàn múa thiếu nhi (6 vũ công)
+                - cell "1.100.000" [ref=e196]:
+                  - generic [ref=e198]: 1.100.000
+              - row "karaok 2h 1.000.000" [ref=e199]:
+                - cell "karaok 2h" [ref=e200]:
+                  - generic [ref=e202]: karaok 2h
+                - cell "1.000.000" [ref=e203]:
+                  - generic [ref=e205]: 1.000.000
+              - row "MC dẫn chương trình tiếng việt 500.000" [ref=e206]:
+                - cell "MC dẫn chương trình tiếng việt" [ref=e207]:
+                  - generic [ref=e209]: MC dẫn chương trình tiếng việt
+                - cell "500.000" [ref=e210]:
+                  - generic [ref=e212]: "500.000"
+              - row "MC dẫn chương trình tiếng Hoa, Anh, Hàn 600.000" [ref=e213]:
+                - cell "MC dẫn chương trình tiếng Hoa, Anh, Hàn" [ref=e214]:
+                  - generic [ref=e216]: MC dẫn chương trình tiếng Hoa, Anh, Hàn
+                - cell "600.000" [ref=e217]:
+                  - generic [ref=e219]: "600.000"
+              - row "MC đôi (Nam + nữ) 1.000.000" [ref=e220]:
+                - cell "MC đôi (Nam + nữ)" [ref=e221]:
+                  - generic [ref=e223]: MC đôi (Nam + nữ)
+                - cell "1.000.000" [ref=e224]:
+                  - generic [ref=e226]: 1.000.000
+              - row "Màn hình led 900.000" [ref=e227]:
+                - cell "Màn hình led" [ref=e228]:
+                  - generic [ref=e230]: Màn hình led
+                - cell "900.000" [ref=e231]:
+                  - generic [ref=e233]: "900.000"
+              - row "Truyền hình trực tiếp 1.500.000" [ref=e234]:
+                - cell "Truyền hình trực tiếp" [ref=e235]:
+                  - generic [ref=e237]: Truyền hình trực tiếp
+                - cell "1.500.000" [ref=e238]:
+                  - generic [ref=e240]: 1.500.000
+              - row "Trang trí hoa tươi sân khấu 10.000.000" [ref=e241]:
+                - cell "Trang trí hoa tươi sân khấu" [ref=e242]:
+                  - generic [ref=e244]: Trang trí hoa tươi sân khấu
+                - cell "10.000.000" [ref=e245]:
+                  - generic [ref=e247]: 10.000.000
+              - row "Trang trí hoa tươi bàn khách 100.000/ 1 bàn" [ref=e248]:
+                - cell "Trang trí hoa tươi bàn khách" [ref=e249]:
+                  - paragraph [ref=e250]:
+                    - generic [ref=e252]: Trang trí hoa tươi bàn khách
+                - cell "100.000/ 1 bàn" [ref=e253]:
+                  - generic [ref=e255]: 100.000/ 1 bàn
+          - heading "Nhà hàng tiệc cưới uy tín hàng đầu tại khu vực Tân Phú - TPHCM:" [level=2] [ref=e256]:
+            - strong [ref=e257]:
+              - generic [ref=e259]: "Nhà hàng tiệc cưới uy tín hàng đầu tại khu vực Tân Phú - TPHCM:"
+          - paragraph [ref=e260]:
+            - generic [ref=e262]: Đối với những ai mới đang tìm hiểu dịch vụ tiệc cưới, đánh giá của người dùng trước đó là ý kiến quý báu. Thông qua các thông tin chân thực, khách quan về chất lượng thực phẩm, không gian, phong cách phục vụ và nhiều yếu tố khác, giúp bạn tiết kiệm thời gian và công sức tìm hiểu.
+          - paragraph [ref=e263]:
+            - generic [ref=e266]: "Nếu bạn đang tìm kiếm một địa điểm tổ chức tiệc cưới sang trọng và đẳng cấp tại TPHCM Nhà Hàng Tiệc Cưới Nam Bộ chắc chắn là một cái tên không thể bỏ qua. Dưới đây là một số điểm mạnh thường được nhắc đến trong các đánh giá về nhà hàng này:"
+          - list [ref=e267]:
+            - listitem [ref=e268]
+            - listitem [level=1] [ref=e269]:
+              - generic [ref=e272]: "Không gian sang trọng, rộng rãi: Nam Bộ có nhiều sảnh tiệc với sức chứa lớn, thiết kế hiện đại và trang trí đẹp mắt, phù hợp với nhiều phong cách tiệc cưới khác nhau."
+            - listitem [ref=e273]
+            - listitem [level=1] [ref=e274]:
+              - generic [ref=e277]: "Ẩm thực đa dạng, chất lượng: Thực đơn tiệc cưới của Nam Bộ phong phú, từ các món ăn truyền thống đến các món Âu Á, được chế biến bởi đội ngũ đầu bếp chuyên nghiệp."
+            - listitem [ref=e278]
+            - listitem [level=1] [ref=e279]:
+              - generic [ref=e282]: "Dịch vụ chuyên nghiệp, tận tâm: Nhân viên của Nam Bộ được đánh giá là thân thiện, nhiệt tình và chu đáo, sẵn sàng hỗ trợ khách hàng trong suốt quá trình tổ chức tiệc cưới."
+            - listitem [ref=e283]
+            - listitem [ref=e284]
+            - listitem [ref=e285]
+            - listitem [ref=e286]
+            - listitem [ref=e287]
+          - emphasis [ref=e288]:
+            - generic [ref=e290]: Để ngày trọng đại diễn ra suôn sẻ và trọn vẹn, bạn nên liên hệ trước với nhà hàng, cung cấp số lượng khách mời để họ chuẩn bị không gian và dịch vụ phù hợp. Việc này cũng giúp bạn dễ dàng dự trù chi phí và chọn lựa phòng tiệc ưng ý. Với những thông tin trên, hy vọng bạn đã có được cái nhìn tổng quan về dịch vụ tiệc cưới tại nhà hàng và có thể lựa chọn cho mình một địa điểm hoàn hảo cho ngày trọng đại của mình.
+      - heading "Các Dịch vụ khác" [level=2] [ref=e292]
+      - generic [ref=e293]:
+        - generic:
+          - generic:
+            - paragraph:
+              - link "Tiệc Cưới Trọn Gói":
+                - /url: tiec-cuoi-tron-goi
+            - generic:
+              - heading "Tiệc Cưới Trọn Gói" [level=3]:
+                - link "Tiệc Cưới Trọn Gói":
+                  - /url: tiec-cuoi-tron-goi
+              - paragraph: Hãy để Wedding Nam Bộ đảm nhận các gói dịch vụ tổ chức tiệc cưới trọn gói cho ngày trọng đại này, chúng tôi luôn sẵn sàng lắng nghe mong muốn của các cặp đôi để hiện thực hoá các ý tưởng về đám cưới, giúp ghi dấu ấn cá nhân và trở thành một lễ cưới thật sự có ý nghĩa.
+              - link "Xem chi tiết":
+                - /url: tiec-cuoi-tron-goi
+                - text: Xem chi tiết
+        - generic:
+          - generic:
+            - paragraph:
+              - link "TINH HOA ẨM THỰC TRONG KHÔNG GIAN SÂN VƯỜN XANH MÁT":
+                - /url: tinh-hoa-am-thuc-trong-khong-gian-san-vuon-xanh-mat
+            - generic:
+              - heading "TINH HOA ẨM THỰC TRONG KHÔNG GIAN SÂN VƯỜN XANH MÁT" [level=3]:
+                - link "TINH HOA ẨM THỰC TRONG KHÔNG GIAN SÂN VƯỜN XANH MÁT":
+                  - /url: tinh-hoa-am-thuc-trong-khong-gian-san-vuon-xanh-mat
+              - paragraph: Bước vào Làng Nướng Nam Bộ, thực khách ngay lập tức cảm nhận được sự gần gũi và mộc mạc của miền quê Nam Bộ. Không gian rộng rãi, thoáng đãng với những hàng cây xanh rì, hồ nước nhỏ cùng ánh đèn vàng lung linh tạo nên một bầu không khí ấm cúng, nhẹ nhàng.
+              - link "Xem chi tiết":
+                - /url: tinh-hoa-am-thuc-trong-khong-gian-san-vuon-xanh-mat
+                - text: Xem chi tiết
+    - generic [ref=e294]:
+      - list [ref=e296]:
+        - listitem [ref=e297]:
+          - link "Garden" [ref=e298] [cursor=pointer]:
+            - /url: garden
+        - listitem [ref=e299]:
+          - link "Wedding" [ref=e300] [cursor=pointer]:
+            - /url: wedding
+        - listitem [ref=e301]:
+          - link "Khuyến mãi" [ref=e302] [cursor=pointer]:
+            - /url: khuyen-mai
+        - listitem [ref=e303]:
+          - link "Sảnh tiệc" [ref=e304] [cursor=pointer]:
+            - /url: sanh-tiec
+        - listitem [ref=e305]:
+          - link "Blog" [ref=e306] [cursor=pointer]:
+            - /url: blog
+        - listitem [ref=e307]:
+          - link "Liên hệ" [ref=e308] [cursor=pointer]:
+            - /url: lien-he
+        - listitem [ref=e309]:
+          - link "Tuyển dụng" [ref=e310] [cursor=pointer]:
+            - /url: tuyen-dung
+      - generic [ref=e313]:
+        - generic [ref=e314]:
+          - paragraph [ref=e315]: Nhà Hàng Tiệc Cưới Nam Bộ
+          - generic [ref=e316]:
+            - paragraph [ref=e317]: 615A Âu Cơ, P. Hòa Thạnh, Quận Tân Phú, TP.HCM
+            - paragraph [ref=e318]: "Hotline tư vấn: 094 963 61 66"
+            - paragraph [ref=e319]: "Giờ mở cửa: 8h30 - 22h30 hằng ngày"
+            - paragraph [ref=e320]:
+              - text: "Email:"
+              - link "namboaucowedding@gmail.com" [ref=e321] [cursor=pointer]:
+                - /url: http://namboaucowedding@gmail.com
+          - paragraph [ref=e322]: Mạng xã hội
+          - generic [ref=e323]:
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e324] [cursor=pointer]:
+              - /url: https://www.facebook.com/weddingnambo/?locale=vi_VN
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e325]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e326] [cursor=pointer]:
+              - /url: ""
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e327]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e328] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@nambo.wedding
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e329]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e330] [cursor=pointer]:
+              - /url: ""
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e331]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e332] [cursor=pointer]:
+              - /url: ""
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e333]
+        - paragraph [ref=e336]: Chứng chỉ
+        - generic [ref=e337]:
+          - paragraph [ref=e338]: Fanpage
+          - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e339] [cursor=pointer]:
+            - /url: ""
+            - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e340]
+      - generic [ref=e343]:
+        - generic [ref=e344]: ©2026. Nhà Hàng Tiệc Cưới Nam Bộ. Thiết kế Web MIMA
+        - generic [ref=e345]:
+          - generic [ref=e346]:
+            - text: "Đang online:"
+            - generic [ref=e347]: "546"
+          - generic [ref=e348]: "|"
+          - generic [ref=e349]:
+            - text: "Hôm nay:"
+            - generic [ref=e350]: "57"
+          - generic [ref=e351]: "|"
+          - generic [ref=e352]:
+            - text: "Tổng truy cập:"
+            - generic [ref=e353]: "29490"
+    - generic [ref=e357]:
+      - 'link "Call me: 094 963 61 66" [ref=e358] [cursor=pointer]':
+        - /url: tel:0949636166
+        - img [ref=e362]
+        - generic [ref=e365]: "Call me: 094 963 61 66"
+      - 'link "Zalo: 094 963 61 66" [ref=e366] [cursor=pointer]':
+        - /url: https://zalo.me/0949636166
+        - img [ref=e370]
+        - generic [ref=e371]: "Zalo: 094 963 61 66"
+  - img [ref=e374]
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "80"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 80/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 🟢 TỐT
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "15"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 12
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 3
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: Bảng Giá Dịch Vụ Đi Kèm
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e376]:
+      - generic [ref=e377]: "❌ Chi tiết lỗi cần khắc phục (3/15):"
+      - generic [ref=e378]:
+        - generic [ref=e379]:
+          - generic [ref=e380]: 3. Heading (H1-H6)
+          - generic [ref=e381]: 1 lỗi
+        - generic [ref=e382]:
+          - strong [ref=e384]: Heading phân cấp hợp lệ (1 lỗi)
+          - generic [ref=e385]: "⚠️ Heading phân cấp sai: Nhảy cấp từ H3 → H5 (\"Đặt lịch\")"
+      - generic [ref=e386]:
+        - generic [ref=e387]:
+          - generic [ref=e388]: 5. Hình ảnh
+          - generic [ref=e389]: 1 lỗi
+        - generic [ref=e390]:
+          - strong [ref=e392]: "100% ảnh có thuộc tính alt (thiếu: 1/20)"
+          - generic [ref=e393]: "⚠️ Có 1 hình ảnh thiếu thuộc tính 'alt'. VD: https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg"
+      - generic [ref=e394]:
+        - generic [ref=e395]:
+          - generic [ref=e396]: 6. Liên kết (Links)
+          - generic [ref=e397]: 1 lỗi
+        - generic [ref=e398]:
+          - strong [ref=e400]: "Không có broken links (lỗi: 2/22)"
+          - generic [ref=e401]: "⚠️ Broken links: tin-tuc (status: 404), http://namboaucowedding@gmail.com (status: 0)"
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 80/100 dưới ngưỡng 96%. Có 3/15 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```
