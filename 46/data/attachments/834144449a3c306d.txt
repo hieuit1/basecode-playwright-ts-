@@ -1,0 +1,23 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     83/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  18
+   ✅ Đạt:          15
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/18):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (2 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H2 → H4 ("Sứ mệnh"); Nhảy cấp từ H2 → H4 ("Trâm Võ")
+--- IMAGES ---
+   2. [100% ảnh có thuộc tính alt (thiếu: 1/40)]
+      → Có 1 hình ảnh thiếu thuộc tính 'alt'. VD: https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg
+--- LINKS ---
+   3. [Không có broken links (lỗi: 2/19)]
+      → Broken links: http://namboaucowedding@gmail.com (status: 0), tin-tuc (status: 404)

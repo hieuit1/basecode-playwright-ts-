@@ -1,0 +1,468 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Blog Automation 1787121041103 (/blog-test-1787121041103)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 87/100 dưới ngưỡng 96%. Có 2/15 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e7]:
+      - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e9] [cursor=pointer]:
+        - /url: https://nhahangtieccuoinambo.vn/
+        - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e10]
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link [ref=e13] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e15]:
+          - link "Giới thiệu" [ref=e16] [cursor=pointer]:
+            - /url: gioi-thieu
+        - listitem [ref=e17]:
+          - link "Dịch vụ" [ref=e18] [cursor=pointer]:
+            - /url: dich-vu
+        - listitem [ref=e19]:
+          - link "Menu" [ref=e20] [cursor=pointer]:
+            - /url: menu
+        - listitem [ref=e21]:
+          - link "Tiệc cưới - báo hỷ" [ref=e22] [cursor=pointer]:
+            - /url: tiec-cuoi-bao-hy
+        - listitem [ref=e23]:
+          - link "Liên hệ" [ref=e24] [cursor=pointer]:
+            - /url: lien-he
+        - listitem [ref=e25]:
+          - link "Blog" [ref=e26] [cursor=pointer]:
+            - /url: blog
+        - listitem [ref=e27]:
+          - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e28]
+          - combobox [ref=e29]:
+            - option "VN" [selected]
+            - option "EN"
+            - option "CN"
+            - option "JA"
+            - option "KO"
+            - option "FR"
+      - button [ref=e32] [cursor=pointer]:
+        - img [ref=e33]
+    - list [ref=e36]:
+      - listitem [ref=e37]:
+        - link "Trang chủ" [ref=e38] [cursor=pointer]:
+          - /url: https://nhahangtieccuoinambo.vn/
+          - img [ref=e39]
+          - generic [ref=e41]: Trang chủ
+      - listitem [ref=e42]:
+        - text: /
+        - link "Blog" [ref=e43] [cursor=pointer]:
+          - /url: https://nhahangtieccuoinambo.vn/blog
+      - listitem [ref=e44]:
+        - text: /
+        - link "Blog Automation 1787121041103" [ref=e45] [cursor=pointer]:
+          - /url: https://nhahangtieccuoinambo.vn/blog-test-1787121041103
+    - generic [ref=e47]:
+      - generic [ref=e49]:
+        - generic [ref=e51]: Blog Automation 1787121041103
+        - generic [ref=e52]:
+          - img [ref=e53]
+          - generic [ref=e56]: 1 Lượt xem
+        - paragraph [ref=e58]: Đây là nội dung chi tiết của blog tự động tạo bởi Playwright lúc 1787121041103.
+      - heading "Các Blog khác" [level=2] [ref=e60]
+      - generic [ref=e61]:
+        - generic [ref=e63]:
+          - paragraph [ref=e64]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e65] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e66]
+          - generic [ref=e67]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e68]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e69] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e70]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e71] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+        - generic [ref=e74]:
+          - paragraph [ref=e75]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e76] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e77]
+          - generic [ref=e78]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e79]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e80] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e81]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e82] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+        - generic [ref=e85]:
+          - paragraph [ref=e86]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e87] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e88]
+          - generic [ref=e89]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e90]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e91] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e92]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e93] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+        - generic [ref=e96]:
+          - paragraph [ref=e97]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e98] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e99]
+          - generic [ref=e100]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e101]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e102] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e103]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e104] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+        - generic [ref=e107]:
+          - paragraph [ref=e108]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e109] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e110]
+          - generic [ref=e111]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e112]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e113] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e114]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e115] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+        - generic [ref=e118]:
+          - paragraph [ref=e119]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e120] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e121]
+          - generic [ref=e122]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e123]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e124] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e125]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e126] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+        - generic [ref=e129]:
+          - paragraph [ref=e130]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e131] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e132]
+          - generic [ref=e133]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e134]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e135] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e136]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e137] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+        - generic [ref=e140]:
+          - paragraph [ref=e141]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e142] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e143]
+          - generic [ref=e144]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e145]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e146] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e147]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e148] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+        - generic [ref=e151]:
+          - paragraph [ref=e152]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e153] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e154]
+          - generic [ref=e155]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e156]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e157] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e158]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e159] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+        - generic [ref=e162]:
+          - paragraph [ref=e163]:
+            - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e164] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - img "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e165]
+          - generic [ref=e166]:
+            - heading "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [level=3] [ref=e167]:
+              - link "[AUTO-TEST] Blog LoadTest 1787121118259 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)" [ref=e168] [cursor=pointer]:
+                - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+            - paragraph [ref=e169]: Mô tả cho Blog bulk test
+            - link "Xem chi tiết" [ref=e170] [cursor=pointer]:
+              - /url: auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+              - text: Xem chi tiết
+    - generic [ref=e172]:
+      - list [ref=e174]:
+        - listitem [ref=e175]:
+          - link "Garden" [ref=e176] [cursor=pointer]:
+            - /url: garden
+        - listitem [ref=e177]:
+          - link "Wedding" [ref=e178] [cursor=pointer]:
+            - /url: wedding
+        - listitem [ref=e179]:
+          - link "Khuyến mãi" [ref=e180] [cursor=pointer]:
+            - /url: khuyen-mai
+        - listitem [ref=e181]:
+          - link "Sảnh tiệc" [ref=e182] [cursor=pointer]:
+            - /url: sanh-tiec
+        - listitem [ref=e183]:
+          - link "Blog" [ref=e184] [cursor=pointer]:
+            - /url: blog
+        - listitem [ref=e185]:
+          - link "Liên hệ" [ref=e186] [cursor=pointer]:
+            - /url: lien-he
+        - listitem [ref=e187]:
+          - link "Tuyển dụng" [ref=e188] [cursor=pointer]:
+            - /url: tuyen-dung
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - paragraph [ref=e193]: Nhà Hàng Tiệc Cưới Nam Bộ
+          - generic [ref=e194]:
+            - paragraph [ref=e195]: 615A Âu Cơ, P. Hòa Thạnh, Quận Tân Phú, TP.HCM
+            - paragraph [ref=e196]: "Hotline tư vấn: 094 963 61 66"
+            - paragraph [ref=e197]: "Giờ mở cửa: 8h30 - 22h30 hằng ngày"
+            - paragraph [ref=e198]:
+              - text: "Email:"
+              - link "namboaucowedding@gmail.com" [ref=e199] [cursor=pointer]:
+                - /url: http://namboaucowedding@gmail.com
+          - paragraph [ref=e200]: Mạng xã hội
+          - generic [ref=e201]:
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e202] [cursor=pointer]:
+              - /url: https://www.facebook.com/weddingnambo/?locale=vi_VN
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e203]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e204] [cursor=pointer]:
+              - /url: ""
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e205]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e206] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@nambo.wedding
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e207]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e208] [cursor=pointer]:
+              - /url: ""
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e209]
+            - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e210] [cursor=pointer]:
+              - /url: ""
+              - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e211]
+        - paragraph [ref=e214]: Chứng chỉ
+        - generic [ref=e215]:
+          - paragraph [ref=e216]: Fanpage
+          - link "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e217] [cursor=pointer]:
+            - /url: ""
+            - img "DỊCH VỤ NHÀ HÀNG LÀNG NƯỚNG NAM BỘ" [ref=e218]
+      - generic [ref=e221]:
+        - generic [ref=e222]: ©2026. Nhà Hàng Tiệc Cưới Nam Bộ. Thiết kế Web MIMA
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - text: "Đang online:"
+            - generic [ref=e225]: "244"
+          - generic [ref=e226]: "|"
+          - generic [ref=e227]:
+            - text: "Hôm nay:"
+            - generic [ref=e228]: "88"
+          - generic [ref=e229]: "|"
+          - generic [ref=e230]:
+            - text: "Tổng truy cập:"
+            - generic [ref=e231]: "29525"
+    - generic [ref=e235]:
+      - 'link "Call me: 094 963 61 66" [ref=e236] [cursor=pointer]':
+        - /url: tel:0949636166
+        - img [ref=e240]
+        - generic [ref=e243]: "Call me: 094 963 61 66"
+      - 'link "Zalo: 094 963 61 66" [ref=e244] [cursor=pointer]':
+        - /url: https://zalo.me/0949636166
+        - img [ref=e248]
+        - generic [ref=e249]: "Zalo: 094 963 61 66"
+  - img [ref=e252]
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "87"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 87/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 🟢 TỐT
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "15"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 13
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 2
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: Blog Automation 1787121041103
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e254]:
+      - generic [ref=e255]: "❌ Chi tiết lỗi cần khắc phục (2/15):"
+      - generic [ref=e256]:
+        - generic [ref=e257]:
+          - generic [ref=e258]: 3. Heading (H1-H6)
+          - generic [ref=e259]: 1 lỗi
+        - generic [ref=e260]:
+          - strong [ref=e262]: Heading phân cấp hợp lệ (1 lỗi)
+          - generic [ref=e263]: "⚠️ Heading phân cấp sai: Nhảy cấp từ H3 → H5 (\"Đặt lịch\")"
+      - generic [ref=e264]:
+        - generic [ref=e265]:
+          - generic [ref=e266]: 6. Liên kết (Links)
+          - generic [ref=e267]: 1 lỗi
+        - generic [ref=e268]:
+          - strong [ref=e270]: "Không có broken links (lỗi: 2/29)"
+          - generic [ref=e271]: "⚠️ Broken links: tin-tuc (status: 404), http://namboaucowedding@gmail.com (status: 0)"
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 87/100 dưới ngưỡng 96%. Có 2/15 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```

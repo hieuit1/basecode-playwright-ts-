@@ -1,0 +1,182 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12178","Kiểm tra SEO Onpage: Tiêu chí chọn nhà hàng tổ chức tiệc cưới phù hợp (/tieu-chi-chon-nha-hang-to-chuc-tiec-cuoi-phu-hop)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11727","Kiểm tra SEO Onpage: Set Menu Tiệc (/set-menu-tiec)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","10878","Kiểm tra SEO Onpage: So sánh nhà hàng tiệc cưới TP.HCM dễ hiểu nhất (/so-sanh-nha-hang-tiec-cuoi-tphcm-de-hieu-nhat)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8559","Kiểm tra SEO Onpage: SẢNH PHONG LAN (/sanh-phong-lan)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11493","Kiểm tra SEO Onpage: Thực Đơn Nhà Hàng Tiệc Cưới Nam Bộ – Món Ngon Chuẩn Vị (/menu)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 76/100 | Đạt: 16/21 tiêu chí | Ngưỡng: 96%
+
+KHÁ","410278","Kiểm tra SEO Onpage: Khám Phá Xu Hướng Tiệc Cưới & Ẩm Thực Hot Nhất Hiện Nay (/blog)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","8332","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-19","failed","2026-08-19","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12338","Kiểm tra SEO Onpage: [AUTO (/blog-loadtest-1787121118259)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8878","Kiểm tra SEO Onpage: Deal Hot Nhà Hàng Tiệc Cưới Nam Bộ (/khuyen-mai)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","16306","Kiểm tra SEO Onpage: ✨ Trung Tâm Wedding Nam Bộ – Nơi Tình Yêu (/trung-tam-wedding-nam-bo-noi-tinh-yeu-thang-hoa)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","6071","Login successfully with valid credentials","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","16765","Kiểm tra SEO Onpage: [AUTO (/auto-test-blog-loadtest-1787121118259-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","39090","Add Service Category 1 should fail with không nhập tiêu đề","Desktop Chrome","2026-08-19","failed","2026-08-19","Service Category 1 Management Tests","admin/serviceCategory1.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12121","Kiểm tra SEO Onpage: Kinh nghiệm chọn nhà hàng tổ chức tiệc cưới tiết kiệm (/kinh-nghiem-chon-nha-hang-to-chuc-tiec-cuoi-tiet-kiem)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","9557","Kiểm tra SEO Onpage: Tiệc Báo Hỷ Nhẹ Nhàng – Xu Hướng Cưới Hiện Đại (/tiec-bao-hy-nhe-nhang-xu-huong-cuoi-hien-dai)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","439944","Kiểm tra SEO Onpage: Garden (/garden)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","8224","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-19","failed","2026-08-19","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11762","Kiểm tra SEO Onpage: Hướng dẫn đặt nhà hàng tổ chức tiệc cưới từ A–Z (/huong-dan-dat-nha-hang-to-chuc-tiec-cuoi-tu-az)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8514","Kiểm tra SEO Onpage: SẢNH CÁT TƯỜNG (/sanh-cat-tuong)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 76/100 | Đạt: 16/21 tiêu chí | Ngưỡng: 96%
+
+KHÁ","53430","Kiểm tra SEO Onpage: Dịch Vụ Nhà Hàng Tiệc Cưới Nam Bộ – Setup Trọn Gói, Chuyên Nghiệp (/dich-vu)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 12/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","9277","Kiểm tra SEO Onpage: Sảnh Hồng Ngọc ( sảnh 4 ) (/sanh-hong-ngoc-sanh-4)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11473","Kiểm tra SEO Onpage: Nhà Hàng Tiệc Cưới Nam Bộ – Sảnh Tiệc Đẹp, Rộng Rãi (/sanh-tiec)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12555","Kiểm tra SEO Onpage: Review nhà hàng tiệc cưới Tân Phú được ưa chuộng (/review-nha-hang-tiec-cuoi-tan-phu-duoc-ua-chuong)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","27344","Add recruitment successfully and verify on website","Desktop Chrome","2026-08-19","passed","2026-08-19","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","12126","Add blog should fail with không nhập tiêu đề","Desktop Chrome","2026-08-19","passed","2026-08-19","Blog Management Tests","admin/blog.spec.ts","",""
+"[FAIL] Điểm SEO: 83/100 | Đạt: 15/18 tiêu chí | Ngưỡng: 96%
+
+TỐT","50885","Kiểm tra SEO Onpage: Về Nhà Hàng Tiệc Cưới Nam Bộ Hành Trình Tạo Nên Không Gian Tiệc Cưới (/gioi-thieu)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","9025","Kiểm tra SEO Onpage: Sảnh Tình Yêu ( sảnh 7 ) (/sanh-tinh-yeu-sanh-7)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","119405","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-08-19","failed","2026-08-19","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11711","Kiểm tra SEO Onpage: Sai lầm khi chọn nhà hàng tiệc cưới bạn nên tránh (/sai-lam-khi-chon-nha-hang-tiec-cuoi-ban-nen-tranh)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 76/100 | Đạt: 16/21 tiêu chí | Ngưỡng: 96%
+
+KHÁ","197413","Kiểm tra SEO Onpage: Nhà Hàng Tiệc Cưới Nam Bộ – Địa Điểm Tổ Chức Tiệc Cưới Đẹp (/index.php)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","11351","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-08-19","passed","2026-08-19","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","9312","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","27769","Submit form successfully with valid data","Desktop Chrome","2026-08-19","failed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","9461","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","9357","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","9649","Kiểm tra SEO Onpage: Tiệc Cưới Garden Không Gian Xanh Mát, Tinh Tế Và Ấn Tượng (/tiec-cuoi-garden-khong-gian-xanh-mat-tinh-te-va-an-tuong)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","11564","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-19","passed","2026-08-19","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12878","Kiểm tra SEO Onpage: Dịch Vụ Tiệc Cưới Sân Vườn Garden Lãng Mạn Tại TP.HCM (/dich-vu-tiec-cuoi-san-vuon-garden-lang-man-tai-tphcm)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12038","Kiểm tra SEO Onpage: Chi phí nhà hàng tiệc cưới TP.HCM mới nhất (/chi-phi-nha-hang-tiec-cuoi-tphcm-moi-nhat)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","9515","Kiểm tra SEO Onpage: Set Menu Bàn Tròn (/menu-mon-le)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12897","Kiểm tra SEO Onpage: MÙA CƯỚI 2026 – TRAO YÊU THƯƠNG, GỬI TRỌN HẠNH PHÚC 🌸 (/mua-cuoi-2026-trao-yeu-thuong-gui-tron-hanh-phuc)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12146","Kiểm tra SEO Onpage: Xu hướng tiệc cưới tại nhà hàng TP.HCM 2026 (/xu-huong-tiec-cuoi-tai-nha-hang-tphcm-2026)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","38812","Add Service Category 1 successfully and verify on website","Desktop Chrome","2026-08-19","failed","2026-08-19","Service Category 1 Management Tests","admin/serviceCategory1.spec.ts","",""
+"","10378","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8755","Kiểm tra SEO Onpage: MẶT TIỀN (/mat-tien-sanh-g)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8972","Kiểm tra SEO Onpage: Sảnh Nữ Hoàng ( sảnh 3 ) (/sanh-nu-hoang-sanh-3)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8158","Kiểm tra SEO Onpage: Hệ thống cửa hàng (/he-thong-cua-hang)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8684","Kiểm tra SEO Onpage: SẢNH NHẬT NGUYỆT (/sanh-nhat-nguyet)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","4016","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12484","Kiểm tra SEO Onpage: Bảng Giá Dịch Vụ Đi Kèm (/bang-gia-dich-vu-di-kem)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","8172","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","12621","Add blog should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-19","passed","2026-08-19","Blog Management Tests","admin/blog.spec.ts","",""
+"","48007","Add blog successfully and verify on website","Desktop Chrome","2026-08-19","passed","2026-08-19","Blog Management Tests","admin/blog.spec.ts","",""
+"","40212","Add Service Category 1 should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-19","failed","2026-08-19","Service Category 1 Management Tests","admin/serviceCategory1.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11657","Kiểm tra SEO Onpage: Tuyển Dụng Nhà Hàng Tiệc Cưới Nam Bộ – Cơ Hội Việc Làm Nhà Hàng (/tuyen-dung)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12119","Kiểm tra SEO Onpage: Nhà hàng tiệc cưới TP.HCM phù hợp ngân sách (/nha-hang-tiec-cuoi-tphcm-phu-hop-ngan-sach)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8777","Kiểm tra SEO Onpage: SẢNH ALACARTE (/sanh-alacarte)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","3962","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","3812","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","115422","Bulk insert 35 blogs via Copy and verify Load More on website","Desktop Chrome","2026-08-19","failed","2026-08-19","Blog Management Tests","admin/blog.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 12/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8748","Kiểm tra SEO Onpage: SẢNH KIM CƯƠNG (/sanh-kim-cuong)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","10610","Kiểm tra SEO Onpage: TINH HOA ẨM THỰC TRONG KHÔNG GIAN SÂN VƯỜN XANH MÁT (/tinh-hoa-am-thuc-trong-khong-gian-san-vuon-xanh-mat)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12776","Kiểm tra SEO Onpage: Vì sao nên chọn nhà hàng tiệc cưới Tân Phú? (/vi-sao-nen-chon-nha-hang-tiec-cuoi-tan-phu)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 12/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8712","Kiểm tra SEO Onpage: SẢNH HOA HỒNG (/sanh-hoa-hong)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12945","Kiểm tra SEO Onpage: Top nhà hàng tổ chức tiệc cưới TP.HCM uy tín (/top-nha-hang-to-chuc-tiec-cuoi-tphcm-uy-tin)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","4134","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","8770","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-19","failed","2026-08-19","Search Feature Tests","web/search.spec.ts","",""
+"","3719","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-19","passed","2026-08-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 76/100 | Đạt: 16/21 tiêu chí | Ngưỡng: 96%
+
+KHÁ","301077","Kiểm tra SEO Onpage: Wedding (/wedding)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12406","Kiểm tra SEO Onpage: Gợi ý nhà hàng tiệc cưới Tân Phú không gian đẹp (/goi-y-nha-hang-tiec-cuoi-tan-phu-khong-gian-dep)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11149","Kiểm tra SEO Onpage: Blog Automation 1787121041103 (/blog-test-1787121041103)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12736","Kiểm tra SEO Onpage: COMBO NGON KHÓ CƯỠNG – GIẢM 20% CHỈ TỪ 620k TẠI LÀNG NƯỚNG NAM BỘ (/combo-ngon-kho-cuong-giam-20-chi-tu-620k-tai-lang-nuong-nam-bo)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8812","Kiểm tra SEO Onpage: SẢNH UYÊN ƯƠNG (/sanh-uyen-uong)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","8186","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-19","failed","2026-08-19","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 89/100 | Đạt: 16/18 tiêu chí | Ngưỡng: 96%
+
+TỐT","52312","Kiểm tra SEO Onpage: Thông Tin Liên Hệ Nhà Hàng Tiệc Cưới Nam Bộ – Nhà Hàng Tiệc Cưới (/lien-he)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8716","Kiểm tra SEO Onpage: Sảnh Mai Vàng ( sảnh 1 ) (/sanh-mai-vang-sanh-1)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11795","Kiểm tra SEO Onpage: VALENTINE TRẮNG 14/3 – DẤU ẤN CỦA SỰ HỒI ĐÁP YÊU THƯƠNG ✨ (/valentine-trang-143-dau-an-cua-su-hoi-dap-yeu-thuong)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11557","Kiểm tra SEO Onpage: Mẹo tiết kiệm khi đặt nhà hàng tổ chức tiệc cưới (/meo-tiet-kiem-khi-dat-nha-hang-to-chuc-tiec-cuoi)","Desktop Chrome","2026-08-19","failed","2026-08-19","SEO Page","seo/seo.spec.ts","",""
+"","9325","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-19","passed","2026-08-19","Contract Feature Tests","web/contract.spec.ts","",""
