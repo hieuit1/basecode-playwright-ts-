@@ -11,7 +11,7 @@ export default defineConfig({
     fullyParallel: false, // Tắt chạy song song các test case trong cùng 1 file
     globalSetup: "./src/setup/global.setup.ts",
     testDir: "./tests",
-    timeout: 200000,
+    timeout: 180000,
     workers: process.env.CI ? 2 : 1,
     expect: {
         timeout: 10000,
