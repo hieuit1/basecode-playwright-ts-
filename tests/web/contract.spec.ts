@@ -98,6 +98,7 @@ test.describe("Contract Feature Tests", () => {
             });
 
             await test.step("2 Gửi form", async () => {
+                await TestHelper.delay(page, 2000);
                 await contractPage.clickSend();
             });
 
