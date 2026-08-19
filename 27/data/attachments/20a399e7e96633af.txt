@@ -1,2 +1,0 @@
-CẢNH BÁO: Không thể fill desc VI qua frameLocator, bỏ qua.
-CẢNH BÁO: Không thể fill thongso VI qua frameLocator, bỏ qua.
