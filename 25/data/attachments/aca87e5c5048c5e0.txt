@@ -1,1 +1,0 @@
-Giao diện được sắp xếp chỉn chu, bố cục lưới (grid) và danh sách hiển thị rõ ràng, khoảng cách giữa các phần tử hợp lý, không có hiện tượng vỡ layout, tràn màn hình hay đè chữ.
