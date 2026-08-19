@@ -26,7 +26,7 @@ export class ServiceCategory1Page extends ArticleBasePage {
 
             // Đợi submenu hiển thị rõ ràng và kết thúc animation
             await this.subMenu.waitFor({ state: 'visible' });
-            
+
             // Dùng click force: true trong trường hợp AdminLTE menu hay bị che lấp nhẹ
             await Promise.all([
                 this.page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 10000 }).catch(() => { }),
@@ -48,7 +48,7 @@ export class ServiceCategory1Page extends ArticleBasePage {
                 contentEn: `English content for bulk test Service Category 1`,
             };
         }
-        
+
         // Dịch vụ cấp 1 không dùng trường mô tả (bị ẩn hoặc là CKEditor), nên ta bỏ qua cả desc vi và desc en
         const processedEnData = { ...enData };
         delete processedEnData.descEn;

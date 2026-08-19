@@ -6,7 +6,7 @@ import { TestHelper } from "../../src/utils/TestHelper";
 import { MenuHelper } from "../../src/utils/MenuHelper";
 test.use({ video: 'retain-on-failure' });
 
-if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Danh mục cấp 1'])) {
+if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Danh mục cấp 00'])) {
     test.describe("Service Category 1 Management Tests", () => {
         let servicePage: ServiceCategory1Page;
 

@@ -1,58 +1,69 @@
 {
-  "timestamp": "2026-08-19T08:27:46.344Z",
-  "baseUrl": "https://code5.mimadigi.vn/2026/august/trancongvinh_111726W/",
+  "timestamp": "2026-08-19T09:19:14.018Z",
+  "baseUrl": "https://nhahangtieccuoinambo.vn/",
   "menus": {
     "Bảng điều khiển": [],
-    "Group Về viên mộc": [
-      "Banner",
-      "Về viên mộc",
-      "Tiêu chí"
+    "Group Giới Thiệu": [
+      "Banner vì sao",
+      "Về chúng tôi",
+      "Lịch sử hình thành",
+      "Văn hoá doanh nghiệp",
+      "Khách hàng",
+      "Vì sao chọn chúng tôi",
+      "Thông số"
+    ],
+    "Quản lý Menu": [
+      "Danh mục cấp 1",
+      "Menu"
+    ],
+    "Quản lý Sảnh tiệc": [
+      "Sảnh tiệc"
     ],
     "Quản lý Dịch vụ": [
       "Danh mục cấp 1",
-      "Danh mục cấp 2",
       "Dịch vụ"
     ],
-    "Quản lý Sản phẩm": [
-      "Danh mục cấp 1",
-      "Danh mục cấp 2",
-      "Sản phẩm"
-    ],
-    "Quản lý Dự án": [
-      "Danh mục cấp 1",
-      "Dự án"
-    ],
     "Quản lý bài viết": [
-      "Tin tức",
-      "Cảm nhận khách hàng"
+      "Blog",
+      "Tuyển dụng",
+      "Tiệc cưới - Báo hỷ",
+      "Khuyến mãi",
+      "Câu hỏi thường gặp"
     ],
     "Quản lý nhận tin": [
-      "Đăng ký nhận tin"
+      "Đặt tiệc"
     ],
     "Quản lý trang tĩnh": [
-      "Mô tả form đăng kí",
+      "Slogan service",
+      "Wedding",
+      "Ẩm thực",
+      "Sảnh tiệc",
+      "Đặt tiệc",
       "Liên hệ",
       "Footer",
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.png)",
+      "Favicon (.ico GG rất thích)",
       "Logo",
-      "Logo footer",
+      "Banner index",
+      "Banner fanpage",
+      "Banner faq",
+      "Popup",
       "Slideshow",
+      "Video",
       "Mạng xã hội",
-      "Đối tác",
-      "Link Redirect"
+      "Chứng chỉ"
     ],
     "Quản lý seo page": [
       "Trang chủ",
-      "Về viên mộc",
+      "Giới thiệu",
+      "Menu",
       "Dịch vụ",
-      "Sản phẩm",
-      "Dự án",
-      "Tin tức",
-      "Liên hệ"
-    ],
-    "Thiết lập thông tin": []
+      "Blog",
+      "Sảnh tiệc",
+      "Tiệc cưới - Báo hỷ",
+      "Khuyến mãi"
+    ]
   }
 }

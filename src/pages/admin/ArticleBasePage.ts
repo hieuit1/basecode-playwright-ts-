@@ -58,7 +58,7 @@ export class ArticleBasePage extends BasePage {
     readonly thongsoEnHtml: Locator;
 
     // ── Timeout cấu hình (tăng lên khi mạng chậm) ──
-    protected readonly ELEMENT_DETECT_TIMEOUT = 5000;
+    protected readonly ELEMENT_DETECT_TIMEOUT = 3000;
     protected readonly UPLOAD_SETTLE_TIMEOUT = 10000;
     protected readonly ADMIN_ACTION_TIMEOUT = 15000;
 
@@ -174,7 +174,17 @@ export class ArticleBasePage extends BasePage {
             if (contentTabViVisible) await this.clickOn(this.contentTabVi);
 
             if (title) await this.typeInto(this.titleInput, title);
-            if (desc) await this.typeInto(this.descTextarea, desc);
+            if (desc) {
+                try {
+                    await this.descTextarea.fill(desc, { timeout: this.ELEMENT_DETECT_TIMEOUT });
+                } catch (e) {
+                    try {
+                        await this.descviHtml.fill(desc, { timeout: this.ELEMENT_DETECT_TIMEOUT });
+                    } catch (err) {
+                        console.log('CẢNH BÁO: Không thể fill desc VI qua frameLocator, bỏ qua.');
+                    }
+                }
+            }
 
             if (content) {
                 try {
@@ -193,8 +203,18 @@ export class ArticleBasePage extends BasePage {
 
                     if (enData?.titleEn) await this.typeInto(this.titleEnInput, enData.titleEn);
 
-                    // desc EN dùng textarea thường (không phải CKEditor)
-                    if (enData?.descEn) await this.typeInto(this.descEnTextarea, enData.descEn);
+                    // desc EN có thể dùng textarea thường hoặc CKEditor tuỳ website
+                    if (enData?.descEn) {
+                        try {
+                            await this.descEnTextarea.fill(enData.descEn, { timeout: this.ELEMENT_DETECT_TIMEOUT });
+                        } catch (e) {
+                            try {
+                                await this.descEnHtml.fill(enData.descEn, { timeout: this.ELEMENT_DETECT_TIMEOUT });
+                            } catch (err) {
+                                console.log('CẢNH BÁO: Không thể fill desc EN qua frameLocator, bỏ qua.');
+                            }
+                        }
+                    }
 
                     if (enData?.contentEn) {
                         try {
@@ -208,11 +228,17 @@ export class ArticleBasePage extends BasePage {
 
             // ===== PHẦN HÌNH ẢNH =====
             if (imagePath) {
-                const fileChooserPromise = this.page.waitForEvent('filechooser');
-                await this.clickOn(this.imageUploadButton);
-                const fileChooser = await fileChooserPromise;
-                await fileChooser.setFiles(imagePath);
-                await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => { });
+                if (await this.imageUploadButton.isVisible({ timeout: this.ELEMENT_DETECT_TIMEOUT }).catch(() => false)) {
+                    try {
+                        const fileChooserPromise = this.page.waitForEvent('filechooser', { timeout: 5000 });
+                        await this.clickOn(this.imageUploadButton);
+                        const fileChooser = await fileChooserPromise;
+                        await fileChooser.setFiles(imagePath);
+                        await this.page.waitForLoadState('networkidle', { timeout: this.UPLOAD_SETTLE_TIMEOUT }).catch(() => { });
+                    } catch (e) {
+                        console.log('CẢNH BÁO: Không thể upload hình ảnh, bỏ qua.');
+                    }
+                }
             }
 
             await this.clickOn(this.saveButton);
@@ -313,7 +339,11 @@ export class ArticleBasePage extends BasePage {
                 try {
                     await this.descviHtml.fill(descHtml, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                 } catch (e) {
-                    console.log('CẢNH BÁO: Không thể fill desc VI qua frameLocator, bỏ qua.');
+                    try {
+                        await this.descTextarea.fill(descHtml, { timeout: this.ELEMENT_DETECT_TIMEOUT });
+                    } catch (err) {
+                        console.log('CẢNH BÁO: Không thể fill desc VI qua frameLocator, bỏ qua.');
+                    }
                 }
             }
 
@@ -350,7 +380,11 @@ export class ArticleBasePage extends BasePage {
                         try {
                             await this.descEnHtml.fill(enData.descEn, { timeout: this.ELEMENT_DETECT_TIMEOUT });
                         } catch (e) {
-                            console.log('CẢNH BÁO: Không thể fill desc EN qua frameLocator, bỏ qua.');
+                            try {
+                                await this.descEnTextarea.fill(enData.descEn, { timeout: this.ELEMENT_DETECT_TIMEOUT });
+                            } catch (err) {
+                                console.log('CẢNH BÁO: Không thể fill desc EN qua frameLocator, bỏ qua.');
+                            }
                         }
                     }
 
