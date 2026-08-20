@@ -1,0 +1,229 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6047","Kiểm tra SEO Onpage: (/ke-treo-ly-quay-bar-cao-cap-starkit-j601)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","4837","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12772","Kiểm tra SEO Onpage: Đặt Món Online Làng Nướng Nam Bộ Dương Đức Hiền (/dat-mon)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","49200","TC-05: Thêm nhiều sản phẩm (3-5 SP) vào giỏ hàng","Desktop Chrome","2026-08-20","failed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13594","Kiểm tra SEO Onpage: Địa Điểm Nhà Hàng Tân Phú Tổ Chức Tất Niên Công Ty (/dia-diem-nha-hang-tan-phu-to-chuc-tat-nien-cong-ty)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","8701","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19544","Kiểm tra SEO Onpage: Sảnh 3 Lầu 5 (/sanh-3-lau-5)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","47954","TC-Negative: không nhập họ tên","Desktop Chrome","2026-08-20","passed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","13141","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-20","passed","2026-08-20","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6186","Kiểm tra SEO Onpage: (/voi-rua-bat-mau-titan-xoay-360-do-han-di)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","61807","Kiểm tra SEO Onpage: Tin Tức Làng Nướng Nam Bộ – Ưu Đãi & Hoạt Động Mới (/tin-tuc)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12952","Kiểm tra SEO Onpage: ĂN THẢ GA – GIÁ CỰC ĐÃ! COMBO TIẾT KIỆM CHO CẢ GIA ĐÌNH TẠI LÀNG NƯỚNG NAM BỘ (/an-tha-ga-gia-cuc-da-combo-tiet-kiem-cho-ca-gia-dinh-tai-lang-nuong-nam-bo)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","65245","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6637","Kiểm tra SEO Onpage: (/chot-an-toan-vickini-46502001-bsn)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12440","Kiểm tra SEO Onpage: Top Nhà Hàng Tân Phú Tổ Chức Tiệc Sinh Nhật Đẹp (/top-nha-hang-tan-phu-to-chuc-tiec-sinh-nhat-dep)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","13791","Kiểm tra SEO Onpage: Sảnh Tiệc & Phòng VIP Làng Nướng Nam Bộ (/phong-vip-sanh)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6922","Kiểm tra SEO Onpage: (/chau-rua-bat-1-ho-new-york-7240-inox-bong-hmhr31377)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","165108","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-08-20","failed","2026-08-20","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","14351","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-20","passed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"","9588","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","4525","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6672","Kiểm tra SEO Onpage: (/khoa-dien-tu-thong-minh-imundex)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11515","Kiểm tra SEO Onpage: LẨU CÁ TẦM MĂNG CHUA (/lau-ca-tam-mang-chua)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12488","Kiểm tra SEO Onpage: Món mới (/mon-chinh)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11088","Kiểm tra SEO Onpage: MIẾN XÀO CUA (/mien-xao-cua)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11237","Kiểm tra SEO Onpage: LẨU HẢI SẢN (/lau-hai-san)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","7213","Kiểm tra SEO Onpage: (/chau-1-hoc-kem-voi-am-lien-chau-phu-nano-ga-7546dv)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10602","Kiểm tra SEO Onpage: Khô Bò Tươi (/kho-bo-tuoi)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","46619","Kiểm tra SEO Onpage: Liên Hệ Nhà Hàng Làng Nướng Nam Bộ Dương Đức Hiền (/lien-he)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17424","Kiểm tra SEO Onpage: Sảnh 2 (/sanh-2)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6803","Kiểm tra SEO Onpage: (/voi-nuoc-nong-lanh-felix-chrome-konox)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","9752","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","79126","TC-01: Thêm 1 sản phẩm vào giỏ hàng thành công","Desktop Chrome","2026-08-20","failed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6873","Kiểm tra SEO Onpage: (/khoa-van-tay-imundex-71359139)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","16667","TC-03: Giảm số lượng sản phẩm trong giỏ hàng","Desktop Chrome","2026-08-20","failed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","84440","Kiểm tra SEO Onpage: Nhà Hàng Nướng Nam Bộ Dương Đức Hiền (/index.php)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","11439","Kiểm tra SEO Onpage: Hướng dẫn thanh toán (/huong-dan-thanh-toan)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9820","Kiểm tra SEO Onpage: MENU TIỆC LẺ 3 (/menu-tiec-le-3-4-nguoi)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6618","Kiểm tra SEO Onpage: (/bo-noi-12-mon-inox-cao-cap-eb8013)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11849","Kiểm tra SEO Onpage: Món đặc sản (/dac-san-noi-bat-tai-nam-bo)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6340","Kiểm tra SEO Onpage: (/khay-chia-thia-dia-nhua-cao-cap-van-cacbon)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6052","Kiểm tra SEO Onpage: (/chi-nhanh-1)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11098","Kiểm tra SEO Onpage: UDON XÀO HẢI SẢN (/udon-xao-hai-san)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","5936","Kiểm tra SEO Onpage: (/gia-bat-dia-eurogold-eum61607075808590g)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","47796","TC-02: Thanh toán đơn hàng thành công (Ngân hàng) và verify trên Admin","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[FAIL] Điểm SEO: 91/100 | Đạt: 20/22 tiêu chí | Ngưỡng: 96%
+
+TỐT","50453","Kiểm tra SEO Onpage: (/test-san-pham-mua-kem-2)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","32487","TC-Negative: không nhập số điện thoại","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11315","Kiểm tra SEO Onpage: CÁ BÓP NẤU LẨU THÁI (/ca-bop-nau-lau-thai)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","4531","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","90625","TC-01: Thanh toán đơn hàng thành công (COD) và verify trên Admin","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8827","Kiểm tra SEO Onpage: SET MENU CÁC MÓN ( 10 người ) (/set-menu-cac-mon-10-nguoi)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 91/100 | Đạt: 20/22 tiêu chí | Ngưỡng: 96%
+
+TỐT","43972","Kiểm tra SEO Onpage: (/ronaldo)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","73644","TC-Negative: tấn công XSS","Desktop Chrome","2026-08-20","passed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","7317","Login successfully with valid credentials","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12242","Kiểm tra SEO Onpage: Không gian 1 (/khong-gian-1)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","48024","TC-Negative: nhập email sai định dạng","Desktop Chrome","2026-08-20","passed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6081","Kiểm tra SEO Onpage: (/ke-chen-2-tang-inox-401151-401152-401153-401154)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6306","Kiểm tra SEO Onpage: (/bep-tu-gx-ih868pro-series-8-grandx)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","127064","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-20","failed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14747","Kiểm tra SEO Onpage: Lầu 1 (/lau-1)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6474","Kiểm tra SEO Onpage: (/gia-xoong-noi-nhom-cao-cap-eum5160geum5170geum5180geum5190g)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","4675","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11216","Kiểm tra SEO Onpage: CƠM CÁ CHIÊN MẶN GÀ XÉ (/com-ca-chien-man-ga-xe)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12891","Kiểm tra SEO Onpage: Nhà Hàng Tân Phú Chuyên Đặt Tiệc Trọn Gói (/nha-hang-tan-phu-chuyen-dat-tiec-tron-goi)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","33285","Submit form successfully with valid data","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15258","Kiểm tra SEO Onpage: Quán Ăn Tân Phú Tổ Chức Sinh Nhật Cho Bé (/quan-an-tan-phu-to-chuc-sinh-nhat-cho-be)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","10294","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","14289","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-08-20","passed","2026-08-20","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6946","Kiểm tra SEO Onpage: (/gia-dao-thot-gia-vi-garis-mm0240v)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","76807","TC-Negative: không nhập địa chỉ","Desktop Chrome","2026-08-20","passed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6698","Kiểm tra SEO Onpage: (/bep-dien-tu-gx-e677se-grandx)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6660","Kiểm tra SEO Onpage: (/he-thong-cua-hang)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","10973","Kiểm tra SEO Onpage: Chính sách bảo hành (/chinh-sach-bao-hanh)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","6490","TC-06: Giỏ hàng trống khi chưa thêm sản phẩm","Desktop Chrome","2026-08-20","passed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6514","Kiểm tra SEO Onpage: (/may-rua-chen-eurosun-sms80eu16e)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15049","Kiểm tra SEO Onpage: Sảnh 1 (/sanh-1)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","8524","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","47887","TC-04: Xóa sản phẩm khỏi giỏ hàng","Desktop Chrome","2026-08-20","passed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"","33141","Add news successfully and verify on website","Desktop Chrome","2026-08-20","passed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","5852","Kiểm tra SEO Onpage: (/thung-gao-dien-tu-guong-den-starkit-ml-337ib)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","32988","Add recruitment successfully and verify on website","Desktop Chrome","2026-08-20","passed","2026-08-20","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","4939","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","5126","Kiểm tra SEO Onpage: (/chot-cua-vickini-46400-sss)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","7647","Kiểm tra SEO Onpage: (/imundex-71359139-khoa-van-tay-mo-bang-app-ben-bi-chong-chay)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11924","Kiểm tra SEO Onpage: GÀ TIỀM ỚT HIỂM (/ga-tiem-ot-hiem)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","5863","Kiểm tra SEO Onpage: (/khoa-cua-dien-tu-demax-el910-gs-face-id-app-wifi)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","50788","Kiểm tra SEO Onpage: (/san-pham)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6159","Kiểm tra SEO Onpage: (/gia-nang-ha-2-tang-tinatium-grandx-xl80t-va-xl90t)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","23388","TC-Negative: nhập số điện thoại sai định dạng","Desktop Chrome","2026-08-20","passed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","9757","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14020","Kiểm tra SEO Onpage: Tổ chức liên hoan (/to-chuc-lien-hoan)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11731","Kiểm tra SEO Onpage: BÒ SỐT RƯỢU VANG (/bo-sot-ruou-vang)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20449","Kiểm tra SEO Onpage: SẢNH TIỆC LỚN 400 khách (/sanh-tiec-lon-400-khach)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11503","Kiểm tra SEO Onpage: MÌ XÁ XÍU DẦU HÀO (/mi-xa-xiu-dau-hao)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6283","Kiểm tra SEO Onpage: (/ro-chen-dia-giam-chan-303502-303504-303505)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","20945","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-20","passed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"","49549","TC-02: Tăng số lượng sản phẩm trong giỏ hàng","Desktop Chrome","2026-08-20","failed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"[FAIL] Điểm SEO: 71/100 | Đạt: 17/24 tiêu chí | Ngưỡng: 96%
+
+KHÁ","74331","Kiểm tra SEO Onpage: Giới Thiệu Làng Nướng Nam Bộ – Nhà Hàng Nướng Tân Phú (/gioi-thieu)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6435","Kiểm tra SEO Onpage: (/san-pham-test-3)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","6978","Kiểm tra SEO Onpage: (/chau-thac-nuoc-cao-cap-han-di-hd304)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""

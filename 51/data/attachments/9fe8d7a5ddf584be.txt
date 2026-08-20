@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (3 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H3 ("Khô Bò Tươi"); Nhảy cấp từ H3 → H5 ("Chi tiết sản phẩm"); Nhảy cấp từ H3 → H6 ("Giỏ hàng của bạn")

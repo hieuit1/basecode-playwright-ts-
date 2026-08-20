@@ -1,0 +1,787 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage:  (/ronaldo)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 91/100 dưới ngưỡng 96%. Có 2/22 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e6]:
+      - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e8] [cursor=pointer]:
+        - /url: https://langnuongnambo.vn/
+        - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e9]
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link "Trang chủ" [ref=e13] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e14]:
+          - link "Giới thiệu" [ref=e15] [cursor=pointer]:
+            - /url: gioi-thieu
+        - listitem [ref=e16]:
+          - link "Thực đơn" [ref=e17] [cursor=pointer]:
+            - /url: thuc-don
+        - listitem [ref=e18]:
+          - link "Dịch vụ" [ref=e19] [cursor=pointer]:
+            - /url: dich-vu
+        - listitem [ref=e20]:
+          - link "Đặt món" [ref=e21] [cursor=pointer]:
+            - /url: dat-mon
+        - listitem [ref=e22]:
+          - link "Phòng vip/sảnh" [ref=e23] [cursor=pointer]:
+            - /url: phong-vip-sanh
+        - listitem [ref=e24]:
+          - link "Tin tức" [ref=e25] [cursor=pointer]:
+            - /url: tin-tuc
+        - listitem [ref=e26]:
+          - link "Tuyển dụng" [ref=e27] [cursor=pointer]:
+            - /url: tuyen-dung
+        - listitem [ref=e28]:
+          - link "Liên hệ" [ref=e29] [cursor=pointer]:
+            - /url: lien-he
+        - link "Đặt bàn" [ref=e32] [cursor=pointer]:
+          - /url: tel:0985170767
+        - listitem [ref=e33]:
+          - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN Giỏ hàng 0" [ref=e34] [cursor=pointer]:
+            - /url: gio-hang
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e35]
+            - generic [ref=e36]:
+              - generic [ref=e37]: Giỏ hàng
+              - generic [ref=e38]: "0"
+    - generic [ref=e42]:
+      - button "Previous" [ref=e43] [cursor=pointer]: ←Previous
+      - listbox [ref=e45]:
+        - option [ref=e46]:
+          - link [ref=e47] [cursor=pointer]:
+            - /url: ""
+            - img [ref=e49]
+        - option [ref=e50]
+        - option [ref=e53]
+      - button "Next" [ref=e56] [cursor=pointer]: →Next
+    - generic [ref=e57]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - text: Nhà hàng
+            - heading "LÀNG NƯỚNG NAM BỘ DƯƠNG ĐỨC HIỀN" [level=2] [ref=e63]
+          - heading "Làng Nướng Nam Bộ – Dương Đức Hiền là điểm hẹn ẩm thực dành cho những ai yêu mến hương vị Nam Bộ mộc mạc và chân thành. Chúng tôi mang đến những món ăn đậm đà bản sắc miền sông nước, được chế biến từ nguyên liệu tươi ngon, giữ trọn hương vị truyền thống trong không gian ấm cúng, gần gũi. Với sự tận tâm trong từng món ăn và phong cách phục vụ chuyên nghiệp, Làng Nướng Nam Bộ mong muốn mỗi bữa ăn không chỉ ngon miệng mà còn là khoảnh khắc gắn kết, sẻ chia và lưu giữ những trải nghiệm đáng nhớ cho thực khách." [level=3] [ref=e65]:
+            - generic [ref=e66]: Làng Nướng Nam Bộ – Dương Đức Hiền là điểm hẹn ẩm thực dành cho những ai yêu mến hương vị Nam Bộ mộc mạc và chân thành. Chúng tôi mang đến những món ăn đậm đà bản sắc miền sông nước, được chế biến từ nguyên liệu tươi ngon, giữ trọn hương vị truyền thống trong không gian ấm cúng, gần gũi. Với sự tận tâm trong từng món ăn và phong cách phục vụ chuyên nghiệp, Làng Nướng Nam Bộ mong muốn mỗi bữa ăn không chỉ ngon miệng mà còn là khoảnh khắc gắn kết, sẻ chia và lưu giữ những trải nghiệm đáng nhớ cho thực khách.
+          - link "XEM THÊM VỀ NHÀ HÀNG CHÚNG TÔI Giới thiệu" [ref=e67] [cursor=pointer]:
+            - /url: gioi-thieu
+            - text: XEM THÊM VỀ NHÀ HÀNG CHÚNG TÔI
+            - img "Giới thiệu" [ref=e68]
+        - img "LÀNG NƯỚNG NAM BỘ DƯƠNG ĐỨC HIỀN" [ref=e71]
+      - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e74]
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - text: Set Menu
+          - heading "Nổi bật" [level=2] [ref=e78]
+          - paragraph [ref=e79]:
+            - text: “Làng Nướng Nam Bộ – Gắn kết yêu thương qua từng bữa ăn!”
+            - text: những món ăn được chế biến từ nguyên liệu tươi ngon, kết hợp với công thức truyền thống.
+        - generic [ref=e80]:
+          - generic [ref=e86]:
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e89]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e92]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e95]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e98]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e101]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e104]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e107]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e110]
+          - generic [ref=e111]:
+            - heading "MENU TIỆC LẺ ( 3-4 người)" [level=3] [ref=e112]
+            - paragraph [ref=e113]: Menu tiệc lẻ được thiết kế dành cho nhóm nhỏ 3–4 người, kết hợp hài hòa giữa các món nướng đặc trưng Nam Bộ và món ăn kèm hấp dẫn. Khẩu phần vừa đủ, đa dạng món, phù hợp cho buổi gặp gỡ bạn bè, gia đình hoặc ăn uống ấm cúng nhưng vẫn đầy đủ hương vị đặc sắc của Làng Nướng Nam Bộ.
+            - link "Xem thêm menu" [ref=e114] [cursor=pointer]:
+              - /url: menu-tiec-le-3-4-nguoi
+        - generic [ref=e115]:
+          - generic [ref=e121]:
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e124]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e127]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e130]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e133]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e136]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e139]
+            - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e142]
+          - generic [ref=e143]:
+            - heading "SET MENU CÁC MÓN ( 10 người )" [level=3] [ref=e144]
+            - paragraph [ref=e145]: Set menu các món dành cho bàn tiệc 10 người với sự kết hợp đa dạng giữa món nướng đặc trưng, món ăn truyền thống và món ăn kèm phong phú. Khẩu phần được tính toán hợp lý, đảm bảo đầy đặn, cân bằng dinh dưỡng và phù hợp cho tiệc gia đình, liên hoan, sinh nhật hoặc tiếp khách trong không gian ấm cúng, đậm chất ẩm thực Nam Bộ.
+            - link "Xem thêm menu" [ref=e146] [cursor=pointer]:
+              - /url: set-menu-cac-mon-10-nguoi
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - heading "Món mới" [level=2] [ref=e150]
+          - link "Xem tất cả" [ref=e151] [cursor=pointer]:
+            - /url: mon-chinh
+            - text: Xem tất cả
+        - generic [ref=e152]:
+          - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e154]
+          - generic [ref=e158]:
+            - generic [ref=e160]:
+              - link "MÌ XÁ XÍU DẦU HÀO" [ref=e162] [cursor=pointer]:
+                - /url: mi-xa-xiu-dau-hao
+              - generic [ref=e163]:
+                - heading "MÌ XÁ XÍU DẦU HÀO" [level=3] [ref=e164]:
+                  - link "MÌ XÁ XÍU DẦU HÀO" [ref=e165] [cursor=pointer]:
+                    - /url: mi-xa-xiu-dau-hao
+                - paragraph [ref=e167]: Nếu bạn là người yêu thích những món ăn đậm chất ẩm thực Việt Nam kết hợp với sự tinh tế của các loại gia vị đặc trưng, thì món mì xá xíu dầu hào tại Làng Nướng Nam Bộ chắc chắn sẽ làm bạn hài lòng.
+                - paragraph [ref=e168]:
+                  - generic [ref=e169]: "Giá: Liên hệ"
+            - generic [ref=e171]:
+              - link "BÒ SỐT RƯỢU VANG" [ref=e173] [cursor=pointer]:
+                - /url: bo-sot-ruou-vang
+              - generic [ref=e174]:
+                - heading "BÒ SỐT RƯỢU VANG" [level=3] [ref=e175]:
+                  - link "BÒ SỐT RƯỢU VANG" [ref=e176] [cursor=pointer]:
+                    - /url: bo-sot-ruou-vang
+                - paragraph [ref=e178]: Khi nhắc đến một món ăn sang trọng nhưng không kém phần đậm đà và gần gũi, bò sốt rượu vang tại Làng Nướng Nam Bộ là một sự lựa chọn hoàn hảo. Đây là món ăn mang hương vị hài hòa giữa nét tinh tế của ẩm thực châu Âu và sự khéo léo trong chế biến của người Việt.
+                - paragraph [ref=e179]:
+                  - generic [ref=e180]: "Giá: Liên hệ"
+            - generic [ref=e182]:
+              - link "LẨU CÁ TẦM MĂNG CHUA" [ref=e184] [cursor=pointer]:
+                - /url: lau-ca-tam-mang-chua
+              - generic [ref=e185]:
+                - heading "LẨU CÁ TẦM MĂNG CHUA" [level=3] [ref=e186]:
+                  - link "LẨU CÁ TẦM MĂNG CHUA" [ref=e187] [cursor=pointer]:
+                    - /url: lau-ca-tam-mang-chua
+                - paragraph [ref=e189]: Lẩu cá tầm măng chua tại Làng Nướng Nam Bộ là món ăn đặc trưng, kết hợp hương vị thanh mát của măng chua và sự béo ngậy, mềm ngọt của cá tầm. Đây là lựa chọn lý tưởng cho những bữa tiệc gia đình hoặc buổi gặp mặt bạn bè, mang đến trải nghiệm ẩm thực đậm đà và khó quên.
+                - paragraph [ref=e190]:
+                  - generic [ref=e191]: "Giá: Liên hệ"
+            - generic [ref=e193]:
+              - link "MIẾN XÀO CUA" [ref=e195] [cursor=pointer]:
+                - /url: mien-xao-cua
+              - generic [ref=e196]:
+                - heading "MIẾN XÀO CUA" [level=3] [ref=e197]:
+                  - link "MIẾN XÀO CUA" [ref=e198] [cursor=pointer]:
+                    - /url: mien-xao-cua
+                - paragraph [ref=e200]: Miến xào cua là một món ăn tinh tế và đầy hấp dẫn tại Làng Nướng Nam Bộ, mang hương vị đặc trưng của ẩm thực miền Nam. Với sự kết hợp hoàn hảo giữa miến mềm dai, thịt cua tươi ngon, và các loại gia vị đặc trưng, món ăn này đã trở thành lựa chọn yêu thích của nhiều thực khách khi đến với nhà hàng.
+                - paragraph [ref=e201]:
+                  - generic [ref=e202]: "Giá: Liên hệ"
+            - generic [ref=e204]:
+              - link "UDON XÀO HẢI SẢN" [ref=e206] [cursor=pointer]:
+                - /url: udon-xao-hai-san
+              - generic [ref=e207]:
+                - heading "UDON XÀO HẢI SẢN" [level=3] [ref=e208]:
+                  - link "UDON XÀO HẢI SẢN" [ref=e209] [cursor=pointer]:
+                    - /url: udon-xao-hai-san
+                - paragraph [ref=e211]: Udon xào hải sản tại Làng Nướng Nam Bộ là một sự kết hợp độc đáo giữa ẩm thực Nhật Bản và phong cách chế biến đậm chất Nam Bộ. Đây là món ăn hấp dẫn, thơm ngon và bổ dưỡng, chinh phục khẩu vị của cả những thực khách khó tính nhất.
+                - paragraph [ref=e212]:
+                  - generic [ref=e213]: "Giá: Liên hệ"
+            - generic [ref=e215]:
+              - link "CƠM CÁ CHIÊN MẶN GÀ XÉ" [ref=e217] [cursor=pointer]:
+                - /url: com-ca-chien-man-ga-xe
+              - generic [ref=e218]:
+                - heading "CƠM CÁ CHIÊN MẶN GÀ XÉ" [level=3] [ref=e219]:
+                  - link "CƠM CÁ CHIÊN MẶN GÀ XÉ" [ref=e220] [cursor=pointer]:
+                    - /url: com-ca-chien-man-ga-xe
+                - paragraph [ref=e222]: Món cơm cá chiên mặn gà xé là một trong những món ăn giản dị nhưng đầy cuốn hút tại Làng Nướng Nam Bộ. Món ăn này không chỉ mang đến hương vị đậm đà, dân dã mà còn gợi lên nét mộc mạc, gần gũi của ẩm thực miền Nam.
+                - paragraph [ref=e223]:
+                  - generic [ref=e224]: "Giá: Liên hệ"
+            - generic [ref=e226]:
+              - link "LẨU HẢI SẢN" [ref=e228] [cursor=pointer]:
+                - /url: lau-hai-san
+              - generic [ref=e229]:
+                - heading "LẨU HẢI SẢN" [level=3] [ref=e230]:
+                  - link "LẨU HẢI SẢN" [ref=e231] [cursor=pointer]:
+                    - /url: lau-hai-san
+                - paragraph [ref=e233]: Lẩu hải sản là một trong những món ăn được yêu thích tại Làng Nướng Nam Bộ, mang đến hương vị tươi ngon đặc trưng của biển cả, kết hợp với phong cách chế biến đậm chất Nam Bộ. Đây là lựa chọn hoàn hảo cho những bữa tiệc quây quần cùng gia đình và bạn bè.
+                - paragraph [ref=e234]:
+                  - generic [ref=e235]: "Giá: Liên hệ"
+            - generic [ref=e237]:
+              - link "GÀ TIỀM ỚT HIỂM" [ref=e239] [cursor=pointer]:
+                - /url: ga-tiem-ot-hiem
+              - generic [ref=e240]:
+                - heading "GÀ TIỀM ỚT HIỂM" [level=3] [ref=e241]:
+                  - link "GÀ TIỀM ỚT HIỂM" [ref=e242] [cursor=pointer]:
+                    - /url: ga-tiem-ot-hiem
+                - paragraph [ref=e244]: Gà tiềm ớt hiểm là một trong những món ăn độc đáo và nổi bật tại Làng Nướng Nam Bộ, nơi nổi tiếng với các món ăn mang đậm phong vị miền Nam. Đây là món ăn kết hợp tinh tế giữa sự bổ dưỡng của gà và hương vị đặc trưng cay nồng của ớt hiểm, tạo nên một trải nghiệm ẩm thực khó quên.
+                - paragraph [ref=e245]:
+                  - generic [ref=e246]: "Giá: Liên hệ"
+            - generic [ref=e248]:
+              - link "CÁ BÓP NẤU LẨU THÁI" [ref=e250] [cursor=pointer]:
+                - /url: ca-bop-nau-lau-thai
+              - generic [ref=e251]:
+                - heading "CÁ BÓP NẤU LẨU THÁI" [level=3] [ref=e252]:
+                  - link "CÁ BÓP NẤU LẨU THÁI" [ref=e253] [cursor=pointer]:
+                    - /url: ca-bop-nau-lau-thai
+                - paragraph [ref=e255]: Món cá bóp nấu lẩu Thái tại Làng Nướng Nam Bộ là sự kết hợp hoàn hảo giữa hương vị tươi ngon của biển cả và sự quyến rũ của ẩm thực Thái Lan. Được chế biến với những nguyên liệu tươi sống, gia vị đậm đà và một chút cay nồng, món ăn này chắc chắn sẽ chinh phục được những tín đồ ẩm thực khó tính.
+                - paragraph [ref=e256]:
+                  - generic [ref=e257]: "Giá: Liên hệ"
+      - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e260]
+      - generic [ref=e262]:
+        - generic [ref=e263]:
+          - heading "Món Đặc sản" [level=2] [ref=e264]
+          - link "Xem tất cả" [ref=e265] [cursor=pointer]:
+            - /url: dac-san-noi-bat-tai-nam-bo
+            - text: Xem tất cả
+        - generic [ref=e266]:
+          - generic [ref=e270]:
+            - generic [ref=e272]:
+              - link "BÒ SỐT RƯỢU VANG" [ref=e274] [cursor=pointer]:
+                - /url: bo-sot-ruou-vang
+              - generic [ref=e275]:
+                - heading "BÒ SỐT RƯỢU VANG" [level=3] [ref=e276]:
+                  - link "BÒ SỐT RƯỢU VANG" [ref=e277] [cursor=pointer]:
+                    - /url: bo-sot-ruou-vang
+                - paragraph [ref=e279]: Khi nhắc đến một món ăn sang trọng nhưng không kém phần đậm đà và gần gũi, bò sốt rượu vang tại Làng Nướng Nam Bộ là một sự lựa chọn hoàn hảo. Đây là món ăn mang hương vị hài hòa giữa nét tinh tế của ẩm thực châu Âu và sự khéo léo trong chế biến của người Việt.
+                - paragraph [ref=e280]:
+                  - generic [ref=e281]: "Giá: Liên hệ"
+            - generic [ref=e283]:
+              - link "LẨU CÁ TẦM MĂNG CHUA" [ref=e285] [cursor=pointer]:
+                - /url: lau-ca-tam-mang-chua
+              - generic [ref=e286]:
+                - heading "LẨU CÁ TẦM MĂNG CHUA" [level=3] [ref=e287]:
+                  - link "LẨU CÁ TẦM MĂNG CHUA" [ref=e288] [cursor=pointer]:
+                    - /url: lau-ca-tam-mang-chua
+                - paragraph [ref=e290]: Lẩu cá tầm măng chua tại Làng Nướng Nam Bộ là món ăn đặc trưng, kết hợp hương vị thanh mát của măng chua và sự béo ngậy, mềm ngọt của cá tầm. Đây là lựa chọn lý tưởng cho những bữa tiệc gia đình hoặc buổi gặp mặt bạn bè, mang đến trải nghiệm ẩm thực đậm đà và khó quên.
+                - paragraph [ref=e291]:
+                  - generic [ref=e292]: "Giá: Liên hệ"
+            - generic [ref=e294]:
+              - link "MIẾN XÀO CUA" [ref=e296] [cursor=pointer]:
+                - /url: mien-xao-cua
+              - generic [ref=e297]:
+                - heading "MIẾN XÀO CUA" [level=3] [ref=e298]:
+                  - link "MIẾN XÀO CUA" [ref=e299] [cursor=pointer]:
+                    - /url: mien-xao-cua
+                - paragraph [ref=e301]: Miến xào cua là một món ăn tinh tế và đầy hấp dẫn tại Làng Nướng Nam Bộ, mang hương vị đặc trưng của ẩm thực miền Nam. Với sự kết hợp hoàn hảo giữa miến mềm dai, thịt cua tươi ngon, và các loại gia vị đặc trưng, món ăn này đã trở thành lựa chọn yêu thích của nhiều thực khách khi đến với nhà hàng.
+                - paragraph [ref=e302]:
+                  - generic [ref=e303]: "Giá: Liên hệ"
+            - generic [ref=e305]:
+              - link "UDON XÀO HẢI SẢN" [ref=e307] [cursor=pointer]:
+                - /url: udon-xao-hai-san
+              - generic [ref=e308]:
+                - heading "UDON XÀO HẢI SẢN" [level=3] [ref=e309]:
+                  - link "UDON XÀO HẢI SẢN" [ref=e310] [cursor=pointer]:
+                    - /url: udon-xao-hai-san
+                - paragraph [ref=e312]: Udon xào hải sản tại Làng Nướng Nam Bộ là một sự kết hợp độc đáo giữa ẩm thực Nhật Bản và phong cách chế biến đậm chất Nam Bộ. Đây là món ăn hấp dẫn, thơm ngon và bổ dưỡng, chinh phục khẩu vị của cả những thực khách khó tính nhất.
+                - paragraph [ref=e313]:
+                  - generic [ref=e314]: "Giá: Liên hệ"
+            - generic [ref=e316]:
+              - link "CƠM CÁ CHIÊN MẶN GÀ XÉ" [ref=e318] [cursor=pointer]:
+                - /url: com-ca-chien-man-ga-xe
+              - generic [ref=e319]:
+                - heading "CƠM CÁ CHIÊN MẶN GÀ XÉ" [level=3] [ref=e320]:
+                  - link "CƠM CÁ CHIÊN MẶN GÀ XÉ" [ref=e321] [cursor=pointer]:
+                    - /url: com-ca-chien-man-ga-xe
+                - paragraph [ref=e323]: Món cơm cá chiên mặn gà xé là một trong những món ăn giản dị nhưng đầy cuốn hút tại Làng Nướng Nam Bộ. Món ăn này không chỉ mang đến hương vị đậm đà, dân dã mà còn gợi lên nét mộc mạc, gần gũi của ẩm thực miền Nam.
+                - paragraph [ref=e324]:
+                  - generic [ref=e325]: "Giá: Liên hệ"
+            - generic [ref=e327]:
+              - link "LẨU HẢI SẢN" [ref=e329] [cursor=pointer]:
+                - /url: lau-hai-san
+              - generic [ref=e330]:
+                - heading "LẨU HẢI SẢN" [level=3] [ref=e331]:
+                  - link "LẨU HẢI SẢN" [ref=e332] [cursor=pointer]:
+                    - /url: lau-hai-san
+                - paragraph [ref=e334]: Lẩu hải sản là một trong những món ăn được yêu thích tại Làng Nướng Nam Bộ, mang đến hương vị tươi ngon đặc trưng của biển cả, kết hợp với phong cách chế biến đậm chất Nam Bộ. Đây là lựa chọn hoàn hảo cho những bữa tiệc quây quần cùng gia đình và bạn bè.
+                - paragraph [ref=e335]:
+                  - generic [ref=e336]: "Giá: Liên hệ"
+            - generic [ref=e338]:
+              - link "GÀ TIỀM ỚT HIỂM" [ref=e340] [cursor=pointer]:
+                - /url: ga-tiem-ot-hiem
+              - generic [ref=e341]:
+                - heading "GÀ TIỀM ỚT HIỂM" [level=3] [ref=e342]:
+                  - link "GÀ TIỀM ỚT HIỂM" [ref=e343] [cursor=pointer]:
+                    - /url: ga-tiem-ot-hiem
+                - paragraph [ref=e345]: Gà tiềm ớt hiểm là một trong những món ăn độc đáo và nổi bật tại Làng Nướng Nam Bộ, nơi nổi tiếng với các món ăn mang đậm phong vị miền Nam. Đây là món ăn kết hợp tinh tế giữa sự bổ dưỡng của gà và hương vị đặc trưng cay nồng của ớt hiểm, tạo nên một trải nghiệm ẩm thực khó quên.
+                - paragraph [ref=e346]:
+                  - generic [ref=e347]: "Giá: Liên hệ"
+            - generic [ref=e349]:
+              - link "Khô Bò Tươi" [ref=e351] [cursor=pointer]:
+                - /url: kho-bo-tuoi
+              - generic [ref=e352]:
+                - heading "Khô Bò Tươi" [level=3] [ref=e353]:
+                  - link "Khô Bò Tươi" [ref=e354] [cursor=pointer]:
+                    - /url: kho-bo-tuoi
+                - paragraph [ref=e356]: "Khô bò là món ăn khoái khẩu của rất nhiều người bởi hương vị thơm ngon đặc trưng, rất tiện dụng, sử dụng ngay mà không mất nhiều thời gian chế biến, dùng để nhâm nhi với chút rượu bia rất bắt. Thành phần: Thịt bò tươi, gia vị sả, tỏi, ớt, muối, đường thốt nốt, ngũ vị hương… Quy cách: Đóng gói hút chân không Nhà sản xuất: Công ty TNHH- TMDV Làng Nướng Nam Bộ Tình trạng: Mới Sản Xuất Hạn dùng: 6 tháng kể từ NSX Bảo quản: Nơi khô ráo thoáng mát"
+                - paragraph [ref=e357]:
+                  - generic [ref=e358]: "Giá: Liên hệ"
+            - generic [ref=e360]:
+              - link "CÁ BÓP NẤU LẨU THÁI" [ref=e362] [cursor=pointer]:
+                - /url: ca-bop-nau-lau-thai
+              - generic [ref=e363]:
+                - heading "CÁ BÓP NẤU LẨU THÁI" [level=3] [ref=e364]:
+                  - link "CÁ BÓP NẤU LẨU THÁI" [ref=e365] [cursor=pointer]:
+                    - /url: ca-bop-nau-lau-thai
+                - paragraph [ref=e367]: Món cá bóp nấu lẩu Thái tại Làng Nướng Nam Bộ là sự kết hợp hoàn hảo giữa hương vị tươi ngon của biển cả và sự quyến rũ của ẩm thực Thái Lan. Được chế biến với những nguyên liệu tươi sống, gia vị đậm đà và một chút cay nồng, món ăn này chắc chắn sẽ chinh phục được những tín đồ ẩm thực khó tính.
+                - paragraph [ref=e368]:
+                  - generic [ref=e369]: "Giá: Liên hệ"
+          - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e371]
+      - generic [ref=e373]:
+        - heading "Phòng Vip/sảnh" [level=2] [ref=e375]
+        - generic [ref=e376]:
+          - generic [ref=e378]:
+            - generic [ref=e380]:
+              - paragraph [ref=e381]:
+                - link "SẢNH TIỆC LỚN 400 khách" [ref=e382] [cursor=pointer]:
+                  - /url: sanh-tiec-lon-400-khach
+              - heading "SẢNH TIỆC LỚN 400 khách" [level=3] [ref=e384]:
+                - link "SẢNH TIỆC LỚN 400 khách" [ref=e385] [cursor=pointer]:
+                  - /url: sanh-tiec-lon-400-khach
+            - generic [ref=e387]:
+              - paragraph [ref=e388]:
+                - link "Phòng Vip 20 80-90 khách" [ref=e389] [cursor=pointer]:
+                  - /url: phong-vip-20-80-90-khach
+              - heading "Phòng Vip 20 80-90 khách" [level=3] [ref=e391]:
+                - link "Phòng Vip 20 80-90 khách" [ref=e392] [cursor=pointer]:
+                  - /url: phong-vip-20-80-90-khach
+            - generic [ref=e394]:
+              - paragraph [ref=e395]:
+                - link "Phòng Vip 22 ( lầu 2) 90-120 khách" [ref=e396] [cursor=pointer]:
+                  - /url: phong-vip-22-lau-2-90-120-khach
+              - heading "Phòng Vip 22 ( lầu 2) 90-120 khách" [level=3] [ref=e398]:
+                - link "Phòng Vip 22 ( lầu 2) 90-120 khách" [ref=e399] [cursor=pointer]:
+                  - /url: phong-vip-22-lau-2-90-120-khach
+            - generic [ref=e401]:
+              - paragraph [ref=e402]:
+                - link "Phòng Vip 19 30-40 khách" [ref=e403] [cursor=pointer]:
+                  - /url: phong-vip-19-30-40-khach
+              - heading "Phòng Vip 19 30-40 khách" [level=3] [ref=e405]:
+                - link "Phòng Vip 19 30-40 khách" [ref=e406] [cursor=pointer]:
+                  - /url: phong-vip-19-30-40-khach
+            - generic [ref=e408]:
+              - paragraph [ref=e409]:
+                - link "Phòng Vip 18, 24 (60 khách)" [ref=e410] [cursor=pointer]:
+                  - /url: phong-vip-18-24-60-khach
+              - heading "Phòng Vip 18, 24 (60 khách)" [level=3] [ref=e412]:
+                - link "Phòng Vip 18, 24 (60 khách)" [ref=e413] [cursor=pointer]:
+                  - /url: phong-vip-18-24-60-khach
+            - generic [ref=e415]:
+              - paragraph [ref=e416]:
+                - link "Phòng Vip 3 ( lầu 2) 30-40 khách" [ref=e417] [cursor=pointer]:
+                  - /url: phong-vip-3-lau-2-30-40-khach
+              - heading "Phòng Vip 3 ( lầu 2) 30-40 khách" [level=3] [ref=e419]:
+                - link "Phòng Vip 3 ( lầu 2) 30-40 khách" [ref=e420] [cursor=pointer]:
+                  - /url: phong-vip-3-lau-2-30-40-khach
+            - generic [ref=e422]:
+              - paragraph [ref=e423]:
+                - link "Phòng Vip 12, 14, 25 (25-30 KHÁCH)" [ref=e424] [cursor=pointer]:
+                  - /url: phong-vip-12-14-25-25-30-khach
+              - heading "Phòng Vip 12, 14, 25 (25-30 KHÁCH)" [level=3] [ref=e426]:
+                - link "Phòng Vip 12, 14, 25 (25-30 KHÁCH)" [ref=e427] [cursor=pointer]:
+                  - /url: phong-vip-12-14-25-25-30-khach
+            - generic [ref=e429]:
+              - paragraph [ref=e430]:
+                - link "Phòng VIP 1, 2, 16, 17- 10 khách" [ref=e431] [cursor=pointer]:
+                  - /url: phong-vip-1-2-16-17-10-khach
+              - heading "Phòng VIP 1, 2, 16, 17- 10 khách" [level=3] [ref=e433]:
+                - link "Phòng VIP 1, 2, 16, 17- 10 khách" [ref=e434] [cursor=pointer]:
+                  - /url: phong-vip-1-2-16-17-10-khach
+            - generic [ref=e436]:
+              - paragraph [ref=e437]:
+                - link "Phòng Vip 4, 5, 6, 7, 8, 9, 10 - 20 KHÁCH" [ref=e438] [cursor=pointer]:
+                  - /url: phong-vip-4-5-6-7-8-9-10-20-khach
+              - heading "Phòng Vip 4, 5, 6, 7, 8, 9, 10 - 20 KHÁCH" [level=3] [ref=e440]:
+                - link "Phòng Vip 4, 5, 6, 7, 8, 9, 10 - 20 KHÁCH" [ref=e441] [cursor=pointer]:
+                  - /url: phong-vip-4-5-6-7-8-9-10-20-khach
+          - generic [ref=e442]:
+            - button [ref=e443] [cursor=pointer]
+            - button [ref=e445] [cursor=pointer]
+      - generic [ref=e447]:
+        - generic [ref=e449]:
+          - generic [ref=e450]:
+            - generic [ref=e451]:
+              - text: Follow
+              - heading "Instagram" [level=2] [ref=e452]
+            - generic [ref=e453]:
+              - link "khô bò tươi" [ref=e455] [cursor=pointer]:
+                - /url: https://langnuongnambo.vn/kho-bo-tuoi
+                - img "khô bò tươi" [ref=e456]
+              - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e458] [cursor=pointer]:
+                - /url: ""
+                - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e459]
+              - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e461] [cursor=pointer]:
+                - /url: ""
+                - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e462]
+              - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e464] [cursor=pointer]:
+                - /url: ""
+                - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e465]
+              - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e467] [cursor=pointer]:
+                - /url: ""
+                - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e468]
+              - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e470] [cursor=pointer]:
+                - /url: ""
+                - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e471]
+          - generic [ref=e472]:
+            - generic [ref=e473]:
+              - text: Subscribe
+              - heading "Youtube" [level=2] [ref=e474]
+            - generic [ref=e475]:
+              - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e477] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=9zyNkz7GcPI&t=2s
+                - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e478]
+              - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e480] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=Dy8Xg98EEYQ
+                - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e481]
+              - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e483] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=G9VJrvRD9Po
+                - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e484]
+              - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e486] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=G9VJrvRD9Po
+                - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e487]
+        - generic [ref=e489]:
+          - generic [ref=e490]:
+            - generic [ref=e491]:
+              - text: Follow
+              - heading "Facebook" [level=2] [ref=e492]
+            - generic [ref=e493]:
+              - generic [ref=e494]:
+                - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e495] [cursor=pointer]:
+                  - /url: https://www.facebook.com/share/r/1VnqVSgEYa/
+                  - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e496]
+                - paragraph [ref=e497]
+              - generic [ref=e498]:
+                - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e499] [cursor=pointer]:
+                  - /url: https://www.facebook.com/reel/1344226656935439
+                  - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e500]
+                - paragraph [ref=e501]
+              - generic [ref=e502]:
+                - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e503] [cursor=pointer]:
+                  - /url: https://www.facebook.com/reel/1750462399127993
+                  - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e504]
+                - paragraph [ref=e505]
+              - generic [ref=e506]:
+                - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e507] [cursor=pointer]:
+                  - /url: https://www.facebook.com/reel/1995411780983712
+                  - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e508]
+                - paragraph [ref=e509]
+          - generic [ref=e510]:
+            - generic [ref=e511]:
+              - text: Follow
+              - heading "Tiktok" [level=2] [ref=e512]
+            - generic [ref=e513]:
+              - generic [ref=e514]:
+                - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e515] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@langnuongnambo/video/7611015824077327637
+                  - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e516]
+                - paragraph [ref=e517]
+              - generic [ref=e518]:
+                - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e519] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@langnuongnambo/video/7605202384788147476
+                  - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e520]
+                - paragraph [ref=e521]
+              - generic [ref=e522]:
+                - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e523] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@langnuongnambo
+                  - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e524]
+                - paragraph [ref=e525]
+              - generic [ref=e526]:
+                - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e527] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@langnuongnambo/video/7609544018157948180
+                  - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e528]
+                - paragraph [ref=e529]
+      - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e532]
+    - generic [ref=e533]:
+      - generic [ref=e536]:
+        - generic [ref=e537]:
+          - generic [ref=e538]:
+            - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e539] [cursor=pointer]:
+              - /url: https://langnuongnambo.vn/
+              - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e540]
+            - paragraph [ref=e541]: LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN
+          - paragraph [ref=e542]:
+            - strong [ref=e543]: LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN
+          - paragraph [ref=e544]:
+            - generic [ref=e545]:
+              - strong [ref=e546]: "Địa chỉ:"
+              - link "14A Dương Đức Hiền, Tây Thạnh, Tân Phú, Tp.HCM, Việt Nam" [ref=e547] [cursor=pointer]:
+                - /url: https://www.google.com/maps/place/?cid=5624610190095411286
+          - paragraph [ref=e548]
+          - paragraph [ref=e549]:
+            - generic [ref=e550]:
+              - strong [ref=e551]: "Holine:"
+              - link "0985 1707 67" [ref=e552] [cursor=pointer]:
+                - /url: https://zalo.me/0985170767
+          - paragraph [ref=e553]
+          - paragraph [ref=e554]:
+            - generic [ref=e555]:
+              - strong [ref=e556]: "Email:"
+              - text: nhahanglangnuongnambo@gmail.com
+          - paragraph [ref=e557]
+          - paragraph [ref=e558]:
+            - generic [ref=e559]:
+              - strong [ref=e560]: "Fanpage:"
+              - link "Nhà Hàng Làng Nướng Nam Bộ" [ref=e561] [cursor=pointer]:
+                - /url: https://www.facebook.com/langnuongnambo.tp/
+          - paragraph [ref=e562]
+          - paragraph [ref=e563]:
+            - generic [ref=e564]:
+              - strong [ref=e565]: "Website:"
+              - link "langnuongnambo.vn" [ref=e566] [cursor=pointer]:
+                - /url: https://langnuongnambo.vn/
+          - generic [ref=e567]:
+            - paragraph [ref=e568]: Theo dõi chúng tôi tại
+            - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e569] [cursor=pointer]:
+              - /url: ""
+              - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e570]
+            - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e571] [cursor=pointer]:
+              - /url: ""
+              - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e572]
+            - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e573] [cursor=pointer]:
+              - /url: ""
+              - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e574]
+            - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e575] [cursor=pointer]:
+              - /url: ""
+              - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e576]
+            - link "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e577] [cursor=pointer]:
+              - /url: ""
+              - img "LÀNG NƯỚNG NAM BỘ - DƯƠNG ĐỨC HIỀN" [ref=e578]
+        - generic [ref=e580]:
+          - generic [ref=e581]:
+            - paragraph [ref=e582]: Về chúng tôi
+            - list [ref=e583]:
+              - listitem [ref=e584]:
+                - link "Trang chủ" [ref=e585] [cursor=pointer]:
+                  - /url: https://langnuongnambo.vn/
+              - listitem [ref=e586]:
+                - link "Giới thiệu" [ref=e587] [cursor=pointer]:
+                  - /url: gioi-thieu
+              - listitem [ref=e588]:
+                - link "Thực đơn" [ref=e589] [cursor=pointer]:
+                  - /url: thuc-don
+              - listitem [ref=e590]:
+                - link "Dịch vụ" [ref=e591] [cursor=pointer]:
+                  - /url: dich-vu
+              - listitem [ref=e592]:
+                - link "Đặt món" [ref=e593] [cursor=pointer]:
+                  - /url: dat-mon
+              - listitem [ref=e594]:
+                - link "Phòng vip/sảnh" [ref=e595] [cursor=pointer]:
+                  - /url: phong-vip-sanh
+              - listitem [ref=e596]:
+                - link "Tuyển dụng" [ref=e597] [cursor=pointer]:
+                  - /url: tuyen-dung
+              - listitem [ref=e598]:
+                - link "Tin tức" [ref=e599] [cursor=pointer]:
+                  - /url: tin-tuc
+              - listitem [ref=e600]:
+                - link "Liên hệ" [ref=e601] [cursor=pointer]:
+                  - /url: lien-he
+          - generic [ref=e602]:
+            - paragraph [ref=e603]: Dịch vụ
+            - list [ref=e604]:
+              - listitem [ref=e605]:
+                - link "Tổ chức liên hoan" [ref=e606] [cursor=pointer]:
+                  - /url: to-chuc-lien-hoan
+              - listitem [ref=e607]:
+                - link "Tổ chức họp mặt" [ref=e608] [cursor=pointer]:
+                  - /url: to-chuc-hop-mat
+              - listitem [ref=e609]:
+                - link "Tổ chức thôi nôi" [ref=e610] [cursor=pointer]:
+                  - /url: to-chuc-thoi-noi
+              - listitem [ref=e611]:
+                - link "Tổ chức tân niên" [ref=e612] [cursor=pointer]:
+                  - /url: to-chuc-tan-nien
+              - listitem [ref=e613]:
+                - link "Tổ chức tất niên" [ref=e614] [cursor=pointer]:
+                  - /url: to-chuc-tat-nien
+          - generic [ref=e615]:
+            - paragraph [ref=e616]: Thực đơn
+            - list [ref=e617]:
+              - listitem [ref=e618]:
+                - link "MENU TIỆC LẺ ( 3-4 người)" [ref=e619] [cursor=pointer]:
+                  - /url: menu-tiec-le-3-4-nguoi
+              - listitem [ref=e620]:
+                - link "SET MENU CÁC MÓN ( 10 người )" [ref=e621] [cursor=pointer]:
+                  - /url: set-menu-cac-mon-10-nguoi
+              - listitem [ref=e622]:
+                - link "SET MENU ĐẶT TIỆC ( 10 người)" [ref=e623] [cursor=pointer]:
+                  - /url: set-menu-dat-tiec-10-nguoi
+      - generic [ref=e627]: Copyright ©2026 LÀNG NƯỚNG NAM BỘ. All Rights Reserved. Thiết kế Web MIMA
+    - generic [ref=e628]:
+      - 'link "Call me: 0985 1707 67" [ref=e629] [cursor=pointer]':
+        - /url: tel:0985170767
+        - img [ref=e633]
+        - generic [ref=e636]: "Call me: 0985 1707 67"
+      - 'link "Zalo: 0985 1707 67" [ref=e637] [cursor=pointer]':
+        - /url: https://zalo.me/0985170767
+        - img [ref=e641]
+        - generic [ref=e642]: "Zalo: 0985 1707 67"
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "91"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 91/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 🟢 TỐT
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "22"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 20
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 2
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e643]:
+      - generic [ref=e644]: "❌ Chi tiết lỗi cần khắc phục (2/22):"
+      - generic [ref=e645]:
+        - generic [ref=e646]:
+          - generic [ref=e647]: 2. Meta Description
+          - generic [ref=e648]: 1 lỗi
+        - generic [ref=e649]:
+          - strong [ref=e651]: Meta description tồn tại (Không tìm thấy)
+          - generic [ref=e652]: ⚠️ Thẻ không tồn tại!
+      - generic [ref=e653]:
+        - generic [ref=e654]:
+          - generic [ref=e655]: 7. Technical SEO
+          - generic [ref=e656]: 1 lỗi
+        - generic [ref=e657]:
+          - strong [ref=e659]: Canonical URL hợp lệ (Không có)
+          - generic [ref=e660]: ⚠️ Thiếu thẻ . Nguy cơ trùng lặp!
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 91/100 dưới ngưỡng 96%. Có 2/22 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```
