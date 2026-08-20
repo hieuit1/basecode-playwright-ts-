@@ -1,0 +1,194 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10060","Kiểm tra SEO Onpage: Nội thất bình dương giá rẻ (/noi-that-binh-duong-gia-re-noi-that-hoang-nhan)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9069","Kiểm tra SEO Onpage: Ghế bành lưng ôm cong giá rẻ tại TPHCM (/ghe-banh-lung-om-cong-gia-re-tai-tphcm)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","57888","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12918","Kiểm tra SEO Onpage: Ghế (/ghe)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","38064","Submit form successfully with valid data","Desktop Chrome","2026-08-20","failed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","8593","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8838","Kiểm tra SEO Onpage: Ghế xoay hoa văn kết hợp da giá rẻ tại HCM (/ghe-xoay-hoa-van-ket-hop-da-gia-re-tai-hcm)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9749","Kiểm tra SEO Onpage: Kệ console trang trí giá tốt kho hàng bình dương (/ke-console-trang-tri-gia-tot-kho-hang-binh-duong)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","9291","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16889","Kiểm tra SEO Onpage: Giường đẹp giá rẻ tại HCM (/giuong-dep-gia-re-tai-hcm)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","26947","Kiểm tra SEO Onpage: Ghế Bar (/bar)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9050","Kiểm tra SEO Onpage: Tủ 4 ngăn kéo (/tu-4-ngan-keo)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","8807","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","9298","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-20","passed","2026-08-20","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9854","Kiểm tra SEO Onpage: Đôn Xoay có nắp giá rẻ tại TPHCM (/don-xoay-co-nap-gia-re-tai-tphcm)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8935","Kiểm tra SEO Onpage: Đôn sofa tròn giá rẻ tại TPHCM (/don-sofa-tron-gia-re-tai-tphcm)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12435","Kiểm tra SEO Onpage: Đôn Chữ Nhật Lót Nệm Gía Xưởng Bình Dương (/don-chu-nhat-lot-nem-gia-xuong-binh-duong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8001","Kiểm tra SEO Onpage: Sofa bành cao cấp giá rẻ tại Bình Dương (/sofa-banh-cao-cap-gia-re-tai-binh-duong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","66753","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11214","Kiểm tra SEO Onpage: Xưởng nội thất làm theo yêu cầu Sài Gòn (/xuong-noi-that-lam-theo-yeu-cau-sai-gon)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","8862","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9331","Kiểm tra SEO Onpage: Ghế khách sạn chất lượng giá tốt tại bình dương (/ghe-khach-san-chat-luong-gia-tot-tai-binh-duong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","27420","Kiểm tra SEO Onpage: Bàn cafe đẹp chất lượng giá rẻ tại hcm (/ban-cafe-dep-chat-luong-gia-re-tai-hcm)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","5206","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","42418","Kiểm tra SEO Onpage: Nhóm Hàng ngoài trời (/nhom-hang-ngoai-troi)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10427","Kiểm tra SEO Onpage: Top 50+ Mẫu Bàn Trà Gỗ Cao Cấp Giá Xưởng Tại TPHCM Đẹp Nhất 2024 (/top-50-mau-ban-tra-go-cao-cap-gia-xuong-tai-tphcm-dep-nhat-2024)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","28986","Kiểm tra SEO Onpage: Mẫu bàn tròn chân gỗ giá xưởng Bình dương (/mau-ban-tron-chan-go-gia-xuong-binh-duong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","4923","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9326","Kiểm tra SEO Onpage: Chính sách kiểm hàng (/chinh-sach-kiem-hang)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","9288","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","67043","Kiểm tra SEO Onpage: NỘI THẤT HOÀNG NHÂN (/gioi-thieu)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10301","Kiểm tra SEO Onpage: Xích đu trang trí sân vườn (/xich-du-trang-tri-san-vuon)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","28285","Kiểm tra SEO Onpage: Ghế đôn (/ghe-don)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10430","Kiểm tra SEO Onpage: Bàn ăn gia đình hiện đại sản phẩm không thể thiếu cho mọi gia đình (/ban-an-gia-dinh-hien-dai)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8066","Kiểm tra SEO Onpage: Ghế gỗ lót nệm giá rẻ bình dương (/ghe-go-lot-nem-gia-re-binh-duong)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10362","Kiểm tra SEO Onpage: Tủ / Kệ (/tu)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","42030","Add product successfully and verify on website","Desktop Chrome","2026-08-20","passed","2026-08-20","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9991","Kiểm tra SEO Onpage: Bộ Sofa Thư Giãn – Điểm Nhấn Cho Không Gian Sống (/bo-sofa-thu-gian-diem-nhan-cho-khong-gian-song)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","4994","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9489","Kiểm tra SEO Onpage: Bộ bàn ghế (/bo-ban-ghe)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","7497","Login successfully with valid credentials","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9626","Kiểm tra SEO Onpage: Ghế mây cói tựa lưng ngoài trời giá rẻ tại TPHCM (/ghe-may-coi-tua-lung-ngoai-troi-gia-re-tai-tphcm)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8794","Kiểm tra SEO Onpage: Top 10 Mẫu Sofa Đơn Cao Cấp Giá Tốt Sang Trọng Năm 2026 (/top-10-mau-sofa-don-cao-cap-gia-tot-sang-trong-nam-2026)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","4862","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","38690","Kiểm tra SEO Onpage: Ghế Bench (/ghe-bench)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9383","Kiểm tra SEO Onpage: Ghế Sofa (/sofa)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","8827","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11753","Kiểm tra SEO Onpage: Mua ghế sofa phòng khách tại Bình Dương (/mua-ghe-sofa-phong-khach-tai-binh-duong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","41667","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11371","Kiểm tra SEO Onpage: Kệ góc giá rẻ tại xưởng bình dương (/ke-goc-gia-re-tai-xuong-binh-duong)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9685","Kiểm tra SEO Onpage: sofa đơn giá rẻ tại Hồ Chí Minh (/sofa-don-gia-re-tai-ho-chi-minh)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14415","Kiểm tra SEO Onpage: 7 cửa hàng sofa Sài Gòn cam kết chất lượng cho người tiêu dùng (/7-cua-hang-sofa-sai-gon-cam-ket-chat-luong-cho-nguoi-tieu-dung)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8629","Kiểm tra SEO Onpage: Bàn Trang Điểm 01 (/ban-trang-diem-01)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9217","Kiểm tra SEO Onpage: Bàn (/ban)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","14083","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-20","passed","2026-08-20","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9318","Kiểm tra SEO Onpage: Ghế tựa lưng ngoài trời giá rẻ tại TPHCM (/ghe-tua-lung-ngoai-troi-gia-re-tai-tphcm)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","13776","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-08-20","passed","2026-08-20","Product Management Tests","admin/product.spec.ts","",""
+"","7857","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-20","passed","2026-08-20","Search Feature Tests","web/search.spec.ts","",""
+"","45994","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-20","failed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17741","Kiểm tra SEO Onpage: Bàn Tròn Chân Cong Hiện Đại – Thiết Kế Sang Trọng, Tinh Tế (/ban-tron-chan-cong-hien-dai-thiet-ke-sang-trong-tinh-te)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8054","Kiểm tra SEO Onpage: Đôn tam giác khung gỗ giá tốt Bình Dương (/don-tam-giac-khung-go-gia-tot-binh-duong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","7458","Kiểm tra SEO Onpage: Ghế sofa đơn cao cấp giá rẻ tại bình dương (/ghe-sofa-don-cao-cap-gia-re-tai-binh-duong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8831","Kiểm tra SEO Onpage: Đôn Yên Ngựa Giá rẻ tại bình dương (/don-yen-ngua-gia-re-tai-binh-duong)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","133066","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-20","failed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9027","Kiểm tra SEO Onpage: Ghế đua đưa giá rẻ tại bình dương (/ghe-dua-dua-gia-re-tai-binh-duong)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9849","Kiểm tra SEO Onpage: Bàn Ghế Mây Nhựa đẹp Bình Dương (/ban-ghe-may-nhua-dep-binh-duong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8819","Kiểm tra SEO Onpage: Khác (/khac)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8120","Kiểm tra SEO Onpage: Ghế cafe – 03 Lựa chọn sáng suốt cho không gian ngoài trời (/ghe-cafe-03)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11157","Kiểm tra SEO Onpage: Ghế Cafe (/cafe)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","15820","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-20","passed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"","9355","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-20","passed","2026-08-20","Search Feature Tests","web/search.spec.ts","",""
+"","5036","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8652","Kiểm tra SEO Onpage: Các loại ghế cafe phổ biến tại Kho Nội Thất Sài Gòn (/cac-loai-ghe-cafe-pho-bien-tai-kho-noi-that-sai-gon)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","86242","Kiểm tra SEO Onpage: https://noithathoangnhan.com/ (/index.php)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8038","Kiểm tra SEO Onpage: Mẫu ghế bar xoay 360 giá xưởng tại Bình dương (/mau-ghe-bar-xoay-360-gia-xuong-tai-binh-duong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8937","Kiểm tra SEO Onpage: Ghế ăn tân cổ điển Armchair giả rẻ tại TPHCM (/ghe-an-tan-co-dien-armchair-gia-re-tai-tphcm)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","130902","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-08-20","passed","2026-08-20","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9603","Kiểm tra SEO Onpage: Ghế bar – Thiết kế hiện đại, sang trọng cho không gian nội thất (/ghe-bar-03)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","32977","Add news successfully and verify on website","Desktop Chrome","2026-08-20","passed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"","9569","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-20","passed","2026-08-20","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","8221","Kiểm tra SEO Onpage: Bàn để đèn giá tốt tại hcm (/ban-de-den-gia-tot-tai-hcm)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
