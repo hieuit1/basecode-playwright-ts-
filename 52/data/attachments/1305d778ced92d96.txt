@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- SECURITY ---
+   1. [Mixed Content: 5 tài nguyên HTTP]
+      → Phát hiện 5 tài nguyên HTTP trên HTTPS: http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/thiet-bi-nha-bep-1.jpg, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/thiet-bi-nha-bep-2.jpg, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/thiet-bi-nha-bep-3.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/thiet-bi-nha-bep-4.jpeg, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/thiet-bi-nha-bep.png
