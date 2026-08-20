@@ -1,0 +1,136 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","41470","TC-05: Thêm nhiều sản phẩm (3-5 SP) vào giỏ hàng","Desktop Chrome","2026-08-20","passed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15029","Kiểm tra SEO Onpage: Xưởng sản xuất đồng phục võ thuật tiêu chí chọn xưởng uy tín (/xuong-san-xuat-dong-phuc-vo-thuat-tieu-chi-chon-xuong-uy-tin)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12806","Kiểm tra SEO Onpage: Bảo Hộ Hạ Bộ (/bao-ho-ha-bo)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","66441","Kiểm tra SEO Onpage: Võ Phục Thiều Dần (/index.php)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","12159","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14205","Kiểm tra SEO Onpage: Chính sách đại lý (/chinh-sach-dai-ly)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","58471","Kiểm tra SEO Onpage: Dụng cụ võ thuật (/dung-cu-vo-thuat)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23351","Kiểm tra SEO Onpage: Bảo quản võ phục đúng (/bao-quan-vo-phuc-dung)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","111352","TC-02: Thanh toán đơn hàng thành công (Ngân hàng) và verify trên Admin","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","14296","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-20","passed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16136","Kiểm tra SEO Onpage: Đích Đấm Cầm Tay (/dich-dam-cam-tay-1)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","63424","TC-Negative: tấn công XSS","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15350","Kiểm tra SEO Onpage: Thương Võ Thuật (/thuong-vo-thuat)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","13215","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","111813","TC-01: Thanh toán đơn hàng thành công (COD) và verify trên Admin","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13646","Kiểm tra SEO Onpage: Côn nhị khúc (/con-nhi-khuc)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12994","Kiểm tra SEO Onpage: Đích Đá (/dich-da)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15491","Kiểm tra SEO Onpage: Cách chọn võ phục phù hợp (/cach-chon-vo-phuc-phu-hop)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","10506","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-20","failed","2026-08-20","Search Feature Tests","web/search.spec.ts","",""
+"","15342","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-20","passed","2026-08-20","Product Management Tests","admin/product.spec.ts","",""
+"","47321","Add product successfully and verify on website","Desktop Chrome","2026-08-20","passed","2026-08-20","Product Management Tests","admin/product.spec.ts","",""
+"","35537","Submit form successfully with valid data","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","80423","TC-01: Thêm 1 sản phẩm vào giỏ hàng thành công","Desktop Chrome","2026-08-20","passed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12776","Kiểm tra SEO Onpage: Thương (/thuong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","58562","TC-03: Giảm số lượng sản phẩm trong giỏ hàng","Desktop Chrome","2026-08-20","passed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20694","Kiểm tra SEO Onpage: Trang bị bảo hộ khi tập (/trang-bi-bao-ho-khi-tap)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","51817","Add news successfully and verify on website","Desktop Chrome","2026-08-20","passed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"","149717","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-08-20","passed","2026-08-20","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14498","Kiểm tra SEO Onpage: Bảng giá sỉ (/bang-gia-si)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","12250","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13122","Kiểm tra SEO Onpage: Vũ khí (/vu-khi)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 79/100 | Đạt: 19/24 tiêu chí | Ngưỡng: 96%
+
+TỐT","80262","Kiểm tra SEO Onpage: Võ Phục Thiều Dần (/san-pham)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","11929","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","12114","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12517","Kiểm tra SEO Onpage: Huy Chương (/huy-chuong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","43906","TC-Negative: nhập số điện thoại sai định dạng","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","50418","TC-Negative: không nhập địa chỉ","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","77739","TC-04: Xóa sản phẩm khỏi giỏ hàng","Desktop Chrome","2026-08-20","passed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"","5092","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19098","Kiểm tra SEO Onpage: Xưởng may đồng phục võ thuật cách nhận biết xưởng uy tín (/xuong-may-dong-phuc-vo-thuat-cach-nhan-biet-xuong-uy-tin)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12787","Kiểm tra SEO Onpage: Găng tay (/gang-tay)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","4883","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16068","Kiểm tra SEO Onpage: Nhà cung cấp đồng phục võ thuật kinh nghiệm chọn đối tác (/nha-cung-cap-dong-phuc-vo-thuat-kinh-nghiem-chon-doi-tac)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","181043","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-20","broken","2026-08-20","Search Feature Tests","web/search.spec.ts","",""
+"","12668","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-20","passed","2026-08-20","Contract Feature Tests","web/contract.spec.ts","",""
+"","16966","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-08-20","passed","2026-08-20","Product Management Tests","admin/product.spec.ts","",""
+"","5204","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","5103","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13680","Kiểm tra SEO Onpage: Đồ lưu niệm (/do-luu-niem)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","72872","Kiểm tra SEO Onpage: Võ Phục Thiều Dần (/gioi-thieu)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","47178","Kiểm tra SEO Onpage: Liên Hệ Võ Phục Thiều Dần (/lien-he)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14073","Kiểm tra SEO Onpage: Đăng ký đại lý (/dang-ky-dai-ly)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","105708","TC-Negative: không nhập số điện thoại","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","59390","TC-Negative: nhập email sai định dạng","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","124750","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-20","failed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16612","Kiểm tra SEO Onpage: May đồng phục võ thuật theo yêu cầu lưu ý trước khi đặt (/may-dong-phuc-vo-thuat-theo-yeu-cau-luu-y-truoc-khi-dat)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","7330","Login successfully with valid credentials","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","17468","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-20","passed","2026-08-20","News Management Tests","admin/news.spec.ts","",""
+"","6978","TC-06: Giỏ hàng trống khi chưa thêm sản phẩm","Desktop Chrome","2026-08-20","passed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"","10292","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-20","failed","2026-08-20","Search Feature Tests","web/search.spec.ts","",""
+"","10404","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-20","failed","2026-08-20","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","62759","Kiểm tra SEO Onpage: Tin Tức Võ Phục Thiều Dần (/tin-tuc)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14116","Kiểm tra SEO Onpage: Báo giá sỉ 2024 (/bao-gia-si-2024)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","81426","TC-02: Tăng số lượng sản phẩm trong giỏ hàng","Desktop Chrome","2026-08-20","passed","2026-08-20","Cart Feature Tests","web/cart.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16575","Kiểm tra SEO Onpage: Dây Nhảy Thể Lực (/day-nhay-the-luc)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13379","Kiểm tra SEO Onpage: Cúp & Kỷ Niệm Chương (/cup-ky-niem-chuong)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","109484","TC-Negative: không nhập họ tên","Desktop Chrome","2026-08-20","failed","2026-08-20","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","55064","Kiểm tra SEO Onpage: Võ Phục Thiều Dần (/dich-vu)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15819","Kiểm tra SEO Onpage: In thêu logo đồng phục võ thuật xu hướng thiết kế mới (/in-theu-logo-dong-phuc-vo-thuat-xu-huong-thiet-ke-moi)","Desktop Chrome","2026-08-20","passed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","45912","Kiểm tra SEO Onpage: Đồng phục võ thuật (/dong-phuc-vo-thuat)","Desktop Chrome","2026-08-20","failed","2026-08-20","SEO Page","seo/seo.spec.ts","",""
+"","4773","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-20","passed","2026-08-20","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
