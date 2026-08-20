@@ -30,8 +30,8 @@ export class CheckoutPage extends BasePage {
         super(page);
 
         // Checkout Form
-        this.paymentCOD = page.locator("//input[@id='payments-72']");
-        this.paymentBank = page.locator("//input[@id='payments-40']");
+        this.paymentCOD = page.locator("//input[@id='payments-37']");
+        this.paymentBank = page.locator("//input[@id='payments-38']");
 
         this.fullnameInput = page.locator("//input[@id='fullname']");
         this.phoneInput = page.locator("//input[@id='phone']");

@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-19T09:56:08.405Z",
-  "baseUrl": "https://nhahangtieccuoinambo.vn/",
+  "timestamp": "2026-08-20T02:44:23.300Z",
+  "baseUrl": "https://langnuongnambo.vn/",
   "productUrlForConsultation": "",
   "features": {
-    "search": true,
+    "search": false,
     "newsletter": false,
     "freeConsultation": false,
     "booking": false,
-    "cart": false
+    "cart": true
   }
 }

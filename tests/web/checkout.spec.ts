@@ -7,7 +7,7 @@ import { checkoutTestConfig, invalidCheckoutCases } from "../../data/web/checkou
 import { FeatureHelper } from "../../src/utils/FeatureHelper";
 import { TestHelper } from "../../src/utils/TestHelper";
 
-test.use({ video: 'retain-on-failure' });
+test.use({ video: 'on' });
 
 if (FeatureHelper.hasCartFeature()) {
     test.describe("Checkout Feature Tests", () => {
@@ -126,7 +126,7 @@ if (FeatureHelper.hasCartFeature()) {
             for (const testCase of invalidCheckoutCases) {
                 test(
                     `TC-Negative: ${testCase.scenario}`,
-                    { 
+                    {
                         tag: ["@negative", "@regression"],
                         annotation: [
                             { type: "priority", description: testCase.priority },

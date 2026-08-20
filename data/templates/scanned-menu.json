@@ -1,69 +1,60 @@
 {
-  "timestamp": "2026-08-19T09:56:04.421Z",
-  "baseUrl": "https://nhahangtieccuoinambo.vn/",
+  "timestamp": "2026-08-20T02:44:19.354Z",
+  "baseUrl": "https://langnuongnambo.vn/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
-      "Banner vì sao",
+      "Banner",
       "Về chúng tôi",
-      "Lịch sử hình thành",
+      "Quy trình hình thành",
       "Văn hoá doanh nghiệp",
-      "Khách hàng",
-      "Vì sao chọn chúng tôi",
-      "Thông số"
+      "Tầm nhìn",
+      "Sứ mệnh",
+      "Giá trị cốt lõi"
     ],
-    "Quản lý Menu": [
+    "Quản lý Đặt món": [
       "Danh mục cấp 1",
-      "Menu"
+      "Đặt món"
     ],
-    "Quản lý Sảnh tiệc": [
-      "Sảnh tiệc"
-    ],
-    "Quản lý Dịch vụ": [
-      "Danh mục cấp 1",
-      "Dịch vụ"
+    "Quản lý Phòng vip/sảnh": [
+      "Phòng vip/sảnh"
     ],
     "Quản lý bài viết": [
-      "Blog",
+      "Dịch vụ",
+      "Tin tức",
+      "Không gian",
+      "Menu",
       "Tuyển dụng",
-      "Tiệc cưới - Báo hỷ",
-      "Khuyến mãi",
-      "Câu hỏi thường gặp"
+      "Hình thức thanh toán"
     ],
+    "Quản lý đơn hàng": [],
     "Quản lý nhận tin": [
-      "Đặt tiệc"
+      "Đăng ký nhận tin"
     ],
     "Quản lý trang tĩnh": [
-      "Slogan service",
-      "Wedding",
-      "Ẩm thực",
-      "Sảnh tiệc",
-      "Đặt tiệc",
       "Liên hệ",
       "Footer",
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.ico GG rất thích)",
+      "Favicon",
       "Logo",
+      "Logo footer",
       "Banner index",
-      "Banner fanpage",
+      "Banner món mới",
+      "Banner đặc sản",
+      "Banner index 2",
+      "Banner vì sao",
       "Banner faq",
-      "Popup",
+      "Banner footer",
       "Slideshow",
-      "Video",
+      "Văn hóa",
       "Mạng xã hội",
-      "Chứng chỉ"
-    ],
-    "Quản lý seo page": [
-      "Trang chủ",
-      "Giới thiệu",
-      "Menu",
-      "Dịch vụ",
-      "Blog",
-      "Sảnh tiệc",
-      "Tiệc cưới - Báo hỷ",
-      "Khuyến mãi"
+      "Chứng chỉ",
+      "Thanh toán",
+      "Instagram",
+      "Youtube",
+      "Facebook"
     ]
   }
 }
