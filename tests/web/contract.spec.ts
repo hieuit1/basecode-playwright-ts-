@@ -147,7 +147,7 @@ test.describe("Contract Feature Tests", () => {
                 await TestHelper.takeScreenshot(page, 'Danh sách liên hệ trước khi xóa');
 
                 // Xóa liên hệ vừa gửi để dọn dẹp
-                // await contractPage.deleteContact();
+                await contractPage.deleteContact();
             });
         }
     );

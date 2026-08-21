@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-20T09:16:23.749Z",
-  "baseUrl": "https://noithathoangnhan.com/",
+  "timestamp": "2026-08-21T01:20:46.158Z",
+  "baseUrl": "https://langnuongnambo.vn/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
@@ -10,20 +10,24 @@
       "Văn hoá doanh nghiệp",
       "Tầm nhìn",
       "Sứ mệnh",
-      "Giá trị cốt lõi",
-      "Thông số",
-      "Đối tác"
+      "Giá trị cốt lõi"
     ],
-    "Group Sản Phẩm": [
-      "Đóng dấu sản phẩm",
-      "Sản phẩm",
+    "Quản lý Đặt món": [
       "Danh mục cấp 1",
-      "Sản phẩm"
+      "Đặt món"
+    ],
+    "Quản lý Phòng vip/sảnh": [
+      "Phòng vip/sảnh"
     ],
     "Quản lý bài viết": [
+      "Dịch vụ",
       "Tin tức",
-      "Chính sách"
+      "Không gian",
+      "Menu",
+      "Tuyển dụng",
+      "Hình thức thanh toán"
     ],
+    "Quản lý đơn hàng": [],
     "Quản lý nhận tin": [
       "Đăng ký nhận tin"
     ],
@@ -32,6 +36,25 @@
       "Footer",
       "Copyright"
     ],
-    "Quản lý hình ảnh - video": []
+    "Quản lý hình ảnh - video": [
+      "Favicon",
+      "Logo",
+      "Logo footer",
+      "Banner index",
+      "Banner món mới",
+      "Banner đặc sản",
+      "Banner index 2",
+      "Banner vì sao",
+      "Banner faq",
+      "Banner footer",
+      "Slideshow",
+      "Văn hóa",
+      "Mạng xã hội",
+      "Chứng chỉ",
+      "Thanh toán",
+      "Instagram",
+      "Youtube",
+      "Facebook"
+    ]
   }
 }

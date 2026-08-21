@@ -101,6 +101,16 @@ async function extractPageName(url: string): Promise<string> {
   }
 }
 
+/**
+ * Kiểm tra URL có phải do automation test tạo ra hay không.
+ * Dùng để lọc bỏ các URL tạm (sản phẩm/bài viết test) tránh race condition trên CI:
+ * Khi chạy song song, shard khác có thể cleanup xóa sản phẩm test → gây broken links cho SEO tests.
+ */
+function isAutoTestUrl(url: string): boolean {
+  const lowerUrl = decodeURIComponent(url).toLowerCase();
+  return lowerUrl.includes('auto-test') || lowerUrl.includes('test');
+}
+
 async function run() {
   console.log('Starting SEO data generation...');
 
@@ -112,8 +122,15 @@ async function run() {
   const sitemapUrl = BASE_URL.endsWith('/') ? BASE_URL + 'sitemap.xml' : BASE_URL + '/sitemap.xml';
   console.log(`Fetching sitemap from: ${sitemapUrl}`);
 
-  const sitemapUrls = await fetchSitemapUrls(sitemapUrl);
-  console.log(`Found ${sitemapUrls.length} URLs in sitemap.`);
+  const allSitemapUrls = await fetchSitemapUrls(sitemapUrl);
+  console.log(`Found ${allSitemapUrls.length} URLs in sitemap.`);
+
+  // Lọc bỏ các URL tạm do automation test tạo ra để tránh race condition trên CI
+  const sitemapUrls = allSitemapUrls.filter(url => !isAutoTestUrl(url));
+  const skippedCount = allSitemapUrls.length - sitemapUrls.length;
+  if (skippedCount > 0) {
+    console.log(`⚠ Đã bỏ qua ${skippedCount} URL thuộc automation test data (chứa 'test' hoặc 'auto-test').`);
+  }
 
   const finalData: SeoPageTestData[] = [];
 

@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-20T09:16:28.580Z",
-  "baseUrl": "https://noithathoangnhan.com/",
-  "productUrlForConsultation": "https://noithathoangnhan.com/ban-ghe-may-nhua-dep-binh-duong",
+  "timestamp": "2026-08-21T01:20:48.932Z",
+  "baseUrl": "https://langnuongnambo.vn/",
+  "productUrlForConsultation": "",
   "features": {
-    "search": true,
+    "search": false,
     "newsletter": false,
     "freeConsultation": false,
     "booking": false,
-    "cart": false
+    "cart": true
   }
 }

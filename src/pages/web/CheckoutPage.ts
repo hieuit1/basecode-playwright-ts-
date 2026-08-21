@@ -111,7 +111,14 @@ export class CheckoutPage extends BasePage {
 
     async submitOrder() {
         await test.step("Bấm nút Thanh Toán", async () => {
-            await this.submitButton.click({ force: true });
+            // Đợi nút sẵn sàng trước khi click (bỏ force: true)
+            await this.submitButton.waitFor({ state: 'visible', timeout: 10000 });
+
+            // Click và đợi navigation/response hoàn tất
+            await Promise.all([
+                this.page.waitForLoadState('load'),
+                this.submitButton.click(),
+            ]);
         });
     }
 
