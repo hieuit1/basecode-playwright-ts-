@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-08-21T01:20:48.932Z",
-  "baseUrl": "https://langnuongnambo.vn/",
+  "timestamp": "2026-08-21T09:45:01.896Z",
+  "baseUrl": "https://code2.mimadigi.vn/2026/august/cfurni_111926w/",
   "productUrlForConsultation": "",
   "features": {
-    "search": false,
+    "search": true,
     "newsletter": false,
     "freeConsultation": false,
     "booking": false,

@@ -73,7 +73,7 @@ export class HomePage extends BasePage {
         const hasBooking = await this.page.locator("//h2[contains(text(),'ĐẶT BÀN')]").isVisible({ timeout: 5000 }).catch(() => false);
 
         // 4. Quét tính năng Giỏ Hàng (Cart)
-        const hasCart = await this.page.locator("//a[@class='cart d-flex align-items-center']").isVisible({ timeout: 5000 }).catch(() => false);
+        const hasCart = await this.page.locator("//a[@class='cart d-flex align-items-center border border-2 border-main text-main rounded-lg p-2']//*[name()='svg']").isVisible({ timeout: 5000 }).catch(() => false);
 
         // 5. Quét tính năng Form Tư Vấn (Free Consultation) trên trang sản phẩm
         let hasFreeConsultation = false;

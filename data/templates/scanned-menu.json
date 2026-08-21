@@ -1,35 +1,44 @@
 {
-  "timestamp": "2026-08-21T01:20:46.158Z",
-  "baseUrl": "https://langnuongnambo.vn/",
+  "timestamp": "2026-08-21T09:44:55.336Z",
+  "baseUrl": "https://code2.mimadigi.vn/2026/august/cfurni_111926w/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
       "Banner",
       "Về chúng tôi",
-      "Quy trình hình thành",
-      "Văn hoá doanh nghiệp",
+      "Câu chuyện",
+      "Lịch sử hình thành",
+      "Giải thưởng",
       "Tầm nhìn",
       "Sứ mệnh",
-      "Giá trị cốt lõi"
+      "Giá trị cốt lõi",
+      "Thông số",
+      "Chứng chỉ"
     ],
-    "Quản lý Đặt món": [
+    "Group Sản Phẩm": [
+      "Sản phẩm chi tiết",
       "Danh mục cấp 1",
-      "Đặt món"
+      "Danh mục cấp 2",
+      "Thương hiệu",
+      "Thuộc tính",
+      "Sản phẩm chi tiết",
+      "Bộ lọc giá"
     ],
-    "Quản lý Phòng vip/sảnh": [
-      "Phòng vip/sảnh"
-    ],
+    "Quản lý Mã giảm giá": [],
     "Quản lý bài viết": [
-      "Dịch vụ",
+      "Giải pháp",
       "Tin tức",
-      "Không gian",
-      "Menu",
+      "Dự án",
       "Tuyển dụng",
+      "Tiêu chí",
+      "Chính sách",
       "Hình thức thanh toán"
     ],
     "Quản lý đơn hàng": [],
+    "Quản lý tags": [],
     "Quản lý nhận tin": [
-      "Đăng ký nhận tin"
+      "Đăng ký nhận tin",
+      "Đăng ký tư vấn"
     ],
     "Quản lý trang tĩnh": [
       "Liên hệ",
@@ -37,24 +46,26 @@
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon",
+      "Favicon (.ico GG rất thích)",
       "Logo",
       "Logo footer",
-      "Banner index",
-      "Banner món mới",
-      "Banner đặc sản",
-      "Banner index 2",
-      "Banner vì sao",
-      "Banner faq",
-      "Banner footer",
+      "Banner flashsale",
+      "Banner giá trị",
+      "Footer Banner",
+      "Bộ công thương",
       "Slideshow",
-      "Văn hóa",
+      "Banner quản cáo",
       "Mạng xã hội",
-      "Chứng chỉ",
-      "Thanh toán",
-      "Instagram",
-      "Youtube",
-      "Facebook"
-    ]
+      "Link Redirect"
+    ],
+    "Quản lý seo page": [
+      "Trang chủ",
+      "Giới thiệu",
+      "Sản phẩm",
+      "Dự án",
+      "Tin tức",
+      "Liên hệ"
+    ],
+    "Thiết lập thông tin": []
   }
 }

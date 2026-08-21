@@ -19,7 +19,7 @@ export class SearchPage extends BasePage {
             .or(page.locator("input[placeholder*='Tên sản phẩm' i]"));
         this.searchResultDropdown = page.locator("//div[@id='search-result']");
         // Nút tìm kiếm của web mới (Hỗ trợ button, submit, hoặc label giả button)
-        this.searchButton = page.locator("button[title='Tìm kiếm'], .search button, form button[type='submit'], label[for='keyword'], label[onclick*='onSearch']").first();
+        this.searchButton = page.locator("button[title='Tìm kiếm'], button.btn-search, .search button, form button[type='submit'], label[for='keyword'], label[onclick*='onSearch'], button[onclick*='onSearch']").first();
     }
 
     /**
@@ -60,17 +60,16 @@ export class SearchPage extends BasePage {
      */
     async getDynamicKeywordFromHome(): Promise<string> {
         let baseUrl = process.env.BASE_URL || '';
-
-        let origin = '';
-        try {
-            origin = new URL(baseUrl.startsWith('http') ? baseUrl : `https://${baseUrl}`).origin;
-        } catch (e) {
-            origin = baseUrl.split('/index.php')[0]; // fallback nếu URL invalid
-            if (origin.endsWith('/')) origin = origin.slice(0, -1);
+        // Loại bỏ /index.php nếu có
+        if (baseUrl.includes('/index.php')) {
+            baseUrl = baseUrl.split('/index.php')[0];
+        }
+        if (baseUrl.endsWith('/')) {
+            baseUrl = baseUrl.slice(0, -1);
         }
 
         // Điều hướng sang trang danh sách sản phẩm để cào cho chuẩn xác
-        const productPageUrl = `${origin}/san-pham`;
+        const productPageUrl = `${baseUrl}/san-pham`;
         console.log(`Đang truy cập ${productPageUrl} để cào tên sản phẩm...`);
 
         try {
@@ -124,8 +123,8 @@ export class SearchPage extends BasePage {
 
         // QUAN TRỌNG: Lấy xong thì phải quay lại trang chủ (hoặc trang index.php) để thực hiện kịch bản test search
         console.log("Đã lấy được từ khóa, đang quay lại trang chủ...");
-        const homeUrl = baseUrl.endsWith('.php') ? baseUrl : `${origin}/index.php`;
-        await this.page.goto(homeUrl).catch(() => this.page.goto(origin));
+        const homeUrl = `${baseUrl}/index.php`;
+        await this.page.goto(homeUrl).catch(() => this.page.goto(`${baseUrl}/`));
         await this.page.waitForLoadState("domcontentloaded");
 
         if (!keyword) {
@@ -161,7 +160,8 @@ export class SearchPage extends BasePage {
             // 2. Thử hover/click vào các nút hoặc icon search phổ biến
             const searchToggleIcons = this.page.locator(
                 '.fa-search, .icon-search, [class*="search-icon"], [class*="icon-search"], ' +
-                'i.search, svg.search, .search-toggle, .search-btn, .header-search-icon, .icon-magnifier, span.search'
+                'i.search, svg.search, .search-toggle, .search-btn, .btn-search, .header-search-icon, .icon-magnifier, span.search, ' +
+                '.bi-search, button[onclick*="onSearch"]'
             );
 
             const iconCount = await searchToggleIcons.count();

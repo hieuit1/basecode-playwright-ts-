@@ -20,10 +20,10 @@ export class CartPage extends BasePage {
     constructor(page: Page) {
         super(page);
 
-        this.cartIcon = page.locator("//a[@class='cart d-flex align-items-center']");
+        this.cartIcon = page.locator("//a[@class='cart d-flex align-items-center border border-2 border-main text-main rounded-lg p-2']//*[name()='svg']");
         this.productItems = page.locator("//div[@class='box-product ']");
-        this.addToCartButton = page.locator("//a[@class='addcart btn-main danger outline']");
-        this.closeModalButton = page.locator("//div[@class='modal-header']//button[@aria-label='Close']");
+        this.addToCartButton = page.locator("//span[contains(@class,'d-block fs-16 fw-600 text-main')]");
+        this.closeModalButton = page.locator("//div[@class='modal-dialog modal-lg']//div[@class='modal-header']//button[@aria-label='Close']");
         this.singleProductPrice = page.locator("//p[contains(@class,'price-new-cart')]");
         this.totalPrice = page.locator("//p[@class='total-price load-price-total']");
         this.minusButton = page.locator("//span[@class='counter-procart-minus counter-procart']");
@@ -59,19 +59,19 @@ export class CartPage extends BasePage {
     }
 
     /**
-     * Điều hướng đến trang danh sách sản phẩm /san-pham
+     * Điều hướng đến trang danh sách sản phẩm /ban-sofa
      */
     async gotoProductPage() {
         let baseUrl = process.env.BASE_URL || '';
-        let origin = '';
-        try {
-            origin = new URL(baseUrl.startsWith('http') ? baseUrl : `https://${baseUrl}`).origin;
-        } catch (e) {
-            origin = baseUrl.split('/index.php')[0];
-            if (origin.endsWith('/')) origin = origin.slice(0, -1);
+        // Loại bỏ /index.php nếu có
+        if (baseUrl.includes('/index.php')) {
+            baseUrl = baseUrl.split('/index.php')[0];
+        }
+        if (baseUrl.endsWith('/')) {
+            baseUrl = baseUrl.slice(0, -1);
         }
 
-        const productPageUrl = `${origin}/dat-mon`;
+        const productPageUrl = `${baseUrl}/ban-sofa`;
         console.log(`Đang truy cập ${productPageUrl}...`);
         await this.page.goto(productPageUrl, { waitUntil: 'domcontentloaded' });
     }
@@ -89,10 +89,13 @@ export class CartPage extends BasePage {
             ]);
         } catch (error) {
             let baseUrl = process.env.BASE_URL || '';
-            const origin = baseUrl.split('/index.php')[0];
-            const cleanBase = origin.endsWith('/') ? origin.slice(0, -1) : origin;
+            // Loại bỏ /index.php nếu có
+            if (baseUrl.includes('/index.php')) {
+                baseUrl = baseUrl.split('/index.php')[0];
+            }
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
             try {
-                await this.page.evaluate((url) => { window.location.href = url; }, `${cleanBase}/gio-hang`);
+                await this.page.evaluate((url) => { window.location.href = url; }, `${baseUrl}/gio-hang`);
                 await this.page.waitForLoadState('domcontentloaded');
             } catch (evalError) {
                 // Nếu "Execution context was destroyed", tức là navigation trước đó đã thành công
