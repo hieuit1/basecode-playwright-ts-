@@ -1,0 +1,20 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     87/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          13
+   ❌ Không đạt:    2
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (2/15):
+--- IMAGES ---
+   1. [100% ảnh có thuộc tính alt (thiếu: 1/23)]
+      → Có 1 hình ảnh thiếu thuộc tính 'alt'. VD: https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg
+--- LINKS ---
+   2. [Không có broken links (lỗi: 2/22)]
+      → Broken links: tin-tuc (status: 404), http://namboaucowedding@gmail.com (status: 0)

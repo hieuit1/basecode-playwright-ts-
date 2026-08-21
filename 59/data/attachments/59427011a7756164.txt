@@ -1,0 +1,20 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     89/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  18
+   ✅ Đạt:          16
+   ❌ Không đạt:    2
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (2/18):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H2 → H4 ("Set Menu Tiệc")
+--- LINKS ---
+   2. [Không có broken links (lỗi: 2/28)]
+      → Broken links: tin-tuc (status: 404), http://namboaucowedding@gmail.com (status: 0)
