@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 6/81)]
+      → Broken links: he-thong-cua-hang (status: 0), https://www.instagram.com/cfurni.vn?igsh=cnNhNG43aGhhbzJs (status: 429), phong-ngu (status: 404), phong-khach (status: 404), phong-lam-viec (status: 404), phong-an (status: 404)
