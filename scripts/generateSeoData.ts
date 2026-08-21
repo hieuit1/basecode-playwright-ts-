@@ -141,7 +141,7 @@ async function run() {
   const MAX_PER_PREFIX = 1; // Lấy 1 trang đại diện duy nhất cho mỗi nhóm sản phẩm/bài viết để tránh trùng lặp
 
   // Các trang chính (Core pages) luôn được ưu tiên test
-  const CORE_PAGES = ['/gioi-thieu', '/san-pham', '/du-an', '/tin-tuc', '/lien-he', '/dich-vu', '/tin-tuc-va-su-kien', '/blog'];
+  const CORE_PAGES = ['/gioi-thieu', '/san-pham', '/du-an', '/tin-tuc', '/lien-he', '/dich-vu', '/tin-tuc-va-su-kien', '/blog', '/phong-thuy', '/mau-nha-dep',];
 
   // Dùng để giới hạn số lượng trang động được check Core Web Vitals (vì test CWV rất chậm)
   let dynamicCwvCount = 0;
