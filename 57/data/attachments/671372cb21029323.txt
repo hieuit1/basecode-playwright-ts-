@@ -1,0 +1,64 @@
+══════════════════════════════════════
+   🟡 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     71/100
+   Đánh giá:    KHÁ
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          15
+   ❌ Không đạt:    6
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (6/21):
+--- TITLE ---
+   1. [Title phải có nội dung (hiện tại: 0 ký tự)]
+      → Title tag không tồn tại hoặc rỗng!
+--- LINKS ---
+   2. [Không có broken links (lỗi: 6/51)]
+      → Broken links: acquythanhphatdat.com/ (status: 404), Skype:thanhphatdatcompany2015?chat (status: 0), ymsgr:sendIM?thanhphatdatcompany2015 (status: 0), Skype:ngocthuynguyen?chat (status: 0), ymsgr:sendIM?tpd.ngocthuy@gmail.com (status: 0), https://acquythanhphatdat.com/tin-tuc/dai-ly-ac-quy-tai-quan-thu-duc-tp-ho-chi-minh.html (status: 404)
+--- PERFORMANCE ---
+   3. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 51/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 51/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   4. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 14026ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 14026ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="w-100 lazy loaded" onerror="this.src='thumbs/1920x1050x1/assets/images/noimage.png';" data-src="thumbs/1920x1050x1/upload/photo/sl1-60930.png.webp" alt="ắc quy đồng nai extra" width="1366" height="500" src="thumbs/1920x1050x1/upload/photo/sl1-60930.png.webp" data-was-processed="true">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 1366x500px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 2732x1000px (2x cho Retina), định dạng .webp, dung lượng dưới 123KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/1920x1050x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/1920x1050x1/assets/images/noimage.png" width="1366" height="500" style="aspect-ratio: 1366 / 500; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 2732 1000 input.png -o output.webp
+   5. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.272 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.272 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="col-6 col-lg-4 p-2">
+          - <a class="tpd-index-title__more" href="ac-quy-dong-nai">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="col-6 col-lg-4 p-2"> | <a class="tpd-index-title__more" href="ac-quy-dong-nai">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
+--- SECURITY ---
+   6. [Mixed Content: 1 tài nguyên HTTP]
+      → Phát hiện 1 tài nguyên HTTP trên HTTPS: http://acquythanhphatdat.com/upload/images/2021-10-18.png
