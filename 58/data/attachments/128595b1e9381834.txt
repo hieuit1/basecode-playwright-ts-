@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- IMAGES ---
+   1. [100% ảnh có thuộc tính alt (thiếu: 1/22)]
+      → Có 1 hình ảnh thiếu thuộc tính 'alt'. VD: https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg
