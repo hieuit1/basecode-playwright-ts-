@@ -1,0 +1,46 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     82/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  22
+   ✅ Đạt:          18
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/22):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 5/81)]
+      → Broken links: he-thong-cua-hang (status: 404), phong-khach (status: 0), phong-an (status: 0), phong-ngu (status: 0), phong-lam-viec (status: 0)
+--- PERFORMANCE ---
+   2. [Google PageSpeed API]
+      → ❌ CẢNH BÁO: Không lấy được dữ liệu PageSpeed API (null cho cả mobile lẫn desktop).
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 18440ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 18440ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img onerror="this.src='thumbs/223x223x1/assets/images/noimage.png';" src="thumbs/223x223x1/upload/product/ban-an-sofa-chan-go-9146.png" alt="Bàn sofa chân gỗ" title="Bàn sofa chân gỗ" width="223" hei...
+
+[Vấn đề]: Phần tử LCP là ảnh nhưng không có thuộc tính width/height trong HTML.
+[Thông số hiện tại]: Kích thước không xác định từ HTML thô.
+[Chỉ thị hành động]: Dùng DevTools (Computed tab) đo kích thước hiển thị thực tế. Resize ảnh gốc bằng 2x kích thước hiển thị (định dạng .webp, quality 75-80), khai báo kích thước cứng vào HTML và thêm thẻ preload.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="[URL_ẢNH]" fetchpriority="high">
+
+<!-- Sửa thẻ <img> (thay X, Y bằng số đo thực tế): -->
+<img src="[URL_ẢNH]" width="X" height="Y" style="aspect-ratio: X / Y; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+   4. [[💻 Desktop] LCP (Largest Contentful Paint): 18440ms (< 2500ms)]
+      → [💻 Desktop] LCP quá cao: 18440ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img onerror="this.src='thumbs/223x223x1/assets/images/noimage.png';" src="thumbs/223x223x1/upload/product/ban-an-sofa-chan-go-9146.png" alt="Bàn sofa chân gỗ" title="Bàn sofa chân gỗ" width="223" hei...
+
+[Vấn đề]: Phần tử LCP là ảnh nhưng không có thuộc tính width/height trong HTML.
+[Thông số hiện tại]: Kích thước không xác định từ HTML thô.
+[Chỉ thị hành động]: Dùng DevTools (Computed tab) đo kích thước hiển thị thực tế. Resize ảnh gốc bằng 2x kích thước hiển thị (định dạng .webp, quality 75-80), khai báo kích thước cứng vào HTML và thêm thẻ preload.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="[URL_ẢNH]" fetchpriority="high">
+
+<!-- Sửa thẻ <img> (thay X, Y bằng số đo thực tế): -->
+<img src="[URL_ẢNH]" width="X" height="Y" style="aspect-ratio: X / Y; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
