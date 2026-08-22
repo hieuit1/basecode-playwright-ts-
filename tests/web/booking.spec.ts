@@ -51,7 +51,6 @@ if (FeatureHelper.hasBookingFeature()) {
                 await test.step("Gửi thông tin và kiểm tra thành công", async () => {
                     await bookingPage.submitForm();
 
-                    // Không kiểm tra thông báo thành công vì trang chỉ reset form
                     await TestHelper.takeScreenshot(page, 'Gửi đặt bàn thành công');
 
                     await TestHelper.delay(page, 2000);
