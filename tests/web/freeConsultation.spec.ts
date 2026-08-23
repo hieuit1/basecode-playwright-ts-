@@ -43,11 +43,9 @@ if (FeatureHelper.hasFreeConsultationFeature()) {
                 await test.step("Gửi thông tin và kiểm tra thông báo", async () => {
                     await consultationPage.submitForm();
 
-                    // Xác nhận có thông báo thành công và chụp ảnh NGAY LẬP TỨC
                     await consultationPage.successMessage.waitFor({ state: 'visible', timeout: 2000 });
                     await TestHelper.takeScreenshot(page, 'Gửi form tư vấn thành công');
 
-                    // Các kiểm tra khác thực hiện sau khi đã chụp ảnh an toàn
                     await expect(consultationPage.errorMessage).toBeHidden();
 
                     // Thêm delay để đảm bảo tiến trình xử lý ngầm (nếu có)
