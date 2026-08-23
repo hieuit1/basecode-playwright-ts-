@@ -1,0 +1,773 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Hàng giải trí (/hang-giai-tri)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 93/100 dưới ngưỡng 96%. Có 1/15 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - link "CÔNG TY TNHH CFURNI" [ref=e8] [cursor=pointer]:
+          - /url: https://code2.mimadigi.vn/2026/august/cfurni_111926w/
+          - img "CÔNG TY TNHH CFURNI" [ref=e9]
+        - link "Danh Mục" [ref=e12] [cursor=pointer]:
+          - /url: javascript:;
+          - img [ref=e13]
+          - text: Danh Mục
+        - generic [ref=e19]:
+          - textbox "Tìm kiếm sản phẩ" [ref=e20]
+          - button [ref=e21] [cursor=pointer]:
+            - img [ref=e22]
+        - generic [ref=e24]:
+          - img [ref=e25]
+          - generic [ref=e28]:
+            - text: Hotline
+            - link "0932 67 82 67" [ref=e29] [cursor=pointer]:
+              - /url: tel:0932678267
+        - generic [ref=e31]:
+          - img [ref=e32]
+          - generic [ref=e35]:
+            - text: Hệ thống
+            - generic "Map" [ref=e36]: CFURNI
+        - link "Giỏ hàng 0" [ref=e38] [cursor=pointer]:
+          - /url: gio-hang
+          - img [ref=e39]
+          - generic [ref=e43]:
+            - generic [ref=e44]: Giỏ hàng
+            - generic [ref=e45]: "0"
+      - list [ref=e49]:
+        - listitem [ref=e50]:
+          - link "Bàn ăn" [ref=e51] [cursor=pointer]:
+            - /url: ban-an
+        - listitem [ref=e52]:
+          - link "Bàn sofa" [ref=e53] [cursor=pointer]:
+            - /url: ban-sofa
+        - listitem [ref=e54]:
+          - link "Ghế ăn" [ref=e55] [cursor=pointer]:
+            - /url: ghe-an
+        - listitem [ref=e56]:
+          - link "Sofa đẹp" [ref=e57] [cursor=pointer]:
+            - /url: sofa-dep
+        - listitem [ref=e58]:
+          - link "Văn phòng" [ref=e59] [cursor=pointer]:
+            - /url: van-phong
+        - listitem [ref=e60]:
+          - link "Hàng giải trí" [ref=e61] [cursor=pointer]:
+            - /url: hang-giai-tri
+        - listitem [ref=e62]:
+          - link "Thảm sofa" [ref=e63] [cursor=pointer]:
+            - /url: tham-sofa
+        - listitem [ref=e64]:
+          - link "Phòng ngủ" [ref=e65] [cursor=pointer]:
+            - /url: phong-ngu1
+        - listitem [ref=e66]:
+          - link "Thi công phòng bếp" [ref=e67] [cursor=pointer]:
+            - /url: thi-cong-phong-bep
+    - list [ref=e70]:
+      - listitem [ref=e71]:
+        - link "Trang chủ" [ref=e72] [cursor=pointer]:
+          - /url: https://code2.mimadigi.vn/2026/august/cfurni_111926w/
+          - img [ref=e73]
+          - generic [ref=e75]: Trang chủ
+      - listitem [ref=e76]:
+        - text: /
+        - link "Sản phẩm" [ref=e77] [cursor=pointer]:
+          - /url: https://code2.mimadigi.vn/2026/august/cfurni_111926w/san-pham
+      - listitem [ref=e78]:
+        - text: /
+        - link "Hàng giải trí" [ref=e79] [cursor=pointer]:
+          - /url: https://code2.mimadigi.vn/2026/august/cfurni_111926w/hang-giai-tri
+    - generic [ref=e83]:
+      - heading "Danh mục" [level=2] [ref=e85]
+      - generic [ref=e86]:
+        - link "Ghế quầy bar Ghế quầy bar" [ref=e88] [cursor=pointer]:
+          - /url: ghe-quay-bar
+          - paragraph [ref=e89]:
+            - img "Ghế quầy bar" [ref=e90]
+          - heading "Ghế quầy bar" [level=3] [ref=e91]
+        - link "Bàn quầy bar Bàn quầy bar" [ref=e93] [cursor=pointer]:
+          - /url: ban-quay-bar
+          - paragraph [ref=e94]:
+            - img "Bàn quầy bar" [ref=e95]
+          - heading "Bàn quầy bar" [level=3] [ref=e96]
+        - link "Kệ trang trí Kệ trang trí" [ref=e98] [cursor=pointer]:
+          - /url: ke-trang-tri
+          - paragraph [ref=e99]:
+            - img "Kệ trang trí" [ref=e100]
+          - heading "Kệ trang trí" [level=3] [ref=e101]
+        - link "Ghế cafe gỗ Ghế cafe gỗ" [ref=e103] [cursor=pointer]:
+          - /url: ghe-cafe-go
+          - paragraph [ref=e104]:
+            - img "Ghế cafe gỗ" [ref=e105]
+          - heading "Ghế cafe gỗ" [level=3] [ref=e106]
+        - link "Bàn cafe Bàn cafe" [ref=e108] [cursor=pointer]:
+          - /url: ban-cafe
+          - paragraph [ref=e109]:
+            - img "Bàn cafe" [ref=e110]
+          - heading "Bàn cafe" [level=3] [ref=e111]
+        - link "Ghế cafe ngoài trời Ghế cafe ngoài trời" [ref=e113] [cursor=pointer]:
+          - /url: ghe-cafe-ngoai-troi
+          - paragraph [ref=e114]:
+            - img "Ghế cafe ngoài trời" [ref=e115]
+          - heading "Ghế cafe ngoài trời" [level=3] [ref=e116]
+        - link "Ghế cafe nhựa Ghế cafe nhựa" [ref=e118] [cursor=pointer]:
+          - /url: ghe-cafe-nhua
+          - paragraph [ref=e119]:
+            - img "Ghế cafe nhựa" [ref=e120]
+          - heading "Ghế cafe nhựa" [level=3] [ref=e121]
+        - link "Bàn Console Bàn Console" [ref=e123] [cursor=pointer]:
+          - /url: ban-console
+          - paragraph [ref=e124]:
+            - img "Bàn Console" [ref=e125]
+          - heading "Bàn Console" [level=3] [ref=e126]
+      - heading "Tất cả Hàng giải trí" [level=2] [ref=e128]
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - generic [ref=e132]:
+            - link "Ghế CF 3051" [ref=e134] [cursor=pointer]:
+              - /url: ghe-cf-3051
+              - img "Ghế CF 3051" [ref=e135]
+            - generic [ref=e136]:
+              - heading "Ghế CF 3051" [level=3] [ref=e137]:
+                - link "Ghế CF 3051" [ref=e138] [cursor=pointer]:
+                  - /url: ghe-cf-3051
+              - paragraph [ref=e139]:
+                - generic [ref=e140]: 475.000đ
+          - generic [ref=e142]:
+            - link "Ghế CF 3052" [ref=e144] [cursor=pointer]:
+              - /url: ghe-cf-3052
+              - img "Ghế CF 3052" [ref=e145]
+            - generic [ref=e146]:
+              - heading "Ghế CF 3052" [level=3] [ref=e147]:
+                - link "Ghế CF 3052" [ref=e148] [cursor=pointer]:
+                  - /url: ghe-cf-3052
+              - paragraph [ref=e149]:
+                - generic [ref=e150]: 442.000đ
+          - generic [ref=e152]:
+            - link "Ghế nhựa TOMA Y616" [ref=e154] [cursor=pointer]:
+              - /url: ghe-nhua-toma-y616
+              - img "Ghế nhựa TOMA Y616" [ref=e155]
+            - generic [ref=e156]:
+              - heading "Ghế nhựa TOMA Y616" [level=3] [ref=e157]:
+                - link "Ghế nhựa TOMA Y616" [ref=e158] [cursor=pointer]:
+                  - /url: ghe-nhua-toma-y616
+              - paragraph [ref=e159]:
+                - generic [ref=e160]: 1.115.000đ
+          - generic [ref=e162]:
+            - link "Ghế NORD 8112" [ref=e164] [cursor=pointer]:
+              - /url: ghe-nord-8112
+              - img "Ghế NORD 8112" [ref=e165]
+            - generic [ref=e166]:
+              - heading "Ghế NORD 8112" [level=3] [ref=e167]:
+                - link "Ghế NORD 8112" [ref=e168] [cursor=pointer]:
+                  - /url: ghe-nord-8112
+              - paragraph [ref=e169]:
+                - generic [ref=e170]: 1.315.000đ
+          - generic [ref=e172]:
+            - link "Ghế RAFFI 3054" [ref=e174] [cursor=pointer]:
+              - /url: ghe-raffi-3054
+              - img "Ghế RAFFI 3054" [ref=e175]
+            - generic [ref=e176]:
+              - heading "Ghế RAFFI 3054" [level=3] [ref=e177]:
+                - link "Ghế RAFFI 3054" [ref=e178] [cursor=pointer]:
+                  - /url: ghe-raffi-3054
+              - paragraph [ref=e179]:
+                - generic [ref=e180]: 725.000đ
+          - generic [ref=e182]:
+            - link "Ghế ngoài trời SKY VS03" [ref=e184] [cursor=pointer]:
+              - /url: ghe-ngoai-troi-sky-vs03
+              - img "Ghế ngoài trời SKY VS03" [ref=e185]
+            - generic [ref=e186]:
+              - heading "Ghế ngoài trời SKY VS03" [level=3] [ref=e187]:
+                - link "Ghế ngoài trời SKY VS03" [ref=e188] [cursor=pointer]:
+                  - /url: ghe-ngoai-troi-sky-vs03
+              - paragraph [ref=e189]:
+                - generic [ref=e190]: 790.000đ
+          - generic [ref=e192]:
+            - link "Ghế ngoài trời SKY VS02" [ref=e194] [cursor=pointer]:
+              - /url: ghe-ngoai-troi-sky-vs02
+              - img "Ghế ngoài trời SKY VS02" [ref=e195]
+            - generic [ref=e196]:
+              - heading "Ghế ngoài trời SKY VS02" [level=3] [ref=e197]:
+                - link "Ghế ngoài trời SKY VS02" [ref=e198] [cursor=pointer]:
+                  - /url: ghe-ngoai-troi-sky-vs02
+              - paragraph [ref=e199]:
+                - generic [ref=e200]: 790.000đ
+          - generic [ref=e202]:
+            - link "Ghế Ngoài Trời S220" [ref=e204] [cursor=pointer]:
+              - /url: ghe-ngoai-troi-s220
+              - img "Ghế Ngoài Trời S220" [ref=e205]
+            - generic [ref=e206]:
+              - heading "Ghế Ngoài Trời S220" [level=3] [ref=e207]:
+                - link "Ghế Ngoài Trời S220" [ref=e208] [cursor=pointer]:
+                  - /url: ghe-ngoai-troi-s220
+              - paragraph [ref=e209]:
+                - generic [ref=e210]: 1.130.000đ
+          - generic [ref=e212]:
+            - link "Ghế ngoài trời AV11" [ref=e214] [cursor=pointer]:
+              - /url: ghe-ngoai-troi-av11
+              - img "Ghế ngoài trời AV11" [ref=e215]
+            - generic [ref=e216]:
+              - heading "Ghế ngoài trời AV11" [level=3] [ref=e217]:
+                - link "Ghế ngoài trời AV11" [ref=e218] [cursor=pointer]:
+                  - /url: ghe-ngoai-troi-av11
+              - paragraph [ref=e219]:
+                - generic [ref=e220]: 1.720.000đ
+          - generic [ref=e222]:
+            - link "Ghế WILO" [ref=e224] [cursor=pointer]:
+              - /url: ghe-wilo
+              - img "Ghế WILO" [ref=e225]
+            - generic [ref=e226]:
+              - heading "Ghế WILO" [level=3] [ref=e227]:
+                - link "Ghế WILO" [ref=e228] [cursor=pointer]:
+                  - /url: ghe-wilo
+              - paragraph [ref=e229]:
+                - generic [ref=e230]: 2.195.000đ
+          - generic [ref=e232]:
+            - link "Ghế MAISON" [ref=e234] [cursor=pointer]:
+              - /url: ghe-maison
+              - img "Ghế MAISON" [ref=e235]
+            - generic [ref=e236]:
+              - heading "Ghế MAISON" [level=3] [ref=e237]:
+                - link "Ghế MAISON" [ref=e238] [cursor=pointer]:
+                  - /url: ghe-maison
+              - paragraph [ref=e239]:
+                - generic [ref=e240]: 1.167.000đ
+          - generic [ref=e242]:
+            - link "Ghế LUNAR" [ref=e244] [cursor=pointer]:
+              - /url: ghe-lunar
+              - img "Ghế LUNAR" [ref=e245]
+            - generic [ref=e246]:
+              - heading "Ghế LUNAR" [level=3] [ref=e247]:
+                - link "Ghế LUNAR" [ref=e248] [cursor=pointer]:
+                  - /url: ghe-lunar
+              - paragraph [ref=e249]:
+                - generic [ref=e250]: 799.000đ
+          - generic [ref=e252]:
+            - link "Ghế CH301" [ref=e254] [cursor=pointer]:
+              - /url: ghe-ch301
+              - img "Ghế CH301" [ref=e255]
+            - generic [ref=e256]:
+              - heading "Ghế CH301" [level=3] [ref=e257]:
+                - link "Ghế CH301" [ref=e258] [cursor=pointer]:
+                  - /url: ghe-ch301
+              - paragraph [ref=e259]:
+                - generic [ref=e260]: 1.420.000đ
+          - generic [ref=e262]:
+            - link "Ghế CF KATAKANA" [ref=e264] [cursor=pointer]:
+              - /url: ghe-cf-katakana
+              - img "Ghế CF KATAKANA" [ref=e265]
+            - generic [ref=e266]:
+              - heading "Ghế CF KATAKANA" [level=3] [ref=e267]:
+                - link "Ghế CF KATAKANA" [ref=e268] [cursor=pointer]:
+                  - /url: ghe-cf-katakana
+              - paragraph [ref=e269]:
+                - generic [ref=e270]: 920.000đ
+          - generic [ref=e272]:
+            - link "Ghế ngoài trời AV09" [ref=e274] [cursor=pointer]:
+              - /url: ghe-ngoai-troi-av09
+              - img "Ghế ngoài trời AV09" [ref=e275]
+            - generic [ref=e276]:
+              - heading "Ghế ngoài trời AV09" [level=3] [ref=e277]:
+                - link "Ghế ngoài trời AV09" [ref=e278] [cursor=pointer]:
+                  - /url: ghe-ngoai-troi-av09
+              - paragraph [ref=e279]:
+                - generic [ref=e280]: 1.950.000đ
+          - generic [ref=e282]:
+            - link "KỆ XEGON" [ref=e284] [cursor=pointer]:
+              - /url: ke-xegon
+              - img "KỆ XEGON" [ref=e285]
+            - generic [ref=e286]:
+              - heading "KỆ XEGON" [level=3] [ref=e287]:
+                - link "KỆ XEGON" [ref=e288] [cursor=pointer]:
+                  - /url: ke-xegon
+              - paragraph [ref=e289]:
+                - generic [ref=e290]: Liên hệ
+          - generic [ref=e292]:
+            - link "Kệ Trang Trí BARA" [ref=e294] [cursor=pointer]:
+              - /url: ke-trang-tri-bara
+              - img "Kệ Trang Trí BARA" [ref=e295]
+            - generic [ref=e296]:
+              - heading "Kệ Trang Trí BARA" [level=3] [ref=e297]:
+                - link "Kệ Trang Trí BARA" [ref=e298] [cursor=pointer]:
+                  - /url: ke-trang-tri-bara
+              - paragraph [ref=e299]:
+                - generic [ref=e300]: Liên hệ
+          - generic [ref=e302]:
+            - link "Kệ Trang Trí" [ref=e304] [cursor=pointer]:
+              - /url: ke-trang-tri1
+              - img "Kệ Trang Trí" [ref=e305]
+            - generic [ref=e306]:
+              - heading "Kệ Trang Trí" [level=3] [ref=e307]:
+                - link "Kệ Trang Trí" [ref=e308] [cursor=pointer]:
+                  - /url: ke-trang-tri1
+              - paragraph [ref=e309]:
+                - generic [ref=e310]: Liên hệ
+          - generic [ref=e312]:
+            - link "Kệ Tầng MION" [ref=e314] [cursor=pointer]:
+              - /url: ke-tang-mion
+              - img "Kệ Tầng MION" [ref=e315]
+            - generic [ref=e316]:
+              - heading "Kệ Tầng MION" [level=3] [ref=e317]:
+                - link "Kệ Tầng MION" [ref=e318] [cursor=pointer]:
+                  - /url: ke-tang-mion
+              - paragraph [ref=e319]:
+                - generic [ref=e320]: Liên hệ
+          - generic [ref=e322]:
+            - link "KỆ FONUN" [ref=e324] [cursor=pointer]:
+              - /url: ke-fonun
+              - img "KỆ FONUN" [ref=e325]
+            - generic [ref=e326]:
+              - heading "KỆ FONUN" [level=3] [ref=e327]:
+                - link "KỆ FONUN" [ref=e328] [cursor=pointer]:
+                  - /url: ke-fonun
+              - paragraph [ref=e329]:
+                - generic [ref=e330]: Liên hệ
+          - generic [ref=e332]:
+            - link "Ghế quầy OPAL 34" [ref=e334] [cursor=pointer]:
+              - /url: ghe-quay-opal-34
+              - img "Ghế quầy OPAL 34" [ref=e335]
+            - generic [ref=e336]:
+              - heading "Ghế quầy OPAL 34" [level=3] [ref=e337]:
+                - link "Ghế quầy OPAL 34" [ref=e338] [cursor=pointer]:
+                  - /url: ghe-quay-opal-34
+              - paragraph [ref=e339]:
+                - generic [ref=e340]: 950.000.950đ
+          - generic [ref=e342]:
+            - link "Ghế OAKA QB02" [ref=e344] [cursor=pointer]:
+              - /url: ghe-oaka-qb02
+              - img "Ghế OAKA QB02" [ref=e345]
+            - generic [ref=e346]:
+              - heading "Ghế OAKA QB02" [level=3] [ref=e347]:
+                - link "Ghế OAKA QB02" [ref=e348] [cursor=pointer]:
+                  - /url: ghe-oaka-qb02
+              - paragraph [ref=e349]:
+                - generic [ref=e350]: 1.950.000đ
+          - generic [ref=e352]:
+            - link "Ghế bar OPUL" [ref=e354] [cursor=pointer]:
+              - /url: ghe-bar-opul
+              - img "Ghế bar OPUL" [ref=e355]
+            - generic [ref=e356]:
+              - heading "Ghế bar OPUL" [level=3] [ref=e357]:
+                - link "Ghế bar OPUL" [ref=e358] [cursor=pointer]:
+                  - /url: ghe-bar-opul
+              - paragraph [ref=e359]:
+                - generic [ref=e360]: 990.000đ
+          - generic [ref=e362]:
+            - link "Ghế bar FESTO 252" [ref=e364] [cursor=pointer]:
+              - /url: ghe-bar-festo-252
+              - img "Ghế bar FESTO 252" [ref=e365]
+            - generic [ref=e366]:
+              - heading "Ghế bar FESTO 252" [level=3] [ref=e367]:
+                - link "Ghế bar FESTO 252" [ref=e368] [cursor=pointer]:
+                  - /url: ghe-bar-festo-252
+              - paragraph [ref=e369]:
+                - generic [ref=e370]: 1.260.000đ
+          - generic [ref=e372]:
+            - link "Ghế bar 2511C" [ref=e374] [cursor=pointer]:
+              - /url: ghe-bar-2511c
+              - img "Ghế bar 2511C" [ref=e375]
+            - generic [ref=e376]:
+              - heading "Ghế bar 2511C" [level=3] [ref=e377]:
+                - link "Ghế bar 2511C" [ref=e378] [cursor=pointer]:
+                  - /url: ghe-bar-2511c
+              - paragraph [ref=e379]:
+                - generic [ref=e380]: 940.000đ
+          - generic [ref=e382]:
+            - link "Bàn CONSOLE 128" [ref=e384] [cursor=pointer]:
+              - /url: ban-console-128
+            - generic [ref=e385]:
+              - heading "Bàn CONSOLE 128" [level=3] [ref=e386]:
+                - link "Bàn CONSOLE 128" [ref=e387] [cursor=pointer]:
+                  - /url: ban-console-128
+              - paragraph [ref=e388]:
+                - generic [ref=e389]: 13.500.000đ
+          - generic [ref=e391]:
+            - link "Bàn CONSOLE 127" [ref=e393] [cursor=pointer]:
+              - /url: ban-console-127
+            - generic [ref=e394]:
+              - heading "Bàn CONSOLE 127" [level=3] [ref=e395]:
+                - link "Bàn CONSOLE 127" [ref=e396] [cursor=pointer]:
+                  - /url: ban-console-127
+              - paragraph [ref=e397]:
+                - generic [ref=e398]: 15.900.000đ
+          - generic [ref=e400]:
+            - link "Bàn CONSOLE 126" [ref=e402] [cursor=pointer]:
+              - /url: ban-console-126
+            - generic [ref=e403]:
+              - heading "Bàn CONSOLE 126" [level=3] [ref=e404]:
+                - link "Bàn CONSOLE 126" [ref=e405] [cursor=pointer]:
+                  - /url: ban-console-126
+              - paragraph [ref=e406]:
+                - generic [ref=e407]: 12.900.000đ
+          - generic [ref=e409]:
+            - link "Bàn CONSOLE 124" [ref=e411] [cursor=pointer]:
+              - /url: ban-console-124
+            - generic [ref=e412]:
+              - heading "Bàn CONSOLE 124" [level=3] [ref=e413]:
+                - link "Bàn CONSOLE 124" [ref=e414] [cursor=pointer]:
+                  - /url: ban-console-124
+              - paragraph [ref=e415]:
+                - generic [ref=e416]: 17.500.000đ
+          - generic [ref=e418]:
+            - link "Bàn CONSOLE 115" [ref=e420] [cursor=pointer]:
+              - /url: ban-console-115
+            - generic [ref=e421]:
+              - heading "Bàn CONSOLE 115" [level=3] [ref=e422]:
+                - link "Bàn CONSOLE 115" [ref=e423] [cursor=pointer]:
+                  - /url: ban-console-115
+              - paragraph [ref=e424]:
+                - generic [ref=e425]: 13.900.000đ
+        - link "Xem thêm (10) sản phẩm" [ref=e427] [cursor=pointer]:
+          - /url: javascript:;
+          - text: Xem thêm
+          - generic [ref=e428]: (10)
+          - text: sản phẩm
+    - generic [ref=e433]:
+      - generic [ref=e435]:
+        - paragraph [ref=e436]:
+          - img "Xưởng & Showroom" [ref=e437]
+        - generic [ref=e438]:
+          - heading "Xưởng & Showroom" [level=3] [ref=e439]
+          - paragraph [ref=e440]: Đặt lịch xe trực tiếp sản phẩm
+      - generic [ref=e442]:
+        - paragraph [ref=e443]:
+          - img "Bảo hành khung 10 năm" [ref=e444]
+        - generic [ref=e445]:
+          - heading "Bảo hành khung 10 năm" [level=3] [ref=e446]
+          - paragraph [ref=e447]: Khung gỗ sồi chắc chắn
+      - generic [ref=e449]:
+        - paragraph [ref=e450]:
+          - img "Mút Coolsafe 4 năm" [ref=e451]
+        - generic [ref=e452]:
+          - heading "Mút Coolsafe 4 năm" [level=3] [ref=e453]
+          - paragraph [ref=e454]: Chống cháy đạt tiêu chuẩn
+      - generic [ref=e456]:
+        - paragraph [ref=e457]:
+          - img "Chứng chỉ EQ vật liệu" [ref=e458]
+        - generic [ref=e459]:
+          - heading "Chứng chỉ EQ vật liệu" [level=3] [ref=e460]
+          - paragraph [ref=e461]: An toàn cho trẻ con & thai phụ
+      - generic [ref=e463]:
+        - paragraph [ref=e464]:
+          - img "10,000+ khách hàng" [ref=e465]
+        - generic [ref=e466]:
+          - heading "10,000+ khách hàng" [level=3] [ref=e467]
+          - paragraph [ref=e468]: Đánh giá tốt trên website
+    - generic [ref=e469]:
+      - generic [ref=e472]:
+        - generic [ref=e473]:
+          - link "CÔNG TY TNHH CFURNI" [ref=e474] [cursor=pointer]:
+            - /url: https://code2.mimadigi.vn/2026/august/cfurni_111926w/
+            - img "CÔNG TY TNHH CFURNI" [ref=e475]
+          - paragraph [ref=e476]: CÔNG TY TNHH CFURNI
+          - table [ref=e478]:
+            - rowgroup [ref=e479]:
+              - 'row "MST: 0313344129 - Sở kế hoạch và đầu tư TP.HCM cấp ngày 13/7/2015. Office: 198 Đường Số 10, Phường Thông Tây Hội, TP.HCM Showroom 1: 41 Đường A4, Phường Bảy Hiền, TP.HCM Showroom 2: 66A đường A4 (khu K300), Phường Bảy Hiền, TP.HCM Xưởng 1: 25/5A đường số 610, xã Phú Hòa Đông, TP.HCM Xưởng 2: C7C Phạm Hùng, xã Bình Hưng, TP.HCM Email: Cfurni168@gmail.com Web: www.cfurni.vn Facebook: Nội Thất Cfurni Phone: 0932 67 82 67 - 0902 34 93 94" [ref=e480]':
+                - 'cell "MST: 0313344129 - Sở kế hoạch và đầu tư TP.HCM cấp ngày 13/7/2015. Office: 198 Đường Số 10, Phường Thông Tây Hội, TP.HCM Showroom 1: 41 Đường A4, Phường Bảy Hiền, TP.HCM Showroom 2: 66A đường A4 (khu K300), Phường Bảy Hiền, TP.HCM Xưởng 1: 25/5A đường số 610, xã Phú Hòa Đông, TP.HCM Xưởng 2: C7C Phạm Hùng, xã Bình Hưng, TP.HCM Email: Cfurni168@gmail.com Web: www.cfurni.vn Facebook: Nội Thất Cfurni Phone: 0932 67 82 67 - 0902 34 93 94" [ref=e481]':
+                  - paragraph [ref=e482]:
+                    - text: "MST: 0313344129 - Sở kế hoạch và đầu tư TP.HCM cấp ngày 13/7/2015."
+                    - text: "Office: 198 Đường Số 10, Phường Thông Tây Hội, TP.HCM"
+                  - paragraph [ref=e483]: "Showroom 1: 41 Đường A4, Phường Bảy Hiền, TP.HCM"
+                  - paragraph [ref=e484]: "Showroom 2: 66A đường A4 (khu K300), Phường Bảy Hiền, TP.HCM"
+                  - paragraph [ref=e485]: "Xưởng 1: 25/5A đường số 610, xã Phú Hòa Đông, TP.HCM"
+                  - paragraph [ref=e486]: "Xưởng 2: C7C Phạm Hùng, xã Bình Hưng, TP.HCM"
+                  - paragraph [ref=e487]:
+                    - text: "Email: Cfurni168@gmail.com"
+                    - text: "Web: www.cfurni.vn"
+                  - paragraph [ref=e488]:
+                    - 'link "Facebook: Nội Thất Cfurni" [ref=e489] [cursor=pointer]':
+                      - /url: https://www.facebook.com/noithatcfurni/
+                  - paragraph [ref=e490]: "Phone: 0932 67 82 67 - 0902 34 93 94"
+          - paragraph [ref=e491]: Theo dõi chúng tôi tại
+          - generic [ref=e492]:
+            - link "Facebook" [ref=e493] [cursor=pointer]:
+              - /url: https://www.facebook.com/noithatcfurni
+              - img "Facebook" [ref=e494]
+            - link "Messenger" [ref=e495] [cursor=pointer]:
+              - /url: ""
+              - img "Messenger" [ref=e496]
+            - link "Instargam" [ref=e497] [cursor=pointer]:
+              - /url: https://www.instagram.com/cfurni.vn?igsh=cnNhNG43aGhhbzJs
+              - img "Instargam" [ref=e498]
+            - link "TikTok" [ref=e499] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@noithatcfurni?_r=1&_t=ZS-98xhhbBhQua
+              - img "TikTok" [ref=e500]
+            - link "Youtube" [ref=e501] [cursor=pointer]:
+              - /url: https://youtube.com/@noithatcfurni?si=HxSvpE0k9CoN2tWr
+              - img "Youtube" [ref=e502]
+        - img "CÔNG TY TNHH CFURNI" [ref=e505]
+      - generic [ref=e508]:
+        - generic [ref=e509]:
+          - paragraph [ref=e510]: Truy cập nhanh
+          - list [ref=e511]:
+            - listitem [ref=e512]:
+              - link "Giới thiệu" [ref=e513] [cursor=pointer]:
+                - /url: gioi-thieu
+            - listitem [ref=e514]:
+              - link "Sản phẩm" [ref=e515] [cursor=pointer]:
+                - /url: san-pham
+            - listitem [ref=e516]:
+              - link "Dự án" [ref=e517] [cursor=pointer]:
+                - /url: du-an
+            - listitem [ref=e518]:
+              - link "Tuyển dụng" [ref=e519] [cursor=pointer]:
+                - /url: tuyen-dung
+            - listitem [ref=e520]:
+              - link "Liên hệ" [ref=e521] [cursor=pointer]:
+                - /url: lien-he
+        - generic [ref=e522]:
+          - paragraph [ref=e523]: Giải pháp
+          - list [ref=e524]:
+            - listitem [ref=e525]:
+              - link "Phòng khách" [ref=e526] [cursor=pointer]:
+                - /url: phong-khach
+            - listitem [ref=e527]:
+              - link "Phòng ăn" [ref=e528] [cursor=pointer]:
+                - /url: phong-an
+            - listitem [ref=e529]:
+              - link "Phòng ngủ" [ref=e530] [cursor=pointer]:
+                - /url: phong-ngu
+            - listitem [ref=e531]:
+              - link "Phòng làm việc" [ref=e532] [cursor=pointer]:
+                - /url: phong-lam-viec
+        - generic [ref=e533]:
+          - paragraph [ref=e534]: Chính sách hỗ trợ
+          - list [ref=e535]:
+            - listitem [ref=e536]:
+              - link "Chính sách đổi trả" [ref=e537] [cursor=pointer]:
+                - /url: chinh-sach-doi-tra
+            - listitem [ref=e538]:
+              - link "Chính sách bảo hành" [ref=e539] [cursor=pointer]:
+                - /url: chinh-sach-bao-hanh
+            - listitem [ref=e540]:
+              - link "Chính sách giao hàng" [ref=e541] [cursor=pointer]:
+                - /url: chinh-sach-giao-hang
+            - listitem [ref=e542]:
+              - link "Chính sách thanh toán" [ref=e543] [cursor=pointer]:
+                - /url: chinh-sach-thanh-toan
+            - listitem [ref=e544]:
+              - link "Chính sách xử lý khiếu nại" [ref=e545] [cursor=pointer]:
+                - /url: chinh-sach-xu-ly-khieu-nai
+            - listitem [ref=e546]:
+              - link "Bảo mật thông tin khách hàng" [ref=e547] [cursor=pointer]:
+                - /url: bao-mat-thong-tin-khach-hang
+        - generic [ref=e548]:
+          - paragraph [ref=e549]: Hotline
+          - paragraph [ref=e551]:
+            - text: Tư vấn bán hàng
+            - text: 0932 67 82 67
+            - text: Chăm sóc khách hàng
+            - text: 0902 34 93 94
+          - link "http://online.gov.vn/nen-tang/4b688d70-4fe8-4619-a929-3c859c5d4206" [ref=e552] [cursor=pointer]:
+            - /url: ""
+            - img "http://online.gov.vn/nen-tang/4b688d70-4fe8-4619-a929-3c859c5d4206" [ref=e553]
+      - generic [ref=e556]:
+        - generic [ref=e557]: Copyright ©2026 Công Ty TNHH CFURNI. Thiết kế Web MIMA
+        - generic [ref=e558]:
+          - generic [ref=e559]:
+            - text: "Đang online:"
+            - generic [ref=e560]: "432"
+          - generic [ref=e561]: "|"
+          - generic [ref=e562]:
+            - text: "Hôm nay:"
+            - generic [ref=e563]: "7"
+          - generic [ref=e564]: "|"
+          - generic [ref=e565]:
+            - text: "Tổng truy cập:"
+            - generic [ref=e566]: "360"
+    - generic [ref=e567]:
+      - link "Map" [ref=e568] [cursor=pointer]:
+        - /url: https://maps.app.goo.gl/JD2W7Ho6mb8Hrmsw6
+        - img [ref=e572]
+      - 'link "Call me: 0932 67 82 67" [ref=e575] [cursor=pointer]':
+        - /url: tel:0932678267
+        - img [ref=e579]
+        - generic [ref=e582]: "Call me: 0932 67 82 67"
+      - 'link "Zalo: 0932 67 82 67" [ref=e583] [cursor=pointer]':
+        - /url: https://zalo.me/0932678267
+        - img [ref=e587]
+        - generic [ref=e588]: "Zalo: 0932 67 82 67"
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "93"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 93/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 💎 XUẤT SẮC
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "15"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 14
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 1
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: Hàng giải trí
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e589]:
+      - generic [ref=e590]: "❌ Chi tiết lỗi cần khắc phục (1/15):"
+      - generic [ref=e591]:
+        - generic [ref=e592]:
+          - generic [ref=e593]: 6. Liên kết (Links)
+          - generic [ref=e594]: 1 lỗi
+        - generic [ref=e595]:
+          - strong [ref=e597]: "Không có broken links (lỗi: 5/81)"
+          - generic [ref=e598]: "⚠️ Broken links: he-thong-cua-hang (status: 404), phong-ngu (status: 404), phong-khach (status: 404), phong-an (status: 404), phong-lam-viec (status: 404)"
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 93/100 dưới ngưỡng 96%. Có 1/15 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```
