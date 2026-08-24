@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22T04:10:40.707Z",
+  "timestamp": "2026-08-24T08:07:25.849Z",
   "baseUrl": "https://code2.mimadigi.vn/2026/august/cfurni_111926w/",
   "productUrlForConsultation": "",
   "features": {
@@ -7,6 +7,7 @@
     "newsletter": false,
     "freeConsultation": false,
     "booking": false,
-    "cart": true
+    "cart": true,
+    "discount": true
   }
 }

@@ -1,5 +1,6 @@
 import { Page, Locator } from "@playwright/test";
 import { BasePage } from "../BasePage";
+import { CartPage } from "./CartPage";
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -75,6 +76,29 @@ export class HomePage extends BasePage {
         // 4. Quét tính năng Giỏ Hàng (Cart)
         const hasCart = await this.page.locator("//a[@class='cart d-flex align-items-center border border-2 border-main text-main rounded-lg p-2']//*[name()='svg']").isVisible({ timeout: 5000 }).catch(() => false);
 
+        // Kiểm tra tính năng Mã giảm giá (Discount) - Chỉ quét khi có Giỏ hàng
+        // Lưu ý: input mã giảm giá chỉ được render khi giỏ hàng có sản phẩm.
+        // → Phải thêm 1 sản phẩm vào giỏ TRƯỚC khi quét, sau đó dọn dẹp.
+        let hasDiscount = false;
+        if (hasCart) {
+            console.log(`Tìm thấy giỏ hàng. Đang thêm sản phẩm để kiểm tra tính năng mã giảm giá...`);
+            const cartPage = new CartPage(this.page);
+            try {
+                // Bước 1: Thêm 1 sản phẩm vào giỏ để form discount được render
+                await cartPage.addOneProductToCart();
+                // Bước 2: Vào trang giỏ hàng
+                await cartPage.gotoCart();
+                // Bước 3: Kiểm tra locator input mã giảm giá
+                hasDiscount = await this.page
+                    .locator("//input[@placeholder='Nhập mã ưu đãi']")
+                    .isVisible({ timeout: 5000 })
+                    .catch(() => false);
+                console.log(`Kết quả quét discount (sau khi thêm SP): ${hasDiscount ? 'CÓ' : 'KHÔNG'}`);
+            } catch (e) {
+                console.log(`[THÔNG BÁO] Không thể thêm sản phẩm để quét discount: ${e}`);
+            }
+        }
+
         // 5. Quét tính năng Form Tư Vấn (Free Consultation) trên trang sản phẩm
         let hasFreeConsultation = false;
         let productUrlForConsultation = '';
@@ -122,6 +146,7 @@ export class HomePage extends BasePage {
         console.log(` Kết quả phân tích Heuristic - Có form tư vấn miễn phí: ${hasFreeConsultation ? 'CÓ' : 'KHÔNG'}`);
         console.log(` Kết quả phân tích Heuristic - Có đặt bàn: ${hasBooking ? 'CÓ' : 'KHÔNG'}`);
         console.log(` Kết quả phân tích Heuristic - Có giỏ hàng: ${hasCart ? 'CÓ' : 'KHÔNG'}`);
+        console.log(` Kết quả phân tích Heuristic - Có mã giảm giá: ${hasDiscount ? 'CÓ' : 'KHÔNG'}`);
 
         const featuresDir = path.resolve(__dirname, '../../../data/templates');
         if (!fs.existsSync(featuresDir)) {
@@ -138,7 +163,8 @@ export class HomePage extends BasePage {
                 newsletter: hasNewsletter,
                 freeConsultation: hasFreeConsultation,
                 booking: hasBooking,
-                cart: hasCart
+                cart: hasCart,
+                discount: hasDiscount
             }
         };
 

@@ -62,6 +62,14 @@ export class FeatureHelper {
     }
 
     /**
+     * Kiểm tra xem website có chức năng mã giảm giá không
+     */
+    static hasDiscountFeature(): boolean {
+        this.loadData();
+        return this.featureData?.features?.discount === true;
+    }
+
+    /**
      * Lấy URL trang chi tiết sản phẩm đã quét được
      */
     static getProductUrlForConsultation(): string {
