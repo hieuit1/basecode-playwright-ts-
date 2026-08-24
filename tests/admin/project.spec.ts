@@ -7,7 +7,7 @@ import { MenuHelper } from "../../src/utils/MenuHelper";
 
 test.use({ video: 'retain-on-failure' });
 
-if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['Dự án', 'Project', 'Công trình'])) {
+if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['Dự án', 'Project'])) {
     test.describe("Project Management Tests", () => {
         let projectPage: ProjectPage;
 
