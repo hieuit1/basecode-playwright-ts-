@@ -1,0 +1,12 @@
+[💻 Desktop] LCP quá cao: 10000ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p>Bàn ăn Concorde trong mỗi ngôi nhà, phòng ăn luôn là nơi lưu giữ những khoảnh khắc ấm áp nhất, nơi ngọn lửa gia đình được thắp sáng qua từng bữa cơm thường nhật. Để biến không gian này thành một tá...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p>Bàn ăn Concorde trong mỗi ngôi nhà, phòng ăn luôn là nơi lưu giữ những khoảnh khắc ấm áp nhất, nơi ngọn lửa gia đình được thắp sáng qua từng bữa cơm thường nhật. Để biến không gian này thành một tá...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code2.mimadigi.vn/2026/august/cfurni_111926w/ban-sofa

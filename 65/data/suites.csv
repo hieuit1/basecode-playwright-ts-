@@ -1,0 +1,319 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","141788","TC-Negative: nhập số điện thoại sai định dạng","Desktop Chrome","2026-08-24","failed","2026-08-24","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","159624","Kiểm tra SEO Onpage: Sofa ARMONI (/sofa-armoni)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","23040","Kiểm tra SEO Onpage: (/he-thong-cua-hang)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","14346","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-24","passed","2026-08-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","50384","Kiểm tra SEO Onpage: Tủ văn phòng (/tu-van-phong)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","180438","Kiểm tra SEO Onpage: https://code2.mimadigi.vn/2026/august/cfurni_111926w/ (/index.php)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","33804","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-24","passed","2026-08-24","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","169745","Kiểm tra SEO Onpage: Cúp C2 là gì? Tất tần tật về Europa League (/cup-c2-la-gi-tat-tan-tat-ve-europa-league)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","78653","Kiểm tra SEO Onpage: Ghế CH301 (/ghe-ch301)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 12/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","132961","Kiểm tra SEO Onpage: https://code2.mimadigi.vn/2026/august/cfurni_111926w/tags (/tags-san-pham)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","70335","TC: Tự động tạo mã giảm giá trên Admin và áp dụng thành công trên Web","Desktop Chrome","2026-08-24","failed","2026-08-24","Discount Code Feature Tests > Nhóm 1 — Tự tạo mã và áp dụng (Positive)","web/discount.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","116435","Kiểm tra SEO Onpage: Ghế ROOVY (/ghe-roovy)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","42049","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-24","passed","2026-08-24","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","87012","Kiểm tra SEO Onpage: Giường gỗ (/giuong-go)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","77418","Kiểm tra SEO Onpage: Giường cổ điển (/giuong-co-dien)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","180280","Kiểm tra SEO Onpage: Bảo mật thông tin khách hàng (/bao-mat-thong-tin-khach-hang)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","133864","TC-Negative: không nhập họ tên","Desktop Chrome","2026-08-24","failed","2026-08-24","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","88489","TC: Security - SQL Injection cơ bản (Cố gắng bypass query của Database)","Desktop Chrome","2026-08-24","failed","2026-08-24","Discount Code Feature Tests > Nhóm 4 — Kiểm thử Bảo mật (Security/Hack)","web/discount.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","111243","Kiểm tra SEO Onpage: Ghế OAKA QB02 (/ghe-oaka-qb02)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","81625","Kiểm tra SEO Onpage: Mẫu xe hybrid (/mau-xe-hyber)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","146060","Kiểm tra SEO Onpage: KỆ FONUN (/ke-fonun)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","48237","Kiểm tra SEO Onpage: Phòng ngủ (/phong-ngu1)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","113770","TC-Negative: nhập email sai định dạng","Desktop Chrome","2026-08-24","failed","2026-08-24","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","29053","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-24","passed","2026-08-24","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 75/100 | Đạt: 18/24 tiêu chí | Ngưỡng: 96%
+
+KHÁ","176091","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","82260","Kiểm tra SEO Onpage: Văn phòng (/van-phong)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","32656","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-08-24","passed","2026-08-24","Product Management Tests","admin/product.spec.ts","",""
+"","87795","TC: Áp dụng mã đã cạn kiệt lượt dùng","Desktop Chrome","2026-08-24","failed","2026-08-24","Discount Code Feature Tests > Nhóm 3 — Tạo mã lỗi trên Admin và kiểm tra (Negative)","web/discount.spec.ts","",""
+"","180324","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","35320","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-24","passed","2026-08-24","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","118852","Kiểm tra SEO Onpage: Ghế MAISON (/ghe-maison)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","600537","Bulk insert 35 projects via Copy and verify Load More on website","Desktop Chrome","2026-08-24","broken","2026-08-24","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","175019","Kiểm tra SEO Onpage: Sofa CULLEN (/sofa-cullen)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","115723","Kiểm tra SEO Onpage: Bàn nhựa A809 (/ban-nhua-a809)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","79336","Kiểm tra SEO Onpage: Sofa thư giãn (/sofa-thu-gian)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","151743","Kiểm tra SEO Onpage: Bàn Bar T02 (/ban-bar-t02-10)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","180355","Kiểm tra SEO Onpage: Sofa AZURA (/sofa-azura)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","180650","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","92801","TC: Áp dụng mã không hợp lệ - Nhập mã không tồn tại","Desktop Chrome","2026-08-24","failed","2026-08-24","Discount Code Feature Tests > Nhóm 2 — Nhập mã không hợp lệ (Negative)","web/discount.spec.ts","",""
+"","43532","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-24","passed","2026-08-24","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","125722","Kiểm tra SEO Onpage: Sofa đẹp (/sofa-dep)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","133219","Kiểm tra SEO Onpage: Ghế nhựa TOMA Y616 (/ghe-nhua-toma-y616)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 83/100 | Đạt: 19/23 tiêu chí | Ngưỡng: 96%
+
+TỐT","163513","Kiểm tra SEO Onpage: Bàn sofa (/ban-sofa)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","18199","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-24","passed","2026-08-24","Contract Feature Tests","web/contract.spec.ts","",""
+"","95769","TC: Security - Directory Traversal (Lỗ hổng duyệt thư mục)","Desktop Chrome","2026-08-24","failed","2026-08-24","Discount Code Feature Tests > Nhóm 4 — Kiểm thử Bảo mật (Security/Hack)","web/discount.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","111515","Kiểm tra SEO Onpage: Kệ tivi (/ke-tivi)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","84856","Kiểm tra SEO Onpage: Tủ hồ sơ (/tu-ho-so)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","85465","Submit form successfully with valid data","Desktop Chrome","2026-08-24","passed","2026-08-24","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","149194","Kiểm tra SEO Onpage: Sofa MARLO (/sofa-marlo)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","180339","Kiểm tra SEO Onpage: Ghế sofa góc SENGEYT (/ghe-sofa-goc-sengeyt)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","160506","Kiểm tra SEO Onpage: Lionel Messi vs Cristiano Ronaldo: Ai mới thực sự là ông vua của các danh hiệu? (/lionel-messi-vs-cristiano-ronaldo-ai-moi-thuc-su-la-ong-vua-cua-cac-danh-hieu)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","113924","Kiểm tra SEO Onpage: Sofa SAM (/sofa-sam)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","8449","Login successfully with valid credentials","Desktop Chrome","2026-08-24","passed","2026-08-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","63702","Kiểm tra SEO Onpage: Kệ giày (/ke-giay)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","178007","Kiểm tra SEO Onpage: Chính sách đổi trả (/chinh-sach-doi-tra)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","75734","Kiểm tra SEO Onpage: Tĩnh lặng house 3 (1) (1) (1) (/tinh-lang-house-3-1-1-1)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","79945","Kiểm tra SEO Onpage: Bàn ZOLAVOX (/ban-zolavox)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","154783","Kiểm tra SEO Onpage: Bàn trà BONY W23 (/ban-tra-bony-w23)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","151016","Kiểm tra SEO Onpage: Ghế ăn (/ghe-an)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","67550","Kiểm tra SEO Onpage: Tủ áo (/tu-ao)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","108680","Kiểm tra SEO Onpage: Ghế giám đốc (/ghe-giam-doc)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","180335","Kiểm tra SEO Onpage: Ghế đôn FLUWERI (/ghe-don-fluweri)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","10283","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-24","passed","2026-08-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","147044","Kiểm tra SEO Onpage: Sofa DENSO (/sofa-denso)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","14672","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-24","passed","2026-08-24","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","173747","Kiểm tra SEO Onpage: Sofa SOHAN (/sofa-sohan)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","106406","Kiểm tra SEO Onpage: Sofa góc (L) (/sofa-goc-l)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","119406","Kiểm tra SEO Onpage: Ghế trưởng phòng (/ghe-truong-phong)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","43690","TC-05: Thêm nhiều sản phẩm (3-5 SP) vào giỏ hàng","Desktop Chrome","2026-08-24","failed","2026-08-24","Cart Feature Tests","web/cart.spec.ts","",""
+"","13618","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-24","passed","2026-08-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","83057","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-24","passed","2026-08-24","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","46305","Kiểm tra SEO Onpage: Bàn giám đốc (/ban-giam-doc)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","169095","Kiểm tra SEO Onpage: Ghế ngoài trời SKY VS03 (/ghe-ngoai-troi-sky-vs03)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","107473","Kiểm tra SEO Onpage: Ghế RAFFI 3054 (/ghe-raffi-3054)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","25967","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-24","passed","2026-08-24","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","124037","Kiểm tra SEO Onpage: Sofa ROCCA (/sofa-rocca)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","115767","Kiểm tra SEO Onpage: Cách chọn bàn ăn phong cách hiện đại (/chon-ban-an-phong-cach-hien-dai)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","18280","TC-06: Giỏ hàng trống khi chưa thêm sản phẩm","Desktop Chrome","2026-08-24","passed","2026-08-24","Cart Feature Tests","web/cart.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","94076","Kiểm tra SEO Onpage: Băng chờ (/bang-cho)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","59509","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-08-24","passed","2026-08-24","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","96961","Kiểm tra SEO Onpage: Sofa đôn (/sofa-don)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","143673","Kiểm tra SEO Onpage: Tìm Hiểu Giải Cúp C1 Là Gì? (/tim-hieu-giai-cup-c1-la-gi)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","608014","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-24","broken","2026-08-24","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","61060","Kiểm tra SEO Onpage: Cao cấp (/cao-cap)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","5725","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-24","passed","2026-08-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","46800","TC: Security - Buffer Overflow (Nhập chuỗi ký tự dài bất thường để làm tràn bộ nhớ/chậm server)","Desktop Chrome","2026-08-24","passed","2026-08-24","Discount Code Feature Tests > Nhóm 4 — Kiểm thử Bảo mật (Security/Hack)","web/discount.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","96691","Kiểm tra SEO Onpage: Bàn Tab MUSE (/ban-tab-muse)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","24899","TC-Negative: tấn công XSS","Desktop Chrome","2026-08-24","passed","2026-08-24","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","85415","Kiểm tra SEO Onpage: Fafe (/fafe)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","605470","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-08-24","broken","2026-08-24","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","101707","Kiểm tra SEO Onpage: Ghế hội trường (/ghe-hoi-truong)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","116245","Kiểm tra SEO Onpage: Bàn CF HURI B31A (/ban-cf-huri-b31a)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","180448","Kiểm tra SEO Onpage: Bàn ăn (/ban-an)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 75/100 | Đạt: 18/24 tiêu chí | Ngưỡng: 96%
+
+KHÁ","121487","Kiểm tra SEO Onpage: Dự án (/du-an)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","74389","Kiểm tra SEO Onpage: Thảm sofa (/tham-sofa)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","107129","TC-02: Thanh toán đơn hàng thành công (Ngân hàng) và verify trên Admin","Desktop Chrome","2026-08-24","failed","2026-08-24","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","19143","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-24","passed","2026-08-24","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","95338","Kiểm tra SEO Onpage: Ghế LUNAR (/ghe-lunar)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","170566","Kiểm tra SEO Onpage: Cúp C3 tên chính thức hiện tại là UEFA (/cup-c3-la-gi)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","79491","Kiểm tra SEO Onpage: Ghế văn phòng (/ghe-van-phong)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","118379","Kiểm tra SEO Onpage: Vì sao xe điện đang trở thành xu hướng của ngành ô tô toàn cầu? (/vi-sao-xe-dien-dang-tro-thanh-xu-huong-cua-nganh-o-to-toan-cau)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","147622","Kiểm tra SEO Onpage: Ghế WILO (/ghe-wilo)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","11747","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-24","passed","2026-08-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","93497","TC-03: Giảm số lượng sản phẩm trong giỏ hàng","Desktop Chrome","2026-08-24","failed","2026-08-24","Cart Feature Tests","web/cart.spec.ts","",""
+"","88347","TC: Security - Cross-Site Scripting - XSS (Chèn mã độc JavaScript)","Desktop Chrome","2026-08-24","failed","2026-08-24","Discount Code Feature Tests > Nhóm 4 — Kiểm thử Bảo mật (Security/Hack)","web/discount.spec.ts","",""
+"","100616","Add news successfully and verify on website","Desktop Chrome","2026-08-24","passed","2026-08-24","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","106760","Kiểm tra SEO Onpage: Chân bàn rời (/chan-ban-roi)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","59203","Kiểm tra SEO Onpage: Công nghệ tự lái hoạt động như thế nào trên xe hiện đại? (/cong-nghe-tu-lai-hoat-dong-nhu-the-nao-tren-xe-hien-dai)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","116036","Add product successfully and verify on website","Desktop Chrome","2026-08-24","failed","2026-08-24","Product Management Tests","admin/product.spec.ts","",""
+"","78060","Add project should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-24","failed","2026-08-24","Project Management Tests","admin/project.spec.ts","",""
+"","20818","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-24","passed","2026-08-24","Contract Feature Tests","web/contract.spec.ts","",""
+"","180319","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","108847","TC-Negative: không nhập địa chỉ","Desktop Chrome","2026-08-24","failed","2026-08-24","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","82348","Kiểm tra SEO Onpage: Ghế trang điểm (/ghe-trang-diem)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","23577","TC-02: Tăng số lượng sản phẩm trong giỏ hàng","Desktop Chrome","2026-08-24","failed","2026-08-24","Cart Feature Tests","web/cart.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","115938","Kiểm tra SEO Onpage: Gỗ soài (/go-soai)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","139820","Kiểm tra SEO Onpage: Ghế CF 3051 (/ghe-cf-3051)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","106138","Kiểm tra SEO Onpage: Sofa bệt và bed (/sofa-bet-va-bed)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","80955","Add recruitment successfully and verify on website","Desktop Chrome","2026-08-24","failed","2026-08-24","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","20926","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-24","passed","2026-08-24","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","139854","Kiểm tra SEO Onpage: Bàn họp (/ban-hop)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","111449","Kiểm tra SEO Onpage: Tab đầu giường (/tab-dau-giuong)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","146364","Kiểm tra SEO Onpage: 18_100754_ General 1946 (/18100754-general-1946-7vol2)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","60352","TC: Security - Cố gắng thực thi lệnh phá hủy Database","Desktop Chrome","2026-08-24","passed","2026-08-24","Discount Code Feature Tests > Nhóm 4 — Kiểm thử Bảo mật (Security/Hack)","web/discount.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","89244","Kiểm tra SEO Onpage: Ghế thư giãn JT (/ghe-thu-gian-jt-137)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","111616","Kiểm tra SEO Onpage: Ghế bar OPUL (/ghe-bar-opul)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","12639","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-24","passed","2026-08-24","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","76092","Kiểm tra SEO Onpage: Ghế NORD 8112 (/ghe-nord-8112)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","77365","Kiểm tra SEO Onpage: Cao su mina (/cao-su-mina)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","133889","Kiểm tra SEO Onpage: Kệ Tầng MION (/ke-tang-mion)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","161892","Kiểm tra SEO Onpage: KỆ XEGON (/ke-xegon)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","80835","Kiểm tra SEO Onpage: Bàn học và ghế học (/ban-hoc-va-ghe-hoc)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","100182","TC-01: Thêm 1 sản phẩm vào giỏ hàng thành công","Desktop Chrome","2026-08-24","failed","2026-08-24","Cart Feature Tests","web/cart.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","48050","Kiểm tra SEO Onpage: Thi công phòng bếp (/thi-cong-phong-bep)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","118879","TC-Negative: không nhập số điện thoại","Desktop Chrome","2026-08-24","failed","2026-08-24","Checkout Feature Tests","web/checkout.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","107250","Kiểm tra SEO Onpage: Sofa băng (/sofa-bang)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","69417","Kiểm tra SEO Onpage: Giường ngủ bé cưng (/giuong-ngu-be-cung)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","180366","Kiểm tra SEO Onpage: Sofa bed MONI (/sofa-bed-moni)","Desktop Chrome","2026-08-24","broken","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","73996","Kiểm tra SEO Onpage: Hàng giải trí (/hang-giai-tri)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","45382","Add project should fail with không nhập tiêu đề","Desktop Chrome","2026-08-24","passed","2026-08-24","Project Management Tests","admin/project.spec.ts","",""
+"","101013","Add project successfully and verify on website","Desktop Chrome","2026-08-24","passed","2026-08-24","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","114932","Kiểm tra SEO Onpage: Bàn văn phòng (/ban-van-phong)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","99067","Kiểm tra SEO Onpage: Bàn Tròn Xoay BA8 (/ban-tron-xoay-ba8)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","77094","TC: Áp dụng mã không hợp lệ - Bỏ trống ô nhập rồi bấm Áp Dụng","Desktop Chrome","2026-08-24","passed","2026-08-24","Discount Code Feature Tests > Nhóm 2 — Nhập mã không hợp lệ (Negative)","web/discount.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","86520","Kiểm tra SEO Onpage: Bàn Console (/ban-console)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
+"","130498","TC-01: Thanh toán đơn hàng thành công (COD) và verify trên Admin","Desktop Chrome","2026-08-24","failed","2026-08-24","Checkout Feature Tests","web/checkout.spec.ts","",""
+"","605449","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-08-24","broken","2026-08-24","Product Management Tests","admin/product.spec.ts","",""
+"","78874","TC-04: Xóa sản phẩm khỏi giỏ hàng","Desktop Chrome","2026-08-24","failed","2026-08-24","Cart Feature Tests","web/cart.spec.ts","",""
+"","30173","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-24","passed","2026-08-24","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","105176","Kiểm tra SEO Onpage: Sofa CLAR (/sofa-clar)","Desktop Chrome","2026-08-24","failed","2026-08-24","SEO Page","seo/seo.spec.ts","",""
