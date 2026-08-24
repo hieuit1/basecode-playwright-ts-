@@ -1,0 +1,54 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     86/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          18
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/21):
+--- PERFORMANCE ---
+   1. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 48/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 48/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   2. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 10257ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 10257ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p>Chuyên thiết kế và thi công bảng hiệu quảng cáo, mang đến giải pháp sáng tạo, chuyên nghiệp, bền đẹp, giúp thương hiệu nổi bật và thu hút khách hàng.</p>
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p>Chuyên thiết kế và thi công bảng hiệu quảng cáo, mang đến giải pháp sáng tạo, chuyên nghiệp, bền đẹp, giúp thương hiệu nổi bật và thu hút khách hàng.</p>
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code6.mimadigi.vn/2026/august/haiyen_112526W/tin-tuc
+   3. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.18 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.18 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="footer">
+          - <div class="footer">
+          - <div class="footer">
+          - <p class="footer-title mxh">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="footer"> | <div class="footer"> | <div class="footer">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

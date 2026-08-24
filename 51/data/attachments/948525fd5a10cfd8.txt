@@ -1,1 +1,0 @@
-Heading phân cấp sai: Nhảy cấp từ H1 → H3 ("Tổ chức liên hoan"); Nhảy cấp từ H3 → H6 ("Giỏ hàng của bạn")
