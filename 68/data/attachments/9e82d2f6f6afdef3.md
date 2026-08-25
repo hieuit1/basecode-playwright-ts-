@@ -1,0 +1,364 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: web/contract.spec.ts >> Contract Feature Tests >> Submit form successfully with valid data
+- Location: tests/web/contract.spec.ts:96:5
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByText('auto test 1787641728273').first() to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "" [ref=e6] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e7]: 
+        - listitem [ref=e8]:
+          - generic [ref=e10]: Xin chào, admin!
+      - list [ref=e11]:
+        - link " Hỗ trợ" [ref=e12] [cursor=pointer]:
+          - /url: " "
+          - generic [ref=e13]: 
+          - text: Hỗ trợ
+        - listitem [ref=e14]:
+          - link "" [ref=e15] [cursor=pointer]:
+            - /url: ../
+            - generic [ref=e16]: 
+        - listitem [ref=e17]:
+          - link " 7" [ref=e18] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e19]: 
+            - generic [ref=e20]: "7"
+          - text:  
+        - listitem [ref=e21]:
+          - link "" [ref=e22] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e23]: 
+          - text:    
+        - listitem [ref=e24]:
+          - generic [ref=e27] [cursor=pointer]:
+            - text: Nhà quản trị
+            - paragraph [ref=e28]: Administrator
+          - text:    
+    - complementary [ref=e29]:
+      - link [ref=e30] [cursor=pointer]:
+        - /url: index.php
+      - navigation [ref=e32]:
+        - menu [ref=e33]:
+          - listitem [ref=e34]:
+            - link " Bảng điều khiển" [ref=e35] [cursor=pointer]:
+              - /url: index.php
+              - generic [ref=e36]: 
+              - paragraph [ref=e37]: Bảng điều khiển
+          - listitem [ref=e38]:
+            - link " Group Giới Thiệu" [ref=e39] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e40]: 
+              - paragraph [ref=e41]: Group Giới Thiệu 
+            - text:         
+          - listitem [ref=e42]:
+            - link " Group Sản Phẩm" [ref=e43] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e44]: 
+              - paragraph [ref=e45]: Group Sản Phẩm 
+            - text:     
+          - listitem [ref=e46]:
+            - link " Quản lý bài viết" [ref=e47] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e48]: 
+              - paragraph [ref=e49]: Quản lý bài viết 
+            - text:  
+          - listitem [ref=e50]:
+            - link " Quản lý nhận tin" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e52]: 
+              - paragraph [ref=e53]: Quản lý nhận tin 
+            - text: 
+          - listitem [ref=e54]:
+            - link " Quản lý trang tĩnh" [ref=e55] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e56]: 
+              - paragraph [ref=e57]: Quản lý trang tĩnh 
+            - text:   
+          - listitem [ref=e58]:
+            - link " Quản lý hình ảnh - video" [ref=e59] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e60]: 
+              - paragraph [ref=e61]: Quản lý hình ảnh - video 
+            - text:      
+          - listitem [ref=e62]:
+            - link " Quản lý seo page" [ref=e63] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e64]: 
+              - paragraph [ref=e65]: Quản lý seo page 
+            - text:     
+          - listitem [ref=e66]:
+            - link " Thiết lập thông tin" [ref=e67] [cursor=pointer]:
+              - /url: setting?act=update
+              - generic [ref=e68]: 
+              - paragraph [ref=e69]: Thiết lập thông tin
+    - generic [ref=e70]:
+      - list [ref=e74]:
+        - listitem [ref=e75]:
+          - link "Bảng điều khiển" [ref=e76] [cursor=pointer]:
+            - /url: index.php
+        - listitem [ref=e77]: / Quản lý liên hệ
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic "Xóa tất cả" [ref=e80] [cursor=pointer]:
+            - generic [ref=e81]: 
+            - text: Xóa tất cả
+          - generic [ref=e83]:
+            - searchbox "Tìm kiếm" [ref=e84]
+            - button "" [ref=e86] [cursor=pointer]:
+              - generic [ref=e87]: 
+        - generic [ref=e88]:
+          - heading "Danh sách liên hệ" [level=3] [ref=e90]
+          - table [ref=e92]:
+            - rowgroup [ref=e93]:
+              - row "STT Họ tên Điện thoại Email Xác nhận Thao tác" [ref=e94]:
+                - columnheader [ref=e95]:
+                  - checkbox [ref=e97] [cursor=pointer]
+                - columnheader "STT" [ref=e99]
+                - columnheader "Họ tên" [ref=e100]
+                - columnheader "Điện thoại" [ref=e101]
+                - columnheader "Email" [ref=e102]
+                - columnheader "Xác nhận" [ref=e103]
+                - columnheader "Thao tác" [ref=e104]
+            - rowgroup [ref=e105]:
+              - row "Không có dữ liệu" [ref=e106]:
+                - cell "Không có dữ liệu" [ref=e107]
+        - generic "Xóa tất cả" [ref=e109] [cursor=pointer]:
+          - generic [ref=e110]: 
+          - text: Xóa tất cả
+    - contentinfo [ref=e111]:
+      - paragraph [ref=e114]:
+        - strong [ref=e116]: Công Ty TNHH Thương Mại Dịch Vụ MIMA
+        - text: MST
+        - strong [ref=e117]: ":"
+        - text: "0318672839"
+        - strong [ref=e118]: "Địa chỉ:"
+        - link [ref=e119] [cursor=pointer]:
+          - /url: https://maps.app.goo.gl/rA8evCuRwT3Go6bR9
+          - text: 31/3B Ấp Thới Tứ 1, Xã Đông Thạnh, TP Hồ Chí Minh
+        - text: ", Việt Nam"
+        - strong [ref=e120]: "Hotline:"
+        - text: 0909 035 333
+        - strong [ref=e121]: "Website:"
+        - link [ref=e122] [cursor=pointer]:
+          - /url: https://mimadigi.com
+          - text: https://
+        - link [ref=e123] [cursor=pointer]:
+          - /url: https://mimadigi.com
+          - text: mimadigi.com
+        - strong [ref=e124]: "Email:"
+        - text: info@mimadigi.com
+        - link [ref=e125] [cursor=pointer]:
+          - /url: //www.dmca.com/Protection/Status.aspx?ID=2f39ff2a-7db5-4e53-9bb6-15ee8957080c&refurl=https://mimadigi.com/
+          - img [ref=e126]
+        - link [ref=e127] [cursor=pointer]:
+          - /url: http://online.gov.vn/Website/chi-tiet-134906
+          - img [ref=e128]
+  - generic [ref=e129]:
+    - generic [ref=e130]: Tùy chỉnh
+    - generic [ref=e132]:
+      - generic [ref=e133]:
+        - heading "Slidebar" [level=4] [ref=e134]
+        - generic [ref=e135]:
+          - button [ref=e136] [cursor=pointer]
+          - button [ref=e137] [cursor=pointer]
+          - button [ref=e138] [cursor=pointer]
+          - button [ref=e139] [cursor=pointer]
+          - button [ref=e140] [cursor=pointer]
+          - button [ref=e141] [cursor=pointer]
+          - button [ref=e142] [cursor=pointer]
+          - button [ref=e143] [cursor=pointer]
+          - button [ref=e145] [cursor=pointer]
+          - button [ref=e146] [cursor=pointer]
+          - button [ref=e147] [cursor=pointer]
+          - button [ref=e148] [cursor=pointer]
+          - button [ref=e149] [cursor=pointer]
+          - button [ref=e150] [cursor=pointer]
+          - button [ref=e151] [cursor=pointer]
+          - button [ref=e152] [cursor=pointer]
+      - generic [ref=e153]:
+        - heading "Navbar Header" [level=4] [ref=e154]
+        - generic [ref=e155]:
+          - button [ref=e156] [cursor=pointer]
+          - button [ref=e157] [cursor=pointer]
+          - button [ref=e158] [cursor=pointer]
+          - button [ref=e159] [cursor=pointer]
+          - button [ref=e160] [cursor=pointer]
+          - button [ref=e161] [cursor=pointer]
+          - button [ref=e162] [cursor=pointer]
+          - button [ref=e163] [cursor=pointer]
+          - button [ref=e165] [cursor=pointer]
+          - button [ref=e166] [cursor=pointer]
+          - button [ref=e167] [cursor=pointer]
+          - button [ref=e168] [cursor=pointer]
+          - button [ref=e169] [cursor=pointer]
+          - button [ref=e170] [cursor=pointer]
+          - button [ref=e171] [cursor=pointer]
+          - button [ref=e172] [cursor=pointer]
+      - generic [ref=e173]:
+        - heading "Light mode" [level=4] [ref=e174]
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - img "Light" [ref=e181] [cursor=pointer]
+            - generic [ref=e182]: Light
+          - generic [ref=e183]:
+            - img "Dark" [ref=e187] [cursor=pointer]
+            - generic [ref=e188]: Dark
+          - generic [ref=e189]:
+            - img "System" [ref=e193] [cursor=pointer]
+            - generic [ref=e194]: System
+      - generic [ref=e195]:
+        - heading "Themes" [level=4] [ref=e196]
+        - generic [ref=e198]:
+          - generic [ref=e199]:
+            - img "Default" [ref=e203] [cursor=pointer]
+            - generic [ref=e204]: Default
+          - generic [ref=e205]:
+            - img "Bordered" [ref=e209] [cursor=pointer]
+            - generic [ref=e210]: Bordered
+          - generic [ref=e211]:
+            - img "Semi Dark" [ref=e215] [cursor=pointer]
+            - generic [ref=e216]: Semi Dark
+    - generic [ref=e218] [cursor=pointer]: 
+  - img
+```
+
+# Test source
+
+```ts
+  30  |         this.sendButton = page.locator("//button[contains(text(),'Gửi')]");
+  31  |         this.resetButton = page.locator("//button[contains(text(),'Nhập lại')]");
+  32  |         this.successMessage = page.locator("//div[@id='alert']");
+  33  |         this.dashboardElement = page.locator("//span[@class='text-split']");
+  34  |         this.notificationDropdown = page.locator("//li[@class='nav-item dropdown']//a[@class='nav-link']");
+  35  |         this.contactLink = page.locator("//a[contains(text(),'Liên hệ')]");
+  36  |         this.selectAllCheckbox = page.locator("//input[@id='selectall-checkbox']");
+  37  |         this.deleteAllButton = page.locator("//div[@class='card-footer text-sm']//a[@id='delete-all']");
+  38  |         this.confirmDeleteButton = page.locator("//button[contains(text(),'Đồng ý')]");
+  39  |     }
+  40  | 
+  41  |     // Điền dữ liệu vào form liên hệ (Cố tình làm chậm để lừa reCAPTCHA)
+  42  |     async fillContactForm(fullname: string, phone: string, address: string, email: string, subject: string, content: string) {
+  43  |         await test.step(`Điền thông tin liên hệ: ${fullname}`, async () => {
+  44  |             const typingDelay = 50; // Delay 50ms giữa mỗi lần gõ phím (giống người thật)
+  45  |             const fieldDelay = 300; // Nghỉ 300ms giữa việc chuyển sang ô tiếp theo
+  46  | 
+  47  |             if (fullname) {
+  48  |                 await this.fullnameInput.click();
+  49  |                 await this.fullnameInput.pressSequentially(fullname, { delay: typingDelay });
+  50  |                 await this.page.waitForTimeout(fieldDelay);
+  51  |             }
+  52  |             if (phone) {
+  53  |                 await this.phoneInput.click();
+  54  |                 await this.phoneInput.pressSequentially(phone, { delay: typingDelay });
+  55  |                 await this.page.waitForTimeout(fieldDelay);
+  56  |             }
+  57  |             if (address) {
+  58  |                 await this.addressInput.click();
+  59  |                 await this.addressInput.pressSequentially(address, { delay: typingDelay });
+  60  |                 await this.page.waitForTimeout(fieldDelay);
+  61  |             }
+  62  |             if (email) {
+  63  |                 await this.emailInput.click();
+  64  |                 await this.emailInput.pressSequentially(email, { delay: typingDelay });
+  65  |                 await this.page.waitForTimeout(fieldDelay);
+  66  |             }
+  67  |             if (subject) {
+  68  |                 await this.subjectInput.click();
+  69  |                 await this.subjectInput.pressSequentially(subject, { delay: typingDelay });
+  70  |                 await this.page.waitForTimeout(fieldDelay);
+  71  |             }
+  72  |             if (content) {
+  73  |                 await this.contentTextarea.click();
+  74  |                 await this.contentTextarea.pressSequentially(content, { delay: typingDelay });
+  75  |                 await this.page.waitForTimeout(fieldDelay);
+  76  |             }
+  77  | 
+  78  |         });
+  79  |     }
+  80  |     async fillContactFormNe(fullname: string, phone: string, address: string, email: string, subject: string, content: string) {
+  81  |         await test.step(`Điền thông tin liên hệ: ${fullname}`, async () => {
+  82  |             if (fullname) { await this.fullnameInput.fill(fullname); }
+  83  |             if (phone) { await this.phoneInput.fill(phone); }
+  84  |             if (address) { await this.addressInput.fill(address); }
+  85  |             if (email) { await this.emailInput.fill(email); }
+  86  |             if (subject) { await this.subjectInput.fill(subject); }
+  87  |             if (content) { await this.contentTextarea.fill(content); }
+  88  |         });
+  89  |     }
+  90  | 
+  91  |     async gotoContactPage() {
+  92  |         const baseUrl = process.env.BASE_URL?.endsWith('/') ? process.env.BASE_URL : process.env.BASE_URL + '/';
+  93  |         await this.page.goto(baseUrl + 'lien-he');
+  94  |     }
+  95  | 
+  96  |     // Bấm nút Gửi
+  97  |     async clickSend() {
+  98  |         await test.step("Bấm nút Gửi", async () => {
+  99  |             // Đợi 2.5 giây để mô phỏng người dùng đọc lại form và chờ reCAPTCHA load token ngầm xong
+  100 |             await this.page.waitForTimeout(3000);
+  101 | 
+  102 |             // Từ từ rê chuột vào nút Gửi giống người thật
+  103 |             await this.sendButton.hover({ force: true });
+  104 |             await this.page.waitForTimeout(1000); // Khựng lại nửa giây trước khi bấm
+  105 | 
+  106 |             await this.clickOn(this.sendButton);
+  107 |         });
+  108 |     }
+  109 | 
+  110 |     async clickReset() {
+  111 |         await test.step("Bấm nút Nhập lại", async () => {
+  112 |             await this.clickOn(this.resetButton);
+  113 |         });
+  114 |     }
+  115 | 
+  116 |     async goToContactManagement() {
+  117 |         await test.step("Mở danh sách Liên hệ từ thông báo", async () => {
+  118 |             await this.clickOn(this.notificationDropdown);
+  119 |             await this.clickOn(this.contactLink);
+  120 |         });
+  121 |     }
+  122 | 
+  123 |     getContactRow(uniqueName: string): Locator {
+  124 |         return this.page.getByText(uniqueName).first();
+  125 |     }
+  126 | 
+  127 |     async verifyContactExists(uniqueName: string) {
+  128 |         await test.step(`Xác nhận liên hệ có tên '${uniqueName}' xuất hiện trong Admin`, async () => {
+  129 |             const targetCell = this.getContactRow(uniqueName);
+> 130 |             await targetCell.waitFor({ state: 'visible', timeout: 10000 });
+      |                              ^ TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+  131 |         });
+  132 |     }
+  133 |     async deleteContact() {
+  134 |         await test.step(`Xóa liên hệ`, async () => {
+  135 |             await this.clickOn(this.selectAllCheckbox);
+  136 |             await this.clickOn(this.deleteAllButton);
+  137 |             await this.clickOn(this.confirmDeleteButton);
+  138 |         });
+  139 |     }
+  140 | 
+  141 | }
+  142 | 
+```
