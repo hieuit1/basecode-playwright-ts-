@@ -1,0 +1,552 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: dv1 (/dv1)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 87/100 dưới ngưỡng 96%. Có 2/15 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e6]:
+      - link "Lorem Ipsum" [ref=e7] [cursor=pointer]:
+        - /url: https://code5.mimadigi.vn/2026/july/thuexe_toconghop_000426W/
+        - img "Lorem Ipsum" [ref=e8]
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link "Trang chủ" [ref=e11] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e12]:
+          - link "Về chúng tôi" [ref=e13] [cursor=pointer]:
+            - /url: gioi-thieu
+        - listitem [ref=e14]:
+          - link "Dịch vụ" [ref=e15] [cursor=pointer]:
+            - /url: dich-vu
+            - text: Dịch vụ
+            - img [ref=e16]
+        - listitem [ref=e18]:
+          - link "Loại xe" [ref=e19] [cursor=pointer]:
+            - /url: loai-xe
+            - text: Loại xe
+            - img [ref=e20]
+        - listitem [ref=e22]:
+          - link "Bảng giá" [ref=e23] [cursor=pointer]:
+            - /url: bang-gia
+        - listitem [ref=e24]:
+          - link "Tuyến nổi bật" [ref=e25] [cursor=pointer]:
+            - /url: tuyen-noi-bat
+        - listitem [ref=e26]:
+          - link "Tin tức" [ref=e27] [cursor=pointer]:
+            - /url: tin-tuc
+        - listitem [ref=e28]:
+          - link "Tuyển dụng" [ref=e29] [cursor=pointer]:
+            - /url: tuyen-dung
+        - listitem [ref=e30]:
+          - link "Liên hệ" [ref=e31] [cursor=pointer]:
+            - /url: lien-he
+      - generic [ref=e32]:
+        - img "Hotline" [ref=e33]
+        - link "0888080138" [ref=e35] [cursor=pointer]:
+          - /url: tel:0888080138
+    - list [ref=e38]:
+      - listitem [ref=e39]:
+        - link "Trang chủ" [ref=e40] [cursor=pointer]:
+          - /url: https://code5.mimadigi.vn/2026/july/thuexe_toconghop_000426W/
+          - generic [ref=e41]: Trang chủ
+      - listitem [ref=e42]:
+        - text: /
+        - link "Dịch vụ" [ref=e43] [cursor=pointer]:
+          - /url: https://code5.mimadigi.vn/2026/july/thuexe_toconghop_000426W/dich-vu
+      - listitem [ref=e44]:
+        - text: /
+        - link "Đưa Đón Sân Bay" [ref=e45] [cursor=pointer]:
+          - /url: https://code5.mimadigi.vn/2026/july/thuexe_toconghop_000426W/dua-don-san-bay
+      - listitem [ref=e46]:
+        - text: /
+        - link "Đưa Đón Sân Bay Tân Sơn Nhất" [ref=e47] [cursor=pointer]:
+          - /url: https://code5.mimadigi.vn/2026/july/thuexe_toconghop_000426W/dua-don-san-bay-tan-son-nhat
+      - listitem [ref=e48]:
+        - text: /
+        - link "dv1" [ref=e49] [cursor=pointer]:
+          - /url: https://code5.mimadigi.vn/2026/july/thuexe_toconghop_000426W/dv1
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e55]: dv1
+          - generic [ref=e56]:
+            - img [ref=e57]
+            - generic [ref=e60]: 58 Lượt xem
+          - generic [ref=e63] [cursor=pointer]:
+            - img [ref=e64]
+            - text: Mục lục
+          - generic [ref=e65]:
+            - paragraph [ref=e66]:
+              - text: Mỗi thế hệ iPhone mới ra đời không chỉ đơn thuần là một chiếc điện thoại, mà đó là lời tuyên ngôn về tương lai của công nghệ di động. Dù các thế hệ hiện tại vẫn đang làm tốt nhiệm vụ của mình, giới mộ điệu toàn cầu đã bắt đầu hướng sự chú ý về
+              - link "iPhone 18" [ref=e67] [cursor=pointer]:
+                - /url: https://thiennienkymobile.vn/iphone-new
+              - text: "- siêu phẩm được kỳ vọng sẽ tạo nên bước ngoặt lịch sử cho Apple. Với hàng loạt cải tiến mang tính cách mạng từ phần cứng đến trí tuệ nhân tạo, thiết bị này hứa hẹn tái định nghĩa hoàn toàn cách chúng ta tương tác với thế giới xung quanh và truyền cảm hứng cho những sáng tạo không giới hạn."
+            - paragraph [ref=e68]:
+              - img "iPhone 18 Hứa Hẹn Mang Đến Nhiều Nâng Cấp Đáng Giá" [ref=e69]
+            - heading "Bước Nhảy Vọt Về Sức Mạnh Với Vi Xử Lý 2nm Siêu Nhỏ Của iPhone 18" [level=2] [ref=e70]
+            - paragraph [ref=e71]: Trái tim của dòng máy thế hệ mới dự kiến sẽ là bộ vi xử lý được sản xuất trên tiến trình 2nm tiên tiến nhất của TSMC. Đây là một bước tiến vượt bậc so với tiến trình 3nm hiện tại. Việc thu nhỏ kích thước bóng bán dẫn cho phép Apple tích hợp hàng chục tỷ bóng bán dẫn vào một không gian siêu nhỏ, mang lại hiệu năng xử lý đáng kinh ngạc trong khi lượng điện năng tiêu thụ giảm đi đáng kể. Công nghệ này mở ra khả năng xử lý mượt mà cho mọi tác vụ nặng nhất.
+            - paragraph [ref=e72]: Đối với người dùng, sự nâng cấp này không chỉ dừng lại ở những con số điểm chuẩn khô khan trên giấy tờ. Nó có nghĩa là bạn sẽ được trải nghiệm các tác vụ nặng như biên tập video 8K, chơi các tựa game đồ họa AAA mượt mà như trên máy tính chuyên dụng, và thời lượng pin được kéo dài vượt trội, sẵn sàng đồng hành cùng bạn suốt cả ngày dài năng động mà không lo hết pin giữa chừng.
+            - paragraph [ref=e73]:
+              - img "Bước Nhảy Vọt Về Sức Mạnh Với Vi Xử Lý 2nm Siêu Nhỏ Của iPhone 18" [ref=e74]
+            - 'heading "Diện Mạo Mới Thời Thượng: Màn Hình Không Viền Đúng Nghĩa" [level=2] [ref=e75]'
+            - paragraph [ref=e76]: Apple luôn theo đuổi sự tối giản tuyệt đối trong ngôn ngữ thiết kế. Với thế hệ mới, giấc mơ về một chiếc điện thoại có màn hình tràn viền hoàn mỹ không góc chết đang dần trở thành hiện thực. Các nguồn tin rò rỉ cho thấy hãng đang nỗ lực đưa hệ thống nhận diện khuôn mặt Face ID xuống ẩn hoàn toàn dưới màn hình, mang lại một không gian hiển thị liền mạch chưa từng có.
+            - paragraph [ref=e77]: "Sự thay đổi này mang lại những trải nghiệm thị giác vô cùng mãn nhãn:"
+            - list [ref=e78]:
+              - listitem [ref=e79]:
+                - strong [ref=e80]: "Không gian hiển thị trọn vẹn:"
+                - text: Không còn bị gián đoạn bởi phần khuyết Dynamic Island hay tai thỏ, giúp bạn hoàn toàn đắm chìm khi xem phim hay chơi game.
+              - listitem [ref=e81]:
+                - strong [ref=e82]: "Viền màn hình siêu mỏng:"
+                - text: Được tinh chỉnh bằng công nghệ uốn cong phần cứng mới nhất, tạo cảm giác hình ảnh như đang tràn ra vô cực.
+              - listitem [ref=e83]:
+                - strong [ref=e84]: "Vật liệu tiên tiến:"
+                - text: Khung sườn làm từ hợp kim thế hệ mới, nhẹ hơn titanium nhưng mang lại độ bền bỉ vượt trội trước mọi va đập, cho cảm giác cầm nắm vô cùng chắc chắn và sang trọng.
+            - paragraph [ref=e85]: Đặc biệt, hệ thống phím bấm vật lý truyền thống có thể sẽ được thay thế hoàn toàn bằng các nút cảm ứng lực thông minh với phản hồi rung haptics cực kỳ chân thực. Điều này không chỉ giúp máy có vẻ ngoài liền khối hơn mà còn tăng cường tối đa khả năng kháng nước và kháng bụi cho thiết bị.
+            - paragraph [ref=e86]:
+              - 'img "Diện Mạo Mới Thời Thượng: Màn Hình Không Viền Đúng Nghĩa" [ref=e87]'
+            - heading "Trí Tuệ Nhân Tạo Apple Intelligence Thấu Hiểu Người Dùng" [level=2] [ref=e88]
+            - paragraph [ref=e89]: Không nằm ngoài xu thế phát triển của công nghệ toàn cầu, Apple tiếp tục đầu tư mạnh mẽ vào trí tuệ nhân tạo (AI). Trên phiên bản mới này, Apple Intelligence sẽ được nâng lên một tầm cao mới nhờ sự hỗ trợ của chip xử lý Neural Engine thế hệ tiếp theo, mang lại khả năng xử lý dữ liệu ngay trên thiết bị một cách cực kỳ an toàn và bảo mật.
+            - paragraph [ref=e90]: Hệ thống AI mới không chỉ hỗ trợ dịch thuật hay chỉnh sửa văn bản đơn thuần. Nó có khả năng tự động phân tích thói quen hằng ngày, dự đoán nhu cầu của người dùng để đưa ra các gợi ý chính xác nhất. Từ việc tối ưu hóa pin theo lịch trình di chuyển, tự động sắp xếp công việc cho đến khả năng tương tác tự nhiên như một trợ lý thực thụ bằng giọng nói, thiết bị sẽ trở thành một người bạn đồng hành thông minh, thấu hiểu bạn trong mọi khoảnh khắc cuộc sống. Bạn sẽ cảm nhận được sự tiện lợi khi chiếc điện thoại tự động chuẩn bị sẵn những gì bạn cần trước khi bạn kịp nghĩ tới.
+            - paragraph [ref=e91]:
+              - img "Trí Tuệ Nhân Tạo Apple Intelligence Thấu Hiểu Người Dùng" [ref=e92]
+            - 'heading "Đột Phá Camera: Lưu Giữ Khoảnh Khắc Bằng Cảm Biến Khẩu Độ Biến Thiên" [level=2] [ref=e93]'
+            - paragraph [ref=e94]: Nhiếp ảnh di động luôn là một trong những yếu tố được người dùng quan tâm nhất khi lựa chọn nâng cấp điện thoại mới. Để khẳng định vị thế dẫn đầu, Apple dự kiến sẽ trang bị hệ thống camera với ống kính khẩu độ biến thiên linh hoạt trên dòng máy cao cấp này. Khả năng thay đổi khẩu độ vật lý giúp camera thích ứng hoàn hảo với mọi điều kiện ánh sáng, từ cái nắng chói chang của buổi trưa hè cho đến màn đêm huyền ảo của phố thị.
+            - paragraph [ref=e95]: Bên cạnh đó, cảm biến chính sẽ được nâng cấp kích thước lớn hơn, cho phép thu sáng nhiều hơn để tạo ra những bức ảnh có chiều sâu tự nhiên, hiệu ứng xóa phông quang học chân thực mà không cần phụ thuộc quá nhiều vào thuật toán xử lý phần mềm. Khả năng zoom quang học cũng được mở rộng lên một giới hạn mới, giúp bạn dễ dàng bắt trọn những chi tiết ở khoảng cách xa với độ sắc nét tuyệt đối. Đối với những ai đam mê sáng tạo nội dung, đây chắc chắn sẽ là một công cụ đắc lực để tạo ra những thước phim điện ảnh chuẩn chuyên nghiệp ngay trên chiếc điện thoại nhỏ gọn.
+            - paragraph [ref=e96]:
+              - 'img "Đột Phá Camera: Lưu Giữ Khoảnh Khắc Bằng Cảm Biến Khẩu Độ Biến Thiên" [ref=e97]'
+            - heading "Chào Đón Kỷ Nguyên Mới Cùng Thiên Niên Kỷ Mobile" [level=2] [ref=e98]
+            - paragraph [ref=e99]: Sở hữu một siêu phẩm công nghệ hàng đầu thế giới luôn mang lại cảm giác phấn khích khó tả cho bất kỳ ai đam mê công nghệ. Để biến giấc mơ sở hữu chiếc điện thoại đỉnh cao này thành hiện thực, việc lựa chọn một địa chỉ mua sắm uy tín và chuyên nghiệp là điều vô cùng cần thiết để đảm bảo quyền lợi tốt nhất.
+            - paragraph [ref=e100]: Tại Thiên Niên Kỷ Mobile, chúng tôi không chỉ cung cấp những sản phẩm công nghệ đỉnh cao, mà còn trao gửi niềm tin và những trải nghiệm mua sắm tuyệt vời nhất. Với dịch vụ thu cũ đổi mới linh hoạt giúp tiết kiệm tối đa chi phí, chương trình hỗ trợ trả góp lãi suất ưu đãi cùng chính sách bảo hành chính hãng chuẩn mực, hành trình chinh phục siêu phẩm mới của bạn sẽ trở nên dễ dàng và trọn vẹn hơn bao giờ hết. Đội ngũ nhân viên giàu kinh nghiệm và tận tâm của chúng tôi luôn sẵn sàng hỗ trợ bạn tìm ra phiên bản phù hợp nhất với phong cách sống của riêng mình.
+            - paragraph [ref=e101]:
+              - strong [ref=e102]: "Thông tin liên hệ:"
+              - strong [ref=e103]: Thiên Niên Kỷ Mobile
+              - text: "| Hệ Thống Chuyên Bán iPhone Chính Hãng Uy Tín Chất Lượng Tại TP.HCM"
+              - text: "Địa chỉ: 419 Luỹ Bán Bích, Quận Tân Phú, TP.HCM"
+              - text: "Hotline: 0559.195.751"
+              - text: "Điện thoại: 0559.195.751"
+              - text: "Email: Dohuudat19991211@gmail.com"
+              - text: "Website:"
+              - link "thiennienkymobile.vn" [ref=e104] [cursor=pointer]:
+                - /url: https://thiennienkymobile.vn/
+        - generic [ref=e108]:
+          - heading "Giảm giá 5% đăng ký nhận báo giá xe ( Báo giá qua Zalo )" [level=3] [ref=e109]:
+            - generic [ref=e110]:
+              - generic [ref=e111]: Giảm giá 5%
+              - img "đăng ký nhận báo giá xe" [ref=e112]
+            - generic [ref=e113]: ( Báo giá qua Zalo )
+          - generic [ref=e114]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: Điểm đi
+              - generic: "Điểm đi:"
+              - textbox "Điểm đi" [ref=e118]
+            - generic [ref=e120]:
+              - generic [ref=e121]: Điểm đến
+              - generic: "Điểm đến:"
+              - textbox "Điểm đến" [ref=e122]
+            - generic [ref=e124]:
+              - generic [ref=e125]: Loại xe
+              - combobox "Loại xe" [ref=e126] [cursor=pointer]:
+                - option "Chọn loại xe" [selected]
+                - option "Xe 4 chỗ"
+                - option "Xe 7 chỗ"
+                - option "Xe MPV - Canival"
+                - option "Xe 9 chỗ Limousine"
+                - option "Xe 12 chỗ Limousine"
+                - option "Xe 16 chỗ"
+                - option "Xe 29 chỗ"
+                - option "Xe 35 chỗ"
+                - option "Xe 45 chỗ"
+            - generic [ref=e128]:
+              - generic [ref=e129]: Dịch vụ
+              - combobox "Dịch vụ" [ref=e130] [cursor=pointer]:
+                - option "Chọn dịch vụ" [selected]
+                - option "Đưa Đón Sân Bay"
+                - option "Thuê Xe Liên Tỉnh"
+                - option "Thuê Xe Du Lịch"
+                - option "Thuê Xe Đánh Golf"
+                - option "Thuê Xe Tự Lái"
+                - option "Thuê Xe Hoa - Cưới"
+                - option "Thuê Xe Hợp Đồng"
+                - option "Thuê Xe Theo Tháng"
+                - option "Thuê Xe Đưa Đón Học Sinh"
+                - option "Thuê Xe Đi Bệnh Viện"
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - checkbox "Tài xế tự túc ăn uống" [checked] [ref=e134] [cursor=pointer]
+                - generic [ref=e135] [cursor=pointer]: Tài xế tự túc ăn uống
+              - generic [ref=e136]:
+                - checkbox "Xuất VAT" [ref=e137] [cursor=pointer]
+                - generic [ref=e138] [cursor=pointer]: Xuất VAT
+              - generic [ref=e139]:
+                - checkbox "Hai chiều" [ref=e140] [cursor=pointer]
+                - generic [ref=e141] [cursor=pointer]: Hai chiều
+            - generic [ref=e143]:
+              - generic [ref=e144]: Giờ thuê xe
+              - generic: "Giờ thuê xe:"
+              - textbox "Giờ thuê xe" [ref=e145]
+            - generic [ref=e147]:
+              - generic [ref=e148]: Ngày thuê xe
+              - textbox "Ngày thuê xe" [ref=e149]:
+                - /placeholder: "Ngày thuê xe:"
+            - generic [ref=e151]:
+              - generic [ref=e152]: Họ và tên
+              - generic: "Họ và tên:"
+              - textbox "Họ và tên" [ref=e153]
+            - generic [ref=e155]:
+              - generic [ref=e156]: Số điện thoại
+              - generic: "Số điện thoại:"
+              - textbox "Số điện thoại" [ref=e157]
+            - button "Nhận báo giá ngay" [ref=e160] [cursor=pointer]: Nhận báo giá ngay
+      - heading "Các Dịch vụ khác" [level=2] [ref=e163]
+      - generic [ref=e164]:
+        - generic:
+          - generic:
+            - generic:
+              - link "sân bay 2":
+                - /url: san-bay-2
+            - generic:
+              - heading "sân bay 2" [level=3]:
+                - link "sân bay 2":
+                  - /url: san-bay-2
+        - generic:
+          - generic:
+            - generic:
+              - link "sân bay 1":
+                - /url: san-bay-1
+            - generic:
+              - heading "sân bay 1" [level=3]:
+                - link "sân bay 1":
+                  - /url: san-bay-1
+        - generic:
+          - generic:
+            - generic:
+              - link "sân bay 3":
+                - /url: san-bay-3
+            - generic:
+              - heading "sân bay 3" [level=3]:
+                - link "sân bay 3":
+                  - /url: san-bay-3
+        - generic:
+          - generic:
+            - generic:
+              - link "sân bay 4":
+                - /url: san-bay-4
+            - generic:
+              - heading "sân bay 4" [level=3]:
+                - link "sân bay 4":
+                  - /url: san-bay-4
+        - generic:
+          - generic:
+            - generic:
+              - link "sân bay 4 (1)":
+                - /url: san-bay-4-1
+            - generic:
+              - heading "sân bay 4 (1)" [level=3]:
+                - link "sân bay 4 (1)":
+                  - /url: san-bay-4-1
+        - generic:
+          - generic:
+            - generic:
+              - link "sân bay 4 (1) (1)":
+                - /url: san-bay-4-1-1
+            - generic:
+              - heading "sân bay 4 (1) (1)" [level=3]:
+                - link "sân bay 4 (1) (1)":
+                  - /url: san-bay-4-1-1
+        - generic:
+          - generic:
+            - generic:
+              - link "sân bay 4 (1) (1) (1)":
+                - /url: san-bay-4-1-1-1
+            - generic:
+              - heading "sân bay 4 (1) (1) (1)" [level=3]:
+                - link "sân bay 4 (1) (1) (1)":
+                  - /url: san-bay-4-1-1-1
+        - generic:
+          - generic:
+            - generic:
+              - link "sân bay 4 (1) (1) (1) (1)":
+                - /url: san-bay-4-1-1-1-1
+            - generic:
+              - heading "sân bay 4 (1) (1) (1) (1)" [level=3]:
+                - link "sân bay 4 (1) (1) (1) (1)":
+                  - /url: san-bay-4-1-1-1-1
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: Thông tin liên hệ
+              - generic:
+                - paragraph:
+                  - text: "Địa chỉ: 111 Nguyễn Thị Minh Khai, TT Phước Dân Ninh Phước, Ninh Thuận"
+                  - text: "Hotline: 0785555299"
+                  - text: "Email: thuexekhanhhoa.com@gmail.com"
+                  - text: "Website:"
+                  - link "www.thuexekhanhhoa.com":
+                    - /url: https://www.google.com/search?q=https%3A%2F%2Fwww.thuexekhanhhoa.com
+                  - text: "Giờ làm việc: Thứ 2 - Chủ nhật 7:30 - 20:00"
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Truy cập nhanh
+                  - list:
+                    - listitem:
+                      - link "Trang chủ":
+                        - /url: "#"
+                    - listitem:
+                      - link "Về chúng tôi":
+                        - /url: gioi-thieu
+                    - listitem:
+                      - link "Dịch vụ":
+                        - /url: dich-vu
+                    - listitem:
+                      - link "Tuyển dụng":
+                        - /url: tuyen-dung
+                    - listitem:
+                      - link "Tin tức":
+                        - /url: tin-tuc
+                - generic:
+                  - paragraph: Chính sách chúng tôi
+                  - list:
+                    - listitem:
+                      - link "Chính sách bảo mật":
+                        - /url: chinh-sach-bao-mat
+                    - listitem:
+                      - link "Chính sách đặt xe":
+                        - /url: chinh-sach-dat-xe
+                    - listitem:
+                      - link "Chính sách huỷ xe":
+                        - /url: chinh-sach-huy-xe
+                    - listitem:
+                      - link "Hướng dẫn thanh toán":
+                        - /url: huong-dan-thanh-toan
+                    - listitem:
+                      - link "Chính sách bảo mật thông tin":
+                        - /url: chinh-sach-bao-mat-thong-tin
+                    - listitem:
+                      - link "Giải quyết tranh chấp":
+                        - /url: giai-quyet-tranh-chap
+                - generic:
+                  - paragraph: Các dòng xe
+                  - list:
+                    - listitem:
+                      - link "Xe 4 chỗ":
+                        - /url: xe-4-cho
+                    - listitem:
+                      - link "Xe 7 chỗ":
+                        - /url: xe-7-cho
+                    - listitem:
+                      - link "Xe MPV - Canival":
+                        - /url: xe-mpv-canival
+                    - listitem:
+                      - link "Xe 9 chỗ Limousine":
+                        - /url: xe-9-cho-limousine
+                    - listitem:
+                      - link "Xe 12 chỗ Limousine":
+                        - /url: xe-12-cho-limousine
+      - generic:
+        - generic:
+          - generic:
+            - generic: Copyright ©2026 Thuê Xe Khánh Hoà. All Right Reserved. Thiết kế web MIMA
+            - generic: "Đang online: 1024 | Hôm nay: 13 | Tổng truy cập: 99"
+    - generic [ref=e165]:
+      - 'link "Call me: 0888080138" [ref=e166] [cursor=pointer]':
+        - /url: tel:0888080138
+        - img [ref=e170]
+        - generic [ref=e173]: "Call me: 0888080138"
+      - 'link "Zalo: 0888080138" [ref=e174] [cursor=pointer]':
+        - /url: https://zalo.me/0888080138
+        - img [ref=e178]
+        - generic [ref=e179]: "Zalo: 0888080138"
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "87"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 87/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 🟢 TỐT
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "15"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 13
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 2
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: dv1
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e180]:
+      - generic [ref=e181]: "❌ Chi tiết lỗi cần khắc phục (2/15):"
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e184]: 6. Liên kết (Links)
+          - generic [ref=e185]: 1 lỗi
+        - generic [ref=e186]:
+          - strong [ref=e188]: "Không có broken links (lỗi: 2/52)"
+          - generic [ref=e189]: "⚠️ Broken links: https://thiennienkymobile.vn/iphone-new (status: 0), https://thiennienkymobile.vn/ (status: 0)"
+      - generic [ref=e190]:
+        - generic [ref=e191]:
+          - generic [ref=e192]: 7. Technical SEO
+          - generic [ref=e193]: 1 lỗi
+        - generic [ref=e194]:
+          - strong [ref=e196]: "Robots: noindex, nofollow (mong muốn: INDEX)"
+          - generic [ref=e197]: ⚠️ Trang mong muốn INDEX nhưng đang bị gắn 'noindex'!
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 87/100 dưới ngưỡng 96%. Có 2/15 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```

@@ -1,0 +1,33 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     90/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          19
+   ❌ Không đạt:    2
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (2/21):
+--- PERFORMANCE ---
+   1. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 58/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 58/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   2. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 7375ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 7375ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img onerror="this.src='thumbs/75x47x1/assets/images/noimage.png';" src="upload/photo/image-42-3407.png" alt="Lorem Ipsum" width="75" height="47">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 75x47px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 150x94px (2x cho Retina), định dạng .webp, dung lượng dưới 1KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/75x47x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/75x47x1/assets/images/noimage.png" width="75" height="47" style="aspect-ratio: 75 / 47; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 150 94 input.png -o output.webp

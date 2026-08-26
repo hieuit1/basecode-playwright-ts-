@@ -1,0 +1,42 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     81/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          17
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/21):
+--- TITLE ---
+   1. [Title phải có nội dung (hiện tại: 0 ký tự)]
+      → Title tag không tồn tại hoặc rỗng!
+--- HEADING STRUCTURE ---
+   2. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H3 ("Giảm giá 5%
+                
+            
+            ( Báo giá qua Zalo )")
+--- PERFORMANCE ---
+   3. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 58/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 58/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   4. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 7749ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 7749ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img width="692" height="439" class="w-100 h-100 rounded-lg" onerror="this.src='thumbs/692x439x1/assets/images/noimage.png';" src="thumbs/692x439x1/upload/photo/rectangle-1-1012.png.webp" alt="banner trang chủ">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 692x439px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 1384x878px (2x cho Retina), định dạng .webp, dung lượng dưới 55KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/692x439x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/692x439x1/assets/images/noimage.png" width="692" height="439" style="aspect-ratio: 692 / 439; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 1384 878 input.png -o output.webp

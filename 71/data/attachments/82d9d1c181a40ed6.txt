@@ -1,0 +1,80 @@
+══════════════════════════════════════
+   🟡 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     75/100
+   Đánh giá:    KHÁ
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  24
+   ✅ Đạt:          18
+   ❌ Không đạt:    6
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (6/24):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 21/71)]
+      → Broken links: vinfast-vf3 (status: 404), toyota-wigo (status: 404), hyundai-santafe (status: 404), toyota-innova-cross (status: 404), mitsubishi-xpander (status: 404), kia-sorento (status: 404), ford-everest (status: 404), hyundai-grand-i10 (status: 404), kia-carnival-luxury (status: 404), kia-new-morning (status: 404), honda-city (status: 404), toyota-veloz-cross (status: 404), toyota-vios (status: 404), kia-carnival-signature (status: 404), toyota-alphard (status: 404), kia-carnival-premium (status: 404), kia-carnival-royal (status: 404), mercedes-benz-v-class (status: 404), dcar-limousine-ford-transit-9-cho (status: 404), dcar-president-9-cho (status: 404), hyundai-solati-limousine-9-cho (status: 404)
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 50/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 50/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 12566ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 12566ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="lazy w-100 error" onerror="this.src='thumbs/387x240x1/assets/images/noimage.png';" data-src="thumbs/387x240x1/upload/product/.webp" alt="Xe 29 chỗ" src="thumbs/387x240x1/assets/images/noimage.png" data-was-processed="true">
+
+[Vấn đề]: Phần tử LCP là ảnh nhưng không có thuộc tính width/height trong HTML.
+[Thông số hiện tại]: Kích thước không xác định từ HTML thô.
+[Chỉ thị hành động]: Dùng DevTools (Computed tab) đo kích thước hiển thị thực tế. Resize ảnh gốc bằng 2x kích thước hiển thị (định dạng .webp, quality 75-80), khai báo kích thước cứng vào HTML và thêm thẻ preload.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="[URL_ẢNH]" fetchpriority="high">
+
+<!-- Sửa thẻ <img> (thay X, Y bằng số đo thực tế): -->
+<img src="[URL_ẢNH]" width="X" height="Y" style="aspect-ratio: X / Y; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+   4. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.142 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.142 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="col-6 col-md-4 p-2" data-list="16" data-aos="fade-up" data-aos-duration="1000">
+          - <button type="button" class="product-list-tab" data-list="14" data-total="14" data-title="Xe 9 chỗ Limousine">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="col-6 col-md-4 p-2" data-list="16" data-aos="fade-up" data-aos-duration="1000"> | <button type="button" class="product-list-tab" data-list="14" data-total="14" data-title="Xe 9 chỗ Limousine">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
+   5. [[💻 Desktop] Tổng điểm Performance: 58/100 (≥ 60)]
+      → [💻 Desktop] Điểm Performance 58/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   6. [[💻 Desktop] CLS (Cumulative Layout Shift): 0.352 (< 0.1)]
+      → [💻 Desktop] CLS quá cao: 0.352 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="col-6 col-md-4 p-2 aos-init aos-animate" data-list="14" data-aos="fade-up" data-aos-duration="1000">
+          - <div class="col-6 col-md-4 p-2 aos-init aos-animate" data-list="13" data-aos="fade-up" data-aos-duration="1000">
+          - <button type="button" class="product-list-tab" data-list="15" data-total="1" data-title="Xe 12 chỗ Limousine">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="col-6 col-md-4 p-2 aos-init aos-animate" data-list="14" data-aos="fade-up" data-aos-duration="1000"> | <div class="col-6 col-md-4 p-2 aos-init aos-animate" data-list="13" data-aos="fade-up" data-aos-duration="1000"> | <button type="button" class="product-list-tab" data-list="15" data-total="1" data-title="Xe 12 chỗ Limousine">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
