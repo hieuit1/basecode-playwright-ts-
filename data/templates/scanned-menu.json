@@ -1,68 +1,55 @@
 {
-  "timestamp": "2026-08-24T10:28:43.631Z",
-  "baseUrl": "https://code2.mimadigi.vn/2026/august/cfurni_111926w/",
+  "timestamp": "2026-08-25T10:14:51.237Z",
+  "baseUrl": "https://code5.mimadigi.vn/2026/august/ngocxoai_113726W/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
       "Banner",
-      "Về chúng tôi",
-      "Câu chuyện",
+      "Giới thiệu",
       "Lịch sử hình thành",
-      "Giải thưởng",
       "Tầm nhìn",
       "Sứ mệnh",
       "Giá trị cốt lõi",
-      "Thông số",
-      "Chứng chỉ"
+      "Đối tác"
     ],
     "Group Sản Phẩm": [
-      "Sản phẩm chi tiết",
+      "Chi tiết sản phẩm",
       "Danh mục cấp 1",
-      "Danh mục cấp 2",
-      "Thương hiệu",
-      "Thuộc tính",
-      "Sản phẩm chi tiết",
-      "Bộ lọc giá"
+      "Chi tiết sản phẩm"
     ],
-    "Quản lý Mã giảm giá": [],
+    "Quản lý Tin tức": [
+      "Danh mục cấp 1",
+      "Tin tức"
+    ],
     "Quản lý bài viết": [
-      "Giải pháp",
-      "Tin tức",
+      "Dịch vụ",
       "Dự án",
-      "Tuyển dụng",
-      "Tiêu chí",
-      "Chính sách",
-      "Hình thức thanh toán"
-    ],
-    "Quản lý đơn hàng": [],
-    "Quản lý tags": [],
-    "Quản lý nhận tin": [
-      "Đăng ký nhận tin",
-      "Đăng ký tư vấn"
+      "Chính sách"
     ],
     "Quản lý trang tĩnh": [
+      "Slogan",
       "Liên hệ",
       "Footer",
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.ico GG rất thích)",
+      "Favicon (ảnh .png)",
       "Logo",
-      "Logo footer",
-      "Banner flashsale",
-      "Banner giá trị",
-      "Footer Banner",
-      "Bộ công thương",
+      "Logo Tiếng anh",
+      "Banner quảng cáo",
       "Slideshow",
-      "Banner quản cáo",
-      "Mạng xã hội",
+      "Slideshow tiếng anh",
+      "Social footer",
       "Link Redirect"
     ],
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
       "Sản phẩm",
+      "Dịch vụ",
       "Dự án",
+      "Đối tác",
+      "Tuyển dụng",
       "Tin tức",
       "Liên hệ"
     ],
