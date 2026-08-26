@@ -1,0 +1,15 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 11327ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="w-100" onerror="this.src='thumbs/905x465x1/assets/images/noimage.png';" src="https://code5.mimadigi.vn/2026/august/ngocxoai_113726W/thumbs/500x263x1/up…" alt="Slice 12" width="905" height="465">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 905x465px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 1810x930px (2x cho Retina), định dạng .webp, dung lượng dưới 76KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/905x465x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/905x465x1/assets/images/noimage.png" width="905" height="465" style="aspect-ratio: 905 / 465; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 1810 930 input.png -o output.webp

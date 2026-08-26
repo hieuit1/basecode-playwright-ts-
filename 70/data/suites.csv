@@ -1,0 +1,113 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","82326","Add project successfully and verify on website","Desktop Chrome","2026-08-26","passed","2026-08-26","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","59584","Kiểm tra SEO Onpage: Máy bơm công nghiệp các loại (/may-bom-cong-nghiep-cac-loai)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","57403","Kiểm tra SEO Onpage: Hướng dẫn thanh toán (/huong-dan-thanh-toan)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","35007","Add project should fail with không nhập tiêu đề","Desktop Chrome","2026-08-26","passed","2026-08-26","Project Management Tests","admin/project.spec.ts","",""
+"","38273","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-26","failed","2026-08-26","Contract Feature Tests","web/contract.spec.ts","",""
+"","7767","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-26","passed","2026-08-26","Search Feature Tests","web/search.spec.ts","",""
+"","457473","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-08-26","failed","2026-08-26","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","94899","Kiểm tra SEO Onpage: Dự án (/du-an)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","42502","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-26","failed","2026-08-26","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","69003","Kiểm tra SEO Onpage: Chính sách đổi trả (/chinh-sach-doi-tra)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","24625","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-26","passed","2026-08-26","Product Management Tests","admin/product.spec.ts","",""
+"","7972","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-26","passed","2026-08-26","Search Feature Tests","web/search.spec.ts","",""
+"","5526","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-26","passed","2026-08-26","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","29820","Kiểm tra SEO Onpage: Thay mái tôn và xà gồ (/thay-mai-ton-va-xa-go)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","84433","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","43436","Kiểm tra SEO Onpage: Vật tư công nghiệp (/vat-tu-cong-nghiep)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","69358","Kiểm tra SEO Onpage: Thông tin thanh toán (/thong-tin-thanh-toan)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","39105","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-26","failed","2026-08-26","Contract Feature Tests","web/contract.spec.ts","",""
+"","23967","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-08-26","passed","2026-08-26","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","65716","Kiểm tra SEO Onpage: Đối tác (/doi-tac)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","26737","Kiểm tra SEO Onpage: Thay mái tôn và Xà gồ CÔNG TY TRÁCH NHIỆM HỮU HẠN DỆT MAY ECLAT VIỆT NAM. (/thay-mai-ton-va-xa-go-chuyen-nghiep)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","7381","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-26","passed","2026-08-26","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","78510","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","51579","Submit form successfully with valid data","Desktop Chrome","2026-08-26","failed","2026-08-26","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","37061","Kiểm tra SEO Onpage: Vật tư ngành hàn (/vat-tu-nganh-han)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22658","Kiểm tra SEO Onpage: Tin công nghệ (/tin-cong-nghe)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","40170","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-26","failed","2026-08-26","Contract Feature Tests","web/contract.spec.ts","",""
+"","26960","Add project should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-26","passed","2026-08-26","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","34635","Kiểm tra SEO Onpage: Bảo hộ lao động (/bao-ho-lao-dong)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","63359","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","89036","Add product successfully and verify on website","Desktop Chrome","2026-08-26","passed","2026-08-26","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","39161","Kiểm tra SEO Onpage: Vòng bi (Bạc đạn) (/vong-bi-bac-dan)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","11491","Login successfully with valid credentials","Desktop Chrome","2026-08-26","passed","2026-08-26","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","360090","Bulk insert 35 projects via Copy and verify Load More on website","Desktop Chrome","2026-08-26","failed","2026-08-26","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","26383","Kiểm tra SEO Onpage: Nâng cao hiệu quả sản xuất với thiết bị kỹ thuật công nghiệp tiên tiến (/nang-cao-hieu-qua-san-xuat-voi-thiet-bi-ky-thuat-cong-nghiep-tien-tien)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","38100","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-26","failed","2026-08-26","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","30253","Kiểm tra SEO Onpage: Vật tư mài mòn (/vat-tu-mai-mon)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","29279","Kiểm tra SEO Onpage: Hộp nhựa Boxco IP67, BC-ATP -350X450X220mm (/hop-nhua-boxco-ip67-bc-atp-350x450x220mm)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","41396","Kiểm tra SEO Onpage: Dụng cụ cầm tay dùng điện (/dung-cu-cam-tay-dung-dien)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","7468","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-26","passed","2026-08-26","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","101403","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","86363","Kiểm tra SEO Onpage: Chính sách bảo mật thông tin khách hàng (/chinh-sach-bao-mat-thong-tin-khach-hang)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","18194","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-26","failed","2026-08-26","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21797","Kiểm tra SEO Onpage: Hướng dẫn kỹ thuật (/huong-dan-ky-thuat)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","53518","Kiểm tra SEO Onpage: Thiết bị điện công nghiệp (/thiet-bi-dien-cong-nghiep)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","39317","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-26","failed","2026-08-26","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19464","Kiểm tra SEO Onpage: Tư vấn - Kinh nghiệm - Mẹo hay (/tu-van-kinh-nghiem-meo-hay)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","8110","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-26","passed","2026-08-26","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","6614","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-26","passed","2026-08-26","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","70935","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","71987","Kiểm tra SEO Onpage: Chính sách bảo trì bảo hành (/chinh-sach-bao-tri-bao-hanh)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","84217","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-08-26","failed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
+"","10569","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-26","passed","2026-08-26","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","35437","Kiểm tra SEO Onpage: Dụng cụ dùng khí nén (/dung-cu-dung-khi-nen)","Desktop Chrome","2026-08-26","passed","2026-08-26","SEO Page","seo/seo.spec.ts","",""
