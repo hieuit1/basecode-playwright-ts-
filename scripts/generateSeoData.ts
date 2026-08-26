@@ -11,14 +11,106 @@ dotenv.config();
 
 const BASE_URL = process.env.BASE_URL;
 
-async function fetchSitemapUrls(sitemapUrl: string, maxLimit?: number): Promise<string[]> {
+/** Cap an toàn phòng khi sitemap quá lớn */
+const MAX_SITEMAP_URLS = 3000;
+
+/** Số trang tải song song khi lấy breadcrumb + tên trang */
+const FETCH_CONCURRENCY = 10;
+
+/** Số trang chi tiết lấy cho mỗi trang tổng (1 chi tiết SP, 1 chi tiết tin tức, ...) */
+const MAX_DETAILS_PER_HUB = 1;
+
+/** Cap an toàn cho website có rất nhiều danh mục */
+const MAX_CATEGORIES = 50;
+
+const FETCH_HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+  'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7',
+  'Cache-Control': 'no-cache'
+};
+
+/** Một mắt xích breadcrumb. path = null khi mắt xích đó không kèm link. */
+interface CrumbNode {
+  name: string;
+  path: string | null;
+}
+
+/** Dữ liệu bóc từ HTML của một trang */
+interface PageInfo {
+  crumbs: CrumbNode[];
+  ogType: string;
+  name: string;
+}
+
+/** Gộp mọi khoảng trắng (kể cả tab, xuống dòng) thành một dấu cách */
+function normalizeText(value: string | undefined | null): string {
+  return (value ?? '').replace(/\s+/g, ' ').trim();
+}
+
+/**
+ * Đổi URL tuyệt đối thành path tương đối so với BASE_URL.
+ * Dùng chung cho cả URL trong sitemap lẫn URL trong breadcrumb.
+ * Trả về null nếu URL nằm ngoài website (khác host hoặc ngoài thư mục base).
+ */
+function toRelativePath(rawUrl: string): string | null {
+  let target: URL;
   try {
-    const response = await fetch(sitemapUrl, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
-      }
-    });
+    target = new URL(rawUrl, BASE_URL);
+  } catch {
+    return null;
+  }
+
+  const base = new URL(BASE_URL as string);
+  if (target.hostname !== base.hostname) return null;
+
+  const basePath = base.pathname.endsWith('/') ? base.pathname : base.pathname + '/';
+  let relativePath = target.pathname;
+
+  if (relativePath.startsWith(basePath)) {
+    relativePath = '/' + relativePath.slice(basePath.length);
+  } else if (basePath.length > 1 && relativePath === basePath.slice(0, -1)) {
+    relativePath = '/';
+  } else if (basePath.length > 1) {
+    return null; // Nằm ngoài thư mục base → không thuộc website đang test
+  }
+
+  relativePath = '/' + relativePath.replace(/^\/+/, '');
+  if (relativePath.length > 1) relativePath = relativePath.replace(/\/+$/, '');
+
+  // Thay đường dẫn trang chủ từ '/' thành '/index.php' theo yêu cầu
+  if (relativePath === '' || relativePath === '/') relativePath = '/index.php';
+
+  return relativePath;
+}
+
+/** Chạy tác vụ bất đồng bộ theo pool giới hạn số luồng song song (tự viết, không thêm dependency) */
+async function runWithPool<T, R>(
+  items: T[],
+  concurrency: number,
+  worker: (item: T) => Promise<R>
+): Promise<R[]> {
+  const results: R[] = new Array(items.length);
+  let cursor = 0;
+
+  const runners = Array.from({ length: Math.min(concurrency, items.length) }, async () => {
+    while (true) {
+      const index = cursor++;
+      if (index >= items.length) return;
+      results[index] = await worker(items[index]);
+    }
+  });
+
+  await Promise.all(runners);
+  return results;
+}
+
+/**
+ * Đọc đúng một file sitemap.xml, KHÔNG đệ quy sang các file sitemap con.
+ */
+async function fetchSitemapUrls(sitemapUrl: string): Promise<string[]> {
+  try {
+    const response = await fetch(sitemapUrl, { headers: FETCH_HEADERS });
     if (!response.ok) {
       console.warn(`Sitemap not found at ${sitemapUrl} (${response.status})`);
       return [];
@@ -26,78 +118,200 @@ async function fetchSitemapUrls(sitemapUrl: string, maxLimit?: number): Promise<
     const xml = await response.text();
     const $ = cheerio.load(xml, { xmlMode: true });
 
-    const isSitemapIndex = $('sitemapindex').length > 0;
-
-    if (isSitemapIndex) {
-      console.log(`Found sitemap index at ${sitemapUrl}. Fetching sub-sitemaps...`);
-      const sitemapPromises: Promise<string[]>[] = [];
-      $('sitemap > loc, sitemap loc').each((_, el) => {
-        const subSitemapUrl = $(el).text().trim();
-        if (subSitemapUrl) {
-          let limit = undefined;
-          if (subSitemapUrl.includes('sitemap_product')) limit = 5;
-          else if (subSitemapUrl.includes('sitemap_blog')) limit = 5;
-          sitemapPromises.push(fetchSitemapUrls(subSitemapUrl, limit));
-        }
-      });
-
-      const results = await Promise.all(sitemapPromises);
-      return results.flat();
-    } else {
-      const urls: string[] = [];
-      $('url > loc, loc').each((_, el) => {
-        const url = $(el).text().trim();
-        // Bỏ qua các URL sitemap nếu vô tình lọt vào
-        if (url && !url.endsWith('.xml')) {
-          urls.push(url);
-        }
-      });
-      // Lọc các kết quả trùng lặp nếu query selector lấy dư
-      let uniqueUrls = Array.from(new Set(urls));
-      if (maxLimit && uniqueUrls.length > maxLimit) {
-        // Shuffle array
-        uniqueUrls = uniqueUrls.sort(() => 0.5 - Math.random());
-        uniqueUrls = uniqueUrls.slice(0, maxLimit);
-      }
-      return uniqueUrls;
+    if ($('sitemapindex').length > 0) {
+      console.warn(
+        `⚠ ${sitemapUrl} là sitemap index (chỉ chứa link tới các file sitemap con).\n` +
+        `  Script chỉ đọc đúng file sitemap.xml này nên không lấy được URL nào.\n` +
+        `  Hãy khai báo thủ công các trang cần test trong data/seo/seoManualConfig.ts.`
+      );
+      return [];
     }
+
+    const urls: string[] = [];
+    const locNodes = $('url > loc').length > 0 ? $('url > loc') : $('loc');
+    locNodes.each((_, el) => {
+      const url = $(el).text().trim();
+      // Bỏ qua các URL sitemap nếu vô tình lọt vào
+      if (url && !url.endsWith('.xml')) urls.push(url);
+    });
+
+    // Lọc các kết quả trùng lặp nếu query selector lấy dư
+    const uniqueUrls = Array.from(new Set(urls));
+
+    if (uniqueUrls.length > MAX_SITEMAP_URLS) {
+      console.warn(`⚠ Sitemap có ${uniqueUrls.length} URL, chỉ xử lý ${MAX_SITEMAP_URLS} URL đầu tiên.`);
+      return uniqueUrls.slice(0, MAX_SITEMAP_URLS);
+    }
+
+    return uniqueUrls;
   } catch (error) {
     console.error('Error fetching sitemap:', error);
     return [];
   }
 }
 
-async function extractPageName(url: string): Promise<string> {
-  try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-        'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7',
-        'Cache-Control': 'no-cache'
-      }
+/** Duyệt đệ quy khối JSON-LD để tìm node BreadcrumbList (có thể nằm trong mảng hoặc @graph) */
+function findBreadcrumbNode(node: any): any | null {
+  if (!node || typeof node !== 'object') return null;
+
+  if (Array.isArray(node)) {
+    for (const child of node) {
+      const found = findBreadcrumbNode(child);
+      if (found) return found;
+    }
+    return null;
+  }
+
+  const rawType = node['@type'];
+  const types = Array.isArray(rawType) ? rawType : [rawType];
+  if (types.includes('BreadcrumbList') && Array.isArray(node.itemListElement)) return node;
+
+  if (node['@graph']) return findBreadcrumbNode(node['@graph']);
+  return null;
+}
+
+/** Bóc breadcrumb từ JSON-LD schema.org — nguồn chính xác nhất */
+function extractCrumbsFromJsonLd($: cheerio.CheerioAPI): CrumbNode[] | null {
+  const scripts = $('script[type="application/ld+json"]').toArray();
+
+  for (const script of scripts) {
+    const raw = $(script).contents().text().trim();
+    if (!raw || !raw.includes('BreadcrumbList')) continue;
+
+    let parsed: any;
+    try {
+      parsed = JSON.parse(raw);
+    } catch {
+      continue; // JSON-LD hỏng thì bỏ qua, thử khối tiếp theo
+    }
+
+    const breadcrumb = findBreadcrumbNode(parsed);
+    if (!breadcrumb) continue;
+
+    const items = [...breadcrumb.itemListElement].sort(
+      (a: any, b: any) => (Number(a?.position) || 0) - (Number(b?.position) || 0)
+    );
+
+    const crumbs: CrumbNode[] = [];
+    for (const item of items) {
+      const name = normalizeText(item?.name ?? item?.item?.name);
+      const href = typeof item?.item === 'string' ? item.item : item?.item?.['@id'];
+      const crumbPath = href ? toRelativePath(String(href)) : null;
+      if (name || crumbPath) crumbs.push({ name, path: crumbPath });
+    }
+
+    if (crumbs.length > 0) return crumbs;
+  }
+
+  return null;
+}
+
+const DOM_BREADCRUMB_SELECTORS = [
+  '[itemtype*="BreadcrumbList"] [itemprop="itemListElement"]',
+  'nav[aria-label*="readcrumb"] li',
+  '.breadcrumb li',
+  '.breadcrumbs li',
+  '#breadcrumb li'
+];
+
+/** Bóc breadcrumb từ DOM khi website không phát JSON-LD */
+function extractCrumbsFromDom($: cheerio.CheerioAPI): CrumbNode[] | null {
+  for (const selector of DOM_BREADCRUMB_SELECTORS) {
+    const nodes = $(selector).toArray();
+    if (nodes.length === 0) continue;
+
+    const crumbs: CrumbNode[] = nodes.map((node) => {
+      const $node = $(node);
+      const href = $node.find('a[href]').first().attr('href') ?? $node.attr('href');
+      return {
+        name: normalizeText($node.text()),
+        path: href ? toRelativePath(href) : null
+      };
     });
+
+    // Breadcrumb hiển thị thường có node "Trang chủ" dẫn đầu, JSON-LD thì không.
+    // Bỏ node này để hai nguồn cho ra cùng một cách đếm tầng.
+    const trimmed = crumbs.length > 1 && crumbs[0].path === '/index.php' ? crumbs.slice(1) : crumbs;
+    if (trimmed.length > 0) return trimmed;
+  }
+
+  return null;
+}
+
+/**
+ * Cắt phần tên website ra khỏi thẻ title.
+ * Suy ra tên site từ title trang chủ thay vì cắt cứng ở dấu '-' đầu tiên — cách cũ
+ * làm "CB khối (MCCB) LS ABS1003b 1000A 65kA" cụt còn "CB khối (MCCB) LS ABS1003b".
+ */
+function stripSiteSuffix(title: string, siteTitle: string): string {
+  if (!title || !siteTitle) return title;
+
+  const separator = /\s[|\-–—»·]\s/;
+  const parts = title.split(separator).map((part) => part.trim()).filter(Boolean);
+  if (parts.length <= 1) return title;
+
+  const siteNames = new Set(
+    [siteTitle, ...siteTitle.split(separator)].map((part) => part.trim().toLowerCase())
+  );
+
+  // Chỉ gọt các đoạn ĐUÔI trùng tên site, giữ nguyên phần đầu
+  while (parts.length > 1 && siteNames.has(parts[parts.length - 1].toLowerCase())) {
+    parts.pop();
+  }
+
+  return parts.join(' - ');
+}
+
+/**
+ * Tải một trang và bóc breadcrumb + og:type + tên trang.
+ * Thay cho extractPageName cũ: cùng một request nhưng lấy thêm breadcrumb để phân loại.
+ */
+async function fetchPageInfo(url: string, siteTitle: string): Promise<PageInfo | null> {
+  try {
+    const response = await fetch(url, { headers: FETCH_HEADERS });
 
     if (!response.ok) {
       console.warn(`Failed to fetch ${url} - Status: ${response.status}`);
-      return '';
+      return null;
     }
     const html = await response.text();
 
     if (html.includes('Just a moment...') || html.includes('cf-browser-verification')) {
       console.warn(`[WARNING] Request to ${url} was blocked by Cloudflare/WAF!`);
-      return '';
+      return null;
     }
 
     const $ = cheerio.load(html);
-    let name = $('title').text().trim() || $('h1').first().text().trim() || url;
-    if (name.includes('|')) name = name.split('|')[0].trim();
-    if (name.includes('-')) name = name.split('-')[0].trim();
 
-    return name;
+    let crumbs = extractCrumbsFromJsonLd($) ?? extractCrumbsFromDom($);
+    if (!crumbs) {
+      // Không có breadcrumb: coi như trang 1 tầng (chính nó)
+      const selfPath = toRelativePath(url);
+      crumbs = selfPath ? [{ name: '', path: selfPath }] : [];
+    }
+
+    const title = normalizeText($('title').first().text());
+
+    // Lấy tên theo thứ tự tin cậy giảm dần, không cắt cứng ở dấu '-' như bản cũ.
+    // Chốt cuối là path: có trang thiếu hẳn title/og:title/h1 (chính là lỗi SEO mà
+    // suite này đi tìm) — khi đó vẫn phải có tên đọc được để đặt tên test case.
+    const name =
+      normalizeText(crumbs.length > 0 ? crumbs[crumbs.length - 1].name : '') ||
+      normalizeText($('meta[property="og:title"]').attr('content')) ||
+      normalizeText($('h1').first().text()) ||
+      normalizeText(stripSiteSuffix(title, siteTitle)) ||
+      title ||
+      toRelativePath(url) ||
+      url;
+
+    return {
+      crumbs,
+      ogType: normalizeText($('meta[property="og:type"]').attr('content')).toLowerCase(),
+      name
+    };
   } catch (error) {
     console.error(`Error fetching ${url}:`, error);
-    return '';
+    return null;
   }
 }
 
@@ -105,10 +319,17 @@ async function extractPageName(url: string): Promise<string> {
  * Kiểm tra URL có phải do automation test tạo ra hay không.
  * Dùng để lọc bỏ các URL tạm (sản phẩm/bài viết test) tránh race condition trên CI:
  * Khi chạy song song, shard khác có thể cleanup xóa sản phẩm test → gây broken links cho SEO tests.
+ *
+ * Phải neo vào marker cụ thể thay vì bắt chuỗi 'test' trần: khi chạy trên website khác,
+ * 'test' trần sẽ nuốt oan trang thật ("máy test", "contest", "latest").
  */
 function isAutoTestUrl(url: string): boolean {
-  const lowerUrl = decodeURIComponent(url).toLowerCase();
-  return lowerUrl.includes('auto-test') || lowerUrl.includes('test');
+  const decoded = decodeURIComponent(url);
+  if (/(^|[-_/])(auto-test|autotest|loadtest)/i.test(decoded)) return true;
+
+  // Trang nháp đặt tên trống trơn là 'test' — chỉ khớp khi cả segment đúng bằng 'test',
+  // không khớp các slug chứa chữ test ("may-test-ac-quy", "contest", "latest")
+  return /\/test\/?$/i.test(new URL(decoded).pathname);
 }
 
 async function run() {
@@ -129,104 +350,96 @@ async function run() {
   const sitemapUrls = allSitemapUrls.filter(url => !isAutoTestUrl(url));
   const skippedCount = allSitemapUrls.length - sitemapUrls.length;
   if (skippedCount > 0) {
-    console.log(`⚠ Đã bỏ qua ${skippedCount} URL thuộc automation test data (chứa 'test' hoặc 'auto-test').`);
+    console.log(`⚠ Đã bỏ qua ${skippedCount} URL thuộc automation test data (auto-test / loadtest).`);
   }
 
-  const finalData: SeoPageTestData[] = [];
+  // Title trang chủ dùng làm mốc để cắt hậu tố tên site khỏi title các trang khác
+  const homeInfo = await fetchPageInfo(BASE_URL, '');
+  const siteTitle = homeInfo?.name ?? '';
 
+  // Tải breadcrumb của toàn bộ trang. Bản cũ cũng fetch từng trang (để lấy tên) nên
+  // không phát sinh thêm loại chi phí mới, chỉ chạy song song cho nhanh.
+  console.log(`Đang quét breadcrumb ${sitemapUrls.length} trang (${FETCH_CONCURRENCY} luồng song song)...`);
+
+  let scanned = 0;
+  const pageInfos = await runWithPool(sitemapUrls, FETCH_CONCURRENCY, async (url) => {
+    const info = await fetchPageInfo(url, siteTitle);
+    scanned++;
+    if (scanned % 50 === 0) console.log(`  ... đã quét ${scanned}/${sitemapUrls.length} trang`);
+    return info;
+  });
+
+  const infoByUrl = new Map<string, PageInfo>();
+  sitemapUrls.forEach((url, index) => {
+    const info = pageInfos[index];
+    if (info) infoByUrl.set(url, info);
+  });
+
+  const finalData: SeoPageTestData[] = [];
   const processedPaths = new Set<string>();
 
-  // Dùng để đánh dấu số lượng các trang theo từng nhóm (prefix)
-  const prefixCounts = new Map<string, number>();
-  const MAX_PER_PREFIX = 1; // Lấy 1 trang đại diện duy nhất cho mỗi nhóm sản phẩm/bài viết để tránh trùng lặp
-
-  // Các trang chính (Core pages) luôn được ưu tiên test
-  const CORE_PAGES = ['/gioi-thieu', '/san-pham', '/du-an', '/tin-tuc', '/lien-he', '/dich-vu', '/tin-tuc-va-su-kien', '/blog', '/phong-thuy', '/mau-nha-dep', 'ban-sofa'];
-
-  // Dùng để giới hạn số lượng trang động được check Core Web Vitals (vì test CWV rất chậm)
-  let dynamicCwvCount = 0;
-  const MAX_DYNAMIC_CWV = 2;
+  // Đếm số trang chi tiết đã lấy cho từng trang tổng (thay cho prefixCounts theo slug của bản cũ)
+  const detailCounts = new Map<string, number>();
+  let categoryCount = 0;
+  const kindCounts: Record<string, number> = { home: 0, hub: 0, category: 0, detail: 0 };
 
   for (const fullUrl of sitemapUrls) {
-    const urlObj = new URL(fullUrl);
-    const baseUrlObj = new URL(BASE_URL as string);
-    const basePath = baseUrlObj.pathname; // e.g. "/2026/july/tranquang_108426W/"
+    const relativePath = toRelativePath(fullUrl);
+    if (!relativePath) continue;
 
-    let relativePath = urlObj.pathname;
-
-    if (relativePath.startsWith(basePath)) {
-      // Strip basePath
-      let stripped = relativePath.slice(basePath.length);
-      // Ensure it starts with exactly one '/'
-      relativePath = '/' + stripped.replace(/^\/+/, '');
-    } else if (relativePath === basePath.slice(0, -1) && basePath.length > 1) {
-      relativePath = '/';
-    }
-
-    // Thay thế đường dẫn trang chủ từ '/' thành '/index.php' theo yêu cầu
-    if (relativePath === '/') {
-      relativePath = '/index.php';
-    }
+    const info = infoByUrl.get(fullUrl);
+    if (!info) continue; // Không tải được trang thì bỏ qua, không đưa link hỏng vào data test
 
     processedPaths.add(relativePath);
 
-    // Cấu hình mặc định: 
-    // 1. Luôn test Trang chủ và Các trang chính (Core pages)
-    // 2. Lấy mẫu đại diện động cho các trang còn lại (Sản phẩm, Bài viết...)
-    let shouldCheckCWV = false;
-    let skipFetch = false;
+    // ── PHÂN LOẠI TRANG ──────────────────────────────────────
+    // Website dùng URL PHẲNG (chi tiết sản phẩm là /mcb-bkn-2p-32a-ls chứ không phải
+    // /san-pham/mcb-bkn-2p-32a-ls) nên KHÔNG phân loại được bằng độ sâu path.
+    // Tầng thật sự nằm trong breadcrumb:
+    //   1 tầng                  → trang tổng (/san-pham, /tin-tuc, /gioi-thieu, ...)
+    //   >= 2 tầng + og:type object → trang danh mục (/thiet-bi-dien-cong-nghiep)
+    //   >= 2 tầng + og:type khác   → trang chi tiết
+    // Lưu ý: chi tiết KHÔNG có độ sâu cố định — chi tiết sản phẩm 3 tầng nhưng chi tiết
+    // dịch vụ/dự án chỉ 2 tầng — nên phải gom theo node GỐC của breadcrumb.
+    const depth = info.crumbs.length;
+    const hubPath = info.crumbs.find(crumb => crumb.path)?.path ?? relativePath;
 
-    if (relativePath === '/' || relativePath === '/index.php' || CORE_PAGES.includes(relativePath)) {
-      shouldCheckCWV = true;
+    let kind: 'home' | 'hub' | 'category' | 'detail';
+    if (relativePath === '/index.php') {
+      kind = 'home';
+    } else if (depth <= 1) {
+      kind = 'hub';
+    } else if (info.ogType === 'object') {
+      kind = 'category';
     } else {
-      // Logic gom nhóm linh hoạt cho nhiều loại website
-      const segments = relativePath.split('/').filter(Boolean);
-      let prefix = '';
-
-      if (segments.length > 1) {
-        prefix = 'dir_' + segments[0].toLowerCase();
-      } else {
-        const firstSegment = segments[0] || '';
-        const parts = firstSegment.split('-');
-        prefix = 'flat_' + (parts.length >= 2 ? parts.slice(0, 2).join('-').toLowerCase() : parts[0].toLowerCase());
-      }
-
-      // Bỏ qua trang trùng lặp
-      let count = prefixCounts.get(prefix) || 0;
-      if (count >= MAX_PER_PREFIX) {
-        skipFetch = true;
-      } else {
-        prefixCounts.set(prefix, count + 1);
-        // Chỉ bật CWV cho một vài trang đại diện đầu tiên để tiết kiệm thời gian test
-        if (dynamicCwvCount < MAX_DYNAMIC_CWV) {
-          shouldCheckCWV = true;
-          dynamicCwvCount++;
-        }
-      }
+      kind = 'detail';
     }
 
-    if (skipFetch) {
-      // console.log(`[Deduplicate] Bỏ qua trang trùng lặp: ${relativePath}`);
-      continue;
+    // ── LẤY MẪU ĐẠI DIỆN ─────────────────────────────────────
+    let skip = false;
+    if (kind === 'category') {
+      if (categoryCount >= MAX_CATEGORIES) skip = true;
+      else categoryCount++;
+    } else if (kind === 'detail') {
+      const taken = detailCounts.get(hubPath) ?? 0;
+      if (taken >= MAX_DETAILS_PER_HUB) skip = true;
+      else detailCounts.set(hubPath, taken + 1);
     }
+
+    if (skip) continue;
+
+    kindCounts[kind]++;
 
     // Find manual config
     const manualEntry = seoManualConfig.find(item => item.path === relativePath);
 
-    // Fetch meta data if not overridden by manual config
-    let name = manualEntry?.name;
-
-    if (!name) {
-      console.log(`Fetching metadata for ${fullUrl}...`);
-      name = await extractPageName(fullUrl);
-    }
-
     const baseEntry: SeoPageTestData = {
-      name: name!,
+      name: manualEntry?.name ?? info.name ?? relativePath,
       path: relativePath,
       priority: "medium",
       severity: "normal",
-      checkCoreWebVitals: shouldCheckCWV
+      // Chỉ trang chủ và trang tổng mới đo tốc độ (gọi PageSpeed API rất chậm)
+      checkCoreWebVitals: kind === 'home' || kind === 'hub'
     };
 
     // Merge manual overrides over the defaults
@@ -235,6 +448,11 @@ async function run() {
       ...manualEntry
     });
   }
+
+  console.log(
+    `Phân loại: ${kindCounts.home} trang chủ, ${kindCounts.hub} trang tổng, ` +
+    `${kindCounts.category} danh mục, ${kindCounts.detail} trang chi tiết.`
+  );
 
   // Thêm các trang cấu hình thủ công vào đầu danh sách nếu chúng chưa có trong sitemap
   const manualEntriesToAdd: SeoPageTestData[] = [];
@@ -265,7 +483,9 @@ export const seoTestData: SeoPageTestData[] = ${JSON.stringify(finalData, null, 
 
   const outputPath = path.join(__dirname, '../data/seo/seoGeneratedData.ts');
   fs.writeFileSync(outputPath, fileContent, 'utf-8');
-  console.log(`SEO data generated successfully with ${finalData.length} items.`);
+
+  const cwvCount = finalData.filter(item => item.checkCoreWebVitals).length;
+  console.log(`SEO data generated successfully with ${finalData.length} items (${cwvCount} trang có đo Core Web Vitals).`);
   console.log(`Output written to ${outputPath}`);
 }
 
