@@ -1,0 +1,49 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     83/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  23
+   ✅ Đạt:          19
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/23):
+--- HEADING STRUCTURE ---
+   1. [Trang có đúng 1 thẻ H1 (hiện tại: 2 thẻ)]
+      → Trang có 2 thẻ H1, bắt buộc đúng 1 thẻ duy nhất!
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 55/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 55/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 13877ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 13877ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="lazy loaded" onerror="this.src='thumbs/300x300x1/assets/images/noimage.png';" data-src="thumbs/300x300x1/upload/product/1667598716130065853-1776143677.jpg.webp" alt="Relay 840410	S1MN 110VAC 2c/o" width="300" height="300" src="thumbs/300x300x1/upload/product/1667598716130065853-1776143677.jpg.webp" data-was-processed="true">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 300x300px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 600x600px (2x cho Retina), định dạng .webp, dung lượng dưới 16KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/300x300x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/300x300x1/assets/images/noimage.png" width="300" height="300" style="aspect-ratio: 300 / 300; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 600 600 input.png -o output.webp
+   4. [[💻 Desktop] LCP (Largest Contentful Paint): 7136ms (< 2500ms)]
+      → [💻 Desktop] LCP quá cao: 7136ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="lazy loaded" onerror="this.src='thumbs/300x300x1/assets/images/noimage.png';" data-src="thumbs/300x300x1/upload/product/3-1732033206.jpg.webp" alt="MCB BKN 2P 32A LS" width="300" height="3...
+
+[Vấn đề]: Phần tử LCP là ảnh nhưng không có thuộc tính width/height trong HTML.
+[Thông số hiện tại]: Kích thước không xác định từ HTML thô.
+[Chỉ thị hành động]: Dùng DevTools (Computed tab) đo kích thước hiển thị thực tế. Resize ảnh gốc bằng 2x kích thước hiển thị (định dạng .webp, quality 75-80), khai báo kích thước cứng vào HTML và thêm thẻ preload.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="[URL_ẢNH]" fetchpriority="high">
+
+<!-- Sửa thẻ <img> (thay X, Y bằng số đo thực tế): -->
+<img src="[URL_ẢNH]" width="X" height="Y" style="aspect-ratio: X / Y; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
