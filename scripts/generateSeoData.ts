@@ -23,6 +23,13 @@ const MAX_DETAILS_PER_HUB = 1;
 /** Cap an toàn cho website có rất nhiều danh mục */
 const MAX_CATEGORIES = 50;
 
+/**
+ * Số trang tổng KHÔNG có trang con được đo tốc độ.
+ * Nhóm này (giới thiệu, liên hệ, các trang chính sách...) dùng chung một template
+ * nội dung tĩnh nên đo 1 trang là đủ đại diện, khỏi tốn PageSpeed API cho từng trang.
+ */
+const MAX_CWV_LEAF_HUBS = 1;
+
 const FETCH_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
@@ -82,6 +89,29 @@ function toRelativePath(rawUrl: string): string | null {
   if (relativePath === '' || relativePath === '/') relativePath = '/index.php';
 
   return relativePath;
+}
+
+/** Tải HTML của một URL. Trả về null nếu lỗi hoặc bị WAF chặn. */
+async function fetchText(url: string): Promise<string | null> {
+  try {
+    const response = await fetch(url, { headers: FETCH_HEADERS });
+
+    if (!response.ok) {
+      console.warn(`Failed to fetch ${url} - Status: ${response.status}`);
+      return null;
+    }
+    const html = await response.text();
+
+    if (html.includes('Just a moment...') || html.includes('cf-browser-verification')) {
+      console.warn(`[WARNING] Request to ${url} was blocked by Cloudflare/WAF!`);
+      return null;
+    }
+
+    return html;
+  } catch (error) {
+    console.error(`Error fetching ${url}:`, error);
+    return null;
+  }
 }
 
 /** Chạy tác vụ bất đồng bộ theo pool giới hạn số luồng song song (tự viết, không thêm dependency) */
@@ -268,18 +298,8 @@ function stripSiteSuffix(title: string, siteTitle: string): string {
  */
 async function fetchPageInfo(url: string, siteTitle: string): Promise<PageInfo | null> {
   try {
-    const response = await fetch(url, { headers: FETCH_HEADERS });
-
-    if (!response.ok) {
-      console.warn(`Failed to fetch ${url} - Status: ${response.status}`);
-      return null;
-    }
-    const html = await response.text();
-
-    if (html.includes('Just a moment...') || html.includes('cf-browser-verification')) {
-      console.warn(`[WARNING] Request to ${url} was blocked by Cloudflare/WAF!`);
-      return null;
-    }
+    const html = await fetchText(url);
+    if (!html) return null;
 
     const $ = cheerio.load(html);
 
@@ -313,6 +333,115 @@ async function fetchPageInfo(url: string, siteTitle: string): Promise<PageInfo |
     console.error(`Error fetching ${url}:`, error);
     return null;
   }
+}
+
+/**
+ * Các vùng có khả năng chứa menu chính, xếp theo độ đặc trưng giảm dần.
+ * Hai mục cuối là thẻ HTML chuẩn nên phủ gần hết website; bộ [class*="menu"]
+ * phủ thêm các site dùng <div class="header-menu"> thay vì thẻ <nav>.
+ */
+const NAV_SELECTORS = [
+  'header nav',
+  'nav#menu',
+  '#menu',
+  '.main-menu',
+  'ul.menu',
+  '[class*="menu"]',
+  '[id*="menu"]',
+  '[class*="nav"]',
+  'nav',
+  'header'
+];
+
+/** Link không bao giờ là trang trên menu */
+function isIgnorableHref(href: string): boolean {
+  const value = href.trim().toLowerCase();
+  return !value
+    || value.startsWith('#')
+    || value.startsWith('javascript:')
+    || value.startsWith('tel:')
+    || value.startsWith('mailto:');
+}
+
+/** Nút đổi ngôn ngữ (EN/VI) trên header không phải trang nội dung */
+function isLanguageSwitch(pagePath: string): boolean {
+  return /^\/(en|vi|vn|jp|ja|kr|ko|cn|zh|fr|de|ru|th)(\.html?)?$/i.test(pagePath);
+}
+
+/** Gom các path hợp lệ từ một vùng DOM */
+function collectNavPaths($: cheerio.CheerioAPI, container: any): string[] {
+  const paths: string[] = [];
+  const seen = new Set<string>();
+
+  $(container).find('a[href]').each((_, element) => {
+    const href = $(element).attr('href') ?? '';
+    if (isIgnorableHref(href)) return;
+
+    const pagePath = toRelativePath(href);
+    if (!pagePath || isLanguageSwitch(pagePath) || seen.has(pagePath)) return;
+
+    seen.add(pagePath);
+    paths.push(pagePath);
+  });
+
+  return paths;
+}
+
+/**
+ * Quét menu chính của trang chủ để biết trang nào nằm trên menu.
+ *
+ * Đây là tín hiệu DUY NHẤT tách được trang tổng (/gioi-thieu, /lien-he) khỏi trang
+ * chính sách: cả hai đều có breadcrumb 1 tầng, không có trang con, og:type giống nhau.
+ *
+ * Ba lớp để không phụ thuộc vào markup của một website cụ thể. Lớp nào cũng trượt thì
+ * trả về tập rỗng, người gọi lùi tiếp về luật "có trang con".
+ */
+function scanMainNavPaths($: cheerio.CheerioAPI, homeHtml: string): Set<string> {
+  // ── LỚP 1: theo selector ──
+  let best: { paths: string[], selector: string } | null = null;
+
+  for (const selector of NAV_SELECTORS) {
+    for (const container of $(selector).toArray()) {
+      const paths = collectNavPaths($, container);
+      if (!best || paths.length > best.paths.length) best = { paths, selector };
+    }
+    // Tìm được vùng đủ lớn thì dừng, tránh rơi xuống 'header'/'nav' chung chung
+    // vốn hay ôm cả footer vào.
+    if (best && best.paths.length >= 4) break;
+  }
+
+  if (best && best.paths.length >= 4) {
+    console.log(`Quét menu chính (lớp 1 - selector "${best.selector}"): ${best.paths.length} link.`);
+    return new Set(best.paths);
+  }
+
+  // ── LỚP 2: theo vị trí trong tài liệu ──
+  // Không phụ thuộc tên thẻ hay class: link menu nằm ở đầu HTML trang chủ,
+  // link chính sách nằm trong footer cuối trang.
+  const HEAD_ZONE_RATIO = 0.4;
+  const headZoneLimit = homeHtml.length * HEAD_ZONE_RATIO;
+  const positional = new Set<string>();
+
+  for (const pagePath of collectNavPaths($, 'body')) {
+    if (isLanguageSwitch(pagePath)) continue;
+    // Vị trí xuất hiện ĐẦU TIÊN của path trong chuỗi HTML
+    const slug = pagePath.replace(/^\//, '');
+    const index = slug ? homeHtml.indexOf(slug) : -1;
+    if (index >= 0 && index < headZoneLimit) positional.add(pagePath);
+  }
+
+  if (positional.size >= 4) {
+    console.log(`Quét menu chính (lớp 2 - vị trí trong HTML): ${positional.size} link.`);
+    return positional;
+  }
+
+  // ── LỚP 3: người gọi tự lùi về luật "có trang con" ──
+  console.warn(
+    '⚠ Không nhận diện được menu chính trên trang chủ.\n' +
+    '  Sẽ lùi về luật "trang tổng có trang con thì đo tốc độ".\n' +
+    '  Muốn ép một trang cụ thể, khai checkCoreWebVitals: true trong data/seo/seoManualConfig.ts.'
+  );
+  return new Set<string>();
 }
 
 /**
@@ -353,9 +482,19 @@ async function run() {
     console.log(`⚠ Đã bỏ qua ${skippedCount} URL thuộc automation test data (auto-test / loadtest).`);
   }
 
-  // Title trang chủ dùng làm mốc để cắt hậu tố tên site khỏi title các trang khác
-  const homeInfo = await fetchPageInfo(BASE_URL, '');
-  const siteTitle = homeInfo?.name ?? '';
+  // Tải trang chủ đúng MỘT lần rồi dùng cho hai việc: lấy tên site (để cắt hậu tố khỏi
+  // title các trang khác) và quét menu chính. Không phát sinh request phụ.
+  const homeHtml = await fetchText(BASE_URL);
+  let siteTitle = '';
+  let navPaths = new Set<string>();
+
+  if (homeHtml) {
+    const $home = cheerio.load(homeHtml);
+    siteTitle = normalizeText($home('title').first().text());
+    navPaths = scanMainNavPaths($home, homeHtml);
+  } else {
+    console.warn('⚠ Không tải được trang chủ — bỏ qua bước quét menu chính.');
+  }
 
   // Tải breadcrumb của toàn bộ trang. Bản cũ cũng fetch từng trang (để lấy tên) nên
   // không phát sinh thêm loại chi phí mới, chỉ chạy song song cho nhanh.
@@ -375,12 +514,25 @@ async function run() {
     if (info) infoByUrl.set(url, info);
   });
 
+  // Tập các trang được trang khác khai làm tổ tiên trong breadcrumb → tức là trang CÓ trang con.
+  // Dùng để tách trang tổng thật sự (/dich-vu, /loai-xe, /tin-tuc — mỗi trang một template
+  // danh sách riêng) khỏi nhóm trang lá 1 tầng (/gioi-thieu, /lien-he, các trang chính sách —
+  // dùng chung một template nội dung tĩnh nên đo tốc độ 1 trang là đủ đại diện).
+  const parentPaths = new Set<string>();
+  for (const [url, info] of infoByUrl) {
+    const ownPath = toRelativePath(url);
+    for (const crumb of info.crumbs) {
+      if (crumb.path && crumb.path !== ownPath) parentPaths.add(crumb.path);
+    }
+  }
+
   const finalData: SeoPageTestData[] = [];
   const processedPaths = new Set<string>();
 
   // Đếm số trang chi tiết đã lấy cho từng trang tổng (thay cho prefixCounts theo slug của bản cũ)
   const detailCounts = new Map<string, number>();
   let categoryCount = 0;
+  let leafHubCwvCount = 0;
   const kindCounts: Record<string, number> = { home: 0, hub: 0, category: 0, detail: 0 };
 
   for (const fullUrl of sitemapUrls) {
@@ -430,6 +582,32 @@ async function run() {
 
     kindCounts[kind]++;
 
+    // ── NGÂN SÁCH ĐO TỐC ĐỘ ──────────────────────────────────
+    // PageSpeed API rất chậm nên chỉ đo những trang có template khác nhau:
+    //   - trang chủ
+    //   - trang tổng NẰM TRÊN MENU CHÍNH: mỗi trang một template riêng
+    //   - trang tổng NGOÀI MENU: đều là trang nội dung tĩnh dùng chung template
+    //     (các trang chính sách, điều khoản...) → chỉ lấy 1 trang đại diện
+    //
+    // Dùng menu vì đây là tín hiệu duy nhất tách được /gioi-thieu, /lien-he khỏi nhóm
+    // chính sách: cả hai đều breadcrumb 1 tầng, không trang con, og:type giống nhau.
+    // Khi không quét được menu thì lùi về luật "trang tổng có trang con".
+    const isMainPage = navPaths.size > 0
+      ? navPaths.has(relativePath)
+      : parentPaths.has(relativePath);
+
+    let checkCoreWebVitals = false;
+    if (kind === 'home') {
+      checkCoreWebVitals = true;
+    } else if (kind === 'hub') {
+      if (isMainPage) {
+        checkCoreWebVitals = true;
+      } else if (leafHubCwvCount < MAX_CWV_LEAF_HUBS) {
+        checkCoreWebVitals = true;
+        leafHubCwvCount++;
+      }
+    }
+
     // Find manual config
     const manualEntry = seoManualConfig.find(item => item.path === relativePath);
 
@@ -438,8 +616,7 @@ async function run() {
       path: relativePath,
       priority: "medium",
       severity: "normal",
-      // Chỉ trang chủ và trang tổng mới đo tốc độ (gọi PageSpeed API rất chậm)
-      checkCoreWebVitals: kind === 'home' || kind === 'hub'
+      checkCoreWebVitals
     };
 
     // Merge manual overrides over the defaults
