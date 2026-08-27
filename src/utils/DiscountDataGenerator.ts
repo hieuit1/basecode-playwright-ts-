@@ -1,12 +1,12 @@
 export interface DiscountFormData {
-    codeName: string;       // Tên mã giảm giá (VD: "AUTO_K7X3M2")
-    percent: string;        // Phần trăm giảm (VD: "30")
-    maxDiscount: string;    // Giảm tối đa VNĐ (VD: "100000")
-    usageCount: string;     // Số lần sử dụng (VD: "50")
-    expiryDate: string;     // Ngày hết hạn (format: mm/dd/yyyy)
-    description: string;    // Mô tả
-    isVisible: boolean;     // Checkbox Hiển thị
-    isSpecial: boolean;     // Checkbox Đặc biệt
+    codeName: string;
+    percent: string;
+    maxDiscount: string;
+    usageCount: string;
+    expiryDate: string;
+    description: string;
+    isVisible: boolean;
+    isSpecial: boolean;
 }
 
 export class DiscountDataGenerator {
