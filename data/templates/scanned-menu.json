@@ -1,58 +1,67 @@
 {
-  "timestamp": "2026-08-25T10:14:51.237Z",
-  "baseUrl": "https://code5.mimadigi.vn/2026/august/ngocxoai_113726W/",
+  "timestamp": "2026-08-27T09:45:50.451Z",
+  "baseUrl": "https://thuexekhanhhoa.com/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
       "Banner",
-      "Giới thiệu",
+      "Về chúng tôi",
       "Lịch sử hình thành",
       "Tầm nhìn",
-      "Sứ mệnh",
-      "Giá trị cốt lõi",
-      "Đối tác"
+      "Sứ mệnh"
     ],
-    "Group Sản Phẩm": [
-      "Chi tiết sản phẩm",
+    "Quản lý Loại xe": [
       "Danh mục cấp 1",
-      "Chi tiết sản phẩm"
+      "Loại xe"
     ],
-    "Quản lý Tin tức": [
+    "Quản lý Bảng giá": [
+      "Bảng giá"
+    ],
+    "Quản lý Dịch vụ": [
       "Danh mục cấp 1",
-      "Tin tức"
+      "Danh mục cấp 2",
+      "Dịch vụ"
     ],
     "Quản lý bài viết": [
-      "Dịch vụ",
-      "Dự án",
+      "Tin tức",
+      "Tuyến nổi bật",
+      "Quy trình làm việc",
+      "Tuyển dụng",
+      "Feedback khách hàng",
+      "Thông số",
+      "Vì sao chọn chúng tôi",
+      "Đơn hàng ảo",
       "Chính sách"
     ],
+    "Quản lý nhận tin": [
+      "Đăng ký nhận tin",
+      "Đăng ký tư vấn",
+      "Đặt xe"
+    ],
     "Quản lý trang tĩnh": [
-      "Slogan",
       "Liên hệ",
       "Footer",
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (ảnh .png)",
+      "Favicon (.png)",
       "Logo",
-      "Logo Tiếng anh",
-      "Banner quảng cáo",
-      "Slideshow",
-      "Slideshow tiếng anh",
-      "Social footer",
+      "Banner đăng ký xe",
+      "Banner vì sao",
+      "Banner form",
+      "Popup",
+      "Đối tác",
       "Link Redirect"
     ],
     "Quản lý seo page": [
       "Trang chủ",
-      "Giới thiệu",
-      "Sản phẩm",
+      "Về chúng tôi",
       "Dịch vụ",
-      "Dự án",
-      "Đối tác",
-      "Tuyển dụng",
+      "Loại xe",
+      "Bảng giá",
+      "Tuyến nổi bật",
       "Tin tức",
-      "Liên hệ"
-    ],
-    "Thiết lập thông tin": []
+      "Tuyên dụng"
+    ]
   }
 }
