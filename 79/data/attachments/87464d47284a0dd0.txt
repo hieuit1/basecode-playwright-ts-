@@ -1,0 +1,8 @@
+--- BẮT ĐẦU SETUP DATA (TẠO 3 MÃ TRÊN ADMIN CÙNG LÚC) ---
+[Setup] Tạo mã hợp lệ: AUTO_Q44CJX
+[Setup] Tạo mã hết lượt: AUTO_4Z5EH0
+--- HOÀN TẤT SETUP DATA ---
+Đang truy cập https://code2.mimadigi.vn/2026/august/cfurni_111926w/ban-sofa...
+Đang click vào sản phẩm: "Bàn ăn OLIVER" (index: 1)
+Đã đóng modal thông báo thêm giỏ hàng.
+[Auto Discount] Giá ban đầu: 8700000 | Ưu đãi: 80000 | Giá hiện tại: 8620000

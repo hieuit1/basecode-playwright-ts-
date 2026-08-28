@@ -1,0 +1,42 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     81/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          17
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/21):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H3 ("Xưởng & Showroom")
+--- LINKS ---
+   2. [Không có broken links (lỗi: 1/82)]
+      → Broken links: he-thong-cua-hang (status: 404)
+--- PERFORMANCE ---
+   3. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 55/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 55/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   4. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 15344ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 15344ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p>Tư vấn bán hàng<br>
+0932 67 82 67<br>
+Chăm sóc khách hàng<br>
+0902 34 93 94</p>
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p>Tư vấn bán hàng<br>
+0932 67 82 67<br>
+Chăm sóc khách hàng<br>
+0902 34 93 94</p>
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code2.mimadigi.vn/2026/august/cfurni_111926w/lien-he
