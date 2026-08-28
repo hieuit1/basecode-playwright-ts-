@@ -44,7 +44,7 @@ test.describe("SEO Page", () => {
         const vitalsPromise = config.checkCoreWebVitals !== false
           ? (async () => {
             const mobile = await pageSpeedService.getCoreWebVitals(fullUrl, "mobile");
-            // Delay nhỏ để tránh bị Google block (Rate Limit) do gửi 2 requests cùng lúc
+
             await new Promise(resolve => setTimeout(resolve, 1000));
             const desktop = await pageSpeedService.getCoreWebVitals(fullUrl, "desktop");
             return { mobile, desktop };
