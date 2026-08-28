@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- SECURITY ---
+   1. [Mixed Content: 5 tài nguyên HTTP]
+      → Phát hiện 5 tài nguyên HTTP trên HTTPS: http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/tu-bep-4.webp, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/tu-bep-1.jpg, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/tu-bep-2.webp, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/tu-bep-3.jpg, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/san-pham/danh-muc-cap-2/tu-bep.jpg

@@ -1,0 +1,303 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: ELIOS (/elios)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 90/100 dưới ngưỡng 96%. Có 2/21 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e6]:
+      - link "CÔNG TY TNHH CUNG ỨNG NỘI THẤT HÂN DI" [ref=e8] [cursor=pointer]:
+        - /url: https://code3.mimadigi.vn/2026/august/happylearning/
+        - img "CÔNG TY TNHH CUNG ỨNG NỘI THẤT HÂN DI" [ref=e9]
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link "Trang chủ" [ref=e13] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e14]:
+          - link "Về happy learning việt" [ref=e15] [cursor=pointer]:
+            - /url: gioi-thieu
+        - listitem [ref=e16]:
+          - link "Khóa học" [ref=e17] [cursor=pointer]:
+            - /url: khoa-hoc
+        - listitem [ref=e18]:
+          - link "Tin tức" [ref=e19] [cursor=pointer]:
+            - /url: tin-tuc
+        - listitem [ref=e20]:
+          - link "Liên hệ tư vấn" [ref=e21] [cursor=pointer]:
+            - /url: lien-he
+        - listitem [ref=e22]:
+          - generic:
+            - generic:
+              - img "HAPPYLEARNING VIỆT" [ref=e24]
+              - link "HOTLINE 0934.004.552" [ref=e26] [cursor=pointer]:
+                - /url: tel:0934.004.552
+                - paragraph [ref=e27]: HOTLINE
+                - paragraph [ref=e28]: 0934.004.552
+    - list [ref=e31]:
+      - listitem [ref=e32]:
+        - link "Trang chủ" [ref=e33] [cursor=pointer]:
+          - /url: https://code3.mimadigi.vn/2026/august/happylearning/
+          - img [ref=e34]
+          - generic [ref=e36]: Trang chủ
+      - listitem [ref=e37]:
+        - text: /
+        - link "ELIOS" [ref=e38] [cursor=pointer]:
+          - /url: https://code3.mimadigi.vn/2026/august/happylearning/elios
+    - generic [ref=e41]:
+      - generic [ref=e43]: ELIOS
+      - alert [ref=e48]:
+        - strong [ref=e49]: Đang cập nhật
+    - generic [ref=e51]:
+      - 'link "Call me: 0934.004.552" [ref=e52] [cursor=pointer]':
+        - /url: tel:0934004552
+        - img [ref=e56]
+        - generic [ref=e59]: "Call me: 0934.004.552"
+      - 'link "Zalo: 0934.004.552" [ref=e60] [cursor=pointer]':
+        - /url: https://zalo.me/0934004552
+        - img [ref=e64]
+        - generic [ref=e66]: "Zalo: 0934.004.552"
+  - contentinfo [ref=e67]:
+    - generic [ref=e70]:
+      - generic [ref=e74]:
+        - tablist [ref=e76]:
+          - tab "VỀ HAPPY LEARNING VIỆT" [selected] [ref=e77] [cursor=pointer]:
+            - generic [ref=e78]: VỀ HAPPY LEARNING VIỆT
+          - tab "KHÓA HỌC" [ref=e79] [cursor=pointer]:
+            - generic [ref=e80]: KHÓA HỌC
+        - tabpanel "VỀ HAPPY LEARNING VIỆT" [ref=e83]:
+          - list [ref=e85]:
+            - listitem [ref=e86]:
+              - link "KHÓA HỌC" [ref=e87] [cursor=pointer]:
+                - /url: khoa-hoc
+            - listitem [ref=e88]:
+              - link "test" [ref=e89] [cursor=pointer]:
+                - /url: test
+            - listitem [ref=e90]:
+              - link "CỜ VUA - GLOBAL CHESS" [ref=e91] [cursor=pointer]:
+                - /url: co-vua-global-chess
+            - listitem [ref=e92]:
+              - link "CÔNG NGHỆ - HAPPY AI & ROBOTIC" [ref=e93] [cursor=pointer]:
+                - /url: cong-nghe-happy-ai-robotic
+            - listitem [ref=e94]:
+              - link "HỘI HOẠ - GLOBAL ART" [ref=e95] [cursor=pointer]:
+                - /url: hoi-hoa-global-art
+            - listitem [ref=e96]:
+              - link "ÂM NHẠC VÀ VẬN ĐỘNG - HAPPY MUSIC & DANCE" [ref=e97] [cursor=pointer]:
+                - /url: am-nhac-va-van-dong-happy-music-dance
+            - listitem [ref=e98]:
+              - link "LUYỆN THI CÁC MÔN" [ref=e99] [cursor=pointer]:
+                - /url: luyen-thi-cac-mon
+          - generic [ref=e100]:
+            - paragraph [ref=e101]: "HAPPY LEARNING VIET là hệ sinh thái giáo dục gồm hai thế mạnh đào tạo chính là NGOẠI NGỮ và PHÁT TRIỂN TƯ DUY SÁNG TẠO cho trẻ em, người lớn qua các môn:"
+            - paragraph [ref=e102]: "- Tiếng Anh - Tiếng Hoa"
+            - paragraph [ref=e103]: "- Hội Hoạ và Mỹ Thuật."
+            - paragraph [ref=e104]: "- Âm nhạc và vận động."
+            - paragraph [ref=e105]: "- Cờ vua, AI & Robotic."
+            - paragraph [ref=e106]: "- Các chương trình Workshop, hoạt động ngoại khoá..."
+            - paragraph [ref=e107]: Với cơ sở vật chất tiện nghi, hiện đại, đội ngũ nhiều chuyên gia, giáo viên có trình độ chuyên môn cao, phương pháp giảng dạy độc quyền HAPPY TEACHING (HT) sẽ giúp người học lĩnh hội kiến thức hiệu quả và vui vẻ với các trải nghiệm học tập suốt đời.
+      - generic [ref=e108]:
+        - paragraph [ref=e110]: THEO DÕI HAPPY LEARNING VIỆT TẠI
+        - generic [ref=e111]:
+          - link "HAPPYLEARNING VIỆT" [ref=e112] [cursor=pointer]:
+            - /url: https://zalo.me/0986363885
+            - img "HAPPYLEARNING VIỆT" [ref=e113]
+          - link "HAPPYLEARNING VIỆT" [ref=e114] [cursor=pointer]:
+            - /url: ""
+            - img "HAPPYLEARNING VIỆT" [ref=e115]
+          - link "HAPPYLEARNING VIỆT" [ref=e116] [cursor=pointer]:
+            - /url: https://www.facebook.com/happyenglish.every
+            - img "HAPPYLEARNING VIỆT" [ref=e117]
+          - link "HAPPYLEARNING VIỆT" [ref=e118] [cursor=pointer]:
+            - /url: ""
+            - img "HAPPYLEARNING VIỆT" [ref=e119]
+          - link "HAPPYLEARNING VIỆT" [ref=e120] [cursor=pointer]:
+            - /url: ""
+            - img "HAPPYLEARNING VIỆT" [ref=e121]
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "90"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 90/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 🟢 TỐT
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "21"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 19
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 2
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: ELIOS
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e122]:
+      - generic [ref=e123]: "❌ Chi tiết lỗi cần khắc phục (2/21):"
+      - generic [ref=e124]:
+        - generic [ref=e125]:
+          - generic [ref=e126]: 8. Tốc độ & Core Web Vitals
+          - generic [ref=e127]: 2 lỗi
+        - generic [ref=e128]:
+          - strong [ref=e130]: "[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 55/100 (≥ 60)"
+          - generic [ref=e131]: ⚠️ [📱 MOBILE (ƯU TIÊN)] Điểm Performance 55/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+        - generic [ref=e132]:
+          - strong [ref=e134]: "[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 11404ms (< 2500ms)"
+          - generic [ref=e135]:
+            - text: "⚠️ [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 11404ms (chuẩn: < 2.5s) → Thủ phạm LCP:"
+            - paragraph [ref=e136]: Với cơ sở vật chất tiện nghi, hiện đại, đội ngũ ...
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 90/100 dưới ngưỡng 96%. Có 2/21 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```

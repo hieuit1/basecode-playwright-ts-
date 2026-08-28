@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- SECURITY ---
+   1. [Mixed Content: 5 tài nguyên HTTP]
+      → Phát hiện 5 tài nguyên HTTP trên HTTPS: http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/thiet-bi-thong-minh-cam-bien-su-lua-chon-toi-uu-cho-khong-gian-song-hien-dai.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/nhung-tinh-nang-cua-thiet-bi-thong-minh-va-cam-bien.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/cam-bien-nhiet-do-va-do-am.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/ung-dung-trong-doanh-nghiep.png, http://code.mimadigi.com/code-t9-2025-noithathandi/upload/elfinder/tin-tuc/dich-vu-tu-van-va-lap-dat.png
