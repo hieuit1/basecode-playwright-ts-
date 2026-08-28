@@ -1,0 +1,1384 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: /index.php (/index.php)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 86/100 dưới ngưỡng 96%. Có 3/21 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - text: 
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: Rèm cửa Thiên Phát – Sự lựa chọn của vẻ đẹp và quyền lực
+        - generic [ref=e7]:
+          - img "Rèm Cửa Thiên Phát" [ref=e8]
+          - text: "Địa chỉ: Tân Bình,TP. HCM"
+        - generic [ref=e10]:
+          - link "Facebook" [ref=e11] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61565154050635
+            - img "Facebook" [ref=e12]
+          - link "Map" [ref=e13] [cursor=pointer]:
+            - /url: https://www.google.com/maps
+            - img "Map" [ref=e14]
+          - link "Điện thoại" [ref=e15] [cursor=pointer]:
+            - /url: tel:0352559440
+            - img "Điện thoại" [ref=e16]
+          - link "Zalo" [ref=e17] [cursor=pointer]:
+            - /url: https://zalo.me/0901889594
+            - img "Zalo" [ref=e18]
+          - link "Điện thoại" [ref=e19] [cursor=pointer]:
+            - /url: tel:0901889594
+            - img "Điện thoại" [ref=e20]
+      - generic [ref=e22]:
+        - link "Logo vi" [ref=e23] [cursor=pointer]:
+          - /url: ""
+          - img "Logo vi" [ref=e24]
+        - generic [ref=e25]:
+          - textbox "Tìm kiếm sản phẩm" [ref=e26]
+          - paragraph [ref=e27] [cursor=pointer]:
+            - img "Rèm Cửa Thiên Phát" [ref=e28]
+        - generic [ref=e29]:
+          - img "Rèm Cửa Thiên Phát" [ref=e30]
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: Liên Hệ Đặt Hàng
+            - link "0335008724-0987870850" [ref=e33] [cursor=pointer]:
+              - /url: tel:0335008724
+    - list [ref=e37]:
+      - listitem [ref=e38]:
+        - link "DANH MỤC SẢN PHẨM" [ref=e39] [cursor=pointer]:
+          - /url: san-pham
+          - img [ref=e40]
+          - text: DANH MỤC SẢN PHẨM
+      - listitem [ref=e42]:
+        - link "Trang chủ" [ref=e43] [cursor=pointer]:
+          - /url: ""
+          - heading "Trang chủ" [level=2] [ref=e44]
+      - listitem [ref=e45]:
+        - link "Giới thiệu" [ref=e46] [cursor=pointer]:
+          - /url: gioi-thieu
+          - heading "Giới thiệu" [level=2] [ref=e47]
+      - listitem [ref=e48]:
+        - link "Công trình" [ref=e49] [cursor=pointer]:
+          - /url: cong-trinh
+          - heading "Công trình" [level=2] [ref=e50]
+      - listitem [ref=e51]:
+        - link "Sản phẩm" [ref=e52] [cursor=pointer]:
+          - /url: san-pham
+          - heading "Sản phẩm" [level=2] [ref=e53]
+      - listitem [ref=e54]:
+        - link "DỊCH VỤ" [ref=e55] [cursor=pointer]:
+          - /url: dich-vu
+          - heading "DỊCH VỤ" [level=2] [ref=e56]
+      - listitem [ref=e57]:
+        - link "TIN TỨC" [ref=e58] [cursor=pointer]:
+          - /url: tin-tuc
+          - heading "TIN TỨC" [level=2] [ref=e59]
+      - listitem [ref=e60]:
+        - link "Liên hệ" [ref=e61] [cursor=pointer]:
+          - /url: lien-he
+          - heading "Liên hệ" [level=2] [ref=e62]
+    - generic [ref=e66]:
+      - button "Previous" [ref=e67] [cursor=pointer]: ←Previous
+      - listbox [ref=e69]:
+        - option [ref=e70]:
+          - link [ref=e71] [cursor=pointer]:
+            - /url: ""
+            - img [ref=e73]
+        - option [ref=e74]:
+          - link [ref=e75] [cursor=pointer]:
+            - /url: ""
+            - img [ref=e77]
+        - option "Rèm Cửa Thiên Phát" [ref=e78]:
+          - link "Rèm Cửa Thiên Phát" [ref=e79] [cursor=pointer]:
+            - /url: ""
+            - img "Rèm Cửa Thiên Phát" [ref=e81]
+      - button "Next" [ref=e82] [cursor=pointer]: →Next
+    - generic [ref=e83]:
+      - generic [ref=e85]:
+        - generic:
+          - generic: Giới Thiệu Về
+          - generic: Rèm Cửa Thiên Phát- Rèm Cửa Uy Tín Nhất TP.HCM
+          - generic:
+            - paragraph: Rèm Cửa Thiên Phát tự hào là đơn vị chuyên cung cấp và thi công lắp đặt rèm cửa uy tín nhất ở Tân Bình nói chung và cả TP.HCM Nói Riêng. Với hơn 10 năm kinh nghiệm trong nghề, chúng tôi đã khẳng định vị thế là một trong những thương hiệu hàng đầu, được nhiều khách hàng tin tưởng và lựa chọn. Sản phẩm của chúng tôi không chỉ đa dạng về mẫu mã, chất lượng vượt trội mà còn đáp ứng mọi nhu cầu về thẩm mỹ và công năng cho không gian sống và làm việc. Đừng chừng chờ nữa! Liên Hệ với chúng tôi ngay hôm nay để được tư vấn và báo giá miễn phí!
+          - link "Xem thêm":
+            - /url: gioi-thieu
+        - generic:
+          - generic:
+            - img "Rèm Cửa Thiên Phát- Rèm Cửa Uy Tín Nhất TP.HCM"
+          - generic: welcome
+      - generic [ref=e87]:
+        - generic:
+          - generic: đến với rèm cửa thiên phát
+          - generic: Đáp ứng mọi nhu cầu khách hàng
+          - link "0335008724":
+            - /url: tel:0335008724
+        - generic:
+          - generic: khảo sát tại nhà, tư vấn miễn phí
+          - generic: Để lại số điện thoại chúng tôi sẽ liên hệ ngay với bạn
+          - generic:
+            - generic:
+              - textbox "Nhập vào số điện thoại của bạn..."
+            - generic:
+              - button "Submit"
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - generic [ref=e92]: SẢN PHẨM CAO CẤP
+          - paragraph [ref=e93]:
+            - link "Xem tất cả sản phẩm" [ref=e94] [cursor=pointer]:
+              - /url: san-pham
+        - generic [ref=e98]:
+          - option "Rèm Cầu Vồng Đẹp XEM NHANH Rèm Cầu Vồng Đẹp Liên hệ báo giá" [ref=e101] [cursor=pointer]:
+            - generic [ref=e102]:
+              - img "Rèm Cầu Vồng Đẹp" [ref=e104]
+              - generic [ref=e106]: XEM NHANH
+            - generic [ref=e107]:
+              - heading "Rèm Cầu Vồng Đẹp" [level=3] [ref=e108]
+              - paragraph [ref=e109]:
+                - generic [ref=e110]: Liên hệ báo giá
+          - option "Rèm Cầu Vồng – Sự Kết Hợp Hoàn Hảo Giữa Tiện Lợi Và Thẩm Mỹ XEM NHANH Rèm Cầu Vồng – Sự Kết Hợp Hoàn Hảo Giữa Tiện Lợi Và Thẩm Mỹ Liên hệ báo giá" [ref=e113] [cursor=pointer]:
+            - generic [ref=e114]:
+              - img "Rèm Cầu Vồng – Sự Kết Hợp Hoàn Hảo Giữa Tiện Lợi Và Thẩm Mỹ" [ref=e116]
+              - generic [ref=e118]: XEM NHANH
+            - generic [ref=e119]:
+              - heading "Rèm Cầu Vồng – Sự Kết Hợp Hoàn Hảo Giữa Tiện Lợi Và Thẩm Mỹ" [level=3] [ref=e120]
+              - paragraph [ref=e121]:
+                - generic [ref=e122]: Liên hệ báo giá
+          - option "Rèm Cầu Vồng Hàn Quốc mẫu cao cấp XEM NHANH Rèm Cầu Vồng Hàn Quốc mẫu cao cấp Liên hệ báo giá" [ref=e125] [cursor=pointer]:
+            - generic [ref=e126]:
+              - img "Rèm Cầu Vồng Hàn Quốc mẫu cao cấp" [ref=e128]
+              - generic [ref=e130]: XEM NHANH
+            - generic [ref=e131]:
+              - heading "Rèm Cầu Vồng Hàn Quốc mẫu cao cấp" [level=3] [ref=e132]
+              - paragraph [ref=e133]:
+                - generic [ref=e134]: Liên hệ báo giá
+          - option "Rèm Cầu Vồng – Giải Pháp Thông Minh Cho Không Gian Hiện Đại Tại TP HCM XEM NHANH Rèm Cầu Vồng – Giải Pháp Thông Minh Cho Không Gian Hiện Đại Tại TP HCM Liên hệ báo giá" [ref=e137] [cursor=pointer]:
+            - generic [ref=e138]:
+              - img "Rèm Cầu Vồng – Giải Pháp Thông Minh Cho Không Gian Hiện Đại Tại TP HCM" [ref=e140]
+              - generic [ref=e142]: XEM NHANH
+            - generic [ref=e143]:
+              - heading "Rèm Cầu Vồng – Giải Pháp Thông Minh Cho Không Gian Hiện Đại Tại TP HCM" [level=3] [ref=e144]
+              - paragraph [ref=e145]:
+                - generic [ref=e146]: Liên hệ báo giá
+          - option "Rèm Cuốn chống nắng giá ưu đãi XEM NHANH Rèm Cuốn chống nắng giá ưu đãi Liên hệ báo giá" [ref=e149] [cursor=pointer]:
+            - generic [ref=e150]:
+              - img "Rèm Cuốn chống nắng giá ưu đãi" [ref=e152]
+              - generic [ref=e154]: XEM NHANH
+            - generic [ref=e155]:
+              - heading "Rèm Cuốn chống nắng giá ưu đãi" [level=3] [ref=e156]
+              - paragraph [ref=e157]:
+                - generic [ref=e158]: Liên hệ báo giá
+          - option "Rèm Cuốn Trơn văn Phòng Giá Tốt nhất XEM NHANH Rèm Cuốn Trơn văn Phòng Giá Tốt nhất Liên hệ báo giá" [ref=e161] [cursor=pointer]:
+            - generic [ref=e162]:
+              - img "Rèm Cuốn Trơn văn Phòng Giá Tốt nhất" [ref=e164]
+              - generic [ref=e166]: XEM NHANH
+            - generic [ref=e167]:
+              - heading "Rèm Cuốn Trơn văn Phòng Giá Tốt nhất" [level=3] [ref=e168]
+              - paragraph [ref=e169]:
+                - generic [ref=e170]: Liên hệ báo giá
+          - option "Rèm Cuốn văn Phòng Giá Tốt nhất XEM NHANH Rèm Cuốn văn Phòng Giá Tốt nhất Liên hệ báo giá" [ref=e173] [cursor=pointer]:
+            - generic [ref=e174]:
+              - img "Rèm Cuốn văn Phòng Giá Tốt nhất" [ref=e176]
+              - generic [ref=e178]: XEM NHANH
+            - generic [ref=e179]:
+              - heading "Rèm Cuốn văn Phòng Giá Tốt nhất" [level=3] [ref=e180]
+              - paragraph [ref=e181]:
+                - generic [ref=e182]: Liên hệ báo giá
+          - option "Rèm Cuốn- Giải Pháp Tiện Dụng Và Hiện Đại Tại TP HCM XEM NHANH Rèm Cuốn- Giải Pháp Tiện Dụng Và Hiện Đại Tại TP HCM Liên hệ báo giá" [ref=e185] [cursor=pointer]:
+            - generic [ref=e186]:
+              - img "Rèm Cuốn- Giải Pháp Tiện Dụng Và Hiện Đại Tại TP HCM" [ref=e188]
+              - generic [ref=e190]: XEM NHANH
+            - generic [ref=e191]:
+              - heading "Rèm Cuốn- Giải Pháp Tiện Dụng Và Hiện Đại Tại TP HCM" [level=3] [ref=e192]
+              - paragraph [ref=e193]:
+                - generic [ref=e194]: Liên hệ báo giá
+          - option "Rèm Cầu Vồng Tự Động - Phong Cách Hiện Đại, Tiện Lợi Tối Đa XEM NHANH Rèm Cầu Vồng Tự Động - Phong Cách Hiện Đại, Tiện Lợi Tối Đa Liên hệ báo giá" [ref=e197] [cursor=pointer]:
+            - generic [ref=e198]:
+              - img "Rèm Cầu Vồng Tự Động - Phong Cách Hiện Đại, Tiện Lợi Tối Đa" [ref=e200]
+              - generic [ref=e202]: XEM NHANH
+            - generic [ref=e203]:
+              - heading "Rèm Cầu Vồng Tự Động - Phong Cách Hiện Đại, Tiện Lợi Tối Đa" [level=3] [ref=e204]
+              - paragraph [ref=e205]:
+                - generic [ref=e206]: Liên hệ báo giá
+          - option "Rèm Roman Tự Động - Sự Kết Hợp Hoàn Hảo XEM NHANH Rèm Roman Tự Động - Sự Kết Hợp Hoàn Hảo Liên hệ báo giá" [ref=e209] [cursor=pointer]:
+            - generic [ref=e210]:
+              - img "Rèm Roman Tự Động - Sự Kết Hợp Hoàn Hảo" [ref=e212]
+              - generic [ref=e214]: XEM NHANH
+            - generic [ref=e215]:
+              - heading "Rèm Roman Tự Động - Sự Kết Hợp Hoàn Hảo" [level=3] [ref=e216]
+              - paragraph [ref=e217]:
+                - generic [ref=e218]: Liên hệ báo giá
+          - option "Rèm Gỗ Tự Động - Sự Lựa Chọn Hoàn Hảo Cho Không Gian XEM NHANH Rèm Gỗ Tự Động - Sự Lựa Chọn Hoàn Hảo Cho Không Gian Liên hệ báo giá" [ref=e221] [cursor=pointer]:
+            - generic [ref=e222]:
+              - img "Rèm Gỗ Tự Động - Sự Lựa Chọn Hoàn Hảo Cho Không Gian" [ref=e224]
+              - generic [ref=e226]: XEM NHANH
+            - generic [ref=e227]:
+              - heading "Rèm Gỗ Tự Động - Sự Lựa Chọn Hoàn Hảo Cho Không Gian" [level=3] [ref=e228]
+              - paragraph [ref=e229]:
+                - generic [ref=e230]: Liên hệ báo giá
+          - option "Rèm Cửa Tự Động Cao Cấp – Giải Pháp Thông Minh Cho Không Gian Tại TP HCM XEM NHANH Rèm Cửa Tự Động Cao Cấp – Giải Pháp Thông Minh Cho Không Gian Tại TP HCM Liên hệ báo giá" [ref=e233] [cursor=pointer]:
+            - generic [ref=e234]:
+              - img "Rèm Cửa Tự Động Cao Cấp – Giải Pháp Thông Minh Cho Không Gian Tại TP HCM" [ref=e236]
+              - generic [ref=e238]: XEM NHANH
+            - generic [ref=e239]:
+              - heading "Rèm Cửa Tự Động Cao Cấp – Giải Pháp Thông Minh Cho Không Gian Tại TP HCM" [level=3] [ref=e240]
+              - paragraph [ref=e241]:
+                - generic [ref=e242]: Liên hệ báo giá
+          - option "RÈM VẢI 2 LỚP HÀN QUỐC XEM NHANH RÈM VẢI 2 LỚP HÀN QUỐC Liên hệ báo giá" [ref=e245] [cursor=pointer]:
+            - generic [ref=e246]:
+              - img "RÈM VẢI 2 LỚP HÀN QUỐC" [ref=e248]
+              - generic [ref=e250]: XEM NHANH
+            - generic [ref=e251]:
+              - heading "RÈM VẢI 2 LỚP HÀN QUỐC" [level=3] [ref=e252]
+              - paragraph [ref=e253]:
+                - generic [ref=e254]: Liên hệ báo giá
+          - option "mẫu rèm vải 2 lớp dành cho ngôi nhà XEM NHANH mẫu rèm vải 2 lớp dành cho ngôi nhà Liên hệ báo giá" [ref=e257] [cursor=pointer]:
+            - generic [ref=e258]:
+              - img "mẫu rèm vải 2 lớp dành cho ngôi nhà" [ref=e260]
+              - generic [ref=e262]: XEM NHANH
+            - generic [ref=e263]:
+              - heading "mẫu rèm vải 2 lớp dành cho ngôi nhà" [level=3] [ref=e264]
+              - paragraph [ref=e265]:
+                - generic [ref=e266]: Liên hệ báo giá
+          - option "RÈM VẢI 2 LỚp ĐA DẠNG MÀU SẮC XEM NHANH RÈM VẢI 2 LỚp ĐA DẠNG MÀU SẮC Liên hệ báo giá" [ref=e269] [cursor=pointer]:
+            - generic [ref=e270]:
+              - img "RÈM VẢI 2 LỚp ĐA DẠNG MÀU SẮC" [ref=e272]
+              - generic [ref=e274]: XEM NHANH
+            - generic [ref=e275]:
+              - heading "RÈM VẢI 2 LỚp ĐA DẠNG MÀU SẮC" [level=3] [ref=e276]
+              - paragraph [ref=e277]:
+                - generic [ref=e278]: Liên hệ báo giá
+          - option "rèm vải 1 lớp giá rẻ XEM NHANH rèm vải 1 lớp giá rẻ Liên hệ báo giá" [ref=e281] [cursor=pointer]:
+            - generic [ref=e282]:
+              - img "rèm vải 1 lớp giá rẻ" [ref=e284]
+              - generic [ref=e286]: XEM NHANH
+            - generic [ref=e287]:
+              - heading "rèm vải 1 lớp giá rẻ" [level=3] [ref=e288]
+              - paragraph [ref=e289]:
+                - generic [ref=e290]: Liên hệ báo giá
+          - option "Rèm Cửa Màu Xám - Lựa Chọn Hoàn Hảo Cho Không Gian Sống XEM NHANH Rèm Cửa Màu Xám - Lựa Chọn Hoàn Hảo Cho Không Gian Sống Liên hệ báo giá" [ref=e293] [cursor=pointer]:
+            - generic [ref=e294]:
+              - img "Rèm Cửa Màu Xám - Lựa Chọn Hoàn Hảo Cho Không Gian Sống" [ref=e296]
+              - generic [ref=e298]: XEM NHANH
+            - generic [ref=e299]:
+              - heading "Rèm Cửa Màu Xám - Lựa Chọn Hoàn Hảo Cho Không Gian Sống" [level=3] [ref=e300]
+              - paragraph [ref=e301]:
+                - generic [ref=e302]: Liên hệ báo giá
+          - option "Rèm cửa 2 lớp vải lụa cao cấp XEM NHANH Rèm cửa 2 lớp vải lụa cao cấp Liên hệ báo giá" [ref=e305] [cursor=pointer]:
+            - generic [ref=e306]:
+              - img "Rèm cửa 2 lớp vải lụa cao cấp" [ref=e308]
+              - generic [ref=e310]: XEM NHANH
+            - generic [ref=e311]:
+              - heading "Rèm cửa 2 lớp vải lụa cao cấp" [level=3] [ref=e312]
+              - paragraph [ref=e313]:
+                - generic [ref=e314]: Liên hệ báo giá
+          - option "Rèm Vải 2 Lớp Rèm Cửa Uy Tín, Giá Rẻ XEM NHANH Rèm Vải 2 Lớp Rèm Cửa Uy Tín, Giá Rẻ Liên hệ báo giá" [ref=e317] [cursor=pointer]:
+            - generic [ref=e318]:
+              - img "Rèm Vải 2 Lớp Rèm Cửa Uy Tín, Giá Rẻ" [ref=e320]
+              - generic [ref=e322]: XEM NHANH
+            - generic [ref=e323]:
+              - heading "Rèm Vải 2 Lớp Rèm Cửa Uy Tín, Giá Rẻ" [level=3] [ref=e324]
+              - paragraph [ref=e325]:
+                - generic [ref=e326]: Liên hệ báo giá
+          - option "Rèm Vải 2 Lớp- Tôn vinh ngôi nhà của bạn XEM NHANH Rèm Vải 2 Lớp- Tôn vinh ngôi nhà của bạn Liên hệ báo giá" [ref=e329] [cursor=pointer]:
+            - generic [ref=e330]:
+              - img "Rèm Vải 2 Lớp- Tôn vinh ngôi nhà của bạn" [ref=e332]
+              - generic [ref=e334]: XEM NHANH
+            - generic [ref=e335]:
+              - heading "Rèm Vải 2 Lớp- Tôn vinh ngôi nhà của bạn" [level=3] [ref=e336]
+              - paragraph [ref=e337]:
+                - generic [ref=e338]: Liên hệ báo giá
+          - option "Rèm Vải 2 Lớp – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát Uy Tín Ở TP HCM XEM NHANH Rèm Vải 2 Lớp – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát Uy Tín Ở TP HCM Liên hệ báo giá" [ref=e341] [cursor=pointer]:
+            - generic [ref=e342]:
+              - img "Rèm Vải 2 Lớp – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát Uy Tín Ở TP HCM" [ref=e344]
+              - generic [ref=e346]: XEM NHANH
+            - generic [ref=e347]:
+              - heading "Rèm Vải 2 Lớp – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát Uy Tín Ở TP HCM" [level=3] [ref=e348]
+              - paragraph [ref=e349]:
+                - generic [ref=e350]: Liên hệ báo giá
+          - option "Rèm Vải 2 Lớp XEM NHANH Rèm Vải 2 Lớp Liên hệ báo giá" [ref=e353] [cursor=pointer]:
+            - generic [ref=e354]:
+              - img "Rèm Vải 2 Lớp" [ref=e356]
+              - generic [ref=e358]: XEM NHANH
+            - generic [ref=e359]:
+              - heading "Rèm Vải 2 Lớp" [level=3] [ref=e360]
+              - paragraph [ref=e361]:
+                - generic [ref=e362]: Liên hệ báo giá
+          - option "Rèm Vải Một Lớp – Lựa Chọn Hoàn Hảo Từ Rèm Cửa ở HCM XEM NHANH Rèm Vải Một Lớp – Lựa Chọn Hoàn Hảo Từ Rèm Cửa ở HCM Liên hệ báo giá" [ref=e365] [cursor=pointer]:
+            - generic [ref=e366]:
+              - img "Rèm Vải Một Lớp – Lựa Chọn Hoàn Hảo Từ Rèm Cửa ở HCM" [ref=e368]
+              - generic [ref=e370]: XEM NHANH
+            - generic [ref=e371]:
+              - heading "Rèm Vải Một Lớp – Lựa Chọn Hoàn Hảo Từ Rèm Cửa ở HCM" [level=3] [ref=e372]
+              - paragraph [ref=e373]:
+                - generic [ref=e374]: Liên hệ báo giá
+          - option "Rèm Cửa Một Lớp XEM NHANH Rèm Cửa Một Lớp Liên hệ báo giá" [ref=e377] [cursor=pointer]:
+            - generic [ref=e378]:
+              - img "Rèm Cửa Một Lớp" [ref=e380]
+              - generic [ref=e382]: XEM NHANH
+            - generic [ref=e383]:
+              - heading "Rèm Cửa Một Lớp" [level=3] [ref=e384]
+              - paragraph [ref=e385]:
+                - generic [ref=e386]: Liên hệ báo giá
+          - option "Rèm sáo gỗ đẹp sang trọng XEM NHANH Rèm sáo gỗ đẹp sang trọng Liên hệ báo giá" [ref=e389] [cursor=pointer]:
+            - generic [ref=e390]:
+              - img "Rèm sáo gỗ đẹp sang trọng" [ref=e392]
+              - generic [ref=e394]: XEM NHANH
+            - generic [ref=e395]:
+              - heading "Rèm sáo gỗ đẹp sang trọng" [level=3] [ref=e396]
+              - paragraph [ref=e397]:
+                - generic [ref=e398]: Liên hệ báo giá
+          - option "Rèm Sáo Gỗ – rèm cửa tự nhiên cao cấp XEM NHANH Rèm Sáo Gỗ – rèm cửa tự nhiên cao cấp Liên hệ báo giá" [ref=e401] [cursor=pointer]:
+            - generic [ref=e402]:
+              - img "Rèm Sáo Gỗ – rèm cửa tự nhiên cao cấp" [ref=e404]
+              - generic [ref=e406]: XEM NHANH
+            - generic [ref=e407]:
+              - heading "Rèm Sáo Gỗ – rèm cửa tự nhiên cao cấp" [level=3] [ref=e408]
+              - paragraph [ref=e409]:
+                - generic [ref=e410]: Liên hệ báo giá
+          - option "Rèm Sáo Gỗ – Giải Pháp Tinh Tế Cho Không Gian Sống Tại TP HCM XEM NHANH Rèm Sáo Gỗ – Giải Pháp Tinh Tế Cho Không Gian Sống Tại TP HCM Liên hệ báo giá" [ref=e413] [cursor=pointer]:
+            - generic [ref=e414]:
+              - img "Rèm Sáo Gỗ – Giải Pháp Tinh Tế Cho Không Gian Sống Tại TP HCM" [ref=e416]
+              - generic [ref=e418]: XEM NHANH
+            - generic [ref=e419]:
+              - heading "Rèm Sáo Gỗ – Giải Pháp Tinh Tế Cho Không Gian Sống Tại TP HCM" [level=3] [ref=e420]
+              - paragraph [ref=e421]:
+                - generic [ref=e422]: Liên hệ báo giá
+          - option "Rèm Sáo Gỗ – Sự Lựa Chọn Tinh Tế XEM NHANH Rèm Sáo Gỗ – Sự Lựa Chọn Tinh Tế Liên hệ báo giá" [ref=e425] [cursor=pointer]:
+            - generic [ref=e426]:
+              - img "Rèm Sáo Gỗ – Sự Lựa Chọn Tinh Tế" [ref=e428]
+              - generic [ref=e430]: XEM NHANH
+            - generic [ref=e431]:
+              - heading "Rèm Sáo Gỗ – Sự Lựa Chọn Tinh Tế" [level=3] [ref=e432]
+              - paragraph [ref=e433]:
+                - generic [ref=e434]: Liên hệ báo giá
+          - option "Rèm xếp lớp roman cho cửa sổ phòng ngủ XEM NHANH Rèm xếp lớp roman cho cửa sổ phòng ngủ Liên hệ báo giá" [ref=e437] [cursor=pointer]:
+            - generic [ref=e438]:
+              - img "Rèm xếp lớp roman cho cửa sổ phòng ngủ" [ref=e440]
+              - generic [ref=e442]: XEM NHANH
+            - generic [ref=e443]:
+              - heading "Rèm xếp lớp roman cho cửa sổ phòng ngủ" [level=3] [ref=e444]
+              - paragraph [ref=e445]:
+                - generic [ref=e446]: Liên hệ báo giá
+          - option "Rèm xếp roman cao cấp hoa lá thiên nhiên sang trọng XEM NHANH Rèm xếp roman cao cấp hoa lá thiên nhiên sang trọng Liên hệ báo giá" [ref=e449] [cursor=pointer]:
+            - generic [ref=e450]:
+              - img "Rèm xếp roman cao cấp hoa lá thiên nhiên sang trọng" [ref=e452]
+              - generic [ref=e454]: XEM NHANH
+            - generic [ref=e455]:
+              - heading "Rèm xếp roman cao cấp hoa lá thiên nhiên sang trọng" [level=3] [ref=e456]
+              - paragraph [ref=e457]:
+                - generic [ref=e458]: Liên hệ báo giá
+          - option "Rèm xếp cửa sổ roman màu xanh dương chống sáng cản nhiệt XEM NHANH Rèm xếp cửa sổ roman màu xanh dương chống sáng cản nhiệt Liên hệ báo giá" [ref=e461] [cursor=pointer]:
+            - generic [ref=e462]:
+              - img "Rèm xếp cửa sổ roman màu xanh dương chống sáng cản nhiệt" [ref=e464]
+              - generic [ref=e466]: XEM NHANH
+            - generic [ref=e467]:
+              - heading "Rèm xếp cửa sổ roman màu xanh dương chống sáng cản nhiệt" [level=3] [ref=e468]
+              - paragraph [ref=e469]:
+                - generic [ref=e470]: Liên hệ báo giá
+          - option "Rèm Roman – Phong Cách Thanh Lịch Cho Không Gian Hiện Đại XEM NHANH Rèm Roman – Phong Cách Thanh Lịch Cho Không Gian Hiện Đại Liên hệ báo giá" [ref=e473] [cursor=pointer]:
+            - generic [ref=e474]:
+              - img "Rèm Roman – Phong Cách Thanh Lịch Cho Không Gian Hiện Đại" [ref=e476]
+              - generic [ref=e478]: XEM NHANH
+            - generic [ref=e479]:
+              - heading "Rèm Roman – Phong Cách Thanh Lịch Cho Không Gian Hiện Đại" [level=3] [ref=e480]
+              - paragraph [ref=e481]:
+                - generic [ref=e482]: Liên hệ báo giá
+          - option "Máng Treo Rèm Cửa – Phụ Kiện Thiết Yếu Cho Không Gian Nội Thất XEM NHANH Máng Treo Rèm Cửa – Phụ Kiện Thiết Yếu Cho Không Gian Nội Thất Liên hệ báo giá" [ref=e485] [cursor=pointer]:
+            - generic [ref=e486]:
+              - img "Máng Treo Rèm Cửa – Phụ Kiện Thiết Yếu Cho Không Gian Nội Thất" [ref=e488]
+              - generic [ref=e490]: XEM NHANH
+            - generic [ref=e491]:
+              - heading "Máng Treo Rèm Cửa – Phụ Kiện Thiết Yếu Cho Không Gian Nội Thất" [level=3] [ref=e492]
+              - paragraph [ref=e493]:
+                - generic [ref=e494]: Liên hệ báo giá
+          - option "Thanh Treo Gỗ Căm Xe XEM NHANH Thanh Treo Gỗ Căm Xe Liên hệ báo giá" [ref=e497] [cursor=pointer]:
+            - generic [ref=e498]:
+              - img "Thanh Treo Gỗ Căm Xe" [ref=e500]
+              - generic [ref=e502]: XEM NHANH
+            - generic [ref=e503]:
+              - heading "Thanh Treo Gỗ Căm Xe" [level=3] [ref=e504]
+              - paragraph [ref=e505]:
+                - generic [ref=e506]: Liên hệ báo giá
+          - option "Giàn Phơi Trần – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM XEM NHANH Giàn Phơi Trần – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM Liên hệ báo giá" [ref=e509] [cursor=pointer]:
+            - generic [ref=e510]:
+              - img "Giàn Phơi Trần – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM" [ref=e512]
+              - generic [ref=e514]: XEM NHANH
+            - generic [ref=e515]:
+              - heading "Giàn Phơi Trần – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM" [level=3] [ref=e516]
+              - paragraph [ref=e517]:
+                - generic [ref=e518]: Liên hệ báo giá
+          - option "Giàn Phơi Tường – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM XEM NHANH Giàn Phơi Tường – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM Liên hệ báo giá" [ref=e521] [cursor=pointer]:
+            - generic [ref=e522]:
+              - img "Giàn Phơi Tường – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM" [ref=e524]
+              - generic [ref=e526]: XEM NHANH
+            - generic [ref=e527]:
+              - heading "Giàn Phơi Tường – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM" [level=3] [ref=e528]
+              - paragraph [ref=e529]:
+                - generic [ref=e530]: Liên hệ báo giá
+          - option "Rèm Cầu Vồng Hàn Quốc XEM NHANH Rèm Cầu Vồng Hàn Quốc Liên hệ báo giá" [ref=e533] [cursor=pointer]:
+            - generic [ref=e534]:
+              - img "Rèm Cầu Vồng Hàn Quốc" [ref=e536]
+              - generic [ref=e538]: XEM NHANH
+            - generic [ref=e539]:
+              - heading "Rèm Cầu Vồng Hàn Quốc" [level=3] [ref=e540]
+              - paragraph [ref=e541]:
+                - generic [ref=e542]: Liên hệ báo giá
+      - generic [ref=e544]:
+        - generic [ref=e545]:
+          - generic [ref=e547]: RÈM CẦU VỒNG
+          - paragraph [ref=e548]:
+            - link "Xem tất cả sản phẩm" [ref=e549] [cursor=pointer]:
+              - /url: san-pham
+        - generic [ref=e553]:
+          - option "Rèm Cầu Vồng Đẹp XEM NHANH Rèm Cầu Vồng Đẹp Liên hệ báo giá" [ref=e556] [cursor=pointer]:
+            - generic [ref=e557]:
+              - img "Rèm Cầu Vồng Đẹp" [ref=e559]
+              - generic [ref=e561]: XEM NHANH
+            - generic [ref=e562]:
+              - heading "Rèm Cầu Vồng Đẹp" [level=3] [ref=e563]
+              - paragraph [ref=e564]:
+                - generic [ref=e565]: Liên hệ báo giá
+          - option "Rèm Cầu Vồng – Sự Kết Hợp Hoàn Hảo Giữa Tiện Lợi Và Thẩm Mỹ XEM NHANH Rèm Cầu Vồng – Sự Kết Hợp Hoàn Hảo Giữa Tiện Lợi Và Thẩm Mỹ Liên hệ báo giá" [ref=e568] [cursor=pointer]:
+            - generic [ref=e569]:
+              - img "Rèm Cầu Vồng – Sự Kết Hợp Hoàn Hảo Giữa Tiện Lợi Và Thẩm Mỹ" [ref=e571]
+              - generic [ref=e573]: XEM NHANH
+            - generic [ref=e574]:
+              - heading "Rèm Cầu Vồng – Sự Kết Hợp Hoàn Hảo Giữa Tiện Lợi Và Thẩm Mỹ" [level=3] [ref=e575]
+              - paragraph [ref=e576]:
+                - generic [ref=e577]: Liên hệ báo giá
+          - option "Rèm Cầu Vồng Hàn Quốc mẫu cao cấp XEM NHANH Rèm Cầu Vồng Hàn Quốc mẫu cao cấp Liên hệ báo giá" [ref=e580] [cursor=pointer]:
+            - generic [ref=e581]:
+              - img "Rèm Cầu Vồng Hàn Quốc mẫu cao cấp" [ref=e583]
+              - generic [ref=e585]: XEM NHANH
+            - generic [ref=e586]:
+              - heading "Rèm Cầu Vồng Hàn Quốc mẫu cao cấp" [level=3] [ref=e587]
+              - paragraph [ref=e588]:
+                - generic [ref=e589]: Liên hệ báo giá
+          - option "Rèm Cầu Vồng – Giải Pháp Thông Minh Cho Không Gian Hiện Đại Tại TP HCM XEM NHANH Rèm Cầu Vồng – Giải Pháp Thông Minh Cho Không Gian Hiện Đại Tại TP HCM Liên hệ báo giá" [ref=e592] [cursor=pointer]:
+            - generic [ref=e593]:
+              - img "Rèm Cầu Vồng – Giải Pháp Thông Minh Cho Không Gian Hiện Đại Tại TP HCM" [ref=e595]
+              - generic [ref=e597]: XEM NHANH
+            - generic [ref=e598]:
+              - heading "Rèm Cầu Vồng – Giải Pháp Thông Minh Cho Không Gian Hiện Đại Tại TP HCM" [level=3] [ref=e599]
+              - paragraph [ref=e600]:
+                - generic [ref=e601]: Liên hệ báo giá
+      - generic [ref=e603]:
+        - generic [ref=e604]:
+          - generic [ref=e606]: RÈM VĂN PHÒNG
+          - paragraph [ref=e607]:
+            - link "Xem tất cả sản phẩm" [ref=e608] [cursor=pointer]:
+              - /url: san-pham
+        - generic [ref=e612]:
+          - option "Rèm Cuốn chống nắng giá ưu đãi XEM NHANH Rèm Cuốn chống nắng giá ưu đãi Liên hệ báo giá" [ref=e615] [cursor=pointer]:
+            - generic [ref=e616]:
+              - img "Rèm Cuốn chống nắng giá ưu đãi" [ref=e618]
+              - generic [ref=e620]: XEM NHANH
+            - generic [ref=e621]:
+              - heading "Rèm Cuốn chống nắng giá ưu đãi" [level=3] [ref=e622]
+              - paragraph [ref=e623]:
+                - generic [ref=e624]: Liên hệ báo giá
+          - option "Rèm Cuốn Trơn văn Phòng Giá Tốt nhất XEM NHANH Rèm Cuốn Trơn văn Phòng Giá Tốt nhất Liên hệ báo giá" [ref=e627] [cursor=pointer]:
+            - generic [ref=e628]:
+              - img "Rèm Cuốn Trơn văn Phòng Giá Tốt nhất" [ref=e630]
+              - generic [ref=e632]: XEM NHANH
+            - generic [ref=e633]:
+              - heading "Rèm Cuốn Trơn văn Phòng Giá Tốt nhất" [level=3] [ref=e634]
+              - paragraph [ref=e635]:
+                - generic [ref=e636]: Liên hệ báo giá
+          - option "Rèm Cuốn văn Phòng Giá Tốt nhất XEM NHANH Rèm Cuốn văn Phòng Giá Tốt nhất Liên hệ báo giá" [ref=e639] [cursor=pointer]:
+            - generic [ref=e640]:
+              - img "Rèm Cuốn văn Phòng Giá Tốt nhất" [ref=e642]
+              - generic [ref=e644]: XEM NHANH
+            - generic [ref=e645]:
+              - heading "Rèm Cuốn văn Phòng Giá Tốt nhất" [level=3] [ref=e646]
+              - paragraph [ref=e647]:
+                - generic [ref=e648]: Liên hệ báo giá
+          - option "Rèm Cuốn- Giải Pháp Tiện Dụng Và Hiện Đại Tại TP HCM XEM NHANH Rèm Cuốn- Giải Pháp Tiện Dụng Và Hiện Đại Tại TP HCM Liên hệ báo giá" [ref=e651] [cursor=pointer]:
+            - generic [ref=e652]:
+              - img "Rèm Cuốn- Giải Pháp Tiện Dụng Và Hiện Đại Tại TP HCM" [ref=e654]
+              - generic [ref=e656]: XEM NHANH
+            - generic [ref=e657]:
+              - heading "Rèm Cuốn- Giải Pháp Tiện Dụng Và Hiện Đại Tại TP HCM" [level=3] [ref=e658]
+              - paragraph [ref=e659]:
+                - generic [ref=e660]: Liên hệ báo giá
+      - generic [ref=e662]:
+        - generic [ref=e663]:
+          - generic [ref=e665]: RÈM CỬA TỰ ĐỘNG
+          - paragraph [ref=e666]:
+            - link "Xem tất cả sản phẩm" [ref=e667] [cursor=pointer]:
+              - /url: san-pham
+        - generic [ref=e671]:
+          - option "Rèm Cầu Vồng Tự Động - Phong Cách Hiện Đại, Tiện Lợi Tối Đa XEM NHANH Rèm Cầu Vồng Tự Động - Phong Cách Hiện Đại, Tiện Lợi Tối Đa Liên hệ báo giá" [ref=e674] [cursor=pointer]:
+            - generic [ref=e675]:
+              - img "Rèm Cầu Vồng Tự Động - Phong Cách Hiện Đại, Tiện Lợi Tối Đa" [ref=e677]
+              - generic [ref=e679]: XEM NHANH
+            - generic [ref=e680]:
+              - heading "Rèm Cầu Vồng Tự Động - Phong Cách Hiện Đại, Tiện Lợi Tối Đa" [level=3] [ref=e681]
+              - paragraph [ref=e682]:
+                - generic [ref=e683]: Liên hệ báo giá
+          - option "Rèm Roman Tự Động - Sự Kết Hợp Hoàn Hảo XEM NHANH Rèm Roman Tự Động - Sự Kết Hợp Hoàn Hảo Liên hệ báo giá" [ref=e686] [cursor=pointer]:
+            - generic [ref=e687]:
+              - img "Rèm Roman Tự Động - Sự Kết Hợp Hoàn Hảo" [ref=e689]
+              - generic [ref=e691]: XEM NHANH
+            - generic [ref=e692]:
+              - heading "Rèm Roman Tự Động - Sự Kết Hợp Hoàn Hảo" [level=3] [ref=e693]
+              - paragraph [ref=e694]:
+                - generic [ref=e695]: Liên hệ báo giá
+          - option "Rèm Gỗ Tự Động - Sự Lựa Chọn Hoàn Hảo Cho Không Gian XEM NHANH Rèm Gỗ Tự Động - Sự Lựa Chọn Hoàn Hảo Cho Không Gian Liên hệ báo giá" [ref=e698] [cursor=pointer]:
+            - generic [ref=e699]:
+              - img "Rèm Gỗ Tự Động - Sự Lựa Chọn Hoàn Hảo Cho Không Gian" [ref=e701]
+              - generic [ref=e703]: XEM NHANH
+            - generic [ref=e704]:
+              - heading "Rèm Gỗ Tự Động - Sự Lựa Chọn Hoàn Hảo Cho Không Gian" [level=3] [ref=e705]
+              - paragraph [ref=e706]:
+                - generic [ref=e707]: Liên hệ báo giá
+          - option "Rèm Cửa Tự Động Cao Cấp – Giải Pháp Thông Minh Cho Không Gian Tại TP HCM XEM NHANH Rèm Cửa Tự Động Cao Cấp – Giải Pháp Thông Minh Cho Không Gian Tại TP HCM Liên hệ báo giá" [ref=e710] [cursor=pointer]:
+            - generic [ref=e711]:
+              - img "Rèm Cửa Tự Động Cao Cấp – Giải Pháp Thông Minh Cho Không Gian Tại TP HCM" [ref=e713]
+              - generic [ref=e715]: XEM NHANH
+            - generic [ref=e716]:
+              - heading "Rèm Cửa Tự Động Cao Cấp – Giải Pháp Thông Minh Cho Không Gian Tại TP HCM" [level=3] [ref=e717]
+              - paragraph [ref=e718]:
+                - generic [ref=e719]: Liên hệ báo giá
+      - generic [ref=e721]:
+        - generic [ref=e722]:
+          - generic [ref=e724]: RÈM VẢI
+          - paragraph [ref=e725]:
+            - link "Xem tất cả sản phẩm" [ref=e726] [cursor=pointer]:
+              - /url: san-pham
+        - generic [ref=e730]:
+          - option "RÈM VẢI 2 LỚP HÀN QUỐC XEM NHANH RÈM VẢI 2 LỚP HÀN QUỐC Liên hệ báo giá" [ref=e733] [cursor=pointer]:
+            - generic [ref=e734]:
+              - img "RÈM VẢI 2 LỚP HÀN QUỐC" [ref=e736]
+              - generic [ref=e738]: XEM NHANH
+            - generic [ref=e739]:
+              - heading "RÈM VẢI 2 LỚP HÀN QUỐC" [level=3] [ref=e740]
+              - paragraph [ref=e741]:
+                - generic [ref=e742]: Liên hệ báo giá
+          - option "mẫu rèm vải 2 lớp dành cho ngôi nhà XEM NHANH mẫu rèm vải 2 lớp dành cho ngôi nhà Liên hệ báo giá" [ref=e745] [cursor=pointer]:
+            - generic [ref=e746]:
+              - img "mẫu rèm vải 2 lớp dành cho ngôi nhà" [ref=e748]
+              - generic [ref=e750]: XEM NHANH
+            - generic [ref=e751]:
+              - heading "mẫu rèm vải 2 lớp dành cho ngôi nhà" [level=3] [ref=e752]
+              - paragraph [ref=e753]:
+                - generic [ref=e754]: Liên hệ báo giá
+          - option "RÈM VẢI 2 LỚp ĐA DẠNG MÀU SẮC XEM NHANH RÈM VẢI 2 LỚp ĐA DẠNG MÀU SẮC Liên hệ báo giá" [ref=e757] [cursor=pointer]:
+            - generic [ref=e758]:
+              - img "RÈM VẢI 2 LỚp ĐA DẠNG MÀU SẮC" [ref=e760]
+              - generic [ref=e762]: XEM NHANH
+            - generic [ref=e763]:
+              - heading "RÈM VẢI 2 LỚp ĐA DẠNG MÀU SẮC" [level=3] [ref=e764]
+              - paragraph [ref=e765]:
+                - generic [ref=e766]: Liên hệ báo giá
+          - option "rèm vải 1 lớp giá rẻ XEM NHANH rèm vải 1 lớp giá rẻ Liên hệ báo giá" [ref=e769] [cursor=pointer]:
+            - generic [ref=e770]:
+              - img "rèm vải 1 lớp giá rẻ" [ref=e772]
+              - generic [ref=e774]: XEM NHANH
+            - generic [ref=e775]:
+              - heading "rèm vải 1 lớp giá rẻ" [level=3] [ref=e776]
+              - paragraph [ref=e777]:
+                - generic [ref=e778]: Liên hệ báo giá
+      - generic [ref=e780]:
+        - generic [ref=e781]:
+          - generic [ref=e783]: RÈM SÁO GỖ
+          - paragraph [ref=e784]:
+            - link "Xem tất cả sản phẩm" [ref=e785] [cursor=pointer]:
+              - /url: san-pham
+        - generic [ref=e789]:
+          - option "Rèm sáo gỗ đẹp sang trọng XEM NHANH Rèm sáo gỗ đẹp sang trọng Liên hệ báo giá" [ref=e792] [cursor=pointer]:
+            - generic [ref=e793]:
+              - img "Rèm sáo gỗ đẹp sang trọng" [ref=e795]
+              - generic [ref=e797]: XEM NHANH
+            - generic [ref=e798]:
+              - heading "Rèm sáo gỗ đẹp sang trọng" [level=3] [ref=e799]
+              - paragraph [ref=e800]:
+                - generic [ref=e801]: Liên hệ báo giá
+          - option "Rèm Sáo Gỗ – rèm cửa tự nhiên cao cấp XEM NHANH Rèm Sáo Gỗ – rèm cửa tự nhiên cao cấp Liên hệ báo giá" [ref=e804] [cursor=pointer]:
+            - generic [ref=e805]:
+              - img "Rèm Sáo Gỗ – rèm cửa tự nhiên cao cấp" [ref=e807]
+              - generic [ref=e809]: XEM NHANH
+            - generic [ref=e810]:
+              - heading "Rèm Sáo Gỗ – rèm cửa tự nhiên cao cấp" [level=3] [ref=e811]
+              - paragraph [ref=e812]:
+                - generic [ref=e813]: Liên hệ báo giá
+          - option "Rèm Sáo Gỗ – Giải Pháp Tinh Tế Cho Không Gian Sống Tại TP HCM XEM NHANH Rèm Sáo Gỗ – Giải Pháp Tinh Tế Cho Không Gian Sống Tại TP HCM Liên hệ báo giá" [ref=e816] [cursor=pointer]:
+            - generic [ref=e817]:
+              - img "Rèm Sáo Gỗ – Giải Pháp Tinh Tế Cho Không Gian Sống Tại TP HCM" [ref=e819]
+              - generic [ref=e821]: XEM NHANH
+            - generic [ref=e822]:
+              - heading "Rèm Sáo Gỗ – Giải Pháp Tinh Tế Cho Không Gian Sống Tại TP HCM" [level=3] [ref=e823]
+              - paragraph [ref=e824]:
+                - generic [ref=e825]: Liên hệ báo giá
+          - option "Rèm Sáo Gỗ – Sự Lựa Chọn Tinh Tế XEM NHANH Rèm Sáo Gỗ – Sự Lựa Chọn Tinh Tế Liên hệ báo giá" [ref=e828] [cursor=pointer]:
+            - generic [ref=e829]:
+              - img "Rèm Sáo Gỗ – Sự Lựa Chọn Tinh Tế" [ref=e831]
+              - generic [ref=e833]: XEM NHANH
+            - generic [ref=e834]:
+              - heading "Rèm Sáo Gỗ – Sự Lựa Chọn Tinh Tế" [level=3] [ref=e835]
+              - paragraph [ref=e836]:
+                - generic [ref=e837]: Liên hệ báo giá
+      - generic [ref=e839]:
+        - generic [ref=e840]:
+          - generic [ref=e842]: RÈM ROMAN
+          - paragraph [ref=e843]:
+            - link "Xem tất cả sản phẩm" [ref=e844] [cursor=pointer]:
+              - /url: san-pham
+        - generic [ref=e848]:
+          - option "Rèm xếp lớp roman cho cửa sổ phòng ngủ XEM NHANH Rèm xếp lớp roman cho cửa sổ phòng ngủ Liên hệ báo giá" [ref=e851] [cursor=pointer]:
+            - generic [ref=e852]:
+              - img "Rèm xếp lớp roman cho cửa sổ phòng ngủ" [ref=e854]
+              - generic [ref=e856]: XEM NHANH
+            - generic [ref=e857]:
+              - heading "Rèm xếp lớp roman cho cửa sổ phòng ngủ" [level=3] [ref=e858]
+              - paragraph [ref=e859]:
+                - generic [ref=e860]: Liên hệ báo giá
+          - option "Rèm xếp roman cao cấp hoa lá thiên nhiên sang trọng XEM NHANH Rèm xếp roman cao cấp hoa lá thiên nhiên sang trọng Liên hệ báo giá" [ref=e863] [cursor=pointer]:
+            - generic [ref=e864]:
+              - img "Rèm xếp roman cao cấp hoa lá thiên nhiên sang trọng" [ref=e866]
+              - generic [ref=e868]: XEM NHANH
+            - generic [ref=e869]:
+              - heading "Rèm xếp roman cao cấp hoa lá thiên nhiên sang trọng" [level=3] [ref=e870]
+              - paragraph [ref=e871]:
+                - generic [ref=e872]: Liên hệ báo giá
+          - option "Rèm xếp cửa sổ roman màu xanh dương chống sáng cản nhiệt XEM NHANH Rèm xếp cửa sổ roman màu xanh dương chống sáng cản nhiệt Liên hệ báo giá" [ref=e875] [cursor=pointer]:
+            - generic [ref=e876]:
+              - img "Rèm xếp cửa sổ roman màu xanh dương chống sáng cản nhiệt" [ref=e878]
+              - generic [ref=e880]: XEM NHANH
+            - generic [ref=e881]:
+              - heading "Rèm xếp cửa sổ roman màu xanh dương chống sáng cản nhiệt" [level=3] [ref=e882]
+              - paragraph [ref=e883]:
+                - generic [ref=e884]: Liên hệ báo giá
+          - option "Rèm Roman – Phong Cách Thanh Lịch Cho Không Gian Hiện Đại XEM NHANH Rèm Roman – Phong Cách Thanh Lịch Cho Không Gian Hiện Đại Liên hệ báo giá" [ref=e887] [cursor=pointer]:
+            - generic [ref=e888]:
+              - img "Rèm Roman – Phong Cách Thanh Lịch Cho Không Gian Hiện Đại" [ref=e890]
+              - generic [ref=e892]: XEM NHANH
+            - generic [ref=e893]:
+              - heading "Rèm Roman – Phong Cách Thanh Lịch Cho Không Gian Hiện Đại" [level=3] [ref=e894]
+              - paragraph [ref=e895]:
+                - generic [ref=e896]: Liên hệ báo giá
+      - generic [ref=e898]:
+        - generic [ref=e899]:
+          - generic [ref=e901]: GIÀN PHƠI ĐỒ
+          - paragraph [ref=e902]:
+            - link "Xem tất cả sản phẩm" [ref=e903] [cursor=pointer]:
+              - /url: san-pham
+        - generic [ref=e907]:
+          - option "Máng Treo Rèm Cửa – Phụ Kiện Thiết Yếu Cho Không Gian Nội Thất XEM NHANH Máng Treo Rèm Cửa – Phụ Kiện Thiết Yếu Cho Không Gian Nội Thất Liên hệ báo giá" [ref=e910] [cursor=pointer]:
+            - generic [ref=e911]:
+              - img "Máng Treo Rèm Cửa – Phụ Kiện Thiết Yếu Cho Không Gian Nội Thất" [ref=e913]
+              - generic [ref=e915]: XEM NHANH
+            - generic [ref=e916]:
+              - heading "Máng Treo Rèm Cửa – Phụ Kiện Thiết Yếu Cho Không Gian Nội Thất" [level=3] [ref=e917]
+              - paragraph [ref=e918]:
+                - generic [ref=e919]: Liên hệ báo giá
+          - option "Thanh Treo Gỗ Căm Xe XEM NHANH Thanh Treo Gỗ Căm Xe Liên hệ báo giá" [ref=e922] [cursor=pointer]:
+            - generic [ref=e923]:
+              - img "Thanh Treo Gỗ Căm Xe" [ref=e925]
+              - generic [ref=e927]: XEM NHANH
+            - generic [ref=e928]:
+              - heading "Thanh Treo Gỗ Căm Xe" [level=3] [ref=e929]
+              - paragraph [ref=e930]:
+                - generic [ref=e931]: Liên hệ báo giá
+          - option "Giàn Phơi Trần – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM XEM NHANH Giàn Phơi Trần – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM Liên hệ báo giá" [ref=e934] [cursor=pointer]:
+            - generic [ref=e935]:
+              - img "Giàn Phơi Trần – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM" [ref=e937]
+              - generic [ref=e939]: XEM NHANH
+            - generic [ref=e940]:
+              - heading "Giàn Phơi Trần – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM" [level=3] [ref=e941]
+              - paragraph [ref=e942]:
+                - generic [ref=e943]: Liên hệ báo giá
+          - option "Giàn Phơi Tường – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM XEM NHANH Giàn Phơi Tường – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM Liên hệ báo giá" [ref=e946] [cursor=pointer]:
+            - generic [ref=e947]:
+              - img "Giàn Phơi Tường – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM" [ref=e949]
+              - generic [ref=e951]: XEM NHANH
+            - generic [ref=e952]:
+              - heading "Giàn Phơi Tường – Giải Pháp Tiện Lợi Cho Không Gian Sống Tại TP HCM" [level=3] [ref=e953]
+              - paragraph [ref=e954]:
+                - generic [ref=e955]: Liên hệ báo giá
+      - generic [ref=e957]:
+        - generic [ref=e958]:
+          - generic [ref=e959]: Rèm Cửa Thiên Phát
+          - generic [ref=e960]: Dịch Vụ chính
+        - listbox [ref=e963]:
+          - option "Dịch Vụ Lắp Rèm Cửa Tại Nhà Giá Siêu Rẻ Ở TP HCM Dịch Vụ Lắp Rèm Cửa Tại Nhà Giá Siêu Rẻ Ở TP HCM Bạn đang tìm kiếm dịch vụ lắp rèm cửa tại nhà giá rẻ ở TP HCM mà vẫn đảm bảo chất lượng và thẩm mỹ? Thiên Phát tự hào là đơn vị hàng đầu chuyên cung cấp các loại rèm cửa với phong cách đa dạng, dịch vụ tận nơi và giá thành cạnh tranh nhất." [ref=e964]:
+            - link "Dịch Vụ Lắp Rèm Cửa Tại Nhà Giá Siêu Rẻ Ở TP HCM Dịch Vụ Lắp Rèm Cửa Tại Nhà Giá Siêu Rẻ Ở TP HCM Bạn đang tìm kiếm dịch vụ lắp rèm cửa tại nhà giá rẻ ở TP HCM mà vẫn đảm bảo chất lượng và thẩm mỹ? Thiên Phát tự hào là đơn vị hàng đầu chuyên cung cấp các loại rèm cửa với phong cách đa dạng, dịch vụ tận nơi và giá thành cạnh tranh nhất." [ref=e965] [cursor=pointer]:
+              - /url: dich-vu-lap-rem-cua-tai-nha-gia-sieu-re-o-tp-hcm
+              - img "Dịch Vụ Lắp Rèm Cửa Tại Nhà Giá Siêu Rẻ Ở TP HCM" [ref=e967]
+              - generic [ref=e968]:
+                - img [ref=e970]
+                - generic [ref=e972]: Dịch Vụ Lắp Rèm Cửa Tại Nhà Giá Siêu Rẻ Ở TP HCM
+                - generic [ref=e973]: Bạn đang tìm kiếm dịch vụ lắp rèm cửa tại nhà giá rẻ ở TP HCM mà vẫn đảm bảo chất lượng và thẩm mỹ? Thiên Phát tự hào là đơn vị hàng đầu chuyên cung cấp các loại rèm cửa với phong cách đa dạng, dịch vụ tận nơi và giá thành cạnh tranh nhất.
+          - option "Cách Chọn Rèm Văn Phòng Phù Hợp Nhất Rèm Cửa Ở HCM Cách Chọn Rèm Văn Phòng Phù Hợp Nhất Rèm Cửa Ở HCM Cách Chọn Rèm Văn Phòng Phù Hợp Nhất – Bí Quyết Tạo Không Gian Làm Việc Thoải Mái Và Chuyên Nghiệp Lựa chọn rèm văn phòng không chỉ đáp ứng nhu cầu che chắn ánh sáng mà còn góp phần tạo nên không gian làm việc thoải mái, nâng cao năng suất và tính thẩm mỹ. Cùng Rèm Cửa Thiên Phát khám phá cách chọn rèm văn phòng phù hợp nhất, giúp bạn tối ưu không gian làm việc." [ref=e974]:
+            - link "Cách Chọn Rèm Văn Phòng Phù Hợp Nhất Rèm Cửa Ở HCM Cách Chọn Rèm Văn Phòng Phù Hợp Nhất Rèm Cửa Ở HCM Cách Chọn Rèm Văn Phòng Phù Hợp Nhất – Bí Quyết Tạo Không Gian Làm Việc Thoải Mái Và Chuyên Nghiệp Lựa chọn rèm văn phòng không chỉ đáp ứng nhu cầu che chắn ánh sáng mà còn góp phần tạo nên không gian làm việc thoải mái, nâng cao năng suất và tính thẩm mỹ. Cùng Rèm Cửa Thiên Phát khám phá cách chọn rèm văn phòng phù hợp nhất, giúp bạn tối ưu không gian làm việc." [ref=e975] [cursor=pointer]:
+              - /url: cach-chon-rem-van-phong-phu-hop-nhat-rem-cua-o-hcm
+              - img "Cách Chọn Rèm Văn Phòng Phù Hợp Nhất Rèm Cửa Ở HCM" [ref=e977]
+              - generic [ref=e978]:
+                - img [ref=e980]
+                - generic [ref=e982]: Cách Chọn Rèm Văn Phòng Phù Hợp Nhất Rèm Cửa Ở HCM
+                - generic [ref=e983]: Cách Chọn Rèm Văn Phòng Phù Hợp Nhất – Bí Quyết Tạo Không Gian Làm Việc Thoải Mái Và Chuyên Nghiệp Lựa chọn rèm văn phòng không chỉ đáp ứng nhu cầu che chắn ánh sáng mà còn góp phần tạo nên không gian làm việc thoải mái, nâng cao năng suất và tính thẩm mỹ. Cùng Rèm Cửa Thiên Phát khám phá cách chọn rèm văn phòng phù hợp nhất, giúp bạn tối ưu không gian làm việc.
+          - option "Dịch Vụ Sửa Chữa Và Thi Công Rèm Cửa Uy Tín Ở HCM - Chất Lượng Từ Rèm Cửa Thiên Phát Dịch Vụ Sửa Chữa Và Thi Công Rèm Cửa Uy Tín Ở HCM - Chất Lượng Từ Rèm Cửa Thiên Phát Dịch Vụ Sửa Chữa Và Thi Công Rèm Cửa Uy Tín Ở HCM - Chất Lượng Từ Rèm Cửa Thiên Phát Rèm cửa không chỉ tạo không gian sống tinh tế mà còn giúp che chắn ánh sáng và cách nhiệt hiệu quả. Tuy nhiên, sau thời gian dài sử dụng, rèm cửa dễ bị xuống cấp, đứt dây, hoặc hư hỏng. Với dịch vụ sửa chữa rèm cửa chuyên nghiệp và thi công rèm cửa ở HCM, Rèm Cửa Thiên Phát là lựa chọn đáng tin cậy, giúp khách hàng cải thiện và nâng cấp không gian sống. Cùng khám phá thêm về dịch vụ của Thiên Phát nhé!" [ref=e984]:
+            - link "Dịch Vụ Sửa Chữa Và Thi Công Rèm Cửa Uy Tín Ở HCM - Chất Lượng Từ Rèm Cửa Thiên Phát Dịch Vụ Sửa Chữa Và Thi Công Rèm Cửa Uy Tín Ở HCM - Chất Lượng Từ Rèm Cửa Thiên Phát Dịch Vụ Sửa Chữa Và Thi Công Rèm Cửa Uy Tín Ở HCM - Chất Lượng Từ Rèm Cửa Thiên Phát Rèm cửa không chỉ tạo không gian sống tinh tế mà còn giúp che chắn ánh sáng và cách nhiệt hiệu quả. Tuy nhiên, sau thời gian dài sử dụng, rèm cửa dễ bị xuống cấp, đứt dây, hoặc hư hỏng. Với dịch vụ sửa chữa rèm cửa chuyên nghiệp và thi công rèm cửa ở HCM, Rèm Cửa Thiên Phát là lựa chọn đáng tin cậy, giúp khách hàng cải thiện và nâng cấp không gian sống. Cùng khám phá thêm về dịch vụ của Thiên Phát nhé!" [ref=e985] [cursor=pointer]:
+              - /url: dich-vu-sua-chua-va-thi-cong-rem-cua-uy-tin-o-hcm-chat-luong-tu-rem-cua-thien-phat
+              - img "Dịch Vụ Sửa Chữa Và Thi Công Rèm Cửa Uy Tín Ở HCM - Chất Lượng Từ Rèm Cửa Thiên Phát" [ref=e987]
+              - generic [ref=e988]:
+                - img [ref=e990]
+                - generic [ref=e992]: Dịch Vụ Sửa Chữa Và Thi Công Rèm Cửa Uy Tín Ở HCM - Chất Lượng Từ Rèm Cửa Thiên Phát
+                - generic [ref=e993]: Dịch Vụ Sửa Chữa Và Thi Công Rèm Cửa Uy Tín Ở HCM - Chất Lượng Từ Rèm Cửa Thiên Phát Rèm cửa không chỉ tạo không gian sống tinh tế mà còn giúp che chắn ánh sáng và cách nhiệt hiệu quả. Tuy nhiên, sau thời gian dài sử dụng, rèm cửa dễ bị xuống cấp, đứt dây, hoặc hư hỏng. Với dịch vụ sửa chữa rèm cửa chuyên nghiệp và thi công rèm cửa ở HCM, Rèm Cửa Thiên Phát là lựa chọn đáng tin cậy, giúp khách hàng cải thiện và nâng cấp không gian sống. Cùng khám phá thêm về dịch vụ của Thiên Phát nhé!
+          - option "Dịch Vụ Lắp Rèm Tận Nhà Giá Rẻ Ở HCM - Giải Pháp Tiện Ích Từ Rèm Cửa Thiên Phát Dịch Vụ Lắp Rèm Tận Nhà Giá Rẻ Ở HCM - Giải Pháp Tiện Ích Từ Rèm Cửa Thiên Phát Dịch Vụ Lắp Rèm Tận Nhà Giá Rẻ Ở HCM - Giải Pháp Tiện Ích Từ Rèm Cửa Thiên Phát Rèm cửa không chỉ là vật dụng che chắn ánh sáng mà còn tạo điểm nhấn tinh tế cho không gian sống. Hiểu được nhu cầu về sự tiện lợi và tiết kiệm chi phí của khách hàng, Rèm Cửa Thiên Phát cung cấp dịch vụ lắp rèm tận nhà giá rẻ ở HCM, mang lại giải pháp tối ưu, nhanh chóng và chất lượng ngay tại nhà. Cùng tìm hiểu lý do dịch vụ của Thiên Phát luôn là lựa chọn hàng đầu cho các hộ gia đình và văn phòng tại TP. HCM." [ref=e994]:
+            - link "Dịch Vụ Lắp Rèm Tận Nhà Giá Rẻ Ở HCM - Giải Pháp Tiện Ích Từ Rèm Cửa Thiên Phát Dịch Vụ Lắp Rèm Tận Nhà Giá Rẻ Ở HCM - Giải Pháp Tiện Ích Từ Rèm Cửa Thiên Phát Dịch Vụ Lắp Rèm Tận Nhà Giá Rẻ Ở HCM - Giải Pháp Tiện Ích Từ Rèm Cửa Thiên Phát Rèm cửa không chỉ là vật dụng che chắn ánh sáng mà còn tạo điểm nhấn tinh tế cho không gian sống. Hiểu được nhu cầu về sự tiện lợi và tiết kiệm chi phí của khách hàng, Rèm Cửa Thiên Phát cung cấp dịch vụ lắp rèm tận nhà giá rẻ ở HCM, mang lại giải pháp tối ưu, nhanh chóng và chất lượng ngay tại nhà. Cùng tìm hiểu lý do dịch vụ của Thiên Phát luôn là lựa chọn hàng đầu cho các hộ gia đình và văn phòng tại TP. HCM." [ref=e995] [cursor=pointer]:
+              - /url: dich-vu-lap-rem-tan-nha-gia-re-o-hcm-giai-phap-tien-ich-tu-rem-cua-thien-phat
+              - img "Dịch Vụ Lắp Rèm Tận Nhà Giá Rẻ Ở HCM - Giải Pháp Tiện Ích Từ Rèm Cửa Thiên Phát" [ref=e997]
+              - generic [ref=e998]:
+                - img [ref=e1000]
+                - generic [ref=e1002]: Dịch Vụ Lắp Rèm Tận Nhà Giá Rẻ Ở HCM - Giải Pháp Tiện Ích Từ Rèm Cửa Thiên Phát
+                - generic [ref=e1003]: Dịch Vụ Lắp Rèm Tận Nhà Giá Rẻ Ở HCM - Giải Pháp Tiện Ích Từ Rèm Cửa Thiên Phát Rèm cửa không chỉ là vật dụng che chắn ánh sáng mà còn tạo điểm nhấn tinh tế cho không gian sống. Hiểu được nhu cầu về sự tiện lợi và tiết kiệm chi phí của khách hàng, Rèm Cửa Thiên Phát cung cấp dịch vụ lắp rèm tận nhà giá rẻ ở HCM, mang lại giải pháp tối ưu, nhanh chóng và chất lượng ngay tại nhà. Cùng tìm hiểu lý do dịch vụ của Thiên Phát luôn là lựa chọn hàng đầu cho các hộ gia đình và văn phòng tại TP. HCM.
+      - generic [ref=e1005]:
+        - generic [ref=e1006]:
+          - generic [ref=e1007]: dự án hoàn thành
+          - listbox [ref=e1010]:
+            - link [ref=e1012] [cursor=pointer]:
+              - /url: hoan-thien-cong-trinh-van-phong-nha-mau-artisan-park-thu-dau-mot
+              - img [ref=e1014]
+              - generic [ref=e1016]: Hoàn Thiện Công Trình Văn Phòng Nhà Mẫu ARTISAN PARK Thủ Dầu Một
+            - link [ref=e1018] [cursor=pointer]:
+              - /url: hoan-thien-man-sao-nhom-cho-khach-hang-o-dong-nai
+              - img [ref=e1020]
+              - generic [ref=e1022]: Hoàn Thiện Màn Sáo Nhôm Cho Khách Hàng Ở Đồng Nai
+            - option [ref=e1023]:
+              - link [ref=e1024] [cursor=pointer]:
+                - /url: hoan-thien-khu-nha-pho-rem-cua-ket-hop-giay-dan-tuong
+                - img [ref=e1026]
+                - generic [ref=e1028]: Hoàn thiện khu nhà phố rèm cửa kết hợp giấy dán tường
+            - option [ref=e1029]:
+              - link [ref=e1030] [cursor=pointer]:
+                - /url: hoan-thien-cong-trinh-van-phong-nha-mau-artisan-park-thu-dau-mot
+                - img [ref=e1032]
+                - generic [ref=e1034]: Hoàn Thiện Công Trình Văn Phòng Nhà Mẫu ARTISAN PARK Thủ Dầu Một
+            - option "Hoàn Thiện Màn Sáo Nhôm Cho Khách Hàng Ở Đồng Nai Hoàn Thiện Màn Sáo Nhôm Cho Khách Hàng Ở Đồng Nai" [ref=e1035]:
+              - link "Hoàn Thiện Màn Sáo Nhôm Cho Khách Hàng Ở Đồng Nai Hoàn Thiện Màn Sáo Nhôm Cho Khách Hàng Ở Đồng Nai" [ref=e1036] [cursor=pointer]:
+                - /url: hoan-thien-man-sao-nhom-cho-khach-hang-o-dong-nai
+                - img "Hoàn Thiện Màn Sáo Nhôm Cho Khách Hàng Ở Đồng Nai" [ref=e1038]
+                - generic [ref=e1040]: Hoàn Thiện Màn Sáo Nhôm Cho Khách Hàng Ở Đồng Nai
+            - link "Hoàn thiện khu nhà phố rèm cửa kết hợp giấy dán tường Hoàn thiện khu nhà phố rèm cửa kết hợp giấy dán tường" [ref=e1042] [cursor=pointer]:
+              - /url: hoan-thien-khu-nha-pho-rem-cua-ket-hop-giay-dan-tuong
+              - img "Hoàn thiện khu nhà phố rèm cửa kết hợp giấy dán tường" [ref=e1044]
+              - generic [ref=e1046]: Hoàn thiện khu nhà phố rèm cửa kết hợp giấy dán tường
+            - link [ref=e1048] [cursor=pointer]:
+              - /url: hoan-thien-cong-trinh-van-phong-nha-mau-artisan-park-thu-dau-mot
+              - img [ref=e1050]
+              - generic [ref=e1052]: Hoàn Thiện Công Trình Văn Phòng Nhà Mẫu ARTISAN PARK Thủ Dầu Một
+        - generic [ref=e1053]:
+          - generic [ref=e1054]: cảm nhận khách hàng
+          - listbox [ref=e1057]:
+            - generic [ref=e1059]:
+              - generic [ref=e1060]:
+                - img [ref=e1063]
+                - generic [ref=e1064]:
+                  - generic [ref=e1065]: Anh Tài – Quận Tân Bình
+                  - generic [ref=e1066]: KHÁCH HÀNG THÂN QUEN
+              - generic [ref=e1067]: “Tôi đã sử dụng dịch vụ của Rèm Cửa Thiên Phát cho căn hộ của mình và thật sự rất hài lòng. Nhân viên tư vấn nhiệt tình, giúp tôi chọn được loại rèm phù hợp với phong cách và ngân sách. Rèm được thi công nhanh chóng, chất lượng vải tốt, màu sắc đẹp và rất bền. Tôi chắc chắn sẽ tiếp tục ủng hộ Thiên Phát cho các dự án sau!”
+            - generic [ref=e1069]:
+              - generic [ref=e1070]:
+                - img [ref=e1073]
+                - generic [ref=e1074]:
+                  - generic [ref=e1075]: Anh Thái – Giám Đốc Công Ty Xây Dựng, Củ Chi
+                  - generic [ref=e1076]: KHÁCH HÀNG THÂN QUEN
+              - generic [ref=e1077]: “Công ty tôi đã hợp tác với Rèm Cửa Thiên Phát trong nhiều dự án nội thất và luôn rất hài lòng với chất lượng sản phẩm cũng như dịch vụ của họ. Rèm cửa được cung cấp luôn đúng yêu cầu, từ mẫu mã đến chất liệu, đảm bảo tính thẩm mỹ và công năng cho các không gian văn phòng và nhà ở cao cấp mà chúng tôi thi công. Đội ngũ thi công chuyên nghiệp, luôn đúng hẹn và giá cả rất hợp lý. Thiên Phát thực sự là đối tác đáng tin cậy trong lĩnh vực rèm cửa!”
+            - option [ref=e1078]:
+              - generic [ref=e1079]:
+                - generic [ref=e1080]:
+                  - img [ref=e1083]
+                  - generic [ref=e1084]:
+                    - generic [ref=e1085]: Chị Thoa – Công Ty Nội Thất, Bình Thạnh
+                    - generic [ref=e1086]: KHÁCH HÀNG MỚI
+                - generic [ref=e1087]: “Công ty chúng tôi đã hợp tác với Rèm Cửa Thiên Phát để lắp đặt rèm văn phòng. Các mẫu mã rất đa dạng, chất liệu đẹp và bền. Thi công rất nhanh, gọn, và nhân viên thân thiện, chuyên nghiệp. Điều làm tôi hài lòng nhất là giá cả cạnh tranh, phù hợp với ngân sách của công ty. Đây chắc chắn là đơn vị rèm cửa mà chúng tôi sẽ tiếp tục tin tưởng trong tương lai.”
+            - option [ref=e1088]:
+              - generic [ref=e1089]:
+                - generic [ref=e1090]:
+                  - img [ref=e1093]
+                  - generic [ref=e1094]:
+                    - generic [ref=e1095]: Anh Tài – Quận Tân Bình
+                    - generic [ref=e1096]: KHÁCH HÀNG THÂN QUEN
+                - generic [ref=e1097]: “Tôi đã sử dụng dịch vụ của Rèm Cửa Thiên Phát cho căn hộ của mình và thật sự rất hài lòng. Nhân viên tư vấn nhiệt tình, giúp tôi chọn được loại rèm phù hợp với phong cách và ngân sách. Rèm được thi công nhanh chóng, chất lượng vải tốt, màu sắc đẹp và rất bền. Tôi chắc chắn sẽ tiếp tục ủng hộ Thiên Phát cho các dự án sau!”
+            - option "Anh Thái – Giám Đốc Công Ty Xây Dựng, Củ Chi Anh Thái – Giám Đốc Công Ty Xây Dựng, Củ Chi KHÁCH HÀNG THÂN QUEN “Công ty tôi đã hợp tác với Rèm Cửa Thiên Phát trong nhiều dự án nội thất và luôn rất hài lòng với chất lượng sản phẩm cũng như dịch vụ của họ. Rèm cửa được cung cấp luôn đúng yêu cầu, từ mẫu mã đến chất liệu, đảm bảo tính thẩm mỹ và công năng cho các không gian văn phòng và nhà ở cao cấp mà chúng tôi thi công. Đội ngũ thi công chuyên nghiệp, luôn đúng hẹn và giá cả rất hợp lý. Thiên Phát thực sự là đối tác đáng tin cậy trong lĩnh vực rèm cửa!”" [ref=e1098]:
+              - generic [ref=e1099]:
+                - generic [ref=e1100]:
+                  - img "Anh Thái – Giám Đốc Công Ty Xây Dựng, Củ Chi" [ref=e1103]
+                  - generic [ref=e1104]:
+                    - generic [ref=e1105]: Anh Thái – Giám Đốc Công Ty Xây Dựng, Củ Chi
+                    - generic [ref=e1106]: KHÁCH HÀNG THÂN QUEN
+                - generic [ref=e1107]: “Công ty tôi đã hợp tác với Rèm Cửa Thiên Phát trong nhiều dự án nội thất và luôn rất hài lòng với chất lượng sản phẩm cũng như dịch vụ của họ. Rèm cửa được cung cấp luôn đúng yêu cầu, từ mẫu mã đến chất liệu, đảm bảo tính thẩm mỹ và công năng cho các không gian văn phòng và nhà ở cao cấp mà chúng tôi thi công. Đội ngũ thi công chuyên nghiệp, luôn đúng hẹn và giá cả rất hợp lý. Thiên Phát thực sự là đối tác đáng tin cậy trong lĩnh vực rèm cửa!”
+            - generic [ref=e1109]:
+              - generic [ref=e1110]:
+                - img "Chị Thoa – Công Ty Nội Thất, Bình Thạnh" [ref=e1113]
+                - generic [ref=e1114]:
+                  - generic [ref=e1115]: Chị Thoa – Công Ty Nội Thất, Bình Thạnh
+                  - generic [ref=e1116]: KHÁCH HÀNG MỚI
+              - generic [ref=e1117]: “Công ty chúng tôi đã hợp tác với Rèm Cửa Thiên Phát để lắp đặt rèm văn phòng. Các mẫu mã rất đa dạng, chất liệu đẹp và bền. Thi công rất nhanh, gọn, và nhân viên thân thiện, chuyên nghiệp. Điều làm tôi hài lòng nhất là giá cả cạnh tranh, phù hợp với ngân sách của công ty. Đây chắc chắn là đơn vị rèm cửa mà chúng tôi sẽ tiếp tục tin tưởng trong tương lai.”
+            - generic [ref=e1119]:
+              - generic [ref=e1120]:
+                - img [ref=e1123]
+                - generic [ref=e1124]:
+                  - generic [ref=e1125]: Anh Tài – Quận Tân Bình
+                  - generic [ref=e1126]: KHÁCH HÀNG THÂN QUEN
+              - generic [ref=e1127]: “Tôi đã sử dụng dịch vụ của Rèm Cửa Thiên Phát cho căn hộ của mình và thật sự rất hài lòng. Nhân viên tư vấn nhiệt tình, giúp tôi chọn được loại rèm phù hợp với phong cách và ngân sách. Rèm được thi công nhanh chóng, chất lượng vải tốt, màu sắc đẹp và rất bền. Tôi chắc chắn sẽ tiếp tục ủng hộ Thiên Phát cho các dự án sau!”
+      - generic [ref=e1129]:
+        - generic [ref=e1130]:
+          - generic [ref=e1131]: Rèm Cửa Thiên Phát
+          - generic [ref=e1132]: tin tức & sự kiện
+        - listbox [ref=e1135]:
+          - link [ref=e1137] [cursor=pointer]:
+            - /url: rem-cua-o-tan-binh-lua-chon-hoan-hao-cho-khong-gian-song-va-lam-viec
+            - img [ref=e1139]
+            - generic [ref=e1140]:
+              - generic [ref=e1141]:
+                - generic [ref=e1142]: "17"
+                - generic [ref=e1143]: 08/2026
+              - generic [ref=e1144]: Rèm cửa ở Tân Bình – lựa chọn hoàn hảo cho không gian sống và làm việc
+              - generic [ref=e1145]: Xem Thêm
+          - link [ref=e1147] [cursor=pointer]:
+            - /url: rem-cua-dep-hcm-lua-chon-hoan-hao-tu-rem-cua-thien-phat
+            - img [ref=e1149]
+            - generic [ref=e1150]:
+              - generic [ref=e1151]:
+                - generic [ref=e1152]: "17"
+                - generic [ref=e1153]: 08/2026
+              - generic [ref=e1154]: Rèm Cửa Đẹp HCM – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát
+              - generic [ref=e1155]: Xem Thêm
+          - link [ref=e1157] [cursor=pointer]:
+            - /url: xu-huong-nganh-rem-cua-2025-rem-cua-thien-phat-dong-hanh-cung-ban
+            - img [ref=e1159]
+            - generic [ref=e1160]:
+              - generic [ref=e1161]:
+                - generic [ref=e1162]: "17"
+                - generic [ref=e1163]: 08/2026
+              - generic [ref=e1164]: "Xu Hướng Ngành Rèm Cửa 2025: Rèm Cửa Thiên Phát Đồng Hành cùng bạn"
+              - generic [ref=e1165]: Xem Thêm
+          - link [ref=e1167] [cursor=pointer]:
+            - /url: rem-cua-thien-phat-don-vi-lam-rem-chat-luong-gia-re-nhat-tphcm
+            - img [ref=e1169]
+            - generic [ref=e1170]:
+              - generic [ref=e1171]:
+                - generic [ref=e1172]: "17"
+                - generic [ref=e1173]: 08/2026
+              - generic [ref=e1174]: Rèm cửa Thiên Phát Đơn Vị Làm Rèm Chất Lượng, Giá Rẻ Nhất TP.HCM
+              - generic [ref=e1175]: Xem Thêm
+          - option [ref=e1176]:
+            - link [ref=e1177] [cursor=pointer]:
+              - /url: rem-cua-tot-nhat-o-tphcm
+              - img [ref=e1179]
+              - generic [ref=e1180]:
+                - generic [ref=e1181]:
+                  - generic [ref=e1182]: "17"
+                  - generic [ref=e1183]: 08/2026
+                - generic [ref=e1184]: Rèm Cửa Tốt Nhất Ở TP.HCM
+                - generic [ref=e1185]: Xem Thêm
+          - option [ref=e1186]:
+            - link [ref=e1187] [cursor=pointer]:
+              - /url: rem-cua-thien-phat-don-vi-thi-cong-rem-cua-uy-tin-va-chat-luong-nhat-tphcm
+              - img [ref=e1189]
+              - generic [ref=e1190]:
+                - generic [ref=e1191]:
+                  - generic [ref=e1192]: "17"
+                  - generic [ref=e1193]: 08/2026
+                - generic [ref=e1194]: Rèm Cửa Thiên Phát – Đơn Vị Thi Công Rèm Cửa Uy Tín Và Chất Lượng Nhất TP.HCM
+                - generic [ref=e1195]: Xem Thêm
+          - option [ref=e1196]:
+            - link [ref=e1197] [cursor=pointer]:
+              - /url: kinh-nghiem-chon-mua-rem-cua-dep-o-hcm-rem-cua-thien-phat
+              - img [ref=e1199]
+              - generic [ref=e1200]:
+                - generic [ref=e1201]:
+                  - generic [ref=e1202]: "17"
+                  - generic [ref=e1203]: 08/2026
+                - generic [ref=e1204]: Kinh Nghiệm Chọn Mua Rèm Cửa Đẹp Ở HCM - Rèm Cửa Thiên Phát
+                - generic [ref=e1205]: Xem Thêm
+          - option "Rèm cửa ở Tân Bình – lựa chọn hoàn hảo cho không gian sống và làm việc 17 08/2026 Rèm cửa ở Tân Bình – lựa chọn hoàn hảo cho không gian sống và làm việc Xem Thêm" [ref=e1206]:
+            - link "Rèm cửa ở Tân Bình – lựa chọn hoàn hảo cho không gian sống và làm việc 17 08/2026 Rèm cửa ở Tân Bình – lựa chọn hoàn hảo cho không gian sống và làm việc Xem Thêm" [ref=e1207] [cursor=pointer]:
+              - /url: rem-cua-o-tan-binh-lua-chon-hoan-hao-cho-khong-gian-song-va-lam-viec
+              - img "Rèm cửa ở Tân Bình – lựa chọn hoàn hảo cho không gian sống và làm việc" [ref=e1209]
+              - generic [ref=e1210]:
+                - generic [ref=e1211]:
+                  - generic [ref=e1212]: "17"
+                  - generic [ref=e1213]: 08/2026
+                - generic [ref=e1214]: Rèm cửa ở Tân Bình – lựa chọn hoàn hảo cho không gian sống và làm việc
+                - generic [ref=e1215]: Xem Thêm
+          - option "Rèm Cửa Đẹp HCM – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát 17 08/2026 Rèm Cửa Đẹp HCM – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát Xem Thêm" [ref=e1216]:
+            - link "Rèm Cửa Đẹp HCM – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát 17 08/2026 Rèm Cửa Đẹp HCM – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát Xem Thêm" [ref=e1217] [cursor=pointer]:
+              - /url: rem-cua-dep-hcm-lua-chon-hoan-hao-tu-rem-cua-thien-phat
+              - img "Rèm Cửa Đẹp HCM – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát" [ref=e1219]
+              - generic [ref=e1220]:
+                - generic [ref=e1221]:
+                  - generic [ref=e1222]: "17"
+                  - generic [ref=e1223]: 08/2026
+                - generic [ref=e1224]: Rèm Cửa Đẹp HCM – Lựa Chọn Hoàn Hảo Từ Rèm Cửa Thiên Phát
+                - generic [ref=e1225]: Xem Thêm
+          - 'option "Xu Hướng Ngành Rèm Cửa 2025: Rèm Cửa Thiên Phát Đồng Hành cùng bạn 17 08/2026 Xu Hướng Ngành Rèm Cửa 2025: Rèm Cửa Thiên Phát Đồng Hành cùng bạn Xem Thêm" [ref=e1226]':
+            - 'link "Xu Hướng Ngành Rèm Cửa 2025: Rèm Cửa Thiên Phát Đồng Hành cùng bạn 17 08/2026 Xu Hướng Ngành Rèm Cửa 2025: Rèm Cửa Thiên Phát Đồng Hành cùng bạn Xem Thêm" [ref=e1227] [cursor=pointer]':
+              - /url: xu-huong-nganh-rem-cua-2025-rem-cua-thien-phat-dong-hanh-cung-ban
+              - 'img "Xu Hướng Ngành Rèm Cửa 2025: Rèm Cửa Thiên Phát Đồng Hành cùng bạn" [ref=e1229]'
+              - generic [ref=e1230]:
+                - generic [ref=e1231]:
+                  - generic [ref=e1232]: "17"
+                  - generic [ref=e1233]: 08/2026
+                - generic [ref=e1234]: "Xu Hướng Ngành Rèm Cửa 2025: Rèm Cửa Thiên Phát Đồng Hành cùng bạn"
+                - generic [ref=e1235]: Xem Thêm
+          - option "Rèm cửa Thiên Phát Đơn Vị Làm Rèm Chất Lượng, Giá Rẻ Nhất TP.HCM 17 08/2026 Rèm cửa Thiên Phát Đơn Vị Làm Rèm Chất Lượng, Giá Rẻ Nhất TP.HCM Xem Thêm" [ref=e1236]:
+            - link "Rèm cửa Thiên Phát Đơn Vị Làm Rèm Chất Lượng, Giá Rẻ Nhất TP.HCM 17 08/2026 Rèm cửa Thiên Phát Đơn Vị Làm Rèm Chất Lượng, Giá Rẻ Nhất TP.HCM Xem Thêm" [ref=e1237] [cursor=pointer]:
+              - /url: rem-cua-thien-phat-don-vi-lam-rem-chat-luong-gia-re-nhat-tphcm
+              - img "Rèm cửa Thiên Phát Đơn Vị Làm Rèm Chất Lượng, Giá Rẻ Nhất TP.HCM" [ref=e1239]
+              - generic [ref=e1240]:
+                - generic [ref=e1241]:
+                  - generic [ref=e1242]: "17"
+                  - generic [ref=e1243]: 08/2026
+                - generic [ref=e1244]: Rèm cửa Thiên Phát Đơn Vị Làm Rèm Chất Lượng, Giá Rẻ Nhất TP.HCM
+                - generic [ref=e1245]: Xem Thêm
+          - link [ref=e1247] [cursor=pointer]:
+            - /url: rem-cua-tot-nhat-o-tphcm
+            - img [ref=e1249]
+            - generic [ref=e1250]:
+              - generic [ref=e1251]:
+                - generic [ref=e1252]: "17"
+                - generic [ref=e1253]: 08/2026
+              - generic [ref=e1254]: Rèm Cửa Tốt Nhất Ở TP.HCM
+              - generic [ref=e1255]: Xem Thêm
+          - link [ref=e1257] [cursor=pointer]:
+            - /url: rem-cua-thien-phat-don-vi-thi-cong-rem-cua-uy-tin-va-chat-luong-nhat-tphcm
+            - img [ref=e1259]
+            - generic [ref=e1260]:
+              - generic [ref=e1261]:
+                - generic [ref=e1262]: "17"
+                - generic [ref=e1263]: 08/2026
+              - generic [ref=e1264]: Rèm Cửa Thiên Phát – Đơn Vị Thi Công Rèm Cửa Uy Tín Và Chất Lượng Nhất TP.HCM
+              - generic [ref=e1265]: Xem Thêm
+          - link [ref=e1267] [cursor=pointer]:
+            - /url: kinh-nghiem-chon-mua-rem-cua-dep-o-hcm-rem-cua-thien-phat
+            - img [ref=e1269]
+            - generic [ref=e1270]:
+              - generic [ref=e1271]:
+                - generic [ref=e1272]: "17"
+                - generic [ref=e1273]: 08/2026
+              - generic [ref=e1274]: Kinh Nghiệm Chọn Mua Rèm Cửa Đẹp Ở HCM - Rèm Cửa Thiên Phát
+              - generic [ref=e1275]: Xem Thêm
+          - link [ref=e1277] [cursor=pointer]:
+            - /url: rem-cua-o-tan-binh-lua-chon-hoan-hao-cho-khong-gian-song-va-lam-viec
+            - img [ref=e1279]
+            - generic [ref=e1280]:
+              - generic [ref=e1281]:
+                - generic [ref=e1282]: "17"
+                - generic [ref=e1283]: 08/2026
+              - generic [ref=e1284]: Rèm cửa ở Tân Bình – lựa chọn hoàn hảo cho không gian sống và làm việc
+              - generic [ref=e1285]: Xem Thêm
+      - generic [ref=e1289]:
+        - paragraph [ref=e1290]:
+          - link "Đơn Vị Thi Công Lắp Đặt Rèm Cửa Uy Tín Nhất Tại Tân Bình Và TP.HCM" [ref=e1291] [cursor=pointer]:
+            - /url: http://remcuahcm.vn/gioi-thieu
+            - strong [ref=e1294]: Đơn Vị Thi Công Lắp Đặt Rèm Cửa Uy Tín Nhất Tại Tân Bình Và TP.HCM
+        - heading "Giới Thiệu Về Rèm Cửa Thiên Phát" [level=3] [ref=e1295]:
+          - link "Giới Thiệu Về Rèm Cửa Thiên Phát" [ref=e1296] [cursor=pointer]:
+            - /url: http://remcuahcm.vn/gioi-thieu
+            - strong [ref=e1298]: Giới Thiệu Về Rèm Cửa Thiên Phát
+        - paragraph [ref=e1299]: Rèm Cửa Thiên Phát tự hào là đơn vị chuyên cung cấp và thi công lắp đặt rèm cửa uy tín nhất ở Tân Bình và TP.HCM. Với hơn 10 năm kinh nghiệm trong nghề, chúng tôi đã khẳng định vị thế là một trong những thương hiệu hàng đầu, được nhiều khách hàng tin tưởng và lựa chọn. Sản phẩm của chúng tôi không chỉ đa dạng về mẫu mã, chất lượng vượt trội mà còn đáp ứng mọi nhu cầu về thẩm mỹ và công năng cho không gian sống và làm việc.
+        - heading "Rèm Cửa Thiên Phát – Chuyên Gia Về Rèm Cửa Tại Tân Bình" [level=3] [ref=e1300]:
+          - link "Rèm Cửa Thiên Phát – Chuyên Gia Về Rèm Cửa Tại Tân Bình" [ref=e1301] [cursor=pointer]:
+            - /url: http://remcuahcm.vn/gioi-thieu
+            - strong [ref=e1303]: Rèm Cửa Thiên Phát – Chuyên Gia Về Rèm Cửa Tại Tân Bình
+        - paragraph [ref=e1304]: Thiên Phát đã và đang thi công lắp đặt hàng ngàn công trình rèm cửa tại Tân Bình. Đặc biệt, chúng tôi hiểu rõ đặc điểm của từng không gian, từ nhà phố, căn hộ, biệt thự cho đến văn phòng, showroom. Từ đó, chúng tôi tư vấn và cung cấp những giải pháp rèm cửa phù hợp, mang đến không gian sang trọng, tinh tế và hiện đại.
+        - paragraph [ref=e1305]: Chúng tôi luôn đặt chất lượng sản phẩm và dịch vụ lên hàng đầu. Với đội ngũ nhân viên chuyên nghiệp và giàu kinh nghiệm, mỗi công trình thi công lắp đặt rèm cửa tại Tân Bình đều được Thiên Phát thực hiện cẩn thận, tỉ mỉ từ khâu tư vấn đến lắp đặt hoàn thiện.
+        - heading "Các Loại Rèm Cửa Phổ Biến Tại Rèm Cửa Thiên Phát" [level=3] [ref=e1306]:
+          - strong [ref=e1307]: Các Loại Rèm Cửa Phổ Biến Tại Rèm Cửa Thiên Phát
+        - paragraph [ref=e1308]: "Thiên Phát cung cấp nhiều loại rèm cửa với mẫu mã đa dạng, phong phú, phù hợp với nhiều không gian khác nhau:"
+        - list [ref=e1309]:
+          - listitem [ref=e1310]:
+            - generic [ref=e1311]:
+              - strong [ref=e1312]: "Rèm vải cao cấp:"
+              - text: Với khả năng chống nắng, cản sáng và cách nhiệt hiệu quả, rèm vải là lựa chọn lý tưởng cho phòng khách, phòng ngủ, và không gian làm việc. Chúng tôi cung cấp nhiều loại vải từ vải lụa, vải nhung đến vải thô, giúp khách hàng dễ dàng lựa chọn.
+          - listitem [ref=e1313]:
+            - generic [ref=e1314]:
+              - strong [ref=e1315]: "Rèm cuốn:"
+              - text: Rèm cuốn với thiết kế gọn gàng, hiện đại, dễ dàng sử dụng và bảo dưỡng. Loại rèm này phù hợp với không gian văn phòng, quán cafe hay những không gian có thiết kế tối giản.
+          - listitem [ref=e1316]:
+            - generic [ref=e1317]:
+              - strong [ref=e1318]: "Rèm gỗ:"
+              - text: Sản phẩm này mang đến vẻ đẹp sang trọng, tinh tế với chất liệu từ gỗ tự nhiên, phù hợp với những không gian cần sự ấm cúng, gần gũi.
+          - listitem [ref=e1319]:
+            - generic [ref=e1320]:
+              - strong [ref=e1321]: "Rèm sáo nhôm và rèm lá dọc:"
+              - text: Đây là loại rèm phù hợp cho văn phòng hoặc những không gian làm việc chuyên nghiệp, với khả năng điều chỉnh ánh sáng linh hoạt và dễ dàng vệ sinh.
+        - heading "Vì Sao Chọn Rèm Cửa Thiên Phát Ở Tân Bình" [level=3] [ref=e1322]:
+          - strong [ref=e1323]: Vì Sao Chọn Rèm Cửa Thiên Phát Ở Tân Bình
+        - list [ref=e1324]:
+          - listitem [ref=e1325]:
+            - generic [ref=e1326]:
+              - strong [ref=e1327]: "Hơn 10 năm kinh nghiệm:"
+              - text: Với hơn một thập kỷ hoạt động trong lĩnh vực thi công rèm cửa, Thiên Phát không ngừng cải tiến và phát triển để mang đến cho khách hàng những sản phẩm và dịch vụ tốt nhất.
+          - listitem [ref=e1328]:
+            - generic [ref=e1329]:
+              - strong [ref=e1330]: "Uy tín tại Tân Bình:"
+              - text: Rèm Cửa Thiên Phát đã thi công thành công hàng ngàn công trình lớn nhỏ tại Tân Bình, nhận được sự tin tưởng và hài lòng từ khách hàng.
+          - listitem [ref=e1331]:
+            - generic [ref=e1332]:
+              - strong [ref=e1333]: "Dịch vụ chuyên nghiệp:"
+              - text: Đội ngũ nhân viên kỹ thuật của chúng tôi được đào tạo bài bản, có nhiều kinh nghiệm trong việc lắp đặt rèm cửa cho mọi loại không gian. Chúng tôi cam kết mang đến dịch vụ nhanh chóng, chính xác và luôn đảm bảo thẩm mỹ.
+          - listitem [ref=e1334]:
+            - generic [ref=e1335]:
+              - strong [ref=e1336]: "Sản phẩm chất lượng:"
+              - text: Chúng tôi luôn lựa chọn những loại rèm cửa từ các nhà cung cấp uy tín, đảm bảo độ bền cao, khả năng chống nắng, cản sáng và dễ dàng vệ sinh.
+          - listitem [ref=e1337]:
+            - generic [ref=e1338]:
+              - strong [ref=e1339]: "Tư vấn tận tâm, chi phí hợp lý:"
+              - text: Khách hàng sẽ nhận được sự tư vấn nhiệt tình, tận tâm từ đội ngũ nhân viên để lựa chọn sản phẩm phù hợp với nhu cầu và ngân sách. Chúng tôi cũng cam kết giá cả cạnh tranh nhất trên thị trường.
+        - heading "Dịch Vụ Thi Công Lắp Đặt Rèm Cửa Tại TP.HCM" [level=3] [ref=e1340]:
+          - strong [ref=e1341]: Dịch Vụ Thi Công Lắp Đặt Rèm Cửa Tại TP.HCM
+        - paragraph [ref=e1342]: Không chỉ tại Tân Bình, Rèm Cửa Thiên Phát còn mở rộng dịch vụ thi công lắp đặt rèm cửa uy tín trên toàn khu vực TP.HCM. Chúng tôi cung cấp dịch vụ nhanh chóng, tiện lợi, đáp ứng mọi nhu cầu của khách hàng từ nhà riêng, căn hộ chung cư đến các không gian văn phòng, khách sạn, nhà hàng.
+        - heading "Quy Trình Thi Công Lắp Đặt Rèm Cửa Tại Thiên Phát" [level=3] [ref=e1343]:
+          - strong [ref=e1344]: Quy Trình Thi Công Lắp Đặt Rèm Cửa Tại Thiên Phát
+        - list [ref=e1345]:
+          - listitem [ref=e1346]:
+            - generic [ref=e1347]:
+              - strong [ref=e1348]: "Tư vấn và đo đạc miễn phí:"
+              - text: Sau khi tiếp nhận yêu cầu, chúng tôi sẽ cử nhân viên đến tận nơi để khảo sát và tư vấn các loại rèm cửa phù hợp với không gian của khách hàng.
+          - listitem [ref=e1349]:
+            - generic [ref=e1350]:
+              - strong [ref=e1351]: "Báo giá nhanh chóng:"
+              - text: Sau khi tư vấn, chúng tôi sẽ gửi bảng báo giá chi tiết và rõ ràng nhất, đảm bảo không phát sinh chi phí ngoài ý muốn.
+          - listitem [ref=e1352]:
+            - generic [ref=e1353]:
+              - strong [ref=e1354]: "Thi công chuyên nghiệp:"
+              - text: Đội ngũ lắp đặt của chúng tôi có kinh nghiệm và chuyên môn cao, cam kết hoàn thành công trình đúng tiến độ, đảm bảo chất lượng.
+          - listitem [ref=e1355]:
+            - generic [ref=e1356]:
+              - strong [ref=e1357]: "Bảo hành chu đáo:"
+              - text: Sau khi lắp đặt, Thiên Phát cung cấp dịch vụ bảo hành, sửa chữa và bảo dưỡng rèm cửa, giúp khách hàng an tâm sử dụng sản phẩm lâu dài.
+        - heading "Cam Kết Của Rèm Cửa Thiên Phát" [level=3] [ref=e1358]:
+          - strong [ref=e1359]: Cam Kết Của Rèm Cửa Thiên Phát
+        - paragraph [ref=e1360]: "Rèm Cửa Thiên Phát luôn cam kết mang đến cho khách hàng những giá trị tốt nhất:"
+        - list [ref=e1361]:
+          - listitem [ref=e1362]:
+            - generic [ref=e1363]:
+              - strong [ref=e1364]: "Chất lượng hàng đầu:"
+              - text: Sản phẩm rèm cửa của chúng tôi luôn đảm bảo chất lượng cao, độ bền lâu dài và an toàn cho sức khỏe.
+          - listitem [ref=e1365]:
+            - generic [ref=e1366]:
+              - strong [ref=e1367]: "Dịch vụ lắp đặt chuyên nghiệp:"
+              - text: Đội ngũ nhân viên giàu kinh nghiệm, thi công cẩn thận và chính xác, đảm bảo công trình hoàn thiện đạt tiêu chuẩn thẩm mỹ và kỹ thuật.
+          - listitem [ref=e1368]:
+            - generic [ref=e1369]:
+              - strong [ref=e1370]: "Chính sách bảo hành dài hạn:"
+              - text: Mọi sản phẩm rèm cửa tại Thiên Phát đều được bảo hành dài hạn, đảm bảo quyền lợi cho khách hàng.
+        - heading "Kết Luận" [level=3] [ref=e1371]:
+          - strong [ref=e1372]: Kết Luận
+        - paragraph [ref=e1373]:
+          - generic [ref=e1374]:
+            - text: Nếu bạn đang tìm kiếm đơn vị thi công lắp đặt rèm cửa uy tín ở Tân Bình hay TP.HCM,
+            - link "Rèm Cửa Thiên Phát" [ref=e1375] [cursor=pointer]:
+              - /url: http://remcuahcm.vn
+              - strong [ref=e1376]: Rèm Cửa Thiên Phát
+            - text: chính là sự lựa chọn hoàn hảo. Với hơn 10 năm kinh nghiệm trong nghề, chúng tôi tự hào mang đến cho khách hàng những sản phẩm rèm cửa chất lượng, dịch vụ chuyên nghiệp và giá cả hợp lý.
+        - paragraph [ref=e1377]: Hãy liên hệ ngay với Rèm Cửa Thiên Phát để được tư vấn và trải nghiệm dịch vụ thi công rèm cửa hàng đầu!
+        - separator [ref=e1378]
+        - paragraph [ref=e1379]:
+          - strong [ref=e1380]: "Thông tin liên hệ:"
+        - list [ref=e1381]:
+          - listitem [ref=e1382]:
+            - strong [ref=e1383]: Địa chỉ:Tân Bình, TP.HCM
+          - listitem [ref=e1384]:
+            - strong [ref=e1385]: 0352 559 440 Mr. Thy
+          - listitem [ref=e1386]:
+            - strong [ref=e1387]: 0901 889 594 Mr.Thy
+          - listitem [ref=e1388]:
+            - strong [ref=e1389]: Website:remcuahcm.vn
+          - listitem [ref=e1390]:
+            - strong [ref=e1391]: "Email: Hoangthythy0610@gmail.com"
+          - listitem [ref=e1392]:
+            - strong [ref=e1393]: "Giờ Làm Việc :Thứ 2 - Chủ Nhật: 7:00 AM - 20:30 PM"
+        - link "Xem thêm bài viết" [ref=e1396] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e1397]:
+            - text: Xem thêm bài viết
+            - img [ref=e1398]: 
+    - generic [ref=e1406]:
+      - contentinfo [ref=e1407]:
+        - generic [ref=e1409]:
+          - generic [ref=e1410]:
+            - generic [ref=e1411]: Rèm Cửa Thiên Phát
+            - generic [ref=e1412]: Chuyên tư vấn, thi công và cung cấp các sản phẩm dịch vụ về rèm cửa. Chúng tôi không chỉ bán rèm cửa, chúng tôi cung cấp cho bạn một giải pháp toàn diện cho không gian sống và làm việc của bạn.
+            - generic [ref=e1413]:
+              - paragraph [ref=e1414]:
+                - strong [ref=e1416]: "Thông tin liên hệ:"
+              - paragraph [ref=e1417]:
+                - strong [ref=e1419]: Địa chỉ:Tân Bình, TP.HCM
+              - paragraph [ref=e1420]:
+                - strong [ref=e1422]: 0352 559 440 Mr. Thy
+              - paragraph [ref=e1423]:
+                - strong [ref=e1425]: 0901 889 594 Mr.Thy
+              - paragraph [ref=e1426]:
+                - strong [ref=e1428]: Website:http://remcuahcm.vn
+              - paragraph [ref=e1429]:
+                - strong [ref=e1431]: "Email: Hoangthythy0610@gmail.com"
+              - paragraph [ref=e1432]:
+                - strong [ref=e1434]: "Giờ Làm Việc :Thứ 2 - Chủ Nhật: 7:00 AM - 20:30 PM"
+          - generic [ref=e1435]:
+            - heading "báo giá" [level=3] [ref=e1436]
+            - generic [ref=e1437]:
+              - link "RÈM CẦU VỒNG" [ref=e1438] [cursor=pointer]:
+                - /url: rem-cau-vong
+              - link "RÈM VĂN PHÒNG" [ref=e1439] [cursor=pointer]:
+                - /url: rem-van-phong
+              - link "RÈM NGOÀI TRỜI" [ref=e1440] [cursor=pointer]:
+                - /url: rem-ngoai-troi
+              - link "RÈM CỬA TỰ ĐỘNG" [ref=e1441] [cursor=pointer]:
+                - /url: rem-cua-tu-dong
+              - link "RÈM VẢI" [ref=e1442] [cursor=pointer]:
+                - /url: rem-vai
+              - link "RÈM SÁO GỖ" [ref=e1443] [cursor=pointer]:
+                - /url: rem-sao-go
+              - link "RÈM ROMAN" [ref=e1444] [cursor=pointer]:
+                - /url: rem-roman
+              - link "GIÀN PHƠI ĐỒ" [ref=e1445] [cursor=pointer]:
+                - /url: san-pham-khac
+          - generic [ref=e1446]:
+            - heading "chính sách" [level=3] [ref=e1447]
+            - generic [ref=e1448]:
+              - link "Quy định về hình thức thanh toán" [ref=e1449] [cursor=pointer]:
+                - /url: quy-dinh-ve-hinh-thuc-thanh-toan
+              - link "Chính sách bảo mật thông tin" [ref=e1450] [cursor=pointer]:
+                - /url: chinh-sach-bao-mat-thong-tin
+              - link "Chính Sách Lắp Đặt" [ref=e1451] [cursor=pointer]:
+                - /url: chinh-sach-lap-dat
+              - link "Chính Sách Đổi Trả" [ref=e1452] [cursor=pointer]:
+                - /url: chinh-sach-doi-tra
+              - link "Chính Sách bảo hành" [ref=e1453] [cursor=pointer]:
+                - /url: chinh-sach-bao-hanh
+            - heading "Liên kết mạng xã hội" [level=3] [ref=e1454]
+            - link "Facebook" [ref=e1455] [cursor=pointer]:
+              - /url: https://www.facebook.com/profile.php?id=61565154050635
+              - img "Facebook" [ref=e1456]
+            - link "Map" [ref=e1457] [cursor=pointer]:
+              - /url: https://www.google.com/maps
+              - img "Map" [ref=e1458]
+            - link "Điện thoại" [ref=e1459] [cursor=pointer]:
+              - /url: tel:0352559440
+              - img "Điện thoại" [ref=e1460]
+            - link "Zalo" [ref=e1461] [cursor=pointer]:
+              - /url: https://zalo.me/0901889594
+              - img "Zalo" [ref=e1462]
+            - link "Điện thoại" [ref=e1463] [cursor=pointer]:
+              - /url: tel:0901889594
+              - img "Điện thoại" [ref=e1464]
+      - generic [ref=e1467]:
+        - generic [ref=e1468]: Copyright © Rèm Cửa Thiên Phát. Thiết Kế Web MIMA
+        - generic [ref=e1469]:
+          - generic [ref=e1470]:
+            - text: "Đang online:"
+            - generic [ref=e1471]: "231"
+          - generic [ref=e1472]: "|"
+          - generic [ref=e1473]:
+            - text: "Hôm nay:"
+            - generic [ref=e1474]: "4"
+          - generic [ref=e1475]: "|"
+          - generic [ref=e1476]:
+            - text: "Tổng truy cập:"
+            - generic [ref=e1477]: "102"
+    - generic [ref=e1478]:
+      - 'link "Call me: 0335008724" [ref=e1479] [cursor=pointer]':
+        - /url: tel:0335008724
+        - img [ref=e1483]
+        - generic [ref=e1486]: "Call me: 0335008724"
+      - 'link "Zalo: 0335008724" [ref=e1487] [cursor=pointer]':
+        - /url: https://zalo.me/0335008724
+        - img [ref=e1491]
+        - generic [ref=e1493]: "Zalo: 0335008724"
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "86"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 86/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 🟢 TỐT
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "21"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 18
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 3
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: /index.php
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e1494]:
+      - generic [ref=e1495]: "❌ Chi tiết lỗi cần khắc phục (3/21):"
+      - generic [ref=e1496]:
+        - generic [ref=e1497]:
+          - generic [ref=e1498]: 1. Thẻ Title
+          - generic [ref=e1499]: 1 lỗi
+        - generic [ref=e1500]:
+          - strong [ref=e1502]: "Title phải có nội dung (hiện tại: 0 ký tự)"
+          - generic [ref=e1503]: ⚠️ Title tag không tồn tại hoặc rỗng!
+      - generic [ref=e1504]:
+        - generic [ref=e1505]:
+          - generic [ref=e1506]: 8. Tốc độ & Core Web Vitals
+          - generic [ref=e1507]: 2 lỗi
+        - generic [ref=e1508]:
+          - strong [ref=e1510]: "[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 55/100 (≥ 60)"
+          - generic [ref=e1511]: ⚠️ [📱 MOBILE (ƯU TIÊN)] Điểm Performance 55/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+        - generic [ref=e1512]:
+          - strong [ref=e1514]: "[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 11252ms (< 2500ms)"
+          - generic [ref=e1515]: "⚠️ [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 11252ms (chuẩn: < 2.5s) → Thủ phạm LCP:"
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 86/100 dưới ngưỡng 96%. Có 3/21 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```

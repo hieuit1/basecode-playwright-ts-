@@ -1,0 +1,104 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11297","Kiểm tra SEO Onpage: RÈM ROMAN (/rem-roman)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10909","Kiểm tra SEO Onpage: Hoàn thiện khu nhà phố rèm cửa kết hợp giấy dán tường (/hoan-thien-khu-nha-pho-rem-cua-ket-hop-giay-dan-tuong)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","10252","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-28","passed","2026-08-28","Contract Feature Tests","web/contract.spec.ts","",""
+"","43287","Add news successfully and verify on website","Desktop Chrome","2026-08-28","passed","2026-08-28","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","58490","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-08-28","failed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","55656","Kiểm tra SEO Onpage: Công trình (/cong-trinh)","Desktop Chrome","2026-08-28","failed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","34611","Submit form successfully with valid data","Desktop Chrome","2026-08-28","passed","2026-08-28","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10484","Kiểm tra SEO Onpage: Chính Sách Đổi Trả (/chinh-sach-doi-tra)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11138","Kiểm tra SEO Onpage: GIÀN PHƠI ĐỒ (/san-pham-khac)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11493","Kiểm tra SEO Onpage: RÈM VẢI HAI LỚP (/rem-vai-hai-lop)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","18731","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-28","passed","2026-08-28","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12157","Kiểm tra SEO Onpage: RÈM NGOÀI TRỜI (/rem-ngoai-troi)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","22811","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-08-28","passed","2026-08-28","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","42396","Kiểm tra SEO Onpage: Quy định về hình thức thanh toán (/quy-dinh-ve-hinh-thuc-thanh-toan)","Desktop Chrome","2026-08-28","failed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","5994","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-28","passed","2026-08-28","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11876","Kiểm tra SEO Onpage: Rèm Cầu Vồng Đẹp (/rem-cau-vong-dep)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10618","Kiểm tra SEO Onpage: Chính sách bảo mật thông tin (/chinh-sach-bao-mat-thong-tin)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","10616","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-28","passed","2026-08-28","Search Feature Tests","web/search.spec.ts","",""
+"","11208","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-28","passed","2026-08-28","Search Feature Tests","web/search.spec.ts","",""
+"","20388","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-28","failed","2026-08-28","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","50285","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-28","failed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14783","Kiểm tra SEO Onpage: RÈM VĂN PHÒNG (/rem-van-phong)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","10812","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-28","passed","2026-08-28","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","51886","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-28","failed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","21887","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-28","passed","2026-08-28","Product Management Tests","admin/product.spec.ts","",""
+"","10453","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-28","passed","2026-08-28","Contract Feature Tests","web/contract.spec.ts","",""
+"","183920","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-28","failed","2026-08-28","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11132","Kiểm tra SEO Onpage: RÈM CỬA TỰ ĐỘNG (/rem-cua-tu-dong)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","8361","Login successfully with valid credentials","Desktop Chrome","2026-08-28","passed","2026-08-28","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","10605","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-28","passed","2026-08-28","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10202","Kiểm tra SEO Onpage: Chính Sách Lắp Đặt (/chinh-sach-lap-dat)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","54823","Add product successfully and verify on website","Desktop Chrome","2026-08-28","passed","2026-08-28","Product Management Tests","admin/product.spec.ts","",""
+"","10682","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-28","passed","2026-08-28","Contract Feature Tests","web/contract.spec.ts","",""
+"","5786","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-28","passed","2026-08-28","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","5914","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-28","passed","2026-08-28","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","5990","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-28","passed","2026-08-28","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9830","Kiểm tra SEO Onpage: Chính Sách bảo hành (/chinh-sach-bao-hanh)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","53726","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-28","failed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13763","Kiểm tra SEO Onpage: Dịch Vụ Lắp Rèm Cửa Tại Nhà Giá Siêu Rẻ Ở TP HCM (/dich-vu-lap-rem-cua-tai-nha-gia-sieu-re-o-tp-hcm)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","67745","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-08-28","failed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","183658","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-08-28","passed","2026-08-28","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10223","Kiểm tra SEO Onpage: Rèm Cửa Tốt Nhất Ở TP.HCM (/rem-cua-tot-nhat-o-tphcm)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","75044","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-08-28","failed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","18929","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-28","passed","2026-08-28","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11092","Kiểm tra SEO Onpage: RÈM VẢI MỘT LỚP (/rem-vai-mot-lop)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10885","Kiểm tra SEO Onpage: RÈM SÁO GỖ (/rem-sao-go)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15800","Kiểm tra SEO Onpage: RÈM CẦU VỒNG (/rem-cau-vong)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12546","Kiểm tra SEO Onpage: RÈM VẢI (/rem-vai)","Desktop Chrome","2026-08-28","passed","2026-08-28","SEO Page","seo/seo.spec.ts","",""
+"","6178","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-28","passed","2026-08-28","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","10237","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-28","passed","2026-08-28","Contract Feature Tests","web/contract.spec.ts","",""
+"","10508","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-28","passed","2026-08-28","Contract Feature Tests","web/contract.spec.ts","",""
