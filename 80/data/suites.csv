@@ -1,0 +1,100 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17646","Kiểm tra SEO Onpage: BẢNG ĐÈN LED (/bang-den-led)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","59596","Kiểm tra SEO Onpage: Công trình (/cong-trinh)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","6812","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","10609","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","120217","Kiểm tra SEO Onpage: May cờ (/may-co)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","9955","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","10557","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15914","Kiểm tra SEO Onpage: CỜ LÔNG VŨ (/co-long-vu)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20168","Kiểm tra SEO Onpage: CỜ GIỌT NƯỚC (/co-giot-nuoc)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20827","Kiểm tra SEO Onpage: IN CỜ PHƯỚN (/in-co-phuon)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","6860","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20499","Kiểm tra SEO Onpage: CỜ BẤT ĐỘNG SẢN (/co-bat-dong-san)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","34854","Submit form successfully with valid data","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","33144","Kiểm tra SEO Onpage: Cờ Lưu Niệm Dùng Để Trao Tặng Hình Chữ Nhật (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (/co-luu-niem-dung-de-trao-tang-hinh-chu-nhat-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","10477","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","8836","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-29","passed","2026-08-29","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10342","Kiểm tra SEO Onpage: PANO NGOÀI TRỜI (/pano-ngoai-troi)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12079","Kiểm tra SEO Onpage: HỘP ĐÈN 3M (/hop-den-3m)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14326","Kiểm tra SEO Onpage: cong trình ABCCC (/cong-trinh-abccc)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11733","Kiểm tra SEO Onpage: BẢNG HIỆU ALU CHỮ NỔI (/bang-hieu-alu-chu-noi)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","23126","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"","206492","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"","10520","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","7200","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16170","Kiểm tra SEO Onpage: CHỮ NỔI MICA (/chu-noi-mica)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10532","Kiểm tra SEO Onpage: LED HẮT SÁNG (/led-hat-sang)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","9469","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","41855","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","53862","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","63780","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","25036","Kiểm tra SEO Onpage: CỜ HÌNH CHỮ NHẬT (/co-hinh-chu-nhat)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","6378","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-29","failed","2026-08-29","Search Feature Tests","web/search.spec.ts","",""
+"","10955","Login successfully with valid credentials","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","170825","Kiểm tra SEO Onpage: CỜ CỘT CỜ (/co-cot-co)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","54840","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16244","Kiểm tra SEO Onpage: test dịch vụ (1) (1) (1) (1) (1) (/test-dich-vu-1-1-1-1-1)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18482","Kiểm tra SEO Onpage: King BBQ (/king-bbq)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12305","Kiểm tra SEO Onpage: TRẦN XUYÊN SÁNG (/tran-xuyen-sang)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","8652","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-29","passed","2026-08-29","Search Feature Tests","web/search.spec.ts","",""
+"","7343","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","7168","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","8868","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-29","passed","2026-08-29","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16125","Kiểm tra SEO Onpage: CHỮ NỔI INOX (/chu-noi-inox)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","45662","Add news successfully and verify on website","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17874","Kiểm tra SEO Onpage: BẢNG HIỆU BẠT HIFLEX (/bang-hieu-bat-hiflex)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","22352","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","43089","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""

@@ -1,7 +1,0 @@
---- BẮT ĐẦU SETUP DATA (TẠO 3 MÃ TRÊN ADMIN CÙNG LÚC) ---
-[Setup] Tạo mã hợp lệ: AUTO_UKNSAH
-[Setup] Tạo mã hết lượt: AUTO_K6NWJZ
---- HOÀN TẤT SETUP DATA ---
-Đang truy cập https://code2.mimadigi.vn/2026/august/cfurni_111926w/ban-sofa...
-Đang click vào sản phẩm: "Bàn sofa MEIKO" (index: 21)
-Đã đóng modal thông báo thêm giỏ hàng.
