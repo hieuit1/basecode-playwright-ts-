@@ -1,0 +1,52 @@
+[📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.174 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="wrap-home pt-2 pt-lg-2">
+        <div class="container py-2 py-lg-2">
+    <div class="row">
+        <h2 class="hidden">Tất cả bài viết Dịc...
+          - <div class="breadCrumbs">
+    <div class="container">
+        <ol class="breadcrumb"><li class="breadcrumb-item"><a class="d-flex align-items-center" ...
+          - <a class="news-pic position-relative scale-img" href="dich-vu-treo-co-phuon-tphcm-uy-tin-thi-cong-nhanh-toan-thanh-pho" title="Dịch Vụ Treo Cờ Phướn T...
+          - <a class="news-pic position-relative scale-img" href="thi-cong-bang-hieu-chuoi-cua-hang-cellphones-quang-cao-minh-loi" title="Thi công bảng hiệu chuỗi...
+          - <a class="news-pic position-relative scale-img" href="quang-cao-taxi-bang-gia-quang-cao-taxi-moi-2026" title="Quảng cáo taxi - Bảng giá quảng cáo taxi...
+          - <div class="news-desc text-split">Chiến dịch truyền thông địa phương tại các đô thị sầm uất luôn đòi hỏi sự kết hợp linh hoạt giữa các kênh trực tuyến...
+          - <div class="news-desc text-split">Dịch vụ treo cờ phướn tphcm chuyên nghiệp chính là câu trả lời tối ưu nhất. Với khả năng tạo hiệu ứng thị giác mạnh ...
+          - <div class="news-desc text-split">Giữa hàng loạt phương thức truyền thông số dễ bị lướt qua trên màn hình điện thoại, quảng cáo ngoài trời (OOH) vẫn g...
+          - <span class="news-time">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M128 0c17.7 0 32 14.3 32 ...
+          - <div class="nav-item ">
+                <img alt="icon" src="./assets/images/main/mail.webp">
+                <div class="content-nav">
+              ...
+          - <div class="nav-item ">
+                <img alt="icon" src="./assets/images/main/phone.webp">
+                <div class="content-nav">
+             ...
+          - <li class="breadcrumb-item active"><a class="text-decoration-none" href="https://quangcaominhloi.vn/dich-vu"><span>Dịch vụ</span></a></li>
+          - <a class="transition" href="tuyen-dung" title="Tuyển dụng">Tuyển dụng</a>
+          - <a class="transition" href="tin-tuc" title="Tin tức">Tin tức</a>
+          - <a class="transition" href="lien-he" title="Liên hệ">Liên hệ</a>
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="wrap-home pt-2 pt-lg-2">
+        <div class="container py-2 py-lg-2">
+    <div class="row">
+        <h2 class="hidden">Tất cả bài viết Dịc... | <div class="breadCrumbs">
+    <div class="container">
+        <ol class="breadcrumb"><li class="breadcrumb-item"><a class="d-flex align-items-center" ... | <a class="news-pic position-relative scale-img" href="dich-vu-treo-co-phuon-tphcm-uy-tin-thi-cong-nhanh-toan-thanh-pho" title="Dịch Vụ Treo Cờ Phướn T....
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

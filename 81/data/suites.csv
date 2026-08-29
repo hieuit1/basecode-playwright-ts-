@@ -1,0 +1,83 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","15553","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16314","Kiểm tra SEO Onpage: CHUỖI NHÀ PHÂN PHỐI &amp; ĐẠI LÝ (/chuoi-nha-phan-phoi-dai-ly)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","4749","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","4662","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","45968","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-29","failed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"","12488","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-29","failed","2026-08-29","Search Feature Tests","web/search.spec.ts","",""
+"","9370","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","5310","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","31621","Add recruitment successfully and verify on website","Desktop Chrome","2026-08-29","passed","2026-08-29","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11479","Kiểm tra SEO Onpage: Billboard &amp; Pano Quảng Cáo (/billboard-pano-quang-cao)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 77/100 | Đạt: 17/22 tiêu chí | Ngưỡng: 96%
+
+TỐT","138559","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10781","Kiểm tra SEO Onpage: In Ấn (/in-an-thu-duc)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","38452","Submit form successfully with valid data","Desktop Chrome","2026-08-29","failed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","9235","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","16451","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-08-29","passed","2026-08-29","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","14037","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-29","passed","2026-08-29","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14452","Kiểm tra SEO Onpage: ROADSHOW PHƯƠNG TIỆN GIAO THÔNG (/roadshow-phuong-tien-giao-thong)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10123","Kiểm tra SEO Onpage: Treo Băng Rôn TPHCM - Treo Tuyến Đường Đẹp, Chuẩn (/treo-bang-ron-tphcm-treo-tuyen-duong-dep-chuan)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17448","Kiểm tra SEO Onpage: TREO BĂNG RÔN - CỜ PHƯỚN TOÀN QUỐC (/treo-bang-ron-co-phuon-toan-quoc)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","45746","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","50688","Kiểm tra SEO Onpage: Lĩnh vực (/linh-vuc)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11555","Kiểm tra SEO Onpage: Kinh Nghiệm Chọn Vị Trí Treo Cờ Phướn Hiệu Quả Cho Chiến Dịch Quảng Cáo (/kinh-nghiem-chon-vi-tri-treo-co-phuon-hieu-qua-cho-chien-dich-quang-cao)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","13983","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"","9224","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","12609","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-29","failed","2026-08-29","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 20/20 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","77226","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","7021","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-29","failed","2026-08-29","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11911","Kiểm tra SEO Onpage: PANO BILLBOARD QUẢNG CÁO (/pano-billboard-quang-cao)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","12615","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-29","failed","2026-08-29","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9925","Kiểm tra SEO Onpage: Roadshow, Posm, Event (/roadshow-posm-event)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16102","Kiểm tra SEO Onpage: Treo Cờ Phướn Quảng Cáo TPHCM-Treo Nhanh, Chất Lượng (/treo-co-phuon-quang-cao-tphcm-treo-nhanh-chat-luong)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","53789","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","7433","Login successfully with valid credentials","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","4999","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","84102","Kiểm tra SEO Onpage: Công ty quảng cáo truyền thông - Quảng cáo ngoài trời chuyên nghiệp cùng Minh Lợi (/index.php)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","9449","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","62362","Kiểm tra SEO Onpage: Hạng mục thi công (/hang-muc-thi-cong)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","37676","Add news successfully and verify on website","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"","5252","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","9255","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","9097","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-29","passed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","189875","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-08-29","failed","2026-08-29","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10202","Kiểm tra SEO Onpage: Biển hiệu quảng cáo (/bien-hieu-quang-cao)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10322","Kiểm tra SEO Onpage: Quảng cáo truyền thông (/quang-cao-truyen-thong)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
