@@ -1,0 +1,51 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 95/100 | Đạt: 20/21 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","95726","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","85454","Kiểm tra SEO Onpage: CHÍNH SÁCH BẢO MẬT (/chinh-sach-bao-mat)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","95129","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12004","Kiểm tra SEO Onpage: NHANH CHÓNG - TIỆN LỢI (/nhanh-chong-tien-loi)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","30924","Add news successfully and verify on website","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","66709","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","37656","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-29","failed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","37971","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-29","failed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","7199","Login successfully with valid credentials","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","37431","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-29","failed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","3637","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-29","failed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","37539","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-29","failed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18438","Kiểm tra SEO Onpage: Dọn Kho Bình Dương – Gia Phát | Dịch Vụ Bốc Xếp Dọn Kho Chuyên Nghiệp, Có Mặt Sau 30 Phút (/don-kho-binh-duong)","Desktop Chrome","2026-08-29","failed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","4497","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","4505","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15369","Kiểm tra SEO Onpage: Bốc xếp hàng hóa Đức Hòa – Long An | Dịch vụ uy tín, giá tốt (/boc-xep-hang-hoa-duc-hoa-long-an-dich-vu-uy-tin-gia-tot)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11473","Kiểm tra SEO Onpage: HÀI LÒNG KHÁCH HÀNG (/hai-long-khach-hang)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","4537","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","50616","Submit form successfully with valid data","Desktop Chrome","2026-08-29","failed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","49495","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","41268","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12021","Kiểm tra SEO Onpage: GIÁ CẢ HỢP LÝ (/gia-ca-hop-ly)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","4754","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","55797","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-08-29","passed","2026-08-29","SEO Page","seo/seo.spec.ts","",""
+"","4659","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-29","passed","2026-08-29","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","37581","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-29","failed","2026-08-29","Contract Feature Tests","web/contract.spec.ts","",""
+"","12311","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""
+"","16221","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-29","passed","2026-08-29","News Management Tests","admin/news.spec.ts","",""

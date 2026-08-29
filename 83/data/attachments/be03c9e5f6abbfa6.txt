@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     95/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          20
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/21):
+--- PERFORMANCE ---
+   1. [[💻 Desktop] Tổng điểm Performance: 56/100 (≥ 60)]
+      → [💻 Desktop] Điểm Performance 56/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
