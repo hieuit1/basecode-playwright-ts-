@@ -57,7 +57,6 @@ if (MenuHelper.hasSubMenu(['Quản lý bài viết', 'Bài viết'], ['BLOG', 'B
                                 if (error.message.includes('Web có bug')) {
                                     throw error;
                                 }
-                                // Expected to fail validation
                             }
                         }
                     });
