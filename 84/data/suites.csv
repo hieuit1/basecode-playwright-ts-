@@ -1,0 +1,51 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","49493","Submit form successfully with valid data","Desktop Chrome","2026-08-31","failed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","47996","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","37359","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-31","failed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8299","Kiểm tra SEO Onpage: Dọn Kho Bình Dương – Gia Phát | Dịch Vụ Bốc Xếp Dọn Kho Chuyên Nghiệp, Có Mặt Sau 30 Phút (/don-kho-binh-duong)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","4200","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10523","Kiểm tra SEO Onpage: HÀI LÒNG KHÁCH HÀNG (/hai-long-khach-hang)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","14257","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"","4139","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","4431","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","91073","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","37724","Kiểm tra SEO Onpage: CHÍNH SÁCH BẢO MẬT (/chinh-sach-bao-mat)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","4361","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10451","Kiểm tra SEO Onpage: GIÁ CẢ HỢP LÝ (/gia-ca-hop-ly)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","4280","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","28051","Add news successfully and verify on website","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"","37112","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-31","failed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","51877","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","3691","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-31","failed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"","38111","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-31","failed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"","37552","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-31","failed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15089","Kiểm tra SEO Onpage: Bốc xếp hàng hóa Đức Hòa – Long An | Dịch vụ uy tín, giá tốt Bốc xếp hàng hóa Đức Hòa – Long An | Dịch vụ uy tín, giá tốt Bốc xếp hàng hóa Đức Hòa – Long An | Dịch vụ uy tín, giá tốt (/boc-xep-hang-hoa-duc-hoa-long-an-dich-vu-uy-tin-gia-tot)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","47906","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","65967","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","7023","Login successfully with valid credentials","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10708","Kiểm tra SEO Onpage: NHANH CHÓNG - TIỆN LỢI (/nhanh-chong-tien-loi)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","37431","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-31","failed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"","13002","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","43503","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
