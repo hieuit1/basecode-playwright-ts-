@@ -1,0 +1,66 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","58233","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","6237","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","72172","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17718","Kiểm tra SEO Onpage: Thu Mua Nhà Xưởng (/thu-mua-nha-xuong)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14912","Kiểm tra SEO Onpage: Xử lý chất thải công nghiệp Bình Dương (/xu-ly-chat-thai-cong-nghiep-binh-duong)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","36732","Submit form successfully with valid data","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18919","Kiểm tra SEO Onpage: Thu Mua Phế Liệu Nhôm (/thu-mua-phe-lieu-nhom)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","59409","Add news successfully and verify on website","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"","11966","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"","11322","Login successfully with valid credentials","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15526","Kiểm tra SEO Onpage: Thu Mua Phế Liệu (/thu-mua-phe-lieu)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","47641","Kiểm tra SEO Onpage: /tags-san-pham (/tags-san-pham)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","11750","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","72001","Kiểm tra SEO Onpage: THU MUA PHẾ LIỆU - NHÀ XƯỞNG TẬN NƠI (/index.php)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","53403","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","145638","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-31","failed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19437","Kiểm tra SEO Onpage: Thu Mua Phế Liệu Inox (/thu-mua-phe-lieu-inox)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","5961","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","22145","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"","12597","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22347","Kiểm tra SEO Onpage: Xử lý chất thải rắn công nghiệp (/xu-ly-chat-thai-ran-cong-nghiep-1)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","10931","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"","12787","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16167","Kiểm tra SEO Onpage: Xử Lý Chất Thải Rắn – Thô (/xu-ly-chat-thai-ran-tho)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","6104","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","7767","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","24267","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10061","Kiểm tra SEO Onpage: Thanh Lý Giá Cao (/thanh-ly-gia-cao)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","52895","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14491","Kiểm tra SEO Onpage: Thu Mua Phế Liệu Motor (/thu-mua-phe-lieu-motor)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","10571","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9637","Kiểm tra SEO Onpage: Thu Mua Phế Liệu Đồng (/thu-mua-phe-lieu-dong)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","11821","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""

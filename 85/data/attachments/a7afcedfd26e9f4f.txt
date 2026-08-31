@@ -1,0 +1,16 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 7034ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p>CÔNG TY PHẾ LIỆU LỘC PHÁT TÀI<br>
+<br>
+Địa chỉ: Ngã Tư DJ5 NJ17, khu công nghiệp, Thới Hòa, Hồ Chí Minh, Việt Nam</p>
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p>CÔNG TY PHẾ LIỆU LỘC PHÁT TÀI<br>
+<br>
+Địa chỉ: Ngã Tư DJ5 NJ17, khu công nghiệp, Thới Hòa, Hồ Chí Minh, Việt Nam</p>
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code4.mimadigi.vn/2026/august/vutienngoc_112226W/lien-he
