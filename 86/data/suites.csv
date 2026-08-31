@@ -1,0 +1,107 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4685","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","10498","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-08-31","passed","2026-08-31","Search Feature Tests","web/search.spec.ts","",""
+"","4205","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13213","Kiểm tra SEO Onpage: Phụ tùng của Máy in phun hiệu Leibinger (/phu-tung-cua-may-in-phun-hieu-leibinger)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","12805","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14501","Kiểm tra SEO Onpage: Phụ tùng của Máy in phun hiệu Video jet Excel (/phu-tung-cua-may-in-phun-hieu-video-jet-excel)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","49594","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11696","Kiểm tra SEO Onpage: Phụ tùng của máy in phun hiệu Fast jet (/phu-tung-cua-may-in-phun-hieu-fast-jet)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","70124","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","59409","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21193","Kiểm tra SEO Onpage: Phụ tùng của máy in phun hiệu Linx (/phu-tung-cua-may-in-phun-hieu-linx)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15816","Kiểm tra SEO Onpage: Mực in IC-2BK124 (/muc-in-ic-2bk124)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","9759","Submit form should fail with sai định dạng email","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15996","Kiểm tra SEO Onpage: bình lọc ITM02 (/binh-loc-itm02)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","14522","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-31","passed","2026-08-31","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13033","Kiểm tra SEO Onpage: Máy in phun hiệu EBS model 6500 (/may-in-phun-hieu-ebs-model-6500)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","9266","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-08-31","passed","2026-08-31","Search Feature Tests","web/search.spec.ts","",""
+"","115149","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-08-31","failed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"","11074","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-08-31","passed","2026-08-31","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18392","Kiểm tra SEO Onpage: Phụ tùng của Máy In Phun hiệu Domino (/phu-tung-cua-may-in-phun-hieu-domino)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24357","Kiểm tra SEO Onpage: Phụ tùng của Máy in phun hiệu Markem - Imaje (/phu-tung-cua-may-in-phun-hieu-markem-imaje)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","9385","Submit form should fail with bỏ trống email","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"","9202","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"","167170","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-08-31","failed","2026-08-31","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13760","Kiểm tra SEO Onpage: Phụ tùng máy in hiệu ZANASI (/phu-tung-may-in-hieu-zanasi)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","9385","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22036","Kiểm tra SEO Onpage: Phụ tùng của Máy In Phun hiệu Hitachi (/phu-tung-cua-may-in-phun-hieu-hitachi)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","64385","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13310","Kiểm tra SEO Onpage: H9 (/h9)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13217","Kiểm tra SEO Onpage: Phụ tùng của máy in phun hiệu SUNSTONE (/phu-tung-cua-may-in-phun-hieu-sunstone)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","4920","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","7062","Login successfully with valid credentials","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","37465","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-08-31","failed","2026-08-31","Search Feature Tests","web/search.spec.ts","",""
+"","16194","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-08-31","passed","2026-08-31","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","59464","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16777","Kiểm tra SEO Onpage: Phụ tùng của Máy in phun công nghiệp hiệu KGK (/phu-tung-cua-may-in-phun-cong-nghiep-hieu-kgk)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","52424","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15631","Kiểm tra SEO Onpage: Phụ tùng của máy in phun hiệu Citronix (/phu-tung-cua-may-in-phun-hieu-citronix)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23872","Kiểm tra SEO Onpage: Phụ tùng của máy in phun hiệu Rotweil (/phu-tung-cua-may-in-phun-hieu-rotweil)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","32449","Add news successfully and verify on website","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13120","Kiểm tra SEO Onpage: Dung môi S1018 (/dung-moi-s1018)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","4874","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13157","Kiểm tra SEO Onpage: Phụ tùng của Máy in phun hiệu Willett (/phu-tung-cua-may-in-phun-hieu-willett)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","12566","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"","5184","Login should fail with sai mật khẩu","Desktop Chrome","2026-08-31","passed","2026-08-31","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12530","Kiểm tra SEO Onpage: Top 5 dung môi pha mực tốt nhất (/top-5-dung-moi-pha-muc-tot-nhat)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","12857","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-08-31","passed","2026-08-31","News Management Tests","admin/news.spec.ts","",""
+"","39205","Submit form successfully with valid data","Desktop Chrome","2026-08-31","failed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"","41666","Add product successfully and verify on website","Desktop Chrome","2026-08-31","passed","2026-08-31","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17342","Kiểm tra SEO Onpage: Phụ tùng của Máy in phun hiệu Video jet VJ (/phu-tung-cua-may-in-phun-hieu-video-jet-vj)","Desktop Chrome","2026-08-31","passed","2026-08-31","SEO Page","seo/seo.spec.ts","",""
+"","9589","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-08-31","passed","2026-08-31","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16594","Kiểm tra SEO Onpage: Dịch Vụ Cho Thuê Máy In Công Nghiệp|Công ty TNHH Ngân Nhân Phát (/dich-vu-cho-thue-may-in-cong-nghiepcong-ty-tnhh-ngan-nhan-phat)","Desktop Chrome","2026-08-31","failed","2026-08-31","SEO Page","seo/seo.spec.ts","",""

@@ -1,0 +1,54 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     81/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          17
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/21):
+--- TITLE ---
+   1. [Title phải có nội dung (hiện tại: 0 ký tự)]
+      → Title tag không tồn tại hoặc rỗng!
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 56/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 56/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 8026ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 8026ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <div class="wrap-gioithieu">
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <div class="wrap-gioithieu">
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://phutungmayin.com/index.php
+   4. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.109 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.109 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="bg-1">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="bg-1">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
