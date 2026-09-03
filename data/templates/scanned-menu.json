@@ -1,44 +1,33 @@
 {
-  "timestamp": "2026-08-27T09:45:50.451Z",
-  "baseUrl": "https://thuexekhanhhoa.com/",
+  "timestamp": "2026-08-31T08:59:41.756Z",
+  "baseUrl": "https://phutungmayin.com/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
       "Banner",
-      "Về chúng tôi",
-      "Lịch sử hình thành",
+      "Giới thiệu",
       "Tầm nhìn",
-      "Sứ mệnh"
+      "Sứ mệnh",
+      "Giá trị cốt lõi"
     ],
-    "Quản lý Loại xe": [
-      "Danh mục cấp 1",
-      "Loại xe"
-    ],
-    "Quản lý Bảng giá": [
-      "Bảng giá"
-    ],
-    "Quản lý Dịch vụ": [
+    "Group Sản Phẩm": [
+      "Watermark",
+      "Chi tiết sản phẩm",
       "Danh mục cấp 1",
       "Danh mục cấp 2",
-      "Dịch vụ"
+      "Chi tiết sản phẩm"
     ],
     "Quản lý bài viết": [
+      "Dịch vụ",
       "Tin tức",
-      "Tuyến nổi bật",
-      "Quy trình làm việc",
-      "Tuyển dụng",
-      "Feedback khách hàng",
-      "Thông số",
-      "Vì sao chọn chúng tôi",
-      "Đơn hàng ảo",
+      "Tiêu chí",
       "Chính sách"
     ],
     "Quản lý nhận tin": [
-      "Đăng ký nhận tin",
-      "Đăng ký tư vấn",
-      "Đặt xe"
+      "Đăng ký nhận tin"
     ],
     "Quản lý trang tĩnh": [
+      "Slogan",
       "Liên hệ",
       "Footer",
       "Copyright"
@@ -46,22 +35,14 @@
     "Quản lý hình ảnh - video": [
       "Favicon (.png)",
       "Logo",
-      "Banner đăng ký xe",
-      "Banner vì sao",
-      "Banner form",
-      "Popup",
-      "Đối tác",
+      "Logo footer",
+      "Banner sản phẩm",
+      "Slideshow",
+      "Video",
+      "Banner quảng cáo",
+      "Mạng xã hội",
       "Link Redirect"
     ],
-    "Quản lý seo page": [
-      "Trang chủ",
-      "Về chúng tôi",
-      "Dịch vụ",
-      "Loại xe",
-      "Bảng giá",
-      "Tuyến nổi bật",
-      "Tin tức",
-      "Tuyên dụng"
-    ]
+    "Quản lý seo page": []
   }
 }
