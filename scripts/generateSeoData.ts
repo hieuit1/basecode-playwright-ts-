@@ -449,16 +449,42 @@ function scanMainNavPaths($: cheerio.CheerioAPI, homeHtml: string): Set<string> 
  * Dùng để lọc bỏ các URL tạm (sản phẩm/bài viết test) tránh race condition trên CI:
  * Khi chạy song song, shard khác có thể cleanup xóa sản phẩm test → gây broken links cho SEO tests.
  *
- * Phải neo vào marker cụ thể thay vì bắt chuỗi 'test' trần: khi chạy trên website khác,
- * 'test' trần sẽ nuốt oan trang thật ("máy test", "contest", "latest").
+ * Các mẫu slug mà framework sinh ra (data/admin/*.ts và tests/admin/*.spec.ts):
+ *   test-news-title-{ts}, test-product-title-{ts}, test-dich-vu-cap-1-{ts}
+ *   blog-test-{ts}, du-an-test-{ts}, dich-vu-test-{ts}, tai-lieu-ky-thuat-test-{ts}
+ *   automation-blog-en-{ts}, recruitment-automation-en-{ts}
+ *   san-pham-loadtest-{ts}, auto-test-san-pham-...-{ts}
+ *
+ * KHÔNG bắt chuỗi 'test' trần: khi chạy trên website khác, 'test' trần sẽ nuốt oan
+ * trang thật ("may-test-ac-quy", "but-thu-dien-tester", "contest", "tin-tuc-latest").
  */
 function isAutoTestUrl(url: string): boolean {
-  const decoded = decodeURIComponent(url);
-  if (/(^|[-_/])(auto-test|autotest|loadtest)/i.test(decoded)) return true;
+  let pathname: string;
+  try {
+    // Decode sau khi tách pathname, và bọc try/catch: slug chứa '%' không hợp lệ
+    // sẽ làm decodeURIComponent ném lỗi và hỏng cả lần chạy.
+    pathname = decodeURIComponent(new URL(url).pathname);
+  } catch {
+    return false;
+  }
 
-  // Trang nháp đặt tên trống trơn là 'test' — chỉ khớp khi cả segment đúng bằng 'test',
-  // không khớp các slug chứa chữ test ("may-test-ac-quy", "contest", "latest")
-  return /\/test\/?$/i.test(new URL(decoded).pathname);
+  // 1. Marker từ khoá của framework, neo cả hai đầu để không dính "autotestX".
+  //    KHÔNG đưa 'automation' vào đây: các slug automation-* của framework đều có
+  //    timestamp nên luật 3 đã bắt hết, trong khi 'automation' là từ thường gặp ở
+  //    trang thật của web công nghiệp ("/automation-cong-nghiep", "/automation-plc").
+  if (/(^|[-_/])(auto-test|autotest|loadtest)([-_/]|$)/i.test(pathname)) return true;
+
+  // 2. Mẫu "test-<module>-title-..." — test-news-title-*, test-product-title-*
+  if (/(^|[-_/])test[-_/].*[-_/]title([-_/]|$)/i.test(pathname)) return true;
+
+  // 3. Slug chứa timestamp Date.now() — mọi data/admin/*.ts đều gắn `${Date.now()}`
+  //    vào slug. Siết theo dải epoch mili-giây (1[5-9]... = năm 2017-2033) và bắt
+  //    buộc đứng thành một token riêng, để không nuốt slug thật gắn mã vạch EAN-13
+  //    ("/muc-in-canon-4901990479455").
+  if (/(^|[-_/])1[5-9]\d{11}([-_/]|$)/.test(pathname)) return true;
+
+  // 4. Trang nháp đặt tên trống trơn là 'test'
+  return /(^|\/)test\/?$/i.test(pathname);
 }
 
 async function run() {
@@ -479,7 +505,7 @@ async function run() {
   const sitemapUrls = allSitemapUrls.filter(url => !isAutoTestUrl(url));
   const skippedCount = allSitemapUrls.length - sitemapUrls.length;
   if (skippedCount > 0) {
-    console.log(`⚠ Đã bỏ qua ${skippedCount} URL thuộc automation test data (auto-test / loadtest).`);
+    console.log(`⚠ Đã bỏ qua ${skippedCount} URL thuộc automation test data (auto-test / loadtest / test-*-title-* / slug có timestamp).`);
   }
 
   // Tải trang chủ đúng MỘT lần rồi dùng cho hai việc: lấy tên site (để cắt hậu tố khỏi
