@@ -1,0 +1,570 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Dịch Vụ Cho Thuê Máy In Công Nghiệp|Công ty TNHH Ngân Nhân Phát (/dich-vu-cho-thue-may-in-cong-nghiepcong-ty-tnhh-ngan-nhan-phat)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Error: ❌ FAIL — Điểm SEO 93/100 dưới ngưỡng 96%. Có 1/15 tiêu chí không đạt.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e6]:
+        - paragraph [ref=e7]:
+          - generic [ref=e8]: “Công Ty TNHH Ngân Nhân Phát – Uy tín tạo giá trị, vững bước tương lai.”
+        - generic [ref=e9]:
+          - paragraph [ref=e10]:
+            - text: "Email:"
+            - link "caonghia163@gmail.com" [ref=e11] [cursor=pointer]:
+              - /url: mailto:caonghia163@gmail.com
+          - paragraph [ref=e12]:
+            - text: "Hotline:"
+            - link "0908.589877" [ref=e13] [cursor=pointer]:
+              - /url: tel:0908589877
+      - list [ref=e17]:
+        - listitem [ref=e18]:
+          - link "Trang chủ" [ref=e19] [cursor=pointer]:
+            - /url: https://phutungmayin.com/
+        - listitem [ref=e20]:
+          - link "Giới thiệu" [ref=e21] [cursor=pointer]:
+            - /url: gioi-thieu
+        - listitem [ref=e22]:
+          - link "Sản phẩm" [ref=e23] [cursor=pointer]:
+            - /url: san-pham
+        - listitem [ref=e24]:
+          - link "Phụ Tùng Máy In Công NghiệpTại TP.HCM_Công Ty TNHH Ngân Nhân Phát" [ref=e25] [cursor=pointer]:
+            - /url: https://phutungmayin.com/
+            - img "Phụ Tùng Máy In Công NghiệpTại TP.HCM_Công Ty TNHH Ngân Nhân Phát" [ref=e26]
+        - listitem [ref=e27]:
+          - link "Dịch vụ" [ref=e28] [cursor=pointer]:
+            - /url: dich-vu
+        - listitem [ref=e29]:
+          - link "Tin tức" [ref=e30] [cursor=pointer]:
+            - /url: tin-tuc
+        - listitem [ref=e31]:
+          - link "Liên hệ" [ref=e32] [cursor=pointer]:
+            - /url: lien-he
+        - listitem [ref=e33]:
+          - link [ref=e34] [cursor=pointer]:
+            - /url: javascript:void();
+          - textbox "Nhập từ khóa cần tìm..."
+      - text:  
+    - list [ref=e37]:
+      - listitem [ref=e38]:
+        - link "Trang chủ" [ref=e39] [cursor=pointer]:
+          - /url: https://phutungmayin.com/
+          - generic [ref=e40]: Trang chủ
+      - listitem [ref=e41]:
+        - text: "|"
+        - link "Dịch vụ" [ref=e42] [cursor=pointer]:
+          - /url: https://phutungmayin.com/dich-vu
+      - listitem [ref=e43]:
+        - text: "|"
+        - link "Dịch Vụ Cho Thuê Máy In Công Nghiệp|Công ty TNHH Ngân Nhân Phát" [ref=e44] [cursor=pointer]:
+          - /url: https://phutungmayin.com/dich-vu-cho-thue-may-in-cong-nghiepcong-ty-tnhh-ngan-nhan-phat
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: Dịch Vụ Cho Thuê Máy In Công Nghiệp|Công ty TNHH Ngân Nhân Phát
+        - generic [ref=e50]:
+          - generic [ref=e51]: 
+          - generic [ref=e52]: 14/01/2026
+          - generic [ref=e53]: 
+          - text: 361 Lượt xem
+        - generic [ref=e54]:
+          - text: 
+          - list [ref=e56]:
+            - listitem [ref=e57]: Tại Sao Nên Chọn Dịch Vụ Cho Thuê Máy In Công Nghiệp?
+            - listitem [ref=e58]:
+              - text: Dịch Vụ Cho Thuê Máy In Công Nghiệp Tại Ngân Nhân Phát
+              - list [ref=e59]:
+                - listitem [ref=e60]: Lợi Ích Khi Hợp Tác Với Ngân Nhân Phát
+            - listitem [ref=e61]: Ứng Dụng Thực Tế Của Dịch Vụ Cho Thuê Máy In
+        - generic [ref=e62]:
+          - paragraph [ref=e63]:
+            - generic [ref=e68]:
+              - text: Trong thời đại công nghiệp 4.0, việc tối ưu hóa chi phí và nâng cao hiệu suất sản xuất là yếu tố sống còn đối với mọi doanh nghiệp. Hiểu được nhu cầu này,
+              - strong [ref=e69]: Công Ty TNHH Ngân Nhân Phát
+              - text: tự hào cung cấp
+              - link "dịch vụ cho thuê máy in công nghiệp" [ref=e70] [cursor=pointer]:
+                - /url: https://phutungmayin.com/dich-vu-cho-thue-may-in-cong-nghiep
+                - strong [ref=e71]: dịch vụ cho thuê máy in công nghiệp
+              - text: chất lượng cao, giúp doanh nghiệp tiết kiệm chi phí, tối ưu quy trình và đảm bảo tiến độ sản xuất. Với hơn
+              - strong [ref=e72]: 10 năm kinh nghiệm
+              - text: trong lĩnh vực cung cấp thiết bị và giải pháp in ấn, chúng tôi cam kết mang đến giải pháp toàn diện, linh hoạt và đáng tin cậy.
+          - heading "Tại Sao Nên Chọn Dịch Vụ Cho Thuê Máy In Công Nghiệp?" [level=2] [ref=e73]:
+            - strong [ref=e81]: Tại Sao Nên Chọn Dịch Vụ Cho Thuê Máy In Công Nghiệp?
+          - list [ref=e82]:
+            - listitem [ref=e83]:
+              - generic [ref=e88]:
+                - strong [ref=e89]: Tiết kiệm chi phí đầu tư ban đầu
+                - text: ": Thay vì chi hàng trăm triệu đồng để mua máy in công nghiệp, doanh nghiệp có thể sử dụng thiết bị hiện đại với chi phí thuê hợp lý, phù hợp với ngân sách."
+          - paragraph [ref=e90]:
+            - generic [ref=e96]:
+              - text: "Xem thêm:"
+              - link "Dịch vụ cho thuê máy in công nghiệp tại TP.HCM" [ref=e97] [cursor=pointer]:
+                - /url: https://phutungmayin.com/dich-vu-cho-thue-may-in-cong-nghiep
+          - list [ref=e98]:
+            - listitem [ref=e99]:
+              - generic [ref=e104]:
+                - strong [ref=e105]: Linh hoạt theo nhu cầu
+                - text: ": Hợp đồng cho thuê được thiết kế đa dạng (theo tháng, quý, năm) để phù hợp với các dự án ngắn hạn, dài hạn hoặc nhu cầu sản xuất theo mùa."
+            - listitem [ref=e106]:
+              - generic [ref=e111]:
+                - strong [ref=e112]: Đa dạng dòng máy in
+                - text: ": Chúng tôi cung cấp nhiều loại máy in công nghiệp như máy in phun, máy in mã vạch, máy in tem nhãn, máy in date, đáp ứng nhu cầu của các ngành thực phẩm, dược phẩm, mỹ phẩm, logistics và sản xuất."
+          - figure "Dịch Vụ Cho Thuê Máy In Công Nghiệp" [ref=e114]:
+            - paragraph [ref=e115]:
+              - img "Dịch Vụ Cho Thuê Máy In Công NghiệpCông ty TNHH Ngân Nhân Phát" [ref=e118]
+            - paragraph [ref=e120]:
+              - generic [ref=e121]: Dịch Vụ Cho Thuê Máy In Công Nghiệp
+          - paragraph [ref=e122]:
+            - generic [ref=e127]:
+              - text: "Tham khảo dòng máy in nổi bật của chúng tôi:"
+              - link "Máy in phun ST100" [ref=e128] [cursor=pointer]:
+                - /url: https://phutungmayin.com/may-in-phun-st100
+          - list [ref=e129]:
+            - listitem [ref=e130]:
+              - generic [ref=e135]:
+                - strong [ref=e136]: Bảo trì và hỗ trợ kỹ thuật trọn gói
+                - text: ": Khách hàng không phải lo lắng về sự cố kỹ thuật. Dịch vụ bảo trì, sửa chữa và thay thế linh kiện được thực hiện nhanh chóng bởi đội ngũ chuyên gia."
+          - paragraph [ref=e137]:
+            - generic [ref=e142]:
+              - text: "Xem thêm:"
+              - link "Dịch Vụ Sửa Chữa Và Bảo Trì Máy In Công Nghiệp" [ref=e144] [cursor=pointer]:
+                - /url: https://phutungmayin.com/dich-vu-sua-chua-va-bao-tri-may-in-cong-nghiep
+          - list [ref=e145]:
+            - listitem [ref=e146]:
+              - generic [ref=e151]:
+                - strong [ref=e152]: Đảm bảo sản xuất liên tục
+                - text: ": Máy in được kiểm tra định kỳ, đảm bảo hoạt động ổn định, giúp doanh nghiệp tránh gián đoạn dây chuyền sản xuất."
+          - paragraph [ref=e153]:
+            - strong [ref=e161]:
+              - emphasis [ref=e162]: Hãy liên hệ ngay với chúng tôi, Công Ty TNHH Ngân Nhân Phát qua số điện thoại 0908.589.877 để được hỗ trợ nhanh chóng và tư vấn chi tiết nhất. Chúng tôi sẽ tư vấn đề xuất giải pháp chọn máy hợp lý nhất giúp hoạt động sản xuất ổn định, hiệu quả, và tiết kiệm chi phí.
+          - paragraph [ref=e163]:
+            - link "Phụ Tùng Máy In Công Nghiệp" [ref=e166] [cursor=pointer]:
+              - /url: tel:0908.589877
+              - img "Phụ Tùng Máy In Công Nghiệp" [ref=e167]
+          - heading "Dịch Vụ Cho Thuê Máy In Công Nghiệp Tại Ngân Nhân Phát" [level=2] [ref=e168]:
+            - strong [ref=e176]: Dịch Vụ Cho Thuê Máy In Công Nghiệp Tại Ngân Nhân Phát
+          - paragraph [ref=e177]:
+            - generic [ref=e182]:
+              - text: Chúng tôi mang đến giải pháp
+              - strong [ref=e183]: “thuê máy in – vận hành an tâm”
+              - text: "với các dịch vụ nổi bật:"
+          - list [ref=e184]:
+            - listitem [ref=e185]:
+              - generic [ref=e190]:
+                - strong [ref=e191]: Cho thuê máy in phun công nghiệp
+                - text: ": Phù hợp cho ngành thực phẩm, đồ uống, dược phẩm và mỹ phẩm, đảm bảo in ấn sắc nét, bền màu trên nhiều bề mặt như chai lọ, bao bì, hộp giấy."
+            - listitem [ref=e192]:
+              - generic [ref=e197]:
+                - strong [ref=e198]: Cho thuê máy in mã vạch và tem nhãn
+                - text: ": Hỗ trợ các doanh nghiệp logistics, bán lẻ và sản xuất trong việc quản lý hàng hóa, in tem nhãn nhanh chóng, chính xác."
+            - listitem [ref=e199]:
+              - generic [ref=e204]:
+                - strong [ref=e205]: Cho thuê máy in date
+                - text: ": Giải pháp lý tưởng để in ngày sản xuất, hạn sử dụng, số lô với tốc độ cao, đáp ứng tiêu chuẩn khắt khe của ngành hàng tiêu dùng."
+            - listitem [ref=e206]:
+              - generic [ref=e211]:
+                - strong [ref=e212]: Cung cấp phụ kiện chính hãng
+                - text: ": Mực in, dung môi, linh kiện thay thế được cung cấp kèm theo, đảm bảo chất lượng và tương thích tối ưu với máy."
+            - listitem [ref=e213]:
+              - generic [ref=e218]:
+                - strong [ref=e219]: Hỗ trợ kỹ thuật 24/7
+                - text: ": Đội ngũ kỹ thuật viên giàu kinh nghiệm sẵn sàng hỗ trợ tại chỗ hoặc từ xa, đảm bảo máy in hoạt động ổn định mọi lúc."
+          - figure "Thuê máy in – vận hành an tâm" [ref=e221]:
+            - paragraph [ref=e222]:
+              - img "Dịch Vụ Cho Thuê Máy In Công NghiệpCông ty TNHH Ngân Nhân Phát" [ref=e225]
+            - paragraph [ref=e227]:
+              - generic [ref=e228]: Thuê máy in – vận hành an tâm
+          - heading "Lợi Ích Khi Hợp Tác Với Ngân Nhân Phát" [level=3] [ref=e229]:
+            - strong [ref=e235]: Lợi Ích Khi Hợp Tác Với Ngân Nhân Phát
+          - list [ref=e236]:
+            - listitem [ref=e237]:
+              - generic [ref=e242]:
+                - strong [ref=e243]: Thiết bị hiện đại, chính hãng
+                - text: ": Chúng tôi chỉ cung cấp các dòng máy in từ những thương hiệu uy tín, ứng dụng công nghệ tiên tiến nhất."
+            - listitem [ref=e244]:
+              - generic [ref=e249]:
+                - strong [ref=e250]: Chi phí hợp lý, minh bạch
+                - text: ": Cam kết giá thuê cạnh tranh, không chi phí ẩn, hợp đồng rõ ràng."
+            - listitem [ref=e251]:
+              - generic [ref=e256]:
+                - strong [ref=e257]: Bảo hành và thay thế nhanh chóng
+                - text: ": Máy gặp sự cố sẽ được sửa chữa hoặc thay thế ngay lập tức, đảm bảo không làm gián đoạn hoạt động của doanh nghiệp."
+            - listitem [ref=e258]:
+              - generic [ref=e263]:
+                - strong [ref=e264]: Đội ngũ chuyên nghiệp
+                - text: ": Kỹ thuật viên được đào tạo bài bản, am hiểu sâu về các dòng máy in công nghiệp, sẵn sàng tư vấn và hỗ trợ."
+            - listitem [ref=e265]:
+              - generic [ref=e270]:
+                - strong [ref=e271]: Uy tín được khẳng định
+                - text: ": Hàng trăm doanh nghiệp tại TP.HCM, Bình Dương, Đồng Nai và các tỉnh lân cận đã tin tưởng lựa chọn Ngân Nhân Phát làm đối tác lâu dài."
+          - heading "Ứng Dụng Thực Tế Của Dịch Vụ Cho Thuê Máy In" [level=2] [ref=e272]:
+            - strong [ref=e280]: Ứng Dụng Thực Tế Của Dịch Vụ Cho Thuê Máy In
+          - paragraph [ref=e281]:
+            - strong [ref=e284]:
+              - generic [ref=e286]: "Dịch vụ của chúng tôi phù hợp với nhiều ngành nghề:"
+          - list [ref=e287]:
+            - listitem [ref=e288]:
+              - generic [ref=e293]:
+                - strong [ref=e294]: Ngành thực phẩm và đồ uống
+                - text: ": In hạn sử dụng, số lô trên chai, lon, bao bì nhựa hoặc giấy."
+            - listitem [ref=e295]:
+              - generic [ref=e300]:
+                - strong [ref=e301]: Ngành dược phẩm
+                - text: ": In thông tin lô sản xuất, mã QR trên vỉ thuốc, hộp thuốc."
+            - listitem [ref=e302]:
+              - generic [ref=e307]:
+                - strong [ref=e308]: Ngành logistics
+                - text: ": In mã vạch, tem nhãn để quản lý hàng hóa, kho bãi."
+            - listitem [ref=e309]:
+              - generic [ref=e314]:
+                - strong [ref=e315]: Ngành sản xuất công nghiệp
+                - text: ": In thông tin sản phẩm trên các vật liệu như kim loại, nhựa, gỗ."
+          - paragraph [ref=e316]:
+            - generic [ref=e322]:
+              - text: "Xem thêm:"
+              - link "Máy in phun logo, thương hiệu, mã vạch, QR code hiệu suất cao" [ref=e323] [cursor=pointer]:
+                - /url: https://phutungmayin.com/may-in-phun-logo-thuong-hieu-ma-vach-qr-code-hieu-suat-cao
+          - paragraph [ref=e324]:
+            - strong [ref=e332]:
+              - emphasis [ref=e333]: Hãy liên hệ ngay với chúng tôi, Công Ty TNHH Ngân Nhân Phát qua số điện thoại 0908.589.877 để được hỗ trợ nhanh chóng và tư vấn chi tiết nhất. Chúng tôi sẽ tư vấn đề xuất giải pháp chọn máy hợp lý nhất giúp hoạt động sản xuất ổn định, hiệu quả, và tiết kiệm chi phí.
+          - paragraph [ref=e334]:
+            - link "Phụ Tùng Máy In Công Nghiệp" [ref=e337] [cursor=pointer]:
+              - /url: tel:0908.589877
+              - img "Phụ Tùng Máy In Công Nghiệp" [ref=e338]
+          - paragraph [ref=e339]:
+            - generic [ref=e344]:
+              - text: Bạn đang tìm kiếm giải pháp in ấn
+              - strong [ref=e345]: nhanh chóng – tiết kiệm – hiệu quả
+              - text: "? Hãy để"
+              - strong [ref=e346]: Công Ty TNHH Ngân Nhân Phát
+              - text: đồng hành cùng doanh nghiệp của bạn! Liên hệ ngay hôm nay để nhận tư vấn miễn phí và báo giá chi tiết.
+          - figure "Công Ty TNHH Ngân Nhân Phát" [ref=e348]:
+            - paragraph [ref=e349]:
+              - img "Dịch Vụ Cho Thuê Máy In Công NghiệpCông ty TNHH Ngân Nhân Phát" [ref=e352]
+            - paragraph [ref=e354]:
+              - generic [ref=e355]: Công Ty TNHH Ngân Nhân Phát
+          - paragraph [ref=e356]:
+            - generic [ref=e361]:
+              - strong [ref=e362]: Công Ty TNHH Ngân Nhân Phát
+              - text: – Đối tác tin cậy cho mọi giải pháp in ấn công nghiệp. Hãy để chúng tôi giúp bạn tối ưu hóa quy trình sản xuất và nâng cao hiệu quả kinh doanh.
+          - paragraph [ref=e363]:
+            - generic [ref=e365]:
+              - generic [ref=e368]:
+                - text: Xem thêm
+                - generic [ref=e370]:
+                  - text: ":"
+                  - link "T" [ref=e371] [cursor=pointer]:
+                    - /url: https://phutungmayin.com/lien-he
+              - link "huê máy in công nghiệp cho xưởng sản xuất ở TP.HCM" [ref=e372] [cursor=pointer]:
+                - /url: https://phutungmayin.com/lien-he
+                - generic [ref=e374]: huê máy in công nghiệp cho xưởng sản xuất ở TP.HCM
+      - generic [ref=e376]:
+        - generic [ref=e377]: "Tin liên quan:"
+        - generic [ref=e378]:
+          - generic [ref=e379]:
+            - link "Dịch Vụ Sửa Chữa Và Bảo Trì Máy In Công Nghiệp" [ref=e380] [cursor=pointer]:
+              - /url: dich-vu-sua-chua-va-bao-tri-may-in-cong-nghiep
+              - img "Dịch Vụ Sửa Chữa Và Bảo Trì Máy In Công Nghiệp" [ref=e381]
+            - heading "Dịch Vụ Sửa Chữa Và Bảo Trì Máy In Công Nghiệp" [level=3] [ref=e383]:
+              - link "Dịch Vụ Sửa Chữa Và Bảo Trì Máy In Công Nghiệp" [ref=e384] [cursor=pointer]:
+                - /url: dich-vu-sua-chua-va-bao-tri-may-in-cong-nghiep
+          - generic [ref=e385]:
+            - link "Cung Cấp Mực In & Dung Môi Chính Hãng|Công Ty TNHH Ngân Nhân Phát" [ref=e386] [cursor=pointer]:
+              - /url: cung-cap-muc-in-dung-moi-chinh-hangcong-ty-tnhh-ngan-nhan-phat
+              - img "Cung Cấp Mực In & Dung Môi Chính Hãng|Công Ty TNHH Ngân Nhân Phát" [ref=e387]
+            - heading "Cung Cấp Mực In & Dung Môi Chính Hãng|Công Ty TNHH Ngân Nhân Phát" [level=3] [ref=e389]:
+              - link "Cung Cấp Mực In & Dung Môi Chính Hãng|Công Ty TNHH Ngân Nhân Phát" [ref=e390] [cursor=pointer]:
+                - /url: cung-cap-muc-in-dung-moi-chinh-hangcong-ty-tnhh-ngan-nhan-phat
+          - generic [ref=e391]:
+            - link "Thay thế lọc mực định kỳ cho máy in phun hiệu Video jet model 1880" [ref=e392] [cursor=pointer]:
+              - /url: thay-the-loc-muc-dinh-ky-cho-may-in-phun-hieu-video-jet-model-1880
+              - img "Thay thế lọc mực định kỳ cho máy in phun hiệu Video jet model 1880" [ref=e393]
+            - heading "Thay thế lọc mực định kỳ cho máy in phun hiệu Video jet model 1880" [level=3] [ref=e395]:
+              - link "Thay thế lọc mực định kỳ cho máy in phun hiệu Video jet model 1880" [ref=e396] [cursor=pointer]:
+                - /url: thay-the-loc-muc-dinh-ky-cho-may-in-phun-hieu-video-jet-model-1880
+          - generic [ref=e397]:
+            - link "Hướng dẫn thay thế ITM 02 cho máy in phun hiệu Domino model AX350" [ref=e398] [cursor=pointer]:
+              - /url: huong-dan-thay-the-itm-02-cho-may-in-phun-hieu-domino-model-ax350
+              - img "Hướng dẫn thay thế ITM 02 cho máy in phun hiệu Domino model AX350" [ref=e399]
+            - heading "Hướng dẫn thay thế ITM 02 cho máy in phun hiệu Domino model AX350" [level=3] [ref=e401]:
+              - link "Hướng dẫn thay thế ITM 02 cho máy in phun hiệu Domino model AX350" [ref=e402] [cursor=pointer]:
+                - /url: huong-dan-thay-the-itm-02-cho-may-in-phun-hieu-domino-model-ax350
+          - generic [ref=e403]:
+            - link "Máy in phun ST100" [ref=e404] [cursor=pointer]:
+              - /url: may-in-phun-st100
+              - img "Máy in phun ST100" [ref=e405]
+            - heading "Máy in phun ST100" [level=3] [ref=e407]:
+              - link "Máy in phun ST100" [ref=e408] [cursor=pointer]:
+                - /url: may-in-phun-st100
+    - generic [ref=e410]:
+      - generic [ref=e412]:
+        - generic [ref=e413]:
+          - paragraph [ref=e414]: Thông tin liên hệ
+          - paragraph [ref=e415]: CÔNG TY TNHH NGÂN NHÂN PHÁT
+          - generic [ref=e416]:
+            - paragraph [ref=e417]:
+              - generic [ref=e419]:
+                - strong [ref=e420]: "Địa chỉ:"
+                - text: 410/3C, Tỉnh lộ 8, Tổ 7, Ấp 20, xã Phú Hoà Đông , Tp.HCM
+            - paragraph [ref=e421]:
+              - generic [ref=e423]:
+                - strong [ref=e424]: "Email:"
+                - text: caonghia163@gmail.com
+            - paragraph [ref=e425]:
+              - generic [ref=e427]:
+                - strong [ref=e428]: "Phòng trưng bày sản phẩm:"
+                - text: 79 Trương Định , phường Bến Thành , Tp.HCM
+            - paragraph [ref=e429]:
+              - generic [ref=e431]:
+                - strong [ref=e432]: "VPGD:"
+                - text: 82/2 Đường 494 , Khu Phố 14 , phường Tăng Nhơn Phú , Tp.HCM
+            - paragraph [ref=e433]:
+              - generic [ref=e435]:
+                - strong [ref=e436]: "VPGD:"
+                - text: Số 50 Hương lộ 15, ấp Ngãi Hiệp, xã Hưng Mỹ , tỉnh Vĩnh Long
+            - paragraph [ref=e437]:
+              - generic [ref=e439]:
+                - strong [ref=e440]: VPGD
+                - text: ": Lô 117A đường Bàu Mạc 8, phường Liên Chiểu, Thành phố Đà Nẵng"
+            - paragraph [ref=e441]:
+              - generic [ref=e443]:
+                - strong [ref=e444]: "Hotlines:"
+                - text: 0908.589877 - 0909.589877 - 0936.589877- 0938.589877
+            - paragraph [ref=e445]:
+              - generic [ref=e447]:
+                - text: "website :"
+                - link "phutungmayin.com" [ref=e448] [cursor=pointer]:
+                  - /url: https://phutungmayin.com/
+                - text: "- mucindungmoi.com"
+        - link "Phụ Tùng Máy In Công NghiệpTại TP.HCM_Công Ty TNHH Ngân Nhân Phát" [ref=e450] [cursor=pointer]:
+          - /url: https://phutungmayin.com/
+          - img "Phụ Tùng Máy In Công NghiệpTại TP.HCM_Công Ty TNHH Ngân Nhân Phát" [ref=e451]
+        - generic [ref=e452]:
+          - paragraph [ref=e453]: Truy cập nhanh
+          - list [ref=e454]:
+            - listitem [ref=e455]:
+              - link "Trang chủ" [ref=e456] [cursor=pointer]:
+                - /url: https://phutungmayin.com/
+            - listitem [ref=e457]:
+              - link "Giới thiệu" [ref=e458] [cursor=pointer]:
+                - /url: gioi-thieu
+            - listitem [ref=e459]:
+              - link "Sản phẩm" [ref=e460] [cursor=pointer]:
+                - /url: san-pham
+            - listitem [ref=e461]:
+              - link "Dịch vụ" [ref=e462] [cursor=pointer]:
+                - /url: dich-vu
+            - listitem [ref=e463]:
+              - link "Tin tức" [ref=e464] [cursor=pointer]:
+                - /url: tin-tuc
+            - listitem [ref=e465]:
+              - link "Liên hệ" [ref=e466] [cursor=pointer]:
+                - /url: lien-he
+      - generic [ref=e468]:
+        - list [ref=e469]:
+          - listitem [ref=e470]:
+            - link [ref=e471] [cursor=pointer]:
+              - /url: https://www.facebook.com/profile.php?id=61571802610387&ref=embed_page
+          - listitem [ref=e472]:
+            - link [ref=e473] [cursor=pointer]:
+              - /url: https://zalo.me/0908589877
+          - listitem [ref=e474]:
+            - link [ref=e475] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@nghia.cao90?_r=1&_d=secCgYIASAHKAESPgo8dfCBj1W6MqFesvHJ1IpDQktB7%2FboK05GsbOW%2BKEJ4jxHEd1QOf119UkeT8jWSg48BixjG3B9zLanqUxGGgA%3D&checksum=efdf4558130926519cf167efe74caee247efc0d8e971c4d5f0c343fdfacac56b&sec_uid=MS4wLjABAAAA3B6GvGBOjCIdCDqGOnh2wz4kuqnVZd4BeBabv507oBGy2YNpq3Jr_VbfAM5icrYL&sec_user_id=MS4wLjABAAAA3B6GvGBOjCIdCDqGOnh2wz4kuqnVZd4BeBabv507oBGy2YNpq3Jr_VbfAM5icrYL&share_app_id=1180&share_author_id=7413716049362011141&share_link_id=CCF409FE-5B32-419D-A444-70C6EB9831B6&sharer_language=vi&social_share_type=4&source=h5_t&timestamp=1740110423&tt_from=copy&u_code=eg6kf7ake5737f&ug_btm=b0%2Cb0&user_id=7413716049362011141&utm_campaign=client_share&utm_medium=ios&utm_source=copy
+          - listitem [ref=e476]:
+            - link [ref=e477] [cursor=pointer]:
+              - /url: https://www.youtube.com/@caonghia5657
+        - generic [ref=e478]: Copyright © CÔNG TY TNHH NGÂN NHÂN PHÁT. All rights reserved. Thiêt kế web MIMA
+    - generic [ref=e479]:
+      - 'link "Call me: 0908589877" [ref=e480] [cursor=pointer]':
+        - /url: tel:0908589877
+        - img [ref=e482]
+        - generic: "Call me: 0908589877"
+      - 'link "Zalo: 0908589877" [ref=e485] [cursor=pointer]':
+        - /url: https://zalo.me/0908589877
+        - img [ref=e487]
+        - generic: "Zalo: 0908589877"
+    - text: 
+  - generic:
+    - generic:
+      - generic: 🎯 BÁO CÁO SEO AUDIT CHUYÊN SÂU
+      - generic: SEO Báo cáo (Tự động)
+    - generic:
+      - generic: ══ KẾT QUẢ CHẤM ĐIỂM SEO ══
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: "93"
+              - generic: / 100
+        - generic:
+          - generic:
+            - generic: "Điểm số:"
+            - strong: 93/100
+          - generic:
+            - generic: "Đánh giá:"
+            - strong: 💎 XUẤT SẮC
+          - generic:
+            - generic: "Ngưỡng đạt:"
+            - generic: 70%
+          - generic:
+            - generic: "Kết quả:"
+            - generic: ✅ PASS
+      - generic:
+        - generic:
+          - generic: "15"
+          - generic: Tổng tiêu chí
+        - generic:
+          - generic: ✅ 14
+          - generic: Đạt
+        - generic:
+          - generic: ❌ 1
+          - generic: Không đạt
+      - generic:
+        - generic:
+          - generic: "🔗 Trang:"
+          - strong: Dịch Vụ Cho Thuê Máy In Công Nghiệp|Công ty TNHH Ngân Nhân Phát
+        - generic:
+          - generic: "🔑 Từ khóa:"
+          - strong: N/A
+    - generic [ref=e489]:
+      - generic [ref=e490]: "❌ Chi tiết lỗi cần khắc phục (1/15):"
+      - generic [ref=e491]:
+        - generic [ref=e492]:
+          - generic [ref=e493]: 6. Liên kết (Links)
+          - generic [ref=e494]: 1 lỗi
+        - generic [ref=e495]:
+          - strong [ref=e497]: "Không có broken links (lỗi: 1/34)"
+          - generic [ref=e498]: "⚠️ Broken links: https://phutungmayin.com/dich-vu-cho-thue-may-in-cong-nghiep (status: 404)"
+```
+
+# Test source
+
+```ts
+  103 |         return Math.round((this.passedChecks / this.totalChecks) * 100);
+  104 |     }
+  105 | 
+  106 |     /** Lấy thống kê chi tiết */
+  107 |     get stats() {
+  108 |         return {
+  109 |             total: this.totalChecks,
+  110 |             passed: this.passedChecks,
+  111 |             failed: this.totalChecks - this.passedChecks,
+  112 |             score: this.score,
+  113 |             failures: [...this.failures],
+  114 |         };
+  115 |     }
+  116 | 
+  117 |     async finalizeScore(page: Page, threshold = 70): Promise<void> {
+  118 |         const { total, passed, failed, score, failures } = this.stats;
+  119 | 
+  120 |         // Xác định trạng thái
+  121 |         const isPass = score >= threshold;
+  122 |         const statusText = isPass ? "PASS" : "FAIL";
+  123 | 
+  124 |         // Thang điểm SEO mới
+  125 |         let scoreLabel: string;
+  126 |         let statusIcon: string;
+  127 |         if (score >= 93) {
+  128 |             scoreLabel = "XUẤT SẮC";
+  129 |             statusIcon = "💎";
+  130 |         } else if (score >= 77) {
+  131 |             scoreLabel = "TỐT";
+  132 |             statusIcon = "🟢";
+  133 |         } else if (score >= 65) {
+  134 |             scoreLabel = "KHÁ";
+  135 |             statusIcon = "🟡";
+  136 |         } else if (score >= 50) {
+  137 |             scoreLabel = "TRUNG BÌNH";
+  138 |             statusIcon = "🟠";
+  139 |         } else {
+  140 |             scoreLabel = "KÉM";
+  141 |             statusIcon = "🔴";
+  142 |         }
+  143 | 
+  144 |         // Tạo báo cáo tổng kết dạng text
+  145 |         const summaryLines = [
+  146 |             `══════════════════════════════════════`,
+  147 |             `   ${statusIcon} KẾT QUẢ CHẤM ĐIỂM SEO`,
+  148 |             `══════════════════════════════════════`,
+  149 |             `   Điểm số:     ${score}/100`,
+  150 |             `   Đánh giá:    ${scoreLabel}`,
+  151 |             `   Ngưỡng đạt:  ${threshold}%`,
+  152 |             `   Kết quả:     ${statusText}`,
+  153 |             `──────────────────────────────────────`,
+  154 |             `   Tổng tiêu chí:  ${total}`,
+  155 |             `   ✅ Đạt:          ${passed}`,
+  156 |             `   ❌ Không đạt:    ${failed}`,
+  157 |             `══════════════════════════════════════`,
+  158 |         ];
+  159 | 
+  160 |         if (failures.length > 0) {
+  161 |             summaryLines.push(``, `📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (${failed}/${total}):`);
+  162 | 
+  163 |             // Group errors by their assigned group
+  164 |             const groupedFailures = failures.reduce((acc, f) => {
+  165 |                 if (!acc[f.group]) acc[f.group] = [];
+  166 |                 acc[f.group].push(f);
+  167 |                 return acc;
+  168 |             }, {} as Record<string, ScorecardFailure[]>);
+  169 | 
+  170 |             let globalIndex = 1;
+  171 |             for (const [group, items] of Object.entries(groupedFailures)) {
+  172 |                 summaryLines.push(`--- ${group.toUpperCase()} ---`);
+  173 |                 items.forEach((f) => {
+  174 |                     summaryLines.push(`   ${globalIndex}. [${f.step}]`);
+  175 |                     summaryLines.push(`      → ${f.message}`);
+  176 |                     globalIndex++;
+  177 |                 });
+  178 |             }
+  179 |         }
+  180 | 
+  181 |         const summaryText = summaryLines.join("\n");
+  182 | 
+  183 |         // Step cuối cùng — hiển thị bảng điểm + quyết định PASS/FAIL
+  184 |         await customStep(
+  185 |             page,
+  186 |             `🏆 Kết quả chấm điểm SEO: ${score}/100 — ${statusText} (${scoreLabel})`,
+  187 |             async () => {
+  188 |                 // Đính kèm bảng điểm text
+  189 |                 await allure.attachment(
+  190 |                     "Bảng điểm SEO",
+  191 |                     Buffer.from(summaryText, "utf-8"),
+  192 |                     "text/plain"
+  193 |                 );
+  194 | 
+  195 |                 // Gắn description vào Test Case trên Allure
+  196 |                 await allure.description(
+  197 |                     `[${statusText}] Điểm SEO: ${score}/100 | Đạt: ${passed}/${total} tiêu chí | Ngưỡng: ${threshold}%\n\n` +
+  198 |                     `${scoreLabel}`
+  199 |                 );
+  200 | 
+  201 |                 // 🚀 ĐÂY LÀ DÒNG DUY NHẤT quyết định Test PASS hay FAIL
+  202 |                 if (!isPass) {
+> 203 |                     throw new Error(
+      |                           ^ Error: ❌ FAIL — Điểm SEO 93/100 dưới ngưỡng 96%. Có 1/15 tiêu chí không đạt.
+  204 |                         `❌ FAIL — Điểm SEO ${score}/100 dưới ngưỡng ${threshold}%. ` +
+  205 |                         `Có ${failed}/${total} tiêu chí không đạt.`
+  206 |                     );
+  207 |                 }
+  208 |             },
+  209 |             { screenshot: true }
+  210 |         );
+  211 |     }
+  212 | }
+```
