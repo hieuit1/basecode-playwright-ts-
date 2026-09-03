@@ -1,0 +1,23 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     80/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          12
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/15):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H3 → H5 ("Đặt phòng")
+--- LINKS ---
+   2. [Không có broken links (lỗi: 4/24)]
+      → Broken links: https://789p.gb.net/ (status: 0), https://789p.gb.net/tai-app-789p/ (status: 0), 999999999 (status: 404), 933556677 (status: 404)
+--- TECHNICAL SEO ---
+   3. [Robots: noindex, nofollow (mong muốn: INDEX)]
+      → Trang mong muốn INDEX nhưng đang bị gắn 'noindex'!

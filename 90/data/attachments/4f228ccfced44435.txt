@@ -1,0 +1,12 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 7694ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p class="desc text-split">This file contains memorandums and correspondence related to flying disc/saucer sightings and that those are a matter of concern for the Air Materiel Command.</p>
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p class="desc text-split">This file contains memorandums and correspondence related to flying disc/saucer sightings and that those are a matter of concern for the Air Materiel Command.</p>
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code2.mimadigi.vn/2026/august/ballantine_112326w/bai-viet

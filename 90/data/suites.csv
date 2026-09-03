@@ -1,0 +1,101 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6745","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12127","Kiểm tra SEO Onpage: Khách sạn Ballantine (/khach-san-ballantine)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","18128","Kiểm tra SEO Onpage: Tìm Hiểu Giải Cúp C1 Là Gì? (/tim-hieu-giai-cup-c1-la-gi)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11728","Kiểm tra SEO Onpage: Khách sạn Macallan (/khach-san-macallan)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","14689","Kiểm tra SEO Onpage: Chính sách giao xe (/chinh-sach-giao-xe)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 12/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","13941","Kiểm tra SEO Onpage: PHÒNG SUITE Ballantine (1) (/phong-suite-ballantine-1)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 76/100 | Đạt: 16/21 tiêu chí | Ngưỡng: 96%
+
+KHÁ","74150","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22649","Kiểm tra SEO Onpage: Blog dịch vụ (/blog-dich-vu)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","36654","Kiểm tra SEO Onpage: Thư viện ảnh (/thu-vien-anh)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","8597","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","23683","Kiểm tra SEO Onpage: Chính sách hỗ trợ khách hàng (/chinh-sach-ho-tro-khach-hang)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14897","Kiểm tra SEO Onpage: Hệ thống cửa hàng (/he-thong-cua-hang)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","36749","Kiểm tra SEO Onpage: GIẢI TRÍ (/mau-xe-hyber)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","8330","Submit form should fail with bỏ trống email","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24912","Kiểm tra SEO Onpage: Blog du lịch (/blog-du-lich)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","6183","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","40916","Kiểm tra SEO Onpage: Nội thất phòng (/noi-that-phong)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","9016","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","23431","Kiểm tra SEO Onpage: Chính sách thanh toán (/chinh-sach-thanh-toan)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11990","Kiểm tra SEO Onpage: Khách sạn Ballantine (/dich-vu-khach-san-ballantine)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","21673","Submit form successfully with valid data","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","147358","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 75/100 | Đạt: 18/24 tiêu chí | Ngưỡng: 96%
+
+KHÁ","64517","Kiểm tra SEO Onpage: Hạng phòng (/hang-phong)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","9603","Login successfully with valid credentials","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","103635","Kiểm tra SEO Onpage: Khuyến mãi (/khuyen-mai)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","8093","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","166773","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","35926","Kiểm tra SEO Onpage: Tiếp đón BALLANTINE (/dua-don-ballantine-1-1-1)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","33433","Kiểm tra SEO Onpage: Chính sách bảo dưỡng (/chinh-sach-bao-duong)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10856","Kiểm tra SEO Onpage: Khách sạn Balvenie (/khach-san-balvenie)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","49164","Kiểm tra SEO Onpage: /tags-hang-phong (/tags-hang-phong)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","5958","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","8865","Submit form should fail with sai định dạng email","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13757","Kiểm tra SEO Onpage: Khách sạn Dalmore (/khach-san-dalmore)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","6388","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12103","Kiểm tra SEO Onpage: Khách sạn Dalmore (/dich-vu-khach-san-dalmore)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","34488","Kiểm tra SEO Onpage: Chính sách bảo hành (/chinh-sach-bao-hanh)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","116715","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","148435","Kiểm tra SEO Onpage: Blog (/bai-viet)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","6382","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","36746","Kiểm tra SEO Onpage: TIỆN ÍCH XUNG QUANH (/mau-xe-dien)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","8380","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""

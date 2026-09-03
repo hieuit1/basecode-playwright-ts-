@@ -1,0 +1,86 @@
+══════════════════════════════════════
+   🟡 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     75/100
+   Đánh giá:    KHÁ
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  24
+   ✅ Đạt:          18
+   ❌ Không đạt:    6
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (6/24):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H2 → H5 ("Đặt phòng")
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 30/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 30/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 13102ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 13102ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img src="thumbs/590x590x1/upload/news/rectangle-94-8529.png.webp" alt="Cần  giờ blog (1) (1) (1) (1)" title="Cần  giờ blog (1) (1) (1) (1)" width="590" height="590">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 590x590px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 1180x1180px (2x cho Retina), định dạng .webp, dung lượng dưới 63KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/590x590x1/upload/news/rectangle-94-8529.png.webp" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/590x590x1/upload/news/rectangle-94-8529.png.webp" width="590" height="590" style="aspect-ratio: 590 / 590; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 1180 1180 input.png -o output.webp
+   4. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 1.507 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 1.507 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <section class="wrap-blog py-3 py-lg-4 ">
+          - <div class="col-12 col-lg-6 order-1">
+          - <section class="wrap-blog py-3 py-lg-4 ">
+          - <span>
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <section class="wrap-blog py-3 py-lg-4 "> | <div class="col-12 col-lg-6 order-1"> | <section class="wrap-blog py-3 py-lg-4 ">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
+   5. [[💻 Desktop] Tổng điểm Performance: 56/100 (≥ 60)]
+      → [💻 Desktop] Điểm Performance 56/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   6. [[💻 Desktop] CLS (Cumulative Layout Shift): 0.604 (< 0.1)]
+      → [💻 Desktop] CLS quá cao: 0.604 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <section class="wrap-blog py-3 py-lg-4 ">
+          - <section class="wrap-blog py-3 py-lg-4 ">
+          - <div class="row py-2 py-lg-3">
+          - <h2>
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <section class="wrap-blog py-3 py-lg-4 "> | <section class="wrap-blog py-3 py-lg-4 "> | <div class="row py-2 py-lg-3">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

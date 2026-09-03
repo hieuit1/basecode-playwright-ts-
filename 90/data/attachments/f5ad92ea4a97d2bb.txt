@@ -1,0 +1,43 @@
+══════════════════════════════════════
+   🟡 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     76/100
+   Đánh giá:    KHÁ
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          16
+   ❌ Không đạt:    5
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (5/21):
+--- TITLE ---
+   1. [Title phải có nội dung (hiện tại: 0 ký tự)]
+      → Title tag không tồn tại hoặc rỗng!
+--- HEADING STRUCTURE ---
+   2. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H2 → H5 ("Đặt phòng")
+--- LINKS ---
+   3. [Không có broken links (lỗi: 2/30)]
+      → Broken links: 933556677 (status: 404), 999999999 (status: 404)
+--- PERFORMANCE ---
+   4. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 56/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 56/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   5. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 9231ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 9231ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="w-100 " onerror="this.src='thumbs/1920x960x1/assets/images/noimage.png';" src="https://code2.mimadigi.vn/2026/august/ballantine_112326w/thumbs/768x420x1/…" alt="BALLANTINE HOTEL " width="1920" height="960" fetchpriority="high" srcset="
+                                thumbs/480x260x1/upload/photo/banner-tran…" sizes="(max-width: 1920px) 100vw, 1920px">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 1920x960px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 3840x1920px (2x cho Retina), định dạng .webp, dung lượng dưới 332KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/1920x960x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/1920x960x1/assets/images/noimage.png" width="1920" height="960" style="aspect-ratio: 1920 / 960; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 3840 1920 input.png -o output.webp

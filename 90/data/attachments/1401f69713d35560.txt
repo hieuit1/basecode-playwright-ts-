@@ -1,0 +1,32 @@
+[PageSpeedService] HTTP 500 strategy=mobile attempt=1 url=https://code2.mimadigi.vn/2026/august/ballantine_112326w/gioi-thieu
+Body: {
+  "error": {
+    "code": 500,
+    "message": "Lighthouse returned error: Something went wrong.",
+    "errors": [
+      {
+        "message": "Lighthouse returned error: Something went wrong.",
+        "domain": "lighthouse",
+        "reason": "lighthouseError"
+      }
+    ]
+  }
+}
+
+[PageSpeedService] Retry lần 1 sau 5000ms...
+[PageSpeedService] HTTP 500 strategy=desktop attempt=1 url=https://code2.mimadigi.vn/2026/august/ballantine_112326w/gioi-thieu
+Body: {
+  "error": {
+    "code": 500,
+    "message": "Lighthouse returned error: Something went wrong.",
+    "errors": [
+      {
+        "message": "Lighthouse returned error: Something went wrong.",
+        "domain": "lighthouse",
+        "reason": "lighthouseError"
+      }
+    ]
+  }
+}
+
+[PageSpeedService] Retry lần 1 sau 5000ms...
