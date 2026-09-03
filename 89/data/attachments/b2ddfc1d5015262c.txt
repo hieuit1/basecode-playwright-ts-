@@ -1,0 +1,20 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     87/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          13
+   ❌ Không đạt:    2
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (2/15):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 1/47)]
+      → Broken links: https://thuexekhanhhoa.com/dich-vu-thue-xe-phan-thiet-sai-gon (status: 404)
+--- TECHNICAL SEO ---
+   2. [Robots: noindex, nofollow (mong muốn: INDEX)]
+      → Trang mong muốn INDEX nhưng đang bị gắn 'noindex'!

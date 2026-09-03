@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     94/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  18
+   ✅ Đạt:          17
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/18):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 30/69)]
+      → Broken links: auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1-1 (status: 404), auto-test-recruitment-loadtest-1788410676186-1-1-1-1-1 (status: 404)

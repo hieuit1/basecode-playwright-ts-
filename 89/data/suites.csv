@@ -1,0 +1,147 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","36820","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11397","Kiểm tra SEO Onpage: Giải quyết tranh chấp (/giai-quyet-tranh-chap)","Desktop Chrome","2026-09-03","passed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","98164","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-09-03","failed","2026-09-03","News Management Tests","admin/news.spec.ts","",""
+"","29779","Add recruitment successfully and verify on website","Desktop Chrome","2026-09-03","passed","2026-09-03","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13061","Kiểm tra SEO Onpage: Đưa Đón Sân Bay Long Thành (/dua-don-san-bay-long-thanh)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17817","Kiểm tra SEO Onpage: Đưa Đón Sân Bay Tân Sơn Nhất (/dua-don-san-bay-tan-son-nhat)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","125000","Kiểm tra SEO Onpage: Công Hợp Transport | Thuê Xe Du Lịch, Xe Liên Tỉnh Uy Tín (/index.php)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13149","Kiểm tra SEO Onpage: Thuê Xe Liên Tỉnh (/thue-xe-lien-tinh)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14911","Kiểm tra SEO Onpage: Đưa Đón Sân Bay Cần Thơ (/dua-don-san-bay-can-tho)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13466","Kiểm tra SEO Onpage: Đưa Đón Sân Bay Liên Khương (/dua-don-san-bay-lien-khuong)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18307","Kiểm tra SEO Onpage: Thuê Xe Đưa Đón Học Sinh (/thue-xe-dua-don-hoc-sinh)","Desktop Chrome","2026-09-03","passed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13424","Kiểm tra SEO Onpage: Thuê Xe Du Lịch (/thue-xe-du-lich)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","115354","Kiểm tra SEO Onpage: Chính sách bảo mật (/chinh-sach-bao-mat)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","49809","Submit form successfully with valid data","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"","4560","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","13127","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-03","passed","2026-09-03","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","30066","Add news successfully and verify on website","Desktop Chrome","2026-09-03","passed","2026-09-03","News Management Tests","admin/news.spec.ts","",""
+"","11675","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-03","passed","2026-09-03","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18308","Kiểm tra SEO Onpage: Thuê Xe Theo Tháng (/thue-xe-theo-thang)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12673","Kiểm tra SEO Onpage: Xe 16 chỗ (/xe-16-cho)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16442","Kiểm tra SEO Onpage: Đưa Đón Sân Bay (/dua-don-san-bay)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12247","Kiểm tra SEO Onpage: Xe MPV - Canival (/xe-mpv-canival)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","4707","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","62759","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-09-03","passed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 17/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","116774","Kiểm tra SEO Onpage: Tuyển dụng (/tuyen-dung)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","15529","Kiểm tra SEO Onpage: Thuê Xe Phan Thiết Sài Gòn Những Điều Ít Người Biết Khi Đặt Xe (/thue-xe-phan-thiet-sai-gon-nhung-dieu-it-nguoi-biet-khi-dat-xe)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11661","Kiểm tra SEO Onpage: Hướng dẫn thanh toán (/huong-dan-thanh-toan)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","6925","Login successfully with valid credentials","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11698","Kiểm tra SEO Onpage: Chính sách đặt xe (/chinh-sach-dat-xe)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","13463","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-09-03","passed","2026-09-03","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15281","Kiểm tra SEO Onpage: Chính sách bảo mật thông tin (/chinh-sach-bao-mat-thong-tin)","Desktop Chrome","2026-09-03","passed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","144576","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-09-03","passed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11316","Kiểm tra SEO Onpage: Xe 9 chỗ Limousine (/xe-9-cho-limousine)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13074","Kiểm tra SEO Onpage: Thuê Xe Hợp Đồng (/thue-xe-hop-dong)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16458","Kiểm tra SEO Onpage: Xe đưa đón sân bay Tân Sơn Nhất (/xe-dua-don-san-bay-tan-son-nhat)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12013","Kiểm tra SEO Onpage: Xe 7 chỗ (/xe-7-cho)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","95091","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-09-03","passed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","13328","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-09-03","passed","2026-09-03","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","103312","Kiểm tra SEO Onpage: Bảng giá (/bang-gia)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13448","Kiểm tra SEO Onpage: Xe 4 chỗ (/xe-4-cho)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","36845","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 87/100 | Đạt: 13/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","19793","Kiểm tra SEO Onpage: Thuê xe Sài Gòn – Đà Lạt (/thue-xe-sai-gon-da-lat)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13702","Kiểm tra SEO Onpage: Xe 29 chỗ (/xe-29-cho)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","180098","Kiểm tra SEO Onpage: Loại xe (/loai-xe)","Desktop Chrome","2026-09-03","broken","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","36726","Submit form should fail with bỏ trống email","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14410","Kiểm tra SEO Onpage: Thuê Xe Đi Bệnh Viện (/thue-xe-di-benh-vien)","Desktop Chrome","2026-09-03","passed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","37014","Submit form should fail with sai định dạng email","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13113","Kiểm tra SEO Onpage: Xe 45 chỗ (/xe-45-cho)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14831","Kiểm tra SEO Onpage: Thuê Xe Đánh Golf (/thue-xe-danh-golf)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11693","Kiểm tra SEO Onpage: Xe 35 chỗ (/xe-35-cho)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12521","Kiểm tra SEO Onpage: Thuê Xe Tự Lái (/thue-xe-tu-lai)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","63829","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-09-03","passed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13840","Kiểm tra SEO Onpage: Thuê Xe Hoa - Cưới (/thue-xe-hoa-cuoi)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","5560","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","35778","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
+"","149095","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-09-03","failed","2026-09-03","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16675","Kiểm tra SEO Onpage: Đưa Đón Sân Bay Cam Ranh (/dua-don-san-bay-cam-ranh)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","4745","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10941","Kiểm tra SEO Onpage: Chính sách huỷ xe (/chinh-sach-huy-xe)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","180202","Kiểm tra SEO Onpage: Tuyến nổi bật (/tuyen-noi-bat)","Desktop Chrome","2026-09-03","broken","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13571","Kiểm tra SEO Onpage: Xe 12 chỗ Limousine (/xe-12-cho-limousine)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15240","Kiểm tra SEO Onpage: Tuyến Sài Gòn - Phan Thiết (/tuyen-sai-gon-phan-thiet)","Desktop Chrome","2026-09-03","failed","2026-09-03","SEO Page","seo/seo.spec.ts","",""
+"","4354","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-03","passed","2026-09-03","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","36655","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-09-03","failed","2026-09-03","Contract Feature Tests","web/contract.spec.ts","",""
