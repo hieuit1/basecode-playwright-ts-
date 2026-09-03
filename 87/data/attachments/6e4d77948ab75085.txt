@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- IMAGES ---
+   1. [100% ảnh có thuộc tính alt (thiếu: 3/21)]
+      → Có 3 hình ảnh thiếu thuộc tính 'alt'. VD: data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=, data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=, https://phutungmayin.com/watermark/product/1200x1200x3/upload/product/test-image-1263.jpg
