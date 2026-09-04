@@ -1,0 +1,96 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 95/100 | Đạt: 20/21 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","86099","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-09-04","failed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","100446","Kiểm tra SEO Onpage: Rimtech Việt Nam (/index.php)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","7419","Submit form should fail with bỏ trống email","Desktop Chrome","2026-09-04","failed","2026-09-04","Contract Feature Tests","web/contract.spec.ts","",""
+"","3933","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-04","passed","2026-09-04","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","39962","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-09-04","passed","2026-09-04","Search Feature Tests","web/search.spec.ts","",""
+"","45515","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-09-04","failed","2026-09-04","Search Feature Tests","web/search.spec.ts","",""
+"","36692","Add product successfully and verify on website","Desktop Chrome","2026-09-04","passed","2026-09-04","Product Management Tests","admin/product.spec.ts","",""
+"","21404","Submit form successfully with valid data","Desktop Chrome","2026-09-04","failed","2026-09-04","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","57709","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","6532","Login successfully with valid credentials","Desktop Chrome","2026-09-04","passed","2026-09-04","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","6743","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-09-04","failed","2026-09-04","Contract Feature Tests","web/contract.spec.ts","",""
+"","92165","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-09-04","failed","2026-09-04","News Management Tests","admin/news.spec.ts","",""
+"","13366","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-04","passed","2026-09-04","News Management Tests","admin/news.spec.ts","",""
+"","6472","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-09-04","failed","2026-09-04","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11084","Kiểm tra SEO Onpage: Thiết Bị (/thiet-bi)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","38962","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-09-04","passed","2026-09-04","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11150","Kiểm tra SEO Onpage: Sửa Chữa Vành Mâm (/sua-dieu-chinh-mam)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","4350","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-04","passed","2026-09-04","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","148943","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-09-04","passed","2026-09-04","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10859","Kiểm tra SEO Onpage: Thay Lốp Xe (/dich-vu-thay-lop)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","4339","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-04","passed","2026-09-04","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 12/15 tiêu chí | Ngưỡng: 96%
+
+TỐT","12433","Kiểm tra SEO Onpage: Thay Lốp Xe (/thay-lop-xe)","Desktop Chrome","2026-09-04","failed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","127656","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","100162","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-09-04","failed","2026-09-04","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","40219","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-09-04","passed","2026-09-04","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","83370","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12096","Kiểm tra SEO Onpage: Phay CNC (/phay-cnc)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12787","Kiểm tra SEO Onpage: Sơn Tĩnh Điện (/dich-vu-son-tinh-dien)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","4162","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-04","passed","2026-09-04","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","15243","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-04","passed","2026-09-04","Product Management Tests","admin/product.spec.ts","",""
+"","7545","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-09-04","failed","2026-09-04","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","48352","Kiểm tra SEO Onpage: Album (/album)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12206","Kiểm tra SEO Onpage: Đào tạo phay CNC chuyên nghiệp (/dao-tao-phay-cnc-chuyen-nghiep)","Desktop Chrome","2026-09-04","failed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12292","Kiểm tra SEO Onpage: Mâm Xe (/mam-xe)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18489","Kiểm tra SEO Onpage: Quy trình sơn mâm Titan đạt chuẩn tại RimTech Việt Nam (/quy-trinh-son-mam-titan-dat-chuan-tai-rimtech-viet-nam)","Desktop Chrome","2026-09-04","failed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","16999","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-04","passed","2026-09-04","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","32164","Add news successfully and verify on website","Desktop Chrome","2026-09-04","passed","2026-09-04","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13934","Kiểm tra SEO Onpage: Đào tạo chỉnh sửa mâm (/dao-tao-chinh-sua-mam)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","19036","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-09-04","passed","2026-09-04","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","80487","Kiểm tra SEO Onpage: Đào tạo (/dao-tao)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","37327","Add recruitment successfully and verify on website","Desktop Chrome","2026-09-04","passed","2026-09-04","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","4104","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-04","passed","2026-09-04","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","86081","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","7432","Submit form should fail with sai định dạng email","Desktop Chrome","2026-09-04","failed","2026-09-04","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11232","Kiểm tra SEO Onpage: Lốp Xe (/lop-xe)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11476","Kiểm tra SEO Onpage: Tuyển kỹ sư (/tuyen-ky-su)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","7513","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-09-04","failed","2026-09-04","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 18/18 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","45683","Kiểm tra SEO Onpage: Video (/video)","Desktop Chrome","2026-09-04","passed","2026-09-04","SEO Page","seo/seo.spec.ts","",""
+"","17654","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-09-04","passed","2026-09-04","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","13029","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-09-04","passed","2026-09-04","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11813","Kiểm tra SEO Onpage: Mâm Xe BBS (/mam-xe-bbs)","Desktop Chrome","2026-09-04","failed","2026-09-04","SEO Page","seo/seo.spec.ts","",""

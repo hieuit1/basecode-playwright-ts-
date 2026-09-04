@@ -1,0 +1,311 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: web/contract.spec.ts >> Contract Feature Tests >> Submit form should fail with số điện thoại quá ngắn
+- Location: tests/web/contract.spec.ts:48:9
+
+# Error details
+
+```
+Error: locator.hover: Error: strict mode violation: locator('//button[contains(text(),\'Gửi\')]') resolved to 2 elements:
+    1) <button type="submit" name="submit-contact" class="btn btn-primary text-md mr-2">Gửi</button> aka getByRole('button', { name: 'Gửi' })
+    2) <button type="submit" name="submit-newsletter" value="submit-newsletter" class="home__btn btn btn-sm transition">↵                            Gửi ngay↵           …</button> aka getByText('Gửi ngay')
+
+Call log:
+  - waiting for locator('//button[contains(text(),\'Gửi\')]')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - link "Rimtech Việt Nam" [ref=e9] [cursor=pointer]:
+      - /url: https://rimtechvietnam.com/
+      - figure "Rimtech Việt Nam" [ref=e10]:
+        - img "Rimtech Việt Nam" [ref=e11]
+        - generic [ref=e12]: Rimtech Việt Nam
+    - generic [ref=e13]:
+      - text:    
+      - generic [ref=e17] [cursor=pointer]: 
+  - list [ref=e20]:
+    - listitem [ref=e21]:
+      - link "Rimtech Việt Nam" [ref=e22] [cursor=pointer]:
+        - /url: https://rimtechvietnam.com/
+        - generic [ref=e23]: Trang chủ
+    - listitem [ref=e24]:
+      - text: /
+      - link "Rimtech Việt Nam" [ref=e25] [cursor=pointer]:
+        - /url: https://rimtechvietnam.com/lien-he
+        - text: Liên hệ
+  - generic [ref=e30]:
+    - generic [ref=e32]: Liên hệ
+    - tablist [ref=e33]
+    - generic [ref=e34]:
+      - tabpanel [ref=e37]:
+        - generic [ref=e38]:
+          - paragraph [ref=e39]:
+            - strong [ref=e40]: CÔNG TY TNHH RIMTECH VIỆT NAM
+          - paragraph [ref=e41]: "Địa chỉ: 142 Giao Thông Hào, Ấp 19, Xã Bình Chánh, TP. Hồ Chí Minh"
+          - paragraph [ref=e42]: "Hotline: 0974.034.084 - 0949 303 664 Mr Phong"
+          - paragraph [ref=e43]: "Email: rimtechvietnam@gmail.com"
+          - paragraph [ref=e44]:
+            - generic [ref=e45]: "Website: www.rimtechvietnam.com"
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e49]:
+            - textbox "Họ và tên" [ref=e50]: Nguyen Van F
+            - generic: Họ và tên
+          - generic [ref=e52]:
+            - textbox "Số điện thoại" [ref=e53]: "0912345"
+            - generic: Số điện thoại
+          - generic [ref=e55]:
+            - textbox "Địa chỉ" [ref=e56]: 123 Street, City
+            - generic: Địa chỉ
+          - generic [ref=e58]:
+            - textbox "Email" [ref=e59]: nguyenvane@example.com
+            - generic: Email
+        - generic [ref=e61]:
+          - textbox "Chủ đề" [ref=e62]:
+            - /placeholder: Dịch vụ quan tâm
+            - text: Test Subject
+          - generic: Chủ đề
+        - generic [ref=e64]:
+          - textbox "Nội dung" [active] [ref=e65]: This is a test content.
+          - generic: Nội dung
+        - button "Gửi" [ref=e66] [cursor=pointer]
+        - button "Nhập lại" [ref=e67] [cursor=pointer]
+    - iframe [ref=e69]:
+      
+  - contentinfo [ref=e70]:
+    - generic [ref=e71]:
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - link "Rimtech Việt Nam" [ref=e77] [cursor=pointer]:
+            - /url: https://rimtechvietnam.com/
+            - figure "Rimtech Việt Nam" [ref=e78]:
+              - img "Rimtech Việt Nam" [ref=e79]
+              - generic [ref=e80]: Rimtech Việt Nam
+          - generic [ref=e82]:
+            - generic [ref=e83]: Công Ty TNHH Rimtech Việt Nam
+            - generic [ref=e84]:
+              - paragraph [ref=e85]: "Địa chỉ: 142 Giao Thông Hào,Ấp 19,Xã Bình Chánh,TP. HCM"
+              - paragraph [ref=e86]:
+                - text: "Hotline:"
+                - generic "Rimtech Việt Nam" [ref=e87]: 0974.034.084 Mr Phong
+              - paragraph [ref=e88]: "Email: rimtechvietnam@gmail.com"
+              - paragraph [ref=e89]: "Website: www.rimtechvietnam.com"
+        - generic [ref=e91]:
+          - generic [ref=e92]: Follow us
+          - list [ref=e93]:
+            - listitem [ref=e94]:
+              - link "Rimtech Việt Nam" [ref=e95] [cursor=pointer]:
+                - /url: https://www.youtube.com/@RIMTECHVI%E1%BB%86TNAM
+                - figure "Youtube" [ref=e97]:
+                  - img "Youtube" [ref=e98]
+                  - generic [ref=e99]: Youtube
+            - listitem [ref=e100]:
+              - link "Rimtech Việt Nam" [ref=e101] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@rimtech.vietnam?_t=ZS-8zemr8qrntZ&_r=1
+                - figure "TikTok" [ref=e103]:
+                  - img "TikTok" [ref=e104]
+                  - generic [ref=e105]: TikTok
+            - listitem [ref=e106]:
+              - link "Rimtech Việt Nam" [ref=e107] [cursor=pointer]:
+                - /url: https://zalo.me/0974034084
+                - figure "Zalo" [ref=e109]:
+                  - img "Zalo" [ref=e110]
+                  - generic [ref=e111]: Zalo
+            - listitem [ref=e112]:
+              - link "Rimtech Việt Nam" [ref=e113] [cursor=pointer]:
+                - /url: ""
+                - figure "Facebook" [ref=e115]:
+                  - img "Facebook" [ref=e116]
+                  - generic [ref=e117]: Facebook
+      - generic [ref=e119]:
+        - generic [ref=e120]: Copyright © Rimtech Việt Nam. Thiết kế web MIMA
+        - generic [ref=e121]:
+          - link "Rimtech Việt Nam" [ref=e122] [cursor=pointer]:
+            - /url: sitemap.xml
+            - text: Sitemap
+          - text: "|"
+          - link "Rimtech Việt Nam" [ref=e123] [cursor=pointer]:
+            - /url: chinh-sach
+            - text: Chính sách
+    - text: 
+    - list [ref=e125]:
+      - listitem [ref=e126]:
+        - link "Rimtech Việt Nam" [ref=e127] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@rimtech.vietnam?_t=ZS-8zemr8qrntZ&_r=1
+          - img "Tiktok" [ref=e128]
+          - generic [ref=e129]: Tiktok
+      - listitem [ref=e130]:
+        - link "Rimtech Việt Nam" [ref=e131] [cursor=pointer]:
+          - /url: https://zalo.me/0974034084
+          - img "Zalo" [ref=e132]
+          - generic [ref=e133]: Zalo
+      - listitem [ref=e134]:
+        - link "Rimtech Việt Nam" [ref=e135] [cursor=pointer]:
+          - /url: https://www.youtube.com/@RIMTECHVI%E1%BB%86TNAM
+          - img "Youtube" [ref=e136]
+          - generic [ref=e137]: Youtube
+      - listitem [ref=e138]:
+        - link "Rimtech Việt Nam" [ref=e139] [cursor=pointer]:
+          - /url: https://maps.app.goo.gl/jebun2CPUNHf9V6d7
+          - img "Map" [ref=e140]
+          - generic [ref=e141]: Map
+    - button "" [ref=e142] [cursor=pointer]:
+      - generic [ref=e143]: 
+```
+
+# Test source
+
+```ts
+  3   | 
+  4   | export class ContractPage extends BasePage {
+  5   |     // Locators
+  6   |     readonly fullnameInput: Locator;
+  7   |     readonly phoneInput: Locator;
+  8   |     readonly addressInput: Locator;
+  9   |     readonly emailInput: Locator;
+  10  |     readonly subjectInput: Locator;
+  11  |     readonly contentTextarea: Locator;
+  12  |     readonly sendButton: Locator;
+  13  |     readonly resetButton: Locator;
+  14  |     readonly successMessage: Locator;
+  15  |     readonly dashboardElement: Locator;
+  16  |     readonly notificationDropdown: Locator;
+  17  |     readonly contactLink: Locator;
+  18  |     readonly selectAllCheckbox: Locator;
+  19  |     readonly deleteAllButton: Locator;
+  20  |     readonly confirmDeleteButton: Locator;
+  21  | 
+  22  |     constructor(page: Page) {
+  23  |         super(page);
+  24  |         this.fullnameInput = page.locator("//input[@id='fullname-contact']");
+  25  |         this.phoneInput = page.locator("//input[@id='phone-contact']");
+  26  |         this.addressInput = page.locator("//input[@id='address-contact']");
+  27  |         this.emailInput = page.locator("//input[@id='email-contact']");
+  28  |         this.subjectInput = page.locator("//input[@id='subject-contact']");
+  29  |         this.contentTextarea = page.locator("//textarea[@id='content-contact']");
+  30  |         this.sendButton = page.locator("//button[contains(text(),'Gửi')]");
+  31  |         this.resetButton = page.locator("//button[contains(text(),'Nhập lại')]");
+  32  |         this.successMessage = page.locator("//div[@id='alert']");
+  33  |         this.dashboardElement = page.locator("//span[@class='text-split']");
+  34  |         this.notificationDropdown = page.locator("//li[@class='nav-item dropdown']//a[@class='nav-link']");
+  35  |         this.contactLink = page.locator("//a[contains(text(),'Liên hệ')]");
+  36  |         this.selectAllCheckbox = page.locator("//input[@id='selectall-checkbox']");
+  37  |         this.deleteAllButton = page.locator("//div[@class='card-footer text-sm']//a[@id='delete-all']");
+  38  |         this.confirmDeleteButton = page.locator("//button[contains(text(),'Đồng ý')]");
+  39  |     }
+  40  | 
+  41  |     // Điền dữ liệu vào form liên hệ (Cố tình làm chậm để lừa reCAPTCHA)
+  42  |     async fillContactForm(fullname: string, phone: string, address: string, email: string, subject: string, content: string) {
+  43  |         await test.step(`Điền thông tin liên hệ: ${fullname}`, async () => {
+  44  |             const typingDelay = 50; // Delay 50ms giữa mỗi lần gõ phím (giống người thật)
+  45  |             const fieldDelay = 300; // Nghỉ 300ms giữa việc chuyển sang ô tiếp theo
+  46  | 
+  47  |             if (fullname) {
+  48  |                 await this.fullnameInput.click();
+  49  |                 await this.fullnameInput.pressSequentially(fullname, { delay: typingDelay });
+  50  |                 await this.page.waitForTimeout(fieldDelay);
+  51  |             }
+  52  |             if (phone) {
+  53  |                 await this.phoneInput.click();
+  54  |                 await this.phoneInput.pressSequentially(phone, { delay: typingDelay });
+  55  |                 await this.page.waitForTimeout(fieldDelay);
+  56  |             }
+  57  |             if (address) {
+  58  |                 await this.addressInput.click();
+  59  |                 await this.addressInput.pressSequentially(address, { delay: typingDelay });
+  60  |                 await this.page.waitForTimeout(fieldDelay);
+  61  |             }
+  62  |             if (email) {
+  63  |                 await this.emailInput.click();
+  64  |                 await this.emailInput.pressSequentially(email, { delay: typingDelay });
+  65  |                 await this.page.waitForTimeout(fieldDelay);
+  66  |             }
+  67  |             if (subject) {
+  68  |                 await this.subjectInput.click();
+  69  |                 await this.subjectInput.pressSequentially(subject, { delay: typingDelay });
+  70  |                 await this.page.waitForTimeout(fieldDelay);
+  71  |             }
+  72  |             if (content) {
+  73  |                 await this.contentTextarea.click();
+  74  |                 await this.contentTextarea.pressSequentially(content, { delay: typingDelay });
+  75  |                 await this.page.waitForTimeout(fieldDelay);
+  76  |             }
+  77  | 
+  78  |         });
+  79  |     }
+  80  |     async fillContactFormNe(fullname: string, phone: string, address: string, email: string, subject: string, content: string) {
+  81  |         await test.step(`Điền thông tin liên hệ: ${fullname}`, async () => {
+  82  |             if (fullname) { await this.fullnameInput.fill(fullname); }
+  83  |             if (phone) { await this.phoneInput.fill(phone); }
+  84  |             if (address) { await this.addressInput.fill(address); }
+  85  |             if (email) { await this.emailInput.fill(email); }
+  86  |             if (subject) { await this.subjectInput.fill(subject); }
+  87  |             if (content) { await this.contentTextarea.fill(content); }
+  88  |         });
+  89  |     }
+  90  | 
+  91  |     async gotoContactPage() {
+  92  |         const baseUrl = process.env.BASE_URL?.endsWith('/') ? process.env.BASE_URL : process.env.BASE_URL + '/';
+  93  |         await this.page.goto(baseUrl + 'lien-he');
+  94  |     }
+  95  | 
+  96  |     // Bấm nút Gửi
+  97  |     async clickSend() {
+  98  |         await test.step("Bấm nút Gửi", async () => {
+  99  |             // Đợi 2.5 giây để mô phỏng người dùng đọc lại form và chờ reCAPTCHA load token ngầm xong
+  100 |             await this.page.waitForTimeout(3000);
+  101 | 
+  102 |             // Từ từ rê chuột vào nút Gửi giống người thật
+> 103 |             await this.sendButton.hover({ force: true });
+      |                                   ^ Error: locator.hover: Error: strict mode violation: locator('//button[contains(text(),\'Gửi\')]') resolved to 2 elements:
+  104 |             await this.page.waitForTimeout(1000); // Khựng lại nửa giây trước khi bấm
+  105 | 
+  106 |             await this.clickOn(this.sendButton);
+  107 |         });
+  108 |     }
+  109 | 
+  110 |     async clickReset() {
+  111 |         await test.step("Bấm nút Nhập lại", async () => {
+  112 |             await this.clickOn(this.resetButton);
+  113 |         });
+  114 |     }
+  115 | 
+  116 |     async goToContactManagement() {
+  117 |         await test.step("Mở danh sách Liên hệ từ thông báo", async () => {
+  118 |             await this.clickOn(this.notificationDropdown);
+  119 |             await this.clickOn(this.contactLink);
+  120 |         });
+  121 |     }
+  122 | 
+  123 |     getContactRow(uniqueName: string): Locator {
+  124 |         return this.page.getByText(uniqueName).first();
+  125 |     }
+  126 | 
+  127 |     async verifyContactExists(uniqueName: string) {
+  128 |         await test.step(`Xác nhận liên hệ có tên '${uniqueName}' xuất hiện trong Admin`, async () => {
+  129 |             const targetCell = this.getContactRow(uniqueName);
+  130 |             await targetCell.waitFor({ state: 'visible', timeout: 10000 });
+  131 |         });
+  132 |     }
+  133 |     async deleteContact() {
+  134 |         await test.step(`Xóa liên hệ`, async () => {
+  135 |             await this.clickOn(this.selectAllCheckbox);
+  136 |             await this.clickOn(this.deleteAllButton);
+  137 |             await this.clickOn(this.confirmDeleteButton);
+  138 |         });
+  139 |     }
+  140 | 
+  141 | }
+  142 | 
+```

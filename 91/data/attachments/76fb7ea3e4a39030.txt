@@ -1,0 +1,22 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     80/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          12
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/15):
+--- HEADING STRUCTURE ---
+   1. [Trang có đúng 1 thẻ H1 (hiện tại: 4 thẻ)]
+      → Trang có 4 thẻ H1, bắt buộc đúng 1 thẻ duy nhất!
+   2. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H4 ("✅ Trang bị hiện đại – Máy ra vào lốp C959A Yuanmech")
+--- IMAGES ---
+   3. [100% ảnh có thuộc tính alt (thiếu: 2/18)]
+      → Có 2 hình ảnh thiếu thuộc tính 'alt'. VD: upload/filemanager/files/D%E1%BB%8Bch%20v%E1%BB%A5/cq5dam_web_1280_1280.jpeg, upload/filemanager/files/D%E1%BB%8Bch%20v%E1%BB%A5/c959.png

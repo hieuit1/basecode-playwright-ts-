@@ -1,0 +1,1 @@
+Có 4 hình ảnh thiếu thuộc tính 'alt'. VD: upload/filemanager/files/1786778661293_2013424085433896636_1820025670523617039_c509b132d0209650ede2d00001db4a1e.jpg, upload/filemanager/files/z8155007290058_e6031ccb9835616ebf656f4ffd9d66f8.jpg, upload/filemanager/files/z8155007104277_956b2e1c5b6a83ff5374f0a9127cd7a1.jpg
