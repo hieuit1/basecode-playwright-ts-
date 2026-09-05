@@ -1,0 +1,231 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8663","Search should handle từ khóa chỉ có 1 khoảng trắng","Desktop Chrome","2026-09-05","passed","2026-09-05","Search Feature Tests","web/search.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19402","Kiểm tra SEO Onpage: Chính sách bảo mật (/chinh-sach-bao-mat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21176","Kiểm tra SEO Onpage: BƠM KIỂU PITTONG QUAY IWAKI (/bom-kieu-pittong-quay)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20137","Kiểm tra SEO Onpage: KHỚP NỐI GIÃN NỞ (/khop-noi-gian-no)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","19723","Add project should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-05","passed","2026-09-05","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22357","Kiểm tra SEO Onpage: RỌ BƠM (/van-chan-ro-bom)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18880","Kiểm tra SEO Onpage: VAN TỰ ĐỘNG (/van-tu-dong)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21654","Kiểm tra SEO Onpage: VAN ĐIỀU CHỈNH MỰC NƯỚC (/van-dieu-chinh-dong-chay)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","10122","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-09-05","passed","2026-09-05","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","28699","Kiểm tra SEO Onpage: VAN 1 CHIỀU (/van-mot-chieu-kitz-nhat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20771","Kiểm tra SEO Onpage: ỐNG HÓA CHẤT (/ong-hoa-chat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","99060","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-09-05","failed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19471","Kiểm tra SEO Onpage: VAN AN TOÀN GANG: CẤU TẠO, NGUYÊN LÝ HOẠT ĐỘNG VÀ BÁO GIÁ TỐT NHẤT (/van-an-toan-gang-cau-tao-nguyen-ly-hoat-dong-va-bao-gia-tot-nhat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","55003","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-09-05","failed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20302","Kiểm tra SEO Onpage: VAN BI (/pvc-van-bi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","10227","Submit form should fail with sai định dạng email","Desktop Chrome","2026-09-05","passed","2026-09-05","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","28784","Kiểm tra SEO Onpage: VAN ĐIỆN TỪ (/van-dien-tu)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","82778","Kiểm tra SEO Onpage: Góc kỹ thuật (/goc-ky-thuat)","Desktop Chrome","2026-09-05","failed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22917","Kiểm tra SEO Onpage: VAN ĐIỆN (/van-dien)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","28215","Kiểm tra SEO Onpage: KHỚP NỐI INOX (/khop-noi-inox)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","8125","Login successfully with valid credentials","Desktop Chrome","2026-09-05","passed","2026-09-05","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","28841","Kiểm tra SEO Onpage: ĐỒNG HỐ ÁP (/dong-ho-ap)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23673","Kiểm tra SEO Onpage: BƠM ĐIỆN TỪ ĐỊNH LƯỢNG IWAKI (/bom-dien-tu-dinh-luong)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","48178","Add project successfully and verify on website","Desktop Chrome","2026-09-05","passed","2026-09-05","Project Management Tests","admin/project.spec.ts","",""
+"","6324","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-05","passed","2026-09-05","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","64630","Add product successfully and verify on website","Desktop Chrome","2026-09-05","passed","2026-09-05","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18349","Kiểm tra SEO Onpage: THIẾT BỊ ĐO LƯỜNG (/thiet-bi-do-luong)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21482","Kiểm tra SEO Onpage: VAN CẦU (/van-cau-kitz-nhat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","10142","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-09-05","passed","2026-09-05","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17240","Kiểm tra SEO Onpage: VAN CỬA (/van-cua)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","31010","Kiểm tra SEO Onpage: VAN BI (/van-bi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20101","Kiểm tra SEO Onpage: VAN MÀNG (/van-mang)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","20844","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-05","passed","2026-09-05","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19651","Kiểm tra SEO Onpage: KHỚP NỐI CAO SU (/khop-noi-cao-su)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18053","Kiểm tra SEO Onpage: VAN, ỐNG HOÁ CHẤT (/van-ong-hoa-chat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","76161","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-09-05","failed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20600","Kiểm tra SEO Onpage: VAN BƯỚM (/van-buom)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","6558","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-05","passed","2026-09-05","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","21990","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-05","passed","2026-09-05","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21051","Kiểm tra SEO Onpage: VAN KHÍ NÉN (/van-khi-nen-asahi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20135","Kiểm tra SEO Onpage: Dự án nhà máy lọc hóa dầu (1) (1) (1) (/du-an-nha-may-loc-hoa-dau-1-1-1)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22835","Kiểm tra SEO Onpage: BẪY HƠI, BẪY KHÍ (/bay-hoi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22398","Kiểm tra SEO Onpage: VAN XẢ KHÍ (/van-xa-khi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","221152","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-09-05","passed","2026-09-05","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21639","Kiểm tra SEO Onpage: BƠM KHÍ IWAKI (/bom-khi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22304","Kiểm tra SEO Onpage: LỌC Y (/loc-y)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","6306","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-05","passed","2026-09-05","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20318","Kiểm tra SEO Onpage: VAN KHÍ NÉN (/van-khi-nen)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23955","Kiểm tra SEO Onpage: VAN BI (/van-bi-kitz-nhat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23629","Kiểm tra SEO Onpage: BƠM KHÍ NÉN IWAKI (/bom-khi-nen)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","21565","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-09-05","passed","2026-09-05","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21846","Kiểm tra SEO Onpage: GIOĂNG, ỐNG, PHỤ KIỆN (/gioang-ong-phu-kien)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21903","Kiểm tra SEO Onpage: VAN AN TOÀN (/van-an-toan)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","7015","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-05","passed","2026-09-05","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","72252","Add news successfully and verify on website","Desktop Chrome","2026-09-05","passed","2026-09-05","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18147","Kiểm tra SEO Onpage: Chính sách vận chuyển và giao nhận (/chinh-sach-van-chuyen-va-giao-nhan)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","10031","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-09-05","passed","2026-09-05","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19766","Kiểm tra SEO Onpage: VAN CÔNG NGHIỆP (/van-cong-nghiep)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","19994","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-09-05","passed","2026-09-05","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19840","Kiểm tra SEO Onpage: TOYO 275P - PN16 (/van-cua-dong-toyo-275p)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","30322","Kiểm tra SEO Onpage: VAN ĐIỀU KHIỂN NHIỆT ĐỘ (/van-dieu-khien-nhiet-do)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","20323","Add project should fail with không nhập tiêu đề","Desktop Chrome","2026-09-05","passed","2026-09-05","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","25723","Kiểm tra SEO Onpage: LỌC Y (/loc-y-kitz-nhat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","130000","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-09-05","failed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23681","Kiểm tra SEO Onpage: VAN CỬA (/van-cua-kitz-nhat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22366","Kiểm tra SEO Onpage: THIẾT BỊ KIỂM TRA BẪY HƠI (/thiet-bi-kiem-tra-bay-hoi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22935","Kiểm tra SEO Onpage: VAN GIẢM ÁP (/van-giam-ap)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","121315","Kiểm tra SEO Onpage: Nhà cung cấp (/nha-cung-cap)","Desktop Chrome","2026-09-05","failed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","10110","Submit form should fail with bỏ trống email","Desktop Chrome","2026-09-05","passed","2026-09-05","Contract Feature Tests","web/contract.spec.ts","",""
+"","5731","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-05","passed","2026-09-05","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","33093","Submit form successfully with valid data","Desktop Chrome","2026-09-05","passed","2026-09-05","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19306","Kiểm tra SEO Onpage: VAN KITZ (/van-kitz)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","8522","Search should handle từ khóa không tồn tại trên hệ thống","Desktop Chrome","2026-09-05","passed","2026-09-05","Search Feature Tests","web/search.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18418","Kiểm tra SEO Onpage: TOYO - NHẬT BẢN (/toyo)","Desktop Chrome","2026-09-05","failed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","8612","Search should handle từ khóa chứa toàn ký tự đặc biệt","Desktop Chrome","2026-09-05","passed","2026-09-05","Search Feature Tests","web/search.spec.ts","",""
+"","200044","Bulk insert 35 projects via Copy and verify Load More on website","Desktop Chrome","2026-09-05","failed","2026-09-05","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21842","Kiểm tra SEO Onpage: VAN ĐIỆN (/van-dien-venn)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17760","Kiểm tra SEO Onpage: KHỚP NỐI (/khop-noi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 79/100 | Đạt: 19/24 tiêu chí | Ngưỡng: 96%
+
+TỐT","100384","Kiểm tra SEO Onpage: Dự án (/du-an)","Desktop Chrome","2026-09-05","failed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21678","Kiểm tra SEO Onpage: BƠM TỪ IWAKI (/bom-iwaki)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21763","Kiểm tra SEO Onpage: VAN THỞ (/van-tho)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18349","Kiểm tra SEO Onpage: BƠM HOÁ CHẤT (/bom-hoa-chat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21634","Kiểm tra SEO Onpage: BƠM ĐIỆN ĐỊNH LƯỢNG IWAKI (/bom-dien-dinh-luong)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","31878","Kiểm tra SEO Onpage: VAN CẦU (/van-cau)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23265","Kiểm tra SEO Onpage: VAN 1 CHIỀU (/van-1-chieu)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17810","Kiểm tra SEO Onpage: Chính sách bảo hành và hoàn trả (/chinh-sach-bao-hanh-va-hoan-tra)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23315","Kiểm tra SEO Onpage: VAN BƯỚM (/van-buom-kitz-nhat)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","96817","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-09-05","failed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22525","Kiểm tra SEO Onpage: VAN MỘT CHIỀU (/pvc-van-mot-chieu)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19967","Kiểm tra SEO Onpage: Các loại Van Công Nghiệp thương hiệu nổi tiếng (/cac-loai-van-cong-nghiep-thuong-hieu-noi-tieng)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22091","Kiểm tra SEO Onpage: VAN BƯỚM (/pvc-van-buom-asahi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","222736","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-09-05","failed","2026-09-05","News Management Tests","admin/news.spec.ts","",""
+"","10615","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-09-05","passed","2026-09-05","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17266","Kiểm tra SEO Onpage: Hướng dẫn mua hàng và Thanh Toán (/huong-dan-mua-hang-va-thanh-toan)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21504","Kiểm tra SEO Onpage: VAN CỬA (/van-cua-asahi)","Desktop Chrome","2026-09-05","passed","2026-09-05","SEO Page","seo/seo.spec.ts","",""
+"","18404","Search form successfully finds product using dynamic keyword from homepage","Desktop Chrome","2026-09-05","failed","2026-09-05","Search Feature Tests","web/search.spec.ts","",""

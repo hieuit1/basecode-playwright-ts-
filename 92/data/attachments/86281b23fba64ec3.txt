@@ -1,0 +1,15 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 15452ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img loading="lazy" width="400" height="300" onerror="this.src='thumbs/400x300x2/assets/images/noimage.png';" src="thumbs/400x300x2/assets/images/noimage.png" alt="[AUTO-TEST] Tin tức thực hiện quá trình LoadTest 1788577318899 (1) (1) (1)…">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 400x300px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 800x600px (2x cho Retina), định dạng .webp, dung lượng dưới 22KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/400x300x2/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/400x300x2/assets/images/noimage.png" width="400" height="300" style="aspect-ratio: 400 / 300; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 800 600 input.png -o output.webp
