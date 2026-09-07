@@ -1,0 +1,23 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     80/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          12
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/15):
+--- IMAGES ---
+   1. [100% ảnh có thuộc tính alt (thiếu: 1/21)]
+      → Có 1 hình ảnh thiếu thuộc tính 'alt'. VD: https://thumuaphelieutannoi.vn/upload/elfinder/thu-mua-nha-xuong-ngung-hoat-dong%202.jpg
+--- LINKS ---
+   2. [Không có broken links (lỗi: 5/25)]
+      → Broken links: thu-mua-phe-lieu-inox (status: 503), upload/news/ (status: 404), tin-tuc (status: 503), thu-mua-nha-xuong-ngung-hoat-dong-1-1-1-1 (status: 503), thu-mua-nha-xuong-ngung-hoat-dong-1-1-1 (status: 503)
+--- TECHNICAL SEO ---
+   3. [Robots: noindex,nofollow (mong muốn: INDEX)]
+      → Trang mong muốn INDEX nhưng đang bị gắn 'noindex'!

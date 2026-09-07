@@ -1,0 +1,17 @@
+══════════════════════════════════════
+   💎 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     93/100
+   Đánh giá:    XUẤT SẮC
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          14
+   ❌ Không đạt:    1
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (1/15):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 11/17)]
+      → Broken links: dich-vu (status: 503), tin-tuc (status: 503), thanh-ly-gia-cao (status: 503), thu-mua-phe-lieu-inox (status: 503), thu-mua-phe-lieu-gia-cao (status: 503), xu-ly-chat-thai-ran-tho (status: 503), thu-mua-phe-lieu-dong (status: 503), thu-mua-phe-lieu-motor (status: 503), thu-mua-phe-lieu-tphcm (status: 503), thu-mua-phe-lieu-so-luong-lon (status: 503), thu-mua-nha-xuong (status: 503)
