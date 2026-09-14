@@ -1,0 +1,4 @@
+[GeminiVision] Kiểm tra chính tả → gemini-3.6-flash bằng key#2(…SGoQ)...
+[Chính tả] /kho-bai-chuoi-cung-ung — 1216 ký tự | AI báo 2 lỗi → còn 1 sau lọc
+            "Dich vụ" → "Dịch vụ"
+            Đã lọc bỏ: 

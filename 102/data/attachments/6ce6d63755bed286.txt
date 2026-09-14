@@ -1,0 +1,1 @@
+Phát hiện lỗi văn bản bị cắt xén (clipping) theo chiều dọc ở đoạn mô tả bên dưới danh sách dịch vụ.

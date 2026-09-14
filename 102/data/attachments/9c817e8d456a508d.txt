@@ -1,0 +1,1 @@
+Phát hiện lỗi dàn trang ở thanh header: phần văn bản email bị tràn ra ngoài khung header lên trên cùng màn hình, khiến giao diện bị lệch và hiển thị lặp lại thông tin Hotline.

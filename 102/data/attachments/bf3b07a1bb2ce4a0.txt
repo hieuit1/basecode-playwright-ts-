@@ -1,0 +1,1 @@
+Giao diện được thiết kế và căn chỉnh tốt trên thiết bị di động, bố cục lưới 2 cột hiển thị đều đặn, khoảng cách hợp lý, không phát hiện lỗi vỡ layout hay tràn viền.

@@ -1,0 +1,1 @@
+Phát hiện lỗi văn bản email bị nằm lệch ra ngoài thanh header màu xanh đen ở góc trên cùng bên trái màn hình.

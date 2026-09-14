@@ -1,0 +1,1 @@
+Phát hiện lỗi hiển thị phần tử dính sát góc trên bên trái màn hình và lỗi lặp nội dung Hotline ở header.

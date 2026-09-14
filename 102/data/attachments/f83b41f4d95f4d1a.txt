@@ -1,0 +1,1 @@
+Giao diện được thiết kế và bố trí rất mạch lạc, chuẩn mực cho trang bài viết/tuyển dụng dạng long-form. Bố cục cột chính và sidebar cân đối, khoảng cách giữa các khối nội dung, đoạn văn và các mục danh sách hợp lý, không có hiện tượng chồng chéo, tràn viền hay đè chữ.

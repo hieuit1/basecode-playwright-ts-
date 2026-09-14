@@ -1,0 +1,1 @@
+Phát hiện lỗi chồng chéo nội dung (layout overlap) tại phần thân trang web và thanh header.

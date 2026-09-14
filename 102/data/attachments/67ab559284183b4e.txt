@@ -1,0 +1,1 @@
+Phát hiện lỗi phần tử văn bản bị tràn/lệch ra ngoài thanh header ở góc trên cùng bên trái.

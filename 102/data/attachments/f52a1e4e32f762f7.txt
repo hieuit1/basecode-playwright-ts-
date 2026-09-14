@@ -1,0 +1,1 @@
+Giao diện xuất hiện lỗi hiển thị ở phần thanh trên cùng (topbar): văn bản thông tin email bị rơi ra khỏi khung màu xanh đậm và nằm lệch lên góc trên cùng bên trái màn hình.

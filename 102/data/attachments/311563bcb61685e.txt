@@ -1,0 +1,1 @@
+Giao diện được sắp xếp cân đối, các khối nội dung và văn bản hiển thị rõ ràng, không có lỗi vỡ layout, tràn viền hay đè chữ.

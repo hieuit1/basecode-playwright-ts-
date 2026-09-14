@@ -1,0 +1,5 @@
+[UiPage] Ẩn 2 overlay nổi, bỏ dính 7 phần tử, giữ nguyên 0 lớp nền kín màn hình.
+[GeminiVision] Processing file with sharp: /home/runner/work/basecode-playwright-ts-/basecode-playwright-ts-/test-results/ui-uiHeuristic-UI-—-Đánh-g-bee96-ánh-giá-bố-cục-—-tuyen-dung-UI-iPhone-X/layout-issues/tuyen_dung_UI_iPhone_X.png
+[GeminiVision] File size: 1995279 bytes
+[GeminiVision] Successfully compressed /home/runner/work/basecode-playwright-ts-/basecode-playwright-ts-/test-results/ui-uiHeuristic-UI-—-Đánh-g-bee96-ánh-giá-bố-cục-—-tuyen-dung-UI-iPhone-X/layout-issues/tuyen_dung_UI_iPhone_X.png
+[GeminiVision] Heuristic UI iPhone X (rộng 375px) → gemini-3.6-flash bằng key#1(…OvSQ)...
