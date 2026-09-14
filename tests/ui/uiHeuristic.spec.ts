@@ -13,7 +13,7 @@ function pageTag(target: { path: string }): string {
 }
 
 if (uiTargets.length === 0) {
-    test('Chưa sinh được danh sách trang UI', { tag: ['@ui', '@uiheuristic'] }, () => {
+    test('Chưa sinh được danh sách trang UI', { tag: ['@smoke', '@ui', '@uiheuristic'] }, () => {
         throw new Error(
             'data/ui/uiGeneratedData.ts đang rỗng nên không có trang nào được test UI.\n' +
             'Chạy: npm run generate-seo && npm run generate-ui'
@@ -36,7 +36,7 @@ if (uiTargets.length === 0) {
             test(
                 `[${target.name}] Đánh giá bố cục`,
                 {
-                    tag: ['@priority:high', '@regression', '@positive', '@ui', '@uiheuristic', pageTag(target)],
+                    tag: ['@priority:high', '@smoke', '@regression', '@positive', '@ui', '@uiheuristic', pageTag(target)],
                     annotation: [{ type: 'template', description: target.templateKind }]
                 },
                 async ({ page }, testInfo) => {

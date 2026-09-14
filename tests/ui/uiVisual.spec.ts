@@ -18,7 +18,7 @@ if (uiTargets.length === 0) {
     // được pass, nếu không pipeline sẽ xanh trong khi coverage UI bằng 0.
     // Gắn tag để test này vẫn hiện ra khi lọc --grep "@ui", nếu không thì chạy bộ UI
     // với data rỗng sẽ ra "0 tests" và lại thành im lặng.
-    test('Chưa sinh được danh sách trang UI', { tag: ['@ui', '@uivisual'] }, () => {
+    test('Chưa sinh được danh sách trang UI', { tag: ['@smoke', '@ui', '@uivisual'] }, () => {
         throw new Error(
             'data/ui/uiGeneratedData.ts đang rỗng nên không có trang nào được test UI.\n' +
             'Chạy: npm run generate-seo && npm run generate-ui'
@@ -39,7 +39,7 @@ if (uiTargets.length === 0) {
             test(
                 `[${target.name}] Đối chiếu thiết kế ↔ web`,
                 {
-                    tag: ['@priority:high', '@regression', '@positive', '@ui', '@uivisual', pageTag(target)],
+                    tag: ['@priority:high', '@smoke', '@regression', '@positive', '@ui', '@uivisual', pageTag(target)],
                     annotation: [{ type: 'template', description: target.templateKind }]
                 },
                 async ({ page }, testInfo) => {
