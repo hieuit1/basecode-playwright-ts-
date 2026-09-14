@@ -1,0 +1,73 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","20833","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-14","passed","2026-09-14","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","5708","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-14","passed","2026-09-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","157921","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-09-14","failed","2026-09-14","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","79808","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-09-14","failed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","52410","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-09-14","failed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"","11918","Submit form should fail with bỏ trống email","Desktop Chrome","2026-09-14","passed","2026-09-14","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13589","Kiểm tra SEO Onpage: Tin tức Proslink (/tin-tuc-proslink)","Desktop Chrome","2026-09-14","passed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","82812","Kiểm tra SEO Onpage: CÔNG TY CỔ PHẦN PROSLINK (/index.php)","Desktop Chrome","2026-09-14","failed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11053","Kiểm tra SEO Onpage: Dịch vụ bốc xếp hàng hóa uy tín, hạn chế hư hỏng (/dich-vu-boc-xep-hang-hoa-uy-tin-han-che-hu-hong)","Desktop Chrome","2026-09-14","passed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"","18241","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-14","passed","2026-09-14","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23824","Kiểm tra SEO Onpage: Dịch vụ hải quan (/dich-vu-hai-quan)","Desktop Chrome","2026-09-14","passed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15247","Kiểm tra SEO Onpage: Cơ hội phát triển sự nghiệp trong ngành Logistics (/co-hoi-phat-trien-su-nghiep-trong-nganh-logistics)","Desktop Chrome","2026-09-14","failed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 14/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14891","Kiểm tra SEO Onpage: CÔNG TY CỔ PHẦN PROSLINK (/tags-san-pham)","Desktop Chrome","2026-09-14","failed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"","190604","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-09-14","failed","2026-09-14","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13287","Kiểm tra SEO Onpage: Dịch vụ kho bãi &amp; Quản lí kho (/kho-bai-chuoi-cung-ung)","Desktop Chrome","2026-09-14","passed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"","5526","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-14","passed","2026-09-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","66430","Add news successfully and verify on website","Desktop Chrome","2026-09-14","passed","2026-09-14","News Management Tests","admin/news.spec.ts","",""
+"","10833","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-09-14","passed","2026-09-14","Contract Feature Tests","web/contract.spec.ts","",""
+"","6198","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-14","passed","2026-09-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","9834","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-09-14","passed","2026-09-14","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 71/100 | Đạt: 17/24 tiêu chí | Ngưỡng: 96%
+
+KHÁ","58189","Kiểm tra SEO Onpage: Tuyển dụng (/tuyen-dung)","Desktop Chrome","2026-09-14","failed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"","5681","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-14","passed","2026-09-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","11041","Submit form should fail with sai định dạng email","Desktop Chrome","2026-09-14","passed","2026-09-14","Contract Feature Tests","web/contract.spec.ts","",""
+"","24370","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-09-14","passed","2026-09-14","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","19061","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-09-14","passed","2026-09-14","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14766","Kiểm tra SEO Onpage: Dịch Vụ Khai Hải Quan Trọn Gói | Proslink Logistics (/dich-vu-khai-hai-quan)","Desktop Chrome","2026-09-14","passed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17385","Kiểm tra SEO Onpage: Dich vụ bốc xếp hàng (/dich-vu-boc-xep-hang)","Desktop Chrome","2026-09-14","passed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"","44753","Add recruitment successfully and verify on website","Desktop Chrome","2026-09-14","passed","2026-09-14","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","35015","Submit form successfully with valid data","Desktop Chrome","2026-09-14","failed","2026-09-14","Contract Feature Tests","web/contract.spec.ts","",""
+"","10752","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-09-14","passed","2026-09-14","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","71998","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-09-14","failed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"","7836","Login successfully with valid credentials","Desktop Chrome","2026-09-14","passed","2026-09-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","6294","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-14","passed","2026-09-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","58296","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-09-14","failed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","66478","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-09-14","failed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18581","Kiểm tra SEO Onpage: Dịch vụ vận tải (/dich-vu-van-tai-proslink)","Desktop Chrome","2026-09-14","passed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 15/15 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13671","Kiểm tra SEO Onpage: Kiến thức xuất nhập khẩu (/kien-thuc-xuat-nhap-khau)","Desktop Chrome","2026-09-14","passed","2026-09-14","SEO Page","seo/seo.spec.ts","",""
+"","10758","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-09-14","passed","2026-09-14","Contract Feature Tests","web/contract.spec.ts","",""
