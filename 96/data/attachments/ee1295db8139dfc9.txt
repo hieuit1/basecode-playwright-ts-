@@ -1,0 +1,1 @@
+Giao diện hiển thị chuẩn xác, không gặp các lỗi vỡ khung, tràn viền hay đè chữ.

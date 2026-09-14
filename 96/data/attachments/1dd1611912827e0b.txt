@@ -1,0 +1,2 @@
+[GeminiVision] Lỗi ở gemini-3.6-flash/key#2(…SGoQ): {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}} → thử key kế tiếp.
+[Chính tả] /gioi-thieu: 1 lỗi — "chắn chắn" → "chắc chắn"

@@ -1,0 +1,1 @@
+Giao diện hiển thị tốt trên thiết bị di động, bố cục cân đối, các khoảng cách và thành phần trình bày rõ ràng, không có lỗi vỡ layout hay tràn viền bất thường.

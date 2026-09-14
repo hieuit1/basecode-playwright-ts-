@@ -1,0 +1,1 @@
+Giao diện trang web được thiết kế chỉn chu, bố cục căn chỉnh hợp lý, khoảng cách giữa các phần tử rõ ràng và không phát hiện lỗi vỡ layout hay tràn viền nghiêm trọng nào.
