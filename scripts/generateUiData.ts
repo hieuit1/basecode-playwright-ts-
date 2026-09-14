@@ -93,7 +93,7 @@ export function pickTargets(pages: SeoPageTestData[]): UiPageTarget[] {
     const rest = unique.filter(p => templateKindOf(p) === 'sample');
     const sampled = spreadSample(rest, Math.max(0, MAX_PAGES - primary.length));
 
-    return [...primary, ...sampled].map(page => ({
+    const targets: UiPageTarget[] = [...primary, ...sampled].map(page => ({
         name: page.name,
         path: toUiPath(page.path),
         templateKind: templateKindOf(page),
@@ -102,6 +102,22 @@ export function pickTargets(pages: SeoPageTestData[]): UiPageTarget[] {
         figmaFrameWidth: null,
         matchScore: 0
     }));
+
+    return ensureUniqueNames(targets);
+}
+
+function ensureUniqueNames(targets: UiPageTarget[]): UiPageTarget[] {
+    const nameCounts = new Map<string, number>();
+    for (const target of targets) {
+        nameCounts.set(target.name, (nameCounts.get(target.name) ?? 0) + 1);
+    }
+
+    return targets.map(target => {
+        if ((nameCounts.get(target.name) ?? 0) <= 1) return target;
+
+        const label = target.path === '/' ? 'trang chủ' : target.path.replace(/^\//, '');
+        return { ...target, name: `${target.name} — ${label}` };
+    });
 }
 
 // ──────────────────────────────────────────

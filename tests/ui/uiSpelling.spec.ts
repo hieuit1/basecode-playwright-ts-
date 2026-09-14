@@ -32,7 +32,8 @@ if (uiTargets.length === 0) {
 
         uiTargets.forEach((target) => {
             test(
-                `[${target.name}] Soát lỗi chính tả`,
+                // Kèm path để tiêu đề luôn duy nhất — xem ghi chú trong uiHeuristic.spec.ts
+                `[${target.name}] Soát lỗi chính tả — ${target.path}`,
                 {
                     tag: ['@priority:high', '@smoke', '@regression', '@positive', '@ui', '@uispelling', pageTag(target)],
                     annotation: [{ type: 'template', description: target.templateKind }]

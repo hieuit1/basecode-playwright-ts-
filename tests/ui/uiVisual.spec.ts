@@ -37,7 +37,8 @@ if (uiTargets.length === 0) {
 
         uiTargets.forEach((target) => {
             test(
-                `[${target.name}] Đối chiếu thiết kế ↔ web`,
+                // Kèm path để tiêu đề luôn duy nhất — xem ghi chú trong uiHeuristic.spec.ts
+                `[${target.name}] Đối chiếu thiết kế ↔ web — ${target.path}`,
                 {
                     tag: ['@priority:high', '@smoke', '@regression', '@positive', '@ui', '@uivisual', pageTag(target)],
                     annotation: [{ type: 'template', description: target.templateKind }]

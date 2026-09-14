@@ -34,7 +34,7 @@ if (uiTargets.length === 0) {
         // nên website cào lại không còn bản gốc để so vẫn được kiểm tra đầy đủ.
         uiTargets.forEach((target) => {
             test(
-                `[${target.name}] Đánh giá bố cục`,
+                `[${target.name}] Đánh giá bố cục — ${target.path}`,
                 {
                     tag: ['@priority:high', '@smoke', '@regression', '@positive', '@ui', '@uiheuristic', pageTag(target)],
                     annotation: [{ type: 'template', description: target.templateKind }]
