@@ -119,7 +119,36 @@ export function hasBaseline(target: UiPageTarget, viewportWidth: number): boolea
 }
 
 /**
- * Bản vẽ chỉ đối chiếu được với viewport cùng nhóm.
+ * Nói rõ VÌ SAO trang này không đối chiếu được, để dòng skip trong báo cáo không bị
+ * hiểu nhầm. Ba nguyên nhân hoàn toàn khác nhau và cách xử lý cũng khác nhau.
+ */
+export function baselineSkipReason(target: UiPageTarget, viewportWidth: number): string {
+    if (!process.env.UI_TEST_FIGMA_FILE_KEY) {
+        return 'Website này không cấu hình Figma (thiếu UI_TEST_FIGMA_FILE_KEY) — '
+            + 'trang vẫn được kiểm tra ở bộ heuristic và chính tả';
+    }
+
+    if (!target.figmaNodeId) {
+        return `Trang "${target.path}" không ghép được bản vẽ nào trong file Figma. `
+            + 'Đặt tên frame trùng slug URL để ghép được — '
+            + 'trang vẫn được kiểm tra ở bộ heuristic và chính tả';
+    }
+
+    if (!target.figmaFrameWidth) {
+        return `Bản vẽ "${target.figmaFrameName}" chưa biết chiều rộng — chạy lại npm run generate-ui`;
+    }
+
+    return `Bản vẽ "${target.figmaFrameName}" rộng ${target.figmaFrameWidth}px `
+        + `(nhóm ${viewportTier(target.figmaFrameWidth)}), không đối chiếu với viewport `
+        + `${viewportWidth}px (nhóm ${viewportTier(viewportWidth)}). `
+        + 'Designer cần vẽ thêm bản cho nhóm màn hình này.';
+}
+
+/**
+ * Bản vẽ chỉ đối chiếu được với viewport CÙNG NHÓM (mobile / tablet / desktop),
+ * chứ không cần trùng khít số pixel: bản vẽ 1440px vẫn đối chiếu được với viewport
+ * 1920px vì cả hai đều thuộc nhóm desktop.
+ *
  * Designer thường chỉ vẽ desktop, nên mobile/tablet sẽ tự động không có chuẩn và rơi
  * về các lớp nội tại — đúng hơn là ép so rồi báo lỗi sai hàng loạt.
  */

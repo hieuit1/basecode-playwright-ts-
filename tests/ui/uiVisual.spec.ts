@@ -3,7 +3,7 @@ import { allure } from 'allure-playwright';
 import { uiTargets } from '../../data/ui/uiGeneratedData';
 import { UiPage } from '../../src/pages/ui/UiPage';
 import { UiVisualHelper } from '../../src/utils/UiVisualHelper';
-import { hasBaseline } from '../../src/services/baseline/BaselineStrategy';
+import { hasBaseline, baselineSkipReason } from '../../src/services/baseline/BaselineStrategy';
 
 /** Sinh tag riêng cho từng trang để có thể chạy lẻ: --grep "@ui-gioi-thieu" */
 function pageTag(target: { path: string }): string {
@@ -50,7 +50,7 @@ if (uiTargets.length === 0) {
                     const viewportWidth = page.viewportSize()?.width ?? 0;
                     test.skip(
                         !hasBaseline(target, viewportWidth),
-                        `Không có bản thiết kế cho ${testInfo.project.name} (${viewportWidth}px)`
+                        baselineSkipReason(target, viewportWidth)
                     );
 
                     await allure.feature(target.name);
