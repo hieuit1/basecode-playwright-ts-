@@ -90,7 +90,8 @@ export class ArticleBasePage extends BasePage {
         this.copyNowBtn = page.locator("//ul[contains(@class,'show')]//a[contains(@class,'copy-now')]");
         this.firstShowCheckbox = page.locator("(//input[contains(@id,'show-checkbox-hienthi')])[1]");
 
-        this.loadMoreBtn = page.locator("//a[contains(text(),'Xem thêm')]");
+        this.loadMoreBtn = page.locator("[id^='btn-xemthem']").filter({ visible: true }).first();
+
 
         // Cấu hình locators cho sản phẩm
         this.codeInput = page.locator("//input[@id='code']");
@@ -829,6 +830,7 @@ export class ArticleBasePage extends BasePage {
         await TestHelper.delay(this.page, 1000);
     }
 
+    // count after loadmore successfully 
     async getClientArticleCount(prefix?: string): Promise<number> {
         // Đếm dựa theo tiêu đề tự động sinh ra trong automation test (Chính xác nhất trên mọi web)
         if (prefix) {

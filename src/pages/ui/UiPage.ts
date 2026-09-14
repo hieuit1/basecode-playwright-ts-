@@ -39,31 +39,114 @@ export class UiPage extends BasePage {
         });
     }
 
+    /**
+     * Xử lý các phần tử nổi / dính trước khi chụp ảnh.
+     *
+     * PHẢI gọi SAU prepareForScreenshot(): nhiều theme chỉ gắn class sticky cho header
+     * sau khi người dùng cuộn, nên nếu chạy trước lúc cuộn sẽ vừa bỏ sót phần tử cần
+     * xử lý, vừa đụng nhầm phần tử chưa ở trạng thái cuối.
+     *
+     * Không xoá sạch mọi thứ position fixed/sticky như bản cũ: header dính là MỘT PHẦN
+     * của thiết kế, xoá đi thì AI sẽ báo "mất header" trên gần như mọi trang. Ở đây chỉ
+     * ẩn những thứ thật sự che nội dung (widget chat, hotline, nút lên đầu trang, banner
+     * cookie, popup), còn lại thì bỏ tính dính để phần tử nằm đúng vị trí trong luồng và
+     * chỉ xuất hiện một lần trên ảnh fullPage.
+     */
     async hideDynamicElements() {
-        await test.step(`Ẩn các phần tử động để chụp ảnh ổn định`, async () => {
-            await this.page.evaluate(() => {
-                const allElements = document.querySelectorAll('*');
-                allElements.forEach(el => {
-                    const style = window.getComputedStyle(el);
-                    if (style.position === 'fixed' || style.position === 'sticky') {
-                        (el as HTMLElement).style.display = 'none';
+        await test.step(`Ẩn overlay nổi và bỏ tính dính trước khi chụp ảnh`, async () => {
+            const result = await this.page.evaluate(() => {
+                /** Từ khoá trong class/id của các overlay thật sự che nội dung */
+                const OVERLAY_KEYWORDS = [
+                    'chat', 'zalo', 'messenger', 'fb_dialog', 'fb-root', 'hotline', 'call-now',
+                    'backtotop', 'back-to-top', 'scroll-top', 'scrolltop', 'gotop', 'totop',
+                    'cookie', 'consent', 'gdpr',
+                    'popup', 'modal', 'backdrop', 'suspension', 'float-contact', 'fixed-contact'
+                ];
+
+                /** Nút nổi thường nhỏ ở cả hai chiều */
+                const FLOATING_MAX_SIZE = 200;
+
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+
+                let hidden = 0;
+                let unstuck = 0;
+                let untouched = 0;
+
+                document.querySelectorAll<HTMLElement>('*').forEach(element => {
+                    const style = window.getComputedStyle(element);
+                    if (style.position !== 'fixed' && style.position !== 'sticky') return;
+
+                    const rect = element.getBoundingClientRect();
+                    const signature = `${element.className} ${element.id}`.toLowerCase();
+
+                    const isOverlayByName = OVERLAY_KEYWORDS.some(word => signature.includes(word));
+                    const isFloatingButton =
+                        rect.width > 0 && rect.height > 0 &&
+                        rect.width < FLOATING_MAX_SIZE && rect.height < FLOATING_MAX_SIZE;
+
+                    if (isOverlayByName || isFloatingButton) {
+                        element.style.setProperty('display', 'none', 'important');
+                        hidden++;
+                        return;
                     }
+
+                    // Lớp phủ kín màn hình mà KHÔNG mang tên overlay thường là nền trang
+                    // trí (canvas particles, video nền, gradient). Ẩn đi thì sai thiết kế,
+                    // mà chuyển sang static thì nó chiếm nguyên một màn hình trong luồng
+                    // và đẩy nội dung xuống. Đúng nhất là để nguyên.
+                    const isFullScreenLayer =
+                        rect.width >= viewportWidth * 0.9 &&
+                        rect.height >= viewportHeight * 0.9;
+
+                    if (isFullScreenLayer) {
+                        untouched++;
+                        return;
+                    }
+
+                    // Panel trượt off-canvas (menu mobile) nằm hoàn toàn ngoài mép trái/phải.
+                    // Chuyển sang static là kéo nó vào luồng và lòi ra giữa ảnh chụp.
+                    const isOffCanvas =
+                        rect.width > 0 && (rect.right <= 0 || rect.left >= viewportWidth);
+
+                    if (isOffCanvas) {
+                        untouched++;
+                        return;
+                    }
+
+                    // Header / thanh điều hướng dính: giữ lại, chỉ bỏ tính dính để nó nằm
+                    // đúng vị trí trong luồng và chỉ xuất hiện một lần trên ảnh fullPage.
+                    element.style.setProperty('position', 'static', 'important');
+                    unstuck++;
                 });
+
+                return { hidden, unstuck, untouched };
             });
+
+            console.log(
+                `[UiPage] Ẩn ${result.hidden} overlay nổi, bỏ dính ${result.unstuck} phần tử, ` +
+                `giữ nguyên ${result.untouched} lớp nền kín màn hình.`
+            );
         });
     }
 
+    /**
+     * Chuẩn bị trang để ảnh chụp ổn định giữa các lần chạy.
+     *
+     * Lưu ý: KHÔNG ép font về Arial như bản cũ. Chuẩn hoá font chỉ có ý nghĩa với
+     * pixel-diff (chống sai lệch anti-alias giữa các OS); ở đây việc chấm do AI làm và
+     * một trong các tiêu chí là "kích thước chữ có đúng thiết kế không" — ép font sẽ
+     * xoá đúng bằng chứng cần chấm.
+     */
     async prepareForScreenshot() {
-        await test.step(`Chuẩn bị trang web (ẩn hiệu ứng, lazy-load) trước khi chụp ảnh`, async () => {
-            // Chuẩn hóa font chữ để tránh sai lệch pixel do OS render khác nhau
+        await test.step(`Chuẩn bị trang web (tắt hiệu ứng, kích lazy-load) trước khi chụp ảnh`, async () => {
             await this.page.addStyleTag({
                 content: `
-                    * {
-                        font-family: Arial, sans-serif !important;
-                        letter-spacing: normal !important;
+                    *, *::before, *::after {
                         animation-duration: 0.01ms !important;
                         animation-iteration-count: 1 !important;
                         transition-duration: 0.01ms !important;
+                        scroll-behavior: auto !important;
                     }
                     /* Ép hiển thị các phần tử bị ẩn bởi thư viện AOS hoặc wow.js */
                     [data-aos], .wow, .lazy, .lazyload, .lazyloaded, [class*="fade"] {
@@ -71,10 +154,11 @@ export class UiPage extends BasePage {
                         transform: none !important;
                         visibility: visible !important;
                     }
-                    img {
-                        content-visibility: visible !important;
+                    /* Con trỏ nhấp nháy trong ô nhập làm mỗi lần chụp ra một ảnh khác.
+                       Bản cũ khai báo dòng này ngoài mọi selector nên trình duyệt bỏ qua. */
+                    * {
+                        caret-color: transparent !important;
                     }
-                    caret-color: transparent !important;
                 `
             });
 

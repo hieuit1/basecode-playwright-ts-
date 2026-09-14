@@ -7,9 +7,8 @@ export class FigmaService {
 
     constructor() {
         this.token = process.env.UI_TEST_FIGMA_TOKEN || '';
-        if (!this.token) {
-            console.error('[FigmaService] UI_TEST_FIGMA_TOKEN is missing! process.env keys: ' + Object.keys(process.env).join(', '));
-        }
+        // Khong log gi o day: tool chay tren nhieu website, phan lon khong co Figma.
+        // Cac method ben duoi da throw kem thong bao ro rang khi that su can token.
     }
 
     /**
@@ -167,9 +166,11 @@ export class FigmaService {
                             id: node.id,
                             name: node.name,
                             page: page.name,
+                            x: Math.round(bbox.x),
                             y: Math.round(bbox.y),
+                            // Chiều rộng cần cho việc xác định frame thuộc nhóm viewport nào
+                            width: Math.round(bbox.width),
                             height: Math.round(bbox.height),
-                            topLevelFrame: node.name,
                             type: node.type
                         });
                     }

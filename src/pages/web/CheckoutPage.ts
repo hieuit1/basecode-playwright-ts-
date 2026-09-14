@@ -3,6 +3,7 @@ import { BasePage } from "../BasePage";
 
 export class CheckoutPage extends BasePage {
     // ===== LOCATORS (Frontend Checkout) =====
+    readonly formWrapper: Locator;
     readonly paymentCOD: Locator;
     readonly paymentBank: Locator;
 
@@ -29,21 +30,21 @@ export class CheckoutPage extends BasePage {
     constructor(page: Page) {
         super(page);
 
-        // Checkout Form
-        // Dùng name thay vì ID cứng (vì ID thay đổi theo từng site: payments-37, payments-57, ...)
-        this.paymentCOD = page.locator("input[name='dataOrder[payments]']").first();
-        this.paymentBank = page.locator("input[name='dataOrder[payments]']").nth(1);
+        this.formWrapper = page.locator("#form-payment");
 
-        this.fullnameInput = page.locator("//input[@id='fullname']");
-        this.phoneInput = page.locator("//input[@id='phone']");
-        this.emailInput = page.locator("//input[@id='email']");
+        this.paymentCOD = this.formWrapper.locator("#radio-payment-cod");
+        this.paymentBank = this.formWrapper.locator("#radio-payment-chuyenkhoan");
 
-        this.cityDropdownContainer = page.locator("//span[@id='select2-city-container']");
-        this.wardDropdownContainer = page.locator("//span[@id='select2-ward-container']");
-        this.addressInput = page.locator("//input[@id='address']");
-        this.requirementsInput = page.locator("//textarea[@id='requirements']");
+        this.fullnameInput = this.formWrapper.locator("#fullname");
+        this.phoneInput = this.formWrapper.locator("#phone");
+        this.emailInput = this.formWrapper.locator("#email");
 
-        this.submitButton = page.locator("//button[normalize-space()='Thanh toán']");
+        this.cityDropdownContainer = this.formWrapper.locator("#select2-city-container");
+        this.wardDropdownContainer = this.formWrapper.locator("#select2-ward-container");
+        this.addressInput = this.formWrapper.locator("#address");
+        this.requirementsInput = this.formWrapper.locator("#requirements");
+
+        this.submitButton = this.formWrapper.locator("#btn-submit-checkout");
 
         // Success Page
         this.successMessage = page.locator("text=Đặt hàng thành công!");

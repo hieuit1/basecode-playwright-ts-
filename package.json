@@ -8,7 +8,7 @@
     "generate-seo": "tsx scripts/generateSeoData.ts",
     "generate-ui": "tsx scripts/generateUiData.ts",
     "setup-ui": "npm run generate-ui",
-    "test": "npm run clean:allure && npm run generate-seo && playwright test"
+    "test": "npm run clean:allure && npm run generate-seo && npm run generate-ui && playwright test"
   },
   "keywords": [],
   "author": "",

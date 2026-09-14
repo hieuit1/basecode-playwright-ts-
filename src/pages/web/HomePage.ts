@@ -40,41 +40,19 @@ export class HomePage extends BasePage {
         console.log('--- STARTING FRONTEND FEATURE SCAN (FROM HOMEPAGE) ---');
         await this.gotoHomePage();
 
-        // 1. Quét tính năng tìm kiếm
-        const hasSearch = await this.page.evaluate(() => {
-            const inputs = Array.from(document.querySelectorAll('input'));
-            for (const input of inputs) {
-                if (input.type === 'hidden' || input.style.display === 'none') continue;
-                const type = input.type.toLowerCase();
-                const name = (input.name || '').toLowerCase();
-                const placeholder = (input.placeholder || '').toLowerCase();
-                const id = (input.id || '').toLowerCase();
-                const className = (input.className || '').toLowerCase();
-
-                if (type === 'search') return true;
-                if (name === 'q' || name === 'keyword' || name === 'search') return true;
-                if (placeholder.includes('tìm kiếm') || placeholder.includes('search')) return true;
-                if (id.includes('search') || id === 'keyword') return true;
-                if (className.includes('search')) return true;
-            }
-
-            const forms = Array.from(document.querySelectorAll('form'));
-            for (const form of forms) {
-                const action = (form.getAttribute('action') || '').toLowerCase();
-                if (action.includes('search') || action.includes('tim-kiem')) return true;
-            }
-            return false;
-        });
+        // Quét theo đúng bộ ID chuẩn ở "Báo cáo hỗ trợ automation test",
+        // để hàm quét và các hàm thao tác trong page object dùng chung một nguồn.
+        // Ô tìm kiếm có thể bị ẩn sau icon kính lúp nên chỉ cần tồn tại trong DOM là đủ.
+        const hasSearch = await this.page.locator("#search-sanpham").count() > 0;
 
         // 2. Quét tính năng đăng ký nhận tin
-        // Theo yêu cầu, locator: //p[@class='form-p']
-        const hasNewsletter = await this.page.locator("//p[@class='form-p']").isVisible({ timeout: 5000 }).catch(() => false);
+        const hasNewsletter = await this.page.locator("#form-newsletter").isVisible({ timeout: 5000 }).catch(() => false);
 
         // 3. Quét tính năng Đặt Bàn (Booking)
-        const hasBooking = await this.page.locator("//h2[contains(text(),'ĐẶT BÀN')]").isVisible({ timeout: 5000 }).catch(() => false);
+        const hasBooking = await this.page.locator("#form-datban").isVisible({ timeout: 5000 }).catch(() => false);
 
         // 4. Quét tính năng Giỏ Hàng (Cart)
-        const hasCart = await this.page.locator("//a[@class='cart d-flex align-items-center border border-2 border-main text-main rounded-lg p-2']//*[name()='svg']").isVisible({ timeout: 5000 }).catch(() => false);
+        const hasCart = await this.page.locator("#btn-cart-header").isVisible({ timeout: 5000 }).catch(() => false);
 
         // Kiểm tra tính năng Mã giảm giá (Discount) - Chỉ quét khi có Giỏ hàng
         // Lưu ý: input mã giảm giá chỉ được render khi giỏ hàng có sản phẩm.
@@ -90,12 +68,12 @@ export class HomePage extends BasePage {
                 await cartPage.gotoCart();
                 // Bước 3: Kiểm tra locator input mã giảm giá
                 hasDiscount = await this.page
-                    .locator("//input[@placeholder='Nhập mã ưu đãi']")
+                    .locator("#input-magiamgia")
                     .isVisible({ timeout: 5000 })
                     .catch(() => false);
                 console.log(`Kết quả quét discount (sau khi thêm SP): ${hasDiscount ? 'CÓ' : 'KHÔNG'}`);
             } catch (e) {
-                console.log(`[THÔNG BÁO] Không thể thêm sản phẩm để quét discount: ${e}`);
+                console.warn(`⚠ Không thêm được sản phẩm để quét discount — nhiều khả năng thiếu #btn-addtocart hoặc #btn-cart-header. Chi tiết: ${e}`);
             }
         }
 
@@ -118,7 +96,7 @@ export class HomePage extends BasePage {
 
             if (response && response.status() !== 404) {
                 // Thử tìm thẻ sản phẩm để click
-                const productLocators = this.page.locator('.product-name a, .product-title a, .title-product a, h3.title a, .item-title a, .name-product a, article.product a, .product-item a, .product-block a, .dichvu-item a').first();
+                const productLocators = this.page.locator('[data-product-id] a').first();
 
                 if (await productLocators.isVisible({ timeout: 3000 }).catch(() => false)) {
                     console.log(`Tìm thấy sản phẩm. Đang click vào sản phẩm đầu tiên...`);
@@ -130,7 +108,7 @@ export class HomePage extends BasePage {
                     productUrlForConsultation = this.page.url();
 
                     // Kiểm tra sự tồn tại của form
-                    hasFreeConsultation = await this.page.locator("//p[@class='form-p']").isVisible({ timeout: 5000 }).catch(() => false);
+                    hasFreeConsultation = await this.page.locator("#form-tuvan").isVisible({ timeout: 5000 }).catch(() => false);
                 } else {
                     console.log('Không tìm thấy sản phẩm nào trên trang /san-pham. Bỏ qua quét form Tư vấn.');
                 }

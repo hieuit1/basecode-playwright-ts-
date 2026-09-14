@@ -20,17 +20,20 @@ export class CartPage extends BasePage {
     constructor(page: Page) {
         super(page);
 
-        this.cartIcon = page.locator("//a[@class='cart d-flex align-items-center border border-2 border-main text-main rounded-lg p-2']//*[name()='svg']");
-        this.productItems = page.locator("//div[@class='box-product ']");
-        this.addToCartButton = page.locator("//span[contains(@class,'d-block fs-16 fw-600 text-main')]");
+        this.cartIcon = page.locator("#btn-cart-header");
+        this.addToCartButton = page.locator("#btn-addtocart");
+
+        this.productItems = page.locator("[data-product-id]");
         this.closeModalButton = page.locator("//div[@class='modal-dialog modal-lg']//div[@class='modal-header']//button[@aria-label='Close']");
         this.singleProductPrice = page.locator("//p[contains(@class,'price-new-cart')]");
-        this.totalPrice = page.locator("//p[@class='total-price load-price-total']");
+        this.totalPrice = page.locator("#total-price");
         this.minusButton = page.locator("//span[@class='counter-procart-minus counter-procart']");
         this.plusButton = page.locator("//span[@class='counter-procart-plus counter-procart']");
         this.deleteButton = page.locator("a.del-procart");
         this.confirmDialog = page.locator(".jconfirm");
-        this.confirmOkButton = page.locator(".jconfirm button.btn-primary, //button[contains(text(),'Đồng ý')]");
+        // Tách riêng: gộp CSS và XPath vào cùng một chuỗi thì Playwright không parse được nửa XPath
+        this.confirmOkButton = page.locator(".jconfirm button.btn-primary")
+            .or(page.locator("//button[contains(text(),'Đồng ý')]"));
         this.emptyCartMessage = page.locator("//p[contains(text(),'Không tồn tại sản phẩm nào trong giỏ hàng !')]");
     }
 

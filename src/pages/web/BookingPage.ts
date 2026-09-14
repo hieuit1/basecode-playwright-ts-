@@ -2,6 +2,7 @@ import { Page, Locator } from "@playwright/test";
 import { BasePage } from "../BasePage";
 
 export class BookingPage extends BasePage {
+    readonly formWrapper: Locator;
     readonly nameInput: Locator;
     readonly emailInput: Locator;
     readonly phoneInput: Locator;
@@ -18,16 +19,17 @@ export class BookingPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
+        this.formWrapper = page.locator("#form-datban");
         this.nameInput = page.locator("//input[@id='fullname-datban']");
         this.emailInput = page.locator("//input[@id='email-datban']");
         this.phoneInput = page.locator("//input[@id='phone-datban']");
-        this.dateInput = page.locator("//input[@id='ngaydat-datban']");
-        this.menuSelect = page.locator("//select[@id='thucdon-datban']");
+        this.dateInput = page.locator("#date-datban");
+        this.menuSelect = page.locator("#menu-datban");
         this.quantityInput = page.locator("//input[@id='soluong-datban']");
         this.contentTextarea = page.locator("//textarea[@id='content-datban']");
-        this.submitButton = page.locator("//button[contains(text(),'ĐẶT BÀN NGAY')]");
-        this.successMessage = page.locator("//div[@id='alert']").or(page.locator("//div[contains(@class, 'alert-success')]"));
-        this.errorMessage = page.locator("//div[@id='alert']").or(page.locator("//div[contains(@class, 'alert-danger')]"));
+        this.submitButton = page.locator("#btn-submit-datban");
+        this.successMessage = page.locator("//div[contains(@class, 'alert-success')]").or(page.locator("//div[@id='alert']//div[contains(@class, 'alert-success')]"));
+        this.errorMessage = page.locator("//div[contains(@class, 'alert-danger')]").or(page.locator("//div[@id='alert']//div[contains(@class, 'alert-danger')]"));
         this.dashboardElement = page.locator("//span[@class='text-split']");
         this.notificationDropdown = page.locator("//li[@class='nav-item dropdown']//a[@class='nav-link']");
         this.bookingLink = page.locator("//a[contains(text(),'Đặt bàn')]");
@@ -38,7 +40,7 @@ export class BookingPage extends BasePage {
      */
     async fillBookingForm(name: string, email: string, phone: string, date: string, quantity: string, content: string) {
         // Cuộn trang đến form đặt bàn
-        await this.nameInput.scrollIntoViewIfNeeded();
+        await this.formWrapper.scrollIntoViewIfNeeded();
 
         if (name !== undefined) {
             await this.nameInput.fill(name);

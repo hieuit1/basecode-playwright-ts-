@@ -11,8 +11,9 @@ export class DiscountPage extends BasePage {
     constructor(page: Page) {
         super(page);
 
-        this.discountInput = page.locator("//input[@placeholder='Nhập mã ưu đãi']");
-        this.applyDiscountButton = page.locator("//input[@value='Áp dụng']");
+        // ID chuẩn theo "Báo cáo hỗ trợ automation test" mục 3.8
+        this.discountInput = page.locator("#input-magiamgia");
+        this.applyDiscountButton = page.locator("#btn-apdung-magiamgia");
         // Scope vào đúng #popup-notify để tránh strict mode violation (trang có nhiều modal: #popup-cart, ...)
         this.discountModalBody = page.locator("#popup-notify .modal-body");
         // Nút "Thoát" trong footer của #popup-notify
@@ -51,27 +52,16 @@ export class DiscountPage extends BasePage {
     }
 
     /**
-     * Lấy số tiền ưu đãi (giảm giá)
+     * Lấy số tiền ưu đãi (giảm giá).
+     * KHÔNG bọc try/catch trả 0: nếu không tìm thấy #discount-value thì phải báo lỗi,
+     * vì "thiếu element" và "ưu đãi bằng 0đ" là hai chuyện khác nhau — gộp lại sẽ làm
+     * các test negative (expect toBe(0)) xanh giả.
      */
     async getDiscountAmountValue(): Promise<number> {
-        try {
-            // Cố gắng tìm phần tử chứa text "Ưu đãi", sau đó lấy span kế tiếp chứa giá tiền
-            const discountLocator = this.page.locator("//div[contains(@class,'total-procart')]//span[contains(text(),'Ưu đãi')]/following-sibling::span");
-            if (await discountLocator.isVisible({ timeout: 2000 })) {
-                const text = await discountLocator.textContent();
-                return this.parsePrice(text || '0');
-            }
-            
-            // Nếu không được, dùng locator dựa trên class mô tả của user
-            const altLocator = this.page.locator("//div[@class='total-procart d-flex align-items-center justify-content-between']");
-            if (await altLocator.isVisible({ timeout: 2000 })) {
-                const text = await altLocator.textContent();
-                return this.parsePrice(text || '0');
-            }
-            return 0;
-        } catch {
-            return 0;
-        }
+        const discountLocator = this.page.locator("#discount-value");
+        await discountLocator.waitFor({ state: 'visible', timeout: 5000 });
+        const text = await discountLocator.textContent();
+        return this.parsePrice(text || '0');
     }
 
     // ===== UTILITY =====

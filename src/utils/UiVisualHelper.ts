@@ -3,68 +3,74 @@ import { allure } from 'allure-playwright';
 import * as path from 'path';
 import * as fs from 'fs';
 import { UiPage } from '../pages/ui/UiPage';
-import { FigmaService } from '../services/FigmaService';
 import { VisualAnnotator } from '../services/VisualAnnotator';
 import { GeminiVision } from '../services/GeminiVision';
-import { UiSectionTestData } from '../../data/ui/uiTypes';
+import { UiPageTarget } from '../../data/ui/uiTypes';
+import { BaselineContext, BaselineImage, resolveBaseline } from '../services/baseline/BaselineStrategy';
+
+/** Đặt tên file an toàn từ path của trang: "/gioi-thieu" → "gioi_thieu" */
+function safeName(value: string): string {
+    return value.replace(/[^a-z0-9]/gi, '_').replace(/^_+|_+$/g, '') || 'home';
+}
 
 export class UiVisualHelper {
-    private static figmaService = new FigmaService();
-
+    /**
+     * Đối chiếu giao diện thực tế với một ảnh chuẩn.
+     *
+     * Ảnh chuẩn lấy từ đâu là do BaselineStrategy quyết định (Figma, web tham chiếu, ...),
+     * helper này không biết và không cần biết. Trang nào không có chuẩn ở viewport đang
+     * chạy thì bỏ qua — phần kiểm tra của nó nằm ở các lớp nội tại.
+     */
     static async runVisualComparison(
         page: Page,
         uiPage: UiPage,
-        data: UiSectionTestData,
+        target: UiPageTarget,
         testInfo: TestInfo
     ) {
-        const FILE_KEY = process.env.UI_TEST_FIGMA_FILE_KEY || '';
         const BASE_URL = (process.env.BASE_URL || '').replace(/\/$/, '');
-
-        // ── Kiểm tra cấu hình ──
-        if (!FILE_KEY || !BASE_URL) {
-            test.skip(!FILE_KEY, 'Thiếu UI_TEST_FIGMA_FILE_KEY trong .env');
-            test.skip(!BASE_URL, 'Thiếu BASE_URL trong .env');
+        if (!BASE_URL) {
+            test.skip(true, 'Thiếu BASE_URL trong .env');
             return;
         }
 
-        // ── Skip nếu không match được Figma frame ──
-        if (!data.figmaNodeId) {
-            test.skip(true, `Không tìm được Figma frame cho "${data.sectionName}" (matchScore: ${data.matchScore}). Hãy thêm vào uiManualConfig.ts`);
-            return;
-        }
+        const ctx: BaselineContext = {
+            viewportWidth: page.viewportSize()?.width ?? 0,
+            viewportName: testInfo.project.name
+        };
 
-        const fullUrl = `${BASE_URL}${data.path}`;
-
-        // Thư mục lưu ảnh diff cho test này
+        const fullUrl = `${BASE_URL}${target.path}`;
         const diffDir = path.join(testInfo.outputDir, 'visual-diff');
+        fs.mkdirSync(diffDir, { recursive: true });
 
-        // ── Step 1: Tải ảnh Figma và Xử lý ──
-        const safeNodeId = data.figmaNodeId!.replace(/[^a-z0-9]/gi, '_');
-        const downloadedFigmaImagePath = path.join(testInfo.project.outputDir, `${safeNodeId}_figma.png`);
-        const finalFigmaImagePath = path.join(diffDir, `${data.sectionName.replace(/[^a-z0-9]/gi, '_')}_figma_expected.png`);
+        const slug = safeName(target.path);
+        const expectedImagePath = path.join(diffDir, `${slug}_expected.png`);
+        const actualImagePath = path.join(diffDir, `${slug}_actual.png`);
 
-        await test.step('1. Tải ảnh thiết kế từ Figma', async () => {
-            // Tải từ Figma (có cơ chế cache và mutex trong FigmaService)
-            await this.figmaService.downloadSnapshot(FILE_KEY, data.figmaNodeId!, downloadedFigmaImagePath);
-
-            if (!fs.existsSync(diffDir)) fs.mkdirSync(diffDir, { recursive: true });
-
-            fs.copyFileSync(downloadedFigmaImagePath, finalFigmaImagePath);
-
-            await allure.attachment('Figma Expected', fs.readFileSync(finalFigmaImagePath), 'image/png');
+        // ── Step 1: Lấy ảnh chuẩn ──
+        let baseline: BaselineImage | null = null;
+        await test.step('1. Lấy ảnh chuẩn để đối chiếu', async () => {
+            baseline = await resolveBaseline(target).getExpected(target, ctx, testInfo);
         });
 
-        // ── Step 2: Chụp ảnh web ──
-        const actualImagePath = path.join(diffDir, `${data.sectionName.replace(/[^a-z0-9]/gi, '_')}_actual.png`);
-        await test.step(`2. Chụp ảnh section "${data.sectionName}" trên web`, async () => {
-            const locator = await uiPage.gotoSection(fullUrl, data.selector);
-            await uiPage.hideDynamicElements();
-            await uiPage.prepareForScreenshot();
+        if (!baseline) {
+            test.skip(true,
+                `Trang "${target.name}" chưa có bản thiết kế đối chiếu cho ${ctx.viewportName} ` +
+                `(${ctx.viewportWidth}px). Trang này vẫn được kiểm tra ở bộ heuristic.`);
+            return;
+        }
 
-            const isVisible = await locator.isVisible({ timeout: 10000 }).catch(() => false);
-            if (!isVisible) {
-                throw new Error(`Không tìm thấy element "${data.selector}" trên trang ${fullUrl}`);
-            }
+        const expected: BaselineImage = baseline;
+        fs.copyFileSync(expected.path, expectedImagePath);
+        await allure.parameter('Nguồn chuẩn', expected.kind);
+        await allure.attachment(expected.label, fs.readFileSync(expectedImagePath), 'image/png');
+
+        // ── Step 2: Chụp ảnh web thực tế ──
+        await test.step(`2. Chụp ảnh trang "${target.name}" trên ${ctx.viewportName}`, async () => {
+            await uiPage.gotoTargetUrl(fullUrl);
+            // Thứ tự quan trọng: cuộn kích lazy-load TRƯỚC, vì nhiều theme chỉ gắn
+            // class sticky cho header sau khi người dùng cuộn.
+            await uiPage.prepareForScreenshot();
+            await uiPage.hideDynamicElements();
 
             await page.screenshot({
                 path: actualImagePath,
@@ -75,25 +81,34 @@ export class UiVisualHelper {
         });
 
         // ── Step 3: So sánh + Annotate ──
-        let aiResult: { pass: boolean, reason: string, issues?: Array<{ description: string, web_box_2d: [number, number, number, number], figma_box_2d: [number, number, number, number] }> };
+        let aiResult: {
+            pass: boolean,
+            reason: string,
+            issues?: Array<{ description: string, web_box_2d: [number, number, number, number], figma_box_2d: [number, number, number, number] }>
+        };
+
         await test.step('3. Phân tích ngữ cảnh với Gemini AI', async () => {
             const gemini = new GeminiVision();
-            aiResult = await gemini.compareImages(finalFigmaImagePath, actualImagePath);
+            aiResult = await gemini.compareImages(expectedImagePath, actualImagePath);
             await allure.parameter('AI Pass', String(aiResult.pass));
             await allure.attachment('AI Reason', Buffer.from(aiResult.reason, 'utf-8'), 'text/plain');
 
             if (!aiResult.pass && aiResult.issues && aiResult.issues.length > 0) {
                 const snippetResults = await VisualAnnotator.annotateAiDifferences(
-                    finalFigmaImagePath,
+                    expectedImagePath,
                     actualImagePath,
                     diffDir,
-                    data.sectionName,
+                    target.name,
                     aiResult.issues
                 );
 
                 let idx = 1;
                 for (const snippet of snippetResults) {
-                    await allure.attachment(`Lỗi ${idx}: ${snippet.description.substring(0, 30)}...`, fs.readFileSync(snippet.outputPath), 'image/png');
+                    await allure.attachment(
+                        `Lỗi ${idx}: ${snippet.description.substring(0, 30)}...`,
+                        fs.readFileSync(snippet.outputPath),
+                        'image/png'
+                    );
                     idx++;
                 }
                 aiResult.reason += `\nĐã đính kèm ${snippetResults.length} ảnh chi tiết lỗi vào báo cáo.`;

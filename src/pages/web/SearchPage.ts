@@ -5,21 +5,18 @@ export class SearchPage extends BasePage {
     readonly searchInput: Locator;
     readonly searchResultDropdown: Locator;
     readonly searchButton: Locator;
+    readonly productItems: Locator;
 
     constructor(page: Page) {
         super(page);
-        // Hỗ trợ quét tìm ô search với nhiều kịch bản (Smart Locator cho multi-tenant)
-        this.searchInput = page.locator("input#keyword")
-            .or(page.locator("input[name='keyword']"))
-            .or(page.locator("input[type='search']"))
-            .or(page.locator("input[name='q']"))
-            .or(page.locator("input[name='search']"))
-            .or(page.locator("input[placeholder*='tìm kiếm' i]"))
-            .or(page.locator("input[placeholder*='search' i]"))
-            .or(page.locator("input[placeholder*='Tên sản phẩm' i]"));
+
+        // ID chuẩn theo "Báo cáo hỗ trợ automation test" mục 3.2
+        this.searchInput = page.locator("#search-sanpham");
+        // .first() phòng trường hợp site nhân đôi header cho desktop/mobile làm ID bị lặp
+        this.searchButton = page.locator("#btn-search-sanpham").first();
+        this.productItems = page.locator("[data-product-id]");
+
         this.searchResultDropdown = page.locator("//div[@id='search-result']");
-        // Nút tìm kiếm của web mới (Hỗ trợ button, submit, hoặc label giả button)
-        this.searchButton = page.locator("button[title='Tìm kiếm'], button.btn-search, .search button, form button[type='submit'], label[for='keyword'], label[onclick*='onSearch'], button[onclick*='onSearch']").first();
     }
 
     /**
@@ -79,43 +76,20 @@ export class SearchPage extends BasePage {
             console.log("Lỗi khi truy cập /san-pham, sẽ cố gắng cào từ trang hiện tại.");
         }
 
+        // Lấy tên sản phẩm từ các thẻ có data-product-id (ID chuẩn mục 3.2)
         const keyword = await this.page.evaluate(() => {
-            // 1. Ưu tiên tìm theo các class/tag phổ biến của tên sản phẩm trên trang /san-pham
-            const commonProductSelectors = [
-                '.product-name', '.product-title', '.title-product',
-                'h3.title', '.item-title', 'h3 > a', 'h2 > a', '.name-product'
-            ];
+            const cards = Array.from(document.querySelectorAll('[data-product-id]'));
 
-            for (const selector of commonProductSelectors) {
-                const elements = document.querySelectorAll(selector);
-                for (const element of Array.from(elements)) {
-                    if (element && element.textContent) {
-                        const text = element.textContent.trim();
-                        // Tránh các nút bấm mua hàng hay tiêu đề linh tinh
-                        if (text.length > 5 && !text.toLowerCase().includes('chi tiết') && !text.toLowerCase().includes('mua ngay')) {
-                            return text;
-                        }
-                    }
-                }
-            }
+            for (const card of cards) {
+                const link = card.querySelector('a[title]');
+                const raw = link?.getAttribute('title')
+                    || link?.textContent
+                    || card.textContent
+                    || "";
 
-            // 2. Fallback duyệt thẻ <a> 
-            const links = Array.from(document.querySelectorAll('a'));
-            const ignoreWords = [
-                'trang chủ', 'giới thiệu', 'liên hệ', 'tin tức',
-                'đăng nhập', 'đăng ký', 'giỏ hàng', 'xem thêm',
-                'chi tiết', 'danh mục', 'sản phẩm', 'khuyến mãi'
-            ];
-
-            for (const link of links) {
-                const text = link.textContent?.trim() || "";
-                const textLower = text.toLowerCase();
-
-                if (text.length > 10 && text.length < 80) {
-                    const isSystemLink = ignoreWords.some(ignore => textLower.includes(ignore));
-                    if (!isSystemLink) {
-                        return text;
-                    }
+                const text = raw.split('\n')[0].trim();
+                if (text.length > 5) {
+                    return text;
                 }
             }
             return "";
@@ -128,7 +102,7 @@ export class SearchPage extends BasePage {
         await this.page.waitForLoadState("domcontentloaded");
 
         if (!keyword) {
-            throw new Error("Không thể trích xuất được từ khóa sản phẩm nào từ trang /san-pham!");
+            throw new Error("Không lấy được tên sản phẩm nào từ trang /san-pham! Kiểm tra xem thẻ sản phẩm đã có thuộc tính data-product-id chưa.");
         }
 
         return keyword;
@@ -143,41 +117,19 @@ export class SearchPage extends BasePage {
 
         if (!isInputVisible) {
             // Trường hợp 2: Ô tìm kiếm bị ẩn, phải rê chuột (hover) hoặc click vào icon kính lúp mới hiện ra
-            console.log("Ô tìm kiếm đang bị ẩn, thử tìm và tương tác với icon search hoặc vùng chứa (container)...");
+            console.log("Ô tìm kiếm đang bị ẩn, thử tương tác với icon kính lúp #btn-search-sanpham...");
 
-            // 1. Thử hover vào các vùng chứa (container) search phổ biến trước (thường dùng CSS :hover)
-            const searchContainers = this.page.locator('.search, .search-box, .search-container, .header-search, .search-wrapper, .search-form');
-            const containerCount = await searchContainers.count();
-            for (let i = 0; i < containerCount; i++) {
-                const container = searchContainers.nth(i);
-                if (await container.isVisible().catch(() => false)) {
-                    await container.hover({ force: true }).catch(() => { });
-                    await this.page.waitForTimeout(300);
-                    if (await this.searchInput.first().isVisible().catch(() => false)) return this.fillSearchAndSubmit(keyword);
-                }
-            }
+            const searchIcon = this.searchButton;
+            if (await searchIcon.isVisible().catch(() => false)) {
+                // 1. Thử rê chuột (hover) trước - nhiều site mở ô search bằng CSS :hover
+                await searchIcon.hover({ force: true }).catch(() => { });
+                await this.page.waitForTimeout(300);
+                if (await this.searchInput.first().isVisible().catch(() => false)) return this.fillSearchAndSubmit(keyword);
 
-            // 2. Thử hover/click vào các nút hoặc icon search phổ biến
-            const searchToggleIcons = this.page.locator(
-                '.fa-search, .icon-search, [class*="search-icon"], [class*="icon-search"], ' +
-                'i.search, svg.search, .search-toggle, .search-btn, .btn-search, .header-search-icon, .icon-magnifier, span.search, ' +
-                '.bi-search, button[onclick*="onSearch"]'
-            );
-
-            const iconCount = await searchToggleIcons.count();
-            for (let i = 0; i < iconCount; i++) {
-                const icon = searchToggleIcons.nth(i);
-                if (await icon.isVisible().catch(() => false)) {
-                    // Thử rê chuột (hover)
-                    await icon.hover({ force: true }).catch(() => { });
-                    await this.page.waitForTimeout(300);
-                    if (await this.searchInput.first().isVisible().catch(() => false)) return this.fillSearchAndSubmit(keyword);
-
-                    // Nếu vẫn chưa hiện, thử click
-                    await icon.click({ force: true }).catch(() => { });
-                    await this.page.waitForTimeout(300);
-                    if (await this.searchInput.first().isVisible().catch(() => false)) return this.fillSearchAndSubmit(keyword);
-                }
+                // 2. Hover không ăn thì mới click (chấp nhận rủi ro site submit luôn)
+                await searchIcon.click({ force: true }).catch(() => { });
+                await this.page.waitForTimeout(300);
+                if (await this.searchInput.first().isVisible().catch(() => false)) return this.fillSearchAndSubmit(keyword);
             }
 
             // 3. Fallback bạo lực: Ép buộc hiện input bằng JavaScript nếu UI chặn
@@ -216,7 +168,7 @@ export class SearchPage extends BasePage {
             console.log("Playwright fill thất bại, chuyển sang ép buộc gõ bằng JavaScript nguyên thủy...");
 
             // Dùng page.evaluate thay vì locator.evaluate để tránh việc Playwright ngầm đợi element
-            const inputSelector = "input#keyword, input[name='keyword'], input[type='search'], input[name='q'], input[name='search']";
+            const inputSelector = "#search-sanpham";
 
             await this.page.evaluate(({ selector, text }) => {
                 const node = document.querySelector(selector) as HTMLInputElement;
@@ -244,19 +196,16 @@ export class SearchPage extends BasePage {
     }
 
     /**
-     * Lấy danh sách các phần tử chứa kết quả sản phẩm trong dropdown
-     * (Hỗ trợ thẻ a, li, hoặc các div có class thông dụng)
+     * Lấy danh sách sản phẩm trong dropdown kết quả (theo data-product-id)
      */
     getResultItems(): Locator {
-        return this.searchResultDropdown.locator("a, li, .search-item, .result-item, .autocomplete-suggestion, .item");
+        return this.searchResultDropdown.locator("[data-product-id]");
     }
 
     /**
-     * Lấy danh sách các thẻ sản phẩm hiển thị trên trang kết quả.
-     * Dùng một list các class CSS phổ biến nhất trong giới thiết kế web.
-     * Cực kỳ hiệu quả cho bài toán multi-tenant.
+     * Lấy danh sách các thẻ sản phẩm hiển thị trên trang kết quả (theo data-product-id)
      */
     getProductElementsOnPage(): Locator {
-        return this.page.locator('.product-item, .item-product, .product-card, .col-product, article.product, .product-block, .product-grid-item, .item-box, .product, .name-product');
+        return this.productItems;
     }
 }

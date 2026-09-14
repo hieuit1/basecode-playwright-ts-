@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-08-31T08:59:46.527Z",
-  "baseUrl": "https://phutungmayin.com/",
+  "timestamp": "2026-09-14T02:36:35.278Z",
+  "baseUrl": "https://clight.vn/",
   "productUrlForConsultation": "",
   "features": {
-    "search": true,
+    "search": false,
     "newsletter": false,
     "freeConsultation": false,
     "booking": false,

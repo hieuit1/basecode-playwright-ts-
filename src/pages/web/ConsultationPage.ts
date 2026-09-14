@@ -11,10 +11,10 @@ export class ConsultationPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.consultationForm = page.locator("//p[@class='form-p']");
-        this.nameInput = page.locator("input[name*='name'], input[id*='name']").first();
-        this.phoneInput = page.locator("//input[@id='phone-newsletter']");
-        this.submitButton = page.locator("//div[@class='newsletter-button']");
+        this.consultationForm = page.locator("#form-tuvan").first();
+        this.nameInput = this.consultationForm.locator("#name-tuvan");
+        this.phoneInput = this.consultationForm.locator("#phone-tuvan");
+        this.submitButton = this.consultationForm.locator("#btn-submit-tuvan");
         // Alert cụ thể cho thành công và thất bại
         this.successMessage = page.locator("//div[contains(@class, 'alert-success')]").or(page.locator("//div[@id='alert']//div[contains(@class, 'alert-success')]"));
         this.errorMessage = page.locator("//div[contains(@class, 'alert-danger')]").or(page.locator("//div[@id='alert']//div[contains(@class, 'alert-danger')]"));
@@ -27,7 +27,7 @@ export class ConsultationPage extends BasePage {
         if (!productUrl) {
             throw new Error("Không có URL sản phẩm nào được lưu. Vui lòng kiểm tra lại quá trình quét.");
         }
-        await this.page.goto(productUrl, { waitUntil: 'domcontentloaded' }).catch(() => {});
+        await this.page.goto(productUrl, { waitUntil: 'domcontentloaded' }).catch(() => { });
     }
 
     /**

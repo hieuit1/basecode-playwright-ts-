@@ -29,6 +29,7 @@ on:
           - '@seo'
           - '@performance'
           - '@bulk'
+          - '@ui'
           
   repository_dispatch:
     types: [run-tests]
@@ -45,12 +46,61 @@ env:
   ENV: ${{ github.event.client_payload.ENV || github.event.inputs.ENV || 'staging' }}
 
 jobs:
+  # Sinh dữ liệu test MỘT LẦN rồi chia cho các shard dùng chung.
+  # Nếu để mỗi shard tự crawl thì danh sách test giữa các shard có thể khác nhau
+  # (một trang fetch lỗi ở shard này mà không lỗi ở shard kia), khiến --shard chia
+  # sai và test bị bỏ sót trong im lặng.
+  prepare-data:
+    name: Prepare Test Data
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: ${{ github.event.client_payload.ENV || github.event.inputs.ENV || 'staging' }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+
+      - name: Generate SEO then UI test data
+        env:
+          UI_TEST_FIGMA_TOKEN: ${{ secrets.UI_TEST_FIGMA_TOKEN }}
+          UI_TEST_FIGMA_FILE_KEY: ${{ secrets.UI_TEST_FIGMA_FILE_KEY }}
+        run: |
+          echo -e "\e[36m[INFO] Generating test data for environment: ${{ env.TARGET_ENV }}...\e[0m"
+          if [ -f "config/.env.${{ env.TARGET_ENV }}" ]; then
+            set -a
+            . "config/.env.${{ env.TARGET_ENV }}"
+            set +a
+          fi
+          npm run generate-seo
+          # UI đọc danh sách trang từ seoGeneratedData nên BẮT BUỘC chạy sau generate-seo
+          npm run generate-ui
+
+      - name: Upload generated test data
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-data
+          path: |
+            data/seo/seoGeneratedData.ts
+            data/ui/uiGeneratedData.ts
+            data/templates/scanned-figma-frames.json
+          retention-days: 5
+
   execute-tests:
     name: Execute Tests
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    needs: prepare-data
     environment: ${{ github.event.client_payload.ENV || github.event.inputs.ENV || 'staging' }}
-    
+
     # Tương đương 'parallel: 5' trên GitLab
     strategy:
       fail-fast: false
@@ -76,33 +126,30 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chrome webkit
 
-      # - name: Generate UI test data from Figma
-      #   env:
-      #     UI_TEST_FIGMA_TOKEN: ${{ secrets.UI_TEST_FIGMA_TOKEN }}
-      #     UI_TEST_FIGMA_FILE_KEY: ${{ vars.UI_TEST_FIGMA_FILE_KEY }}
-      #   run: |
-      #     echo -e "\e[36m[INFO] Generating UI test data from Figma...\e[0m"
-      #     npm run generate-ui
-          
-      - name: Generate SEO test data
+      # Data đã được job prepare-data sinh sẵn. Artifact lấy thư mục chung nhỏ nhất
+      # làm gốc (ở đây là data/) nên giải nén vào đúng 'data' là về đúng chỗ cũ.
+      - name: Download generated test data
+        uses: actions/download-artifact@v4
+        with:
+          name: test-data
+          path: data
+
+      - name: Verify test data
         run: |
-          echo -e "\e[36m[INFO] Generating SEO test data for environment: ${{ env.TARGET_ENV }}...\e[0m"
-          # Load biến môi trường (như BASE_URL) tương ứng với môi trường đang chạy
-          if [ -f "config/.env.${{ env.TARGET_ENV }}" ]; then
-            set -a
-            . "config/.env.${{ env.TARGET_ENV }}"
-            set +a
-          fi
-          # Chạy script sinh data SEO
-          npm run generate-seo
-          
+          echo -e "\e[36m[INFO] Test data nhận được từ job prepare-data:\e[0m"
+          ls -l data/seo/seoGeneratedData.ts data/ui/uiGeneratedData.ts
+
       - name: Run Tests
         id: run-tests
         env:
           UI_TEST_FIGMA_TOKEN: ${{ secrets.UI_TEST_FIGMA_TOKEN }}
           UI_TEST_FIGMA_FILE_KEY: ${{ secrets.UI_TEST_FIGMA_FILE_KEY }}
           PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          # Khai một trong hai, hoặc cả hai — hệ thống tự gộp và loại trùng.
+          # GEMINI_API_KEYS nhận nhiều key ngăn bằng dấu phẩy; hết quota key này
+          # thì tự chuyển sang key kế tiếp.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
         run: |
           # Helper script for outputting styled console messages
@@ -127,12 +174,14 @@ jobs:
             npx playwright test --grep "${{ env.TARGET_TEST_TYPE }}" --shard=$SHARD
             
           elif [ "$EVENT_NAME" == "push" ]; then
-            echo -e "${COLOR_INFO}📦 Executing Push Event. Running Regression suite (excluding bulk)...${COLOR_RESET}"
-            npx playwright test --grep "@regression" --grep-invert "@bulk" --shard=$SHARD
-            
+            # Bộ UI còn đang xây nên tạm loại khỏi luồng tự động. Chạy tay bằng
+            # workflow_dispatch với TEST_TYPE='@ui'. Khi ổn định thì bỏ @ui khỏi grep-invert.
+            echo -e "${COLOR_INFO}📦 Executing Push Event. Running Regression suite (excluding bulk, ui)...${COLOR_RESET}"
+            npx playwright test --grep "@regression" --grep-invert "@bulk|@ui" --shard=$SHARD
+
           elif [ "$EVENT_NAME" == "schedule" ]; then
-            echo -e "${COLOR_INFO}🕒 Executing scheduled nightly Regression suite (excluding bulk)...${COLOR_RESET}"
-            npx playwright test --grep "@regression" --grep-invert "@bulk" --shard=$SHARD
+            echo -e "${COLOR_INFO}🕒 Executing scheduled nightly Regression suite (excluding bulk, ui)...${COLOR_RESET}"
+            npx playwright test --grep "@regression" --grep-invert "@bulk|@ui" --shard=$SHARD
           fi
 
       - name: Prepare environment properties for Allure
