@@ -1,0 +1,38 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     81/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  21
+   ✅ Đạt:          17
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/21):
+--- HEADING STRUCTURE ---
+   1. [Trang có đúng 1 thẻ H1 (hiện tại: 2 thẻ)]
+      → Trang có 2 thẻ H1, bắt buộc đúng 1 thẻ duy nhất!
+   2. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H6 ("Danh mục")
+--- PERFORMANCE ---
+   3. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 55/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 55/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   4. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 15835ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 15835ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="lazy loaded" width="288" height="279" onerror="this.src='thumbs/288x279x1/assets/images/noimage.png';" data-src="thumbs/288x279x1/assets/images/noimage.png.webp" alt="Động cơ MaxxForce (1) (1) (1) Động cơ MaxxForce (1) (1) (1)" src="thumbs/288x279x1/assets/images/noimage.png.webp" data-was-processed="true">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 288x279px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 576x558px (2x cho Retina), định dạng .webp, dung lượng dưới 14KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/288x279x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/288x279x1/assets/images/noimage.png" width="288" height="279" style="aspect-ratio: 288 / 279; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 576 558 input.png -o output.webp

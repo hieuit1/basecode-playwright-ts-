@@ -1,0 +1,22 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     80/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  15
+   ✅ Đạt:          12
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/15):
+--- HEADING STRUCTURE ---
+   1. [Trang có đúng 1 thẻ H1 (hiện tại: 2 thẻ)]
+      → Trang có 2 thẻ H1, bắt buộc đúng 1 thẻ duy nhất!
+   2. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H6 ("Danh mục")
+--- TECHNICAL SEO ---
+   3. [Robots: noindex,nofollow (mong muốn: INDEX)]
+      → Trang mong muốn INDEX nhưng đang bị gắn 'noindex'!
