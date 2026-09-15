@@ -1,45 +1,31 @@
 {
-  "timestamp": "2026-09-14T02:36:30.108Z",
-  "baseUrl": "https://clight.vn/",
+  "timestamp": "2026-09-15T02:03:50.189Z",
+  "baseUrl": "https://code7.mimadigi.vn/2026_08/nguyenvandung/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
-      "Banner",
-      "Về chúng tôi",
-      "Câu chuyện",
-      "Lịch sử hình thành",
-      "Giải thưởng",
+      "Banner trang giới thiệu",
+      "Ảnh thông số",
+      "Về GOLDEN RULE",
       "Tầm nhìn",
       "Sứ mệnh",
-      "Giá trị cốt lõi",
       "Thông số",
-      "Chứng chỉ"
+      "Giá trị cốt lõi",
+      "Lịch sử hình thành"
     ],
-    "Group Sản Phẩm": [
-      "Sản phẩm chi tiết",
+    "Quản lý Sản phẩm": [
       "Danh mục cấp 1",
       "Danh mục cấp 2",
-      "Danh mục cấp 3",
-      "Thương hiệu",
-      "Thuộc tính",
-      "Sản phẩm chi tiết",
-      "Bộ lọc giá"
+      "Sản phẩm"
     ],
-    "Quản lý Mã giảm giá": [],
     "Quản lý bài viết": [
-      "Giải pháp",
+      "Dịch vụ",
+      "Tại sao chọn chúng tôi",
       "Tin tức",
-      "Dự án",
-      "Tuyển dụng",
-      "Tiêu chí",
-      "Chính sách",
-      "Hình thức thanh toán"
+      "Chính sách"
     ],
-    "Quản lý đơn hàng": [],
-    "Quản lý tags": [],
     "Quản lý nhận tin": [
-      "Đăng ký nhận tin",
-      "Đăng ký tư vấn"
+      "Đăng ký nhận tin"
     ],
     "Quản lý trang tĩnh": [
       "Liên hệ",
@@ -47,15 +33,23 @@
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.ico GG rất thích)",
+      "Background Footer",
+      "Ảnh tại sao chọn chúng tôi",
+      "Favicon",
       "Logo",
       "Logo footer",
-      "Banner flashsale",
-      "Banner giá trị",
-      "Footer Banner",
-      "Bộ công thương",
+      "Đối tác",
+      "Thành tựu",
       "Slideshow",
-      "Banner quản cáo"
-    ]
+      "Mạng xã hội"
+    ],
+    "Quản lý seo page": [
+      "Trang chủ",
+      "Giới thiệu",
+      "Dịch vụ",
+      "Tin tức",
+      "Liên hệ"
+    ],
+    "Thiết lập thông tin": []
   }
 }
