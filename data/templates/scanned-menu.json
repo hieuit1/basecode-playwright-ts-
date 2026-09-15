@@ -1,31 +1,27 @@
 {
-  "timestamp": "2026-09-15T04:34:32.439Z",
-  "baseUrl": "https://code7.mimadigi.vn/2026_08/nguyenvandung/",
+  "timestamp": "2026-09-15T07:51:37.958Z",
+  "baseUrl": "https://code7.mimadigi.vn/2026_09/levietdieu_115526w/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
       "Banner trang giới thiệu",
-      "Ảnh thông số",
-      "Về GOLDEN RULE",
+      "Về chúng tôi",
       "Tầm nhìn",
       "Sứ mệnh",
       "Thông số",
-      "Giá trị cốt lõi",
-      "Lịch sử hình thành"
-    ],
-    "Quản lý Sản phẩm": [
-      "Danh mục cấp 1",
-      "Danh mục cấp 2",
-      "Sản phẩm"
+      "Tiêu chí",
+      "Giá trị cốt lõi"
     ],
     "Quản lý bài viết": [
       "Dịch vụ",
-      "Tại sao chọn chúng tôi",
       "Tin tức",
-      "Chính sách"
+      "Dự án",
+      "Cảm nhận khách hàng",
+      "Quy trình báo giá"
     ],
     "Quản lý nhận tin": [
-      "Đăng ký nhận tin"
+      "Đăng ký nhận tin",
+      "Đăng ký nhận báo giá"
     ],
     "Quản lý trang tĩnh": [
       "Liên hệ",
@@ -33,19 +29,18 @@
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Background Footer",
-      "Ảnh tại sao chọn chúng tôi",
       "Favicon",
       "Logo",
+      "Ảnh form đăng ký tư vấn",
       "Logo footer",
       "Đối tác",
-      "Thành tựu",
       "Slideshow",
       "Mạng xã hội"
     ],
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
+      "Dự án",
       "Dịch vụ",
       "Tin tức",
       "Liên hệ"

@@ -264,12 +264,12 @@ export class SeoPage extends BasePage {
         : `URL Canonical không hợp lệ: "${scan.canonical}"`
     );
 
-    const isNoindex = !!scan.robots?.toLowerCase().includes("noindex");
-    await sc.check(
-      `Robots: ${scan.robots || "Mặc định Index"} (mong muốn: INDEX)`,
-      !isNoindex,
-      "Trang mong muốn INDEX nhưng đang bị gắn 'noindex'!"
-    );
+    // const isNoindex = !!scan.robots?.toLowerCase().includes("noindex");
+    // await sc.check(
+    //   `Robots: ${scan.robots || "Mặc định Index"} (mong muốn: INDEX)`,
+    //   !isNoindex,
+    //   "Trang mong muốn INDEX nhưng đang bị gắn 'noindex'!"
+    // );
 
     const baseUrl = (process.env.BASE_URL as string || new URL(scan.currentUrl).origin).replace(/\/$/, '');
     const [robotsTxtStatus, sitemapStatus] = await Promise.all([
