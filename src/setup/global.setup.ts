@@ -2,7 +2,6 @@ import { chromium, FullConfig } from '@playwright/test';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
-// No extra imports
 
 async function globalSetup(config: FullConfig) {
   const environment = process.env.ENV || 'qa';
