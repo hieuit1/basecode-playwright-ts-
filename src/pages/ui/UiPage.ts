@@ -39,19 +39,6 @@ export class UiPage extends BasePage {
         });
     }
 
-    /**
-     * Xử lý các phần tử nổi / dính trước khi chụp ảnh.
-     *
-     * PHẢI gọi SAU prepareForScreenshot(): nhiều theme chỉ gắn class sticky cho header
-     * sau khi người dùng cuộn, nên nếu chạy trước lúc cuộn sẽ vừa bỏ sót phần tử cần
-     * xử lý, vừa đụng nhầm phần tử chưa ở trạng thái cuối.
-     *
-     * Không xoá sạch mọi thứ position fixed/sticky như bản cũ: header dính là MỘT PHẦN
-     * của thiết kế, xoá đi thì AI sẽ báo "mất header" trên gần như mọi trang. Ở đây chỉ
-     * ẩn những thứ thật sự che nội dung (widget chat, hotline, nút lên đầu trang, banner
-     * cookie, popup), còn lại thì bỏ tính dính để phần tử nằm đúng vị trí trong luồng và
-     * chỉ xuất hiện một lần trên ảnh fullPage.
-     */
     async hideDynamicElements() {
         await test.step(`Ẩn overlay nổi và bỏ tính dính trước khi chụp ảnh`, async () => {
             const result = await this.page.evaluate(() => {
