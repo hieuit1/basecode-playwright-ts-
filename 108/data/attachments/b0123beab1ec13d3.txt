@@ -1,0 +1,1 @@
+[UiPage] Ẩn 1 overlay nổi, bỏ dính 7 phần tử, giữ nguyên 0 lớp nền kín màn hình.

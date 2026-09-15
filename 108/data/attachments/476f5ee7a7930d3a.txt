@@ -1,0 +1,1 @@
+Phát hiện lỗi chèn đè nội dung ở phần header: Nút biểu tượng thư điện tử (email) bị chèn đè trực tiếp lên phần chữ của Logo thương hiệu.

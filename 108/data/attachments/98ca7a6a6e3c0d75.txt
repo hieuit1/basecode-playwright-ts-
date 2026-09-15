@@ -1,0 +1,1 @@
+Phát hiện lỗi đè nội dung ở phần header: Biểu tượng hộp thư đè trực tiếp lên logo thương hiệu làm mất chi tiết và khó nhìn.

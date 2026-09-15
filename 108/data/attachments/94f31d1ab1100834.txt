@@ -1,0 +1,1 @@
+Giao diện được sắp xếp cân đối, các khối nội dung có khoảng trống hợp lý, không có hiện tượng chồng chéo văn bản hay tràn viền.

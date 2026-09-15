@@ -1,0 +1,1 @@
+Phát hiện lỗi vỡ layout và dính/tràn chữ ở khu vực chân trang (footer) bên dưới logo.

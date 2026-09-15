@@ -1,0 +1,1 @@
+Phát hiện nút biểu tượng floating icon bị đặt sai vị trí, đè lên phần logo trên thanh header.

@@ -1,0 +1,1 @@
+Phát hiện lỗi đè nội dung (overlap) ở phần header: Khối icon hộp thư màu xanh bị đè trực tiếp lên logo thương hiệu 'PHẾ LIỆU BÌNH MINH'.

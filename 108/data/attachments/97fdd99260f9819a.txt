@@ -1,0 +1,1 @@
+Phát hiện lỗi đè nội dung ở thanh header: nút biểu tượng email đè lên trên logo thương hiệu.
