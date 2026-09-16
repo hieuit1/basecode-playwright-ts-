@@ -1,0 +1,56 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     80/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  20
+   ✅ Đạt:          16
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/20):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 1/16)]
+      → Broken links: https://www.thumuaphelieubinhminh.com (status: 0)
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 39/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 39/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 13514ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 13514ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <p class="card-news__desc text-split text-split-4">Phế liệu Bình Minh cung cấp dịch vụ thu mua phế liệu công nghiệp tận nơi uy tín, chuyên nghiệp. Chúng tôi hỗ trợ tháo dỡ, bốc xếp và vận chuyển trọn ...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <p class="card-news__desc text-split text-split-4">Phế liệu Bình Minh cung cấp dịch vụ thu mua phế liệu công nghiệp tận nơi uy tín, chuyên nghiệp. Chúng tôi hỗ trợ tháo dỡ, bốc xếp và vận chuyển trọn ...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code7.mimadigi.vn/2026_09/levietdieu_115526w/tin-tuc
+   4. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.348 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.348 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <a class="card-news" href="thu-mua-xac-nha-xuong-gia-cao-tai-tphcm-hien-nay" data-aos="fade-up" data-aos-delay="80">
+          - <a class="card-news" href="thu-mua-xac-nha-xuong-gia-cao-tai-tphcm-hien-nay" data-aos="fade-up" data-aos-delay="80">
+          - <a class="card-news" href="thu-mua-xac-nha-xuong-cu-dinh-gia-va-thanh-ly-nhanh" data-aos="fade-up" data-aos-delay="160">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <a class="card-news" href="thu-mua-xac-nha-xuong-gia-cao-tai-tphcm-hien-nay" data-aos="fade-up" data-aos-delay="80"> | <a class="card-news" href="thu-mua-xac-nha-xuong-gia-cao-tai-tphcm-hien-nay" data-aos="fade-up" data-aos-delay="80"> | <a class="card-news" href="thu-mua-xac-nha-xuong-cu-dinh-gia-va-thanh-ly-nhanh" data-aos="fade-up" data-aos-delay="160">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

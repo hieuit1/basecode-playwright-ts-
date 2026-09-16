@@ -1,0 +1,39 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     80/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  20
+   ✅ Đạt:          16
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/20):
+--- HEADING STRUCTURE ---
+   1. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H3 ("Thông tin công ty")
+--- LINKS ---
+   2. [Không có broken links (lỗi: 1/13)]
+      → Broken links: https://www.thumuaphelieubinhminh.com (status: 0)
+--- PERFORMANCE ---
+   3. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 56/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 56/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   4. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 8708ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 8708ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img onerror="this.src='thumbs/230x90x1/assets/images/noimage.png';" src="upload/photo/logo-7883.png" alt="PHẾ LIỆU BÌNH MINH" width="230" height="90">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 230x90px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 460x180px (2x cho Retina), định dạng .webp, dung lượng dưới 4KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/230x90x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/230x90x1/assets/images/noimage.png" width="230" height="90" style="aspect-ratio: 230 / 90; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 460 180 input.png -o output.webp
