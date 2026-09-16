@@ -129,7 +129,7 @@ export class UiHeuristicHelper {
                     (xmax / pageWidth) * 1000
                 ];
             } catch {
-                // Không dò được thì giữ nguyên toạ độ ước lượng của AI
+
             }
         }
     }
