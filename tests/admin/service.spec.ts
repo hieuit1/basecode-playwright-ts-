@@ -7,7 +7,7 @@ import { MenuHelper } from "../../src/utils/MenuHelper";
 
 test.use({ video: 'retain-on-failure' });
 
-if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Dịch vụ00', 'Service00'])) {
+if (MenuHelper.hasSubMenu(['Quản lý Dịch vụ'], ['Dịch vụ', 'Service'])) {
     test.describe("Service Management Tests", () => {
         let servicePage: ServicePage;
 

@@ -1,48 +1,92 @@
 {
-  "timestamp": "2026-09-15T07:51:37.958Z",
-  "baseUrl": "https://code7.mimadigi.vn/2026_09/levietdieu_115526w/",
+  "timestamp": "2026-09-16T03:23:30.608Z",
+  "baseUrl": "https://code4.mimadigi.vn/2026/september/icma_109626W/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
-      "Banner trang giới thiệu",
+      "Banner",
       "Về chúng tôi",
+      "Lịch sử hình thành",
       "Tầm nhìn",
       "Sứ mệnh",
+      "Giá trị cốt lõi",
       "Thông số",
-      "Tiêu chí",
-      "Giá trị cốt lõi"
+      "Đội ngũ chuyên gia",
+      "Đối tác"
+    ],
+    "Quản lý slogan": [
+      "Đối tác",
+      "Vấn đề doanh nghiệp",
+      "Cách thức hoạt động",
+      "Cảm nhận khách hàng",
+      "Dịch vụ trang chủ",
+      "Chứng nhận & Giải thưởng",
+      "Đội ngũ chuyên gia",
+      "Truyền thông",
+      "Giá trị cốt lõi",
+      "Lịch sử hình thành",
+      "Quy trình làm việc"
+    ],
+    "Quản lý Dịch vụ": [
+      "Danh mục cấp 1",
+      "Dịch vụ"
+    ],
+    "Quản lý Bảng giá": [
+      "Danh mục cấp 1",
+      "Bảng giá"
+    ],
+    "Quản lý Tài Nguyên": [
+      "Danh mục cấp 1",
+      "Tài Nguyên"
     ],
     "Quản lý bài viết": [
-      "Dịch vụ",
-      "Tin tức",
-      "Dự án",
-      "Cảm nhận khách hàng",
-      "Quy trình báo giá"
+      "Quy trình tiếp nhận và xử lý hồ sơ",
+      "Thông số dịch vụ",
+      "Chứng nhận & Giải thưởng",
+      "Tại sao chọn chúng tôi",
+      "Giải pháp"
     ],
     "Quản lý nhận tin": [
       "Đăng ký nhận tin",
-      "Đăng ký nhận báo giá"
+      "Đăng ký tư vấn"
     ],
     "Quản lý trang tĩnh": [
+      "Slogan",
+      "Nội dung chữ slideshow",
       "Liên hệ",
       "Footer",
-      "Copyright"
+      "Copyright",
+      "Newsletter",
+      "Tin tức trang chủ",
+      "Chi tiết DV — Vì sao cần dịch vụ",
+      "Chi tiết DV — Dịch vụ chuyên sâu",
+      "Chi tiết DV — Tại sao chọn ICMA",
+      "Chi tiết DV — Bảng giá",
+      "Chi tiết DV — Album ảnh",
+      "Chi tiết DV — Câu hỏi thường gặp",
+      "Chi tiết DV — Dịch vụ liên quan",
+      "Chi tiết DV — Quy trình xử lý hồ sơ"
     ],
     "Quản lý hình ảnh - video": [
       "Favicon",
       "Logo",
-      "Ảnh form đăng ký tư vấn",
       "Logo footer",
-      "Đối tác",
+      "Ảnh tiêu điểm",
+      "Album ảnh dịch vụ",
       "Slideshow",
       "Mạng xã hội"
+    ],
+    "Quản lý user": [
+      "Nhóm quyền",
+      "Tài khoản admin"
     ],
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
-      "Dự án",
       "Dịch vụ",
-      "Tin tức",
+      "Bảng giá",
+      "Giải pháp",
+      "Tài nguyên",
       "Liên hệ"
     ],
     "Thiết lập thông tin": []
