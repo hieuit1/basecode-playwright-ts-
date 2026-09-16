@@ -1,1 +1,0 @@
-Giao diện được sắp xếp gọn gàng, cân đối, các khối tin tức và thông tin chân trang hiển thị rõ ràng, không có lỗi vỡ layout hay đè chữ.

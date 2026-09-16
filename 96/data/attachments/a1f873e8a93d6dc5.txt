@@ -1,1 +1,0 @@
-Giao diện hiển thị hoàn chỉnh và cân đối trên màn hình điện thoại. Các phần tử danh mục, lưới sản phẩm, form đăng ký và chân trang đều tuân thủ nguyên tắc thiết kế responsive, không xảy ra hiện tượng vỡ khung, tràn viền hay đè văn bản bất thường.

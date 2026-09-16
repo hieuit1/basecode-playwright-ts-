@@ -1,1 +1,0 @@
-Giao diện cân đối, không phát hiện lỗi vỡ layout, chồng chéo văn bản hay tràn màn hình.

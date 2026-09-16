@@ -1,1 +1,0 @@
-Giao diện trang web hiển thị bình thường, bố cục rõ ràng, các phần tử được sắp xếp cân đối và không phát hiện lỗi dàn trang, tràn viền hay đè chữ.

@@ -1,1 +1,0 @@
-Giao diện trang web hiển thị chuẩn xác, không gặp các lỗi chồng chéo nội dung, tràn viền hay khoảng cách bất thường.
