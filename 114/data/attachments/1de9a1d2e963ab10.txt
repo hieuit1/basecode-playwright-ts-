@@ -1,0 +1,56 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     85/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  20
+   ✅ Đạt:          17
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/20):
+--- PERFORMANCE ---
+   1. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 40/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 40/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   2. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 18635ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 18635ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="w-100 lazy loaded" onerror="this.src='thumbs/542x656x2/assets/images/noimage.webp';" data-src="thumbs/542x656x2/upload/news/rectangle-2-1990.png.webp" alt="Nguyễn Trần Bích Phượng" width="500" height="500" src="thumbs/542x656x2/upload/news/rectangle-2-1990.png.webp" data-was-processed="true">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 500x500px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 1000x1000px (2x cho Retina), định dạng .webp, dung lượng dưới 45KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/542x656x2/assets/images/noimage.webp" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/542x656x2/assets/images/noimage.webp" width="500" height="500" style="aspect-ratio: 500 / 500; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 1000 1000 input.png -o output.webp
+   3. [[📱 MOBILE (ƯU TIÊN)] CLS (Cumulative Layout Shift): 0.321 (< 0.1)]
+      → [📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.321 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="static-intro mt-0 mt-lg-5">
+          - <div class="static-intro mt-0 mt-lg-5">
+          - <h2>
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="static-intro mt-0 mt-lg-5"> | <div class="static-intro mt-0 mt-lg-5"> | <h2>.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}
