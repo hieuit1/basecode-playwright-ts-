@@ -23,10 +23,6 @@ const MODELS = [
  * và loại trùng):
  *   GEMINI_API_KEY=key1
  *   GEMINI_API_KEYS=key1,key2,key3
- *
- * Khi một key hết quota ở một model, key đó bị đánh dấu cho RIÊNG model đó rồi
- * chuyển sang key kế tiếp — vì quota Gemini tính theo từng cặp key × model, key hết
- * ở model này vẫn có thể còn ở model khác.
  */
 class GeminiKeyPool {
     private static keys: string[] = [];
