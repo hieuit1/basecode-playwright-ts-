@@ -1,0 +1,15 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 15903ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img class="w-100 lazy loaded" onerror="this.onerror=null;this.src='thumbs/490x589x1/assets/images/noimage.png';" data-src="thumbs/490x589x1/upload/photo/rectangle-11202x-3081-89500.png.webp" alt="KIỂM TOÁN ICMA" width="490" height="589" src="thumbs/490x589x1/upload/photo/rectangle-11202x-3081-89500.png.webp" data-was-processed="true">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 490x589px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 980x1178px (2x cho Retina), định dạng .webp, dung lượng dưới 52KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/490x589x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/490x589x1/assets/images/noimage.png" width="490" height="589" style="aspect-ratio: 490 / 589; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 980 1178 input.png -o output.webp

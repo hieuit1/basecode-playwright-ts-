@@ -1,0 +1,78 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","12872","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-09-16","passed","2026-09-16","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","16230","Kiểm tra SEO Onpage: Bảng giá Thuế (/bang-gia-thue)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"","8996","Login successfully with valid credentials","Desktop Chrome","2026-09-16","passed","2026-09-16","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","7083","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-16","passed","2026-09-16","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","65682","Add service successfully and verify on website","Desktop Chrome","2026-09-16","passed","2026-09-16","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13571","Kiểm tra SEO Onpage: Bảng giá Kiểm toán (/bang-gia-kiem-toan)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17610","Kiểm tra SEO Onpage: Thư viện ảnh (/thu-vien-anh)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","74223","Kiểm tra SEO Onpage: Tài nguyên (/tai-nguyen)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","24803","Kiểm tra SEO Onpage: Dịch vụ Kế toán tư vấn thuế (/dich-vu-ke-toan-tu-van-thue)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","138460","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"","11561","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-09-16","passed","2026-09-16","Contract Feature Tests","web/contract.spec.ts","",""
+"","7264","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-16","passed","2026-09-16","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","8938","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-16","passed","2026-09-16","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","64700","Kiểm tra SEO Onpage: Bảng giá (/bang-gia)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","91756","Kiểm tra SEO Onpage: Giải pháp (/giai-phap)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"","13186","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-09-16","passed","2026-09-16","Contract Feature Tests","web/contract.spec.ts","",""
+"","10433","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-09-16","passed","2026-09-16","Contract Feature Tests","web/contract.spec.ts","",""
+"","23302","Add service should fail with không nhập tiêu đề","Desktop Chrome","2026-09-16","passed","2026-09-16","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","81548","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","29907","Kiểm tra SEO Onpage: Mr. Phạm Đình Hoàng (/mr-pham-dinh-hoang)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"","10858","Submit form should fail with sai định dạng email","Desktop Chrome","2026-09-16","passed","2026-09-16","Contract Feature Tests","web/contract.spec.ts","",""
+"","6990","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-16","passed","2026-09-16","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17272","Kiểm tra SEO Onpage: Thuế (/thue)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","10635","Kiểm tra SEO Onpage: Mr. Huỳnh Đức Trường (/huynh-duc-truong)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19202","Kiểm tra SEO Onpage: Cập nhật chính sách thuế 2026 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (/cap-nhat-chinh-sach-thue-2026-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"","25907","Add service should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-16","passed","2026-09-16","Service Management Tests","admin/service.spec.ts","",""
+"","43653","Submit form successfully with valid data","Desktop Chrome","2026-09-16","passed","2026-09-16","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17560","Kiểm tra SEO Onpage: Kế toán và những sai sót doanh nghiệp thường gặp Kế toán và những sai sót doanh nghiệp thường gặp (/ke-toan-va-nhung-sai-sot-doanh-nghiep-thuong-gap)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","79008","Kiểm tra SEO Onpage: KIỂM TOÁN ICMA (/index.php)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18035","Kiểm tra SEO Onpage: Quản trị (/quan-tri)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"","314707","Bulk insert 35 services via Copy and verify Load More on website","Desktop Chrome","2026-09-16","failed","2026-09-16","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19126","Kiểm tra SEO Onpage: Kế toán (/ke-toan)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"","11185","Submit form should fail with bỏ trống email","Desktop Chrome","2026-09-16","passed","2026-09-16","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","165051","Kiểm tra SEO Onpage: Mr. Nguyễn Công Hiệp (/nguyen-cong-hiep)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","63066","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""
+"","7233","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-16","passed","2026-09-16","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21280","Kiểm tra SEO Onpage: Dịch vụ kế toán trọn gói (/dich-vu-ke-toan-tron-goi)","Desktop Chrome","2026-09-16","failed","2026-09-16","SEO Page","seo/seo.spec.ts","",""

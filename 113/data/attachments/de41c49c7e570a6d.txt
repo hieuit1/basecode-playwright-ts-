@@ -1,0 +1,16 @@
+[PageSpeedService] HTTP 500 strategy=desktop attempt=1 url=https://code4.mimadigi.vn/2026/september/icma_109626W/nguyen-cong-hiep
+Body: {
+  "error": {
+    "code": 500,
+    "message": "Lighthouse returned error: Something went wrong.",
+    "errors": [
+      {
+        "message": "Lighthouse returned error: Something went wrong.",
+        "domain": "lighthouse",
+        "reason": "lighthouseError"
+      }
+    ]
+  }
+}
+
+[PageSpeedService] Retry lần 1 sau 5000ms...
