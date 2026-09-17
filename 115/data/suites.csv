@@ -1,0 +1,111 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","180299","Kiểm tra SEO Onpage: Hãng Java (/hang-java)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180446","Kiểm tra SEO Onpage: Xe Điện (/xe-dien)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180403","Kiểm tra SEO Onpage: CHÍNH SÁCH BẢO HÀNH SẢN PHẨM (/chinh-sach-bao-hanh)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","126382","Kiểm tra SEO Onpage: Size 18 (6-8 tuổi) (/size-18-6-8-tuoi)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","149223","Kiểm tra SEO Onpage: Tags xe đua (/tags-xe-dua)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","24807","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-17","passed","2026-09-17","Product Management Tests","admin/product.spec.ts","",""
+"","180521","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","6712","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-17","passed","2026-09-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","180425","Kiểm tra SEO Onpage: CHÍNH SÁCH GIAO HÀNG VÀ VẬN CHUYỂN (/chinh-sach-doi-tra)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180505","Kiểm tra SEO Onpage: THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU (/the-gioi-xe-dap-vung-tau)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180245","Kiểm tra SEO Onpage: Hãng Pega (/hang-pega)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180237","Kiểm tra SEO Onpage: Hãng Nesto (/hang-nesto)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180535","Kiểm tra SEO Onpage: Xe Đạp Trẻ Em (/xe-dap-tre-em)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180530","Kiểm tra SEO Onpage: Bánh 16 Inches (/banh-16-inches)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180286","Kiểm tra SEO Onpage: Hãng Spelier (/hang-spelier)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180301","Kiểm tra SEO Onpage: Hãng DK Bike (/hang-dk-bike)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180283","Kiểm tra SEO Onpage: Hãng Raptor (/hang-raptor)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","23983","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-09-17","passed","2026-09-17","Product Management Tests","admin/product.spec.ts","",""
+"","180312","Kiểm tra SEO Onpage: Hãng Papylus (/hang-papylus)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","99619","Kiểm tra SEO Onpage: Size 16 (4-7 tuổi) (/size-16-4-7-tuoi)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","86230","Kiểm tra SEO Onpage: Size 14 (3-5 tuổi) (/size-14-3-5-tuoi)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180488","Kiểm tra SEO Onpage: Bánh 24 Inch (/banh-24-inches)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180475","Kiểm tra SEO Onpage: Góc khách hàng (/goc-khach-hang)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","108266","Kiểm tra SEO Onpage: Size 12 (2-4 tuổi) (/size-12-2-4-tuoi)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180739","Kiểm tra SEO Onpage: Thế Giới Xe Đạp | Cửa Hàng Xe Đạp Chính Hãng Toàn Quốc (/index.php)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","68818","Add news successfully and verify on website","Desktop Chrome","2026-09-17","passed","2026-09-17","News Management Tests","admin/news.spec.ts","",""
+"","180433","Kiểm tra SEO Onpage: Xe đạp trợ lực (/xe-dap-tro-luc)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","610188","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-09-17","broken","2026-09-17","Product Management Tests","admin/product.spec.ts","",""
+"","180422","Kiểm tra SEO Onpage: Phụ kiện (/phu-kien)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180384","Kiểm tra SEO Onpage: Bảo trì trọn đời (/bao-tri-tron-doi)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","6900","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-17","passed","2026-09-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","180423","Kiểm tra SEO Onpage: CHÍNH SÁCH BẢO MẬT THÔNG TIN (/chinh-sach-bao-mat-thong-tin-khach-hang)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180443","Kiểm tra SEO Onpage: Hãng Osakar (/hang-osakar)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","136420","Kiểm tra SEO Onpage: Size 20 (7-9 tuổi) (/size-20-7-9-tuoi)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180491","Kiểm tra SEO Onpage: Hãng SAVA (/hang-sava)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","129210","Kiểm tra SEO Onpage: Đồ bảo hộ (/do-bao-ho)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180445","Kiểm tra SEO Onpage: CHÍNH SÁCH ĐỔI TRẢ VÀ HOÀN TIỀN (/chinh-sach-doi-tra-va-hoan-tien)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180515","Kiểm tra SEO Onpage: Hệ thống cửa hàng (/he-thong-cua-hang)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180334","Kiểm tra SEO Onpage: Hãng Giant (/hang-giant)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180605","Kiểm tra SEO Onpage: /tags-san-pham (/tags-san-pham)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180347","Kiểm tra SEO Onpage: Hãng Thống Nhất (/hang-thong-nhat)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180398","Kiểm tra SEO Onpage: Top Mẫu Xe Đạp Được Ưa Chuộng Nhất Hiện Nay (/top-mau-xe-dap-duoc-ua-chuong-nhat-hien-nay)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180254","Kiểm tra SEO Onpage: Hãng Shukyo (/hang-shukyo)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180240","Kiểm tra SEO Onpage: Hãng VinBike (/hang-vinbike)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180462","Kiểm tra SEO Onpage: Xe đạp giá tốt (/xe-dap-gia-tot)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180447","Kiểm tra SEO Onpage: Xe Đạp Đua (/xe-dap-dua)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","153278","Kiểm tra SEO Onpage: Tags xe đoàn (/tags-xe-doan)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180522","Kiểm tra SEO Onpage: Bánh 26 Inch (/banh-26-inch)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180254","Kiểm tra SEO Onpage: Hãng TWITTER (/hang-twitter)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","100262","Kiểm tra SEO Onpage: Bánh 20 Inches (/size-banh-20-inches)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180302","Kiểm tra SEO Onpage: Vỏ bọc tay nắm xe đạp (/vo-boc-tay-nam-xe-dap)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","6959","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-17","passed","2026-09-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","180473","Kiểm tra SEO Onpage: Xe Đạp Đường Phố (/xe-dap-duong-pho)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","7105","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-17","passed","2026-09-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","180526","Kiểm tra SEO Onpage: Bánh 29 (/banh-29-inches)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180286","Kiểm tra SEO Onpage: Hãng Totem (/hang-totem)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","23425","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-17","passed","2026-09-17","News Management Tests","admin/news.spec.ts","",""
+"","608048","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-09-17","broken","2026-09-17","News Management Tests","admin/news.spec.ts","",""
+"","180315","Kiểm tra SEO Onpage: Hãng Yadea (/hang-yadea)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","74142","Kiểm tra SEO Onpage: Size 22 (8-10 tuổi) (/size-22-8-10-tuoi)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180309","Kiểm tra SEO Onpage: Hãng Hector (/hang-hector)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180270","Kiểm tra SEO Onpage: Hãng Makelen (/hang-makelen)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180560","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180548","Kiểm tra SEO Onpage: Hãng Hitasa (/hang-hitasa)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180468","Kiểm tra SEO Onpage: Xe Đạp Điện (/xe-dap-dien)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","91418","Kiểm tra SEO Onpage: Đèn xe đạp (/den-xe-dap)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","24152","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-09-17","passed","2026-09-17","News Management Tests","admin/news.spec.ts","",""
+"","180386","Kiểm tra SEO Onpage: PHƯƠNG THỨC THANH TOÁN (/phuong-thuc-thanh-toan)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","9730","Login successfully with valid credentials","Desktop Chrome","2026-09-17","passed","2026-09-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","180372","Kiểm tra SEO Onpage: Ưu đãi (/uu-dai)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180486","Kiểm tra SEO Onpage: Đèn xe (/den-xe)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180429","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180504","Kiểm tra SEO Onpage: Xe đạp địa hình Hector Lazer 3B - Bánh 27.5 Inches (/xe-dap-dia-hinh-hector-lazer-3b-banh-275-inches)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180545","Kiểm tra SEO Onpage: Xe Đạp Địa Hình (/xe-dap-dia-hinh)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180266","Kiểm tra SEO Onpage: Hãng TRINX (/hang-trinx)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180439","Kiểm tra SEO Onpage: Xe đạp gấp (/xe-dap-gap)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180436","Kiểm tra SEO Onpage: Xe đạp cao cấp (/xe-dap-cao-cap)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","135434","Add product successfully and verify on website","Desktop Chrome","2026-09-17","passed","2026-09-17","Product Management Tests","admin/product.spec.ts","",""
+"","180508","Kiểm tra SEO Onpage: Bánh 27.5 inches (/banh-275-inches)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180515","Kiểm tra SEO Onpage: Hướng dẫn (/huong-dan)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","174110","Kiểm tra SEO Onpage: XE ĐIỆN SCOOTER (/xe-dien-scooter)","Desktop Chrome","2026-09-17","failed","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180468","Kiểm tra SEO Onpage: Xe Đạp Nữ (/xe-dap-nu)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","6760","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-17","passed","2026-09-17","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","180363","Kiểm tra SEO Onpage: Hãng Asama (/hang-asama)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180416","Kiểm tra SEO Onpage: Hãng Foxy (/hang-foxy)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
+"","180372","Kiểm tra SEO Onpage: Mũ bảo hiểm (/mu-bao-hiem)","Desktop Chrome","2026-09-17","broken","2026-09-17","SEO Page","seo/seo.spec.ts","",""
