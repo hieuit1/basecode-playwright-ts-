@@ -8,7 +8,7 @@ import { MenuHelper } from "../../src/utils/MenuHelper";
 test.use({ video: 'retain-on-failure' });
 
 // Chỉ định nghĩa và chạy Test nếu có ít nhất 1 menu khớp với các Alias sau
-if (MenuHelper.hasSubMenu(['Quản lý bài viết'], ['Tin tức', 'Bài viết'])) {
+if (MenuHelper.hasSubMenu(['Quản lý bài viết'], ['Tin tức', 'Bài viết', 'Thông Tin'])) {
     test.describe("News Management Tests", () => {
         let newsPage: NewsPage;
 

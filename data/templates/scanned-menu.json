@@ -1,80 +1,78 @@
 {
-  "timestamp": "2026-09-16T03:23:30.608Z",
-  "baseUrl": "https://code4.mimadigi.vn/2026/september/icma_109626W/",
+  "timestamp": "2026-09-17T07:24:03.972Z",
+  "baseUrl": "https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
-      "Banner",
+      "Banner Giới thiệu",
       "Về chúng tôi",
       "Lịch sử hình thành",
       "Tầm nhìn",
       "Sứ mệnh",
-      "Giá trị cốt lõi",
       "Thông số",
-      "Đội ngũ chuyên gia",
-      "Đối tác"
+      "Giá trị cốt lõi"
     ],
-    "Quản lý slogan": [
-      "Đối tác",
-      "Vấn đề doanh nghiệp",
-      "Cách thức hoạt động",
-      "Cảm nhận khách hàng",
-      "Dịch vụ trang chủ",
-      "Chứng nhận & Giải thưởng",
-      "Đội ngũ chuyên gia",
-      "Truyền thông",
-      "Giá trị cốt lõi",
-      "Lịch sử hình thành",
-      "Quy trình làm việc"
+    "Group Khuyến Mãi": [
+      "Banner khuyến mãi",
+      "Deal sốc"
     ],
-    "Quản lý Dịch vụ": [
+    "Group Sản Phẩm": [
+      "Sản phẩm",
       "Danh mục cấp 1",
-      "Dịch vụ"
+      "Danh mục cấp 2",
+      "Thương hiệu",
+      "Thuộc tính",
+      "Sản phẩm",
+      "Tags sản phẩm",
+      "Tags Ưu đãi"
     ],
-    "Quản lý Bảng giá": [
+    "Quản lý Ưu đãi": [
       "Danh mục cấp 1",
-      "Bảng giá"
+      "Ưu đãi"
     ],
-    "Quản lý Tài Nguyên": [
+    "Quản lý Tin tức": [
       "Danh mục cấp 1",
-      "Tài Nguyên"
+      "Tin tức"
     ],
     "Quản lý bài viết": [
-      "Quy trình tiếp nhận và xử lý hồ sơ",
-      "Thông số dịch vụ",
-      "Chứng nhận & Giải thưởng",
-      "Tại sao chọn chúng tôi",
-      "Giải pháp"
+      "Dịch vụ",
+      "Hệ thống cửa hàng",
+      "Khách hàng",
+      "Tiêu chí",
+      "Hướng dẫn",
+      "Góc khách hàng",
+      "Chính sách",
+      "Điều khoản",
+      "Hình thức thanh toán"
     ],
-    "Quản lý nhận tin": [
-      "Đăng ký nhận tin",
-      "Đăng ký tư vấn"
+    "Quản lý đơn hàng": [],
+    "Quản lý tags": [
+      "Bộ lọc giá"
     ],
     "Quản lý trang tĩnh": [
       "Slogan",
-      "Nội dung chữ slideshow",
+      "Khuyến mãi",
+      "Câu chuyện",
       "Liên hệ",
       "Footer",
-      "Copyright",
-      "Newsletter",
-      "Tin tức trang chủ",
-      "Chi tiết DV — Vì sao cần dịch vụ",
-      "Chi tiết DV — Dịch vụ chuyên sâu",
-      "Chi tiết DV — Tại sao chọn ICMA",
-      "Chi tiết DV — Bảng giá",
-      "Chi tiết DV — Album ảnh",
-      "Chi tiết DV — Câu hỏi thường gặp",
-      "Chi tiết DV — Dịch vụ liên quan",
-      "Chi tiết DV — Quy trình xử lý hồ sơ"
+      "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon",
+      "Favicon (.Ico GG rất thích)",
       "Logo",
       "Logo footer",
-      "Ảnh tiêu điểm",
-      "Album ảnh dịch vụ",
+      "Banner footer",
+      "Banner top",
+      "Banner index",
       "Slideshow",
-      "Mạng xã hội"
+      "Banner bán chạy",
+      "Banner phải",
+      "Banner khuyến mãi",
+      "Video",
+      "Mạng xã hội",
+      "FAQ",
+      "Thanh toán",
+      "Link Redirect"
     ],
     "Quản lý user": [
       "Nhóm quyền",
@@ -83,12 +81,17 @@
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
+      "Sản phẩm",
       "Dịch vụ",
-      "Bảng giá",
-      "Giải pháp",
-      "Tài nguyên",
+      "Khuyến mãi",
+      "Hướng dẫn",
+      "Góc khách hàng",
+      "Video",
+      "Tin tức",
       "Liên hệ"
     ],
+    "Flash Sale": [],
+    "Mã giảm giá": [],
     "Thiết lập thông tin": []
   }
 }
