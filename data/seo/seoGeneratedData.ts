@@ -4,4 +4,5 @@
 import { SeoPageTestData } from "./seoData";
 
 export const seoTestData: SeoPageTestData[] = [
+
 ];

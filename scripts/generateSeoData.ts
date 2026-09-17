@@ -21,14 +21,16 @@ const FETCH_CONCURRENCY = 10;
 const MAX_DETAILS_PER_HUB = 1;
 
 /** Cap an toàn cho website có rất nhiều danh mục */
-const MAX_CATEGORIES = 50;
+const MAX_CATEGORIES = 20;
 
-/**
- * Số trang tổng KHÔNG có trang con được đo tốc độ.
- * Nhóm này (giới thiệu, liên hệ, các trang chính sách...) dùng chung một template
- * nội dung tĩnh nên đo 1 trang là đủ đại diện, khỏi tốn PageSpeed API cho từng trang.
- */
+/** Số trang hub KHÔNG trang con (chính sách, điều khoản...) được đo tốc độ đại diện */
 const MAX_CWV_LEAF_HUBS = 1;
+
+/** Số trang đại diện đo tốc độ cho mỗi "họ" hub biến thể lọc (vd /hang-giant, /hang-totem) */
+const MAX_CWV_LISTING_HUBS = 1;
+
+/** Số trang trùng tiền tố slug tối thiểu để coi là một "họ" biến thể lọc lặp lại */
+const REPEAT_FAMILY_THRESHOLD = 3;
 
 const FETCH_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -55,11 +57,14 @@ function normalizeText(value: string | undefined | null): string {
   return (value ?? '').replace(/\s+/g, ' ').trim();
 }
 
-/**
- * Đổi URL tuyệt đối thành path tương đối so với BASE_URL.
- * Dùng chung cho cả URL trong sitemap lẫn URL trong breadcrumb.
- * Trả về null nếu URL nằm ngoài website (khác host hoặc ngoài thư mục base).
- */
+/** Token đầu của slug ("/hang-giant" → "hang"), dùng để gom trang cùng họ biến thể lọc */
+function firstSegmentToken(relativePath: string): string {
+  const slug = relativePath.replace(/^\//, '');
+  const hyphenIndex = slug.indexOf('-');
+  return hyphenIndex === -1 ? slug : slug.slice(0, hyphenIndex);
+}
+
+/** Đổi URL tuyệt đối thành path tương đối so với BASE_URL; null nếu ngoài website */
 function toRelativePath(rawUrl: string): string | null {
   let target: URL;
   try {
@@ -268,11 +273,7 @@ function extractCrumbsFromDom($: cheerio.CheerioAPI): CrumbNode[] | null {
   return null;
 }
 
-/**
- * Cắt phần tên website ra khỏi thẻ title.
- * Suy ra tên site từ title trang chủ thay vì cắt cứng ở dấu '-' đầu tiên — cách cũ
- * làm "CB khối (MCCB) LS ABS1003b 1000A 65kA" cụt còn "CB khối (MCCB) LS ABS1003b".
- */
+/** Cắt tên site ra khỏi title trang, dựa vào title trang chủ thay vì cắt cứng ở dấu '-' */
 function stripSiteSuffix(title: string, siteTitle: string): string {
   if (!title || !siteTitle) return title;
 
@@ -292,10 +293,7 @@ function stripSiteSuffix(title: string, siteTitle: string): string {
   return parts.join(' - ');
 }
 
-/**
- * Tải một trang và bóc breadcrumb + og:type + tên trang.
- * Thay cho extractPageName cũ: cùng một request nhưng lấy thêm breadcrumb để phân loại.
- */
+/** Tải một trang và bóc breadcrumb + og:type + tên trang */
 async function fetchPageInfo(url: string, siteTitle: string): Promise<PageInfo | null> {
   try {
     const html = await fetchText(url);
@@ -312,9 +310,7 @@ async function fetchPageInfo(url: string, siteTitle: string): Promise<PageInfo |
 
     const title = normalizeText($('title').first().text());
 
-    // Lấy tên theo thứ tự tin cậy giảm dần, không cắt cứng ở dấu '-' như bản cũ.
-    // Chốt cuối là path: có trang thiếu hẳn title/og:title/h1 (chính là lỗi SEO mà
-    // suite này đi tìm) — khi đó vẫn phải có tên đọc được để đặt tên test case.
+    // Ưu tiên giảm dần; fallback cuối là path vì có trang thiếu hẳn title/og:title/h1
     const name =
       normalizeText(crumbs.length > 0 ? crumbs[crumbs.length - 1].name : '') ||
       normalizeText($('meta[property="og:title"]').attr('content')) ||
@@ -335,11 +331,7 @@ async function fetchPageInfo(url: string, siteTitle: string): Promise<PageInfo |
   }
 }
 
-/**
- * Các vùng có khả năng chứa menu chính, xếp theo độ đặc trưng giảm dần.
- * Hai mục cuối là thẻ HTML chuẩn nên phủ gần hết website; bộ [class*="menu"]
- * phủ thêm các site dùng <div class="header-menu"> thay vì thẻ <nav>.
- */
+/** Vùng có khả năng chứa menu chính, xếp theo độ đặc trưng giảm dần */
 const NAV_SELECTORS = [
   'header nav',
   'nav#menu',
@@ -388,13 +380,9 @@ function collectNavPaths($: cheerio.CheerioAPI, container: any): string[] {
 }
 
 /**
- * Quét menu chính của trang chủ để biết trang nào nằm trên menu.
- *
- * Đây là tín hiệu DUY NHẤT tách được trang tổng (/gioi-thieu, /lien-he) khỏi trang
- * chính sách: cả hai đều có breadcrumb 1 tầng, không có trang con, og:type giống nhau.
- *
- * Ba lớp để không phụ thuộc vào markup của một website cụ thể. Lớp nào cũng trượt thì
- * trả về tập rỗng, người gọi lùi tiếp về luật "có trang con".
+ * Quét menu chính của trang chủ — tín hiệu để tách trang tổng (/gioi-thieu, /lien-he)
+ * khỏi trang chính sách khi cả hai đều breadcrumb 1 tầng, không con, og:type giống nhau.
+ * Ba lớp để không phụ thuộc markup 1 site cụ thể; trượt hết thì trả rỗng.
  */
 function scanMainNavPaths($: cheerio.CheerioAPI, homeHtml: string): Set<string> {
   // ── LỚP 1: theo selector ──
@@ -445,45 +433,28 @@ function scanMainNavPaths($: cheerio.CheerioAPI, homeHtml: string): Set<string> 
 }
 
 /**
- * Kiểm tra URL có phải do automation test tạo ra hay không.
- * Dùng để lọc bỏ các URL tạm (sản phẩm/bài viết test) tránh race condition trên CI:
- * Khi chạy song song, shard khác có thể cleanup xóa sản phẩm test → gây broken links cho SEO tests.
- *
- * Các mẫu slug mà framework sinh ra (data/admin/*.ts và tests/admin/*.spec.ts):
- *   test-news-title-{ts}, test-product-title-{ts}, test-dich-vu-cap-1-{ts}
- *   blog-test-{ts}, du-an-test-{ts}, dich-vu-test-{ts}, tai-lieu-ky-thuat-test-{ts}
- *   automation-blog-en-{ts}, recruitment-automation-en-{ts}
- *   san-pham-loadtest-{ts}, auto-test-san-pham-...-{ts}
- *
- * KHÔNG bắt chuỗi 'test' trần: khi chạy trên website khác, 'test' trần sẽ nuốt oan
- * trang thật ("may-test-ac-quy", "but-thu-dien-tester", "contest", "tin-tuc-latest").
+ * URL do automation test tạo ra (test-*-title-{ts}, *-loadtest-{ts}...) — lọc bỏ để
+ * tránh race condition khi shard khác cleanup xóa mất trang này giữa lúc test SEO chạy.
+ * Không bắt chuỗi 'test' trần vì sẽ nuốt oan trang thật ("may-test-ac-quy", "contest").
  */
 function isAutoTestUrl(url: string): boolean {
   let pathname: string;
   try {
-    // Decode sau khi tách pathname, và bọc try/catch: slug chứa '%' không hợp lệ
-    // sẽ làm decodeURIComponent ném lỗi và hỏng cả lần chạy.
     pathname = decodeURIComponent(new URL(url).pathname);
   } catch {
-    return false;
+    return false; // slug chứa '%' không hợp lệ
   }
 
-  // 1. Marker từ khoá của framework, neo cả hai đầu để không dính "autotestX".
-  //    KHÔNG đưa 'automation' vào đây: các slug automation-* của framework đều có
-  //    timestamp nên luật 3 đã bắt hết, trong khi 'automation' là từ thường gặp ở
-  //    trang thật của web công nghiệp ("/automation-cong-nghiep", "/automation-plc").
+  // Marker framework (không có 'automation' trần — luật timestamp bên dưới đã bắt hết)
   if (/(^|[-_/])(auto-test|autotest|loadtest)([-_/]|$)/i.test(pathname)) return true;
 
-  // 2. Mẫu "test-<module>-title-..." — test-news-title-*, test-product-title-*
+  // "test-<module>-title-..." — test-news-title-*, test-product-title-*
   if (/(^|[-_/])test[-_/].*[-_/]title([-_/]|$)/i.test(pathname)) return true;
 
-  // 3. Slug chứa timestamp Date.now() — mọi data/admin/*.ts đều gắn `${Date.now()}`
-  //    vào slug. Siết theo dải epoch mili-giây (1[5-9]... = năm 2017-2033) và bắt
-  //    buộc đứng thành một token riêng, để không nuốt slug thật gắn mã vạch EAN-13
-  //    ("/muc-in-canon-4901990479455").
+  // Slug chứa timestamp Date.now() (epoch mili-giây, năm 2017-2033), là 1 token riêng
   if (/(^|[-_/])1[5-9]\d{11}([-_/]|$)/.test(pathname)) return true;
 
-  // 4. Trang nháp đặt tên trống trơn là 'test'
+  // Trang nháp đặt tên trống trơn là 'test'
   return /(^|\/)test\/?$/i.test(pathname);
 }
 
@@ -508,8 +479,7 @@ async function run() {
     console.log(`⚠ Đã bỏ qua ${skippedCount} URL thuộc automation test data (auto-test / loadtest / test-*-title-* / slug có timestamp).`);
   }
 
-  // Tải trang chủ đúng MỘT lần rồi dùng cho hai việc: lấy tên site (để cắt hậu tố khỏi
-  // title các trang khác) và quét menu chính. Không phát sinh request phụ.
+  // Tải trang chủ 1 lần, dùng chung để lấy tên site và quét menu chính
   const homeHtml = await fetchText(BASE_URL);
   let siteTitle = '';
   let navPaths = new Set<string>();
@@ -522,8 +492,6 @@ async function run() {
     console.warn('⚠ Không tải được trang chủ — bỏ qua bước quét menu chính.');
   }
 
-  // Tải breadcrumb của toàn bộ trang. Bản cũ cũng fetch từng trang (để lấy tên) nên
-  // không phát sinh thêm loại chi phí mới, chỉ chạy song song cho nhanh.
   console.log(`Đang quét breadcrumb ${sitemapUrls.length} trang (${FETCH_CONCURRENCY} luồng song song)...`);
 
   let scanned = 0;
@@ -540,10 +508,7 @@ async function run() {
     if (info) infoByUrl.set(url, info);
   });
 
-  // Tập các trang được trang khác khai làm tổ tiên trong breadcrumb → tức là trang CÓ trang con.
-  // Dùng để tách trang tổng thật sự (/dich-vu, /loai-xe, /tin-tuc — mỗi trang một template
-  // danh sách riêng) khỏi nhóm trang lá 1 tầng (/gioi-thieu, /lien-he, các trang chính sách —
-  // dùng chung một template nội dung tĩnh nên đo tốc độ 1 trang là đủ đại diện).
+  // Các trang được trang khác khai làm tổ tiên trong breadcrumb → trang CÓ trang con
   const parentPaths = new Set<string>();
   for (const [url, info] of infoByUrl) {
     const ownPath = toRelativePath(url);
@@ -560,6 +525,8 @@ async function run() {
   let categoryCount = 0;
   let leafHubCwvCount = 0;
   const kindCounts: Record<string, number> = { home: 0, hub: 0, category: 0, detail: 0 };
+  // Hub nghi là biến thể lọc, chờ gom nhóm + chọn đại diện sau khi duyệt hết sitemap
+  const listingHubCandidates: { index: number; path: string; isMainPage: boolean }[] = [];
 
   for (const fullUrl of sitemapUrls) {
     const relativePath = toRelativePath(fullUrl);
@@ -571,14 +538,8 @@ async function run() {
     processedPaths.add(relativePath);
 
     // ── PHÂN LOẠI TRANG ──────────────────────────────────────
-    // Website dùng URL PHẲNG (chi tiết sản phẩm là /mcb-bkn-2p-32a-ls chứ không phải
-    // /san-pham/mcb-bkn-2p-32a-ls) nên KHÔNG phân loại được bằng độ sâu path.
-    // Tầng thật sự nằm trong breadcrumb:
-    //   1 tầng                  → trang tổng (/san-pham, /tin-tuc, /gioi-thieu, ...)
-    //   >= 2 tầng + og:type object → trang danh mục (/thiet-bi-dien-cong-nghiep)
-    //   >= 2 tầng + og:type khác   → trang chi tiết
-    // Lưu ý: chi tiết KHÔNG có độ sâu cố định — chi tiết sản phẩm 3 tầng nhưng chi tiết
-    // dịch vụ/dự án chỉ 2 tầng — nên phải gom theo node GỐC của breadcrumb.
+    // URL phẳng nên không phân loại được bằng độ sâu path — dùng độ sâu breadcrumb:
+    // 1 tầng = trang tổng; >=2 tầng + og:type object = danh mục; còn lại = chi tiết.
     const depth = info.crumbs.length;
     const hubPath = info.crumbs.find(crumb => crumb.path)?.path ?? relativePath;
 
@@ -608,24 +569,19 @@ async function run() {
 
     kindCounts[kind]++;
 
-    // ── NGÂN SÁCH ĐO TỐC ĐỘ ──────────────────────────────────
-    // PageSpeed API rất chậm nên chỉ đo những trang có template khác nhau:
-    //   - trang chủ
-    //   - trang tổng NẰM TRÊN MENU CHÍNH: mỗi trang một template riêng
-    //   - trang tổng NGOÀI MENU: đều là trang nội dung tĩnh dùng chung template
-    //     (các trang chính sách, điều khoản...) → chỉ lấy 1 trang đại diện
-    //
-    // Dùng menu vì đây là tín hiệu duy nhất tách được /gioi-thieu, /lien-he khỏi nhóm
-    // chính sách: cả hai đều breadcrumb 1 tầng, không trang con, og:type giống nhau.
-    // Khi không quét được menu thì lùi về luật "trang tổng có trang con".
     const isMainPage = navPaths.size > 0
       ? navPaths.has(relativePath)
       : parentPaths.has(relativePath);
 
+    // Nghi là biến thể lọc (vd /hang-giant): og:type object nhưng không phải cha của
+    // trang nào khác — khác /san-pham, /tin-tuc vốn có category/detail bên dưới.
+    const isListingHubCandidate =
+      kind === 'hub' && info.ogType === 'object' && !parentPaths.has(relativePath);
+
     let checkCoreWebVitals = false;
     if (kind === 'home') {
       checkCoreWebVitals = true;
-    } else if (kind === 'hub') {
+    } else if (kind === 'hub' && !isListingHubCandidate) {
       if (isMainPage) {
         checkCoreWebVitals = true;
       } else if (leafHubCwvCount < MAX_CWV_LEAF_HUBS) {
@@ -650,6 +606,34 @@ async function run() {
       ...baseEntry,
       ...manualEntry
     });
+
+    // Bỏ qua nếu đã có override thủ công — override luôn được tôn trọng
+    if (isListingHubCandidate && manualEntry?.checkCoreWebVitals === undefined) {
+      listingHubCandidates.push({ index: finalData.length - 1, path: relativePath, isMainPage });
+    }
+  }
+
+  // Gom ứng viên theo tiền tố slug; họ đủ ngưỡng mới gom về 1 đại diện, họ lẻ tẻ đo riêng
+  const listingFamilies = new Map<string, typeof listingHubCandidates>();
+  for (const candidate of listingHubCandidates) {
+    const key = firstSegmentToken(candidate.path);
+    if (!listingFamilies.has(key)) listingFamilies.set(key, []);
+    listingFamilies.get(key)!.push(candidate);
+  }
+
+  for (const members of listingFamilies.values()) {
+    if (members.length >= REPEAT_FAMILY_THRESHOLD) {
+      const representatives = [...members]
+        .sort((a, b) => a.path.length - b.path.length)
+        .slice(0, MAX_CWV_LISTING_HUBS);
+      for (const representative of representatives) {
+        finalData[representative.index].checkCoreWebVitals = true;
+      }
+    } else {
+      for (const member of members) {
+        finalData[member.index].checkCoreWebVitals = member.isMainPage;
+      }
+    }
   }
 
   console.log(
