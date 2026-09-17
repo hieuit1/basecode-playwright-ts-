@@ -1,0 +1,4 @@
+CẢNH BÁO: Không thể fill title VI, bỏ qua.
+CẢNH BÁO: Không thể fill desc VI qua frameLocator, bỏ qua.
+CẢNH BÁO: Không thể fill content VI qua frameLocator, bỏ qua.
+CẢNH BÁO: Không thể fill thongso VI qua frameLocator, bỏ qua.

@@ -1,0 +1,766 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Hãng DK Bike (/hang-dk-bike)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Test timeout of 180000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - link "Thế giới xe đạp Việt" [ref=e5] [cursor=pointer]:
+    - /url: /
+    - img "Thế giới xe đạp Việt" [ref=e6]
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Thế giới xe đạp Việt" [ref=e11] [cursor=pointer]:
+        - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/
+        - img "Thế giới xe đạp Việt" [ref=e12]
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - link "Thế giới xe đạp Việt" [ref=e17] [cursor=pointer]:
+            - /url: gioi-thieu
+            - text: Giới thiệu
+        - listitem [ref=e18]:
+          - link "Thế giới xe đạp Việt" [ref=e19] [cursor=pointer]:
+            - /url: khuyen-mai
+            - text: Khuyến mãi
+        - listitem [ref=e20]:
+          - link "Thế giới xe đạp Việt" [ref=e21] [cursor=pointer]:
+            - /url: uu-dai
+            - text: Ưu đãi
+        - listitem [ref=e22]:
+          - link "Thế giới xe đạp Việt" [ref=e23] [cursor=pointer]:
+            - /url: thuong-hieu
+            - text: Thương hiệu
+        - listitem [ref=e24]:
+          - link "Thế giới xe đạp Việt" [ref=e25] [cursor=pointer]:
+            - /url: huong-dan
+            - text: Hướng dẫn
+        - listitem [ref=e26]:
+          - link "Thế giới xe đạp Việt" [ref=e27] [cursor=pointer]:
+            - /url: tin-tuc
+            - text: Tin tức
+        - listitem [ref=e28]:
+          - link "Thế giới xe đạp Việt" [ref=e29] [cursor=pointer]:
+            - /url: lien-he
+            - text: Liên hệ
+      - generic [ref=e31]:
+        - img [ref=e32]
+        - generic [ref=e35]:
+          - generic [ref=e36]: Hệ thống
+          - generic "Map" [ref=e37]: showroom
+      - link "Giỏ hàng 0" [ref=e40] [cursor=pointer]:
+        - /url: gio-hang
+        - img [ref=e41]
+        - generic [ref=e46]:
+          - generic [ref=e47]: Giỏ hàng
+          - generic [ref=e48]: "0"
+    - generic [ref=e51]:
+      - link "THẾ GIỚI XE ĐẠP VŨNG TÀU" [ref=e53] [cursor=pointer]:
+        - /url: san-pham
+        - img [ref=e54]
+        - paragraph [ref=e55]: Danh mục sản phẩm
+      - generic [ref=e57]:
+        - link "Tags xe đua" [ref=e59] [cursor=pointer]:
+          - /url: tags-xe-dua
+        - link "Tags xe đoàn" [ref=e61] [cursor=pointer]:
+          - /url: tags-xe-doan
+        - link "Xe đạp cao cấp" [ref=e63] [cursor=pointer]:
+          - /url: xe-dap-cao-cap
+        - link "Xe đạp giá tốt" [ref=e65] [cursor=pointer]:
+          - /url: xe-dap-gia-tot
+      - generic [ref=e67]:
+        - textbox "Tìm kiếm s" [ref=e68]
+        - button [ref=e69] [cursor=pointer]
+  - list [ref=e73]:
+    - listitem [ref=e74]:
+      - link "Trang chủ" [ref=e75] [cursor=pointer]:
+        - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/
+        - img [ref=e76]
+        - generic [ref=e78]: Trang chủ
+    - listitem [ref=e79]:
+      - text: /
+      - link "Hãng DK Bike" [ref=e80] [cursor=pointer]:
+        - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/hang-dk-bike
+  - generic [ref=e81]:
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - heading "Hãng DK Bike" [level=2] [ref=e87]
+        - paragraph [ref=e89]:
+          - strong [ref=e90]: DK Bike
+          - text: là thương hiệu xe điện Việt Nam thuộc
+          - strong [ref=e91]: Công ty TNHH MTV Xe điện DK Việt Nhật
+          - text: ", phát triển từ năm 2009 trong lĩnh vực xe hai bánh. Sau hơn một thập kỷ, DK Bike xây dựng hệ thống sản xuất, lắp ráp và phân phối trên toàn quốc, với các dòng sản phẩm gồm xe đạp trợ lực, xe máy điện và xe máy 50cc."
+      - generic [ref=e93]:
+        - img "Logo Hãng DK Bike" [ref=e95]
+        - img "Hãng DK Bike" [ref=e97]
+    - generic [ref=e100]:
+      - button "Tổng quan" [ref=e101] [cursor=pointer]:
+        - generic [ref=e102]: Tổng quan
+      - button "Sản phẩm" [ref=e103] [cursor=pointer]:
+        - generic [ref=e104]: Sản phẩm
+      - button "Chính sách" [ref=e105] [cursor=pointer]:
+        - generic [ref=e106]: Chính sách
+    - generic [ref=e108]:
+      - generic [ref=e112]:
+        - paragraph [ref=e113]:
+          - strong [ref=e114]: DK Bike
+          - text: là thương hiệu được phát triển bởi
+          - strong [ref=e115]: Công ty TNHH MTV Xe điện DK Việt Nhật
+          - text: . Theo thông tin công bố trên website chính thức, doanh nghiệp bắt đầu hình thành từ năm
+          - strong [ref=e116]: "2009"
+          - text: ", với định hướng sản xuất, lắp ráp và kinh doanh các phương tiện hai bánh như xe đạp, xe đạp điện và xe điện."
+        - paragraph [ref=e117]:
+          - text: Năm 2013, DK Bike xây dựng khu lắp ráp đầu tiên tại Lạng Sơn. Đến năm 2014, thương hiệu
+          - strong [ref=e118]: DKBIKE chính thức được ra mắt tại Việt Nam
+          - text: . Sau đó, doanh nghiệp tiếp tục mở rộng hoạt động sản xuất và phát triển hệ thống phân phối trên toàn quốc.
+        - paragraph [ref=e119]:
+          - text: Điểm đáng chú ý là DK Bike không chỉ tập trung vào một loại phương tiện mà phát triển hệ sinh thái xe hai bánh, trong đó
+          - strong [ref=e120]: xe đạp trợ lực
+          - text: là nhóm sản phẩm được hãng đẩy mạnh trong giai đoạn hiện nay.
+        - separator [ref=e121]
+        - heading "2. Quá trình hình thành và phát triển của DK Bike" [level=2] [ref=e122]
+        - paragraph [ref=e123]: "Theo lịch sử được DK Bike công bố, thương hiệu trải qua một số giai đoạn chính:"
+        - list [ref=e124]:
+          - listitem [ref=e125]:
+            - strong [ref=e126]: "2009:"
+            - text: Thành lập Công ty Xe điện DK, bắt đầu hoạt động trong lĩnh vực xe đạp, xe đạp điện và xe điện.
+          - listitem [ref=e127]:
+            - strong [ref=e128]: "2012:"
+            - text: Xây dựng nhà kho đầu tiên, tạo nền tảng cho hoạt động sản xuất và lắp ráp.
+          - listitem [ref=e129]:
+            - strong [ref=e130]: "2013:"
+            - text: Xây dựng khu lắp ráp xe điện đầu tiên tại Lạng Sơn.
+          - listitem [ref=e131]:
+            - strong [ref=e132]: "2014:"
+            - text: Đổi tên thành Công ty TNHH MTV Xe điện DK Việt Nhật và ra mắt thương hiệu DKBIKE tại Việt Nam.
+          - listitem [ref=e133]:
+            - strong [ref=e134]: "2017–2018:"
+            - text: Nhà máy lắp ráp thứ hai tại Lạng Sơn đi vào hoạt động; doanh nghiệp công bố công suất lắp ráp khoảng 600 xe/ngày và áp dụng ISO 9001:2015.
+          - listitem [ref=e135]:
+            - strong [ref=e136]: "2019–2021:"
+            - text: Mở rộng danh mục sản phẩm và hệ thống phân phối trên toàn quốc.
+          - listitem [ref=e137]:
+            - strong [ref=e138]: "2022 trở đi:"
+            - text: Tập trung hơn vào đổi mới sản phẩm, thương hiệu, công nghệ và các giải pháp di chuyển xanh.
+        - paragraph [ref=e139]:
+          - text: Như vậy, khi viết về DK Bike, nên định vị đây là
+          - strong [ref=e140]: thương hiệu xe điện/xe hai bánh phát triển tại Việt Nam
+          - text: ", thay vì chỉ gọi đơn thuần là một thương hiệu xe đạp truyền thống."
+        - separator [ref=e141]
+        - heading "3. DK Bike hiện kinh doanh những dòng xe nào?" [level=2] [ref=e142]
+        - paragraph [ref=e143]: "Danh mục hiện tại trên website chính thức của DK Bike gồm ba nhóm chính:"
+        - heading "Xe đạp trợ lực" [level=3] [ref=e144]
+        - paragraph [ref=e145]: "Đây là nhóm sản phẩm đáng chú ý hiện nay với:"
+        - list [ref=e146]:
+          - listitem [ref=e147]:
+            - strong [ref=e148]: DK EC5
+          - listitem [ref=e149]:
+            - strong [ref=e150]: DK ET1
+        - paragraph [ref=e151]
+        - heading "Xe máy điện" [level=3] [ref=e152]
+        - paragraph [ref=e153]: DK Bike hiện có nhiều dòng như DK V3, DK S5 Pro, DK EZ5, DK S5, DK D2, DK Nova, DK EZ3, DK S3, DK D1, DK V2 và DK V1.
+        - heading "Xe máy 50cc" [level=3] [ref=e154]
+        - paragraph [ref=e155]: Đây cũng là một nhóm sản phẩm trong hệ thống kinh doanh của DK Bike, bên cạnh xe đạp và xe máy điện.
+        - separator [ref=e156]
+        - heading "4. Xe đạp trợ lực DK Bike – Hướng đi mới của thương hiệu" [level=1] [ref=e157]
+        - paragraph [ref=e158]:
+          - text: Thay vì chỉ phát triển các mẫu xe đạp điện theo kiểu truyền thống, DK Bike đang hướng đến
+          - strong [ref=e159]: xe đạp trợ lực điện
+          - text: – sự kết hợp giữa xe đạp thông thường và hệ thống động cơ điện.
+        - paragraph [ref=e160]: Người dùng vẫn đạp xe như bình thường nhưng khi cần, hệ thống điện sẽ hỗ trợ lực đạp, giúp giảm sức khi di chuyển, đặc biệt ở những đoạn đường dài hoặc khi lên dốc.
+        - paragraph [ref=e161]:
+          - text: Đây là hướng phát triển phù hợp với xu hướng
+          - strong [ref=e162]: di chuyển xanh, tiết kiệm và vận động chủ động
+          - text: .
+        - paragraph [ref=e163]:
+          - text: Hiện DK Bike giới thiệu hai mẫu xe đạp trợ lực chính là
+          - strong [ref=e164]: EC5
+          - text: và
+          - strong [ref=e165]: ET1
+          - text: ", với định hướng sử dụng khác nhau."
+        - separator [ref=e166]
+        - heading "5. DK Bike EC5 – Xe đạp trợ lực dành cho đô thị" [level=2] [ref=e167]
+        - paragraph [ref=e168]:
+          - strong [ref=e169]: DK EC5
+          - text: được định hướng là mẫu xe đạp trợ lực dành cho nhu cầu di chuyển trong thành phố, đặc biệt phù hợp với nữ giới, học sinh và người đi làm.
+        - paragraph [ref=e170]: "Xe sử dụng:"
+        - list [ref=e171]:
+          - listitem [ref=e172]: Khung hợp kim nhôm
+          - listitem [ref=e173]: Động cơ bánh sau 36V–250W
+          - listitem [ref=e174]: Công suất tối đa 400W
+          - listitem [ref=e175]: Tốc độ tối đa 25 km/h
+          - listitem [ref=e176]: Pin Lithium-ion 36V–10.4Ah, 374Wh
+          - listitem [ref=e177]: Quãng đường công bố 35–40 km
+          - listitem [ref=e178]: Cảm biến trợ lực kép 12 cực từ
+          - listitem [ref=e179]: Màn hình LCD
+          - listitem [ref=e180]: Phanh đĩa trước và sau
+          - listitem [ref=e181]: Vành 26 inch, lốp 26 × 2.5
+        - paragraph [ref=e182]:
+          - text: Khối lượng xe bao gồm pin khoảng
+          - strong [ref=e183]: 22,65 kg
+          - text: .
+        - paragraph [ref=e184]:
+          - text: EC5 phù hợp với người cần một phương tiện nhỏ gọn để
+          - strong [ref=e185]: đi học, đi làm, đi chợ, dạo phố hoặc di chuyển hàng ngày trong đô thị
+          - text: .
+        - separator [ref=e186]
+        - heading "6. DK Bike ET1 – Xe đạp trợ lực thiên về thể thao" [level=2] [ref=e187]
+        - paragraph [ref=e188]:
+          - text: Nếu EC5 hướng đến sự nhẹ nhàng và tiện dụng trong thành phố thì
+          - strong [ref=e189]: DK ET1
+          - text: có thiết kế mạnh mẽ hơn và được định hướng cho người dùng muốn di chuyển đa địa hình.
+        - paragraph [ref=e190]: "ET1 sử dụng:"
+        - list [ref=e191]:
+          - listitem [ref=e192]: Khung hợp kim nhôm
+          - listitem [ref=e193]: Động cơ Ananda tích hợp bánh sau 36V–250W
+          - listitem [ref=e194]: Công suất tối đa 400W
+          - listitem [ref=e195]: Tốc độ tối đa 25 km/h
+          - listitem [ref=e196]: Pin Lithium-ion 36V–10.4Ah, 374Wh
+          - listitem [ref=e197]: Quãng đường công bố 35–40 km
+          - listitem [ref=e198]: Cảm biến trợ lực kép
+          - listitem [ref=e199]: Màn hình LCD
+          - listitem [ref=e200]: Phanh đĩa trước và sau
+          - listitem [ref=e201]: Giảm xóc trước
+          - listitem [ref=e202]: Shimano 7 cấp
+        - paragraph [ref=e203]:
+          - text: Khối lượng xe khoảng
+          - strong [ref=e204]: 24,2 kg bao gồm pin
+          - text: .
+        - paragraph [ref=e205]:
+          - text: Nhờ bộ truyền động nhiều cấp và giảm xóc trước, ET1 phù hợp hơn với người thích phong cách
+          - strong [ref=e206]: thể thao, năng động và muốn sử dụng xe trên nhiều dạng đường khác nhau
+          - text: .
+        - separator [ref=e207]
+        - heading "7. Điểm nổi bật của xe đạp DK Bike" [level=2] [ref=e208]
+        - heading "Thiết kế hướng đến nhu cầu sử dụng thực tế" [level=3] [ref=e209]
+        - paragraph [ref=e210]: Các mẫu xe đạp trợ lực hiện tại của DK Bike tập trung vào thiết kế hiện đại, dễ sử dụng và phục vụ những nhu cầu di chuyển hàng ngày.
+        - heading "Kết hợp giữa đạp xe và trợ lực điện" [level=3] [ref=e211]
+        - paragraph [ref=e212]: Người dùng không hoàn toàn phụ thuộc vào động cơ. Xe vẫn giữ trải nghiệm đạp xe nhưng có thêm sự hỗ trợ của động cơ điện khi cần.
+        - heading "Pin Lithium-ion" [level=3] [ref=e213]
+        - paragraph [ref=e214]: EC5 và ET1 đều sử dụng pin Lithium-ion 36V–10.4Ah với dung lượng 374Wh và quãng đường hãng công bố khoảng 35–40 km.
+        - heading "Trang bị an toàn" [level=3] [ref=e215]
+        - paragraph [ref=e216]:
+          - text: Cả hai mẫu đều sử dụng
+          - strong [ref=e217]: phanh đĩa trước và sau
+          - text: ", màn hình LCD và hệ thống cảm biến trợ lực kép."
+        - heading "Định hướng di chuyển xanh" [level=3] [ref=e218]
+        - paragraph [ref=e219]: DK Bike xác định một trong những tôn chỉ hoạt động là thúc đẩy các giải pháp di chuyển xanh, đa dạng và năng động, đồng thời hướng đến giảm tác động môi trường.
+        - separator [ref=e220]
+        - heading "8. DK Bike phù hợp với những ai?" [level=1] [ref=e221]
+        - paragraph [ref=e222]: "Xe đạp trợ lực DK Bike có thể phù hợp với nhiều nhóm người dùng:"
+        - paragraph [ref=e223]:
+          - strong [ref=e224]: "Học sinh, sinh viên:"
+          - text: Phù hợp cho nhu cầu đi học, đi lại hàng ngày và không cần sử dụng phương tiện có kích thước lớn.
+        - paragraph [ref=e225]:
+          - strong [ref=e226]: "Nhân viên văn phòng:"
+          - text: Có thể sử dụng để đi làm, đi lại trong khu vực đô thị và kết hợp vận động nhẹ.
+        - paragraph [ref=e227]:
+          - strong [ref=e228]: "Người yêu thích xe đạp:"
+          - text: Xe trợ lực cho phép duy trì hoạt động đạp xe nhưng giảm bớt sức ở những đoạn đường dài hoặc dốc.
+        - paragraph [ref=e229]:
+          - strong [ref=e230]: "Người quan tâm đến phương tiện xanh:"
+          - text: Xe sử dụng năng lượng điện, phù hợp với xu hướng hạn chế sử dụng nhiên liệu hóa thạch trong giao thông cá nhân.
+        - separator [ref=e231]
+        - heading "9. DK Bike – Thương hiệu Việt trong xu hướng giao thông xanh" [level=1] [ref=e232]
+        - paragraph [ref=e233]: Sau hơn một thập kỷ phát triển, DK Bike đã mở rộng từ hoạt động sản xuất và lắp ráp xe điện sang phát triển hệ thống sản phẩm đa dạng hơn.
+        - paragraph [ref=e234]:
+          - text: Trong đó, sự xuất hiện của
+          - strong [ref=e235]: DK EC5 và DK ET1
+          - text: "cho thấy thương hiệu đang tiếp cận một hướng đi mới: thay vì chỉ cạnh tranh trong nhóm xe điện truyền thống, DK Bike đưa thêm yếu tố"
+          - strong [ref=e236]: xe đạp, vận động và trợ lực điện
+          - text: vào sản phẩm.
+        - paragraph [ref=e237]:
+          - text: Đây cũng là hướng phù hợp với nhu cầu hiện đại khi người dùng ngày càng quan tâm đến
+          - strong [ref=e238]: sức khỏe, chi phí di chuyển, sự tiện lợi và môi trường
+          - text: .
+        - link "Xem thêm bài viết" [ref=e241] [cursor=pointer]:
+          - /url: javascript:;
+          - text: Xem thêm bài viết
+      - generic [ref=e248]:
+        - generic [ref=e250]:
+          - paragraph [ref=e251]: 10 + năm
+          - generic [ref=e252]: Lịch sử
+        - generic [ref=e254]:
+          - paragraph [ref=e255]: 63 tỉnh thành
+          - generic [ref=e256]: Thị trường
+        - generic [ref=e258]:
+          - paragraph [ref=e259]: 900 + toán quốc
+          - generic [ref=e260]: Đại lý
+    - generic [ref=e263]:
+      - heading "Các sản phẩm của Hãng DK Bike" [level=2] [ref=e265]
+      - strong [ref=e267]: Không tìm thấy kết quả
+    - region "CHÍNH SÁCH CỦA THƯƠNG HIỆU" [ref=e268]:
+      - generic [ref=e269]:
+        - heading "CHÍNH SÁCH CỦA THƯƠNG HIỆU" [level=2] [ref=e271]
+        - generic [ref=e272]:
+          - tablist "Chính sách của thương hiệu" [ref=e273]:
+            - tab "Chính sách bảo hành" [selected] [ref=e274] [cursor=pointer]
+            - tab "Chính sách bảo dưỡng" [ref=e275] [cursor=pointer]
+            - tab "Hướng dẫn sử dụng" [ref=e276] [cursor=pointer]
+          - tabpanel "Chính sách bảo hành" [ref=e278]:
+            - heading "Chính sách bảo hành" [level=3] [ref=e279]
+            - paragraph [ref=e281]: DKBike áp dụng chính sách bảo hành riêng cho xe điện và xe đạp trợ lực, với thời hạn được xác định theo từng linh kiện. Sản phẩm được bảo hành khi còn thời hạn và lỗi được xác định thuộc trách nhiệm nhà sản xuất. Những trường hợp tự ý tháo lắp, sửa chữa ngoài hệ thống, thay đổi thiết kế hoặc hư hỏng do tác động bên ngoài có thể không thuộc phạm vi bảo hành.
+  - generic [ref=e283]:
+    - heading "HỆ THỐNG CỬA HÀNG" [level=2] [ref=e285]
+    - generic [ref=e286]:
+      - iframe [ref=e290]:
+        
+      - generic [ref=e292]:
+        - article [ref=e293] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU" [ref=e294]:
+            - img "THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU" [ref=e295]
+          - generic [ref=e296]:
+            - heading "THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU" [level=3] [ref=e297]
+            - generic [ref=e298]:
+              - paragraph [ref=e299]:
+                - strong [ref=e300]: "Địa chỉ:"
+                - text: 345 Nguyễn An Ninh, Phường Tam Thắng, Thành phố Hồ Chí Minh(Gần Coopmart)
+              - paragraph [ref=e301]:
+                - strong [ref=e302]: "Điện thoại:"
+                - text: 0886.172.172
+              - paragraph [ref=e303]:
+                - strong [ref=e304]: "FB:"
+                - link "Thế giới xe đạp Vũng Tàu" [ref=e305]:
+                  - /url: https://www.facebook.com/hethongbanlexedapuytinnhatvungtau
+              - paragraph [ref=e306]
+            - link "Chỉ đường" [ref=e307]:
+              - /url: https://maps.app.goo.gl/RZagH1T316P3r4Ri9
+              - text: Chỉ đường
+        - article [ref=e309] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 323 NGUYỄN AN NINH CHI NHÁNH 07 - VŨNG TÀU" [ref=e310]:
+            - img "THẾ GIỚI XE ĐẠP 323 NGUYỄN AN NINH CHI NHÁNH 07 - VŨNG TÀU" [ref=e311]
+          - generic [ref=e312]:
+            - heading "THẾ GIỚI XE ĐẠP 323 NGUYỄN AN NINH CHI NHÁNH 07 - VŨNG TÀU" [level=3] [ref=e313]
+            - generic [ref=e314]:
+              - paragraph [ref=e315]:
+                - strong [ref=e316]: "Địa chỉ:"
+                - text: 323/7A, 323 Nguyễn An Ninh, Tam Thắng, Hồ Chí Minh
+              - paragraph [ref=e317]:
+                - strong [ref=e318]: "Điện thoại:"
+                - text: 0359.52.72.72
+              - paragraph [ref=e319]:
+                - strong [ref=e320]: "FB:"
+                - link "Trung tâm xe điện thông minh" [ref=e321]:
+                  - /url: https://www.facebook.com/xedienthongminh323
+            - link "Chỉ đường" [ref=e322]:
+              - /url: https://maps.app.goo.gl/Rqg7Pg3BfQJWzsib7
+              - text: Chỉ đường
+        - article [ref=e324] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 763A BÌNH GIÃ CHI NHÁNH 09 - VŨNG TÀU" [ref=e325]:
+            - img "THẾ GIỚI XE ĐẠP 763A BÌNH GIÃ CHI NHÁNH 09 - VŨNG TÀU" [ref=e326]
+          - generic [ref=e327]:
+            - heading "THẾ GIỚI XE ĐẠP 763A BÌNH GIÃ CHI NHÁNH 09 - VŨNG TÀU" [level=3] [ref=e328]
+            - generic [ref=e329]:
+              - paragraph [ref=e330]:
+                - strong [ref=e331]: "Địa chỉ:"
+                - text: 763 Bình Giã, Phường Rạch Dừa, Thành phố Hồ Chí Minh(Gần chợ Lưu Chí Hiếu)
+              - paragraph [ref=e332]:
+                - strong [ref=e333]: "Điện thoại:"
+                - text: 0797.172.172
+              - paragraph [ref=e334]:
+                - strong [ref=e335]: "FB:"
+                - link "Thế giới xe đạp Yadea" [ref=e336]:
+                  - /url: https://www.facebook.com/profile.php?id=100093542268533
+            - link "Chỉ đường" [ref=e337]:
+              - /url: https://maps.app.goo.gl/HwHwTDP3VJtoDcLr5
+              - text: Chỉ đường
+        - article [ref=e339] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 679 30/4 CHI NHÁNH 01 - VŨNG TÀU" [ref=e340]:
+            - img "THẾ GIỚI XE ĐẠP 679 30/4 CHI NHÁNH 01 - VŨNG TÀU" [ref=e341]
+          - generic [ref=e342]:
+            - heading "THẾ GIỚI XE ĐẠP 679 30/4 CHI NHÁNH 01 - VŨNG TÀU" [level=3] [ref=e343]
+            - generic [ref=e344]:
+              - paragraph [ref=e345]:
+                - strong [ref=e346]: "Địa chỉ:"
+                - text: 679 Đường 30/4, Phường Rạch Dừa, Thành phố Hồ Chí Minh(Gần nhà hàng tiệc cưới Hải Phương)
+              - paragraph [ref=e347]:
+                - strong [ref=e348]: "Điện thoại:"
+                - text: 0866.650.650
+              - paragraph [ref=e349]:
+                - strong [ref=e350]: "FB:"
+                - link "Thế giới xe đạp 679" [ref=e351]:
+                  - /url: https://www.facebook.com/Th%E1%BA%BF-gi%E1%BB%9Bi-xe-%C4%91%E1%BA%A1p-679-102705888542682
+            - link "Chỉ đường" [ref=e352]:
+              - /url: https://maps.app.goo.gl/mANCNhqQ5iL8d5pC8
+              - text: Chỉ đường
+        - article [ref=e354] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 577 CMT8 CHI NHÁNH 5 - BÀ RỊA" [ref=e355]:
+            - img "THẾ GIỚI XE ĐẠP 577 CMT8 CHI NHÁNH 5 - BÀ RỊA" [ref=e356]
+          - generic [ref=e357]:
+            - heading "THẾ GIỚI XE ĐẠP 577 CMT8 CHI NHÁNH 5 - BÀ RỊA" [level=3] [ref=e358]
+            - generic [ref=e359]:
+              - paragraph [ref=e360]:
+                - strong [ref=e361]: "Địa chỉ:"
+                - text: 557 Cách Mạng Tháng Tám, Phường Bà Rịa, Thành phố Hồ Chí Minh
+              - paragraph [ref=e362]: "Hotline/Zalo: 0877.272.272"
+              - paragraph [ref=e363]:
+                - strong [ref=e364]: "FB:"
+                - link "Xe điện Pega Bà Rịa" [ref=e365]:
+                  - /url: https://www.facebook.com/thegioixedapbaria
+            - link "Chỉ đường" [ref=e366]:
+              - /url: https://maps.app.goo.gl/afG5G5LoHUNGeYYQA
+              - text: Chỉ đường
+        - article [ref=e368] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP TÂN HÒA PHÚ MỸ CHI NHÁNH 06 - BÀ RỊA" [ref=e369]:
+            - img "THẾ GIỚI XE ĐẠP TÂN HÒA PHÚ MỸ CHI NHÁNH 06 - BÀ RỊA" [ref=e370]
+          - generic [ref=e371]:
+            - heading "THẾ GIỚI XE ĐẠP TÂN HÒA PHÚ MỸ CHI NHÁNH 06 - BÀ RỊA" [level=3] [ref=e372]
+            - generic [ref=e373]:
+              - paragraph [ref=e374]:
+                - strong [ref=e375]: "Địa chỉ:"
+                - text: 252 Quốc lộ 51 ( Ngã 3 Hội Bài) Tân Hòa, Phường Tân Hòa, Thành phố Hồ Chí Minh
+              - paragraph [ref=e376]:
+                - strong [ref=e377]: "Điện thoại:"
+                - text: 0868.272.272
+              - paragraph [ref=e378]:
+                - strong [ref=e379]: "FB:"
+                - link "Thế giới xe đạp Phú Mỹ" [ref=e380]:
+                  - /url: https://www.facebook.com/thegioixedapphumy
+            - link "Chỉ đường" [ref=e381]:
+              - /url: https://maps.app.goo.gl/XSDAfwsyt8yX6VwF8
+              - text: Chỉ đường
+        - article [ref=e383] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP MỸ XUÂN 1 CHI NHÁNH 03 - BÀ RỊA" [ref=e384]:
+            - img "THẾ GIỚI XE ĐẠP MỸ XUÂN 1 CHI NHÁNH 03 - BÀ RỊA" [ref=e385]
+          - generic [ref=e386]:
+            - heading "THẾ GIỚI XE ĐẠP MỸ XUÂN 1 CHI NHÁNH 03 - BÀ RỊA" [level=3] [ref=e387]
+            - generic [ref=e388]:
+              - paragraph [ref=e389]:
+                - strong [ref=e390]: "Địa chỉ:"
+                - text: Quốc lộ 51, KP Thị Vải, Phường Phú Mỹ, Thành phố Hồ Chí Minh(Gần ngã ba Mỹ Xuân)
+              - paragraph [ref=e391]:
+                - strong [ref=e392]: "Điện thoại:"
+                - text: 0836.72.79.79
+              - paragraph [ref=e393]:
+                - strong [ref=e394]: "FB:"
+                - link "Thế giới xe đạp đúng giá - đúng chất lượng" [ref=e395]:
+                  - /url: https://www.facebook.com/Th%E1%BA%BF-Gi%E1%BB%9Bi-Xe-%C4%90%E1%BA%A1p-%C4%91%C3%BAng-gi%C3%A1-%C4%91%C3%BAng-ch%E1%BA%A5t-l%C6%B0%E1%BB%A3ng-344114132875576
+            - link "Chỉ đường" [ref=e396]:
+              - /url: https://maps.app.goo.gl/M9L7pGwwX1j6MvUy7
+              - text: Chỉ đường
+        - article [ref=e398] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP VIỆT KIỀU MỸ XUÂN 2 CHI NHÁNH 08 - BÀ RỊA" [ref=e399]:
+            - img "THẾ GIỚI XE ĐẠP VIỆT KIỀU MỸ XUÂN 2 CHI NHÁNH 08 - BÀ RỊA" [ref=e400]
+          - generic [ref=e401]:
+            - heading "THẾ GIỚI XE ĐẠP VIỆT KIỀU MỸ XUÂN 2 CHI NHÁNH 08 - BÀ RỊA" [level=3] [ref=e402]
+            - generic [ref=e403]:
+              - paragraph [ref=e404]:
+                - strong [ref=e405]: "Địa chỉ:"
+                - text: QL51( đầu chợ Việt Kiều) khu phố Mỹ Thạnh, Phường Phú Mỹ, Thành phố Hồ Chí Minh
+              - paragraph [ref=e406]:
+                - strong [ref=e407]: "Hotline:"
+                - text: 0856.772.772
+              - paragraph [ref=e408]:
+                - strong [ref=e409]: "FB:"
+                - link "Thế giới xe đạp Việt Kiều" [ref=e410]:
+                  - /url: https://www.facebook.com/profile.php?id=100082745725802
+            - link "Chỉ đường" [ref=e411]:
+              - /url: https://maps.app.goo.gl/H5s9NK3PHh3huhP8A
+              - text: Chỉ đường
+        - article [ref=e413] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 198 HÙNG VƯƠNG CHI NHÁNH 04 - NHƠN TRẠCH ĐỒNG NAI" [ref=e414]:
+            - img "THẾ GIỚI XE ĐẠP 198 HÙNG VƯƠNG CHI NHÁNH 04 - NHƠN TRẠCH ĐỒNG NAI" [ref=e415]
+          - generic [ref=e416]:
+            - heading "THẾ GIỚI XE ĐẠP 198 HÙNG VƯƠNG CHI NHÁNH 04 - NHƠN TRẠCH ĐỒNG NAI" [level=3] [ref=e417]
+            - generic [ref=e418]:
+              - paragraph [ref=e419]:
+                - strong [ref=e420]: "Địa chỉ:"
+                - text: 198 Đ. Hùng Vương, Phường Nhơn Trạch, TP Đồng Nai
+              - paragraph [ref=e421]:
+                - strong [ref=e422]: "Điện thoại:"
+                - text: 0855.387.345
+              - paragraph [ref=e423]:
+                - strong [ref=e424]: "FB:"
+                - link "Thế giới xe đạp Nhơn Trạch" [ref=e425]:
+                  - /url: https://www.facebook.com/Th%E1%BA%BF-gi%E1%BB%9Bi-xe-%C4%91%E1%BA%A1p-Nh%C6%A1n-Tr%E1%BA%A1ch-103768937916334
+            - link "Chỉ đường" [ref=e426]:
+              - /url: https://maps.app.goo.gl/nTJy6foVA54ykiZB7
+              - text: Chỉ đường
+        - article [ref=e428] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 19 ĐỒNG KHỞI CHI NHÁNH 10 - ĐỒNG NAI" [ref=e429]:
+            - img "THẾ GIỚI XE ĐẠP 19 ĐỒNG KHỞI CHI NHÁNH 10 - ĐỒNG NAI" [ref=e430]
+          - generic [ref=e431]:
+            - heading "THẾ GIỚI XE ĐẠP 19 ĐỒNG KHỞI CHI NHÁNH 10 - ĐỒNG NAI" [level=3] [ref=e432]
+            - generic [ref=e433]:
+              - paragraph [ref=e434]:
+                - strong [ref=e435]: "Địa chỉ:"
+                - text: 19 Đ. Đồng Khởi, Phường Tam Hiệp, TP Đồng Nai
+              - paragraph [ref=e436]:
+                - strong [ref=e437]: "Điện thoại:"
+                - text: 0385.21.21.68
+              - paragraph [ref=e438]:
+                - strong [ref=e439]: "FB:"
+                - link "Thế Giới Xe Đạp 19 Đồng Khởi" [ref=e440]:
+                  - /url: https://www.facebook.com/profile.php?id=61562540870293
+            - link "Chỉ đường" [ref=e441]:
+              - /url: https://maps.app.goo.gl/cbjJXzqqnsvBbLha6
+              - text: Chỉ đường
+        - article [ref=e443] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 32 ĐỒNG KHỞI CHI NHÁNH 11 - ĐỒNG NAI" [ref=e444]:
+            - img "THẾ GIỚI XE ĐẠP 32 ĐỒNG KHỞI CHI NHÁNH 11 - ĐỒNG NAI" [ref=e445]
+          - generic [ref=e446]:
+            - heading "THẾ GIỚI XE ĐẠP 32 ĐỒNG KHỞI CHI NHÁNH 11 - ĐỒNG NAI" [level=3] [ref=e447]
+            - generic [ref=e448]:
+              - paragraph [ref=e449]:
+                - strong [ref=e450]: "Địa chỉ:"
+                - text: 32-34 Đồng Khởi, phường Tam Hiệp, TP Đồng Nai (đi qua bệnh viện Đồng Nai về hướng Amata khoảng 200m)
+              - paragraph [ref=e451]:
+                - strong [ref=e452]: "Điện thoại:"
+                - text: 0372.59.59.89
+              - paragraph [ref=e453]:
+                - strong [ref=e454]: "FB:"
+                - link "Thế giới xe đạp Đồng Khởi -Biên Hoà" [ref=e455]:
+                  - /url: https://www.facebook.com/profile.php?id=61575874576218
+            - link "Chỉ đường" [ref=e456]:
+              - /url: https://maps.app.goo.gl/bV9nDyQCXvxkSkXe9
+              - text: Chỉ đường
+        - article [ref=e458] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 262 30/4 CHI NHÁNH 13 - THỦ DẦU MỘT BÌNH DƯƠNG" [ref=e459]:
+            - img "THẾ GIỚI XE ĐẠP 262 30/4 CHI NHÁNH 13 - THỦ DẦU MỘT BÌNH DƯƠNG" [ref=e460]
+          - generic [ref=e461]:
+            - heading "THẾ GIỚI XE ĐẠP 262 30/4 CHI NHÁNH 13 - THỦ DẦU MỘT BÌNH DƯƠNG" [level=3] [ref=e462]
+            - generic [ref=e463]:
+              - paragraph [ref=e464]:
+                - strong [ref=e465]: "Địa chỉ:"
+                - text: 262, Đ.30/4, P. Chánh Nghĩa, Phường Thủ Dầu Một, Thành phố Hồ Chí Minh
+              - paragraph [ref=e466]:
+                - strong [ref=e467]: "Điện thoại:"
+                - text: 0862.725.472
+              - paragraph [ref=e468]:
+                - strong [ref=e469]: "FB:"
+                - link "Thế giới xe đạp Thủ Một Dầu Bình Dương" [ref=e470]:
+                  - /url: https://www.facebook.com/profile.php?id=61576103733740
+            - link "Chỉ đường" [ref=e471]:
+              - /url: https://maps.app.goo.gl/jdqQjYYni1XyVh2VA
+              - text: Chỉ đường
+        - article [ref=e473] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 24 NGUYỄN AN NINH CHI NHÁNH 14 - DĨ AN BÌNH DƯƠNG" [ref=e474]:
+            - img "THẾ GIỚI XE ĐẠP 24 NGUYỄN AN NINH CHI NHÁNH 14 - DĨ AN BÌNH DƯƠNG" [ref=e475]
+          - generic [ref=e476]:
+            - heading "THẾ GIỚI XE ĐẠP 24 NGUYỄN AN NINH CHI NHÁNH 14 - DĨ AN BÌNH DƯƠNG" [level=3] [ref=e477]
+            - generic [ref=e478]:
+              - paragraph [ref=e479]:
+                - strong [ref=e480]: "Địa chỉ:"
+                - text: 24 Nguyễn An Ninh, Phường Dĩ An, Thành phố Hồ Chí Minh
+              - paragraph [ref=e481]:
+                - strong [ref=e482]: "Điện thoại:"
+                - text: 0862.726.472
+              - paragraph [ref=e483]:
+                - strong [ref=e484]: "Facebook:"
+                - strong [ref=e485]
+                - link "Thế Giới Xe Đạp Dĩ An - Bình Dương" [ref=e486]:
+                  - /url: https://www.facebook.com/profile.php?id=61576318119691
+            - link "Chỉ đường" [ref=e487]:
+              - /url: https://maps.app.goo.gl/8HGnHtxL6vfWoCx49
+              - text: Chỉ đường
+    - generic [ref=e489]:
+      - article [ref=e491]:
+        - img "Bảo Hành Chính Hãng (1) (1) Khung hợp kim bền bỉ" [ref=e493]
+        - heading "Bảo Hành Chính Hãng (1) (1) Khung hợp kim bền bỉ" [level=3] [ref=e494]
+        - paragraph [ref=e495]: Khung hợp kim bền bỉ Khung hợp kim bền bỉ Khung hợp kim bền bỉ
+      - article [ref=e497]:
+        - img "Bảo Hành Chính Hãng (1)" [ref=e499]
+        - heading "Bảo Hành Chính Hãng (1)" [level=3] [ref=e500]
+        - paragraph [ref=e501]: Khung hợp kim bền bỉ
+      - article [ref=e503]:
+        - img "Bảo Hành Chính Hãng" [ref=e505]
+        - heading "Bảo Hành Chính Hãng" [level=3] [ref=e506]
+        - paragraph [ref=e507]: Khung hợp kim bền bỉ
+      - article [ref=e509]:
+        - img "Đổi Trả Hàng 3 Ngày" [ref=e511]
+        - heading "Đổi Trả Hàng 3 Ngày" [level=3] [ref=e512]
+      - article [ref=e514]:
+        - img "Vận chuyển miễn phí < 50km" [ref=e516]
+        - heading "Vận chuyển miễn phí < 50km" [level=3] [ref=e517]
+  - generic [ref=e518]:
+    - generic [ref=e520]:
+      - generic [ref=e521]:
+        - generic [ref=e523]:
+          - link "Thế giới xe đạp Việt" [ref=e524] [cursor=pointer]:
+            - /url: /
+            - img "Thế giới xe đạp Việt" [ref=e525]
+          - heading "Thế giới xe đạp Việt" [level=2] [ref=e526]
+          - generic [ref=e527]:
+            - paragraph [ref=e528]:
+              - strong [ref=e529]: CÔNG TY TNHH TM & DV GIẢI TRÍ TÂN TRƯỜNG GIANG
+            - paragraph [ref=e530]:
+              - strong [ref=e531]: "Địa chỉ:"
+              - text: 345 Nguyễn An Ninh, Phường Tam Thắng, Thành phố Hồ Chí Minh, Việt Nam
+            - paragraph [ref=e532]:
+              - strong [ref=e533]: "GPKD số:"
+              - text: "3502329410"
+            - paragraph [ref=e534]:
+              - strong [ref=e535]: "Ngày cấp:"
+              - text: 08/03/2017
+            - paragraph [ref=e536]:
+              - strong [ref=e537]: "Nơi cấp:"
+              - text: Thuế cơ sở 24 TP Hồ Chí Minh
+          - paragraph [ref=e538]: Theo dõi chúng tôi tại
+          - generic [ref=e539]:
+            - link "Thế giới xe đạp Việt" [ref=e540] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e541]
+            - link "Thế giới xe đạp Việt" [ref=e542] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e543]
+            - link "Thế giới xe đạp Việt" [ref=e544] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e545]
+            - link "Thế giới xe đạp Việt" [ref=e546] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e547]
+            - link "Thế giới xe đạp Việt" [ref=e548] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e549]
+        - link "Thế giới xe đạp Việt" [ref=e551] [cursor=pointer]:
+          - /url: javascript:;
+          - img "Thế giới xe đạp Việt" [ref=e552]
+      - generic [ref=e553]:
+        - generic [ref=e554]:
+          - heading "Xe Đạp Trẻ Em" [level=3] [ref=e555]:
+            - link "Xe Đạp Trẻ Em" [ref=e556] [cursor=pointer]:
+              - /url: xe-dap-tre-em
+          - list [ref=e557]:
+            - listitem [ref=e558]:
+              - link "Size 12 (2-4 tuổi)" [ref=e559] [cursor=pointer]:
+                - /url: size-12-2-4-tuoi
+            - listitem [ref=e560]:
+              - link "Size 14 (3-5 tuổi)" [ref=e561] [cursor=pointer]:
+                - /url: size-14-3-5-tuoi
+            - listitem [ref=e562]:
+              - link "Size 16 (4-7 tuổi)" [ref=e563] [cursor=pointer]:
+                - /url: size-16-4-7-tuoi
+            - listitem [ref=e564]:
+              - link "Size 18 (6-8 tuổi)" [ref=e565] [cursor=pointer]:
+                - /url: size-18-6-8-tuoi
+            - listitem [ref=e566]:
+              - link "Size 20 (7-9 tuổi)" [ref=e567] [cursor=pointer]:
+                - /url: size-20-7-9-tuoi
+            - listitem [ref=e568]:
+              - link "Size 22 (8-10 tuổi)" [ref=e569] [cursor=pointer]:
+                - /url: size-22-8-10-tuoi
+        - generic [ref=e570]:
+          - heading "Xe Đạp Địa Hình" [level=3] [ref=e571]:
+            - link "Xe Đạp Địa Hình" [ref=e572] [cursor=pointer]:
+              - /url: xe-dap-dia-hinh
+          - list [ref=e573]:
+            - listitem [ref=e574]:
+              - link "Bánh 29" [ref=e575] [cursor=pointer]:
+                - /url: banh-29-inches
+            - listitem [ref=e576]:
+              - link "Bánh 27.5" [ref=e577] [cursor=pointer]:
+                - /url: banh-275
+            - listitem [ref=e578]:
+              - link "Bánh 24" [ref=e579] [cursor=pointer]:
+                - /url: banh-24
+            - listitem [ref=e580]:
+              - link "Bánh 26" [ref=e581] [cursor=pointer]:
+                - /url: banh-26
+        - generic [ref=e582]:
+          - heading "Xe Đạp Đua" [level=3] [ref=e583]:
+            - link "Xe Đạp Đua" [ref=e584] [cursor=pointer]:
+              - /url: xe-dap-dua
+          - list
+        - generic [ref=e585]:
+          - heading "Xe Đạp Đường Phố" [level=3] [ref=e586]:
+            - link "Xe Đạp Đường Phố" [ref=e587] [cursor=pointer]:
+              - /url: xe-dap-duong-pho
+          - list [ref=e588]:
+            - listitem [ref=e589]:
+              - link "Bánh 27 Inches" [ref=e590] [cursor=pointer]:
+                - /url: banh-27-inches
+            - listitem [ref=e591]:
+              - link "Bánh 26 inches" [ref=e592] [cursor=pointer]:
+                - /url: banh-26-inches
+            - listitem [ref=e593]:
+              - link "Bánh 700C" [ref=e594] [cursor=pointer]:
+                - /url: banh-700c
+        - generic [ref=e595]:
+          - heading "Xe Đạp Nữ" [level=3] [ref=e596]:
+            - link "Xe Đạp Nữ" [ref=e597] [cursor=pointer]:
+              - /url: xe-dap-nu
+          - list [ref=e598]:
+            - listitem [ref=e599]:
+              - link "Bánh 26 Inch" [ref=e600] [cursor=pointer]:
+                - /url: banh-26-inch
+            - listitem [ref=e601]:
+              - link "Bánh 24 Inch" [ref=e602] [cursor=pointer]:
+                - /url: banh-24-inches
+        - generic [ref=e603]:
+          - heading "Xe Đạp Điện" [level=3] [ref=e604]:
+            - link "Xe Đạp Điện" [ref=e605] [cursor=pointer]:
+              - /url: xe-dap-dien
+          - list
+        - generic [ref=e606]:
+          - heading "Xe Điện" [level=3] [ref=e607]:
+            - link "Xe Điện" [ref=e608] [cursor=pointer]:
+              - /url: xe-dien
+          - list [ref=e609]:
+            - listitem [ref=e610]:
+              - link "Xe điện Yadea" [ref=e611] [cursor=pointer]:
+                - /url: xe-dien-yadea
+        - generic [ref=e612]:
+          - heading "XE ĐIỆN SCOOTER" [level=3] [ref=e613]:
+            - link "XE ĐIỆN SCOOTER" [ref=e614] [cursor=pointer]:
+              - /url: xe-dien-scooter
+          - list
+        - generic [ref=e615]:
+          - heading "Xe đạp trợ lực" [level=3] [ref=e616]:
+            - link "Xe đạp trợ lực" [ref=e617] [cursor=pointer]:
+              - /url: xe-dap-tro-luc
+          - list [ref=e618]:
+            - listitem [ref=e619]:
+              - link "Bánh 27.5 inches" [ref=e620] [cursor=pointer]:
+                - /url: banh-275-inches
+        - generic [ref=e621]:
+          - heading "Xe đạp gấp" [level=3] [ref=e622]:
+            - link "Xe đạp gấp" [ref=e623] [cursor=pointer]:
+              - /url: xe-dap-gap
+          - list [ref=e624]:
+            - listitem [ref=e625]:
+              - link "Bánh 16 Inches" [ref=e626] [cursor=pointer]:
+                - /url: banh-16-inches
+            - listitem [ref=e627]:
+              - link "Bánh 20 Inches" [ref=e628] [cursor=pointer]:
+                - /url: size-banh-20-inches
+        - generic [ref=e629]:
+          - heading "Phụ kiện" [level=3] [ref=e630]:
+            - link "Phụ kiện" [ref=e631] [cursor=pointer]:
+              - /url: phu-kien
+          - list [ref=e632]:
+            - listitem [ref=e633]:
+              - link "Đèn xe đạp" [ref=e634] [cursor=pointer]:
+                - /url: den-xe-dap
+            - listitem [ref=e635]:
+              - link "Đồ bảo hộ" [ref=e636] [cursor=pointer]:
+                - /url: do-bao-ho
+            - listitem [ref=e637]:
+              - link "Vỏ bọc tay nắm xe đạp" [ref=e638] [cursor=pointer]:
+                - /url: vo-boc-tay-nam-xe-dap
+            - listitem [ref=e639]:
+              - link "Mũ bảo hiểm" [ref=e640] [cursor=pointer]:
+                - /url: mu-bao-hiem
+    - generic [ref=e644]: Copyright ©2026 Thế giới xe đạp Việt. Thiết kế web MIMA
+  - generic [ref=e645]:
+    - 'link "Call me: 0868 55 88 11" [ref=e646] [cursor=pointer]':
+      - /url: tel:0868558811
+      - img [ref=e650]
+      - generic [ref=e653]: "Call me: 0868 55 88 11"
+    - 'link "Zalo: 0868 55 88 11" [ref=e654] [cursor=pointer]':
+      - /url: https://zalo.me/0868558811
+      - img [ref=e658]
+      - generic [ref=e660]: "Zalo: 0868 55 88 11"
+```
