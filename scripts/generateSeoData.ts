@@ -21,8 +21,7 @@ const FETCH_CONCURRENCY = 10;
 const MAX_DETAILS_PER_HUB = 1;
 
 /** Cap an toàn cho website có rất nhiều danh mục */
-const MAX_CATEGORIES = 20;
-
+const MAX_CATEGORIES = 10;
 /** Số trang hub KHÔNG trang con (chính sách, điều khoản...) được đo tốc độ đại diện */
 const MAX_CWV_LEAF_HUBS = 1;
 

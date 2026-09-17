@@ -8,7 +8,6 @@ export class FigmaService {
     constructor() {
         this.token = process.env.UI_TEST_FIGMA_TOKEN || '';
         // Khong log gi o day: tool chay tren nhieu website, phan lon khong co Figma.
-        // Cac method ben duoi da throw kem thong bao ro rang khi that su can token.
     }
 
     /**
