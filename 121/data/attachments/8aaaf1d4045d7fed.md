@@ -1,0 +1,504 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Tin tức (/tin-tuc)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Test timeout of 180000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e5]:
+    - link "Tổng kho ghế massage chính hãng" [ref=e7] [cursor=pointer]:
+      - /url: https://code6.mimadigi.vn/2026/september/nguyenchiquyet_113826w/
+      - img "Tổng kho ghế massage chính hãng" [ref=e8]
+    - generic [ref=e10]:
+      - textbox "Bạn đang" [ref=e11]:
+        - /placeholder: "Bạn đang "
+      - button "Tìm kiếm" [ref=e12] [cursor=pointer]:
+        - img "Tìm kiếm" [ref=e13]
+    - generic [ref=e16]:
+      - img "Hotline" [ref=e17]
+      - generic [ref=e18]:
+        - generic [ref=e19]: Hotline
+        - link "0984235739" [ref=e20] [cursor=pointer]:
+          - /url: tel:0984235739
+  - generic [ref=e25]:
+    - link "Tổng kho ghế massage chính hãng Danh mục sản phẩm" [ref=e27] [cursor=pointer]:
+      - /url: javascript:;
+      - img "Tổng kho ghế massage chính hãng" [ref=e28]
+      - generic [ref=e29]: Danh mục sản phẩm
+    - list [ref=e30]:
+      - listitem [ref=e31]:
+        - link "Trang chủ" [ref=e32] [cursor=pointer]:
+          - /url: ""
+      - listitem [ref=e33]:
+        - link "Giới thiệu" [ref=e34] [cursor=pointer]:
+          - /url: gioi-thieu
+      - listitem [ref=e35]:
+        - link "Bảo hành & sửa chữa" [ref=e36] [cursor=pointer]:
+          - /url: bao-hanh-sua-chua
+      - listitem [ref=e37]:
+        - link "Tin tức" [ref=e38] [cursor=pointer]:
+          - /url: tin-tuc
+      - listitem [ref=e39]:
+        - link "Liên hệ" [ref=e40] [cursor=pointer]:
+          - /url: lien-he
+  - list [ref=e43]:
+    - listitem [ref=e44]:
+      - link "Trang chủ" [ref=e45] [cursor=pointer]:
+        - /url: https://code6.mimadigi.vn/2026/september/nguyenchiquyet_113826w/
+        - generic [ref=e46]: Trang chủ
+    - listitem [ref=e47]:
+      - link "Tin tức" [ref=e48] [cursor=pointer]:
+        - /url: https://code6.mimadigi.vn/2026/september/nguyenchiquyet_113826w/tin-tuc
+  - generic [ref=e52]:
+    - heading "Tất cả Tin tức" [level=2] [ref=e54]
+    - generic [ref=e56]:
+      - generic [ref=e58]:
+        - paragraph [ref=e59]:
+          - link "5 lợi ích của ghế massage đối với sức khỏe" [ref=e60] [cursor=pointer]:
+            - /url: 5-loi-ich-cua-ghe-massage-doi-voi-suc-khoe
+            - img "5 lợi ích của ghế massage đối với sức khỏe" [ref=e61]
+        - generic [ref=e62]:
+          - heading "5 lợi ích của ghế massage đối với sức khỏe" [level=3] [ref=e63]:
+            - link "5 lợi ích của ghế massage đối với sức khỏe" [ref=e64] [cursor=pointer]:
+              - /url: 5-loi-ich-cua-ghe-massage-doi-voi-suc-khoe
+          - generic [ref=e65]: Khám phá những lợi ích nổi bật của ghế massage trong việc thư giãn cơ thể và chăm sóc sức khỏe mỗi ngày.
+          - link "Xem thêm Tổng kho ghế massage chính hãng" [ref=e66] [cursor=pointer]:
+            - /url: 5-loi-ich-cua-ghe-massage-doi-voi-suc-khoe
+            - text: Xem thêm
+            - img "Tổng kho ghế massage chính hãng" [ref=e67]
+      - generic [ref=e69]:
+        - paragraph [ref=e70]:
+          - link "Tập luyện tại nhà với máy chạy bộ" [ref=e71] [cursor=pointer]:
+            - /url: tap-luyen-tai-nha-voi-may-chay-bo
+            - img "Tập luyện tại nhà với máy chạy bộ" [ref=e72]
+        - generic [ref=e73]:
+          - heading "Tập luyện tại nhà với máy chạy bộ" [level=3] [ref=e74]:
+            - link "Tập luyện tại nhà với máy chạy bộ" [ref=e75] [cursor=pointer]:
+              - /url: tap-luyen-tai-nha-voi-may-chay-bo
+          - generic [ref=e76]: Gợi ý cách xây dựng thói quen vận động đơn giản, hiệu ...
+          - link "Xem thêm Tổng kho ghế massage chính hãng" [ref=e77] [cursor=pointer]:
+            - /url: tap-luyen-tai-nha-voi-may-chay-bo
+            - text: Xem thêm
+            - img "Tổng kho ghế massage chính hãng" [ref=e78]
+      - generic [ref=e80]:
+        - paragraph [ref=e81]:
+          - link "Cách chọn ghế massage phù hợp cho gia ..." [ref=e82] [cursor=pointer]:
+            - /url: cach-chon-ghe-massage-phu-hop-cho-gia
+            - img "Cách chọn ghế massage phù hợp cho gia ..." [ref=e83]
+        - generic [ref=e84]:
+          - heading "Cách chọn ghế massage phù hợp cho gia ..." [level=3] [ref=e85]:
+            - link "Cách chọn ghế massage phù hợp cho gia ..." [ref=e86] [cursor=pointer]:
+              - /url: cach-chon-ghe-massage-phu-hop-cho-gia
+          - generic [ref=e87]: Tìm hiểu những tiêu chí quan trọng về tính năng, kích ...
+          - link "Xem thêm Tổng kho ghế massage chính hãng" [ref=e88] [cursor=pointer]:
+            - /url: cach-chon-ghe-massage-phu-hop-cho-gia
+            - text: Xem thêm
+            - img "Tổng kho ghế massage chính hãng" [ref=e89]
+      - generic [ref=e91]:
+        - paragraph [ref=e92]:
+          - link "Massage mini – Giải pháp thư giãn tiện lợi" [ref=e93] [cursor=pointer]:
+            - /url: massage-mini-giai-phap-thu-gian-tien-loi
+            - img "Massage mini – Giải pháp thư giãn tiện lợi" [ref=e94]
+        - generic [ref=e95]:
+          - heading "Massage mini – Giải pháp thư giãn tiện lợi" [level=3] [ref=e96]:
+            - link "Massage mini – Giải pháp thư giãn tiện lợi" [ref=e97] [cursor=pointer]:
+              - /url: massage-mini-giai-phap-thu-gian-tien-loi
+          - generic [ref=e98]: Tìm hiểu cách sử dụng các thiết bị massage mini để thư ...
+          - link "Xem thêm Tổng kho ghế massage chính hãng" [ref=e99] [cursor=pointer]:
+            - /url: massage-mini-giai-phap-thu-gian-tien-loi
+            - text: Xem thêm
+            - img "Tổng kho ghế massage chính hãng" [ref=e100]
+      - generic [ref=e102]:
+        - paragraph [ref=e103]:
+          - link "Ghế massage Củ Chi giá rẻ" [ref=e104] [cursor=pointer]:
+            - /url: ghe-massage-cu-chi-gia-re
+            - img "Ghế massage Củ Chi giá rẻ" [ref=e105]
+        - generic [ref=e106]:
+          - heading "Ghế massage Củ Chi giá rẻ" [level=3] [ref=e107]:
+            - link "Ghế massage Củ Chi giá rẻ" [ref=e108] [cursor=pointer]:
+              - /url: ghe-massage-cu-chi-gia-re
+          - link "Xem thêm Tổng kho ghế massage chính hãng" [ref=e109] [cursor=pointer]:
+            - /url: ghe-massage-cu-chi-gia-re
+            - text: Xem thêm
+            - img "Tổng kho ghế massage chính hãng" [ref=e110]
+      - generic [ref=e112]:
+        - paragraph [ref=e113]:
+          - link "Hướng dẫn chọn ghế massage Củ Chi theo nhu cầu sử dụng" [ref=e114] [cursor=pointer]:
+            - /url: huong-dan-chon-ghe-massage-cu-chi-theo-nhu-cau-su-dung
+            - img "Hướng dẫn chọn ghế massage Củ Chi theo nhu cầu sử dụng" [ref=e115]
+        - generic [ref=e116]:
+          - heading "Hướng dẫn chọn ghế massage Củ Chi theo nhu cầu sử dụng" [level=3] [ref=e117]:
+            - link "Hướng dẫn chọn ghế massage Củ Chi theo nhu cầu sử dụng" [ref=e118] [cursor=pointer]:
+              - /url: huong-dan-chon-ghe-massage-cu-chi-theo-nhu-cau-su-dung
+          - link "Xem thêm Tổng kho ghế massage chính hãng" [ref=e119] [cursor=pointer]:
+            - /url: huong-dan-chon-ghe-massage-cu-chi-theo-nhu-cau-su-dung
+            - text: Xem thêm
+            - img "Tổng kho ghế massage chính hãng" [ref=e120]
+      - generic:
+        - generic:
+          - paragraph:
+            - link "So sánh ghế massage giá rẻ và ghế massage chính hãng":
+              - /url: so-sanh-ghe-massage-gia-re-va-ghe-massage-chinh-hang
+              - img "So sánh ghế massage giá rẻ và ghế massage chính hãng"
+          - generic:
+            - heading "So sánh ghế massage giá rẻ và ghế massage chính hãng" [level=3]:
+              - link "So sánh ghế massage giá rẻ và ghế massage chính hãng":
+                - /url: so-sanh-ghe-massage-gia-re-va-ghe-massage-chinh-hang
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: so-sanh-ghe-massage-gia-re-va-ghe-massage-chinh-hang
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Vì sao ghế massage Củ Chi ngày càng được ưa chuộng?":
+              - /url: vi-sao-ghe-massage-cu-chi-ngay-cang-duoc-ua-chuong
+              - img "Vì sao ghế massage Củ Chi ngày càng được ưa chuộng?"
+          - generic:
+            - heading "Vì sao ghế massage Củ Chi ngày càng được ưa chuộng?" [level=3]:
+              - link "Vì sao ghế massage Củ Chi ngày càng được ưa chuộng?":
+                - /url: vi-sao-ghe-massage-cu-chi-ngay-cang-duoc-ua-chuong
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: vi-sao-ghe-massage-cu-chi-ngay-cang-duoc-ua-chuong
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Ghế massage HCM và xu hướng chăm sóc sức khỏe tại nhà":
+              - /url: ghe-massage-hcm-va-xu-huong-cham-soc-suc-khoe-tai-nha
+              - img "Ghế massage HCM và xu hướng chăm sóc sức khỏe tại nhà"
+          - generic:
+            - heading "Ghế massage HCM và xu hướng chăm sóc sức khỏe tại nhà" [level=3]:
+              - link "Ghế massage HCM và xu hướng chăm sóc sức khỏe tại nhà":
+                - /url: ghe-massage-hcm-va-xu-huong-cham-soc-suc-khoe-tai-nha
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: ghe-massage-hcm-va-xu-huong-cham-soc-suc-khoe-tai-nha
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Mua ghế massage tại Củ Chi cho cả gia đình":
+              - /url: mua-ghe-massage-tai-cu-chi-cho-ca-gia-dinh
+              - img "Mua ghế massage tại Củ Chi cho cả gia đình"
+          - generic:
+            - heading "Mua ghế massage tại Củ Chi cho cả gia đình" [level=3]:
+              - link "Mua ghế massage tại Củ Chi cho cả gia đình":
+                - /url: mua-ghe-massage-tai-cu-chi-cho-ca-gia-dinh
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: mua-ghe-massage-tai-cu-chi-cho-ca-gia-dinh
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - 'link "Ghế massage giá rẻ Củ Chi: Nên chọn thế nào?"':
+              - /url: ghe-massage-gia-re-cu-chi-nen-chon-the-nao
+              - 'img "Ghế massage giá rẻ Củ Chi: Nên chọn thế nào?"'
+          - generic:
+            - 'heading "Ghế massage giá rẻ Củ Chi: Nên chọn thế nào?" [level=3]':
+              - 'link "Ghế massage giá rẻ Củ Chi: Nên chọn thế nào?"':
+                - /url: ghe-massage-gia-re-cu-chi-nen-chon-the-nao
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: ghe-massage-gia-re-cu-chi-nen-chon-the-nao
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "5 tiêu chí chọn ghế massage Củ Chi chất lượng":
+              - /url: 5-tieu-chi-chon-ghe-massage-cu-chi-chat-luong
+              - img "5 tiêu chí chọn ghế massage Củ Chi chất lượng"
+          - generic:
+            - heading "5 tiêu chí chọn ghế massage Củ Chi chất lượng" [level=3]:
+              - link "5 tiêu chí chọn ghế massage Củ Chi chất lượng":
+                - /url: 5-tieu-chi-chon-ghe-massage-cu-chi-chat-luong
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: 5-tieu-chi-chon-ghe-massage-cu-chi-chat-luong
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Ghế massage chính hãng Củ Chi khác gì hàng giá rẻ?":
+              - /url: ghe-massage-chinh-hang-cu-chi-khac-gi-hang-gia-re
+          - generic:
+            - heading "Ghế massage chính hãng Củ Chi khác gì hàng giá rẻ?" [level=3]:
+              - link "Ghế massage chính hãng Củ Chi khác gì hàng giá rẻ?":
+                - /url: ghe-massage-chinh-hang-cu-chi-khac-gi-hang-gia-re
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: ghe-massage-chinh-hang-cu-chi-khac-gi-hang-gia-re
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Những tính năng nên có khi mua ghế massage Củ Chi":
+              - /url: nhung-tinh-nang-nen-co-khi-mua-ghe-massage-cu-chi
+          - generic:
+            - heading "Những tính năng nên có khi mua ghế massage Củ Chi" [level=3]:
+              - link "Những tính năng nên có khi mua ghế massage Củ Chi":
+                - /url: nhung-tinh-nang-nen-co-khi-mua-ghe-massage-cu-chi
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: nhung-tinh-nang-nen-co-khi-mua-ghe-massage-cu-chi
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Ghế massage Củ Chi phù hợp cho người lớn tuổi":
+              - /url: ghe-massage-cu-chi-phu-hop-cho-nguoi-lon-tuoi
+          - generic:
+            - heading "Ghế massage Củ Chi phù hợp cho người lớn tuổi" [level=3]:
+              - link "Ghế massage Củ Chi phù hợp cho người lớn tuổi":
+                - /url: ghe-massage-cu-chi-phu-hop-cho-nguoi-lon-tuoi
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: ghe-massage-cu-chi-phu-hop-cho-nguoi-lon-tuoi
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - 'link "Ghế massage HCM: Kinh nghiệm chọn mua phù hợp"':
+              - /url: ghe-massage-hcm-kinh-nghiem-chon-mua-phu-hop
+          - generic:
+            - 'heading "Ghế massage HCM: Kinh nghiệm chọn mua phù hợp" [level=3]':
+              - 'link "Ghế massage HCM: Kinh nghiệm chọn mua phù hợp"':
+                - /url: ghe-massage-hcm-kinh-nghiem-chon-mua-phu-hop
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: ghe-massage-hcm-kinh-nghiem-chon-mua-phu-hop
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Mua ghế massage tại Củ Chi ở đâu uy tín?":
+              - /url: mua-ghe-massage-tai-cu-chi-o-dau-uy-tin
+          - generic:
+            - heading "Mua ghế massage tại Củ Chi ở đâu uy tín?" [level=3]:
+              - link "Mua ghế massage tại Củ Chi ở đâu uy tín?":
+                - /url: mua-ghe-massage-tai-cu-chi-o-dau-uy-tin
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: mua-ghe-massage-tai-cu-chi-o-dau-uy-tin
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Có nên mua ghế massage giá rẻ tại Củ Chi?":
+              - /url: co-nen-mua-ghe-massage-gia-re-tai-cu-chi
+          - generic:
+            - heading "Có nên mua ghế massage giá rẻ tại Củ Chi?" [level=3]:
+              - link "Có nên mua ghế massage giá rẻ tại Củ Chi?":
+                - /url: co-nen-mua-ghe-massage-gia-re-tai-cu-chi
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: co-nen-mua-ghe-massage-gia-re-tai-cu-chi
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Cách nhận biết ghế massage chính hãng Củ Chi":
+              - /url: cach-nhan-biet-ghe-massage-chinh-hang-cu-chi
+          - generic:
+            - heading "Cách nhận biết ghế massage chính hãng Củ Chi" [level=3]:
+              - link "Cách nhận biết ghế massage chính hãng Củ Chi":
+                - /url: cach-nhan-biet-ghe-massage-chinh-hang-cu-chi
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: cach-nhan-biet-ghe-massage-chinh-hang-cu-chi
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Ghế massage Củ Chi giá bao nhiêu? Cập nhật mới nhất":
+              - /url: ghe-massage-cu-chi-gia-bao-nhieu-cap-nhat-moi-nhat
+          - generic:
+            - heading "Ghế massage Củ Chi giá bao nhiêu? Cập nhật mới nhất" [level=3]:
+              - link "Ghế massage Củ Chi giá bao nhiêu? Cập nhật mới nhất":
+                - /url: ghe-massage-cu-chi-gia-bao-nhieu-cap-nhat-moi-nhat
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: ghe-massage-cu-chi-gia-bao-nhieu-cap-nhat-moi-nhat
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Top mẫu ghế massage Củ Chi được nhiều người lựa chọn":
+              - /url: top-mau-ghe-massage-cu-chi-duoc-nhieu-nguoi-lua-chon
+          - generic:
+            - heading "Top mẫu ghế massage Củ Chi được nhiều người lựa chọn" [level=3]:
+              - link "Top mẫu ghế massage Củ Chi được nhiều người lựa chọn":
+                - /url: top-mau-ghe-massage-cu-chi-duoc-nhieu-nguoi-lua-chon
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: top-mau-ghe-massage-cu-chi-duoc-nhieu-nguoi-lua-chon
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Mua ghế massage tại Củ Chi cần lưu ý điều gì?":
+              - /url: mua-ghe-massage-tai-cu-chi-can-luu-y-dieu-gi
+          - generic:
+            - heading "Mua ghế massage tại Củ Chi cần lưu ý điều gì?" [level=3]:
+              - link "Mua ghế massage tại Củ Chi cần lưu ý điều gì?":
+                - /url: mua-ghe-massage-tai-cu-chi-can-luu-y-dieu-gi
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: mua-ghe-massage-tai-cu-chi-can-luu-y-dieu-gi
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Ghế massage giá rẻ Củ Chi có nên mua không?":
+              - /url: ghe-massage-gia-re-cu-chi-co-nen-mua-khong
+          - generic:
+            - heading "Ghế massage giá rẻ Củ Chi có nên mua không?" [level=3]:
+              - link "Ghế massage giá rẻ Củ Chi có nên mua không?":
+                - /url: ghe-massage-gia-re-cu-chi-co-nen-mua-khong
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: ghe-massage-gia-re-cu-chi-co-nen-mua-khong
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Kinh nghiệm chọn ghế massage chính hãng Củ Chi":
+              - /url: kinh-nghiem-chon-ghe-massage-chinh-hang-cu-chi
+          - generic:
+            - heading "Kinh nghiệm chọn ghế massage chính hãng Củ Chi" [level=3]:
+              - link "Kinh nghiệm chọn ghế massage chính hãng Củ Chi":
+                - /url: kinh-nghiem-chon-ghe-massage-chinh-hang-cu-chi
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: kinh-nghiem-chon-ghe-massage-chinh-hang-cu-chi
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "Ghế massage Củ Chi loại nào tốt cho gia đình?":
+              - /url: ghe-massage-cu-chi-loai-nao-tot-cho-gia-dinh
+          - generic:
+            - heading "Ghế massage Củ Chi loại nào tốt cho gia đình?" [level=3]:
+              - link "Ghế massage Củ Chi loại nào tốt cho gia đình?":
+                - /url: ghe-massage-cu-chi-loai-nao-tot-cho-gia-dinh
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: ghe-massage-cu-chi-loai-nao-tot-cho-gia-dinh
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+      - generic:
+        - generic:
+          - paragraph:
+            - link "4 lưu ý khi chọn ghế massage cho gia đình":
+              - /url: 4-luu-y-khi-chon-ghe-massage-cho-gia-dinh
+          - generic:
+            - heading "4 lưu ý khi chọn ghế massage cho gia đình" [level=3]:
+              - link "4 lưu ý khi chọn ghế massage cho gia đình":
+                - /url: 4-luu-y-khi-chon-ghe-massage-cho-gia-dinh
+            - generic: Tìm hiểu những tiêu chí quan trọng về tính năng, kích ...
+            - link "Xem thêm Tổng kho ghế massage chính hãng":
+              - /url: 4-luu-y-khi-chon-ghe-massage-cho-gia-dinh
+              - text: Xem thêm
+              - img "Tổng kho ghế massage chính hãng"
+  - generic [ref=e121]:
+    - link "Tổng kho ghế massage chính hãng" [ref=e124] [cursor=pointer]:
+      - /url: https://code6.mimadigi.vn/2026/september/nguyenchiquyet_113826w/
+      - img "Tổng kho ghế massage chính hãng" [ref=e125]
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - paragraph [ref=e130]: Thông tin liên hệ
+        - generic [ref=e131]:
+          - paragraph [ref=e132]:
+            - strong [ref=e133]: "📍 Địa chỉ:"
+            - text: Số 34 , tỉnh lộ 15 , ấp 10 , xã Phú Hoà Đông , Tp HCM
+            - strong [ref=e134]: "📞 Hotline:"
+            - text: 0984 235 739
+            - strong [ref=e135]: "📧 Email:"
+            - text: quyetnguyen718@gmail.com
+          - paragraph [ref=e136]:
+            - strong [ref=e137]: "⏰ Thời gian làm việc:"
+            - text: 24/7
+          - paragraph [ref=e138]:
+            - text: "link :"
+            - link "link" [ref=e139] [cursor=pointer]:
+              - /url: https://code6.mimadigi.vn/2026/september/nguyenchiquyet_113826w/gioi-thieu
+      - generic [ref=e141]:
+        - paragraph [ref=e142]: Về chúng tôi
+        - list [ref=e143]:
+          - listitem [ref=e144]:
+            - link "Trang chủ" [ref=e145] [cursor=pointer]:
+              - /url: https://code6.mimadigi.vn/2026/september/nguyenchiquyet_113826w/
+          - listitem [ref=e146]:
+            - link "Giới thiệu" [ref=e147] [cursor=pointer]:
+              - /url: gioi-thieu
+          - listitem [ref=e148]:
+            - link "Sản phẩm" [ref=e149] [cursor=pointer]:
+              - /url: san-pham
+          - listitem [ref=e150]:
+            - link "Tin tức" [ref=e151] [cursor=pointer]:
+              - /url: tin-tuc
+          - listitem [ref=e152]:
+            - link "Liên hệ" [ref=e153] [cursor=pointer]:
+              - /url: lien-he
+      - generic [ref=e154]:
+        - paragraph [ref=e155]: Chính sách hỗ trợ
+        - list [ref=e156]:
+          - listitem [ref=e157]:
+            - link "Chính sách bảo hành" [ref=e158] [cursor=pointer]:
+              - /url: chinh-sach-bao-hanh
+          - listitem [ref=e159]:
+            - link "Chính sách đổi trả" [ref=e160] [cursor=pointer]:
+              - /url: chinh-sach-doi-tra
+          - listitem [ref=e161]:
+            - link "Chính sách giao hàng" [ref=e162] [cursor=pointer]:
+              - /url: chinh-sach-giao-hang
+          - listitem [ref=e163]:
+            - link "Thu cũ đổi mới ghế massage" [ref=e164] [cursor=pointer]:
+              - /url: thu-cu-doi-moi-ghe-massage
+          - listitem [ref=e165]:
+            - link "Chính sách bảo mật" [ref=e166] [cursor=pointer]:
+              - /url: chinh-sach-bao-mat
+      - generic [ref=e167]:
+        - paragraph [ref=e168]: Theo dõi chúng tôi tại
+        - generic [ref=e169]:
+          - link "Facebook" [ref=e170] [cursor=pointer]:
+            - /url: https://www.facebook.com/Quyetdeptraj
+            - img "Facebook" [ref=e171]
+          - link "Message" [ref=e172] [cursor=pointer]:
+            - /url: ""
+            - img "Message" [ref=e173]
+          - link "Instargam" [ref=e174] [cursor=pointer]:
+            - /url: ""
+            - img "Instargam" [ref=e175]
+          - link "Tiktok" [ref=e176] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@quyet18190?_r=1&_t=ZS-99kPME0aoTa
+            - img "Tiktok" [ref=e177]
+          - link "Youtobe" [ref=e178] [cursor=pointer]:
+            - /url: ""
+            - img "Youtobe" [ref=e179]
+    - generic [ref=e182]: Copyright @ 2026 Tổng ghế kho massage chính hãng . All Right Reserved. Thiết kế Web MIMA
+  - generic [ref=e183]:
+    - 'link "Call me: 0984235739" [ref=e184] [cursor=pointer]':
+      - /url: tel:0984235739
+      - img [ref=e188]
+      - generic [ref=e191]: "Call me: 0984235739"
+    - 'link "Zalo: 0984235739" [ref=e192] [cursor=pointer]':
+      - /url: https://zalo.me/0984235739
+      - img [ref=e196]
+      - generic [ref=e197]: "Zalo: 0984235739"
+```
