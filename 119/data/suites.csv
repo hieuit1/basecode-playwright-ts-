@@ -1,0 +1,110 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","22724","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-18","passed","2026-09-18","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","93086","Kiểm tra SEO Onpage: CHÍNH SÁCH GIAO HÀNG VÀ VẬN CHUYỂN (/chinh-sach-doi-tra)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","11452","Submit form should fail with sai định dạng email","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"","19990","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-18","passed","2026-09-18","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","62642","Kiểm tra SEO Onpage: Xe đạp địa hình Hector Hermes bánh 26 inches (/xe-dap-dia-hinh-hector-hermes-banh-26-inches)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","5932","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","48211","Add news successfully and verify on website","Desktop Chrome","2026-09-18","passed","2026-09-18","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 83/100 | Đạt: 19/23 tiêu chí | Ngưỡng: 96%
+
+TỐT","143942","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","20240","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-09-18","passed","2026-09-18","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","69171","Kiểm tra SEO Onpage: Top Mẫu Xe Đạp Được Ưa Chuộng Nhất Hiện Nay (/top-mau-xe-dap-duoc-ua-chuong-nhat-hien-nay)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","8431","Login successfully with valid credentials","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","180264","Kiểm tra SEO Onpage: Ưu đãi (/uu-dai)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","59847","Kiểm tra SEO Onpage: Bảo trì trọn đời (/bao-tri-tron-doi)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","64793","Kiểm tra SEO Onpage: Xe Đạp Đua (/xe-dap-dua)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","71493","Kiểm tra SEO Onpage: CHÍNH SÁCH BẢO MẬT THÔNG TIN (/chinh-sach-bao-mat-thong-tin-khach-hang)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","6259","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","62980","Kiểm tra SEO Onpage: Xe Đạp Trẻ Em (/xe-dap-tre-em)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","67679","Kiểm tra SEO Onpage: CHÍNH SÁCH BẢO HÀNH SẢN PHẨM (/chinh-sach-bao-hanh)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","180216","Kiểm tra SEO Onpage: Hãng ADO (/hang-ado)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","42526","Submit form successfully with valid data","Desktop Chrome","2026-09-18","failed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","77619","Kiểm tra SEO Onpage: CHÍNH SÁCH ĐỔI TRẢ VÀ HOÀN TIỀN (/chinh-sach-doi-tra-va-hoan-tien)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","180300","Kiểm tra SEO Onpage: Hướng dẫn (/huong-dan)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","90906","Kiểm tra SEO Onpage: Xe Đạp Đường Phố (/xe-dap-duong-pho)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","180276","Kiểm tra SEO Onpage: Đèn xe (/den-xe)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","83551","Kiểm tra SEO Onpage: Xe đạp gấp (/xe-dap-gap)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","180270","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","57690","Kiểm tra SEO Onpage: Xe Đạp Địa Hình (/xe-dap-dia-hinh)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","59575","Kiểm tra SEO Onpage: PHƯƠNG THỨC THANH TOÁN (/phuong-thuc-thanh-toan)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","180741","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","63470","Kiểm tra SEO Onpage: Xe đạp giá tốt (/xe-dap-gia-tot)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","190840","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-09-18","failed","2026-09-18","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","66263","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","180295","Kiểm tra SEO Onpage: Tags xe đua (/tags-xe-dua)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","63166","Kiểm tra SEO Onpage: THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU (/the-gioi-xe-dap-vung-tau)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","11460","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"","11305","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","85647","Kiểm tra SEO Onpage: Xe Điện (/xe-dien)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","19564","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-09-18","passed","2026-09-18","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","63062","Kiểm tra SEO Onpage: Khách hàng tới với THẾ GIỚI XE ĐẠP (/khach-hang-toi-voi-the-gioi-xe-dap)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","86348","Kiểm tra SEO Onpage: XE ĐIỆN SCOOTER (/xe-dien-scooter)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","5964","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","180300","Kiểm tra SEO Onpage: Hệ thống cửa hàng (/he-thong-cua-hang)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","68286","Kiểm tra SEO Onpage: Xe đạp trợ lực (/xe-dap-tro-luc)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","5789","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","11258","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","165237","Kiểm tra SEO Onpage: Đồ bảo hộ (/do-bao-ho-2)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","58103","Kiểm tra SEO Onpage: Góc khách hàng (/goc-khach-hang)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","5983","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","82581","Kiểm tra SEO Onpage: Xe Đạp Điện (/xe-dap-dien)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","62167","Kiểm tra SEO Onpage: Xe đạp cao cấp (/xe-dap-cao-cap)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","215103","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-09-18","failed","2026-09-18","Product Management Tests","admin/product.spec.ts","",""
+"","180429","Kiểm tra SEO Onpage: Thế Giới Xe Đạp | Cửa Hàng Xe Đạp Chính Hãng Toàn Quốc (/index.php)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","79696","Kiểm tra SEO Onpage: Xe Đạp Nữ (/xe-dap-nu)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","11295","Submit form should fail with bỏ trống email","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"","180290","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","11205","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"","58326","Add product successfully and verify on website","Desktop Chrome","2026-09-18","passed","2026-09-18","Product Management Tests","admin/product.spec.ts","",""
