@@ -1,0 +1,1314 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Hãng Thống Nhất (/hang-thong-nhat)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Test timeout of 180000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - link "Thế giới xe đạp Việt" [ref=e5] [cursor=pointer]:
+    - /url: /
+    - img "Thế giới xe đạp Việt" [ref=e6]
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Thế giới xe đạp Việt" [ref=e11] [cursor=pointer]:
+        - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/
+        - img "Thế giới xe đạp Việt" [ref=e12]
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - link "Thế giới xe đạp Việt" [ref=e17] [cursor=pointer]:
+            - /url: gioi-thieu
+            - text: Giới thiệu
+        - listitem [ref=e18]:
+          - link "Thế giới xe đạp Việt" [ref=e19] [cursor=pointer]:
+            - /url: khuyen-mai
+            - text: Khuyến mãi
+        - listitem [ref=e20]:
+          - link "Thế giới xe đạp Việt" [ref=e21] [cursor=pointer]:
+            - /url: uu-dai
+            - text: Ưu đãi
+        - listitem [ref=e22]:
+          - link "Thế giới xe đạp Việt" [ref=e23] [cursor=pointer]:
+            - /url: thuong-hieu
+            - text: Thương hiệu
+        - listitem [ref=e24]:
+          - link "Thế giới xe đạp Việt" [ref=e25] [cursor=pointer]:
+            - /url: huong-dan
+            - text: Hướng dẫn
+        - listitem [ref=e26]:
+          - link "Thế giới xe đạp Việt" [ref=e27] [cursor=pointer]:
+            - /url: tin-tuc
+            - text: Tin tức
+        - listitem [ref=e28]:
+          - link "Thế giới xe đạp Việt" [ref=e29] [cursor=pointer]:
+            - /url: lien-he
+            - text: Liên hệ
+      - generic [ref=e31]:
+        - img [ref=e32]
+        - generic [ref=e35]:
+          - generic [ref=e36]: Hệ thống
+          - generic "Map" [ref=e37]: showroom
+      - link "Giỏ hàng 0" [ref=e40] [cursor=pointer]:
+        - /url: gio-hang
+        - img [ref=e41]
+        - generic [ref=e46]:
+          - generic [ref=e47]: Giỏ hàng
+          - generic [ref=e48]: "0"
+    - generic [ref=e51]:
+      - link "THẾ GIỚI XE ĐẠP VŨNG TÀU" [ref=e53] [cursor=pointer]:
+        - /url: san-pham
+        - img [ref=e54]
+        - paragraph [ref=e55]: Danh mục sản phẩm
+      - generic [ref=e57]:
+        - link "Tags xe đua" [ref=e59] [cursor=pointer]:
+          - /url: tags-xe-dua
+        - link "Tags xe đoàn" [ref=e61] [cursor=pointer]:
+          - /url: tags-xe-doan
+        - link "Xe đạp cao cấp" [ref=e63] [cursor=pointer]:
+          - /url: xe-dap-cao-cap
+        - link "Xe đạp giá tốt" [ref=e65] [cursor=pointer]:
+          - /url: xe-dap-gia-tot
+      - generic [ref=e67]:
+        - textbox "Tìm kiếm sản" [ref=e68]:
+          - /placeholder: "Tìm kiếm sản "
+        - button [ref=e69] [cursor=pointer]
+  - list [ref=e73]:
+    - listitem [ref=e74]:
+      - link "Trang chủ" [ref=e75] [cursor=pointer]:
+        - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/
+        - img [ref=e76]
+        - generic [ref=e78]: Trang chủ
+    - listitem [ref=e79]:
+      - text: /
+      - link "Hãng Thống Nhất" [ref=e80] [cursor=pointer]:
+        - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/hang-thong-nhat
+  - generic [ref=e81]:
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - heading "Hãng Thống Nhất" [level=2] [ref=e87]
+        - paragraph [ref=e89]:
+          - strong [ref=e90]: Thống Nhất
+          - text: là thương hiệu xe đạp Việt Nam có lịch sử từ năm
+          - strong [ref=e91]: "1960"
+          - text: ", tiền thân là Nhà máy Xe đạp Thống Nhất tại Hà Nội. Trải qua hơn 6 thập kỷ phát triển, Thống Nhất đã trở thành một thương hiệu quen thuộc với nhiều thế hệ người Việt, gắn liền với hình ảnh những chiếc xe bền bỉ và gần gũi trong đời sống. Ngày nay, Thống Nhất tiếp tục đổi mới về"
+          - strong [ref=e92]: công nghệ, thiết kế và sản phẩm
+          - text: ", phát triển các dòng xe đạp phổ thông, xe đạp thể thao và xe đạp trẻ em, hướng đến nhu cầu di chuyển, rèn luyện sức khỏe và lối sống xanh."
+      - generic [ref=e94]:
+        - img "Logo Hãng Thống Nhất" [ref=e96]
+        - img "Hãng Thống Nhất" [ref=e98]
+    - generic [ref=e101]:
+      - button "Tổng quan" [ref=e102] [cursor=pointer]:
+        - generic [ref=e103]: Tổng quan
+      - button "Sản phẩm" [ref=e104] [cursor=pointer]:
+        - generic [ref=e105]: Sản phẩm
+      - button "Khách hàng" [ref=e106] [cursor=pointer]:
+        - generic [ref=e107]: Khách hàng
+      - button "Chính sách" [ref=e108] [cursor=pointer]:
+        - generic [ref=e109]: Chính sách
+    - generic [ref=e111]:
+      - generic [ref=e115]:
+        - heading "Thống Nhất – Hành trình hơn 6 thập kỷ của thương hiệu xe đạp Việt" [level=1] [ref=e116]
+        - paragraph [ref=e117]:
+          - strong [ref=e118]: Thống Nhất
+          - text: là một trong những thương hiệu xe đạp có lịch sử lâu đời tại Việt Nam. Từ những chiếc xe đầu tiên được sản xuất trong nước, Thống Nhất đã trải qua nhiều giai đoạn phát triển của ngành cơ khí và thị trường xe đạp Việt Nam, trở thành một cái tên quen thuộc với nhiều thế hệ người dùng.
+        - paragraph [ref=e119]:
+          - text: Ngày nay, thương hiệu không chỉ gìn giữ những giá trị truyền thống mà còn từng bước đổi mới về
+          - strong [ref=e120]: thiết kế, công nghệ và danh mục sản phẩm
+          - text: ", hướng đến thế hệ người dùng hiện đại."
+        - heading "Thương hiệu Thống Nhất được hình thành từ năm 1960" [level=2] [ref=e121]
+        - paragraph [ref=e122]:
+          - text: Tiền thân của
+          - strong [ref=e123]: Công ty Cổ phần Thống Nhất Hà Nội
+          - text: là Nhà máy Xe đạp Thống Nhất, được thành lập ngày
+          - strong [ref=e124]: 30/06/1960
+          - text: tại Hà Nội. Đây là một trong những dấu mốc quan trọng của ngành sản xuất xe đạp Việt Nam.
+        - paragraph [ref=e125]:
+          - text: Theo lịch sử thương hiệu, những chiếc xe mang tên
+          - strong [ref=e126]: Thống Nhất
+          - text: đã xuất hiện từ trước thời điểm nhà máy chính thức được thành lập. Đến năm 1960, Nhà máy Xe đạp Thống Nhất được thành lập, đánh dấu bước phát triển chính thức của thương hiệu xe đạp mang tên Việt Nam.
+        - paragraph [ref=e127]:
+          - text: Tên gọi
+          - strong [ref=e128]: “Thống Nhất”
+          - text: cũng mang ý nghĩa đặc biệt trong bối cảnh lịch sử lúc bấy giờ, thể hiện mong muốn về một đất nước hòa bình và thống nhất.
+        - heading "Xe đạp Thống Nhất – một phần ký ức của nhiều thế hệ" [level=2] [ref=e129]
+        - paragraph [ref=e130]: Trong những năm 1980–1990, xe đạp Thống Nhất từng là một sản phẩm có giá trị lớn đối với nhiều gia đình Việt Nam. Một chiếc xe không chỉ phục vụ nhu cầu đi lại mà còn được xem là tài sản đáng quý.
+        - paragraph [ref=e131]: "Hình ảnh chiếc xe đạp Thống Nhất từng gắn với nhiều hoạt động quen thuộc trong đời sống: đi học, đi làm, đi chợ hay những chuyến đi xa. Chính sự hiện diện trong đời sống hàng ngày đã giúp thương hiệu tạo dựng một vị trí đặc biệt trong ký ức của nhiều thế hệ người Việt."
+        - paragraph [ref=e132]:
+          - text: Đây cũng là lý do Thống Nhất thường được nhắc đến như một
+          - strong [ref=e133]: “thương hiệu quốc dân”
+          - text: của ngành xe đạp Việt Nam.
+        - heading "Hơn 60 năm phát triển và đổi mới" [level=2] [ref=e134]
+        - paragraph [ref=e135]:
+          - text: Từ một nhà máy xe đạp, doanh nghiệp đã trải qua nhiều lần thay đổi về mô hình tổ chức. Năm
+          - strong [ref=e136]: "1993"
+          - text: ", Xí nghiệp Xe đạp Thống Nhất chuyển thành Công ty Xe máy Xe đạp Thống Nhất. Sau nhiều giai đoạn tái cơ cấu, đến ngày"
+          - strong [ref=e137]: 27/02/2017
+          - text: ", doanh nghiệp chính thức chuyển đổi thành"
+          - strong [ref=e138]: Công ty Cổ phần Thống Nhất Hà Nội
+          - text: .
+        - paragraph [ref=e139]: Trong quá trình phát triển, Thống Nhất từng bước đầu tư nâng cấp sản xuất, cải tiến thiết kế và mở rộng danh mục sản phẩm để thích nghi với thị trường xe đạp ngày càng cạnh tranh.
+        - paragraph [ref=e140]: Điều này đặc biệt quan trọng khi thị trường Việt Nam xuất hiện ngày càng nhiều thương hiệu xe đạp quốc tế và các sản phẩm với thiết kế, công nghệ đa dạng hơn.
+        - heading "Các dòng xe Thống Nhất hiện nay" [level=2] [ref=e141]
+        - paragraph [ref=e142]: Thống Nhất hiện phát triển nhiều nhóm sản phẩm nhằm phục vụ những nhu cầu khác nhau của người dùng.
+        - heading "Xe đạp phổ thông" [level=3] [ref=e143]:
+          - strong [ref=e144]: Xe đạp phổ thông
+        - paragraph [ref=e145]:
+          - text: Các dòng xe phổ thông hướng đến nhu cầu
+          - strong [ref=e146]: đi lại hàng ngày, đi học, đi chợ hoặc sử dụng trong đô thị
+          - text: ". Đây là nhóm sản phẩm tiếp nối thế mạnh truyền thống của thương hiệu: dễ sử dụng, thực dụng và phù hợp với nhiều đối tượng."
+        - heading "Xe đạp thể thao" [level=3] [ref=e147]
+        - paragraph [ref=e148]:
+          - text: Thống Nhất cũng phát triển các dòng xe thể thao dành cho người muốn
+          - strong [ref=e149]: tập luyện, nâng cao sức khỏe và đạp xe thường xuyên
+          - text: .
+        - paragraph [ref=e150]: Thiết kế của các dòng xe mới được cập nhật theo xu hướng hiện đại, hướng đến trọng lượng, khả năng vận hành và trải nghiệm người sử dụng tốt hơn.
+        - heading "Xe đạp trẻ em" [level=3] [ref=e151]:
+          - strong [ref=e152]: Xe đạp trẻ em
+        - paragraph [ref=e153]: Nhóm xe trẻ em được thiết kế phục vụ nhu cầu vận động và vui chơi của trẻ, với nhiều kiểu dáng và kích thước khác nhau. Đây cũng là một trong những nhóm sản phẩm hiện có trên hệ thống bán hàng của Thống Nhất.
+        - heading "Thống Nhất hướng đến giao thông xanh" [level=2] [ref=e154]
+        - paragraph [ref=e155]:
+          - text: Xe đạp ngày càng được quan tâm trong bối cảnh các đô thị hướng đến
+          - strong [ref=e156]: giao thông xanh, giảm phát thải và nâng cao chất lượng môi trường sống
+          - text: .
+        - paragraph [ref=e157]: Thống Nhất hiện định hướng phát triển gắn với xu hướng này, đồng thời đẩy mạnh nghiên cứu, đổi mới công nghệ và mở rộng hệ sinh thái sản phẩm để đáp ứng nhu cầu di chuyển ngày càng đa dạng.
+        - paragraph [ref=e158]:
+          - text: "Đây cũng là một hướng phát triển phù hợp với xu thế người tiêu dùng hiện nay: xe đạp không chỉ dành cho việc đi lại mà còn trở thành phương tiện"
+          - strong [ref=e159]: rèn luyện sức khỏe, thư giãn và xây dựng lối sống năng động
+          - text: .
+        - heading "Chất lượng và giá trị thương hiệu Việt" [level=2] [ref=e160]
+        - paragraph [ref=e161]:
+          - text: Một trong những giá trị lớn nhất của Thống Nhất nằm ở
+          - strong [ref=e162]: bề dày lịch sử và mức độ nhận diện thương hiệu trong nước
+          - text: .
+        - paragraph [ref=e163]: Doanh nghiệp cho biết sản phẩm được sản xuất theo các tiêu chuẩn quản lý chất lượng, đồng thời thương hiệu đã được đăng ký bảo hộ. Thống Nhất cũng từng đưa sản phẩm xuất khẩu sang một số thị trường và vùng lãnh thổ như Hàn Quốc, Hong Kong, Cuba, Thái Lan, Lào và Campuchia.
+        - paragraph [ref=e164]:
+          - text: Điều này cho thấy Thống Nhất không chỉ hướng đến thị trường nội địa mà còn đặt mục tiêu nâng cao năng lực sản xuất và đưa sản phẩm
+          - strong [ref=e165]: Made in Vietnam
+          - text: tiếp cận những thị trường có yêu cầu cao hơn.
+        - heading "Thống Nhất Bike ngày nay" [level=2] [ref=e166]
+        - paragraph [ref=e167]:
+          - text: "Nếu Thống Nhất của nhiều thập kỷ trước gắn liền với hình ảnh những chiếc xe đạp truyền thống, thì Thống Nhất ngày nay đang cố gắng xây dựng một hình ảnh mới:"
+          - strong [ref=e168]: hiện đại hơn, đa dạng hơn nhưng vẫn giữ nền tảng của một thương hiệu Việt lâu đời
+          - text: .
+        - paragraph [ref=e169]:
+          - text: Thương hiệu hiện có các dòng
+          - strong [ref=e170]: xe đạp phổ thông, xe đạp thể thao và xe đạp trẻ em
+          - text: ", đồng thời tiếp tục cải tiến sản phẩm để phù hợp với nhu cầu của người tiêu dùng hiện đại."
+        - heading "Thống Nhất – từ ký ức đến thế hệ mới" [level=2] [ref=e171]
+        - paragraph [ref=e172]:
+          - text: Hơn 6 thập kỷ là một hành trình dài đối với bất kỳ thương hiệu nào. Với Thống Nhất, đó không chỉ là câu chuyện về những chiếc xe đạp mà còn là câu chuyện về
+          - strong [ref=e173]: một thương hiệu Việt đã đồng hành cùng sự thay đổi của đời sống người Việt
+          - text: .
+        - paragraph [ref=e174]: Từ những chiếc xe từng là niềm tự hào của nhiều gia đình đến những mẫu xe thể thao, xe đô thị và xe trẻ em hiện đại, Thống Nhất đang tiếp tục viết tiếp hành trình của mình trong một thị trường xe đạp ngày càng đa dạng.
+        - link "Xem thêm bài viết" [ref=e177] [cursor=pointer]:
+          - /url: javascript:;
+          - text: Xem thêm bài viết
+      - generic [ref=e184]:
+        - generic [ref=e186]:
+          - paragraph [ref=e187]: 6 +
+          - generic [ref=e188]: Quốc gia & khu vực
+        - generic [ref=e190]:
+          - paragraph [ref=e191]: 65 + năm
+          - generic [ref=e192]: Lịch sử
+        - generic [ref=e194]:
+          - paragraph [ref=e195]: 500 + toàn quốc
+          - generic [ref=e196]: Đại lý
+    - generic [ref=e199]:
+      - heading "Các sản phẩm của Hãng Thống Nhất" [level=2] [ref=e201]
+      - tablist "Lọc sản phẩm theo danh mục" [ref=e202]:
+        - tab "Tất cả" [selected] [ref=e203] [cursor=pointer]
+        - tab "Xe Đạp Trẻ Em" [ref=e204] [cursor=pointer]
+        - tab "Xe Đạp Địa Hình" [ref=e205] [cursor=pointer]
+        - tab "Xe Đạp Đua" [ref=e206] [cursor=pointer]
+        - tab "Xe Đạp Đường Phố" [ref=e207] [cursor=pointer]
+        - tab "Xe Đạp Nữ" [ref=e208] [cursor=pointer]
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - generic:
+            - generic:
+              - generic: "-2%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-dia-hinh-thong-nhat-spd-v5-banh-275-inches
+                - generic:
+                  - img "Xe đạp địa hình Thống Nhất SPD V5 -Bánh 27.5 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-dia-hinh-thong-nhat-spd-v5-banh-275-inches
+                  - text: Xe đạp địa hình Thống Nhất SPD V5 -Bánh 27.5 Inches
+              - generic:
+                - paragraph:
+                  - generic: 6.100.000đ
+                - paragraph:
+                  - generic: 6.200.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-dia-hinh-thong-nhat-spd-v5-banh-275-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-dia-hinh-thong-nhat-spd-v5-banh-275-inches
+        - generic [ref=e211]:
+          - generic:
+            - generic:
+              - generic: "-1%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-dia-hinh-thong-nhat-grx-20-v5-banh-275-inches
+                - generic:
+                  - img "Xe đạp địa hình Thống Nhất GRX 2.0 V5-Bánh 27.5 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-dia-hinh-thong-nhat-grx-20-v5-banh-275-inches
+                  - text: Xe đạp địa hình Thống Nhất GRX 2.0 V5-Bánh 27.5 Inches
+              - generic:
+                - paragraph:
+                  - generic: 10.900.000đ
+                - paragraph:
+                  - generic: 11.000.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-dia-hinh-thong-nhat-grx-20-v5-banh-275-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-dia-hinh-thong-nhat-grx-20-v5-banh-275-inches
+        - generic [ref=e212]:
+          - generic:
+            - generic:
+              - generic: "-4%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-dia-hinh-thong-nhat-super-24-banh-24-inches
+                - generic:
+                  - img "Xe đạp địa hình Thống Nhất Super 24 - Bánh 24 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-dia-hinh-thong-nhat-super-24-banh-24-inches
+                  - text: Xe đạp địa hình Thống Nhất Super 24 - Bánh 24 Inches
+              - generic:
+                - paragraph:
+                  - generic: 4.100.000đ
+                - paragraph:
+                  - generic: 4.250.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-dia-hinh-thong-nhat-super-24-banh-24-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-dia-hinh-thong-nhat-super-24-banh-24-inches
+        - generic [ref=e213]:
+          - generic:
+            - generic:
+              - generic: "-2%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-dua-java-auriga-r9-banh-700c
+                - generic:
+                  - img "Xe đạp đua Java Auriga R9 - Bánh 700C"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-dua-java-auriga-r9-banh-700c
+                  - text: Xe đạp đua Java Auriga R9 - Bánh 700C
+              - generic:
+                - paragraph:
+                  - generic: 14.290.000đ
+                - paragraph:
+                  - generic: 14.590.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-dua-java-auriga-r9-banh-700c
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-dua-java-auriga-r9-banh-700c
+        - generic [ref=e214]:
+          - generic:
+            - generic:
+              - generic: "-3%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-dua-thong-nhat-rpd-v5-banh-700c
+                - generic:
+                  - img "Xe đạp đua Thống Nhất RPD V5 -Bánh 700C"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-dua-thong-nhat-rpd-v5-banh-700c
+                  - text: Xe đạp đua Thống Nhất RPD V5 -Bánh 700C
+              - generic:
+                - paragraph:
+                  - generic: 6.100.000đ
+                - paragraph:
+                  - generic: 6.300.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-dua-thong-nhat-rpd-v5-banh-700c
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-dua-thong-nhat-rpd-v5-banh-700c
+        - generic [ref=e215]:
+          - generic:
+            - generic:
+              - generic: "-5%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-tre-em-thong-nhat-we-bare-bears-banh-16
+                - generic:
+                  - img "Xe đạp trẻ em Thống Nhất We Bare Bears bánh 16"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-tre-em-thong-nhat-we-bare-bears-banh-16
+                  - text: Xe đạp trẻ em Thống Nhất We Bare Bears bánh 16
+              - generic:
+                - paragraph:
+                  - generic: 2.090.000đ
+                - paragraph:
+                  - generic: 2.200.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-tre-em-thong-nhat-we-bare-bears-banh-16
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-tre-em-thong-nhat-we-bare-bears-banh-16
+        - generic [ref=e216]:
+          - generic:
+            - generic:
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-tre-em-thong-nhat-batwheels-banh-12
+                - generic:
+                  - img "Xe đạp trẻ em Thống Nhất Batwheels bánh 12"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-tre-em-thong-nhat-batwheels-banh-12
+                  - text: Xe đạp trẻ em Thống Nhất Batwheels bánh 12
+              - generic:
+                - paragraph:
+                  - generic: 1.990.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-tre-em-thong-nhat-batwheels-banh-12
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-tre-em-thong-nhat-batwheels-banh-12
+        - generic [ref=e217]:
+          - generic:
+            - generic:
+              - generic: "-1%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-dua-thong-nhat-rex-banh-700c
+                - generic:
+                  - img "Xe đạp đua Thống Nhất REX - Bánh 700C"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-dua-thong-nhat-rex-banh-700c
+                  - text: Xe đạp đua Thống Nhất REX - Bánh 700C
+              - generic:
+                - paragraph:
+                  - generic: 13.890.000đ
+                - paragraph:
+                  - generic: 14.090.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-dua-thong-nhat-rex-banh-700c
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-dua-thong-nhat-rex-banh-700c
+        - generic [ref=e218]:
+          - generic:
+            - generic:
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-tre-em-thong-nhat-super-man-banh-12
+                - generic:
+                  - img "Xe đạp trẻ em Thống nhất Super Man bánh 12"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-tre-em-thong-nhat-super-man-banh-12
+                  - text: Xe đạp trẻ em Thống nhất Super Man bánh 12
+              - generic:
+                - paragraph:
+                  - generic: 2.250.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-tre-em-thong-nhat-super-man-banh-12
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-tre-em-thong-nhat-super-man-banh-12
+        - generic [ref=e219]:
+          - generic:
+            - generic:
+              - generic: "-10%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-tre-em-thong-nhat-wonder-woman-banh-20
+                - generic:
+                  - img "Xe đạp trẻ em Thống Nhất Wonder Woman bánh 20"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-tre-em-thong-nhat-wonder-woman-banh-20
+                  - text: Xe đạp trẻ em Thống Nhất Wonder Woman bánh 20
+              - generic:
+                - paragraph:
+                  - generic: 2.690.000đ
+                - paragraph:
+                  - generic: 3.000.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-tre-em-thong-nhat-wonder-woman-banh-20
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-tre-em-thong-nhat-wonder-woman-banh-20
+        - generic [ref=e220]:
+          - generic:
+            - generic:
+              - generic: "-5%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-tre-em-thong-nhat-robot-banh-16
+                - generic:
+                  - img "Xe đạp trẻ em Thống nhất Robot bánh 16"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-tre-em-thong-nhat-robot-banh-16
+                  - text: Xe đạp trẻ em Thống nhất Robot bánh 16
+              - generic:
+                - paragraph:
+                  - generic: 2.000.000đ
+                - paragraph:
+                  - generic: 2.100.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-tre-em-thong-nhat-robot-banh-16
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-tre-em-thong-nhat-robot-banh-16
+        - generic [ref=e221]:
+          - generic:
+            - generic:
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-tre-em-thong-nhat-tom-jerry-banh-14
+                - generic:
+                  - img "Xe đạp trẻ em Thống Nhất Tom & Jerry bánh 14"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-tre-em-thong-nhat-tom-jerry-banh-14
+                  - text: Xe đạp trẻ em Thống Nhất Tom & Jerry bánh 14
+              - generic:
+                - paragraph:
+                  - generic: 2.200.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-tre-em-thong-nhat-tom-jerry-banh-14
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-tre-em-thong-nhat-tom-jerry-banh-14
+        - generic [ref=e222]:
+          - generic:
+            - generic:
+              - generic: "-8%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-duong-pho-thong-nhat-ld26-banh-26-inches
+                - generic:
+                  - img "Xe đạp đường phố Thống Nhất LD26- Bánh 26 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-duong-pho-thong-nhat-ld26-banh-26-inches
+                  - text: Xe đạp đường phố Thống Nhất LD26- Bánh 26 Inches
+              - generic:
+                - paragraph:
+                  - generic: 3.500.000đ
+                - paragraph:
+                  - generic: 3.790.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-duong-pho-thong-nhat-ld26-banh-26-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-duong-pho-thong-nhat-ld26-banh-26-inches
+        - generic [ref=e223]:
+          - generic:
+            - generic:
+              - generic: "-6%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-duong-pho-thong-nhat-new-banh-24-inches
+                - generic:
+                  - img "Xe đạp đường phố Thống Nhất New 24 - Bánh 24 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-duong-pho-thong-nhat-new-banh-24-inches
+                  - text: Xe đạp đường phố Thống Nhất New 24 - Bánh 24 Inches
+              - generic:
+                - paragraph:
+                  - generic: 2.990.000đ
+                - paragraph:
+                  - generic: 3.190.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-duong-pho-thong-nhat-new-banh-24-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-duong-pho-thong-nhat-new-banh-24-inches
+        - generic [ref=e224]:
+          - generic:
+            - generic:
+              - generic: "-8%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-duong-pho-thong-nhat-new-banh-26-inches
+                - generic:
+                  - img "Xe đạp đường phố Thống Nhất New 26 - Bánh 26 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-duong-pho-thong-nhat-new-banh-26-inches
+                  - text: Xe đạp đường phố Thống Nhất New 26 - Bánh 26 Inches
+              - generic:
+                - paragraph:
+                  - generic: 3.400.000đ
+                - paragraph:
+                  - generic: 3.690.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-duong-pho-thong-nhat-new-banh-26-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-duong-pho-thong-nhat-new-banh-26-inches
+        - generic [ref=e225]:
+          - generic:
+            - generic:
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-tre-em-thong-nhat-we-bare-bears-banh-12
+                - generic:
+                  - img "Xe đạp trẻ em Thống Nhất We Bare Bears bánh 12"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-tre-em-thong-nhat-we-bare-bears-banh-12
+                  - text: Xe đạp trẻ em Thống Nhất We Bare Bears bánh 12
+              - generic:
+                - paragraph:
+                  - generic: 1.990.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-tre-em-thong-nhat-we-bare-bears-banh-12
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-tre-em-thong-nhat-we-bare-bears-banh-12
+        - generic [ref=e226]:
+          - generic:
+            - generic:
+              - generic: "-6%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-duong-pho-thong-nhat-ld2401-banh-24-inches
+                - generic:
+                  - img "Xe đạp đường phố Thống Nhất LD2401- Bánh 24 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-duong-pho-thong-nhat-ld2401-banh-24-inches
+                  - text: Xe đạp đường phố Thống Nhất LD2401- Bánh 24 Inches
+              - generic:
+                - paragraph:
+                  - generic: 3.300.000đ
+                - paragraph:
+                  - generic: 3.500.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-duong-pho-thong-nhat-ld2401-banh-24-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-duong-pho-thong-nhat-ld2401-banh-24-inches
+        - generic [ref=e227]:
+          - generic:
+            - generic:
+              - generic: "-4%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-duong-pho-thong-nhat-cpd-banh-700c
+                - generic:
+                  - img "Xe đạp đường phố Thống Nhất CPD -Bánh 700C"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-duong-pho-thong-nhat-cpd-banh-700c
+                  - text: Xe đạp đường phố Thống Nhất CPD -Bánh 700C
+              - generic:
+                - paragraph:
+                  - generic: 6.200.000đ
+                - paragraph:
+                  - generic: 6.490.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-duong-pho-thong-nhat-cpd-banh-700c
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-duong-pho-thong-nhat-cpd-banh-700c
+        - generic [ref=e228]:
+          - generic:
+            - generic:
+              - generic: "-6%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-duong-pho-thong-nhat-gn06-26-20-banh-26-inches
+                - generic:
+                  - img "Xe đạp đường phố Thống Nhất GN06 26 2.0-Bánh 26 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-duong-pho-thong-nhat-gn06-26-20-banh-26-inches
+                  - text: Xe đạp đường phố Thống Nhất GN06 26 2.0-Bánh 26 Inches
+              - generic:
+                - paragraph:
+                  - generic: 3.100.000đ
+                - paragraph:
+                  - generic: 3.300.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-duong-pho-thong-nhat-gn06-26-20-banh-26-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-duong-pho-thong-nhat-gn06-26-20-banh-26-inches
+        - generic [ref=e229]:
+          - generic:
+            - generic:
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-tre-em-thong-nhat-batman-banh-12-inches
+                - generic:
+                  - img "Xe đạp trẻ em Thống Nhất Batman -Bánh 12 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-tre-em-thong-nhat-batman-banh-12-inches
+                  - text: Xe đạp trẻ em Thống Nhất Batman -Bánh 12 Inches
+              - generic:
+                - paragraph:
+                  - generic: 2.250.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-tre-em-thong-nhat-batman-banh-12-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-tre-em-thong-nhat-batman-banh-12-inches
+        - generic [ref=e230]:
+          - generic:
+            - generic:
+              - generic: "-4%"
+              - link "Thế giới xe đạp Việt":
+                - /url: xe-dap-tre-em-thong-nhat-bubbles-banh-20-inches
+                - generic:
+                  - img "Xe đạp trẻ em Thống Nhất Bubbles -Bánh 20 Inches"
+            - generic:
+              - heading "Thế giới xe đạp Việt" [level=3]:
+                - link "Thế giới xe đạp Việt":
+                  - /url: xe-dap-tre-em-thong-nhat-bubbles-banh-20-inches
+                  - text: Xe đạp trẻ em Thống Nhất Bubbles -Bánh 20 Inches
+              - generic:
+                - paragraph:
+                  - generic: 2.550.000đ
+                - paragraph:
+                  - generic: 2.650.000đ
+              - generic:
+                - button "Thêm vào giỏ hàng":
+                  - link:
+                    - /url: xe-dap-tre-em-thong-nhat-bubbles-banh-20-inches
+                - button "Mua ngay":
+                  - link "Mua ngay":
+                    - /url: xe-dap-tre-em-thong-nhat-bubbles-banh-20-inches
+    - region "CÁC KHÁCH HÀNG CỦA THƯƠNG HIỆU" [ref=e231]:
+      - heading "CÁC KHÁCH HÀNG CỦA THƯƠNG HIỆU" [level=2] [ref=e234]
+      - generic [ref=e235]:
+        - generic [ref=e237]:
+          - generic [ref=e238]:
+            - link "Hãng Thống Nhất" [ref=e239] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat12-463615.webp
+              - img "Hãng Thống Nhất" [ref=e240]
+            - link "Hãng Thống Nhất" [ref=e241] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat10-624313.webp
+              - img "Hãng Thống Nhất" [ref=e242]
+            - link "Hãng Thống Nhất" [ref=e243] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat9-508011.webp
+              - img "Hãng Thống Nhất" [ref=e244]
+            - link "Hãng Thống Nhất" [ref=e245] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat8-11279.webp
+              - img "Hãng Thống Nhất" [ref=e246]
+            - link "Hãng Thống Nhất" [ref=e247] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat7-39587.webp
+              - img "Hãng Thống Nhất" [ref=e248]
+            - link "Hãng Thống Nhất" [ref=e249] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat18-36655.jpg
+              - img "Hãng Thống Nhất" [ref=e250]
+            - link "Hãng Thống Nhất" [ref=e251] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat4-37903.jpg
+              - img "Hãng Thống Nhất" [ref=e252]
+            - link "Hãng Thống Nhất" [ref=e253] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat2-70801.webp
+              - img "Hãng Thống Nhất" [ref=e254]
+          - generic [ref=e255]:
+            - link [ref=e256] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat12-463615.webp
+              - img [ref=e257]
+            - link [ref=e258] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat10-624313.webp
+              - img [ref=e259]
+            - link [ref=e260] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat9-508011.webp
+              - img [ref=e261]
+            - link [ref=e262] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat8-11279.webp
+              - img [ref=e263]
+            - link [ref=e264] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat7-39587.webp
+              - img [ref=e265]
+            - link [ref=e266] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat18-36655.jpg
+              - img [ref=e267]
+            - link [ref=e268] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat4-37903.jpg
+              - img [ref=e269]
+            - link [ref=e270] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat2-70801.webp
+              - img [ref=e271]
+        - generic [ref=e273]:
+          - generic [ref=e274]:
+            - link "Hãng Thống Nhất" [ref=e275] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat11-100814.webp
+              - img "Hãng Thống Nhất" [ref=e276]
+            - link "Hãng Thống Nhất" [ref=e277] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat13-406312.webp
+              - img "Hãng Thống Nhất" [ref=e278]
+            - link "Hãng Thống Nhất" [ref=e279] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat15-109210.jpg
+              - img "Hãng Thống Nhất" [ref=e280]
+            - link "Hãng Thống Nhất" [ref=e281] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat16-53428.jpg
+              - img "Hãng Thống Nhất" [ref=e282]
+            - link "Hãng Thống Nhất" [ref=e283] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat17-46496.jpg
+              - img "Hãng Thống Nhất" [ref=e284]
+            - link "Hãng Thống Nhất" [ref=e285] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat6-14744.webp
+              - img "Hãng Thống Nhất" [ref=e286]
+            - link "Hãng Thống Nhất" [ref=e287] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat3-72462.jpg
+              - img "Hãng Thống Nhất" [ref=e288]
+          - generic [ref=e289]:
+            - link [ref=e290] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat11-100814.webp
+              - img [ref=e291]
+            - link [ref=e292] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat13-406312.webp
+              - img [ref=e293]
+            - link [ref=e294] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat15-109210.jpg
+              - img [ref=e295]
+            - link [ref=e296] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat16-53428.jpg
+              - img [ref=e297]
+            - link [ref=e298] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat17-46496.jpg
+              - img [ref=e299]
+            - link [ref=e300] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat6-14744.webp
+              - img [ref=e301]
+            - link [ref=e302] [cursor=pointer]:
+              - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/upload/product/khach-hang-thongnhat3-72462.jpg
+              - img [ref=e303]
+    - region "CHÍNH SÁCH CỦA THƯƠNG HIỆU" [ref=e304]:
+      - generic [ref=e305]:
+        - heading "CHÍNH SÁCH CỦA THƯƠNG HIỆU" [level=2] [ref=e307]
+        - generic [ref=e308]:
+          - tablist "Chính sách của thương hiệu" [ref=e309]:
+            - tab "Chính sách bảo hành" [selected] [ref=e310] [cursor=pointer]
+            - tab "Chính sách bảo dưỡng" [ref=e311] [cursor=pointer]
+            - tab "Hướng dẫn sử dụng" [ref=e312] [cursor=pointer]
+          - tabpanel "Chính sách bảo hành" [ref=e314]:
+            - heading "Chính sách bảo hành" [level=3] [ref=e315]
+            - paragraph [ref=e317]:
+              - text: Xe đạp Thống Nhất chính hãng được áp dụng
+              - strong [ref=e318]: bảo hành 60 tháng đối với khung và phuộc
+              - text: ", cùng"
+              - strong [ref=e319]: 12 tháng đối với các phụ tùng khác
+              - text: ", tính từ ngày mua ghi trên phiếu bảo hành. Săm và lốp không nằm trong phạm vi bảo hành. Các trường hợp hư hỏng do sử dụng sai cách, tai nạn, thiên tai hoặc sản phẩm đã hết thời hạn sẽ không được áp dụng bảo hành. Khách hàng có thể tra cứu thông tin bằng số serial hoặc mã QR của sản phẩm."
+  - generic [ref=e321]:
+    - heading "HỆ THỐNG CỬA HÀNG" [level=2] [ref=e323]
+    - generic [ref=e324]:
+      - iframe [ref=e328]:
+        
+      - generic [ref=e330]:
+        - article [ref=e331] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU" [ref=e332]:
+            - img "THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU" [ref=e333]
+          - generic [ref=e334]:
+            - heading "THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU" [level=3] [ref=e335]
+            - generic [ref=e336]:
+              - paragraph [ref=e337]:
+                - strong [ref=e338]: "Địa chỉ:"
+                - text: 345 Nguyễn An Ninh, Phường Tam Thắng, Thành phố Hồ Chí Minh(Gần Coopmart)
+              - paragraph [ref=e339]:
+                - strong [ref=e340]: "Điện thoại:"
+                - text: 0886.172.172
+              - paragraph [ref=e341]:
+                - strong [ref=e342]: "FB:"
+                - link "Thế giới xe đạp Vũng Tàu" [ref=e343]:
+                  - /url: https://www.facebook.com/hethongbanlexedapuytinnhatvungtau
+              - paragraph [ref=e344]
+            - link "Chỉ đường" [ref=e345]:
+              - /url: https://maps.app.goo.gl/RZagH1T316P3r4Ri9
+              - text: Chỉ đường
+        - article [ref=e347] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 323 NGUYỄN AN NINH CHI NHÁNH 07 - VŨNG TÀU" [ref=e348]:
+            - img "THẾ GIỚI XE ĐẠP 323 NGUYỄN AN NINH CHI NHÁNH 07 - VŨNG TÀU" [ref=e349]
+          - generic [ref=e350]:
+            - heading "THẾ GIỚI XE ĐẠP 323 NGUYỄN AN NINH CHI NHÁNH 07 - VŨNG TÀU" [level=3] [ref=e351]
+            - generic [ref=e352]:
+              - paragraph [ref=e353]:
+                - strong [ref=e354]: "Địa chỉ:"
+                - text: 323/7A, 323 Nguyễn An Ninh, Tam Thắng, Hồ Chí Minh
+              - paragraph [ref=e355]:
+                - strong [ref=e356]: "Điện thoại:"
+                - text: 0359.52.72.72
+              - paragraph [ref=e357]:
+                - strong [ref=e358]: "FB:"
+                - link "Trung tâm xe điện thông minh" [ref=e359]:
+                  - /url: https://www.facebook.com/xedienthongminh323
+            - link "Chỉ đường" [ref=e360]:
+              - /url: https://maps.app.goo.gl/Rqg7Pg3BfQJWzsib7
+              - text: Chỉ đường
+        - article [ref=e362] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 763A BÌNH GIÃ CHI NHÁNH 09 - VŨNG TÀU" [ref=e363]:
+            - img "THẾ GIỚI XE ĐẠP 763A BÌNH GIÃ CHI NHÁNH 09 - VŨNG TÀU" [ref=e364]
+          - generic [ref=e365]:
+            - heading "THẾ GIỚI XE ĐẠP 763A BÌNH GIÃ CHI NHÁNH 09 - VŨNG TÀU" [level=3] [ref=e366]
+            - generic [ref=e367]:
+              - paragraph [ref=e368]:
+                - strong [ref=e369]: "Địa chỉ:"
+                - text: 763 Bình Giã, Phường Rạch Dừa, Thành phố Hồ Chí Minh(Gần chợ Lưu Chí Hiếu)
+              - paragraph [ref=e370]:
+                - strong [ref=e371]: "Điện thoại:"
+                - text: 0797.172.172
+              - paragraph [ref=e372]:
+                - strong [ref=e373]: "FB:"
+                - link "Thế giới xe đạp Yadea" [ref=e374]:
+                  - /url: https://www.facebook.com/profile.php?id=100093542268533
+            - link "Chỉ đường" [ref=e375]:
+              - /url: https://maps.app.goo.gl/HwHwTDP3VJtoDcLr5
+              - text: Chỉ đường
+        - article [ref=e377] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 679 30/4 CHI NHÁNH 01 - VŨNG TÀU" [ref=e378]:
+            - img "THẾ GIỚI XE ĐẠP 679 30/4 CHI NHÁNH 01 - VŨNG TÀU" [ref=e379]
+          - generic [ref=e380]:
+            - heading "THẾ GIỚI XE ĐẠP 679 30/4 CHI NHÁNH 01 - VŨNG TÀU" [level=3] [ref=e381]
+            - generic [ref=e382]:
+              - paragraph [ref=e383]:
+                - strong [ref=e384]: "Địa chỉ:"
+                - text: 679 Đường 30/4, Phường Rạch Dừa, Thành phố Hồ Chí Minh(Gần nhà hàng tiệc cưới Hải Phương)
+              - paragraph [ref=e385]:
+                - strong [ref=e386]: "Điện thoại:"
+                - text: 0866.650.650
+              - paragraph [ref=e387]:
+                - strong [ref=e388]: "FB:"
+                - link "Thế giới xe đạp 679" [ref=e389]:
+                  - /url: https://www.facebook.com/Th%E1%BA%BF-gi%E1%BB%9Bi-xe-%C4%91%E1%BA%A1p-679-102705888542682
+            - link "Chỉ đường" [ref=e390]:
+              - /url: https://maps.app.goo.gl/mANCNhqQ5iL8d5pC8
+              - text: Chỉ đường
+        - article [ref=e392] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 577 CMT8 CHI NHÁNH 5 - BÀ RỊA" [ref=e393]:
+            - img "THẾ GIỚI XE ĐẠP 577 CMT8 CHI NHÁNH 5 - BÀ RỊA" [ref=e394]
+          - generic [ref=e395]:
+            - heading "THẾ GIỚI XE ĐẠP 577 CMT8 CHI NHÁNH 5 - BÀ RỊA" [level=3] [ref=e396]
+            - generic [ref=e397]:
+              - paragraph [ref=e398]:
+                - strong [ref=e399]: "Địa chỉ:"
+                - text: 557 Cách Mạng Tháng Tám, Phường Bà Rịa, Thành phố Hồ Chí Minh
+              - paragraph [ref=e400]: "Hotline/Zalo: 0877.272.272"
+              - paragraph [ref=e401]:
+                - strong [ref=e402]: "FB:"
+                - link "Xe điện Pega Bà Rịa" [ref=e403]:
+                  - /url: https://www.facebook.com/thegioixedapbaria
+            - link "Chỉ đường" [ref=e404]:
+              - /url: https://maps.app.goo.gl/afG5G5LoHUNGeYYQA
+              - text: Chỉ đường
+        - article [ref=e406] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP TÂN HÒA PHÚ MỸ CHI NHÁNH 06 - BÀ RỊA" [ref=e407]:
+            - img "THẾ GIỚI XE ĐẠP TÂN HÒA PHÚ MỸ CHI NHÁNH 06 - BÀ RỊA" [ref=e408]
+          - generic [ref=e409]:
+            - heading "THẾ GIỚI XE ĐẠP TÂN HÒA PHÚ MỸ CHI NHÁNH 06 - BÀ RỊA" [level=3] [ref=e410]
+            - generic [ref=e411]:
+              - paragraph [ref=e412]:
+                - strong [ref=e413]: "Địa chỉ:"
+                - text: 252 Quốc lộ 51 ( Ngã 3 Hội Bài) Tân Hòa, Phường Tân Hòa, Thành phố Hồ Chí Minh
+              - paragraph [ref=e414]:
+                - strong [ref=e415]: "Điện thoại:"
+                - text: 0868.272.272
+              - paragraph [ref=e416]:
+                - strong [ref=e417]: "FB:"
+                - link "Thế giới xe đạp Phú Mỹ" [ref=e418]:
+                  - /url: https://www.facebook.com/thegioixedapphumy
+            - link "Chỉ đường" [ref=e419]:
+              - /url: https://maps.app.goo.gl/XSDAfwsyt8yX6VwF8
+              - text: Chỉ đường
+        - article [ref=e421] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP MỸ XUÂN 1 CHI NHÁNH 03 - BÀ RỊA" [ref=e422]:
+            - img "THẾ GIỚI XE ĐẠP MỸ XUÂN 1 CHI NHÁNH 03 - BÀ RỊA" [ref=e423]
+          - generic [ref=e424]:
+            - heading "THẾ GIỚI XE ĐẠP MỸ XUÂN 1 CHI NHÁNH 03 - BÀ RỊA" [level=3] [ref=e425]
+            - generic [ref=e426]:
+              - paragraph [ref=e427]:
+                - strong [ref=e428]: "Địa chỉ:"
+                - text: Quốc lộ 51, KP Thị Vải, Phường Phú Mỹ, Thành phố Hồ Chí Minh(Gần ngã ba Mỹ Xuân)
+              - paragraph [ref=e429]:
+                - strong [ref=e430]: "Điện thoại:"
+                - text: 0836.72.79.79
+              - paragraph [ref=e431]:
+                - strong [ref=e432]: "FB:"
+                - link "Thế giới xe đạp đúng giá - đúng chất lượng" [ref=e433]:
+                  - /url: https://www.facebook.com/Th%E1%BA%BF-Gi%E1%BB%9Bi-Xe-%C4%90%E1%BA%A1p-%C4%91%C3%BAng-gi%C3%A1-%C4%91%C3%BAng-ch%E1%BA%A5t-l%C6%B0%E1%BB%A3ng-344114132875576
+            - link "Chỉ đường" [ref=e434]:
+              - /url: https://maps.app.goo.gl/M9L7pGwwX1j6MvUy7
+              - text: Chỉ đường
+        - article [ref=e436] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP VIỆT KIỀU MỸ XUÂN 2 CHI NHÁNH 08 - BÀ RỊA" [ref=e437]:
+            - img "THẾ GIỚI XE ĐẠP VIỆT KIỀU MỸ XUÂN 2 CHI NHÁNH 08 - BÀ RỊA" [ref=e438]
+          - generic [ref=e439]:
+            - heading "THẾ GIỚI XE ĐẠP VIỆT KIỀU MỸ XUÂN 2 CHI NHÁNH 08 - BÀ RỊA" [level=3] [ref=e440]
+            - generic [ref=e441]:
+              - paragraph [ref=e442]:
+                - strong [ref=e443]: "Địa chỉ:"
+                - text: QL51( đầu chợ Việt Kiều) khu phố Mỹ Thạnh, Phường Phú Mỹ, Thành phố Hồ Chí Minh
+              - paragraph [ref=e444]:
+                - strong [ref=e445]: "Hotline:"
+                - text: 0856.772.772
+              - paragraph [ref=e446]:
+                - strong [ref=e447]: "FB:"
+                - link "Thế giới xe đạp Việt Kiều" [ref=e448]:
+                  - /url: https://www.facebook.com/profile.php?id=100082745725802
+            - link "Chỉ đường" [ref=e449]:
+              - /url: https://maps.app.goo.gl/H5s9NK3PHh3huhP8A
+              - text: Chỉ đường
+        - article [ref=e451] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 198 HÙNG VƯƠNG CHI NHÁNH 04 - NHƠN TRẠCH ĐỒNG NAI" [ref=e452]:
+            - img "THẾ GIỚI XE ĐẠP 198 HÙNG VƯƠNG CHI NHÁNH 04 - NHƠN TRẠCH ĐỒNG NAI" [ref=e453]
+          - generic [ref=e454]:
+            - heading "THẾ GIỚI XE ĐẠP 198 HÙNG VƯƠNG CHI NHÁNH 04 - NHƠN TRẠCH ĐỒNG NAI" [level=3] [ref=e455]
+            - generic [ref=e456]:
+              - paragraph [ref=e457]:
+                - strong [ref=e458]: "Địa chỉ:"
+                - text: 198 Đ. Hùng Vương, Phường Nhơn Trạch, TP Đồng Nai
+              - paragraph [ref=e459]:
+                - strong [ref=e460]: "Điện thoại:"
+                - text: 0855.387.345
+              - paragraph [ref=e461]:
+                - strong [ref=e462]: "FB:"
+                - link "Thế giới xe đạp Nhơn Trạch" [ref=e463]:
+                  - /url: https://www.facebook.com/Th%E1%BA%BF-gi%E1%BB%9Bi-xe-%C4%91%E1%BA%A1p-Nh%C6%A1n-Tr%E1%BA%A1ch-103768937916334
+            - link "Chỉ đường" [ref=e464]:
+              - /url: https://maps.app.goo.gl/nTJy6foVA54ykiZB7
+              - text: Chỉ đường
+        - article [ref=e466] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 19 ĐỒNG KHỞI CHI NHÁNH 10 - ĐỒNG NAI" [ref=e467]:
+            - img "THẾ GIỚI XE ĐẠP 19 ĐỒNG KHỞI CHI NHÁNH 10 - ĐỒNG NAI" [ref=e468]
+          - generic [ref=e469]:
+            - heading "THẾ GIỚI XE ĐẠP 19 ĐỒNG KHỞI CHI NHÁNH 10 - ĐỒNG NAI" [level=3] [ref=e470]
+            - generic [ref=e471]:
+              - paragraph [ref=e472]:
+                - strong [ref=e473]: "Địa chỉ:"
+                - text: 19 Đ. Đồng Khởi, Phường Tam Hiệp, TP Đồng Nai
+              - paragraph [ref=e474]:
+                - strong [ref=e475]: "Điện thoại:"
+                - text: 0385.21.21.68
+              - paragraph [ref=e476]:
+                - strong [ref=e477]: "FB:"
+                - link "Thế Giới Xe Đạp 19 Đồng Khởi" [ref=e478]:
+                  - /url: https://www.facebook.com/profile.php?id=61562540870293
+            - link "Chỉ đường" [ref=e479]:
+              - /url: https://maps.app.goo.gl/cbjJXzqqnsvBbLha6
+              - text: Chỉ đường
+        - article [ref=e481] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 32 ĐỒNG KHỞI CHI NHÁNH 11 - ĐỒNG NAI" [ref=e482]:
+            - img "THẾ GIỚI XE ĐẠP 32 ĐỒNG KHỞI CHI NHÁNH 11 - ĐỒNG NAI" [ref=e483]
+          - generic [ref=e484]:
+            - heading "THẾ GIỚI XE ĐẠP 32 ĐỒNG KHỞI CHI NHÁNH 11 - ĐỒNG NAI" [level=3] [ref=e485]
+            - generic [ref=e486]:
+              - paragraph [ref=e487]:
+                - strong [ref=e488]: "Địa chỉ:"
+                - text: 32-34 Đồng Khởi, phường Tam Hiệp, TP Đồng Nai (đi qua bệnh viện Đồng Nai về hướng Amata khoảng 200m)
+              - paragraph [ref=e489]:
+                - strong [ref=e490]: "Điện thoại:"
+                - text: 0372.59.59.89
+              - paragraph [ref=e491]:
+                - strong [ref=e492]: "FB:"
+                - link "Thế giới xe đạp Đồng Khởi -Biên Hoà" [ref=e493]:
+                  - /url: https://www.facebook.com/profile.php?id=61575874576218
+            - link "Chỉ đường" [ref=e494]:
+              - /url: https://maps.app.goo.gl/bV9nDyQCXvxkSkXe9
+              - text: Chỉ đường
+        - article [ref=e496] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 262 30/4 CHI NHÁNH 13 - THỦ DẦU MỘT BÌNH DƯƠNG" [ref=e497]:
+            - img "THẾ GIỚI XE ĐẠP 262 30/4 CHI NHÁNH 13 - THỦ DẦU MỘT BÌNH DƯƠNG" [ref=e498]
+          - generic [ref=e499]:
+            - heading "THẾ GIỚI XE ĐẠP 262 30/4 CHI NHÁNH 13 - THỦ DẦU MỘT BÌNH DƯƠNG" [level=3] [ref=e500]
+            - generic [ref=e501]:
+              - paragraph [ref=e502]:
+                - strong [ref=e503]: "Địa chỉ:"
+                - text: 262, Đ.30/4, P. Chánh Nghĩa, Phường Thủ Dầu Một, Thành phố Hồ Chí Minh
+              - paragraph [ref=e504]:
+                - strong [ref=e505]: "Điện thoại:"
+                - text: 0862.725.472
+              - paragraph [ref=e506]:
+                - strong [ref=e507]: "FB:"
+                - link "Thế giới xe đạp Thủ Một Dầu Bình Dương" [ref=e508]:
+                  - /url: https://www.facebook.com/profile.php?id=61576103733740
+            - link "Chỉ đường" [ref=e509]:
+              - /url: https://maps.app.goo.gl/jdqQjYYni1XyVh2VA
+              - text: Chỉ đường
+        - article [ref=e511] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 24 NGUYỄN AN NINH CHI NHÁNH 14 - DĨ AN BÌNH DƯƠNG" [ref=e512]:
+            - img "THẾ GIỚI XE ĐẠP 24 NGUYỄN AN NINH CHI NHÁNH 14 - DĨ AN BÌNH DƯƠNG" [ref=e513]
+          - generic [ref=e514]:
+            - heading "THẾ GIỚI XE ĐẠP 24 NGUYỄN AN NINH CHI NHÁNH 14 - DĨ AN BÌNH DƯƠNG" [level=3] [ref=e515]
+            - generic [ref=e516]:
+              - paragraph [ref=e517]:
+                - strong [ref=e518]: "Địa chỉ:"
+                - text: 24 Nguyễn An Ninh, Phường Dĩ An, Thành phố Hồ Chí Minh
+              - paragraph [ref=e519]:
+                - strong [ref=e520]: "Điện thoại:"
+                - text: 0862.726.472
+              - paragraph [ref=e521]:
+                - strong [ref=e522]: "Facebook:"
+                - strong [ref=e523]
+                - link "Thế Giới Xe Đạp Dĩ An - Bình Dương" [ref=e524]:
+                  - /url: https://www.facebook.com/profile.php?id=61576318119691
+            - link "Chỉ đường" [ref=e525]:
+              - /url: https://maps.app.goo.gl/8HGnHtxL6vfWoCx49
+              - text: Chỉ đường
+    - generic [ref=e527]:
+      - article [ref=e529]:
+        - img "Bảo Hành Chính Hãng (1) (1) Khung hợp kim bền bỉ" [ref=e531]
+        - heading "Bảo Hành Chính Hãng (1) (1) Khung hợp kim bền bỉ" [level=3] [ref=e532]
+        - paragraph [ref=e533]: Khung hợp kim bền bỉ Khung hợp kim bền bỉ Khung hợp kim bền bỉ
+      - article [ref=e535]:
+        - img "Bảo Hành Chính Hãng (1)" [ref=e537]
+        - heading "Bảo Hành Chính Hãng (1)" [level=3] [ref=e538]
+        - paragraph [ref=e539]: Khung hợp kim bền bỉ
+      - article [ref=e541]:
+        - img "Bảo Hành Chính Hãng" [ref=e543]
+        - heading "Bảo Hành Chính Hãng" [level=3] [ref=e544]
+        - paragraph [ref=e545]: Khung hợp kim bền bỉ
+      - article [ref=e547]:
+        - img "Đổi Trả Hàng 3 Ngày" [ref=e549]
+        - heading "Đổi Trả Hàng 3 Ngày" [level=3] [ref=e550]
+      - article [ref=e552]:
+        - img "Vận chuyển miễn phí < 50km" [ref=e554]
+        - heading "Vận chuyển miễn phí < 50km" [level=3] [ref=e555]
+  - generic [ref=e556]:
+    - generic [ref=e558]:
+      - generic [ref=e559]:
+        - generic [ref=e561]:
+          - link "Thế giới xe đạp Việt" [ref=e562] [cursor=pointer]:
+            - /url: /
+            - img "Thế giới xe đạp Việt" [ref=e563]
+          - heading "Thế giới xe đạp Việt" [level=2] [ref=e564]
+          - generic [ref=e565]:
+            - paragraph [ref=e566]:
+              - strong [ref=e567]: CÔNG TY TNHH TM & DV GIẢI TRÍ TÂN TRƯỜNG GIANG
+            - paragraph [ref=e568]:
+              - strong [ref=e569]: "Địa chỉ:"
+              - text: 345 Nguyễn An Ninh, Phường Tam Thắng, Thành phố Hồ Chí Minh, Việt Nam
+            - paragraph [ref=e570]:
+              - strong [ref=e571]: "GPKD số:"
+              - text: "3502329410"
+            - paragraph [ref=e572]:
+              - strong [ref=e573]: "Ngày cấp:"
+              - text: 08/03/2017
+            - paragraph [ref=e574]:
+              - strong [ref=e575]: "Nơi cấp:"
+              - text: Thuế cơ sở 24 TP Hồ Chí Minh
+          - paragraph [ref=e576]: Theo dõi chúng tôi tại
+          - generic [ref=e577]:
+            - link "Thế giới xe đạp Việt" [ref=e578] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e579]
+            - link "Thế giới xe đạp Việt" [ref=e580] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e581]
+            - link "Thế giới xe đạp Việt" [ref=e582] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e583]
+            - link "Thế giới xe đạp Việt" [ref=e584] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e585]
+            - link "Thế giới xe đạp Việt" [ref=e586] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e587]
+        - link "Thế giới xe đạp Việt" [ref=e589] [cursor=pointer]:
+          - /url: javascript:;
+          - img "Thế giới xe đạp Việt" [ref=e590]
+      - generic [ref=e591]:
+        - generic [ref=e592]:
+          - heading "Xe Đạp Trẻ Em" [level=3] [ref=e593]:
+            - link "Xe Đạp Trẻ Em" [ref=e594] [cursor=pointer]:
+              - /url: xe-dap-tre-em
+          - list [ref=e595]:
+            - listitem [ref=e596]:
+              - link "Size 12 (2-4 tuổi)" [ref=e597] [cursor=pointer]:
+                - /url: size-12-2-4-tuoi
+            - listitem [ref=e598]:
+              - link "Size 14 (3-5 tuổi)" [ref=e599] [cursor=pointer]:
+                - /url: size-14-3-5-tuoi
+            - listitem [ref=e600]:
+              - link "Size 16 (4-7 tuổi)" [ref=e601] [cursor=pointer]:
+                - /url: size-16-4-7-tuoi
+            - listitem [ref=e602]:
+              - link "Size 18 (6-8 tuổi)" [ref=e603] [cursor=pointer]:
+                - /url: size-18-6-8-tuoi
+            - listitem [ref=e604]:
+              - link "Size 20 (7-9 tuổi)" [ref=e605] [cursor=pointer]:
+                - /url: size-20-7-9-tuoi
+            - listitem [ref=e606]:
+              - link "Size 22 (8-10 tuổi)" [ref=e607] [cursor=pointer]:
+                - /url: size-22-8-10-tuoi
+        - generic [ref=e608]:
+          - heading "Xe Đạp Địa Hình" [level=3] [ref=e609]:
+            - link "Xe Đạp Địa Hình" [ref=e610] [cursor=pointer]:
+              - /url: xe-dap-dia-hinh
+          - list [ref=e611]:
+            - listitem [ref=e612]:
+              - link "Bánh 29" [ref=e613] [cursor=pointer]:
+                - /url: banh-29-inches
+            - listitem [ref=e614]:
+              - link "Bánh 27.5" [ref=e615] [cursor=pointer]:
+                - /url: banh-275
+            - listitem [ref=e616]:
+              - link "Bánh 24" [ref=e617] [cursor=pointer]:
+                - /url: banh-24
+            - listitem [ref=e618]:
+              - link "Bánh 26" [ref=e619] [cursor=pointer]:
+                - /url: banh-26
+        - generic [ref=e620]:
+          - heading "Xe Đạp Đua" [level=3] [ref=e621]:
+            - link "Xe Đạp Đua" [ref=e622] [cursor=pointer]:
+              - /url: xe-dap-dua
+          - list
+        - generic [ref=e623]:
+          - heading "Xe Đạp Đường Phố" [level=3] [ref=e624]:
+            - link "Xe Đạp Đường Phố" [ref=e625] [cursor=pointer]:
+              - /url: xe-dap-duong-pho
+          - list [ref=e626]:
+            - listitem [ref=e627]:
+              - link "Bánh 27 Inches" [ref=e628] [cursor=pointer]:
+                - /url: banh-27-inches
+            - listitem [ref=e629]:
+              - link "Bánh 26 inches" [ref=e630] [cursor=pointer]:
+                - /url: banh-26-inches
+            - listitem [ref=e631]:
+              - link "Bánh 700C" [ref=e632] [cursor=pointer]:
+                - /url: banh-700c
+        - generic [ref=e633]:
+          - heading "Xe Đạp Nữ" [level=3] [ref=e634]:
+            - link "Xe Đạp Nữ" [ref=e635] [cursor=pointer]:
+              - /url: xe-dap-nu
+          - list [ref=e636]:
+            - listitem [ref=e637]:
+              - link "Bánh 26 Inch" [ref=e638] [cursor=pointer]:
+                - /url: banh-26-inch
+            - listitem [ref=e639]:
+              - link "Bánh 24 Inch" [ref=e640] [cursor=pointer]:
+                - /url: banh-24-inches
+        - generic [ref=e641]:
+          - heading "Xe Đạp Điện" [level=3] [ref=e642]:
+            - link "Xe Đạp Điện" [ref=e643] [cursor=pointer]:
+              - /url: xe-dap-dien
+          - list
+        - generic [ref=e644]:
+          - heading "Xe Điện" [level=3] [ref=e645]:
+            - link "Xe Điện" [ref=e646] [cursor=pointer]:
+              - /url: xe-dien
+          - list [ref=e647]:
+            - listitem [ref=e648]:
+              - link "Xe điện Yadea" [ref=e649] [cursor=pointer]:
+                - /url: xe-dien-yadea
+        - generic [ref=e650]:
+          - heading "XE ĐIỆN SCOOTER" [level=3] [ref=e651]:
+            - link "XE ĐIỆN SCOOTER" [ref=e652] [cursor=pointer]:
+              - /url: xe-dien-scooter
+          - list
+        - generic [ref=e653]:
+          - heading "Xe đạp trợ lực" [level=3] [ref=e654]:
+            - link "Xe đạp trợ lực" [ref=e655] [cursor=pointer]:
+              - /url: xe-dap-tro-luc
+          - list [ref=e656]:
+            - listitem [ref=e657]:
+              - link "Bánh 27.5 inches" [ref=e658] [cursor=pointer]:
+                - /url: banh-275-inches
+        - generic [ref=e659]:
+          - heading "Xe đạp gấp" [level=3] [ref=e660]:
+            - link "Xe đạp gấp" [ref=e661] [cursor=pointer]:
+              - /url: xe-dap-gap
+          - list [ref=e662]:
+            - listitem [ref=e663]:
+              - link "Bánh 16 Inches" [ref=e664] [cursor=pointer]:
+                - /url: banh-16-inches
+            - listitem [ref=e665]:
+              - link "Bánh 20 Inches" [ref=e666] [cursor=pointer]:
+                - /url: size-banh-20-inches
+        - generic [ref=e667]:
+          - heading "Phụ kiện" [level=3] [ref=e668]:
+            - link "Phụ kiện" [ref=e669] [cursor=pointer]:
+              - /url: phu-kien
+          - list [ref=e670]:
+            - listitem [ref=e671]:
+              - link "Đèn xe đạp" [ref=e672] [cursor=pointer]:
+                - /url: den-xe-dap
+            - listitem [ref=e673]:
+              - link "Đồ bảo hộ" [ref=e674] [cursor=pointer]:
+                - /url: do-bao-ho
+            - listitem [ref=e675]:
+              - link "Vỏ bọc tay nắm xe đạp" [ref=e676] [cursor=pointer]:
+                - /url: vo-boc-tay-nam-xe-dap
+            - listitem [ref=e677]:
+              - link "Mũ bảo hiểm" [ref=e678] [cursor=pointer]:
+                - /url: mu-bao-hiem
+    - generic [ref=e682]: Copyright ©2026 Thế giới xe đạp Việt. Thiết kế web MIMA
+  - generic [ref=e683]:
+    - 'link "Call me: 0868 55 88 11" [ref=e684] [cursor=pointer]':
+      - /url: tel:0868558811
+      - img [ref=e688]
+      - generic [ref=e691]: "Call me: 0868 55 88 11"
+    - 'link "Zalo: 0868 55 88 11" [ref=e692] [cursor=pointer]':
+      - /url: https://zalo.me/0868558811
+      - img [ref=e696]
+      - generic [ref=e698]: "Zalo: 0868 55 88 11"
+```
