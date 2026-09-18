@@ -106,12 +106,14 @@ export class TestHelper {
 
                 await pageObj.scrollToBottom();
 
-                await expect(
-                    pageObj.loadMoreBtn,
-                    `Lỗi nghiêm trọng: Không tìm thấy nút 'Xem thêm' phân trang ở cuối màn hình dù đã có hơn 30 ${itemTypeLabel}!`
-                ).toBeVisible({ timeout: 10000 });
-
-                await TestHelper.takeScreenshot(page, 'Nút Xem thêm hiển thị');
+                try {
+                    await expect(
+                        pageObj.loadMoreBtn,
+                        `Lỗi nghiêm trọng: Không tìm thấy nút 'Xem thêm' phân trang ở cuối màn hình dù đã có hơn 30 ${itemTypeLabel}!`
+                    ).toBeVisible({ timeout: 10000 });
+                } finally {
+                    await TestHelper.takeScreenshot(page, 'Nút Xem thêm hiển thị');
+                }
             });
 
             await test.step(`bước 5: Click nút Xem thêm và kiểm tra dữ liệu load thêm`, async () => {
@@ -119,15 +121,17 @@ export class TestHelper {
 
                 await pageObj.loadMoreBtn.click();
 
-                // CHỜ THÔNG MINH
-                await expect.poll(async () => {
-                    return await pageObj.getClientArticleCount(bulkPrefix);
-                }, {
-                    timeout: 30000,
-                    message: `Lỗi: Bấm Xem thêm nhưng số lượng ${itemTypeLabel} không tăng sau 30s! (Ban đầu: ${initialCount})`
-                }).toBeGreaterThan(initialCount);
-
-                await TestHelper.takeScreenshot(page, `Đã load thêm ${itemTypeLabel} thành công`);
+                try {
+                    // CHỜ THÔNG MINH
+                    await expect.poll(async () => {
+                        return await pageObj.getClientArticleCount(bulkPrefix);
+                    }, {
+                        timeout: 30000,
+                        message: `Lỗi: Bấm Xem thêm nhưng số lượng ${itemTypeLabel} không tăng sau 30s! (Ban đầu: ${initialCount})`
+                    }).toBeGreaterThan(initialCount);
+                } finally {
+                    await TestHelper.takeScreenshot(page, `Đã load thêm ${itemTypeLabel} thành công`);
+                }
             });
         } finally {
             if (isCreated) {
@@ -191,12 +195,14 @@ export class TestHelper {
 
                 await pageObj.scrollToBottom();
 
-                await expect(
-                    pageObj.loadMoreBtn,
-                    `Lỗi nghiêm trọng: Không tìm thấy nút 'Xem thêm' phân trang ở cuối màn hình dù đã có hơn 30 ${itemTypeLabel}!`
-                ).toBeVisible({ timeout: 10000 });
-
-                await TestHelper.takeScreenshot(page, 'Nút Xem thêm hiển thị');
+                try {
+                    await expect(
+                        pageObj.loadMoreBtn,
+                        `Lỗi nghiêm trọng: Không tìm thấy nút 'Xem thêm' phân trang ở cuối màn hình dù đã có hơn 30 ${itemTypeLabel}!`
+                    ).toBeVisible({ timeout: 10000 });
+                } finally {
+                    await TestHelper.takeScreenshot(page, 'Nút Xem thêm hiển thị');
+                }
             });
 
             await test.step(`bước 5: Click nút Xem thêm và kiểm tra dữ liệu load thêm`, async () => {
@@ -204,15 +210,17 @@ export class TestHelper {
 
                 await pageObj.loadMoreBtn.click();
 
-                // CHỜ THÔNG MINH
-                await expect.poll(async () => {
-                    return await pageObj.getClientArticleCount(bulkPrefix);
-                }, {
-                    timeout: 20000,
-                    message: `Lỗi: Bấm Xem thêm nhưng số lượng ${itemTypeLabel} không tăng sau 20s! (Ban đầu: ${initialCount})`
-                }).toBeGreaterThan(initialCount);
-
-                await TestHelper.takeScreenshot(page, `Đã load thêm ${itemTypeLabel} thành công`);
+                try {
+                    // CHỜ THÔNG MINH
+                    await expect.poll(async () => {
+                        return await pageObj.getClientArticleCount(bulkPrefix);
+                    }, {
+                        timeout: 20000,
+                        message: `Lỗi: Bấm Xem thêm nhưng số lượng ${itemTypeLabel} không tăng sau 20s! (Ban đầu: ${initialCount})`
+                    }).toBeGreaterThan(initialCount);
+                } finally {
+                    await TestHelper.takeScreenshot(page, `Đã load thêm ${itemTypeLabel} thành công`);
+                }
             });
         } finally {
             if (isCreated) {

@@ -1,97 +1,57 @@
 {
-  "timestamp": "2026-09-17T07:24:03.972Z",
-  "baseUrl": "https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/",
+  "timestamp": "2026-09-18T07:00:11.559Z",
+  "baseUrl": "https://code6.mimadigi.vn/2026/september/nguyenchiquyet_113826w/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
-      "Banner Giới thiệu",
+      "Banner",
       "Về chúng tôi",
-      "Lịch sử hình thành",
+      "Ảnh về chúng tôi",
       "Tầm nhìn",
       "Sứ mệnh",
-      "Thông số",
       "Giá trị cốt lõi"
     ],
-    "Group Khuyến Mãi": [
-      "Banner khuyến mãi",
-      "Deal sốc"
-    ],
-    "Group Sản Phẩm": [
-      "Sản phẩm",
+    "Quản lý Sản phẩm": [
       "Danh mục cấp 1",
       "Danh mục cấp 2",
-      "Thương hiệu",
-      "Thuộc tính",
-      "Sản phẩm",
-      "Tags sản phẩm",
-      "Tags Ưu đãi"
+      "Sản phẩm"
     ],
-    "Quản lý Ưu đãi": [
-      "Danh mục cấp 1",
-      "Ưu đãi"
-    ],
-    "Quản lý Tin tức": [
-      "Danh mục cấp 1",
-      "Tin tức"
+    "Quản lý Thư viện ảnh": [
+      "Thư viện ảnh"
     ],
     "Quản lý bài viết": [
-      "Dịch vụ",
-      "Hệ thống cửa hàng",
+      "Tin tức",
+      "Bảo hành & sửa chữa",
       "Khách hàng",
       "Tiêu chí",
-      "Hướng dẫn",
-      "Góc khách hàng",
-      "Chính sách",
-      "Điều khoản",
-      "Hình thức thanh toán"
+      "Chính sách"
     ],
-    "Quản lý đơn hàng": [],
-    "Quản lý tags": [
-      "Bộ lọc giá"
+    "Quản lý nhận tin": [
+      "Đăng ký tư vấn"
     ],
     "Quản lý trang tĩnh": [
-      "Slogan",
-      "Khuyến mãi",
-      "Câu chuyện",
       "Liên hệ",
       "Footer",
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.Ico GG rất thích)",
+      "Favicon (.ico GG rất thích)",
       "Logo",
       "Logo footer",
-      "Banner footer",
-      "Banner top",
-      "Banner index",
+      "Popup",
       "Slideshow",
-      "Banner bán chạy",
-      "Banner phải",
-      "Banner khuyến mãi",
-      "Video",
-      "Mạng xã hội",
-      "FAQ",
-      "Thanh toán",
-      "Link Redirect"
-    ],
-    "Quản lý user": [
-      "Nhóm quyền",
-      "Tài khoản admin"
+      "Banner sản phẩm nổi bật",
+      "Banner danh mục SP",
+      "Mạng xã hội"
     ],
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
       "Sản phẩm",
-      "Dịch vụ",
-      "Khuyến mãi",
-      "Hướng dẫn",
-      "Góc khách hàng",
-      "Video",
       "Tin tức",
+      "Bảo hành & sửa chữa",
       "Liên hệ"
     ],
-    "Flash Sale": [],
-    "Mã giảm giá": [],
     "Thiết lập thông tin": []
   }
 }
