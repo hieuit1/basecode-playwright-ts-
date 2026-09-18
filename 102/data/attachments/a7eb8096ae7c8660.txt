@@ -1,1 +1,0 @@
-Giao diện hiển thị tốt, các thành phần dàn trang căn chỉnh hợp lý, không phát hiện lỗi vỡ layout, tràn viền hay đè chữ bất thường.

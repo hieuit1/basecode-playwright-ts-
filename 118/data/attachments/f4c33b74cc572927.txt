@@ -1,0 +1,20 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     86/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  14
+   ✅ Đạt:          12
+   ❌ Không đạt:    2
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (2/14):
+--- HEADING STRUCTURE ---
+   1. [Trang có đúng 1 thẻ H1 (hiện tại: 4 thẻ)]
+      → Trang có 4 thẻ H1, bắt buộc đúng 1 thẻ duy nhất!
+--- LINKS ---
+   2. [Không có broken links (lỗi: 1/93)]
+      → Broken links: / (status: 0)

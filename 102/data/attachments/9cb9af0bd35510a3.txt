@@ -1,1 +1,0 @@
-Giao diện có lỗi lặp nội dung ở thanh header và văn bản nằm sai vị trí khung chứa.

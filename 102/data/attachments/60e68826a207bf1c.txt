@@ -1,1 +1,0 @@
-Giao diện xuất hiện lỗi hiển thị ở thanh header trên cùng với văn bản bị tràn, lặp nội dung và nằm sai vị trí.

@@ -1,2 +1,0 @@
-[GeminiVision] key#1(…OvSQ) hết quota ở gemini-3.6-flash → thử key kế tiếp.
-[Chính tả] /tuyen-dung: 1 lỗi — "Dich vụ" → "Dịch vụ"

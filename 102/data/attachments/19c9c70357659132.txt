@@ -1,1 +1,0 @@
-Giao diện được thiết kế chỉn chu, bố cục rõ ràng, khoảng cách cân đối và không xuất hiện các lỗi dàn trang, tràn viền hay đè chữ bất thường.

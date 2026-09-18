@@ -1,4 +1,0 @@
-[GeminiVision] Kiểm tra chính tả → gemini-3.6-flash bằng key#1(…OvSQ)...
-[Chính tả] /san-pham — 920 ký tự | AI báo 2 lỗi → còn 1 sau lọc
-            "Dich vụ" → "Dịch vụ"
-            Đã lọc bỏ: 

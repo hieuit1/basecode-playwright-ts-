@@ -1,1 +1,0 @@
-Phát hiện lỗi dàn trang tại thanh topbar góc trên cùng bên trái, văn bản bị lệch vị trí lên trên và bị cắt xén phần chữ.

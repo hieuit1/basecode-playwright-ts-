@@ -1,1 +1,0 @@
-Giao diện trang danh sách tin tức được trình bày sạch sẽ, chuẩn khung lưới (grid), khoảng cách hợp lý và không phát hiện lỗi vỡ layout hay đè chồng chữ.

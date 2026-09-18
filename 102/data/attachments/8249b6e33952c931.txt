@@ -1,1 +1,0 @@
-Giao diện hiển thị chuẩn xác trên bố cục di động, hệ thống lưới (grid) 2 cột được sắp xếp đồng đều, khoảng cách và lề hợp lý, chữ hiển thị rõ ràng trên nền thẻ dịch vụ và không có hiện tượng vỡ khung hay tràn màn hình.

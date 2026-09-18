@@ -1,1 +1,0 @@
-Giao diện gặp lỗi hiển thị văn bản trôi nổi ở mép trên cùng và dải thông tin hotline bị lặp lại gây cắt xén tràn viền.

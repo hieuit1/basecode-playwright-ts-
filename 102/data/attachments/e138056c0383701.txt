@@ -1,1 +1,0 @@
-Giao diện trang web được sắp xếp cân đối, các khối nội dung (form liên hệ, bản đồ, footer) có khoảng cách hợp lý, không phát hiện lỗi vỡ layout, đè chữ hay tràn viền.

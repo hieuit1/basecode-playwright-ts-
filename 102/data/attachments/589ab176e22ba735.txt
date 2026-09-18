@@ -1,5 +1,0 @@
-[UiPage] Ẩn 3 overlay nổi, bỏ dính 4 phần tử, giữ nguyên 0 lớp nền kín màn hình.
-[GeminiVision] Processing file with sharp: /home/runner/work/basecode-playwright-ts-/basecode-playwright-ts-/test-results/ui-uiHeuristic-UI-—-Đánh-g-c61f9-ục-—-kho-bai-chuoi-cung-ung-UI-Desktop/layout-issues/kho_bai_chuoi_cung_ung_UI_Desktop.png
-[GeminiVision] File size: 154169 bytes
-[GeminiVision] Successfully compressed /home/runner/work/basecode-playwright-ts-/basecode-playwright-ts-/test-results/ui-uiHeuristic-UI-—-Đánh-g-c61f9-ục-—-kho-bai-chuoi-cung-ung-UI-Desktop/layout-issues/kho_bai_chuoi_cung_ung_UI_Desktop.png
-[GeminiVision] Heuristic UI Desktop (rộng 1920px) → gemini-3.6-flash bằng key#1(…OvSQ)...
