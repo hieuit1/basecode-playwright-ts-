@@ -1,0 +1,575 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: seo/seo.spec.ts >> SEO Page >> Kiểm tra SEO Onpage: Hướng dẫn (/huong-dan)
+- Location: tests/seo/seo.spec.ts:19:9
+
+# Error details
+
+```
+Test timeout of 300000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - link "Thế giới xe đạp Việt" [ref=e5] [cursor=pointer]:
+    - /url: /
+    - img "Thế giới xe đạp Việt" [ref=e6]
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Thế giới xe đạp Việt" [ref=e11] [cursor=pointer]:
+        - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/
+        - img "Thế giới xe đạp Việt" [ref=e12]
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - link "Thế giới xe đạp Việt" [ref=e17] [cursor=pointer]:
+            - /url: gioi-thieu
+            - text: Giới thiệu
+        - listitem [ref=e18]:
+          - link "Thế giới xe đạp Việt" [ref=e19] [cursor=pointer]:
+            - /url: khuyen-mai
+            - text: Khuyến mãi
+        - listitem [ref=e20]:
+          - link "Thế giới xe đạp Việt" [ref=e21] [cursor=pointer]:
+            - /url: uu-dai
+            - text: Ưu đãi
+        - listitem [ref=e22]:
+          - link "Thế giới xe đạp Việt" [ref=e23] [cursor=pointer]:
+            - /url: thuong-hieu
+            - text: Thương hiệu
+        - listitem [ref=e24]:
+          - link "Thế giới xe đạp Việt" [ref=e25] [cursor=pointer]:
+            - /url: huong-dan
+            - text: Hướng dẫn
+        - listitem [ref=e26]:
+          - link "Thế giới xe đạp Việt" [ref=e27] [cursor=pointer]:
+            - /url: tin-tuc
+            - text: Tin tức
+        - listitem [ref=e28]:
+          - link "Thế giới xe đạp Việt" [ref=e29] [cursor=pointer]:
+            - /url: lien-he
+            - text: Liên hệ
+      - generic [ref=e31]:
+        - img [ref=e32]
+        - generic [ref=e35]:
+          - generic [ref=e36]: Hệ thống
+          - generic "Map" [ref=e37]: showroom
+      - link "Giỏ hàng 0" [ref=e40] [cursor=pointer]:
+        - /url: gio-hang
+        - img [ref=e41]
+        - generic [ref=e46]:
+          - generic [ref=e47]: Giỏ hàng
+          - generic [ref=e48]: "0"
+    - generic [ref=e51]:
+      - link "THẾ GIỚI XE ĐẠP VŨNG TÀU" [ref=e53] [cursor=pointer]:
+        - /url: san-pham
+        - img [ref=e54]
+        - paragraph [ref=e55]: Danh mục sản phẩm
+      - generic [ref=e57]:
+        - link "Tags xe đua" [ref=e59] [cursor=pointer]:
+          - /url: tags-xe-dua
+        - link "Tags xe đoàn" [ref=e61] [cursor=pointer]:
+          - /url: tags-xe-doan
+        - link "Xe đạp cao cấp" [ref=e63] [cursor=pointer]:
+          - /url: xe-dap-cao-cap
+        - link "Xe đạp giá tốt" [ref=e65] [cursor=pointer]:
+          - /url: xe-dap-gia-tot
+      - generic [ref=e67]:
+        - textbox "Tìm kiếm s" [ref=e68]
+        - button [ref=e69] [cursor=pointer]
+  - list [ref=e73]:
+    - listitem [ref=e74]:
+      - link "Trang chủ" [ref=e75] [cursor=pointer]:
+        - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/
+        - img [ref=e76]
+        - generic [ref=e78]: Trang chủ
+    - listitem [ref=e79]:
+      - text: /
+      - link "Hướng dẫn" [ref=e80] [cursor=pointer]:
+        - /url: https://code2.mimadigi.vn/2026/august/tantruonggiang_111426w/huong-dan
+  - generic [ref=e84]:
+    - heading "Hướng dẫn" [level=2] [ref=e86]
+    - alert [ref=e90]:
+      - strong [ref=e91]: Đang cập nhật dữ liệu
+  - generic [ref=e93]:
+    - heading "HỆ THỐNG CỬA HÀNG" [level=2] [ref=e95]
+    - generic [ref=e96]:
+      - iframe [ref=e100]:
+        - generic [active] [ref=f16e1]:
+          - link "Xem đường đi (mở trong thẻ mới)" [ref=f16e6] [cursor=pointer]:
+            - /url: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x31756f91a9eb332b:0x44bde781e44f89eb!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF
+            - img [ref=f16e10]
+          - generic [ref=f16e13]:
+            - generic:
+              - button "Phím tắt"
+            - region "Bản đồ" [ref=f16e14]
+            - generic [ref=f16e15]:
+              - iframe [ref=f16e55]:
+                
+              - button "Các chế độ điều khiển camera trên bản đồ" [ref=f16e57] [cursor=pointer]
+              - button "Hiển thị bản đồ phố" [ref=f16e60] [cursor=pointer]:
+                - generic [ref=f16e64]:
+                  - region [ref=f16e65]
+                  - iframe [ref=f16e71]:
+                    
+              - img "Google" [ref=f16e73]
+              - generic [ref=f16e74]:
+                - button "Phím tắt" [ref=f16e80] [cursor=pointer]
+                - generic [ref=f16e85]: Dữ liệu bản đồ ©2026 Hình ảnh ©2026 Airbus, CNES / Airbus, Maxar Technologies
+                - link "Điều khoản (mở trong thẻ mới)" [ref=f16e90] [cursor=pointer]:
+                  - /url: https://www.google.com/intl/vi_US/help/terms_maps.html
+                  - text: Điều khoản
+                - link "Báo cáo một lỗi bản đồ (mở trong thẻ mới)" [ref=f16e95] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/@10.3678834,107.0853837,16z/data=!3m1!1e3!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3
+                  - text: Báo cáo một lỗi bản đồ
+      - generic [ref=e102]:
+        - article [ref=e103] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU" [ref=e104]:
+            - img "THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU" [ref=e105]
+          - generic [ref=e106]:
+            - heading "THẾ GIỚI XE ĐẠP 345 NGUYỄN AN NINH CHI NHÁNH 02 - VŨNG TÀU" [level=3] [ref=e107]
+            - generic [ref=e108]:
+              - paragraph [ref=e109]:
+                - strong [ref=e110]: "Địa chỉ:"
+                - text: 345 Nguyễn An Ninh, Phường Tam Thắng, Thành phố Hồ Chí Minh(Gần Coopmart)
+              - paragraph [ref=e111]:
+                - strong [ref=e112]: "Điện thoại:"
+                - text: 0886.172.172
+              - paragraph [ref=e113]:
+                - strong [ref=e114]: "FB:"
+                - link "Thế giới xe đạp Vũng Tàu" [ref=e115]:
+                  - /url: https://www.facebook.com/hethongbanlexedapuytinnhatvungtau
+              - paragraph [ref=e116]
+            - link "Chỉ đường" [ref=e117]:
+              - /url: https://maps.app.goo.gl/RZagH1T316P3r4Ri9
+              - text: Chỉ đường
+        - article [ref=e119] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 323 NGUYỄN AN NINH CHI NHÁNH 07 - VŨNG TÀU" [ref=e120]:
+            - img "THẾ GIỚI XE ĐẠP 323 NGUYỄN AN NINH CHI NHÁNH 07 - VŨNG TÀU" [ref=e121]
+          - generic [ref=e122]:
+            - heading "THẾ GIỚI XE ĐẠP 323 NGUYỄN AN NINH CHI NHÁNH 07 - VŨNG TÀU" [level=3] [ref=e123]
+            - generic [ref=e124]:
+              - paragraph [ref=e125]:
+                - strong [ref=e126]: "Địa chỉ:"
+                - text: 323/7A, 323 Nguyễn An Ninh, Tam Thắng, Hồ Chí Minh
+              - paragraph [ref=e127]:
+                - strong [ref=e128]: "Điện thoại:"
+                - text: 0359.52.72.72
+              - paragraph [ref=e129]:
+                - strong [ref=e130]: "FB:"
+                - link "Trung tâm xe điện thông minh" [ref=e131]:
+                  - /url: https://www.facebook.com/xedienthongminh323
+            - link "Chỉ đường" [ref=e132]:
+              - /url: https://maps.app.goo.gl/Rqg7Pg3BfQJWzsib7
+              - text: Chỉ đường
+        - article [ref=e134] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 763A BÌNH GIÃ CHI NHÁNH 09 - VŨNG TÀU" [ref=e135]:
+            - img "THẾ GIỚI XE ĐẠP 763A BÌNH GIÃ CHI NHÁNH 09 - VŨNG TÀU" [ref=e136]
+          - generic [ref=e137]:
+            - heading "THẾ GIỚI XE ĐẠP 763A BÌNH GIÃ CHI NHÁNH 09 - VŨNG TÀU" [level=3] [ref=e138]
+            - generic [ref=e139]:
+              - paragraph [ref=e140]:
+                - strong [ref=e141]: "Địa chỉ:"
+                - text: 763 Bình Giã, Phường Rạch Dừa, Thành phố Hồ Chí Minh(Gần chợ Lưu Chí Hiếu)
+              - paragraph [ref=e142]:
+                - strong [ref=e143]: "Điện thoại:"
+                - text: 0797.172.172
+              - paragraph [ref=e144]:
+                - strong [ref=e145]: "FB:"
+                - link "Thế giới xe đạp Yadea" [ref=e146]:
+                  - /url: https://www.facebook.com/profile.php?id=100093542268533
+            - link "Chỉ đường" [ref=e147]:
+              - /url: https://maps.app.goo.gl/HwHwTDP3VJtoDcLr5
+              - text: Chỉ đường
+        - article [ref=e149] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 679 30/4 CHI NHÁNH 01 - VŨNG TÀU" [ref=e150]:
+            - img "THẾ GIỚI XE ĐẠP 679 30/4 CHI NHÁNH 01 - VŨNG TÀU" [ref=e151]
+          - generic [ref=e152]:
+            - heading "THẾ GIỚI XE ĐẠP 679 30/4 CHI NHÁNH 01 - VŨNG TÀU" [level=3] [ref=e153]
+            - generic [ref=e154]:
+              - paragraph [ref=e155]:
+                - strong [ref=e156]: "Địa chỉ:"
+                - text: 679 Đường 30/4, Phường Rạch Dừa, Thành phố Hồ Chí Minh(Gần nhà hàng tiệc cưới Hải Phương)
+              - paragraph [ref=e157]:
+                - strong [ref=e158]: "Điện thoại:"
+                - text: 0866.650.650
+              - paragraph [ref=e159]:
+                - strong [ref=e160]: "FB:"
+                - link "Thế giới xe đạp 679" [ref=e161]:
+                  - /url: https://www.facebook.com/Th%E1%BA%BF-gi%E1%BB%9Bi-xe-%C4%91%E1%BA%A1p-679-102705888542682
+            - link "Chỉ đường" [ref=e162]:
+              - /url: https://maps.app.goo.gl/mANCNhqQ5iL8d5pC8
+              - text: Chỉ đường
+        - article [ref=e164] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 577 CMT8 CHI NHÁNH 5 - BÀ RỊA" [ref=e165]:
+            - img "THẾ GIỚI XE ĐẠP 577 CMT8 CHI NHÁNH 5 - BÀ RỊA" [ref=e166]
+          - generic [ref=e167]:
+            - heading "THẾ GIỚI XE ĐẠP 577 CMT8 CHI NHÁNH 5 - BÀ RỊA" [level=3] [ref=e168]
+            - generic [ref=e169]:
+              - paragraph [ref=e170]:
+                - strong [ref=e171]: "Địa chỉ:"
+                - text: 557 Cách Mạng Tháng Tám, Phường Bà Rịa, Thành phố Hồ Chí Minh
+              - paragraph [ref=e172]: "Hotline/Zalo: 0877.272.272"
+              - paragraph [ref=e173]:
+                - strong [ref=e174]: "FB:"
+                - link "Xe điện Pega Bà Rịa" [ref=e175]:
+                  - /url: https://www.facebook.com/thegioixedapbaria
+            - link "Chỉ đường" [ref=e176]:
+              - /url: https://maps.app.goo.gl/afG5G5LoHUNGeYYQA
+              - text: Chỉ đường
+        - article [ref=e178] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP TÂN HÒA PHÚ MỸ CHI NHÁNH 06 - BÀ RỊA" [ref=e179]:
+            - img "THẾ GIỚI XE ĐẠP TÂN HÒA PHÚ MỸ CHI NHÁNH 06 - BÀ RỊA" [ref=e180]
+          - generic [ref=e181]:
+            - heading "THẾ GIỚI XE ĐẠP TÂN HÒA PHÚ MỸ CHI NHÁNH 06 - BÀ RỊA" [level=3] [ref=e182]
+            - generic [ref=e183]:
+              - paragraph [ref=e184]:
+                - strong [ref=e185]: "Địa chỉ:"
+                - text: 252 Quốc lộ 51 ( Ngã 3 Hội Bài) Tân Hòa, Phường Tân Hòa, Thành phố Hồ Chí Minh
+              - paragraph [ref=e186]:
+                - strong [ref=e187]: "Điện thoại:"
+                - text: 0868.272.272
+              - paragraph [ref=e188]:
+                - strong [ref=e189]: "FB:"
+                - link "Thế giới xe đạp Phú Mỹ" [ref=e190]:
+                  - /url: https://www.facebook.com/thegioixedapphumy
+            - link "Chỉ đường" [ref=e191]:
+              - /url: https://maps.app.goo.gl/XSDAfwsyt8yX6VwF8
+              - text: Chỉ đường
+        - article [ref=e193] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP MỸ XUÂN 1 CHI NHÁNH 03 - BÀ RỊA" [ref=e194]:
+            - img "THẾ GIỚI XE ĐẠP MỸ XUÂN 1 CHI NHÁNH 03 - BÀ RỊA" [ref=e195]
+          - generic [ref=e196]:
+            - heading "THẾ GIỚI XE ĐẠP MỸ XUÂN 1 CHI NHÁNH 03 - BÀ RỊA" [level=3] [ref=e197]
+            - generic [ref=e198]:
+              - paragraph [ref=e199]:
+                - strong [ref=e200]: "Địa chỉ:"
+                - text: Quốc lộ 51, KP Thị Vải, Phường Phú Mỹ, Thành phố Hồ Chí Minh(Gần ngã ba Mỹ Xuân)
+              - paragraph [ref=e201]:
+                - strong [ref=e202]: "Điện thoại:"
+                - text: 0836.72.79.79
+              - paragraph [ref=e203]:
+                - strong [ref=e204]: "FB:"
+                - link "Thế giới xe đạp đúng giá - đúng chất lượng" [ref=e205]:
+                  - /url: https://www.facebook.com/Th%E1%BA%BF-Gi%E1%BB%9Bi-Xe-%C4%90%E1%BA%A1p-%C4%91%C3%BAng-gi%C3%A1-%C4%91%C3%BAng-ch%E1%BA%A5t-l%C6%B0%E1%BB%A3ng-344114132875576
+            - link "Chỉ đường" [ref=e206]:
+              - /url: https://maps.app.goo.gl/M9L7pGwwX1j6MvUy7
+              - text: Chỉ đường
+        - article [ref=e208] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP VIỆT KIỀU MỸ XUÂN 2 CHI NHÁNH 08 - BÀ RỊA" [ref=e209]:
+            - img "THẾ GIỚI XE ĐẠP VIỆT KIỀU MỸ XUÂN 2 CHI NHÁNH 08 - BÀ RỊA" [ref=e210]
+          - generic [ref=e211]:
+            - heading "THẾ GIỚI XE ĐẠP VIỆT KIỀU MỸ XUÂN 2 CHI NHÁNH 08 - BÀ RỊA" [level=3] [ref=e212]
+            - generic [ref=e213]:
+              - paragraph [ref=e214]:
+                - strong [ref=e215]: "Địa chỉ:"
+                - text: QL51( đầu chợ Việt Kiều) khu phố Mỹ Thạnh, Phường Phú Mỹ, Thành phố Hồ Chí Minh
+              - paragraph [ref=e216]:
+                - strong [ref=e217]: "Hotline:"
+                - text: 0856.772.772
+              - paragraph [ref=e218]:
+                - strong [ref=e219]: "FB:"
+                - link "Thế giới xe đạp Việt Kiều" [ref=e220]:
+                  - /url: https://www.facebook.com/profile.php?id=100082745725802
+            - link "Chỉ đường" [ref=e221]:
+              - /url: https://maps.app.goo.gl/H5s9NK3PHh3huhP8A
+              - text: Chỉ đường
+        - article [ref=e223] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 198 HÙNG VƯƠNG CHI NHÁNH 04 - NHƠN TRẠCH ĐỒNG NAI" [ref=e224]:
+            - img "THẾ GIỚI XE ĐẠP 198 HÙNG VƯƠNG CHI NHÁNH 04 - NHƠN TRẠCH ĐỒNG NAI" [ref=e225]
+          - generic [ref=e226]:
+            - heading "THẾ GIỚI XE ĐẠP 198 HÙNG VƯƠNG CHI NHÁNH 04 - NHƠN TRẠCH ĐỒNG NAI" [level=3] [ref=e227]
+            - generic [ref=e228]:
+              - paragraph [ref=e229]:
+                - strong [ref=e230]: "Địa chỉ:"
+                - text: 198 Đ. Hùng Vương, Phường Nhơn Trạch, TP Đồng Nai
+              - paragraph [ref=e231]:
+                - strong [ref=e232]: "Điện thoại:"
+                - text: 0855.387.345
+              - paragraph [ref=e233]:
+                - strong [ref=e234]: "FB:"
+                - link "Thế giới xe đạp Nhơn Trạch" [ref=e235]:
+                  - /url: https://www.facebook.com/Th%E1%BA%BF-gi%E1%BB%9Bi-xe-%C4%91%E1%BA%A1p-Nh%C6%A1n-Tr%E1%BA%A1ch-103768937916334
+            - link "Chỉ đường" [ref=e236]:
+              - /url: https://maps.app.goo.gl/nTJy6foVA54ykiZB7
+              - text: Chỉ đường
+        - article [ref=e238] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 19 ĐỒNG KHỞI CHI NHÁNH 10 - ĐỒNG NAI" [ref=e239]:
+            - img "THẾ GIỚI XE ĐẠP 19 ĐỒNG KHỞI CHI NHÁNH 10 - ĐỒNG NAI" [ref=e240]
+          - generic [ref=e241]:
+            - heading "THẾ GIỚI XE ĐẠP 19 ĐỒNG KHỞI CHI NHÁNH 10 - ĐỒNG NAI" [level=3] [ref=e242]
+            - generic [ref=e243]:
+              - paragraph [ref=e244]:
+                - strong [ref=e245]: "Địa chỉ:"
+                - text: 19 Đ. Đồng Khởi, Phường Tam Hiệp, TP Đồng Nai
+              - paragraph [ref=e246]:
+                - strong [ref=e247]: "Điện thoại:"
+                - text: 0385.21.21.68
+              - paragraph [ref=e248]:
+                - strong [ref=e249]: "FB:"
+                - link "Thế Giới Xe Đạp 19 Đồng Khởi" [ref=e250]:
+                  - /url: https://www.facebook.com/profile.php?id=61562540870293
+            - link "Chỉ đường" [ref=e251]:
+              - /url: https://maps.app.goo.gl/cbjJXzqqnsvBbLha6
+              - text: Chỉ đường
+        - article [ref=e253] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 32 ĐỒNG KHỞI CHI NHÁNH 11 - ĐỒNG NAI" [ref=e254]:
+            - img "THẾ GIỚI XE ĐẠP 32 ĐỒNG KHỞI CHI NHÁNH 11 - ĐỒNG NAI" [ref=e255]
+          - generic [ref=e256]:
+            - heading "THẾ GIỚI XE ĐẠP 32 ĐỒNG KHỞI CHI NHÁNH 11 - ĐỒNG NAI" [level=3] [ref=e257]
+            - generic [ref=e258]:
+              - paragraph [ref=e259]:
+                - strong [ref=e260]: "Địa chỉ:"
+                - text: 32-34 Đồng Khởi, phường Tam Hiệp, TP Đồng Nai (đi qua bệnh viện Đồng Nai về hướng Amata khoảng 200m)
+              - paragraph [ref=e261]:
+                - strong [ref=e262]: "Điện thoại:"
+                - text: 0372.59.59.89
+              - paragraph [ref=e263]:
+                - strong [ref=e264]: "FB:"
+                - link "Thế giới xe đạp Đồng Khởi -Biên Hoà" [ref=e265]:
+                  - /url: https://www.facebook.com/profile.php?id=61575874576218
+            - link "Chỉ đường" [ref=e266]:
+              - /url: https://maps.app.goo.gl/bV9nDyQCXvxkSkXe9
+              - text: Chỉ đường
+        - article [ref=e268] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 262 30/4 CHI NHÁNH 13 - THỦ DẦU MỘT BÌNH DƯƠNG" [ref=e269]:
+            - img "THẾ GIỚI XE ĐẠP 262 30/4 CHI NHÁNH 13 - THỦ DẦU MỘT BÌNH DƯƠNG" [ref=e270]
+          - generic [ref=e271]:
+            - heading "THẾ GIỚI XE ĐẠP 262 30/4 CHI NHÁNH 13 - THỦ DẦU MỘT BÌNH DƯƠNG" [level=3] [ref=e272]
+            - generic [ref=e273]:
+              - paragraph [ref=e274]:
+                - strong [ref=e275]: "Địa chỉ:"
+                - text: 262, Đ.30/4, P. Chánh Nghĩa, Phường Thủ Dầu Một, Thành phố Hồ Chí Minh
+              - paragraph [ref=e276]:
+                - strong [ref=e277]: "Điện thoại:"
+                - text: 0862.725.472
+              - paragraph [ref=e278]:
+                - strong [ref=e279]: "FB:"
+                - link "Thế giới xe đạp Thủ Một Dầu Bình Dương" [ref=e280]:
+                  - /url: https://www.facebook.com/profile.php?id=61576103733740
+            - link "Chỉ đường" [ref=e281]:
+              - /url: https://maps.app.goo.gl/jdqQjYYni1XyVh2VA
+              - text: Chỉ đường
+        - article [ref=e283] [cursor=pointer]:
+          - button "Xem bản đồ THẾ GIỚI XE ĐẠP 24 NGUYỄN AN NINH CHI NHÁNH 14 - DĨ AN BÌNH DƯƠNG" [ref=e284]:
+            - img "THẾ GIỚI XE ĐẠP 24 NGUYỄN AN NINH CHI NHÁNH 14 - DĨ AN BÌNH DƯƠNG" [ref=e285]
+          - generic [ref=e286]:
+            - heading "THẾ GIỚI XE ĐẠP 24 NGUYỄN AN NINH CHI NHÁNH 14 - DĨ AN BÌNH DƯƠNG" [level=3] [ref=e287]
+            - generic [ref=e288]:
+              - paragraph [ref=e289]:
+                - strong [ref=e290]: "Địa chỉ:"
+                - text: 24 Nguyễn An Ninh, Phường Dĩ An, Thành phố Hồ Chí Minh
+              - paragraph [ref=e291]:
+                - strong [ref=e292]: "Điện thoại:"
+                - text: 0862.726.472
+              - paragraph [ref=e293]:
+                - strong [ref=e294]: "Facebook:"
+                - strong [ref=e295]
+                - link "Thế Giới Xe Đạp Dĩ An - Bình Dương" [ref=e296]:
+                  - /url: https://www.facebook.com/profile.php?id=61576318119691
+            - link "Chỉ đường" [ref=e297]:
+              - /url: https://maps.app.goo.gl/8HGnHtxL6vfWoCx49
+              - text: Chỉ đường
+    - generic [ref=e299]:
+      - article [ref=e301]:
+        - img "Bảo Hành Chính Hãng" [ref=e303]
+        - heading "Bảo Hành Chính Hãng" [level=3] [ref=e304]
+        - paragraph [ref=e305]: Khung hợp kim bền bỉ
+      - article [ref=e307]:
+        - img "Đổi Trả Hàng 3 Ngày" [ref=e309]
+        - heading "Đổi Trả Hàng 3 Ngày" [level=3] [ref=e310]
+      - article [ref=e312]:
+        - img "Vận chuyển miễn phí < 50km" [ref=e314]
+        - heading "Vận chuyển miễn phí < 50km" [level=3] [ref=e315]
+      - article [ref=e317]:
+        - img "Thanh Toán COD" [ref=e319]
+        - heading "Thanh Toán COD" [level=3] [ref=e320]
+      - article [ref=e322]:
+        - img "Hỗ Trợ 24/7" [ref=e324]
+        - heading "Hỗ Trợ 24/7" [level=3] [ref=e325]
+  - generic [ref=e326]:
+    - generic [ref=e328]:
+      - generic [ref=e329]:
+        - generic [ref=e331]:
+          - link "Thế giới xe đạp Việt" [ref=e332] [cursor=pointer]:
+            - /url: /
+            - img "Thế giới xe đạp Việt" [ref=e333]
+          - heading "Thế giới xe đạp Việt" [level=2] [ref=e334]
+          - generic [ref=e335]:
+            - paragraph [ref=e336]:
+              - strong [ref=e337]: CÔNG TY TNHH TM & DV GIẢI TRÍ TÂN TRƯỜNG GIANG
+            - paragraph [ref=e338]:
+              - strong [ref=e339]: "Địa chỉ:"
+              - text: 345 Nguyễn An Ninh, Phường Tam Thắng, Thành phố Hồ Chí Minh, Việt Nam
+            - paragraph [ref=e340]:
+              - strong [ref=e341]: "GPKD số:"
+              - text: "3502329410"
+            - paragraph [ref=e342]:
+              - strong [ref=e343]: "Ngày cấp:"
+              - text: 08/03/2017
+            - paragraph [ref=e344]:
+              - strong [ref=e345]: "Nơi cấp:"
+              - text: Thuế cơ sở 24 TP Hồ Chí Minh
+          - paragraph [ref=e346]: Theo dõi chúng tôi tại
+          - generic [ref=e347]:
+            - link "Thế giới xe đạp Việt" [ref=e348] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e349]
+            - link "Thế giới xe đạp Việt" [ref=e350] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e351]
+            - link "Thế giới xe đạp Việt" [ref=e352] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e353]
+            - link "Thế giới xe đạp Việt" [ref=e354] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e355]
+            - link "Thế giới xe đạp Việt" [ref=e356] [cursor=pointer]:
+              - /url: ""
+              - img "Thế giới xe đạp Việt" [ref=e357]
+        - link "Thế giới xe đạp Việt" [ref=e359] [cursor=pointer]:
+          - /url: javascript:;
+          - img "Thế giới xe đạp Việt" [ref=e360]
+      - generic [ref=e361]:
+        - generic [ref=e362]:
+          - heading "Xe Đạp Trẻ Em" [level=3] [ref=e363]:
+            - link "Xe Đạp Trẻ Em" [ref=e364] [cursor=pointer]:
+              - /url: xe-dap-tre-em
+          - list [ref=e365]:
+            - listitem [ref=e366]:
+              - link "Size 12 (2-4 tuổi)" [ref=e367] [cursor=pointer]:
+                - /url: size-12-2-4-tuoi
+            - listitem [ref=e368]:
+              - link "Size 14 (3-5 tuổi)" [ref=e369] [cursor=pointer]:
+                - /url: size-14-3-5-tuoi
+            - listitem [ref=e370]:
+              - link "Size 16 (4-7 tuổi)" [ref=e371] [cursor=pointer]:
+                - /url: size-16-4-7-tuoi
+            - listitem [ref=e372]:
+              - link "Size 18 (6-8 tuổi)" [ref=e373] [cursor=pointer]:
+                - /url: size-18-6-8-tuoi
+            - listitem [ref=e374]:
+              - link "Size 20 (7-9 tuổi)" [ref=e375] [cursor=pointer]:
+                - /url: size-20-7-9-tuoi
+            - listitem [ref=e376]:
+              - link "Size 22 (8-10 tuổi)" [ref=e377] [cursor=pointer]:
+                - /url: size-22-8-10-tuoi
+        - generic [ref=e378]:
+          - heading "Xe Đạp Địa Hình" [level=3] [ref=e379]:
+            - link "Xe Đạp Địa Hình" [ref=e380] [cursor=pointer]:
+              - /url: xe-dap-dia-hinh
+          - list [ref=e381]:
+            - listitem [ref=e382]:
+              - link "Bánh 29" [ref=e383] [cursor=pointer]:
+                - /url: banh-29-inches
+            - listitem [ref=e384]:
+              - link "Bánh 27.5" [ref=e385] [cursor=pointer]:
+                - /url: banh-275
+            - listitem [ref=e386]:
+              - link "Bánh 24" [ref=e387] [cursor=pointer]:
+                - /url: banh-24
+            - listitem [ref=e388]:
+              - link "Bánh 26" [ref=e389] [cursor=pointer]:
+                - /url: banh-26
+        - generic [ref=e390]:
+          - heading "Xe Đạp Đua" [level=3] [ref=e391]:
+            - link "Xe Đạp Đua" [ref=e392] [cursor=pointer]:
+              - /url: xe-dap-dua
+          - list
+        - generic [ref=e393]:
+          - heading "Xe Đạp Đường Phố" [level=3] [ref=e394]:
+            - link "Xe Đạp Đường Phố" [ref=e395] [cursor=pointer]:
+              - /url: xe-dap-duong-pho
+          - list [ref=e396]:
+            - listitem [ref=e397]:
+              - link "Bánh 27 Inches" [ref=e398] [cursor=pointer]:
+                - /url: banh-27-inches
+            - listitem [ref=e399]:
+              - link "Bánh 26 inches" [ref=e400] [cursor=pointer]:
+                - /url: banh-26-inches
+            - listitem [ref=e401]:
+              - link "Bánh 700C" [ref=e402] [cursor=pointer]:
+                - /url: banh-700c
+        - generic [ref=e403]:
+          - heading "Xe Đạp Nữ" [level=3] [ref=e404]:
+            - link "Xe Đạp Nữ" [ref=e405] [cursor=pointer]:
+              - /url: xe-dap-nu
+          - list [ref=e406]:
+            - listitem [ref=e407]:
+              - link "Bánh 26 Inch" [ref=e408] [cursor=pointer]:
+                - /url: banh-26-inch
+            - listitem [ref=e409]:
+              - link "Bánh 24 Inch" [ref=e410] [cursor=pointer]:
+                - /url: banh-24-inches
+        - generic [ref=e411]:
+          - heading "Xe Đạp Điện" [level=3] [ref=e412]:
+            - link "Xe Đạp Điện" [ref=e413] [cursor=pointer]:
+              - /url: xe-dap-dien
+          - list
+        - generic [ref=e414]:
+          - heading "Xe Điện" [level=3] [ref=e415]:
+            - link "Xe Điện" [ref=e416] [cursor=pointer]:
+              - /url: xe-dien
+          - list [ref=e417]:
+            - listitem [ref=e418]:
+              - link "Xe điện Yadea" [ref=e419] [cursor=pointer]:
+                - /url: xe-dien-yadea
+        - generic [ref=e420]:
+          - heading "XE ĐIỆN SCOOTER" [level=3] [ref=e421]:
+            - link "XE ĐIỆN SCOOTER" [ref=e422] [cursor=pointer]:
+              - /url: xe-dien-scooter
+          - list
+        - generic [ref=e423]:
+          - heading "Xe đạp trợ lực" [level=3] [ref=e424]:
+            - link "Xe đạp trợ lực" [ref=e425] [cursor=pointer]:
+              - /url: xe-dap-tro-luc
+          - list [ref=e426]:
+            - listitem [ref=e427]:
+              - link "Bánh 27.5 inches" [ref=e428] [cursor=pointer]:
+                - /url: banh-275-inches
+        - generic [ref=e429]:
+          - heading "Xe đạp gấp" [level=3] [ref=e430]:
+            - link "Xe đạp gấp" [ref=e431] [cursor=pointer]:
+              - /url: xe-dap-gap
+          - list [ref=e432]:
+            - listitem [ref=e433]:
+              - link "Bánh 16 Inches" [ref=e434] [cursor=pointer]:
+                - /url: banh-16-inches
+            - listitem [ref=e435]:
+              - link "Bánh 20 Inches" [ref=e436] [cursor=pointer]:
+                - /url: size-banh-20-inches
+        - generic [ref=e437]:
+          - heading "Phụ kiện" [level=3] [ref=e438]:
+            - link "Phụ kiện" [ref=e439] [cursor=pointer]:
+              - /url: phu-kien
+          - list [ref=e440]:
+            - listitem [ref=e441]:
+              - link "Đèn xe đạp" [ref=e442] [cursor=pointer]:
+                - /url: den-xe-dap
+            - listitem [ref=e443]:
+              - link "Đồ bảo hộ" [ref=e444] [cursor=pointer]:
+                - /url: do-bao-ho
+            - listitem [ref=e445]:
+              - link "Vỏ bọc tay nắm xe đạp" [ref=e446] [cursor=pointer]:
+                - /url: vo-boc-tay-nam-xe-dap
+            - listitem [ref=e447]:
+              - link "Mũ bảo hiểm" [ref=e448] [cursor=pointer]:
+                - /url: mu-bao-hiem
+    - generic [ref=e452]: Copyright ©2026 Thế giới xe đạp Việt. Thiết kế web MIMA
+  - generic [ref=e453]:
+    - 'link "Call me: 0868 55 88 11" [ref=e454] [cursor=pointer]':
+      - /url: tel:0868558811
+      - img [ref=e458]
+      - generic [ref=e461]: "Call me: 0868 55 88 11"
+    - 'link "Zalo: 0868 55 88 11" [ref=e462] [cursor=pointer]':
+      - /url: https://zalo.me/0868558811
+      - img [ref=e466]
+      - generic [ref=e468]: "Zalo: 0868 55 88 11"
+```

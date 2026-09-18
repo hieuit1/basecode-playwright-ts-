@@ -1,0 +1,15 @@
+[📱 MOBILE (ƯU TIÊN)] LCP quá cao: 6304ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <img onerror="this.src='thumbs/240x73x1/assets/images/noimage.png';" style="max-width: 240px !important" src="upload/photo/frame-2-1187.png" alt="Thế giới xe đạp Việt" width="240" height="73">
+
+[Vấn đề]: Tải ảnh LCP chậm do chưa được tối ưu kích thước, định dạng và chưa được ưu tiên tải sớm.
+[Thông số hiện tại]: Kích thước hiển thị thực tế: 240x73px.
+[Chỉ thị hành động]: Nén ảnh gốc về kích thước tối đa 480x146px (2x cho Retina), định dạng .webp, dung lượng dưới 3KB. Đặt width, height, aspect-ratio và preload ảnh này.
+[Code thay thế]:
+<!-- Đặt thẻ preload trong <head> -->
+<link rel="preload" as="image" href="thumbs/240x73x1/assets/images/noimage.png" fetchpriority="high">
+
+<!-- Sửa thẻ <img> thành: -->
+<img src="thumbs/240x73x1/assets/images/noimage.png" width="240" height="73" style="aspect-ratio: 240 / 73; width: 100%; height: auto; object-fit: cover;" alt="LCP Image">
+
+// Lệnh nén ảnh bằng cwebp:
+cwebp -q 78 -resize 480 146 input.png -o output.webp
