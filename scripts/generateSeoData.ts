@@ -620,14 +620,21 @@ async function run() {
     listingFamilies.get(key)!.push(candidate);
   }
 
+  const dropIndices = new Set<number>();
+  let mergedFamilyCount = 0;
   for (const members of listingFamilies.values()) {
     if (members.length >= REPEAT_FAMILY_THRESHOLD) {
       const representatives = [...members]
         .sort((a, b) => a.path.length - b.path.length)
         .slice(0, MAX_CWV_LISTING_HUBS);
+      const representativeIndexes = new Set(representatives.map((r) => r.index));
       for (const representative of representatives) {
         finalData[representative.index].checkCoreWebVitals = true;
       }
+      for (const member of members) {
+        if (!representativeIndexes.has(member.index)) dropIndices.add(member.index);
+      }
+      mergedFamilyCount += members.length - representatives.length;
     } else {
       for (const member of members) {
         finalData[member.index].checkCoreWebVitals = member.isMainPage;
@@ -635,10 +642,18 @@ async function run() {
     }
   }
 
+  // Splice theo thứ tự giảm dần để không làm lệch index các phần tử chưa xoá
+  for (const index of Array.from(dropIndices).sort((a, b) => b - a)) {
+    finalData.splice(index, 1);
+  }
+
   console.log(
     `Phân loại: ${kindCounts.home} trang chủ, ${kindCounts.hub} trang tổng, ` +
     `${kindCounts.category} danh mục, ${kindCounts.detail} trang chi tiết.`
   );
+  if (mergedFamilyCount > 0) {
+    console.log(`Đã gộp ${mergedFamilyCount} trang biến thể lọc (cùng họ, cùng template) vào trang đại diện.`);
+  }
 
   // Thêm các trang cấu hình thủ công vào đầu danh sách nếu chúng chưa có trong sitemap
   const manualEntriesToAdd: SeoPageTestData[] = [];
