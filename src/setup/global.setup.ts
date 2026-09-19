@@ -39,9 +39,9 @@ async function globalSetup(config: FullConfig) {
     console.log('Đăng nhập thành công!');
 
     // 2. Định vị thanh Menu bằng locator do bạn cung cấp
-    const sidebarLocator = page.locator("//aside[@class='main-sidebar sidebar-dark-primary elevation-4 text-sm']");
+    // const sidebarLocator = page.locator("//aside[@class='main-sidebar sidebar-dark-primary elevation-4 text-sm']");
 
-    // const sidebarLocator = page.locator("//div[@class='sidebar'] ")
+    const sidebarLocator = page.locator("//div[@class='sidebar'] ")
 
     // Đợi container xuất hiện (timeout 10s)
     await sidebarLocator.waitFor({ state: 'attached', timeout: 10000 }).catch(() => {
