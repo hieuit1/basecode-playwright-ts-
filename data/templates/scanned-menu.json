@@ -1,55 +1,55 @@
 {
-  "timestamp": "2026-09-18T07:00:11.559Z",
-  "baseUrl": "https://code6.mimadigi.vn/2026/september/nguyenchiquyet_113826w/",
+  "timestamp": "2026-09-18T10:06:11.507Z",
+  "baseUrl": "https://code7.mimadigi.vn/2026_09/trantiendung_115926w/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
-      "Banner",
+      "Banner trang giới thiệu",
       "Về chúng tôi",
-      "Ảnh về chúng tôi",
       "Tầm nhìn",
       "Sứ mệnh",
-      "Giá trị cốt lõi"
+      "Thông số",
+      "Tại sao chọn chúng tôi"
     ],
     "Quản lý Sản phẩm": [
       "Danh mục cấp 1",
       "Danh mục cấp 2",
+      "Thuộc tính",
       "Sản phẩm"
-    ],
-    "Quản lý Thư viện ảnh": [
-      "Thư viện ảnh"
     ],
     "Quản lý bài viết": [
       "Tin tức",
-      "Bảo hành & sửa chữa",
-      "Khách hàng",
-      "Tiêu chí",
-      "Chính sách"
+      "Dự án",
+      "Chính sách",
+      "Hình thức thanh toán"
     ],
+    "Quản lý đơn hàng": [],
     "Quản lý nhận tin": [
-      "Đăng ký tư vấn"
+      "Đăng ký nhận tin"
     ],
     "Quản lý trang tĩnh": [
+      "Slogan",
       "Liên hệ",
       "Footer",
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.ico GG rất thích)",
+      "Slide video",
+      "Favicon",
       "Logo",
       "Logo footer",
-      "Popup",
+      "Đối tác",
       "Slideshow",
-      "Banner sản phẩm nổi bật",
-      "Banner danh mục SP",
+      "Banner",
       "Mạng xã hội"
     ],
+    "Quản lý user": [],
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
       "Sản phẩm",
+      "Dự án",
       "Tin tức",
-      "Bảo hành & sửa chữa",
       "Liên hệ"
     ],
     "Thiết lập thông tin": []

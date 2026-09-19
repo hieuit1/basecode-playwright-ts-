@@ -90,7 +90,7 @@ export class ContractPage extends BasePage {
 
     async gotoContactPage() {
         const baseUrl = process.env.BASE_URL?.endsWith('/') ? process.env.BASE_URL : process.env.BASE_URL + '/';
-        await this.page.goto(baseUrl + 'lien-he');
+        await this.page.goto(baseUrl + 'contact');
     }
 
     // Bấm nút Gửi
