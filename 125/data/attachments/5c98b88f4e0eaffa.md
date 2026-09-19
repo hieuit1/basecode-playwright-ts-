@@ -1,0 +1,178 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: web/contract.spec.ts >> Contract Feature Tests >> Submit form should fail with số điện thoại chứa chữ cái
+- Location: tests/web/contract.spec.ts:48:9
+
+# Error details
+
+```
+TimeoutError: locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('//input[@id=\'fullname-contact\']')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - heading "404" [level=1] [ref=e5]
+  - heading "Oops! This page does not exist" [level=2] [ref=e6]
+  - paragraph [ref=e7]: The page you are looking for may have been removed, renamed, or is temporarily unavailable.
+  - link "Back to homepage" [ref=e8] [cursor=pointer]:
+    - /url: https://code7.mimadigi.vn/2026_09/trantiendung_115926w/
+```
+
+# Test source
+
+```ts
+  1   | import { Page, Locator, test } from "@playwright/test";
+  2   | import { BasePage } from "../BasePage";
+  3   | 
+  4   | export class ContractPage extends BasePage {
+  5   |     // Locators
+  6   |     readonly fullnameInput: Locator;
+  7   |     readonly phoneInput: Locator;
+  8   |     readonly addressInput: Locator;
+  9   |     readonly emailInput: Locator;
+  10  |     readonly subjectInput: Locator;
+  11  |     readonly contentTextarea: Locator;
+  12  |     readonly sendButton: Locator;
+  13  |     readonly resetButton: Locator;
+  14  |     readonly successMessage: Locator;
+  15  |     readonly dashboardElement: Locator;
+  16  |     readonly notificationDropdown: Locator;
+  17  |     readonly contactLink: Locator;
+  18  |     readonly selectAllCheckbox: Locator;
+  19  |     readonly deleteAllButton: Locator;
+  20  |     readonly confirmDeleteButton: Locator;
+  21  | 
+  22  |     constructor(page: Page) {
+  23  |         super(page);
+  24  |         this.fullnameInput = page.locator("//input[@id='fullname-contact']");
+  25  |         this.phoneInput = page.locator("//input[@id='phone-contact']");
+  26  |         this.addressInput = page.locator("//input[@id='address-contact']");
+  27  |         this.emailInput = page.locator("//input[@id='email-contact']");
+  28  |         this.subjectInput = page.locator("//input[@id='subject-contact']");
+  29  |         this.contentTextarea = page.locator("//textarea[@id='content-contact']");
+  30  |         this.sendButton = page.locator("//button[contains(text(),'Gửi')]");
+  31  |         this.resetButton = page.locator("//button[contains(text(),'Nhập lại')]");
+  32  |         this.successMessage = page.locator("//div[@id='alert']");
+  33  |         this.dashboardElement = page.locator("//span[@class='text-split']");
+  34  |         this.notificationDropdown = page.locator("//li[@class='nav-item dropdown']//a[@class='nav-link']");
+  35  |         this.contactLink = page.locator("//a[contains(text(),'Liên hệ')]");
+  36  |         this.selectAllCheckbox = page.locator("//input[@id='selectall-checkbox']");
+  37  |         this.deleteAllButton = page.locator("//div[@class='card-footer text-sm']//a[@id='delete-all']");
+  38  |         this.confirmDeleteButton = page.locator("//button[contains(text(),'Đồng ý')]");
+  39  |     }
+  40  | 
+  41  |     // Điền dữ liệu vào form liên hệ (Cố tình làm chậm để lừa reCAPTCHA)
+  42  |     async fillContactForm(fullname: string, phone: string, address: string, email: string, subject: string, content: string) {
+  43  |         await test.step(`Điền thông tin liên hệ: ${fullname}`, async () => {
+  44  |             const typingDelay = 50; // Delay 50ms giữa mỗi lần gõ phím (giống người thật)
+  45  |             const fieldDelay = 300; // Nghỉ 300ms giữa việc chuyển sang ô tiếp theo
+  46  | 
+  47  |             if (fullname) {
+  48  |                 await this.fullnameInput.click();
+  49  |                 await this.fullnameInput.pressSequentially(fullname, { delay: typingDelay });
+  50  |                 await this.page.waitForTimeout(fieldDelay);
+  51  |             }
+  52  |             if (phone) {
+  53  |                 await this.phoneInput.click();
+  54  |                 await this.phoneInput.pressSequentially(phone, { delay: typingDelay });
+  55  |                 await this.page.waitForTimeout(fieldDelay);
+  56  |             }
+  57  |             if (address) {
+  58  |                 await this.addressInput.click();
+  59  |                 await this.addressInput.pressSequentially(address, { delay: typingDelay });
+  60  |                 await this.page.waitForTimeout(fieldDelay);
+  61  |             }
+  62  |             if (email) {
+  63  |                 await this.emailInput.click();
+  64  |                 await this.emailInput.pressSequentially(email, { delay: typingDelay });
+  65  |                 await this.page.waitForTimeout(fieldDelay);
+  66  |             }
+  67  |             if (subject) {
+  68  |                 await this.subjectInput.click();
+  69  |                 await this.subjectInput.pressSequentially(subject, { delay: typingDelay });
+  70  |                 await this.page.waitForTimeout(fieldDelay);
+  71  |             }
+  72  |             if (content) {
+  73  |                 await this.contentTextarea.click();
+  74  |                 await this.contentTextarea.pressSequentially(content, { delay: typingDelay });
+  75  |                 await this.page.waitForTimeout(fieldDelay);
+  76  |             }
+  77  | 
+  78  |         });
+  79  |     }
+  80  |     async fillContactFormNe(fullname: string, phone: string, address: string, email: string, subject: string, content: string) {
+  81  |         await test.step(`Điền thông tin liên hệ: ${fullname}`, async () => {
+> 82  |             if (fullname) { await this.fullnameInput.fill(fullname); }
+      |                                                      ^ TimeoutError: locator.fill: Timeout 30000ms exceeded.
+  83  |             if (phone) { await this.phoneInput.fill(phone); }
+  84  |             if (address) { await this.addressInput.fill(address); }
+  85  |             if (email) { await this.emailInput.fill(email); }
+  86  |             if (subject) { await this.subjectInput.fill(subject); }
+  87  |             if (content) { await this.contentTextarea.fill(content); }
+  88  |         });
+  89  |     }
+  90  | 
+  91  |     async gotoContactPage() {
+  92  |         const baseUrl = process.env.BASE_URL?.endsWith('/') ? process.env.BASE_URL : process.env.BASE_URL + '/';
+  93  |         await this.page.goto(baseUrl + 'lien-he');
+  94  |     }
+  95  | 
+  96  |     // Bấm nút Gửi
+  97  |     async clickSend() {
+  98  |         await test.step("Bấm nút Gửi", async () => {
+  99  |             // Đợi 2.5 giây để mô phỏng người dùng đọc lại form và chờ reCAPTCHA load token ngầm xong
+  100 |             await this.page.waitForTimeout(3000);
+  101 | 
+  102 |             // Từ từ rê chuột vào nút Gửi giống người thật
+  103 |             await this.sendButton.hover({ force: true });
+  104 |             await this.page.waitForTimeout(1000); // Khựng lại nửa giây trước khi bấm
+  105 | 
+  106 |             await this.clickOn(this.sendButton);
+  107 |         });
+  108 |     }
+  109 | 
+  110 |     async clickReset() {
+  111 |         await test.step("Bấm nút Nhập lại", async () => {
+  112 |             await this.clickOn(this.resetButton);
+  113 |         });
+  114 |     }
+  115 | 
+  116 |     async goToContactManagement() {
+  117 |         await test.step("Mở danh sách Liên hệ từ thông báo", async () => {
+  118 |             await this.clickOn(this.notificationDropdown);
+  119 |             await this.clickOn(this.contactLink);
+  120 |         });
+  121 |     }
+  122 | 
+  123 |     getContactRow(uniqueName: string): Locator {
+  124 |         return this.page.getByText(uniqueName).first();
+  125 |     }
+  126 | 
+  127 |     async verifyContactExists(uniqueName: string) {
+  128 |         await test.step(`Xác nhận liên hệ có tên '${uniqueName}' xuất hiện trong Admin`, async () => {
+  129 |             const targetCell = this.getContactRow(uniqueName);
+  130 |             await targetCell.waitFor({ state: 'visible', timeout: 10000 });
+  131 |         });
+  132 |     }
+  133 |     async deleteContact() {
+  134 |         await test.step(`Xóa liên hệ`, async () => {
+  135 |             await this.clickOn(this.selectAllCheckbox);
+  136 |             await this.clickOn(this.deleteAllButton);
+  137 |             await this.clickOn(this.confirmDeleteButton);
+  138 |         });
+  139 |     }
+  140 | 
+  141 | }
+  142 | 
+```
