@@ -1,1 +1,0 @@
-Giao diện trang web được thiết kế chỉn chu, bố cục cân đối, khoảng cách giữa các phần tử hợp lý, không có hiện tượng vỡ layout hay đè chữ.

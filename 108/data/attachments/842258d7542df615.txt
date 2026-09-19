@@ -1,1 +1,0 @@
-Giao diện xuất hiện lỗi đè nội dung (overlap) ở phần văn bản phía trên Footer, nơi nút bấm bị đặt chồng trực tiếp lên đoạn chữ mô tả.

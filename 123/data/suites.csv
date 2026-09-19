@@ -1,0 +1,95 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","110691","Kiểm tra SEO Onpage: About Us (/about-us)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22245","Kiểm tra SEO Onpage: Dịch Vụ Thu Mua Phế Liệu Tận Nơi, Giá Cao Trọn Gói Phế Liệu Bình Minh Dịch Vụ Thu Mua Phế Liệu Tận Nơi, Giá Cao Trọn Gói Phế Liệu Bình Minh (/dich-vu-thu-mua-phe-lieu-tan-noi-gia-cao-tron-goi-phe-lieu-binh-minh)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22536","Kiểm tra SEO Onpage: test mjoiei (/test-mjoiei)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","9017","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-19","passed","2026-09-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","21178","Add project should fail with không nhập tiêu đề","Desktop Chrome","2026-09-19","passed","2026-09-19","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22481","Kiểm tra SEO Onpage: Wall Hinged Cabinets (/wall-hinged-cabinets)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","189718","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-09-19","failed","2026-09-19","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17914","Kiểm tra SEO Onpage: thêm sản phẩm mới nhất gần đây test web (/them-san-pham-moi)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","6119","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-19","passed","2026-09-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","179548","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-09-19","failed","2026-09-19","Product Management Tests","admin/product.spec.ts","",""
+"","38060","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-09-19","failed","2026-09-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","27315","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-19","passed","2026-09-19","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","32225","Kiểm tra SEO Onpage: Hanging Glass Racks (/hanging-glass-racks)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20058","Kiểm tra SEO Onpage: Premium Double Hinged Door Base Cabinet (/hinged-door-cabinets-featured)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","26613","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-19","passed","2026-09-19","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","119193","Kiểm tra SEO Onpage: Contact us (/contact)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","38037","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-09-19","failed","2026-09-19","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","51225","Kiểm tra SEO Onpage: Blog (/blog)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16592","Kiểm tra SEO Onpage: Privacy Policy (/privacy-policy)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","21544","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-09-19","passed","2026-09-19","News Management Tests","admin/news.spec.ts","",""
+"","20015","Add project should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-19","passed","2026-09-19","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","84993","Kiểm tra SEO Onpage: Projects (/projects)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","75442","Add product successfully and verify on website","Desktop Chrome","2026-09-19","failed","2026-09-19","Product Management Tests","admin/product.spec.ts","",""
+"","38377","Submit form should fail with bỏ trống email","Desktop Chrome","2026-09-19","failed","2026-09-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","6501","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-19","passed","2026-09-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","75892","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","39227","Submit form should fail with sai định dạng email","Desktop Chrome","2026-09-19","failed","2026-09-19","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","20993","Kiểm tra SEO Onpage: Terms of Service (/terms-of-service)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19750","Kiểm tra SEO Onpage: Kitchen Cabinets (/kitchen-cabinets)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","6588","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-19","passed","2026-09-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","8945","Login successfully with valid credentials","Desktop Chrome","2026-09-19","passed","2026-09-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","46830","Add project successfully and verify on website","Desktop Chrome","2026-09-19","failed","2026-09-19","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24938","Kiểm tra SEO Onpage: Wine Cabinets (/wine-cabinets)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","82695","Kiểm tra SEO Onpage: Warranty Policy (/warranty-policy)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19602","Kiểm tra SEO Onpage: Rice Storage (/rice-storage)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","38127","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-09-19","failed","2026-09-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","6599","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-19","passed","2026-09-19","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17324","Kiểm tra SEO Onpage: Project test __william__ (/project-test-william)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","38054","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-09-19","failed","2026-09-19","Contract Feature Tests","web/contract.spec.ts","",""
+"","31724","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-09-19","passed","2026-09-19","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","22608","Kiểm tra SEO Onpage: Base Hinged Cabinets (/base-hinged-cabinets)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19442","Kiểm tra SEO Onpage: Shipping &amp; Delivery Policy (/shipping-delivery-policy)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","35665","Kiểm tra SEO Onpage: Tall Pantry Cabinets (/tall-pantry-cabinets)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","65862","Add news successfully and verify on website","Desktop Chrome","2026-09-19","failed","2026-09-19","News Management Tests","admin/news.spec.ts","",""
+"","175593","Bulk insert 35 projects via Copy and verify Load More on website","Desktop Chrome","2026-09-19","failed","2026-09-19","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","58164","Kiểm tra SEO Onpage: Products (/products)","Desktop Chrome","2026-09-19","failed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24626","Kiểm tra SEO Onpage: Hinged Door Cabinets (/hinged-door-cabinets)","Desktop Chrome","2026-09-19","passed","2026-09-19","SEO Page","seo/seo.spec.ts","",""
+"","51174","Submit form successfully with valid data","Desktop Chrome","2026-09-19","failed","2026-09-19","Contract Feature Tests","web/contract.spec.ts","",""

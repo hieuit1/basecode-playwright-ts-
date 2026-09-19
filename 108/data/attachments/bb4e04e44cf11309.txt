@@ -1,1 +1,0 @@
-Giao diện dàn trang chuẩn, bố cục phân bổ các khối dự án cân đối và rõ ràng, không phát hiện lỗi vỡ khung, đè chữ hay tràn màn hình.

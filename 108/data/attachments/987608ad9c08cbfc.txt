@@ -1,1 +1,0 @@
-Phát hiện lỗi đè nội dung (overlap) ở thanh header: Nút biểu tượng email hình tròn màu xanh nằm đè trực tiếp lên logo thương hiệu, che mất chữ của logo.
