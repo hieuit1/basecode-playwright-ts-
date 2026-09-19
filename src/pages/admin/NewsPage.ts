@@ -11,7 +11,8 @@ export class NewsPage extends ArticleBasePage {
         // Cấu hình riêng cho mục Tin tức
         this.parentMenu = page.locator("//a[@title='Quản lý bài viết']");
         this.subMenu = page.locator("//a[@href='news?act=man&type=tin-tuc']");
-        this.clientUrl = "tin-tuc";
+        // this.clientUrl = "tin-tuc";
+        this.clientUrl = "blog";
     }
 
     // method 

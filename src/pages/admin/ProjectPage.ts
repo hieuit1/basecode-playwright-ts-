@@ -9,7 +9,8 @@ export class ProjectPage extends ArticleBasePage {
     constructor(page: Page) {
         super(page);
 
-        this.clientUrl = "du-an";
+        // this.clientUrl = "du-an";
+        this.clientUrl = "projects";
 
         // Cấu hình riêng cho mục Dự án
         this.parentMenu = page.locator("//a[@title='Quản lý bài viết']");

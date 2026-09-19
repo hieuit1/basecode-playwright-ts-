@@ -13,7 +13,8 @@ export class ProductPage extends ArticleBasePage {
     this.groupproduct = page.locator("//a[@title='Group Sản Phẩm']");
     this.parentMenu = page.locator("(//a[@title='Sản phẩm'])[1]");
     this.subMenu = page.locator("//a[@href='product?act=man&type=san-pham']");
-    this.clientUrl = "san-pham";
+    // this.clientUrl = "san-pham";
+    this.clientUrl = "products";
   }
 
   async gotoAdminMenu() {
