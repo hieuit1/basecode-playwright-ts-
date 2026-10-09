@@ -1,0 +1,35 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     80/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  20
+   ✅ Đạt:          16
+   ❌ Không đạt:    4
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (4/20):
+--- HEADING STRUCTURE ---
+   1. [Trang có đúng 1 thẻ H1 (hiện tại: 2 thẻ)]
+      → Trang có 2 thẻ H1, bắt buộc đúng 1 thẻ duy nhất!
+   2. [Heading phân cấp hợp lệ (1 lỗi)]
+      → Heading phân cấp sai: Nhảy cấp từ H1 → H3 ("TẦM QUAN TRỌNG CỦA CHÍNH SÁCH HỖ TRỢ TẠI ĐẠI PHONG GLASS")
+--- PERFORMANCE ---
+   3. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 56/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 56/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   4. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 9752ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 9752ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <h1><span style="font-size:28px;">CHĂM SÓC SAU BÁN HÀNG TẬN TÂM, HỖ TRỢ KỸ THUẬT 24/7 – CÔNG TY TNHH ĐẠI PHONG GLASS</span></h1>
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <h1><span style="font-size:28px;">CHĂM SÓC SAU BÁN HÀNG TẬN TÂM, HỖ TRỢ KỸ THUẬT 24/7 – CÔNG TY TNHH ĐẠI PHONG GLASS</span></h1>
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code5.mimadigi.vn/2026/september/daiphongglass_117826CW/chinh-sach-ho-tro
