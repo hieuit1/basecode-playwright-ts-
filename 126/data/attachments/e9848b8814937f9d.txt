@@ -1,0 +1,28 @@
+[📱 MOBILE (ƯU TIÊN)] CLS quá cao: 0.155 (chuẩn: < 0.1)
+      → Thủ phạm CLS:
+          - <div class="col-6 col-sm-4 col-md-4 col-lg-4 mb-3">
+          - <div class="col-6 col-sm-4 col-md-4 col-lg-4 mb-3">
+          - <div class="col-6 col-sm-4 col-md-4 col-lg-4 mb-3">
+          - <a class="homecathover" href="cai-tao-khach-san-nhung-hang-muc-can-uu-tien" style="margin-top: 20px;">
+          - <a class="homecathover" href="cai-tao-phong-kham-can-dap-ung-nhung-yeu-cau-gi" style="margin-top: 20px;">
+          - <a class="homecathover" href="cai-tao-nha-hang-cach-toi-uu-khong-gian-va-chi-phi" style="margin-top: 20px;">
+          - <a class="homecathover" href="thi-cong-nha-hang-tron-goi-gom-nhung-hang-muc-nao" style="margin-top: 20px;">
+          - <a class="homecathover" href="thi-cong-nha-hang-tron-goi-can-luu-y-nhung-gi" style="margin-top: 20px;">
+          - <a class="hotline-mb" href="tel: 0975409010" style="position: absolute; top: 10px; right: 15px; color: rgb(255, 255, 255); font-size: 17px;">
+
+[Vấn đề]: Các phần tử (không phải ảnh có sẵn width/height rõ ràng) thay đổi kích thước đột ngột trong lúc tải trang.
+[Thông số hiện tại]: Phần tử gây nhảy: <div class="col-6 col-sm-4 col-md-4 col-lg-4 mb-3"> | <div class="col-6 col-sm-4 col-md-4 col-lg-4 mb-3"> | <div class="col-6 col-sm-4 col-md-4 col-lg-4 mb-3">.
+[Chỉ thị hành động]: Nếu là font chữ, dùng size-adjust. Nếu là ảnh/iframe, bắt buộc khai báo width/height hoặc CSS aspect-ratio. Đối với ảnh lazy-load, phải có kích thước giữ chỗ.
+[Code thay thế]:
+/* Giải pháp 1: Giữ chỗ bằng aspect-ratio */
+.cls-element {
+  aspect-ratio: 4 / 3; /* Điền tỷ lệ đo được */
+  width: 100%;
+}
+
+/* Giải pháp 2: Sửa nhảy font bằng size-adjust */
+@font-face {
+  font-family: 'Fallback Font';
+  src: local('Arial');
+  size-adjust: 90%; /* Điều chỉnh để khớp font chính */
+}

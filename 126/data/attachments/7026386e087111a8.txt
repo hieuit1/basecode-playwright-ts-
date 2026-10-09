@@ -1,0 +1,43 @@
+══════════════════════════════════════
+   🟢 KẾT QUẢ CHẤM ĐIỂM SEO
+══════════════════════════════════════
+   Điểm số:     85/100
+   Đánh giá:    TỐT
+   Ngưỡng đạt:  96%
+   Kết quả:     FAIL
+──────────────────────────────────────
+   Tổng tiêu chí:  20
+   ✅ Đạt:          17
+   ❌ Không đạt:    3
+══════════════════════════════════════
+
+📋 CHI TIẾT LỖI CẦN KHẮC PHỤC (3/20):
+--- LINKS ---
+   1. [Không có broken links (lỗi: 1/22)]
+      → Broken links: https://ivg-web.com (status: 403)
+--- PERFORMANCE ---
+   2. [[📱 MOBILE (ƯU TIÊN)] Tổng điểm Performance: 59/100 (≥ 60)]
+      → [📱 MOBILE (ƯU TIÊN)] Điểm Performance 59/100 dưới ngưỡng 60. Phân tích chi tiết LCP/CLS/INP bên dưới...
+   3. [[📱 MOBILE (ƯU TIÊN)] LCP (Largest Contentful Paint): 6587ms (< 2500ms)]
+      → [📱 MOBILE (ƯU TIÊN)] LCP quá cao: 6587ms (chuẩn: < 2.5s)
+      → Thủ phạm LCP: <div class="footer_c" style="
+              padding: 50px 10px;
+              float: left;
+              width: 100%;
+              box-sizing: border-box;
+              background: #fff url('assets/i...
+
+[Vấn đề]: Phần tử LCP là dạng văn bản (Text/Heading), thời gian hiển thị phụ thuộc chủ yếu vào tốc độ máy chủ và việc tải Web Font.
+[Thông số hiện tại]: Phần tử LCP: <div class="footer_c" style="
+              padding: 50px 10px;
+              float: left;
+              width: 100%;
+              box-sizing: border-box;
+              background: #fff url('assets/i...
+[Chỉ thị hành động]: Tối ưu TTFB của máy chủ xuống dưới 0.3s và ưu tiên tải trước Web Font đang sử dụng.
+[Code thay thế]:
+<!-- Đặt trong <head> -->
+<link rel="preload" href="/path/to/your-font.woff2" as="font" type="font/woff2" crossorigin>
+
+// Đo TTFB:
+curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://code3.mimadigi.vn/2026/september/hoangngo_116726cw/lien-he

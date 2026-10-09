@@ -1,0 +1,87 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","87597","Kiểm tra SEO Onpage: Hoàng Ngô | Xây Dựng Cải Tạo Công Trình Trọn Gói (/index.php)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","9678","Submit form should fail with bỏ trống email","Desktop Chrome","2026-10-09","passed","2026-10-09","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18568","Kiểm tra SEO Onpage: Nhà Phố (/nha-pho)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","9697","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-10-09","passed","2026-10-09","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","53605","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","6955","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-10-09","passed","2026-10-09","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","9855","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-10-09","passed","2026-10-09","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","62123","Kiểm tra SEO Onpage: Dự án (/du-an)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","9609","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-10-09","passed","2026-10-09","Contract Feature Tests","web/contract.spec.ts","",""
+"","10000","Submit form should fail with sai định dạng email","Desktop Chrome","2026-10-09","passed","2026-10-09","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","58847","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","206644","Bulk insert 35 services via Copy and verify Load More on website","Desktop Chrome","2026-10-09","failed","2026-10-09","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9064","Kiểm tra SEO Onpage: Chính sách tiến độ thi công (/chinh-sach-tien-do-thi-cong)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9133","Kiểm tra SEO Onpage: Chính sách bảo hành và bảo trì (/chinh-sach-bao-hanh-va-bao-tri)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","34158","Submit form successfully with valid data","Desktop Chrome","2026-10-09","passed","2026-10-09","Contract Feature Tests","web/contract.spec.ts","",""
+"","9673","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-10-09","passed","2026-10-09","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16815","Kiểm tra SEO Onpage: Căn Hộ (/can-ho)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","23642","Add service should fail with không nhập tiêu đề","Desktop Chrome","2026-10-09","passed","2026-10-09","Service Management Tests","admin/service.spec.ts","",""
+"","7301","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-10-09","passed","2026-10-09","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13732","Kiểm tra SEO Onpage: Dự án Thiết kế (/du-an-thiet-ke)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","6649","Login should fail with sai mật khẩu","Desktop Chrome","2026-10-09","passed","2026-10-09","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","6602","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-10-09","passed","2026-10-09","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","21020","Add service should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-09","passed","2026-10-09","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12223","Kiểm tra SEO Onpage: Kiến Trúc (/kien-truc)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","49218","Add service successfully and verify on website","Desktop Chrome","2026-10-09","passed","2026-10-09","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","51228","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14072","Kiểm tra SEO Onpage: BÁO GIÁ THIẾT KẾ (/bao-gia-thiet-ke)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15780","Kiểm tra SEO Onpage: Biệt Thự (/biet-thu)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","9940","Login successfully with valid credentials","Desktop Chrome","2026-10-09","passed","2026-10-09","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11310","Kiểm tra SEO Onpage: Cơ Sở Kinh Doanh (/co-so-kinh-doanh)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12322","Kiểm tra SEO Onpage: Tin tức thị trường (/tin-tuc-thi-truong)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","77686","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"","7486","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-10-09","passed","2026-10-09","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9822","Kiểm tra SEO Onpage: Tin bất động sản (/tin-bat-dong-san)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10446","Kiểm tra SEO Onpage: NHÀ PHỐ TÂN BÌNH _2026 (/nha-pho-tan-binh-2026)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12910","Kiểm tra SEO Onpage: Chính sách tư vấn và hỗ trợ khách hàng (/chinh-sach-tu-van-va-ho-tro-khach-hang)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12551","Kiểm tra SEO Onpage: Dự án Thi công (/du-an-thi-cong)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10294","Kiểm tra SEO Onpage: Nội Thất (/noi-that)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11254","Kiểm tra SEO Onpage: Thi công nhà hàng trọn gói cần lưu ý những gì (/thi-cong-nha-hang-tron-goi-can-luu-y-nhung-gi)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","55068","Kiểm tra SEO Onpage: Bảng giá (/bang-gia)","Desktop Chrome","2026-10-09","failed","2026-10-09","SEO Page","seo/seo.spec.ts","",""
