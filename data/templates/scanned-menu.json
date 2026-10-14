@@ -1,16 +1,17 @@
 {
-  "timestamp": "2026-10-10T01:52:50.070Z",
-  "baseUrl": "https://code5.mimadigi.vn/2026/september/daiphongglass_117826CW/",
+  "timestamp": "2026-10-13T09:39:16.494Z",
+  "baseUrl": "https://code3.mimadigi.vn/2026/october/nguyenvanlong_118326cw/",
   "menus": {
     "Bảng điều khiển": [],
     "Group Giới Thiệu": [
       "Banner",
-      "Giới thiệu",
-      "Lịch sử hình thành",
-      "Thông số",
+      "Về chúng tôi",
+      "Quy trình hình thành",
+      "Văn hoá doanh nghiệp",
       "Tầm nhìn",
       "Sứ mệnh",
       "Giá trị cốt lõi",
+      "Thông số",
       "Đối tác"
     ],
     "Quản lý Sản phẩm": [
@@ -24,32 +25,38 @@
     "Quản lý bài viết": [
       "Tin tức",
       "Dự án",
-      "Lý do chọn chúng tôi",
-      "Quy trình thi công",
-      "Chính sách"
+      "Phản hồi",
+      "Tiêu chí",
+      "Quy trình",
+      "Tuyển dụng"
     ],
     "Quản lý nhận tin": [
-      "Đăng ký tư vấn"
+      "Đăng ký nhận tin"
     ],
     "Quản lý trang tĩnh": [
-      "Slogan",
       "Liên hệ",
       "Footer",
       "Copyright"
     ],
     "Quản lý hình ảnh - video": [
-      "Favicon (.png)",
+      "Favicon",
       "Logo",
+      "Logo footer",
+      "Tiêu chí image",
+      "Đăng ký image",
+      "Quy trình image",
       "Slideshow",
       "Mạng xã hội",
-      "Redirect URL"
+      "Link Redirect"
     ],
     "Quản lý seo page": [
       "Trang chủ",
       "Giới thiệu",
-      "Dịch vụ",
-      "Dự án",
       "Sản phẩm",
+      "Dịch vụ",
+      "Bảng giá",
+      "Dự án",
+      "Tuyển dụng",
       "Tin tức",
       "Liên hệ"
     ],
