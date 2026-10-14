@@ -254,13 +254,75 @@ jobs:
           path: gh-pages-dir
           fetch-depth: 0
 
-      - name: Generate Allure Report
-        uses: simple-elf/allure-report-action@master
+      # Không dùng simple-elf/allure-report-action nữa: action đó build Docker image
+      # từ public.ecr.aws/amazoncorretto, và ECR Public giới hạn lượt pull ẩn danh theo
+      # IP — runner GitHub dùng chung IP nên hay dính "429 Too Many Requests".
+      # Dưới đây làm lại đúng logic của action bằng allure-commandline có sẵn trong devDependencies.
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          allure_results: target/allure-results
-          allure_history: allure-history
-          gh_pages: gh-pages-dir
-          keep_reports: 15
+          node-version: 20
+          cache: 'npm'
+
+      - name: Setup Java (cho Allure CLI)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+
+      - name: Generate Allure Report
+        env:
+          RESULTS_DIR: target/allure-results
+          HISTORY_DIR: allure-history
+          GH_PAGES_DIR: gh-pages-dir
+          KEEP_REPORTS: 15
+          RUN_NUM: ${{ github.run_number }}
+        run: |
+          PAGES_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          mkdir -p "$RESULTS_DIR" "$GH_PAGES_DIR" "$HISTORY_DIR"
+
+          # Lấy toàn bộ báo cáo cũ từ gh-pages (bỏ .git của bản checkout)
+          cp -r "$GH_PAGES_DIR"/. "$HISTORY_DIR"
+          rm -rf "${HISTORY_DIR:?}/.git"
+
+          # Chỉ giữ (KEEP_REPORTS - 1) báo cáo cũ mới nhất, cộng báo cáo lần này là đủ KEEP_REPORTS
+          OLD_RUNS=$(ls "$HISTORY_DIR" | grep -E '^[0-9]+$' | sort -n || true)
+          COUNT=$(echo "$OLD_RUNS" | grep -c . || true)
+          if [ "$COUNT" -ge "$KEEP_REPORTS" ]; then
+            echo "$OLD_RUNS" | head -n $((COUNT - KEEP_REPORTS + 1)) | while read -r d; do
+              rm -rf "${HISTORY_DIR:?}/${d:?}"
+            done
+          fi
+
+          # Thông tin executor để Allure hiển thị link build/report
+          cat > "$RESULTS_DIR/executor.json" <<EOF
+          {"name":"GitHub Actions","type":"github","reportName":"Allure Report with history",
+           "url":"$PAGES_URL","reportUrl":"$PAGES_URL/$RUN_NUM/",
+           "buildUrl":"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+           "buildName":"GitHub Actions Run #${{ github.run_id }}","buildOrder":"$RUN_NUM"}
+          EOF
+
+          # Nối trend/history từ lần chạy trước
+          if [ -d "$GH_PAGES_DIR/last-history" ]; then
+            mkdir -p "$RESULTS_DIR/history"
+            cp -r "$GH_PAGES_DIR/last-history"/. "$RESULTS_DIR/history"
+          fi
+
+          npx allure generate --clean "$RESULTS_DIR" -o allure-report
+
+          mkdir -p "$HISTORY_DIR/$RUN_NUM" "$HISTORY_DIR/last-history"
+          cp -r allure-report/. "$HISTORY_DIR/$RUN_NUM"
+          rm -rf "${HISTORY_DIR:?}/last-history"/*
+          cp -r allure-report/history/. "$HISTORY_DIR/last-history"
+
+          # Trang gốc tự chuyển tới báo cáo mới nhất
+          cat > "$HISTORY_DIR/index.html" <<EOF
+          <!DOCTYPE html><meta charset="utf-8"><meta http-equiv="refresh" content="0; URL=$PAGES_URL/$RUN_NUM/">
+          <meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+          EOF
 
       - name: Clean up large files before deploy
         run: |
