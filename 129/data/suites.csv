@@ -1,0 +1,136 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","91115","Add news successfully and verify on website","Desktop Chrome","2026-10-12","passed","2026-10-12","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","33929","Kiểm tra SEO Onpage: Chính sách thanh toán (/chinh-sach-thanh-toan)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","22300","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-10-12","passed","2026-10-12","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","29095","Kiểm tra SEO Onpage: Tủ gỗ (/tu-go)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","10812","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-10-12","passed","2026-10-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","66599","Kiểm tra SEO Onpage: Bàn trang điểm (/ban-trang-diem)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","12107","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-10-12","passed","2026-10-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","80276","Kiểm tra SEO Onpage: Sản phẩm khuyến mãi (/san-pham-khuyen-mai)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","73762","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","23549","Kiểm tra SEO Onpage: Tủ thờ (/tu-tho)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","55289","Kiểm tra SEO Onpage: Chính sách đổi trả (/chinh-sach-doi-tra)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","30873","Kiểm tra SEO Onpage: Đồ dùng tiện lợi (/do-dung-tien-loi)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","32222","Kiểm tra SEO Onpage: Đồ Gỗ Lâm Thanh Bình (/tags-san-pham)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","9585","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-10-12","passed","2026-10-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","25690","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-12","passed","2026-10-12","News Management Tests","admin/news.spec.ts","",""
+"","12090","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-10-12","passed","2026-10-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","27383","Kiểm tra SEO Onpage: Phòng khách (/phong-khach)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","36558","Kiểm tra SEO Onpage: Chính sách vận chuyển (/chinh-sach-van-chuyen)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","8440","Login successfully with valid credentials","Desktop Chrome","2026-10-12","passed","2026-10-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","14324","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-10-12","passed","2026-10-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","51405","Kiểm tra SEO Onpage: Trụ sở chính (/tru-so-chinh)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","52090","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","26637","Kiểm tra SEO Onpage: Phòng ăn (/phong-an)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","23391","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-12","passed","2026-10-12","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 74/100 | Đạt: 17/23 tiêu chí | Ngưỡng: 96%
+
+KHÁ","71459","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","25878","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-10-12","passed","2026-10-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","30441","Kiểm tra SEO Onpage: Salon (/salon)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","35129","Submit form successfully with valid data","Desktop Chrome","2026-10-12","failed","2026-10-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","65978","Kiểm tra SEO Onpage: Sofa (/sofa)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","37664","Kiểm tra SEO Onpage: Ghế gỗ (/ghe-go)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","57973","Kiểm tra SEO Onpage: Đồ gỗ cao cấp (/do-go-cao-cap)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","75143","Add product successfully and verify on website","Desktop Chrome","2026-10-12","passed","2026-10-12","Product Management Tests","admin/product.spec.ts","",""
+"","359124","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-10-12","failed","2026-10-12","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","65235","Kiểm tra SEO Onpage: Nội thất gỗ (/noi-that-go)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","16887","Submit form should fail with sai định dạng email","Desktop Chrome","2026-10-12","passed","2026-10-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","58798","Kiểm tra SEO Onpage: Chính sách (/chinh-sach)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","45853","Kiểm tra SEO Onpage: Chính sách bảo mật (/chinh-sach-bao-mat)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18065","Kiểm tra SEO Onpage: Thiết kế nội thất gỗ (/thiet-ke-noi-that-go)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","13258","Submit form should fail with bỏ trống email","Desktop Chrome","2026-10-12","passed","2026-10-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23533","Kiểm tra SEO Onpage: Chính sách bảo hành (/chinh-sach-bao-hanh)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 94/100 | Đạt: 16/17 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","50942","Kiểm tra SEO Onpage: Mua sỉ (/mua-si)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","102696","Kiểm tra SEO Onpage: Hệ thống cửa hàng (/he-thong-cua-hang)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","80730","Kiểm tra SEO Onpage: Lâm Thanh Bình | Thiết Kế Và Kinh Doanh Nội Thất Gỗ (/index.php)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19969","Kiểm tra SEO Onpage: Gỗ tự nhiên (/go-tu-nhien)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","11926","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-10-12","passed","2026-10-12","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","39492","Kiểm tra SEO Onpage: Xưởng Đồ Gỗ Nội Thất Sản Xuất Theo Yêu Cầu (1) Xưởng Đồ Gỗ Nội Thất Sản Xuất Theo Yêu Cầu (1) (/xuong-do-go-noi-that-san-xuat-theo-yeu-cau-1)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","369553","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-10-12","failed","2026-10-12","Product Management Tests","admin/product.spec.ts","",""
+"","10243","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-10-12","passed","2026-10-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","19376","Kiểm tra SEO Onpage: Văn phòng (/van-phong)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","37062","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-10-12","passed","2026-10-12","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","28072","Kiểm tra SEO Onpage: Phòng thờ (/phong-tho)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","52043","Kiểm tra SEO Onpage: Bàn ăn gỗ (/ban-an-go)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","24343","Kiểm tra SEO Onpage: Giường gỗ (/giuong-go)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21775","Kiểm tra SEO Onpage: Kệ gỗ (/ke-go)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","32385","Kiểm tra SEO Onpage: Bộ bàn trà gỗ đỏ 2 ghế (/bo-ban-tra-go-do-2-ghe)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","26972","Kiểm tra SEO Onpage: Phòng ngủ (/phong-ngu)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","27351","Kiểm tra SEO Onpage: Hướng dẫn mua hàng (/huong-dan-mua-hang)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","96188","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-10-12","failed","2026-10-12","SEO Page","seo/seo.spec.ts","",""
+"","6506","Login should fail with sai mật khẩu","Desktop Chrome","2026-10-12","passed","2026-10-12","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""

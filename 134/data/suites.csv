@@ -1,0 +1,70 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18850","Kiểm tra SEO Onpage: Thi công băng rôn quảng cáo (/thi-cong-bang-ron-quang-cao)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","48608","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-10-14","failed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"","10403","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-10-14","passed","2026-10-14","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11041","Kiểm tra SEO Onpage: Thi công phướn quảng cáo (/thi-cong-phuon-quang-cao)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15374","Kiểm tra SEO Onpage: Thi Công Băng Rôn Quảng Cáo (/dich-vu-thi-cong-bang-ron-quang-cao)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"","193263","Bulk insert 35 services via Copy and verify Load More on website","Desktop Chrome","2026-10-14","failed","2026-10-14","Service Management Tests","admin/service.spec.ts","",""
+"","19902","Add service should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-14","passed","2026-10-14","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","40149","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-10-14","failed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12308","Kiểm tra SEO Onpage: In ấn băng rôn quảng cáo (/in-an-bang-ron-quang-cao)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","57838","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-10-14","failed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11881","Kiểm tra SEO Onpage: Cờ Phướn Ngày Hội Sinh Viên Đài Loan Tại Gò Vấp (/co-phuon-ngay-hoi-sinh-vien-dai-loan-tai-go-vap)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","60283","Kiểm tra SEO Onpage: Lorem Ipsum (/index.php)","Desktop Chrome","2026-10-14","failed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"","48093","Add news successfully and verify on website","Desktop Chrome","2026-10-14","passed","2026-10-14","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 17/17 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","33426","Kiểm tra SEO Onpage: Chiến dịch quảng cáo (/chien-dich-quang-cao)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"","20139","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-14","passed","2026-10-14","News Management Tests","admin/news.spec.ts","",""
+"","19782","Add service should fail with không nhập tiêu đề","Desktop Chrome","2026-10-14","passed","2026-10-14","Service Management Tests","admin/service.spec.ts","",""
+"","10405","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-10-14","passed","2026-10-14","Contract Feature Tests","web/contract.spec.ts","",""
+"","10374","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-10-14","passed","2026-10-14","Contract Feature Tests","web/contract.spec.ts","",""
+"","6170","Login should fail with sai mật khẩu","Desktop Chrome","2026-10-14","passed","2026-10-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","35882","Submit form successfully with valid data","Desktop Chrome","2026-10-14","passed","2026-10-14","Contract Feature Tests","web/contract.spec.ts","",""
+"","10349","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-10-14","passed","2026-10-14","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11690","Kiểm tra SEO Onpage: Gia công phướn quảng cáo (/gia-cong-phuon-quang-cao)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"","6567","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-10-14","passed","2026-10-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","6518","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-10-14","passed","2026-10-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","217282","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-10-14","failed","2026-10-14","News Management Tests","admin/news.spec.ts","",""
+"","20718","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-10-14","passed","2026-10-14","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14491","Kiểm tra SEO Onpage: In ấn phướn quảng cáo (/in-an-phuon-quang-cao)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"","10487","Submit form should fail with bỏ trống email","Desktop Chrome","2026-10-14","passed","2026-10-14","Contract Feature Tests","web/contract.spec.ts","",""
+"","58103","Add service successfully and verify on website","Desktop Chrome","2026-10-14","passed","2026-10-14","Service Management Tests","admin/service.spec.ts","",""
+"","10677","Submit form should fail with sai định dạng email","Desktop Chrome","2026-10-14","passed","2026-10-14","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","52069","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-10-14","failed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"","6953","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-10-14","passed","2026-10-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","15943","Kiểm tra SEO Onpage: Gia công băng rôn quảng cáo (/gia-cong-bang-ron-quang-cao)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"","8684","Login successfully with valid credentials","Desktop Chrome","2026-10-14","passed","2026-10-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","6466","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-10-14","passed","2026-10-14","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","45359","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-10-14","failed","2026-10-14","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8532","Kiểm tra SEO Onpage: Băng Rôn Quảng Cáo (/san-pham-bang-ron-quang-cao)","Desktop Chrome","2026-10-14","passed","2026-10-14","SEO Page","seo/seo.spec.ts","",""

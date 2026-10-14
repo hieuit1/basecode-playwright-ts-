@@ -1,0 +1,81 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","33993","Submit form successfully with valid data","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"","5990","Login should fail with sai mật khẩu","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","8630","Login successfully with valid credentials","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","6044","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","9651","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"","19807","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-18","passed","2026-09-18","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11431","Kiểm tra SEO Onpage: Kệ Tivi Gỗ Lũa Độc Đáo Cho Phòng Khách Hiện Đại (/ke-tivi-go-lua-doc-dao-cho-phong-khach-hien-dai)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","10791","Submit form should fail with sai định dạng email","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10021","Kiểm tra SEO Onpage: Ghế massage (/ghe-massage)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17157","Kiểm tra SEO Onpage: Dụng cụ thể thao (/dung-cu-the-thao)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14703","Kiểm tra SEO Onpage: Thu cũ đổi mới ghế massage (/thu-cu-doi-moi-ghe-massage)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","184223","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-09-18","failed","2026-09-18","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 75/100 | Đạt: 15/20 tiêu chí | Ngưỡng: 96%
+
+KHÁ","122984","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16286","Kiểm tra SEO Onpage: Chính sách bảo mật (/chinh-sach-bao-mat)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","22220","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-09-18","passed","2026-09-18","Product Management Tests","admin/product.spec.ts","",""
+"","6001","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","180206","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9788","Kiểm tra SEO Onpage: Sửa chữa ghế massage (1) Sửa chữa ghế massage (1) Sửa chữa ghế massage (1) (/sua-chua-ghe-massage-1)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","63905","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","87283","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","5906","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13996","Kiểm tra SEO Onpage: Xe đạp tập (/thiet-bi-tap-luyen)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","9543","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"","180263","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-09-18","broken","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","48424","Kiểm tra SEO Onpage: Chính sách bảo hành (/chinh-sach-bao-hanh)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14637","Kiểm tra SEO Onpage: 5 lợi ích của ghế massage đối với sức khỏe (/5-loi-ich-cua-ghe-massage-doi-voi-suc-khoe)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","18419","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-09-18","passed","2026-09-18","News Management Tests","admin/news.spec.ts","",""
+"","9705","Submit form should fail with bỏ trống email","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","51471","Kiểm tra SEO Onpage: Bảo hành & sửa chữa (/bao-hanh-sua-chua)","Desktop Chrome","2026-09-18","failed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","9552","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11423","Kiểm tra SEO Onpage: Máy chạy bộ Aguri AGT-122l (/may-chay-bo-aguri-agt-122l)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","53860","Add product successfully and verify on website","Desktop Chrome","2026-09-18","passed","2026-09-18","Product Management Tests","admin/product.spec.ts","",""
+"","5719","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-09-18","passed","2026-09-18","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","13295","Kiểm tra SEO Onpage: Chính sách giao hàng (/chinh-sach-giao-hang)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8678","Kiểm tra SEO Onpage: tét (/tet)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","46480","Add news successfully and verify on website","Desktop Chrome","2026-09-18","passed","2026-09-18","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14606","Kiểm tra SEO Onpage: Sản phẩm Mini (/may-massage-mini)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","9644","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-09-18","passed","2026-09-18","Contract Feature Tests","web/contract.spec.ts","",""
+"","21531","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-09-18","passed","2026-09-18","News Management Tests","admin/news.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10032","Kiểm tra SEO Onpage: Máy chạy bộ (/may-chay-bo)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8983","Kiểm tra SEO Onpage: Chính sách đổi trả (/chinh-sach-doi-tra)","Desktop Chrome","2026-09-18","passed","2026-09-18","SEO Page","seo/seo.spec.ts","",""
+"","197252","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-09-18","failed","2026-09-18","Product Management Tests","admin/product.spec.ts","",""
