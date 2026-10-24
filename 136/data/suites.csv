@@ -1,0 +1,127 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","36330","Kiểm tra SEO Onpage: Xe SUV (/xe-suv-hybrid)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","37220","Submit form should fail with bỏ trống email","Desktop Chrome","2026-10-24","failed","2026-10-24","Contract Feature Tests","web/contract.spec.ts","",""
+"","25919","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-10-24","passed","2026-10-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","37475","Kiểm tra SEO Onpage: tesst Volvo XC90 là mẫu SUV hạng sang của Volvo được nhiều khách hàng quan tâm, vì vậy việc nắm rõ các khoản chi phí khi mua xe là điều cần thiết. (/gia-lan-banh-volvo-xc90-gom-nhung-chi-phi-nao-1)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","43780","Bulk insert 35 services via Copy and verify Load More on website","Desktop Chrome","2026-10-24","failed","2026-10-24","Service Management Tests","admin/service.spec.ts","",""
+"","38912","Add recruitment successfully and verify on website","Desktop Chrome","2026-10-24","failed","2026-10-24","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","23129","Kiểm tra SEO Onpage: Xe Sedan (/xe-sedan-hybrid)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","71182","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","72101","Kiểm tra SEO Onpage: Volvo S90 (/volvo-s90)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","37475","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-10-24","failed","2026-10-24","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","76804","Kiểm tra SEO Onpage: Chính sách thanh toán (/chinh-sach-thanh-toan)","Desktop Chrome","2026-10-24","passed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","58853","Kiểm tra SEO Onpage: Mẫu xe volvo (/mau-xe-volvo)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","37230","Submit form should fail with sai định dạng email","Desktop Chrome","2026-10-24","failed","2026-10-24","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","26013","Kiểm tra SEO Onpage: Volvo EX90 Ultra (/volvo-ex90-ultra)","Desktop Chrome","2026-10-24","passed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","70186","Kiểm tra SEO Onpage: Xe SUV (/xe-suv-mild-hybrid)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","32924","Kiểm tra SEO Onpage: Volvo S90 Plug-in Hybrid (/volvo-s90-plug-in-hybrid)","Desktop Chrome","2026-10-24","passed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","42236","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-10-24","failed","2026-10-24","Contract Feature Tests","web/contract.spec.ts","",""
+"","38684","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-10-24","failed","2026-10-24","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","90683","Kiểm tra SEO Onpage: Xe Mild-Hybrid/ Động cơ xăng (/xe-mild-hybrid-dong-co-xang)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","18062","Kiểm tra SEO Onpage: VOLVO CAR ĐÔNG SÀI GÒN (/tags-san-pham)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","43260","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-10-24","passed","2026-10-24","Product Management Tests","admin/product.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","21055","Kiểm tra SEO Onpage: Chính sách &amp; Điều khoản (/chinh-sach-dieu-khoan)","Desktop Chrome","2026-10-24","passed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","49102","Add service successfully and verify on website","Desktop Chrome","2026-10-24","failed","2026-10-24","Service Management Tests","admin/service.spec.ts","",""
+"","5064","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-10-24","passed","2026-10-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19800","Kiểm tra SEO Onpage: Xe SUV (/xe-suv)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","16279","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-10-24","passed","2026-10-24","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","72307","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","42741","Bulk insert 35 projects via Copy and verify Load More on website","Desktop Chrome","2026-10-24","failed","2026-10-24","Project Management Tests","admin/project.spec.ts","",""
+"","49576","Add project should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-24","failed","2026-10-24","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","48477","Kiểm tra SEO Onpage: Xe SUV (/xe-suv-dien)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","32680","Kiểm tra SEO Onpage: Volvo XC90 Plug-in Hybrid (/volvo-xc90-plug-in-hybrid)","Desktop Chrome","2026-10-24","passed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","59182","Add product successfully and verify on website","Desktop Chrome","2026-10-24","failed","2026-10-24","Product Management Tests","admin/product.spec.ts","",""
+"","49129","Add service should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-24","failed","2026-10-24","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 19/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","112141","Kiểm tra SEO Onpage: VOLVO CAR ĐÔNG SÀI GÒN (/index.php)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","38313","Add project successfully and verify on website","Desktop Chrome","2026-10-24","failed","2026-10-24","Project Management Tests","admin/project.spec.ts","",""
+"","38300","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-24","failed","2026-10-24","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","9919","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-10-24","passed","2026-10-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","60612","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-10-24","failed","2026-10-24","Product Management Tests","admin/product.spec.ts","",""
+"","49627","Submit form successfully with valid data","Desktop Chrome","2026-10-24","failed","2026-10-24","Contract Feature Tests","web/contract.spec.ts","",""
+"","38868","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-24","passed","2026-10-24","Product Management Tests","admin/product.spec.ts","",""
+"","37703","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-10-24","failed","2026-10-24","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","44300","Kiểm tra SEO Onpage: Xe điện (/xe-dien)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","60219","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 81/100 | Đạt: 17/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","46948","Kiểm tra SEO Onpage: Volvo EC40 (/volvo-ec40)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","56568","Kiểm tra SEO Onpage: xe hatchback (/xe-hatchback)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","37381","Add service should fail with không nhập tiêu đề","Desktop Chrome","2026-10-24","failed","2026-10-24","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","105847","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","8823","Login successfully with valid credentials","Desktop Chrome","2026-10-24","passed","2026-10-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","54060","Kiểm tra SEO Onpage: Đăng ký lái thử (/lai-thu)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","537781","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-10-24","failed","2026-10-24","News Management Tests","admin/news.spec.ts","",""
+"","10378","Login should fail with sai mật khẩu","Desktop Chrome","2026-10-24","passed","2026-10-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","115324","Kiểm tra SEO Onpage: Xe Hybrid (/xe-hybrid)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","83578","Add project should fail with không nhập tiêu đề","Desktop Chrome","2026-10-24","failed","2026-10-24","Project Management Tests","admin/project.spec.ts","",""
+"","106380","Add news successfully and verify on website","Desktop Chrome","2026-10-24","passed","2026-10-24","News Management Tests","admin/news.spec.ts","",""
+"","17718","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-24","passed","2026-10-24","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","72914","Kiểm tra SEO Onpage: Bảo mật thông tin (/bao-mat-thong-tin)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","4805","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-10-24","passed","2026-10-24","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","30730","Kiểm tra SEO Onpage: Volvo XC60 B5 Mild Hybrid (/volvo-xc60-b5-mild-hybrid)","Desktop Chrome","2026-10-24","passed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","34088","Kiểm tra SEO Onpage: Chương trình ưu đãi (/chuong-trinh-uu-dai)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","37864","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-10-24","failed","2026-10-24","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","30662","Kiểm tra SEO Onpage: Volvo XC60 Plug-in Hybrid (/volvo-xc60-plug-in-hybrid)","Desktop Chrome","2026-10-24","passed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"","45320","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-10-24","failed","2026-10-24","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 18/21 tiêu chí | Ngưỡng: 96%
+
+TỐT","54044","Kiểm tra SEO Onpage: Bảng giá xe (/bang-gia)","Desktop Chrome","2026-10-24","failed","2026-10-24","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","32938","Kiểm tra SEO Onpage: Volvo XC40 mild hubrid (/volvo-xc40-mild-hubrid)","Desktop Chrome","2026-10-24","passed","2026-10-24","SEO Page","seo/seo.spec.ts","",""

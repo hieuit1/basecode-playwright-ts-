@@ -1,0 +1,100 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","35722","Submit form successfully with valid data","Desktop Chrome","2026-10-13","passed","2026-10-13","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9320","Kiểm tra SEO Onpage: Thi Công Cửa Kéo Cần Thơ (/thi-cong-cua-keo-can-tho)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","10336","Submit form should fail with bỏ trống email","Desktop Chrome","2026-10-13","passed","2026-10-13","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","61574","Kiểm tra SEO Onpage: Về chúng tôi (/gioi-thieu)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","18556","Add service should fail with không nhập tiêu đề","Desktop Chrome","2026-10-13","passed","2026-10-13","Service Management Tests","admin/service.spec.ts","",""
+"","10332","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-10-13","passed","2026-10-13","Contract Feature Tests","web/contract.spec.ts","",""
+"","251679","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-10-13","failed","2026-10-13","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","43635","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","24023","Add project should fail with không nhập tiêu đề","Desktop Chrome","2026-10-13","passed","2026-10-13","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11028","Kiểm tra SEO Onpage: Cửa Cuốn (/cua-cuon)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10244","Kiểm tra SEO Onpage: Cửa Kéo (/cua-keo)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9957","Kiểm tra SEO Onpage: Sửa Cửa Cuốn 24h (/sua-cua-cuon-24h)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","36677","Kiểm tra SEO Onpage: Tuyển dụng (/tuyen-dung)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","10918","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-10-13","passed","2026-10-13","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","74888","Kiểm tra SEO Onpage: Nguyễn Văn Long | Dịch Vụ Cửa Cuốn, Cửa Kéo Uy Tín (/index.php)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","16767","Kiểm tra SEO Onpage: Khắc phục sự cố kẹt nan (/khac-phuc-su-co-ket-nan)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","53765","Kiểm tra SEO Onpage: Dự án (/du-an)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","10298","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-10-13","passed","2026-10-13","Contract Feature Tests","web/contract.spec.ts","",""
+"","18542","Add service should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-13","passed","2026-10-13","Service Management Tests","admin/service.spec.ts","",""
+"","6424","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-10-13","passed","2026-10-13","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11337","Kiểm tra SEO Onpage: Sửa Chữa Cửa Kéo Hay Thay Mới: Đâu Là Giải Pháp Tốt? (/sua-chua-cua-keo-hay-thay-moi-dau-la-giai-phap-tot)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","51284","Add news successfully and verify on website","Desktop Chrome","2026-10-13","passed","2026-10-13","News Management Tests","admin/news.spec.ts","",""
+"","222830","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-10-13","failed","2026-10-13","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","41918","Add service successfully and verify on website","Desktop Chrome","2026-10-13","passed","2026-10-13","Service Management Tests","admin/service.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","17482","Kiểm tra SEO Onpage: SỬA CỬA CUỐN KHẨN CẤP CẦN THƠ | CỬA CUỐN LONG THÀNH | 078.461.3338 (/sua-cua-cuon-khan-cap-can-tho-cua-cuon-long-thanh-0784613338)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","28818","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-10-13","passed","2026-10-13","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","43586","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","22789","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-10-13","passed","2026-10-13","News Management Tests","admin/news.spec.ts","",""
+"","231236","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-10-13","failed","2026-10-13","Product Management Tests","admin/product.spec.ts","",""
+"","116598","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-13","failed","2026-10-13","Product Management Tests","admin/product.spec.ts","",""
+"","83928","Add project successfully and verify on website","Desktop Chrome","2026-10-13","passed","2026-10-13","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10679","Kiểm tra SEO Onpage: Cửa Cuốn BossDoor (/cua-cuon-bossdoor)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","7205","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-10-13","passed","2026-10-13","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","7022","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-10-13","passed","2026-10-13","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","219894","Bulk insert 35 projects via Copy and verify Load More on website","Desktop Chrome","2026-10-13","failed","2026-10-13","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","11286","Kiểm tra SEO Onpage: Sửa cửa cuốn Vĩnh Thạnh (/sua-cua-cuon-vinh-thanh)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","7240","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-10-13","passed","2026-10-13","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","10634","Submit form should fail with sai định dạng email","Desktop Chrome","2026-10-13","passed","2026-10-13","Contract Feature Tests","web/contract.spec.ts","",""
+"","64189","Add project should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-13","failed","2026-10-13","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9901","Kiểm tra SEO Onpage: Lắp đặt cửa cuốn mới tại Cần Thơ (/lap-dat-cua-cuon-moi-tai-can-tho)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","185290","Bulk insert 35 services via Copy and verify Load More on website","Desktop Chrome","2026-10-13","failed","2026-10-13","Service Management Tests","admin/service.spec.ts","",""
+"","23876","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-13","passed","2026-10-13","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","60593","Add product successfully and verify on website","Desktop Chrome","2026-10-13","passed","2026-10-13","Product Management Tests","admin/product.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","46616","Kiểm tra SEO Onpage: Báo giá (/bao-gia)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","6616","Login should fail with sai mật khẩu","Desktop Chrome","2026-10-13","passed","2026-10-13","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","66318","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","50838","Add recruitment successfully and verify on website","Desktop Chrome","2026-10-13","passed","2026-10-13","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","120360","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","8830","Kiểm tra SEO Onpage: Thay Mô Tơ - Remote - Bình lưu điện (/thay-mo-to-remote-binh-luu-dien)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","23175","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-13","passed","2026-10-13","News Management Tests","admin/news.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10582","Kiểm tra SEO Onpage: Phụ Kiện Cửa Cuốn (/phu-kien-cua-cuon)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 93/100 | Đạt: 13/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10043","Kiểm tra SEO Onpage: Bảo trì - bảo dưỡng cửa cuốn định kì (/bao-tri-bao-duong-cua-cuon-dinh-ki)","Desktop Chrome","2026-10-13","failed","2026-10-13","SEO Page","seo/seo.spec.ts","",""
+"","8997","Login successfully with valid credentials","Desktop Chrome","2026-10-13","passed","2026-10-13","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","22968","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-10-13","passed","2026-10-13","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","10416","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-10-13","passed","2026-10-13","Contract Feature Tests","web/contract.spec.ts","",""

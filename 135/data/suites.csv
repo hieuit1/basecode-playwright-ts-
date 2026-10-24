@@ -1,0 +1,94 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","36996","Add service should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-23","failed","2026-10-23","Service Management Tests","admin/service.spec.ts","",""
+"","60425","Add product successfully and verify on website","Desktop Chrome","2026-10-23","passed","2026-10-23","Product Management Tests","admin/product.spec.ts","",""
+"","53601","Add news successfully and verify on website","Desktop Chrome","2026-10-23","passed","2026-10-23","News Management Tests","admin/news.spec.ts","",""
+"","301654","Bulk insert 35 products via Copy and verify Load More on website","Desktop Chrome","2026-10-23","failed","2026-10-23","Product Management Tests","admin/product.spec.ts","",""
+"","6493","Login should fail with bỏ trống tên đăng nhập","Desktop Chrome","2026-10-23","passed","2026-10-23","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","21774","Add news should fail with không nhập tiêu đề","Desktop Chrome","2026-10-23","passed","2026-10-23","News Management Tests","admin/news.spec.ts","",""
+"","41137","Add project successfully and verify on website","Desktop Chrome","2026-10-23","failed","2026-10-23","Project Management Tests","admin/project.spec.ts","",""
+"","38422","Submit form should fail with số điện thoại quá ngắn","Desktop Chrome","2026-10-23","failed","2026-10-23","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","19454","Kiểm tra SEO Onpage: Chốt Gỗ Thẳng 8x40 là phụ kiện liên kết gỗ dạng hình trụ tròn trơn, được sử dụng phổ biến trong sản xuất và thi công nội thất gỗ công nghiệp lẫn gỗ tự nhiên. (/chot-go-thang-8x40-1)","Desktop Chrome","2026-10-23","passed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","24985","Add product should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-23","passed","2026-10-23","Product Management Tests","admin/product.spec.ts","",""
+"","51159","Submit form successfully with valid data","Desktop Chrome","2026-10-23","failed","2026-10-23","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","28102","Kiểm tra SEO Onpage: TAY NẮM GỖ (/tay-nam-go)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","9557","Kiểm tra SEO Onpage: Đổi trả (/doi-tr)","Desktop Chrome","2026-10-23","passed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","42610","Submit form should fail with bỏ trống email","Desktop Chrome","2026-10-23","failed","2026-10-23","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","59804","Kiểm tra SEO Onpage: Giới thiệu (/gioi-thieu)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","39781","Submit form should fail with số điện thoại chứa chữ cái","Desktop Chrome","2026-10-23","failed","2026-10-23","Contract Feature Tests","web/contract.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","10177","Kiểm tra SEO Onpage: Bảo hành (/bao-h)","Desktop Chrome","2026-10-23","passed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","16951","Kiểm tra SEO Onpage: NÚT BÍT (/nut-bit)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","42382","Add recruitment should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-23","failed","2026-10-23","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","7358","Login should fail with tấn công SQL Injection","Desktop Chrome","2026-10-23","passed","2026-10-23","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","39603","Submit form should fail with bỏ trống điện thoại","Desktop Chrome","2026-10-23","failed","2026-10-23","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 85/100 | Đạt: 17/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","44660","Kiểm tra SEO Onpage: Tin tức (/tin-tuc)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","16909","Kiểm tra SEO Onpage: CHỐT GỖ THẲNG (/chot-go-thang)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","36944","Add service should fail with không nhập tiêu đề","Desktop Chrome","2026-10-23","failed","2026-10-23","Service Management Tests","admin/service.spec.ts","",""
+"","39971","Submit form should fail with bỏ trống nội dung","Desktop Chrome","2026-10-23","failed","2026-10-23","Contract Feature Tests","web/contract.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","21055","Kiểm tra SEO Onpage: SONG TRÒN (/song-tron)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14084","Kiểm tra SEO Onpage: Khám Phá Sự Độc Đáo và Tinh Tế với Chốt Gỗ (/kham-pha-su-doc-dao-va-tinh-te-voi-chot-go)","Desktop Chrome","2026-10-23","passed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","37163","Add service successfully and verify on website","Desktop Chrome","2026-10-23","failed","2026-10-23","Service Management Tests","admin/service.spec.ts","",""
+"","38001","Bulk insert 35 services via Copy and verify Load More on website","Desktop Chrome","2026-10-23","failed","2026-10-23","Service Management Tests","admin/service.spec.ts","",""
+"","47279","Add recruitment successfully and verify on website","Desktop Chrome","2026-10-23","failed","2026-10-23","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","6742","Login should fail with sai tên đăng nhập","Desktop Chrome","2026-10-23","passed","2026-10-23","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"","40755","Bulk insert 35 projects via Copy and verify Load More on website","Desktop Chrome","2026-10-23","failed","2026-10-23","Project Management Tests","admin/project.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","14210","Kiểm tra SEO Onpage: Vận chuyển (/van-chu)","Desktop Chrome","2026-10-23","passed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","16640","Kiểm tra SEO Onpage: GỖ TẤM TEAK LÀO (/go-tam-teak-lao)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","6751","Login should fail with sai mật khẩu","Desktop Chrome","2026-10-23","passed","2026-10-23","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","55660","Kiểm tra SEO Onpage: Sản phẩm (/san-pham)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","58771","Kiểm tra SEO Onpage: /index.php (/index.php)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","22162","Add news should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-23","passed","2026-10-23","News Management Tests","admin/news.spec.ts","",""
+"","280570","Bulk insert 35 news via Copy and verify Load More on website","Desktop Chrome","2026-10-23","failed","2026-10-23","News Management Tests","admin/news.spec.ts","",""
+"","41487","Bulk insert 35 recruitments via Copy and verify Load More on website","Desktop Chrome","2026-10-23","failed","2026-10-23","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"","6971","Login should fail with bỏ trống mật khẩu","Desktop Chrome","2026-10-23","passed","2026-10-23","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[PASS] Điểm SEO: 100/100 | Đạt: 14/14 tiêu chí | Ngưỡng: 96%
+
+XUẤT SẮC","12352","Kiểm tra SEO Onpage: Thu mua phế liệu sắt (/thu-mua-phe-lieu-sat)","Desktop Chrome","2026-10-23","passed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","26782","Add product should fail with không nhập tiêu đề","Desktop Chrome","2026-10-23","passed","2026-10-23","Product Management Tests","admin/product.spec.ts","",""
+"","40884","Add recruitment should fail with không nhập tiêu đề","Desktop Chrome","2026-10-23","failed","2026-10-23","Recruitment Management Tests","admin/recruitment.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","46108","Kiểm tra SEO Onpage: Kiểm tra đơn hàng (/kiem-tra-don-h)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","13294","Kiểm tra SEO Onpage: TIỆN GỖ (/tien-go)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","8979","Login successfully with valid credentials","Desktop Chrome","2026-10-23","passed","2026-10-23","Admin Login Feature Tests","admin/adminLogin.spec.ts","",""
+"[FAIL] Điểm SEO: 80/100 | Đạt: 16/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","43737","Kiểm tra SEO Onpage: Dịch vụ (/dich-vu)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"[FAIL] Điểm SEO: 90/100 | Đạt: 18/20 tiêu chí | Ngưỡng: 96%
+
+TỐT","52823","Kiểm tra SEO Onpage: Liên hệ (/lien-he)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","41087","Add project should fail with không nhập tiêu đề","Desktop Chrome","2026-10-23","failed","2026-10-23","Project Management Tests","admin/project.spec.ts","",""
+"","41760","Add project should fail with không nhập đường dẫn mẫu","Desktop Chrome","2026-10-23","failed","2026-10-23","Project Management Tests","admin/project.spec.ts","",""
+"[FAIL] Điểm SEO: 86/100 | Đạt: 12/14 tiêu chí | Ngưỡng: 96%
+
+TỐT","16009","Kiểm tra SEO Onpage: CHỐT GỖ XOẮN (/chot-go-xoan)","Desktop Chrome","2026-10-23","failed","2026-10-23","SEO Page","seo/seo.spec.ts","",""
+"","38398","Submit form should fail with sai định dạng email","Desktop Chrome","2026-10-23","failed","2026-10-23","Contract Feature Tests","web/contract.spec.ts","",""
